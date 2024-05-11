@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <pedrotorcattsoto@gmail.com>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.0.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-11 22:54-0400\n"
+"PO-Revision-Date: 2022-07-12 20:45-0400\n"
+"Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
+"Language-Team: ES\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.1\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: ../../deploying/mod_wsgi.rst:2
+msgid "mod_wsgi"
+msgstr "mod_wsgi"
+
+#: ../../deploying/mod_wsgi.rst:4
+msgid ""
+"`mod_wsgi`_ is a WSGI server integrated with the `Apache httpd`_ server. The"
+" modern `mod_wsgi-express`_ command makes it easy to configure and start the"
+" server without needing to write Apache httpd configuration."
+msgstr ""
+"`mod_wsgi`_ es un servidor WSGI integrado con el servidor `Apache httpd`_. "
+"El moderno comando `mod_wsgi-express`_ facilita la configuración e inicio "
+"del servidor sin necesidad de escribir la configuración de Apache httpd."
+
+#: ../../deploying/mod_wsgi.rst:8
+msgid "Tightly integrated with Apache httpd."
+msgstr "Estrechamente integrado con Apache httpd."
+
+#: ../../deploying/mod_wsgi.rst:9
+msgid "Supports Windows directly."
+msgstr "Es compatible directamente con Windows."
+
+#: ../../deploying/mod_wsgi.rst:10
+msgid "Requires a compiler and the Apache development headers to install."
+msgstr ""
+"Requiere un compilador y las cabeceras de desarrollo de Apache para su "
+"instalación."
+
+#: ../../deploying/mod_wsgi.rst:11
+msgid "Does not require a reverse proxy setup."
+msgstr "No requiere la configuración de un proxy inverso."
+
+#: ../../deploying/mod_wsgi.rst:13
+msgid ""
+"This page outlines the basics of running mod_wsgi-express, not the more "
+"complex installation and configuration with httpd. Be sure to read the "
+"`mod_wsgi-express`_, `mod_wsgi`_, and `Apache httpd`_ documentation to "
+"understand what features are available."
+msgstr ""
+"Esta página describe los aspectos básicos de la ejecución de mod_wsgi-"
+"express, no la instalación y configuración más compleja con httpd. Asegúrese"
+" de leer la documentación de `mod_wsgi-express`_, `mod_wsgi`_ y `Apache "
+"httpd`_ para entender qué características están disponibles."
+
+#: ../../deploying/mod_wsgi.rst:24
+msgid "Installing"
+msgstr "Instalación"
+
+#: ../../deploying/mod_wsgi.rst:26
+msgid ""
+"Installing mod_wsgi requires a compiler and the Apache server and "
+"development headers installed. You will get an error if they are not. How to"
+" install them depends on the OS and package manager that you use."
+msgstr ""
+"La instalación de mod_wsgi requiere un compilador y el servidor Apache y las"
+" cabeceras de desarrollo instaladas. Obtendrá un error si no lo están. La "
+"forma de instalarlos depende del sistema operativo y del gestor de paquetes "
+"que utilices."
+
+#: ../../deploying/mod_wsgi.rst:30
+msgid ""
+"Create a virtualenv, install your application, then install ``mod_wsgi``."
+msgstr ""
+"Crea un virtualenv, instala tu aplicación y luego instala ``mod_wsgi``."
+
+#: ../../deploying/mod_wsgi.rst:43
+msgid "Running"
+msgstr "Ejecutando"
+
+#: ../../deploying/mod_wsgi.rst:45
+msgid ""
+"The only argument to ``mod_wsgi-express`` specifies a script containing your"
+" Flask application, which must be called ``application``. You can write a "
+"small script to import your app with this name, or to create it if using the"
+" app factory pattern."
+msgstr ""
+"El único argumento de ``mod_wsgi-express`` especifica un script que contiene"
+" tu aplicación Flask, que debe llamarse ``application``. Puedes escribir un "
+"pequeño script para importar tu aplicación con este nombre, o para crearla "
+"si utilizas el patrón de fábrica de aplicaciones."
+
+#: ../../deploying/mod_wsgi.rst:50 ../../deploying/mod_wsgi.rst:57
+msgid "``wsgi.py``"
+msgstr "``wsgi.py``"
+
+#: ../../deploying/mod_wsgi.rst:64
+msgid "Now run the ``mod_wsgi-express start-server`` command."
+msgstr "Ahora ejecute el comando ``mod_wsgi-express start-server``."
+
+#: ../../deploying/mod_wsgi.rst:70
+msgid ""
+"The ``--processes`` option specifies the number of worker processes to run; "
+"a starting value could be ``CPU * 2``."
+msgstr ""
+"La opción ``--processes`` especifica el número de procesos de trabajo a "
+"ejecutar; un valor inicial podría ser ``CPU * 2``."
+
+#: ../../deploying/mod_wsgi.rst:73
+msgid ""
+"Logs for each request aren't show in the terminal. If an error occurs, its "
+"information is written to the error log file shown when starting the server."
+msgstr ""
+"Los registros de cada solicitud no se muestran en el terminal. Si se produce"
+" un error, su información se escribe en el archivo de registro de errores "
+"que se muestra al iniciar el servidor."
+
+#: ../../deploying/mod_wsgi.rst:79
+msgid "Binding Externally"
+msgstr "Vinculación externa"
+
+#: ../../deploying/mod_wsgi.rst:81
+msgid ""
+"Unlike the other WSGI servers in these docs, mod_wsgi can be run as root to "
+"bind to privileged ports like 80 and 443. However, it must be configured to "
+"drop permissions to a different user and group for the worker processes."
+msgstr ""
+"A diferencia de los otros servidores WSGI de esta documentación, mod_wsgi "
+"puede ejecutarse como root para enlazar con puertos privilegiados como el 80"
+" y el 443. Sin embargo, debe ser configurado para dejar los permisos a un "
+"usuario y grupo diferente para los procesos trabajadores."
+
+#: ../../deploying/mod_wsgi.rst:86
+msgid ""
+"For example, if you created a ``hello`` user and group, you should install "
+"your virtualenv and application as that user, then tell mod_wsgi to drop to "
+"that user after starting."
+msgstr ""
+"Por ejemplo, si creaste un usuario y un grupo ``hello``, deberías instalar "
+"tu virtualenv y tu aplicación como ese usuario, y luego decirle a mod_wsgi "
+"que se pase a ese usuario después de arrancar."
