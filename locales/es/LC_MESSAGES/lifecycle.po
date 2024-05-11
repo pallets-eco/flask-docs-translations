@@ -26,8 +26,8 @@ msgstr ""
 
 #: ../../lifecycle.rst:4
 msgid ""
-"Flask makes it pretty easy to write a web application. But there are quite "
-"a few different parts to an application and to each request it handles. "
+"Flask makes it pretty easy to write a web application. But there are quite a"
+" few different parts to an application and to each request it handles. "
 "Knowing what happens during application setup, serving, and handling "
 "requests will help you know what's possible in Flask and how to structure "
 "your application."
@@ -48,18 +48,17 @@ msgstr ""
 msgid ""
 "This is known as the \"application setup phase\", it's the code you write "
 "that's outside any view functions or other handlers. It can be split up "
-"between different modules and sub-packages, but all code that you want to "
-"be part of your application must be imported in order for it to be "
-"registered."
+"between different modules and sub-packages, but all code that you want to be"
+" part of your application must be imported in order for it to be registered."
 msgstr ""
 
 #: ../../lifecycle.rst:36
 msgid ""
 "All application setup must be completed before you start serving your "
 "application and handling requests. This is because WSGI servers divide work "
-"between multiple workers, or can be distributed across multiple machines. "
-"If the configuration changed in one worker, there's no way for Flask to "
-"ensure consistency between other workers."
+"between multiple workers, or can be distributed across multiple machines. If"
+" the configuration changed in one worker, there's no way for Flask to ensure"
+" consistency between other workers."
 msgstr ""
 
 #: ../../lifecycle.rst:41
@@ -87,8 +86,8 @@ msgstr ""
 
 #: ../../lifecycle.rst:54
 msgid ""
-"Adding routes, view functions, and other request handlers with ``@app."
-"route``, ``@app.errorhandler``, ``@app.before_request``, etc."
+"Adding routes, view functions, and other request handlers with "
+"``@app.route``, ``@app.errorhandler``, ``@app.before_request``, etc."
 msgstr ""
 
 #: ../../lifecycle.rst:56
@@ -126,18 +125,18 @@ msgid ""
 "Flask is a WSGI application framework. The other half of WSGI is the WSGI "
 "server. During development, Flask, through Werkzeug, provides a development "
 "WSGI server with the ``flask run`` CLI command. When you are done with "
-"development, use a production server to serve your application, see :doc:"
-"`deploying/index`."
+"development, use a production server to serve your application, see "
+":doc:`deploying/index`."
 msgstr ""
 
 #: ../../lifecycle.rst:72
 msgid ""
 "Regardless of what server you're using, it will follow the :pep:`3333` WSGI "
 "spec. The WSGI server will be told how to access your Flask application "
-"object, which is the WSGI application. Then it will start listening for "
-"HTTP requests, translate the request data into a WSGI environ, and call the "
-"WSGI application with that data. The WSGI application will return data that "
-"is translated into an HTTP response."
+"object, which is the WSGI application. Then it will start listening for HTTP"
+" requests, translate the request data into a WSGI environ, and call the WSGI"
+" application with that data. The WSGI application will return data that is "
+"translated into an HTTP response."
 msgstr ""
 
 #: ../../lifecycle.rst:78
@@ -183,8 +182,8 @@ msgstr ""
 #: ../../lifecycle.rst:93
 msgid ""
 "The WSGI application above is a callable that behaves in a certain way. "
-"Middleware is a WSGI application that wraps another WSGI application. It's "
-"a similar concept to Python decorators. The outermost middleware will be "
+"Middleware is a WSGI application that wraps another WSGI application. It's a"
+" similar concept to Python decorators. The outermost middleware will be "
 "called by the server. It can modify the data passed to it, then call the "
 "WSGI application (or further middleware) that it wraps, and so on. And it "
 "can take the return value of that call and modify it further."
@@ -200,9 +199,9 @@ msgstr ""
 
 #: ../../lifecycle.rst:104
 msgid ""
-"A common middleware you'll see used with Flask is Werkzeug's :class:"
-"`~werkzeug.middleware.proxy_fix.ProxyFix`, which modifies the request to "
-"look like it came directly from a client even if it passed through HTTP "
+"A common middleware you'll see used with Flask is Werkzeug's "
+":class:`~werkzeug.middleware.proxy_fix.ProxyFix`, which modifies the request"
+" to look like it came directly from a client even if it passed through HTTP "
 "proxies on the way. There are other middleware that can handle serving "
 "static files, authentication, etc."
 msgstr ""
@@ -213,9 +212,9 @@ msgstr ""
 
 #: ../../lifecycle.rst:113
 msgid ""
-"For us, the interesting part of the steps above is when Flask gets called "
-"by the WSGI server (or middleware). At that point, it will do quite a lot "
-"to handle the request and generate the response. At the most basic, it will "
+"For us, the interesting part of the steps above is when Flask gets called by"
+" the WSGI server (or middleware). At that point, it will do quite a lot to "
+"handle the request and generate the response. At the most basic, it will "
 "match the URL to a view function, call the view function, and pass the "
 "return value back to the server. But there are many more parts that you can "
 "use to customize its behavior."
@@ -229,14 +228,14 @@ msgstr ""
 #: ../../lifecycle.rst:120
 msgid ""
 "A :class:`.RequestContext` object is created. This converts the WSGI "
-"``environ`` dict into a :class:`.Request` object. It also creates an :class:"
-"`AppContext` object."
+"``environ`` dict into a :class:`.Request` object. It also creates an "
+":class:`AppContext` object."
 msgstr ""
 
 #: ../../lifecycle.rst:122
 msgid ""
-"The :doc:`app context <appcontext>` is pushed, which makes :data:`."
-"current_app` and :data:`.g` available."
+"The :doc:`app context <appcontext>` is pushed, which makes "
+":data:`.current_app` and :data:`.g` available."
 msgstr ""
 
 #: ../../lifecycle.rst:124
@@ -245,21 +244,23 @@ msgstr ""
 
 #: ../../lifecycle.rst:125
 msgid ""
-"The :doc:`request context <reqcontext>` is pushed, which makes :attr:`."
-"request` and :class:`.session` available."
+"The :doc:`request context <reqcontext>` is pushed, which makes "
+":attr:`.request` and :class:`.session` available."
 msgstr ""
 
 #: ../../lifecycle.rst:127
 msgid ""
-"The session is opened, loading any existing session data using the app's :"
-"attr:`~.Flask.session_interface`, an instance of :class:`.SessionInterface`."
+"The session is opened, loading any existing session data using the app's "
+":attr:`~.Flask.session_interface`, an instance of "
+":class:`.SessionInterface`."
 msgstr ""
 
 #: ../../lifecycle.rst:129
 msgid ""
-"The URL is matched against the URL rules registered with the :meth:`~.Flask."
-"route` decorator during application setup. If there is no match, the error "
-"- usually a 404, 405, or redirect - is stored to be handled later."
+"The URL is matched against the URL rules registered with the "
+":meth:`~.Flask.route` decorator during application setup. If there is no "
+"match, the error - usually a 404, 405, or redirect - is stored to be handled"
+" later."
 msgstr ""
 
 #: ../../lifecycle.rst:132
@@ -273,8 +274,8 @@ msgstr ""
 
 #: ../../lifecycle.rst:134
 msgid ""
-"Any :meth:`~.Flask.before_request` decorated functions are called. If any "
-"of these function returns a value it is treated as the response immediately."
+"Any :meth:`~.Flask.before_request` decorated functions are called. If any of"
+" these function returns a value it is treated as the response immediately."
 msgstr ""
 
 #: ../../lifecycle.rst:136
@@ -290,15 +291,16 @@ msgstr ""
 
 #: ../../lifecycle.rst:139
 msgid ""
-"If any step so far raised an exception, and there is an :meth:`~.Flask."
-"errorhandler` decorated function that matches the exception class or HTTP "
-"error code, it is called to handle the error and return a response."
+"If any step so far raised an exception, and there is an "
+":meth:`~.Flask.errorhandler` decorated function that matches the exception "
+"class or HTTP error code, it is called to handle the error and return a "
+"response."
 msgstr ""
 
 #: ../../lifecycle.rst:142
 msgid ""
-"Whatever returned a response value - a before request function, the view, "
-"or an error handler, that value is converted to a :class:`.Response` object."
+"Whatever returned a response value - a before request function, the view, or"
+" an error handler, that value is converted to a :class:`.Response` object."
 msgstr ""
 
 #: ../../lifecycle.rst:144
@@ -315,8 +317,8 @@ msgstr ""
 
 #: ../../lifecycle.rst:147
 msgid ""
-"The session is saved, persisting any modified session data using the app's :"
-"attr:`~.Flask.session_interface`."
+"The session is saved, persisting any modified session data using the app's "
+":attr:`~.Flask.session_interface`."
 msgstr ""
 
 #: ../../lifecycle.rst:149
@@ -348,8 +350,8 @@ msgstr ""
 
 #: ../../lifecycle.rst:157
 msgid ""
-"The request context is popped, :attr:`.request` and :class:`.session` are "
-"no longer available."
+"The request context is popped, :attr:`.request` and :class:`.session` are no"
+" longer available."
 msgstr ""
 
 #: ../../lifecycle.rst:159
@@ -363,8 +365,8 @@ msgstr ""
 
 #: ../../lifecycle.rst:161
 msgid ""
-"The app context is popped, :data:`.current_app` and :data:`.g` are no "
-"longer available."
+"The app context is popped, :data:`.current_app` and :data:`.g` are no longer"
+" available."
 msgstr ""
 
 #: ../../lifecycle.rst:163
@@ -376,6 +378,6 @@ msgid ""
 "There are even more decorators and customization points than this, but that "
 "aren't part of every request lifecycle. They're more specific to certain "
 "things you might use during a request, such as templates, building URLs, or "
-"handling JSON data. See the rest of this documentation, as well as the :doc:"
-"`api` to explore further."
+"handling JSON data. See the rest of this documentation, as well as the "
+":doc:`api` to explore further."
 msgstr ""

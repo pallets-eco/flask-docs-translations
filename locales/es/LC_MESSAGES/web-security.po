@@ -37,19 +37,18 @@ msgstr ""
 
 #: ../../web-security.rst:13
 msgid ""
-"Cross site scripting is the concept of injecting arbitrary HTML (and with "
-"it JavaScript) into the context of a website.  To remedy this, developers "
-"have to properly escape text so that it cannot include arbitrary HTML "
-"tags.  For more information on that have a look at the Wikipedia article on "
-"`Cross-Site Scripting <https://en.wikipedia.org/wiki/Cross-"
-"site_scripting>`_."
+"Cross site scripting is the concept of injecting arbitrary HTML (and with it"
+" JavaScript) into the context of a website.  To remedy this, developers have"
+" to properly escape text so that it cannot include arbitrary HTML tags.  For"
+" more information on that have a look at the Wikipedia article on `Cross-"
+"Site Scripting <https://en.wikipedia.org/wiki/Cross-site_scripting>`_."
 msgstr ""
 
 #: ../../web-security.rst:20
 msgid ""
-"Flask configures Jinja2 to automatically escape all values unless "
-"explicitly told otherwise.  This should rule out all XSS problems caused in "
-"templates, but there are still other places where you have to be careful:"
+"Flask configures Jinja2 to automatically escape all values unless explicitly"
+" told otherwise.  This should rule out all XSS problems caused in templates,"
+" but there are still other places where you have to be careful:"
 msgstr ""
 
 #: ../../web-security.rst:25
@@ -69,8 +68,8 @@ msgstr ""
 #: ../../web-security.rst:29
 msgid ""
 "sending out textfiles from uploaded files.  Some browsers are using content-"
-"type guessing based on the first few bytes so users could trick a browser "
-"to execute HTML."
+"type guessing based on the first few bytes so users could trick a browser to"
+" execute HTML."
 msgstr ""
 
 #: ../../web-security.rst:33
@@ -94,16 +93,16 @@ msgid ""
 "When the user would then move with the mouse over the input, the cookie "
 "would be presented to the user in an alert window.  But instead of showing "
 "the cookie to the user, a good attacker might also execute any other "
-"JavaScript code.  In combination with CSS injections the attacker might "
-"even make the element fill out the entire page so that the user would just "
-"have to have the mouse anywhere on the page to trigger the attack."
+"JavaScript code.  In combination with CSS injections the attacker might even"
+" make the element fill out the entire page so that the user would just have "
+"to have the mouse anywhere on the page to trigger the attack."
 msgstr ""
 
 #: ../../web-security.rst:58
 msgid ""
 "There is one class of XSS issues that Jinja's escaping does not protect "
-"against. The ``a`` tag's ``href`` attribute can contain a `javascript:` "
-"URI, which the browser will execute when clicked if not secured properly."
+"against. The ``a`` tag's ``href`` attribute can contain a `javascript:` URI,"
+" which the browser will execute when clicked if not secured properly."
 msgstr ""
 
 #: ../../web-security.rst:67
@@ -127,18 +126,18 @@ msgid ""
 "If your authentication information is stored in cookies, you have implicit "
 "state management.  The state of \"being logged in\" is controlled by a "
 "cookie, and that cookie is sent with each request to a page. Unfortunately "
-"that includes requests triggered by 3rd party sites.  If you don't keep "
-"that in mind, some people might be able to trick your application's users "
-"with social engineering to do stupid things without them knowing."
+"that includes requests triggered by 3rd party sites.  If you don't keep that"
+" in mind, some people might be able to trick your application's users with "
+"social engineering to do stupid things without them knowing."
 msgstr ""
 
 #: ../../web-security.rst:84
 msgid ""
 "Say you have a specific URL that, when you sent ``POST`` requests to will "
 "delete a user's profile (say ``http://example.com/user/delete``).  If an "
-"attacker now creates a page that sends a post request to that page with "
-"some JavaScript they just have to trick some users to load that page and "
-"their profiles will end up being deleted."
+"attacker now creates a page that sends a post request to that page with some"
+" JavaScript they just have to trick some users to load that page and their "
+"profiles will end up being deleted."
 msgstr ""
 
 #: ../../web-security.rst:90
@@ -179,9 +178,10 @@ msgstr ""
 msgid ""
 "ECMAScript 5 closed this vulnerability, so only extremely old browsers are "
 "still vulnerable. All of these browsers have `other more serious "
-"vulnerabilities <https://github.com/pallets/flask/"
-"issues/248#issuecomment-59934857>`_, so this behavior was changed and :func:"
-"`~flask.jsonify` now supports serializing arrays."
+"vulnerabilities "
+"<https://github.com/pallets/flask/issues/248#issuecomment-59934857>`_, so "
+"this behavior was changed and :func:`~flask.jsonify` now supports "
+"serializing arrays."
 msgstr ""
 
 #: ../../web-security.rst:120
@@ -190,10 +190,10 @@ msgstr ""
 
 #: ../../web-security.rst:122
 msgid ""
-"Browsers recognize various response headers in order to control security. "
-"We recommend reviewing each of the headers below for use in your "
-"application. The `Flask-Talisman`_ extension can be used to manage HTTPS "
-"and the security headers for you."
+"Browsers recognize various response headers in order to control security. We"
+" recommend reviewing each of the headers below for use in your application. "
+"The `Flask-Talisman`_ extension can be used to manage HTTPS and the security"
+" headers for you."
 msgstr ""
 
 #: ../../web-security.rst:130
@@ -306,12 +306,12 @@ msgstr ""
 
 #: ../../web-security.rst:211
 msgid ""
-"For the session cookie, if :attr:`session.permanent <flask.session."
-"permanent>` is set, then :data:`PERMANENT_SESSION_LIFETIME` is used to set "
-"the expiration. Flask's default cookie implementation validates that the "
-"cryptographic signature is not older than this value. Lowering this value "
-"may help mitigate replay attacks, where intercepted cookies can be sent at "
-"a later time. ::"
+"For the session cookie, if :attr:`session.permanent "
+"<flask.session.permanent>` is set, then :data:`PERMANENT_SESSION_LIFETIME` "
+"is used to set the expiration. Flask's default cookie implementation "
+"validates that the cryptographic signature is not older than this value. "
+"Lowering this value may help mitigate replay attacks, where intercepted "
+"cookies can be sent at a later time. ::"
 msgstr ""
 
 #: ../../web-security.rst:229
@@ -340,8 +340,8 @@ msgstr ""
 
 #: ../../web-security.rst:245
 msgid ""
-"Be careful when enabling this, as it is very difficult to undo if you set "
-"up or upgrade your key incorrectly."
+"Be careful when enabling this, as it is very difficult to undo if you set up"
+" or upgrade your key incorrectly."
 msgstr ""
 
 #: ../../web-security.rst:248
@@ -368,9 +368,9 @@ msgstr ""
 
 #: ../../web-security.rst:262
 msgid ""
-"If you expect users to copy and paste untrusted code from your site, such "
-"as from comments posted by users on a technical blog, consider applying "
-"extra filtering, such as replacing all ``\\b`` characters."
+"If you expect users to copy and paste untrusted code from your site, such as"
+" from comments posted by users on a technical blog, consider applying extra "
+"filtering, such as replacing all ``\\b`` characters."
 msgstr ""
 
 #: ../../web-security.rst:270
@@ -378,6 +378,6 @@ msgid ""
 "Most modern terminals will warn about and remove hidden characters when "
 "pasting, so this isn't strictly necessary. It's also possible to craft "
 "dangerous commands in other ways that aren't possible to filter. Depending "
-"on your site's use case, it may be good to show a warning about copying "
-"code in general."
+"on your site's use case, it may be good to show a warning about copying code"
+" in general."
 msgstr ""
