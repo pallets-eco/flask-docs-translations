@@ -30,6 +30,11 @@ msgid ""
 "installing any other library, so you're using all the standard Python tools "
 "to manage everything."
 msgstr ""
+"Hacer que tu proyecto sea instalable significa que puedes construir un archivo *wheel* e "
+"instalarlo en otro entorno, al igual que instalaste Flask en el entorno de tu "
+"proyecto. Esto hace que el despliegue de tu proyecto sea igual que "
+"instalar cualquier otra biblioteca, por lo que estás utilizando todas las herramientas estándar de Python "
+"para gestionar todo."
 
 #: ../../tutorial/install.rst:9
 msgid ""
@@ -94,6 +99,8 @@ msgid ""
 "The setuptools build backend needs another file named ``MANIFEST.in`` to "
 "tell it about non-Python files to include."
 msgstr ""
+"El backend de compilación de setuptools necesita otro archivo llamado ``MANIFEST.in`` para "
+"informarle sobre los archivos no Python que debe incluir."
 
 #: ../../tutorial/install.rst:50
 msgid "``MANIFEST.in``"
