@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-20 15:20-0400\n"
-"PO-Revision-Date: 2024-05-20 15:46-0400\n"
+"PO-Revision-Date: 2024-05-20 16:35-0400\n"
 "Last-Translator: \n"
 "Language-Team: ko <LL@li.org>\n"
 "Language: ko\n"
@@ -35,16 +35,22 @@ msgid ""
 "edit or delete their own posts. You will be able to package and install "
 "the application on other computers."
 msgstr ""
+"이 튜토리얼에서는 Flaskr이라는 기본 블로그 애플리케이션을 만드는 방법을 "
+"안내합니다. 사용자는 등록하고, 로그인하고, 글을 작성하고, 자신의 글을 편"
+"집하거나 삭제할 수 있습니다. 애플리케이션을 패키징하여 다른 컴퓨터에 설치"
+"할 수 있습니다."
 
 #: ../../tutorial/index.rst:-1
 msgid "screenshot of index page"
-msgstr ""
+msgstr "색인 페이지 스크린샷"
 
 #: ../../tutorial/index.rst:30
 msgid ""
 "It's assumed that you're already familiar with Python. The `official "
 "tutorial`_ in the Python docs is a great way to learn or review first."
 msgstr ""
+"이미 Python에 익숙하다고 가정합니다. Python 문서의 '공식 튜토리얼'을 통"
+"해 먼저 배우거나 복습하는 것도 좋은 방법입니다."
 
 #: ../../tutorial/index.rst:35
 msgid ""
@@ -55,10 +61,16 @@ msgid ""
 "project, you might decide to use :doc:`/extensions` or other libraries "
 "to make some tasks simpler."
 msgstr ""
+"이 튜토리얼은 좋은 시작점을 제공하기 위해 만들어졌지만, Flask의 모든 기능"
+"을 다루지는 않습니다. :doc:`/quickstart`에서 Flask의 기능에 대한 개요를 "
+"살펴보고 자세한 내용을 알아보려면 문서를 자세히 살펴보세요. 이 튜토리얼"
+"은 Flask와 Python에서 제공하는 것만 사용합니다. 다른 프로젝트에서는 :doc:"
+"`/extensions` 또는 다른 라이브러리를 사용하여 일부 작업을 더 간단하게 만"
+"들 수 있습니다."
 
 #: ../../tutorial/index.rst:-1
 msgid "screenshot of login page"
-msgstr ""
+msgstr "로그인 페이지 스크린샷"
 
 #: ../../tutorial/index.rst:47
 msgid ""
