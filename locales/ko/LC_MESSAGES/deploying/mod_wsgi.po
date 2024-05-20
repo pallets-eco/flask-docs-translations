@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.0.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-20 15:20-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../deploying/mod_wsgi.rst:2
+msgid "mod_wsgi"
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:4
+msgid ""
+"`mod_wsgi`_ is a WSGI server integrated with the `Apache httpd`_ server. "
+"The modern `mod_wsgi-express`_ command makes it easy to configure and "
+"start the server without needing to write Apache httpd configuration."
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:8
+msgid "Tightly integrated with Apache httpd."
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:9
+msgid "Supports Windows directly."
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:10
+msgid "Requires a compiler and the Apache development headers to install."
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:11
+msgid "Does not require a reverse proxy setup."
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:13
+msgid ""
+"This page outlines the basics of running mod_wsgi-express, not the more "
+"complex installation and configuration with httpd. Be sure to read the "
+"`mod_wsgi-express`_, `mod_wsgi`_, and `Apache httpd`_ documentation to "
+"understand what features are available."
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:24
+msgid "Installing"
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:26
+msgid ""
+"Installing mod_wsgi requires a compiler and the Apache server and "
+"development headers installed. You will get an error if they are not. How"
+" to install them depends on the OS and package manager that you use."
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:30
+msgid "Create a virtualenv, install your application, then install ``mod_wsgi``."
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:43
+msgid "Running"
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:45
+msgid ""
+"The only argument to ``mod_wsgi-express`` specifies a script containing "
+"your Flask application, which must be called ``application``. You can "
+"write a small script to import your app with this name, or to create it "
+"if using the app factory pattern."
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:50 ../../deploying/mod_wsgi.rst:57
+msgid "``wsgi.py``"
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:64
+msgid "Now run the ``mod_wsgi-express start-server`` command."
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:70
+msgid ""
+"The ``--processes`` option specifies the number of worker processes to "
+"run; a starting value could be ``CPU * 2``."
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:73
+msgid ""
+"Logs for each request aren't show in the terminal. If an error occurs, "
+"its information is written to the error log file shown when starting the "
+"server."
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:79
+msgid "Binding Externally"
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:81
+msgid ""
+"Unlike the other WSGI servers in these docs, mod_wsgi can be run as root "
+"to bind to privileged ports like 80 and 443. However, it must be "
+"configured to drop permissions to a different user and group for the "
+"worker processes."
+msgstr ""
+
+#: ../../deploying/mod_wsgi.rst:86
+msgid ""
+"For example, if you created a ``hello`` user and group, you should "
+"install your virtualenv and application as that user, then tell mod_wsgi "
+"to drop to that user after starting."
+msgstr ""
