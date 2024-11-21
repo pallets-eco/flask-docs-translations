@@ -3,23 +3,25 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2024-11-22 03:55+0000\n"
+"Last-Translator: Benjamin LECHA <benjaminlecha@yahoo.fr>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/api/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/api.rst:2 84591d17c43147579d5eb589f573be7b
 msgid "API"
-msgstr ""
+msgstr "API"
 
 #: ../../project/docs/api.rst:6 012de3a87b8242bfb8c79703927d41b5
 msgid ""
@@ -27,6 +29,9 @@ msgid ""
 "parts where Flask depends on external libraries, we document the most "
 "important right here and provide links to the canonical documentation."
 msgstr ""
+"Cette partie de la documentation couvre toutes les interfaces de Flask. Pour "
+"les parties où Flask dépend de bibliothèques externes, nous documentons les "
+"plus importantes ici et fournissons des liens vers la documentation associée."
 
 #: ../../project/docs/api.rst:12 40a4a4243efc4f9696be423286c7c86d
 msgid "Application Object"
@@ -9351,4 +9356,3 @@ msgstr ""
 #~ " by default if FLASK_ENV=development or "
 #~ "FLASK_DEBUG=1."
 #~ msgstr ""
-
