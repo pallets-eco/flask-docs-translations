@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/testing.rst:2
+#: 86b5754bc9f94d18889791001c256f90
+msgid "Testing Flask Applications"
+msgstr ""
+
+#: ../../project/docs/testing.rst:4
+#: d16cf6038e184a5facf0b86b391f2791
+msgid "Flask provides utilities for testing an application. This documentation goes over techniques for working with different parts of the application in tests."
+msgstr ""
+
+#: ../../project/docs/testing.rst:8
+#: d68f12b54aec4a0db5fdc19caea45876
+msgid "We will use the `pytest`_ framework to set up and run our tests."
+msgstr ""
+
+#: ../../project/docs/testing.rst:16
+#: 95fb6dc6dad1444cb9bda2f6ba7f1ae8
+msgid "The :doc:`tutorial </tutorial/index>` goes over how to write tests for 100% coverage of the sample Flaskr blog application. See :doc:`the tutorial on tests </tutorial/tests>` for a detailed explanation of specific tests for an application."
+msgstr ""
+
+#: ../../project/docs/testing.rst:23
+#: d35fb0911048413c9bc60e779c6cc653
+msgid "Identifying Tests"
+msgstr ""
+
+#: ../../project/docs/testing.rst:25
+#: f8ed8445464046fa864d87555a144df2
+msgid "Tests are typically located in the ``tests`` folder. Tests are functions that start with ``test_``, in Python modules that start with ``test_``. Tests can also be further grouped in classes that start with ``Test``."
+msgstr ""
+
+#: ../../project/docs/testing.rst:29
+#: 4465387068224523a3431abe75457704
+msgid "It can be difficult to know what to test. Generally, try to test the code that you write, not the code of libraries that you use, since they are already tested. Try to extract complex behaviors as separate functions to test individually."
+msgstr ""
+
+#: ../../project/docs/testing.rst:36
+#: 0918d8c127b74fb2a9204e510f30e55d
+msgid "Fixtures"
+msgstr ""
+
+#: ../../project/docs/testing.rst:38
+#: 6f27f946ddb04fc49d16c9741ff0a33e
+msgid "Pytest *fixtures* allow writing pieces of code that are reusable across tests. A simple fixture returns a value, but a fixture can also do setup, yield a value, then do teardown. Fixtures for the application, test client, and CLI runner are shown below, they can be placed in ``tests/conftest.py``."
+msgstr ""
+
+#: ../../project/docs/testing.rst:44
+#: 49343d23a749432bb163a81c8a22ab87
+msgid "If you're using an :doc:`application factory </patterns/appfactories>`, define an ``app`` fixture to create and configure an app instance. You can add code before and after the ``yield`` to set up and tear down other resources, such as creating and clearing a database."
+msgstr ""
+
+#: ../../project/docs/testing.rst:50
+#: f25e0b0465e14f7eb52ef2dec7855bfd
+msgid "If you're not using a factory, you already have an app object you can import and configure directly. You can still use an ``app`` fixture to set up and tear down resources."
+msgstr ""
+
+#: ../../project/docs/testing.rst:84
+#: b21be58e440c4a1b8926b3b718f5113a
+msgid "Sending Requests with the Test Client"
+msgstr ""
+
+#: ../../project/docs/testing.rst:86
+#: 899710c2413e45329678278788973270
+msgid "The test client makes requests to the application without running a live server. Flask's client extends :doc:`Werkzeug's client <werkzeug:test>`, see those docs for additional information."
+msgstr ""
+
+#: ../../project/docs/testing.rst:91
+#: fb8af8b25e93474996ec3beb4a6f3dec
+msgid "The ``client`` has methods that match the common HTTP request methods, such as ``client.get()`` and ``client.post()``. They take many arguments for building the request; you can find the full documentation in :class:`~werkzeug.test.EnvironBuilder`. Typically you'll use ``path``, ``query_string``, ``headers``, and ``data`` or ``json``."
+msgstr ""
+
+#: ../../project/docs/testing.rst:97
+#: 448e5b7351644b519cc16a6817f72b9f
+msgid "To make a request, call the method the request should use with the path to the route to test. A :class:`~werkzeug.test.TestResponse` is returned to examine the response data. It has all the usual properties of a response object. You'll usually look at ``response.data``, which is the bytes returned by the view. If you want to use text, Werkzeug 2.1 provides ``response.text``, or use ``response.get_data(as_text=True)``."
+msgstr ""
+
+#: ../../project/docs/testing.rst:111
+#: 3c403a351ce841b8b53fdf911c29d616
+msgid "Pass a dict ``query_string={\"key\": \"value\", ...}`` to set arguments in the query string (after the ``?`` in the URL). Pass a dict ``headers={}`` to set request headers."
+msgstr ""
+
+#: ../../project/docs/testing.rst:115
+#: ee7570fd5e074d9982589988b1515585
+msgid "To send a request body in a POST or PUT request, pass a value to ``data``. If raw bytes are passed, that exact body is used. Usually, you'll pass a dict to set form data."
+msgstr ""
+
+#: ../../project/docs/testing.rst:121
+#: 2c254a61f55749f69e2303bf16cd47df
+msgid "Form Data"
+msgstr ""
+
+#: ../../project/docs/testing.rst:123
+#: 20c9a1ea496d4cd7af87d4ec2597caf1
+msgid "To send form data, pass a dict to ``data``. The ``Content-Type`` header will be set to ``multipart/form-data`` or ``application/x-www-form-urlencoded`` automatically."
+msgstr ""
+
+#: ../../project/docs/testing.rst:127
+#: eb74eb73c1174c12a2785a7239f0ef0a
+msgid "If a value is a file object opened for reading bytes (``\"rb\"`` mode), it will be treated as an uploaded file. To change the detected filename and content type, pass a ``(file, filename, content_type)`` tuple. File objects will be closed after making the request, so they do not need to use the usual ``with open() as f:`` pattern."
+msgstr ""
+
+#: ../../project/docs/testing.rst:133
+#: ef662159a39b4979b5d1302061aa671a
+msgid "It can be useful to store files in a ``tests/resources`` folder, then use ``pathlib.Path`` to get files relative to the current test file."
+msgstr ""
+
+#: ../../project/docs/testing.rst:153
+#: cffbfd08318543da9f34480164869c24
+msgid "JSON Data"
+msgstr ""
+
+#: ../../project/docs/testing.rst:155
+#: 476d3764dd5d43a286ff79ad2088f481
+msgid "To send JSON data, pass an object to ``json``. The ``Content-Type`` header will be set to ``application/json`` automatically."
+msgstr ""
+
+#: ../../project/docs/testing.rst:158
+#: 3964c0314f2a4923bee58f6869f818a2
+msgid "Similarly, if the response contains JSON data, the ``response.json`` attribute will contain the deserialized object."
+msgstr ""
+
+#: ../../project/docs/testing.rst:180
+#: 2bf449d71ae64ce084fa03af933bda79
+msgid "Following Redirects"
+msgstr ""
+
+#: ../../project/docs/testing.rst:182
+#: b16c8b1144484e2eb6a587528ce4602c
+msgid "By default, the client does not make additional requests if the response is a redirect. By passing ``follow_redirects=True`` to a request method, the client will continue to make requests until a non-redirect response is returned."
+msgstr ""
+
+#: ../../project/docs/testing.rst:187
+#: f9a11a2335b14d0db0d9b0d081250201
+msgid ":attr:`TestResponse.history <werkzeug.test.TestResponse.history>` is a tuple of the responses that led up to the final response. Each response has a :attr:`~werkzeug.test.TestResponse.request` attribute which records the request that produced that response."
+msgstr ""
+
+#: ../../project/docs/testing.rst:203
+#: 46509cacaae44c788d44dabc014c18c1
+msgid "Accessing and Modifying the Session"
+msgstr ""
+
+#: ../../project/docs/testing.rst:205
+#: b9ac7e3207404a4f9944fa322a27d861
+msgid "To access Flask's context variables, mainly :data:`~flask.session`, use the client in a ``with`` statement. The app and request context will remain active *after* making a request, until the ``with`` block ends."
+msgstr ""
+
+#: ../../project/docs/testing.rst:222
+#: 1032e66adc1e4cad8de6c3d00d01e3b7
+msgid "If you want to access or set a value in the session *before* making a request, use the client's :meth:`~flask.testing.FlaskClient.session_transaction` method in a ``with`` statement. It returns a session object, and will save the session once the block ends."
+msgstr ""
+
+#: ../../project/docs/testing.rst:246
+#: d61057de66574b9088bac890f311d0f6
+msgid "Running Commands with the CLI Runner"
+msgstr ""
+
+#: ../../project/docs/testing.rst:248
+#: 49e3d46289644b8cac37abcde08f52b5
+msgid "Flask provides :meth:`~flask.Flask.test_cli_runner` to create a :class:`~flask.testing.FlaskCliRunner`, which runs CLI commands in isolation and captures the output in a :class:`~click.testing.Result` object. Flask's runner extends :doc:`Click's runner <click:testing>`, see those docs for additional information."
+msgstr ""
+
+#: ../../project/docs/testing.rst:254
+#: 3421b4270a9b4e6181e1ef3ee42d98c0
+msgid "Use the runner's :meth:`~flask.testing.FlaskCliRunner.invoke` method to call commands in the same way they would be called with the ``flask`` command from the command line."
+msgstr ""
+
+#: ../../project/docs/testing.rst:276
+#: 553107178d0349aab51ceb54b07b3322
+msgid "Tests that depend on an Active Context"
+msgstr ""
+
+#: ../../project/docs/testing.rst:278
+#: 6b9510a2a79c46b1a8265cf89a31ce4b
+msgid "You may have functions that are called from views or commands, that expect an active :doc:`application context </appcontext>` or :doc:`request context  </reqcontext>` because they access ``request``, ``session``, or ``current_app``. Rather than testing them by making a request or invoking the command, you can create and activate a context directly."
+msgstr ""
+
+#: ../../project/docs/testing.rst:285
+#: b7d1bd7954c4493da2444dbaf73b4a2d
+msgid "Use ``with app.app_context()`` to push an application context. For example, database extensions usually require an active app context to make queries."
+msgstr ""
+
+#: ../../project/docs/testing.rst:295
+#: 4ec7c592d0ae4e119d712b6918501e78
+msgid "Use ``with app.test_request_context()`` to push a request context. It takes the same arguments as the test client's request methods."
+msgstr ""
+
+#: ../../project/docs/testing.rst:309
+#: 8865ef897e76420aa44ed151645058a3
+msgid "Creating a test request context doesn't run any of the Flask dispatching code, so ``before_request`` functions are not called. If you need to call these, usually it's better to make a full request instead. However, it's possible to call them manually."
+msgstr ""

@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/patterns/requestchecksum.rst:2
+#: fe3f23f959af4efabf37d769b9a2c6e6
+msgid "Request Content Checksums"
+msgstr ""
+
+#: ../../project/docs/patterns/requestchecksum.rst:4
+#: a371c256cbb24340951c76f42c124256
+msgid "Various pieces of code can consume the request data and preprocess it. For instance JSON data ends up on the request object already read and processed, form data ends up there as well but goes through a different code path.  This seems inconvenient when you want to calculate the checksum of the incoming request data.  This is necessary sometimes for some APIs."
+msgstr ""
+
+#: ../../project/docs/patterns/requestchecksum.rst:11
+#: 32acdc1e5eba4961b13ebd99bb142581
+msgid "Fortunately this is however very simple to change by wrapping the input stream."
+msgstr ""
+
+#: ../../project/docs/patterns/requestchecksum.rst:14
+#: 9a9f7b7a8e754115b862045be8336ade
+msgid "The following example calculates the SHA1 checksum of the incoming data as it gets read and stores it in the WSGI environment::"
+msgstr ""
+
+#: ../../project/docs/patterns/requestchecksum.rst:41
+#: 3001d49d59354b63a72f1faa92c4366b
+msgid "To use this, all you need to do is to hook the calculating stream in before the request starts consuming data.  (Eg: be careful accessing ``request.form`` or anything of that nature.  ``before_request_handlers`` for instance should be careful not to access it)."
+msgstr ""
+
+#: ../../project/docs/patterns/requestchecksum.rst:46
+#: ab182470935144cdb275a4cde37537eb
+msgid "Example usage::"
+msgstr ""

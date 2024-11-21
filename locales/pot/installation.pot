@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/installation.rst:2
+#: 791a32301f644c9e8942729df679662f
+msgid "Installation"
+msgstr ""
+
+#: ../../project/docs/installation.rst:6
+#: c1384d9930ba4ebb9c9d0f711b255183
+msgid "Python Version"
+msgstr ""
+
+#: ../../project/docs/installation.rst:8
+#: 9de49b1dbb0944e7ac2a371afba0ff0a
+msgid "We recommend using the latest version of Python. Flask supports Python 3.9 and newer."
+msgstr ""
+
+#: ../../project/docs/installation.rst:12
+#: 4c2422928253437e9faf99ca8725119d
+msgid "Dependencies"
+msgstr ""
+
+#: ../../project/docs/installation.rst:14
+#: 52e6143bb1594b678d911b0f4925c442
+msgid "These distributions will be installed automatically when installing Flask."
+msgstr ""
+
+#: ../../project/docs/installation.rst:16
+#: dae5182654fa472ca5fd0e1fcdcb7c60
+msgid "`Werkzeug`_ implements WSGI, the standard Python interface between applications and servers."
+msgstr ""
+
+#: ../../project/docs/installation.rst:18
+#: f9bb0fe224ff42c8a5bb98e7a456c264
+msgid "`Jinja`_ is a template language that renders the pages your application serves."
+msgstr ""
+
+#: ../../project/docs/installation.rst:20
+#: 028ce75d6057468aa76f73806ee5cc9e
+msgid "`MarkupSafe`_ comes with Jinja. It escapes untrusted input when rendering templates to avoid injection attacks."
+msgstr ""
+
+#: ../../project/docs/installation.rst:22
+#: 203c536414f2422ea6dab0e56c9ea917
+msgid "`ItsDangerous`_ securely signs data to ensure its integrity. This is used to protect Flask's session cookie."
+msgstr ""
+
+#: ../../project/docs/installation.rst:24
+#: d525313fda1e4e3cb141601289eb30cf
+msgid "`Click`_ is a framework for writing command line applications. It provides the ``flask`` command and allows adding custom management commands."
+msgstr ""
+
+#: ../../project/docs/installation.rst:26
+#: 7dda6480691b481ca111e84c2cbdf631
+msgid "`Blinker`_ provides support for :doc:`signals`."
+msgstr ""
+
+#: ../../project/docs/installation.rst:37
+#: 2eb04e943d0e4a22b9b1a865831b7a9d
+msgid "Optional dependencies"
+msgstr ""
+
+#: ../../project/docs/installation.rst:39
+#: 10266500378c4f2f9cd66ae26849f321
+msgid "These distributions will not be installed automatically. Flask will detect and use them if you install them."
+msgstr ""
+
+#: ../../project/docs/installation.rst:42
+#: c9dcf207e51249cd9a4a4782d4f8e3f8
+msgid "`python-dotenv`_ enables support for :ref:`dotenv` when running ``flask`` commands."
+msgstr ""
+
+#: ../../project/docs/installation.rst:44
+#: 5cd323b70b0e472db5b0233eb366f4b1
+msgid "`Watchdog`_ provides a faster, more efficient reloader for the development server."
+msgstr ""
+
+#: ../../project/docs/installation.rst:52
+#: bd207b7fbf754b1281da6c1d07e194d9
+msgid "greenlet"
+msgstr ""
+
+#: ../../project/docs/installation.rst:54
+#: 63b639d89b044270a82a8f53a3693ae9
+msgid "You may choose to use gevent or eventlet with your application. In this case, greenlet>=1.0 is required. When using PyPy, PyPy>=7.3.7 is required."
+msgstr ""
+
+#: ../../project/docs/installation.rst:58
+#: 762fdf98d0aa425b85e2c6f8b6a4e217
+msgid "These are not minimum supported versions, they only indicate the first versions that added necessary features. You should use the latest versions of each."
+msgstr ""
+
+#: ../../project/docs/installation.rst:64
+#: 8a4ad55703d14f12bd5c3f6e796a3330
+msgid "Virtual environments"
+msgstr ""
+
+#: ../../project/docs/installation.rst:66
+#: 779ac8c09cf84a2dafc459811f81f7b9
+msgid "Use a virtual environment to manage the dependencies for your project, both in development and in production."
+msgstr ""
+
+#: ../../project/docs/installation.rst:69
+#: 9906f60b34084d859208ea44d5c2f66c
+msgid "What problem does a virtual environment solve? The more Python projects you have, the more likely it is that you need to work with different versions of Python libraries, or even Python itself. Newer versions of libraries for one project can break compatibility in another project."
+msgstr ""
+
+#: ../../project/docs/installation.rst:74
+#: 714b5e45186e40a3bbc1651d378ec9c3
+msgid "Virtual environments are independent groups of Python libraries, one for each project. Packages installed for one project will not affect other projects or the operating system's packages."
+msgstr ""
+
+#: ../../project/docs/installation.rst:78
+#: 954d809d18444932ab07af38c0589019
+msgid "Python comes bundled with the :mod:`venv` module to create virtual environments."
+msgstr ""
+
+#: ../../project/docs/installation.rst:85
+#: a186134a4eea46f299e0a6d0aac8dc95
+msgid "Create an environment"
+msgstr ""
+
+#: ../../project/docs/installation.rst:87
+#: 5d430b20fa8345f7b9d6754f8f235548
+msgid "Create a project folder and a :file:`.venv` folder within:"
+msgstr ""
+
+#: ../../project/docs/installation.rst:91
+#: ../../project/docs/installation.rst:117
+#: 85002bd03fce4b6e8f857899278f7db6
+#: dc46a4858ddd4f03b1be2344ed01cc81
+msgid "macOS/Linux"
+msgstr ""
+
+#: ../../project/docs/installation.rst:99
+#: ../../project/docs/installation.rst:123
+#: aa68893b78a8428e89385f0c0840e489
+#: ae7e149511d045b2a0c3e77082c532b7
+msgid "Windows"
+msgstr ""
+
+#: ../../project/docs/installation.rst:111
+#: b6af5964da0d4b708f1fb7267452be8f
+msgid "Activate the environment"
+msgstr ""
+
+#: ../../project/docs/installation.rst:113
+#: 9ab98cd74edb4ee5942c0d8118aca44a
+msgid "Before you work on your project, activate the corresponding environment:"
+msgstr ""
+
+#: ../../project/docs/installation.rst:129
+#: 9b75187f3bbe455dace07ed8f1a16ec2
+msgid "Your shell prompt will change to show the name of the activated environment."
+msgstr ""
+
+#: ../../project/docs/installation.rst:134
+#: e6e17d27ce9f426c88d96cf8a190753b
+msgid "Install Flask"
+msgstr ""
+
+#: ../../project/docs/installation.rst:136
+#: dcb17e3595af45c185de6bc1c0bb2b8d
+msgid "Within the activated environment, use the following command to install Flask:"
+msgstr ""
+
+#: ../../project/docs/installation.rst:143
+#: 8d617b45dcca44748b2e08d8bf58ede9
+msgid "Flask is now installed. Check out the :doc:`/quickstart` or go to the :doc:`Documentation Overview </index>`."
+msgstr ""

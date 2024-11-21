@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/deploying/index.rst:2
+#: ea5fb6d6d8b04a68a9be55d779e1e8e3
+msgid "Deploying to Production"
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:4
+#: 2cda12238e3d4772b2c0511b69eda955
+msgid "After developing your application, you'll want to make it available publicly to other users. When you're developing locally, you're probably using the built-in development server, debugger, and reloader. These should not be used in production. Instead, you should use a dedicated WSGI server or hosting platform, some of which will be described here."
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:10
+#: 3d855a807967463a8ae45443cc4abb66
+msgid "\"Production\" means \"not development\", which applies whether you're serving your application publicly to millions of users or privately / locally to a single user. **Do not use the development server when deploying to production. It is intended for use only during local development. It is not designed to be particularly secure, stable, or efficient.**"
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:18
+#: aeb6f6d0d9bb412d8621debaa2e9ceb0
+msgid "Self-Hosted Options"
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:20
+#: 2915c90abb6f408890d907e24acd3116
+msgid "Flask is a WSGI *application*. A WSGI *server* is used to run the application, converting incoming HTTP requests to the standard WSGI environ, and converting outgoing WSGI responses to HTTP responses."
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:24
+#: 9bb2e82c9fe54a83bbe30842540e3f61
+msgid "The primary goal of these docs is to familiarize you with the concepts involved in running a WSGI application using a production WSGI server and HTTP server. There are many WSGI servers and HTTP servers, with many configuration possibilities. The pages below discuss the most common servers, and show the basics of running each one. The next section discusses platforms that can manage this for you."
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:42
+#: b1da51dc9052459992529ed17fb9d2ff
+msgid "WSGI servers have HTTP servers built-in. However, a dedicated HTTP server may be safer, more efficient, or more capable. Putting an HTTP server in front of the WSGI server is called a \"reverse proxy.\""
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:53
+#: 4818d5190c7246638413b1dbb1dc34b0
+msgid "This list is not exhaustive, and you should evaluate these and other servers based on your application's needs. Different servers will have different capabilities, configuration, and support."
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:59
+#: 79589a888dbd4c59bbaab112bb2ccd01
+msgid "Hosting Platforms"
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:61
+#: 76bbdc02196344d1b9e73ff5274e5324
+msgid "There are many services available for hosting web applications without needing to maintain your own server, networking, domain, etc. Some services may have a free tier up to a certain time or bandwidth. Many of these services use one of the WSGI servers described above, or a similar interface. The links below are for some of the most common platforms, which have instructions for Flask, WSGI, or Python."
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:68
+#: d4b21d72522c40598e14c44e32165f78
+msgid "`PythonAnywhere <https://help.pythonanywhere.com/pages/Flask/>`_"
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:69
+#: e49a9adc1b0244f094fdd2f2712b188e
+msgid "`Google App Engine <https://cloud.google.com/appengine/docs/standard/python3/building-app>`_"
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:70
+#: 930841b37df7471fad49c1f608333017
+msgid "`Google Cloud Run <https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service>`_"
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:71
+#: 73aa458a13d84d6a871b2f3c3deb9824
+msgid "`AWS Elastic Beanstalk <https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html>`_"
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:72
+#: 6eb24a691ce84ec6a62c04b4c9319c81
+msgid "`Microsoft Azure <https://docs.microsoft.com/en-us/azure/app-service/quickstart-python>`_"
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:74
+#: e8da05baa26e4501913f340c2cce1013
+msgid "This list is not exhaustive, and you should evaluate these and other services based on your application's needs. Different services will have different capabilities, configuration, pricing, and support."
+msgstr ""
+
+#: ../../project/docs/deploying/index.rst:78
+#: 87c1f7dc211c4a6ba7c33de2f91efe40
+msgid "You'll probably need to :doc:`proxy_fix` when using most hosting platforms."
+msgstr ""

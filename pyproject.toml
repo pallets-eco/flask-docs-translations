@@ -1,0 +1,15 @@
+[project]
+name = "flask-docs-translations"
+version = "0"
+requires-python = ">=3.13"
+dependencies = [
+    "pallets-sphinx-themes>=2.3.0",
+    "sphinx-intl>=2.3.0",
+    "sphinx>=8.1.3",
+    "sphinx-tabs>=3.4.7",
+    "sphinxcontrib-log-cabinet>=1.0.1",
+    "flask",
+]
+
+[tool.uv.sources]
+flask = { path = "project" }

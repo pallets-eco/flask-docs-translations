@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/patterns/lazyloading.rst:2
+#: e8aa929d9497474fb337012a672333f3
+msgid "Lazily Loading Views"
+msgstr ""
+
+#: ../../project/docs/patterns/lazyloading.rst:4
+#: de4d38c6fe2d4875a75eac50649c480c
+msgid "Flask is usually used with the decorators.  Decorators are simple and you have the URL right next to the function that is called for that specific URL.  However there is a downside to this approach: it means all your code that uses decorators has to be imported upfront or Flask will never actually find your function."
+msgstr ""
+
+#: ../../project/docs/patterns/lazyloading.rst:10
+#: 30069e4a2dd44811a00a7d9b8ef6fb5d
+msgid "This can be a problem if your application has to import quick.  It might have to do that on systems like Google's App Engine or other systems.  So if you suddenly notice that your application outgrows this approach you can fall back to a centralized URL mapping."
+msgstr ""
+
+#: ../../project/docs/patterns/lazyloading.rst:15
+#: 0e88aea5404e45918efc5584c9c572d0
+msgid "The system that enables having a central URL map is the :meth:`~flask.Flask.add_url_rule` function.  Instead of using decorators, you have a file that sets up the application with all URLs."
+msgstr ""
+
+#: ../../project/docs/patterns/lazyloading.rst:20
+#: e21ee306d3c14f499039480730b6af9d
+msgid "Converting to Centralized URL Map"
+msgstr ""
+
+#: ../../project/docs/patterns/lazyloading.rst:22
+#: b2bf4f40694744018f057cd2d6cc05e9
+msgid "Imagine the current application looks somewhat like this::"
+msgstr ""
+
+#: ../../project/docs/patterns/lazyloading.rst:35
+#: 3ba701a1d3704284b3a1ae2893e78907
+msgid "Then, with the centralized approach you would have one file with the views (:file:`views.py`) but without any decorator::"
+msgstr ""
+
+#: ../../project/docs/patterns/lazyloading.rst:44
+#: 913fbae3e3e34b19ba3916ce777f6b46
+msgid "And then a file that sets up an application which maps the functions to URLs::"
+msgstr ""
+
+#: ../../project/docs/patterns/lazyloading.rst:54
+#: c89c1e4512a84944a990bf27467dd861
+msgid "Loading Late"
+msgstr ""
+
+#: ../../project/docs/patterns/lazyloading.rst:56
+#: 9e216120e9c3494685618c48bbdbb44a
+msgid "So far we only split up the views and the routing, but the module is still loaded upfront.  The trick is to actually load the view function as needed. This can be accomplished with a helper class that behaves just like a function but internally imports the real function on first use::"
+msgstr ""
+
+#: ../../project/docs/patterns/lazyloading.rst:76
+#: f92d362af18b462d9f8d8a354f0de89f
+msgid "What's important here is is that `__module__` and `__name__` are properly set.  This is used by Flask internally to figure out how to name the URL rules in case you don't provide a name for the rule yourself."
+msgstr ""
+
+#: ../../project/docs/patterns/lazyloading.rst:80
+#: 9adad2caa8e944cd9978916eeabebe24
+msgid "Then you can define your central place to combine the views like this::"
+msgstr ""
+
+#: ../../project/docs/patterns/lazyloading.rst:90
+#: d88fdd3d6e5544af8fd44d163d946ff0
+msgid "You can further optimize this in terms of amount of keystrokes needed to write this by having a function that calls into :meth:`~flask.Flask.add_url_rule` by prefixing a string with the project name and a dot, and by wrapping `view_func` in a `LazyView` as needed.  ::"
+msgstr ""
+
+#: ../../project/docs/patterns/lazyloading.rst:107
+#: 01f903fad2a34806baccae552048f54a
+msgid "One thing to keep in mind is that before and after request handlers have to be in a file that is imported upfront to work properly on the first request.  The same goes for any kind of remaining decorator."
+msgstr ""

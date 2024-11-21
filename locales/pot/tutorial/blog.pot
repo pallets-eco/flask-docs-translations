@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/tutorial/blog.rst:4
+#: 790576ea81f34bc38505d3913df7c523
+msgid "Blog Blueprint"
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:6
+#: e3a009b1afe34cbca306850010e036ad
+msgid "You'll use the same techniques you learned about when writing the authentication blueprint to write the blog blueprint. The blog should list all posts, allow logged in users to create posts, and allow the author of a post to edit or delete it."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:11
+#: e28150a9ddb445d9ab36f9feeeb58c61
+msgid "As you implement each view, keep the development server running. As you save your changes, try going to the URL in your browser and testing them out."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:16
+#: cca15b2691b148cfabc8d79cb5a20237
+msgid "The Blueprint"
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:18
+#: 6682d0cb9e9a434ba00756923c257d94
+msgid "Define the blueprint and register it in the application factory."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:20
+#: ../../project/docs/tutorial/blog.rst:76
+#: ../../project/docs/tutorial/blog.rst:142
+#: ../../project/docs/tutorial/blog.rst:198
+#: ../../project/docs/tutorial/blog.rst:228
+#: ../../project/docs/tutorial/blog.rst:320
+#: 11c4da2249fc43989b97457bf2d6e26b
+#: 6d8f325105914dad9bf2d2573bf36825
+#: e757c012215d48f796e8c1733434fef6
+#: 7a26de3339ce4a36b85a3cbd1ceedbd3
+#: 9f0e59054c9e40fe83e8006fc2b77d1a
+#: 19dd9fad19e54a37b97abd16d40170ae
+msgid "``flaskr/blog.py``"
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:33
+#: b0375d3a800f42b6a0cea1b40a3e7249
+msgid "Import and register the blueprint from the factory using :meth:`app.register_blueprint() <Flask.register_blueprint>`. Place the new code at the end of the factory function before returning the app."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:37
+#: 1bd76dbb94b94c97b6fe5ff9172b7231
+msgid "``flaskr/__init__.py``"
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:51
+#: 4a1779337b8749d6b3405c747403c02f
+msgid "Unlike the auth blueprint, the blog blueprint does not have a ``url_prefix``. So the ``index`` view will be at ``/``, the ``create`` view at ``/create``, and so on. The blog is the main feature of Flaskr, so it makes sense that the blog index will be the main index."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:56
+#: eef77d6c8d94487caa968fa078dd740d
+msgid "However, the endpoint for the ``index`` view defined below will be ``blog.index``. Some of the authentication views referred to a plain ``index`` endpoint. :meth:`app.add_url_rule() <Flask.add_url_rule>` associates the endpoint name ``'index'`` with the ``/`` url so that ``url_for('index')`` or ``url_for('blog.index')`` will both work, generating the same ``/`` URL either way."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:63
+#: b248df9ed7ca4542a3519b06cee9442d
+msgid "In another application you might give the blog blueprint a ``url_prefix`` and define a separate ``index`` view in the application factory, similar to the ``hello`` view. Then the ``index`` and ``blog.index`` endpoints and URLs would be different."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:70
+#: d8ca24af9b6a43619de605a38ff1446e
+msgid "Index"
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:72
+#: 6f570446b4b94d09a7bc2fab5b932242
+msgid "The index will show all of the posts, most recent first. A ``JOIN`` is used so that the author information from the ``user`` table is available in the result."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:89
+#: 3e426e93678140619dfd06a88d271eee
+msgid "``flaskr/templates/blog/index.html``"
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:121
+#: 04a816d436f64418bb9a90738f9d6616
+msgid "When a user is logged in, the ``header`` block adds a link to the ``create`` view. When the user is the author of a post, they'll see an \"Edit\" link to the ``update`` view for that post. ``loop.last`` is a special variable available inside `Jinja for loops`_. It's used to display a line after each post except the last one, to visually separate them."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:132
+#: a8b42d9bc5bf4274adec1252def442c1
+msgid "Create"
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:134
+#: 74817038af7841c7a346d4e7501dfc2a
+msgid "The ``create`` view works the same as the auth ``register`` view. Either the form is displayed, or the posted data is validated and the post is added to the database or an error is shown."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:138
+#: 6104045333c04d0faf78daf3c9d88557
+msgid "The ``login_required`` decorator you wrote earlier is used on the blog views. A user must be logged in to visit these views, otherwise they will be redirected to the login page."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:170
+#: 41a331a141c34742af8c28d2a0d766c3
+msgid "``flaskr/templates/blog/create.html``"
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:191
+#: f44665c54ac947a98dbebc59b53247ee
+msgid "Update"
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:193
+#: a851d5578f414ce7850b6716c837f628
+msgid "Both the ``update`` and ``delete`` views will need to fetch a ``post`` by ``id`` and check if the author matches the logged in user. To avoid duplicating code, you can write a function to get the ``post`` and call it from each view."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:217
+#: 25bcbbb6618c4810ab93ac47d9377e3d
+msgid ":func:`abort` will raise a special exception that returns an HTTP status code. It takes an optional message to show with the error, otherwise a default message is used. ``404`` means \"Not Found\", and ``403`` means \"Forbidden\". (``401`` means \"Unauthorized\", but you redirect to the login page instead of returning that status.)"
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:223
+#: 3e73458de7514ea9ac4d6b6a1158dd6c
+msgid "The ``check_author`` argument is defined so that the function can be used to get a ``post`` without checking the author. This would be useful if you wrote a view to show an individual post on a page, where the user doesn't matter because they're not modifying the post."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:258
+#: 340435546f5344c495c9bad8270309d1
+msgid "Unlike the views you've written so far, the ``update`` function takes an argument, ``id``. That corresponds to the ``<int:id>`` in the route. A real URL will look like ``/1/update``. Flask will capture the ``1``, ensure it's an :class:`int`, and pass it as the ``id`` argument. If you don't specify ``int:`` and instead do ``<id>``, it will be a string. To generate a URL to the update page, :func:`url_for` needs to be passed the ``id`` so it knows what to fill in: ``url_for('blog.update', id=post['id'])``. This is also in the ``index.html`` file above."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:268
+#: f89cbf4c1713480bb798b938ffbaaf93
+msgid "The ``create`` and ``update`` views look very similar. The main difference is that the ``update`` view uses a ``post`` object and an ``UPDATE`` query instead of an ``INSERT``. With some clever refactoring, you could use one view and template for both actions, but for the tutorial it's clearer to keep them separate."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:274
+#: 1eeba89042034c3e83166edd318000c2
+msgid "``flaskr/templates/blog/update.html``"
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:298
+#: ad1d3a25beff46569ce2b5dfb6bf6b41
+msgid "This template has two forms. The first posts the edited data to the current page (``/<id>/update``). The other form contains only a button and specifies an ``action`` attribute that posts to the delete view instead. The button uses some JavaScript to show a confirmation dialog before submitting."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:304
+#: 7c49d37210544707a260979e51cd5c19
+msgid "The pattern ``{{ request.form['title'] or post['title'] }}`` is used to choose what data appears in the form. When the form hasn't been submitted, the original ``post`` data appears, but if invalid form data was posted you want to display that so the user can fix the error, so ``request.form`` is used instead. :data:`request` is another variable that's automatically available in templates."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:313
+#: fba229d3b72746979ef1f30f31f055ad
+msgid "Delete"
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:315
+#: 6f16051f3ff644ba983ec98d1bdb28d5
+msgid "The delete view doesn't have its own template, the delete button is part of ``update.html`` and posts to the ``/<id>/delete`` URL. Since there is no template, it will only handle the ``POST`` method and then redirect to the ``index`` view."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:332
+#: f650549be0d54f28a23f92854018cc82
+msgid "Congratulations, you've now finished writing your application! Take some time to try out everything in the browser. However, there's still more to do before the project is complete."
+msgstr ""
+
+#: ../../project/docs/tutorial/blog.rst:336
+#: f7ed25c09c084f8f869e34251e71670f
+msgid "Continue to :doc:`install`."
+msgstr ""

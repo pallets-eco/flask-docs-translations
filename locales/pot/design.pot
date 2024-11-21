@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/design.rst:2
+#: 8a254eaa3b7e4bbb804a6bb6ee4444ac
+msgid "Design Decisions in Flask"
+msgstr ""
+
+#: ../../project/docs/design.rst:4
+#: cb2e0eb8458f4f7abad8859f819b65c0
+msgid "If you are curious why Flask does certain things the way it does and not differently, this section is for you.  This should give you an idea about some of the design decisions that may appear arbitrary and surprising at first, especially in direct comparison with other frameworks."
+msgstr ""
+
+#: ../../project/docs/design.rst:11
+#: b424af8aac004576bbe5c84c681f769f
+msgid "The Explicit Application Object"
+msgstr ""
+
+#: ../../project/docs/design.rst:13
+#: aab3648dd14f405d8f68e1a7405aa2c3
+msgid "A Python web application based on WSGI has to have one central callable object that implements the actual application.  In Flask this is an instance of the :class:`~flask.Flask` class.  Each Flask application has to create an instance of this class itself and pass it the name of the module, but why can't Flask do that itself?"
+msgstr ""
+
+#: ../../project/docs/design.rst:19
+#: 3d41cfb59afe41eb82eb89a118fa3d4c
+msgid "Without such an explicit application object the following code::"
+msgstr ""
+
+#: ../../project/docs/design.rst:28
+#: aa16c700bd734cf68d9d796cabc716c8
+msgid "Would look like this instead::"
+msgstr ""
+
+#: ../../project/docs/design.rst:36
+#: 8216a08714944a07bda7a11f2fdda1a6
+msgid "There are three major reasons for this.  The most important one is that implicit application objects require that there may only be one instance at the time.  There are ways to fake multiple applications with a single application object, like maintaining a stack of applications, but this causes some problems I won't outline here in detail.  Now the question is: when does a microframework need more than one application at the same time?  A good example for this is unit testing.  When you want to test something it can be very helpful to create a minimal application to test specific behavior.  When the application object is deleted everything it allocated will be freed again."
+msgstr ""
+
+#: ../../project/docs/design.rst:47
+#: f18cba4c4f204a99bd01a0e50f0a1149
+msgid "Another thing that becomes possible when you have an explicit object lying around in your code is that you can subclass the base class (:class:`~flask.Flask`) to alter specific behavior.  This would not be possible without hacks if the object were created ahead of time for you based on a class that is not exposed to you."
+msgstr ""
+
+#: ../../project/docs/design.rst:53
+#: d4410e3fbc9c4039833c6b4853bfdc9e
+msgid "But there is another very important reason why Flask depends on an explicit instantiation of that class: the package name.  Whenever you create a Flask instance you usually pass it `__name__` as package name. Flask depends on that information to properly load resources relative to your module.  With Python's outstanding support for reflection it can then access the package to figure out where the templates and static files are stored (see :meth:`~flask.Flask.open_resource`).  Now obviously there are frameworks around that do not need any configuration and will still be able to load templates relative to your application module.  But they have to use the current working directory for that, which is a very unreliable way to determine where the application is.  The current working directory is process-wide and if you are running multiple applications in one process (which could happen in a webserver without you knowing) the paths will be off.  Worse: many webservers do not set the working directory to the directory of your application but to the document root which does not have to be the same folder."
+msgstr ""
+
+#: ../../project/docs/design.rst:70
+#: 50cd5d5d87ef4d51aa6179012552e46b
+msgid "The third reason is \"explicit is better than implicit\".  That object is your WSGI application, you don't have to remember anything else.  If you want to apply a WSGI middleware, just wrap it and you're done (though there are better ways to do that so that you do not lose the reference to the application object :meth:`~flask.Flask.wsgi_app`)."
+msgstr ""
+
+#: ../../project/docs/design.rst:76
+#: f72b887976224e4aa6fb19e8f0590597
+msgid "Furthermore this design makes it possible to use a factory function to create the application which is very helpful for unit testing and similar things (:doc:`/patterns/appfactories`)."
+msgstr ""
+
+#: ../../project/docs/design.rst:81
+#: 14f8f784ac9f4f57853b9bff815f7a49
+msgid "The Routing System"
+msgstr ""
+
+#: ../../project/docs/design.rst:83
+#: 9b203a9a977f4763b6b36589ca50a2f5
+msgid "Flask uses the Werkzeug routing system which was designed to automatically order routes by complexity.  This means that you can declare routes in arbitrary order and they will still work as expected.  This is a requirement if you want to properly implement decorator based routing since decorators could be fired in undefined order when the application is split into multiple modules."
+msgstr ""
+
+#: ../../project/docs/design.rst:90
+#: 8798ec78492b49c1b09799863f6690f0
+msgid "Another design decision with the Werkzeug routing system is that routes in Werkzeug try to ensure that URLs are unique.  Werkzeug will go quite far with that in that it will automatically redirect to a canonical URL if a route is ambiguous."
+msgstr ""
+
+#: ../../project/docs/design.rst:97
+#: 7ec90911b3824bc2afbcb8cbf72d16a2
+msgid "One Template Engine"
+msgstr ""
+
+#: ../../project/docs/design.rst:99
+#: 31a06edb91f3446b9385c8fc7643db4e
+msgid "Flask decides on one template engine: Jinja2.  Why doesn't Flask have a pluggable template engine interface?  You can obviously use a different template engine, but Flask will still configure Jinja2 for you.  While that limitation that Jinja2 is *always* configured will probably go away, the decision to bundle one template engine and use that will not."
+msgstr ""
+
+#: ../../project/docs/design.rst:105
+#: ff1dee1756094048b124d800891ddb56
+msgid "Template engines are like programming languages and each of those engines has a certain understanding about how things work.  On the surface they all work the same: you tell the engine to evaluate a template with a set of variables and take the return value as string."
+msgstr ""
+
+#: ../../project/docs/design.rst:110
+#: fd64f5479930423496b46e70cae0e414
+msgid "But that's about where similarities end. Jinja2 for example has an extensive filter system, a certain way to do template inheritance, support for reusable blocks (macros) that can be used from inside templates and also from Python code, supports iterative template rendering, configurable syntax and more. On the other hand an engine like Genshi is based on XML stream evaluation, template inheritance by taking the availability of XPath into account and more. Mako on the other hand treats templates similar to Python modules."
+msgstr ""
+
+#: ../../project/docs/design.rst:119
+#: c7117cc426144d51a51d07d9d4584d8e
+msgid "When it comes to connecting a template engine with an application or framework there is more than just rendering templates.  For instance, Flask uses Jinja2's extensive autoescaping support.  Also it provides ways to access macros from Jinja2 templates."
+msgstr ""
+
+#: ../../project/docs/design.rst:124
+#: 30647f3936b649b984969186f7611e8f
+msgid "A template abstraction layer that would not take the unique features of the template engines away is a science on its own and a too large undertaking for a microframework like Flask."
+msgstr ""
+
+#: ../../project/docs/design.rst:128
+#: 91508be730524dc6a937848ed82578d8
+msgid "Furthermore extensions can then easily depend on one template language being present.  You can easily use your own templating language, but an extension could still depend on Jinja itself."
+msgstr ""
+
+#: ../../project/docs/design.rst:134
+#: 309983fa054b40f0b3245e87dc03aeed
+msgid "What does \"micro\" mean?"
+msgstr ""
+
+#: ../../project/docs/design.rst:136
+#: e5992c3d0b5b40b289ca623255b26cda
+msgid "“Micro” does not mean that your whole web application has to fit into a single Python file (although it certainly can), nor does it mean that Flask is lacking in functionality. The \"micro\" in microframework means Flask aims to keep the core simple but extensible. Flask won't make many decisions for you, such as what database to use. Those decisions that it does make, such as what templating engine to use, are easy to change.  Everything else is up to you, so that Flask can be everything you need and nothing you don't."
+msgstr ""
+
+#: ../../project/docs/design.rst:144
+#: df5213d28c8a476c865e479504b5e37a
+msgid "By default, Flask does not include a database abstraction layer, form validation or anything else where different libraries already exist that can handle that. Instead, Flask supports extensions to add such functionality to your application as if it was implemented in Flask itself. Numerous extensions provide database integration, form validation, upload handling, various open authentication technologies, and more. Flask may be \"micro\", but it's ready for production use on a variety of needs."
+msgstr ""
+
+#: ../../project/docs/design.rst:152
+#: 683cc2244d8049fda26fe0a18e64ceaa
+msgid "Why does Flask call itself a microframework and yet it depends on two libraries (namely Werkzeug and Jinja2).  Why shouldn't it?  If we look over to the Ruby side of web development there we have a protocol very similar to WSGI.  Just that it's called Rack there, but besides that it looks very much like a WSGI rendition for Ruby.  But nearly all applications in Ruby land do not work with Rack directly, but on top of a library with the same name.  This Rack library has two equivalents in Python: WebOb (formerly Paste) and Werkzeug.  Paste is still around but from my understanding it's sort of deprecated in favour of WebOb.  The development of WebOb and Werkzeug started side by side with similar ideas in mind: be a good implementation of WSGI for other applications to take advantage."
+msgstr ""
+
+#: ../../project/docs/design.rst:165
+#: c0e6469b14924292a2e592bf0c8776f6
+msgid "Flask is a framework that takes advantage of the work already done by Werkzeug to properly interface WSGI (which can be a complex task at times).  Thanks to recent developments in the Python package infrastructure, packages with dependencies are no longer an issue and there are very few reasons against having libraries that depend on others."
+msgstr ""
+
+#: ../../project/docs/design.rst:173
+#: f1842b54263f4b2b95fbe6ba3ea7d551
+msgid "Thread Locals"
+msgstr ""
+
+#: ../../project/docs/design.rst:175
+#: 8c427324d9eb41eab4402d0b3a8a6118
+msgid "Flask uses thread local objects (context local objects in fact, they support greenlet contexts as well) for request, session and an extra object you can put your own things on (:data:`~flask.g`).  Why is that and isn't that a bad idea?"
+msgstr ""
+
+#: ../../project/docs/design.rst:180
+#: dcb9b8acfb94458ca20a9ac5c88d8a0d
+msgid "Yes it is usually not such a bright idea to use thread locals.  They cause troubles for servers that are not based on the concept of threads and make large applications harder to maintain.  However Flask is just not designed for large applications or asynchronous servers.  Flask wants to make it quick and easy to write a traditional web application."
+msgstr ""
+
+#: ../../project/docs/design.rst:188
+#: 01be264695974b7fad526c74d915d651
+msgid "Async/await and ASGI support"
+msgstr ""
+
+#: ../../project/docs/design.rst:190
+#: e3c1f4680c9849ef8a43f51fa7dddd55
+msgid "Flask supports ``async`` coroutines for view functions by executing the coroutine on a separate thread instead of using an event loop on the main thread as an async-first (ASGI) framework would. This is necessary for Flask to remain backwards compatible with extensions and code built before ``async`` was introduced into Python. This compromise introduces a performance cost compared with the ASGI frameworks, due to the overhead of the threads."
+msgstr ""
+
+#: ../../project/docs/design.rst:198
+#: a6b02f0f6c5c4b229a7549a84620eb25
+msgid "Due to how tied to WSGI Flask's code is, it's not clear if it's possible to make the ``Flask`` class support ASGI and WSGI at the same time. Work is currently being done in Werkzeug to work with ASGI, which may eventually enable support in Flask as well."
+msgstr ""
+
+#: ../../project/docs/design.rst:203
+#: fc2a33c1a2cc4ad9a7d16d8a2a109260
+msgid "See :doc:`/async-await` for more discussion."
+msgstr ""
+
+#: ../../project/docs/design.rst:207
+#: cc9a9a58ce854b98bc81cbfd6b79e42d
+msgid "What Flask is, What Flask is Not"
+msgstr ""
+
+#: ../../project/docs/design.rst:209
+#: 27d375c53eae4ccf81f7dc3233104100
+msgid "Flask will never have a database layer.  It will not have a form library or anything else in that direction.  Flask itself just bridges to Werkzeug to implement a proper WSGI application and to Jinja2 to handle templating. It also binds to a few common standard library packages such as logging. Everything else is up for extensions."
+msgstr ""
+
+#: ../../project/docs/design.rst:215
+#: 625ff61a35494888a7094740dec5c3f4
+msgid "Why is this the case?  Because people have different preferences and requirements and Flask could not meet those if it would force any of this into the core.  The majority of web applications will need a template engine in some sort.  However not every application needs a SQL database."
+msgstr ""
+
+#: ../../project/docs/design.rst:220
+#: 0bfb336113e6498cba5962dee99212be
+msgid "As your codebase grows, you are free to make the design decisions appropriate for your project.  Flask will continue to provide a very simple glue layer to the best that Python has to offer.  You can implement advanced patterns in SQLAlchemy or another database tool, introduce non-relational data persistence as appropriate, and take advantage of framework-agnostic tools built for WSGI, the Python web interface."
+msgstr ""
+
+#: ../../project/docs/design.rst:227
+#: cbf3e5ae367b4a5f95be0447a6fc0470
+msgid "The idea of Flask is to build a good foundation for all applications. Everything else is up to you or extensions."
+msgstr ""

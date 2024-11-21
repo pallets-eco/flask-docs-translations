@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/tutorial/static.rst:2
+#: 5c92554766354078aa18d330b3b80383
+msgid "Static Files"
+msgstr ""
+
+#: ../../project/docs/tutorial/static.rst:4
+#: c275211bc13742bb8efdc9a14875cbb1
+msgid "The authentication views and templates work, but they look very plain right now. Some `CSS`_ can be added to add style to the HTML layout you constructed. The style won't change, so it's a *static* file rather than a template."
+msgstr ""
+
+#: ../../project/docs/tutorial/static.rst:9
+#: 9ced11dfc1444a3282df1a407a6997c4
+msgid "Flask automatically adds a ``static`` view that takes a path relative to the ``flaskr/static`` directory and serves it. The ``base.html`` template already has a link to the ``style.css`` file:"
+msgstr ""
+
+#: ../../project/docs/tutorial/static.rst:17
+#: 6d4b81b836ba431ba6b05c5d49d7aee9
+msgid "Besides CSS, other types of static files might be files with JavaScript functions, or a logo image. They are all placed under the ``flaskr/static`` directory and referenced with ``url_for('static', filename='...')``."
+msgstr ""
+
+#: ../../project/docs/tutorial/static.rst:22
+#: 1cbec4eb1ef34b9eb44518347cf4b7fe
+msgid "This tutorial isn't focused on how to write CSS, so you can just copy the following into the ``flaskr/static/style.css`` file:"
+msgstr ""
+
+#: ../../project/docs/tutorial/static.rst:25
+#: 2255bdc65df149d58129a463c60b0730
+msgid "``flaskr/static/style.css``"
+msgstr ""
+
+#: ../../project/docs/tutorial/static.rst:55
+#: 80804c5fb5954e40b96fec11da9625de
+msgid "You can find a less compact version of ``style.css`` in the :gh:`example code <examples/tutorial/flaskr/static/style.css>`."
+msgstr ""
+
+#: ../../project/docs/tutorial/static.rst:58
+#: 82c3c13e96c8469295719d086ce51f14
+msgid "Go to http://127.0.0.1:5000/auth/login and the page should look like the screenshot below."
+msgstr ""
+
+#: ../../project/docs/tutorial/static.rst:61
+#: 4a0739671af74568b8c7a05a104a5876
+msgid "screenshot of login page"
+msgstr ""
+
+#: ../../project/docs/tutorial/static.rst:66
+#: e0df572e8daf42bcaae9e2ffcab6f8d3
+msgid "You can read more about CSS from `Mozilla's documentation <CSS_>`_. If you change a static file, refresh the browser page. If the change doesn't show up, try clearing your browser's cache."
+msgstr ""
+
+#: ../../project/docs/tutorial/static.rst:72
+#: dd36f2be38814cc89cce3e3f0ae5cbe3
+msgid "Continue to :doc:`blog`."
+msgstr ""

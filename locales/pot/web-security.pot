@@ -1,0 +1,342 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/web-security.rst:2
+#: 055ed17b7a344a6984cdb05677e97c8d
+msgid "Security Considerations"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:4
+#: f8d8b40f1b934814bf86d6c1ff4f4e18
+msgid "Web applications face many types of potential security problems, and it can be hard to get everything right, or even to know what \"right\" is in general. Flask tries to solve a few of these things by default, but there are other parts you may have to take care of yourself. Many of these solutions are tradeoffs, and will depend on each application's specific needs and threat model. Many hosting platforms may take care of certain types of problems without the need for the Flask application to handle them."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:13
+#: 86e101210dee4fe182092c02b7063d8c
+msgid "Resource Use"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:15
+#: 55f1fd539c584e9e8718dbb3e9b749ed
+msgid "A common category of attacks is \"Denial of Service\" (DoS or DDoS). This is a very broad category, and different variants target different layers in a deployed application. In general, something is done to increase how much processing time or memory is used to handle each request, to the point where there are not enough resources to handle legitimate requests."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:21
+#: 00596dbb168c44a8a18112aee0e631a6
+msgid "Flask provides a few configuration options to handle resource use. They can also be set on individual requests to customize only that request. The documentation for each goes into more detail."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:25
+#: 34bd821cda7f48da9144e778fea94763
+msgid ":data:`MAX_CONTENT_LENGTH` or :attr:`.Request.max_content_length` controls how much data will be read from a request. It is not set by default, although it will still block truly unlimited streams unless the WSGI server indicates support."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:29
+#: e094d57eebe3490681731282f047c98c
+msgid ":data:`MAX_FORM_MEMORY_SIZE` or :attr:`.Request.max_form_memory_size` controls how large any non-file ``multipart/form-data`` field can be. It is set to 500kB by default."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:32
+#: fdf4e885408940ce96621c88e9183c97
+msgid ":data:`MAX_FORM_PARTS` or :attr:`.Request.max_form_parts` controls how many ``multipart/form-data`` fields can be parsed. It is set to 1000 by default. Combined with the default `max_form_memory_size`, this means that a form will occupy at most 500MB of memory."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:37
+#: 96f5e488e3934cf29ffc0d5e7ee01e63
+msgid "Regardless of these settings, you should also review what settings are available from your operating system, container deployment (Docker etc), WSGI server, HTTP server, and hosting platform. They typically have ways to set process resource limits, timeouts, and other checks regardless of how Flask is configured."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:45
+#: 0d755e4a00654600b9a6dd3c3fcc59e7
+msgid "Cross-Site Scripting (XSS)"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:47
+#: abfad9994e434e039e0c2c15a01ce8e5
+msgid "Cross site scripting is the concept of injecting arbitrary HTML (and with it JavaScript) into the context of a website.  To remedy this, developers have to properly escape text so that it cannot include arbitrary HTML tags.  For more information on that have a look at the Wikipedia article on `Cross-Site Scripting <https://en.wikipedia.org/wiki/Cross-site_scripting>`_."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:54
+#: 35a38fe84dac478a8ed2ad401d00422b
+msgid "Flask configures Jinja2 to automatically escape all values unless explicitly told otherwise.  This should rule out all XSS problems caused in templates, but there are still other places where you have to be careful:"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:59
+#: 840e335dff51448896b812731e39924b
+msgid "generating HTML without the help of Jinja2"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:60
+#: ec30ef8d4b174d0cb0c7cfe8cda880bb
+msgid "calling :class:`~markupsafe.Markup` on data submitted by users"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:61
+#: 0566ab8bdaf6469484c577d1e6aac5f8
+msgid "sending out HTML from uploaded files, never do that, use the ``Content-Disposition: attachment`` header to prevent that problem."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:63
+#: 6b032f69c3b24d6c94fe51197f42ddad
+msgid "sending out textfiles from uploaded files.  Some browsers are using content-type guessing based on the first few bytes so users could trick a browser to execute HTML."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:67
+#: cf002490b89b49198ba9590d8daaf516
+msgid "Another thing that is very important are unquoted attributes.  While Jinja2 can protect you from XSS issues by escaping HTML, there is one thing it cannot protect you from: XSS by attribute injection.  To counter this possible attack vector, be sure to always quote your attributes with either double or single quotes when using Jinja expressions in them:"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:77
+#: b054563493c84562b914e48d3de6ca8b
+msgid "Why is this necessary?  Because if you would not be doing that, an attacker could easily inject custom JavaScript handlers.  For example an attacker could inject this piece of HTML+JavaScript:"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:85
+#: e2bc451a606842eeae57f3509c6f0975
+msgid "When the user would then move with the mouse over the input, the cookie would be presented to the user in an alert window.  But instead of showing the cookie to the user, a good attacker might also execute any other JavaScript code.  In combination with CSS injections the attacker might even make the element fill out the entire page so that the user would just have to have the mouse anywhere on the page to trigger the attack."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:92
+#: 1df14d539dc34392b3de81f5fc703a26
+msgid "There is one class of XSS issues that Jinja's escaping does not protect against. The ``a`` tag's ``href`` attribute can contain a `javascript:` URI, which the browser will execute when clicked if not secured properly."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:101
+#: 0a36e83cae694654a6810d2074c663cc
+msgid "To prevent this, you'll need to set the :ref:`security-csp` response header."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:104
+#: b04409d8d805405ba767448596a371d8
+msgid "Cross-Site Request Forgery (CSRF)"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:106
+#: 91f4cdd427134769b99f2f4550ddc2b1
+msgid "Another big problem is CSRF.  This is a very complex topic and I won't outline it here in detail just mention what it is and how to theoretically prevent it."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:110
+#: 2ef09848f7a646b7bab32a1e429702b2
+msgid "If your authentication information is stored in cookies, you have implicit state management.  The state of \"being logged in\" is controlled by a cookie, and that cookie is sent with each request to a page. Unfortunately that includes requests triggered by 3rd party sites.  If you don't keep that in mind, some people might be able to trick your application's users with social engineering to do stupid things without them knowing."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:118
+#: 3264b959a48d40c7b3d14996ef70a673
+msgid "Say you have a specific URL that, when you sent ``POST`` requests to will delete a user's profile (say ``http://example.com/user/delete``).  If an attacker now creates a page that sends a post request to that page with some JavaScript they just have to trick some users to load that page and their profiles will end up being deleted."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:124
+#: f859dd2656ea41459b2ca427c455903d
+msgid "Imagine you were to run Facebook with millions of concurrent users and someone would send out links to images of little kittens.  When users would go to that page, their profiles would get deleted while they are looking at images of fluffy cats."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:129
+#: fd6931ebe6cc4d3ba7cc76c810e9447b
+msgid "How can you prevent that?  Basically for each request that modifies content on the server you would have to either use a one-time token and store that in the cookie **and** also transmit it with the form data. After receiving the data on the server again, you would then have to compare the two tokens and ensure they are equal."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:135
+#: c1f11e22fd844a0bb48916961b68ad2f
+msgid "Why does Flask not do that for you?  The ideal place for this to happen is the form validation framework, which does not exist in Flask."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:141
+#: 733cd3f2a7db4fa6ba367736fcfba653
+msgid "JSON Security"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:143
+#: 3d3b128dda044e04a1e957cd8fa331b3
+msgid "In Flask 0.10 and lower, :func:`~flask.jsonify` did not serialize top-level arrays to JSON. This was because of a security vulnerability in ECMAScript 4."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:146
+#: fa9e59411dd6481cae51da495b037364
+msgid "ECMAScript 5 closed this vulnerability, so only extremely old browsers are still vulnerable. All of these browsers have `other more serious vulnerabilities <https://github.com/pallets/flask/issues/248#issuecomment-59934857>`_, so this behavior was changed and :func:`~flask.jsonify` now supports serializing arrays."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:154
+#: 9a3e1833e89b46b9b48e2417ca82e346
+msgid "Security Headers"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:156
+#: e60e6e52738e421e9efca6626f77ad95
+msgid "Browsers recognize various response headers in order to control security. We recommend reviewing each of the headers below for use in your application. The `Flask-Talisman`_ extension can be used to manage HTTPS and the security headers for you."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:164
+#: c74983a05144478ab8f21858f51796d8
+msgid "HTTP Strict Transport Security (HSTS)"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:166
+#: 28574a71f98a4fb1a3ca294f31dd367b
+msgid "Tells the browser to convert all HTTP requests to HTTPS, preventing man-in-the-middle (MITM) attacks. ::"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:171
+#: ca1cf7cf3a5e4a2f8b86bcfe17fd489c
+msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:176
+#: 4e7bb1a057294a0685eee0ec40cbee3e
+msgid "Content Security Policy (CSP)"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:178
+#: 1aa3569a9ede47718d431067234b14b1
+msgid "Tell the browser where it can load various types of resource from. This header should be used whenever possible, but requires some work to define the correct policy for your site. A very strict policy would be::"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:184
+#: 9b587d6356234aed9a146d1074e6ad50
+msgid "https://csp.withgoogle.com/docs/index.html"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:185
+#: db392d95eb7b45689460f1e9b999e82e
+msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:188
+#: 3d7ce79fe66343a3b93764993b32a001
+msgid "X-Content-Type-Options"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:190
+#: d9afd238ab374b4288d04d77771f5e93
+msgid "Forces the browser to honor the response content type instead of trying to detect it, which can be abused to generate a cross-site scripting (XSS) attack. ::"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:196
+#: f8c0e3f8662c4ad0a55792cb92ce9dcc
+msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:199
+#: 0b04c41bc42b4f5a9fe68eaf4565068d
+msgid "X-Frame-Options"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:201
+#: 5c60c75f4bd14d1faed2264c0309e9bd
+msgid "Prevents external sites from embedding your site in an ``iframe``. This prevents a class of attacks where clicks in the outer frame can be translated invisibly to clicks on your page's elements. This is also known as \"clickjacking\". ::"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:208
+#: 04d88bec585043bcaada5a4faa0b0c4e
+msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:213
+#: 356e59c18ab34fc1a6739ebe18a198ed
+msgid "Set-Cookie options"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:215
+#: d95b295595dc46ae8ea946987f636f52
+msgid "These options can be added to a ``Set-Cookie`` header to improve their security. Flask has configuration options to set these on the session cookie. They can be set on other cookies too."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:219
+#: 7666da14b3c84616a37fb632fb4ab1f6
+msgid "``Secure`` limits cookies to HTTPS traffic only."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:220
+#: 896f3c0cf02745a0a2c938c1998cc7a4
+msgid "``HttpOnly`` protects the contents of cookies from being read with JavaScript."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:222
+#: 297005a970d145bab0ef12a362144bb8
+msgid "``SameSite`` restricts how cookies are sent with requests from external sites. Can be set to ``'Lax'`` (recommended) or ``'Strict'``. ``Lax`` prevents sending cookies with CSRF-prone requests from external sites, such as submitting a form. ``Strict`` prevents sending cookies with all external requests, including following regular links."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:238
+#: 49122be03c184bd59687b49123fe62d4
+msgid "Specifying ``Expires`` or ``Max-Age`` options, will remove the cookie after the given time, or the current time plus the age, respectively. If neither option is set, the cookie will be removed when the browser is closed. ::"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:245
+#: e14286c67040444585102274ab00b74d
+msgid "For the session cookie, if :attr:`session.permanent <flask.session.permanent>` is set, then :data:`PERMANENT_SESSION_LIFETIME` is used to set the expiration. Flask's default cookie implementation validates that the cryptographic signature is not older than this value. Lowering this value may help mitigate replay attacks, where intercepted cookies can be sent at a later time. ::"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:263
+#: dc6b171d509242329f3d55a084fd0009
+msgid "Use :class:`itsdangerous.TimedSerializer` to sign and validate other cookie values (or any values that need secure signatures)."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:266
+#: 10038b7a36e54f66886437002e55ca63
+msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:267
+#: d53b5082a713431093288300192f827d
+msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:273
+#: 59f301d30cdf4be4942e2f85acebb71c
+msgid "HTTP Public Key Pinning (HPKP)"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:275
+#: 049546b6613d4c15a43e4772c2c37c1e
+msgid "This tells the browser to authenticate with the server using only the specific certificate key to prevent MITM attacks."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:279
+#: be9393c9c8514f329ff520411215d010
+msgid "Be careful when enabling this, as it is very difficult to undo if you set up or upgrade your key incorrectly."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:282
+#: f82fa202879745e1a45ce6da8111f74b
+msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Public_Key_Pinning"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:286
+#: 2d7b797823c64953b9156abdd323448f
+msgid "Copy/Paste to Terminal"
+msgstr ""
+
+#: ../../project/docs/web-security.rst:288
+#: 5a923b702f0f4106a2734ac96e85ac40
+msgid "Hidden characters such as the backspace character (``\\b``, ``^H``) can cause text to render differently in HTML than how it is interpreted if `pasted into a terminal <https://security.stackexchange.com/q/39118>`__."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:292
+#: ffcf980e2b2342a8a5f1a51e284b756b
+msgid "For example, ``import y\\bose\\bm\\bi\\bt\\be\\b`` renders as ``import yosemite`` in HTML, but the backspaces are applied when pasted into a terminal, and it becomes ``import os``."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:296
+#: 3488020570e4481da36397fb09107fa5
+msgid "If you expect users to copy and paste untrusted code from your site, such as from comments posted by users on a technical blog, consider applying extra filtering, such as replacing all ``\\b`` characters."
+msgstr ""
+
+#: ../../project/docs/web-security.rst:304
+#: 0efb17f2436c42a8ab30e700b58853af
+msgid "Most modern terminals will warn about and remove hidden characters when pasting, so this isn't strictly necessary. It's also possible to craft dangerous commands in other ways that aren't possible to filter. Depending on your site's use case, it may be good to show a warning about copying code in general."
+msgstr ""

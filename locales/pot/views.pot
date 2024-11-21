@@ -1,0 +1,306 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/views.rst:2
+#: 7088da019fec445381f60daa22b3cc23
+msgid "Class-based Views"
+msgstr ""
+
+#: ../../project/docs/views.rst:6
+#: dab87355e4754fedbe7543c1b5bf2caf
+msgid "This page introduces using the :class:`View` and :class:`MethodView` classes to write class-based views."
+msgstr ""
+
+#: ../../project/docs/views.rst:9
+#: 8641bf69e62d4065b4614eb0bc17c0fd
+msgid "A class-based view is a class that acts as a view function. Because it is a class, different instances of the class can be created with different arguments, to change the behavior of the view. This is also known as generic, reusable, or pluggable views."
+msgstr ""
+
+#: ../../project/docs/views.rst:14
+#: bbdfd058e44047be893defbb6174e694
+msgid "An example of where this is useful is defining a class that creates an API based on the database model it is initialized with."
+msgstr ""
+
+#: ../../project/docs/views.rst:17
+#: 950d7f3e82ba4b23be1885e0c22e34c8
+msgid "For more complex API behavior and customization, look into the various API extensions for Flask."
+msgstr ""
+
+#: ../../project/docs/views.rst:22
+#: 060a54ed8aee4341851d04539cefc549
+msgid "Basic Reusable View"
+msgstr ""
+
+#: ../../project/docs/views.rst:24
+#: 28e2dd47f5db4871a574852a35c23465
+msgid "Let's walk through an example converting a view function to a view class. We start with a view function that queries a list of users then renders a template to show the list."
+msgstr ""
+
+#: ../../project/docs/views.rst:35
+#: d5c0d9dad755491592a794cb3c4a170d
+msgid "This works for the user model, but let's say you also had more models that needed list pages. You'd need to write another view function for each model, even though the only thing that would change is the model and template name."
+msgstr ""
+
+#: ../../project/docs/views.rst:40
+#: 477d2b7827d84c7dba2c008c272d6b45
+msgid "Instead, you can write a :class:`View` subclass that will query a model and render a template. As the first step, we'll convert the view to a class without any customization."
+msgstr ""
+
+#: ../../project/docs/views.rst:55
+#: 83afa9f126b84d3fb1b03f32778dfbd3
+msgid "The :meth:`View.dispatch_request` method is the equivalent of the view function. Calling :meth:`View.as_view` method will create a view function that can be registered on the app with its :meth:`~flask.Flask.add_url_rule` method. The first argument to ``as_view`` is the name to use to refer to the view with :func:`~flask.url_for`."
+msgstr ""
+
+#: ../../project/docs/views.rst:64
+#: 297e9b5a1f86404da5694353dcfc8ffb
+msgid "You can't decorate the class with ``@app.route()`` the way you'd do with a basic view function."
+msgstr ""
+
+#: ../../project/docs/views.rst:67
+#: cc6dcaf1de38498986025062e68b84c3
+msgid "Next, we need to be able to register the same view class for different models and templates, to make it more useful than the original function. The class will take two arguments, the model and template, and store them on ``self``. Then ``dispatch_request`` can reference these instead of hard-coded values."
+msgstr ""
+
+#: ../../project/docs/views.rst:84
+#: ff544139d49c4417a59d7baaf895e904
+msgid "Remember, we create the view function with ``View.as_view()`` instead of creating the class directly. Any extra arguments passed to ``as_view`` are then passed when creating the class. Now we can register the same view to handle multiple models."
+msgstr ""
+
+#: ../../project/docs/views.rst:102
+#: 94efb43dad57484baf89d2146db973f9
+msgid "URL Variables"
+msgstr ""
+
+#: ../../project/docs/views.rst:104
+#: 0b9fac202972402887c40981b280c226
+msgid "Any variables captured by the URL are passed as keyword arguments to the ``dispatch_request`` method, as they would be for a regular view function."
+msgstr ""
+
+#: ../../project/docs/views.rst:126
+#: 0cb46ea4b81442aca1f53d44f357caaa
+msgid "View Lifetime and ``self``"
+msgstr ""
+
+#: ../../project/docs/views.rst:128
+#: a3a54e9e8a514b0587e02c6ef11a8d9b
+msgid "By default, a new instance of the view class is created every time a request is handled. This means that it is safe to write other data to ``self`` during the request, since the next request will not see it, unlike other forms of global state."
+msgstr ""
+
+#: ../../project/docs/views.rst:133
+#: 7f1b86e56bfc4047842db2fc2085e828
+msgid "However, if your view class needs to do a lot of complex initialization, doing it for every request is unnecessary and can be inefficient. To avoid this, set :attr:`View.init_every_request` to ``False``, which will only create one instance of the class and use it for every request. In this case, writing to ``self`` is not safe. If you need to store data during the request, use :data:`~flask.g` instead."
+msgstr ""
+
+#: ../../project/docs/views.rst:140
+#: 1967df29d52d427b93db6e2138826d2a
+msgid "In the ``ListView`` example, nothing writes to ``self`` during the request, so it is more efficient to create a single instance."
+msgstr ""
+
+#: ../../project/docs/views.rst:156
+#: 0758e35f98db44829a00b5dbf065d03b
+msgid "Different instances will still be created each for each ``as_view`` call, but not for each request to those views."
+msgstr ""
+
+#: ../../project/docs/views.rst:161
+#: 235d55f06853491a8bdc6821e69f4f22
+msgid "View Decorators"
+msgstr ""
+
+#: ../../project/docs/views.rst:163
+#: 36d0c430ace647f5a4bc5f7e5f453b1b
+msgid "The view class itself is not the view function. View decorators need to be applied to the view function returned by ``as_view``, not the class itself. Set :attr:`View.decorators` to a list of decorators to apply."
+msgstr ""
+
+#: ../../project/docs/views.rst:174
+#: 77911924577e4379939e60f45831be7d
+msgid "If you didn't set ``decorators``, you could apply them manually instead. This is equivalent to:"
+msgstr ""
+
+#: ../../project/docs/views.rst:184
+#: ed918be97bfb48daa92c6c66dac0e537
+msgid "Keep in mind that order matters. If you're used to ``@decorator`` style, this is equivalent to:"
+msgstr ""
+
+#: ../../project/docs/views.rst:197
+#: 97616b2201cc4f4bb31ded080d2a7092
+msgid "Method Hints"
+msgstr ""
+
+#: ../../project/docs/views.rst:199
+#: 4d25e26f76e945968e173d0fe6d3740a
+msgid "A common pattern is to register a view with ``methods=[\"GET\", \"POST\"]``, then check ``request.method == \"POST\"`` to decide what to do. Setting :attr:`View.methods` is equivalent to passing the list of methods to ``add_url_rule`` or ``route``."
+msgstr ""
+
+#: ../../project/docs/views.rst:216
+#: 8b44f14f4332404cb44f7c6d2c0f08a9
+msgid "This is equivalent to the following, except further subclasses can inherit or change the methods."
+msgstr ""
+
+#: ../../project/docs/views.rst:229
+#: 7c057a9776a647058f44e397d492b1c0
+msgid "Method Dispatching and APIs"
+msgstr ""
+
+#: ../../project/docs/views.rst:231
+#: e54c46d9b4024909a70eb02e08c49c5f
+msgid "For APIs it can be helpful to use a different function for each HTTP method. :class:`MethodView` extends the basic :class:`View` to dispatch to different methods of the class based on the request method. Each HTTP method maps to a method of the class with the same (lowercase) name."
+msgstr ""
+
+#: ../../project/docs/views.rst:236
+#: df000c6a19b343fc9e240c914dea5ce1
+msgid ":class:`MethodView` automatically sets :attr:`View.methods` based on the methods defined by the class. It even knows how to handle subclasses that override or define other methods."
+msgstr ""
+
+#: ../../project/docs/views.rst:240
+#: 93148835cbb5491982bafaf525dc154e
+msgid "We can make a generic ``ItemAPI`` class that provides get (detail), patch (edit), and delete methods for a given model. A ``GroupAPI`` can provide get (list) and post (create) methods."
+msgstr ""
+
+#: ../../project/docs/views.rst:309
+#: 9df80e0426474bfe861c368829b7a571
+msgid "This produces the following views, a standard REST API!"
+msgstr ""
+
+#: ../../project/docs/views.rst:312
+#: e0cac1a4643849e78172a8f21c3f3734
+msgid "URL"
+msgstr ""
+
+#: ../../project/docs/views.rst:312
+#: 3498dac5c1da4ae499c2f4790c6a720e
+msgid "Method"
+msgstr ""
+
+#: ../../project/docs/views.rst:312
+#: 5fefd9d47ba048f1b2502b86d5206958
+msgid "Description"
+msgstr ""
+
+#: ../../project/docs/views.rst:314
+#: ../../project/docs/views.rst:315
+#: c4365c0ef14e44f590734a27f24ff307
+#: 69be54842fe14195993dd36e4e962c7a
+msgid "``/users/``"
+msgstr ""
+
+#: ../../project/docs/views.rst:314
+#: ../../project/docs/views.rst:316
+#: ../../project/docs/views.rst:319
+#: ../../project/docs/views.rst:321
+#: 3abb1c082898441bb7e4f2bd4ae75657
+#: 70aa453d9938443fb6368b28fff93056
+#: e328d793b7014f139c0a046e9501462d
+#: 10655bf4fc4141cab796e9f9fc2d04d9
+msgid "``GET``"
+msgstr ""
+
+#: ../../project/docs/views.rst:314
+#: a42e38c3b678417c9759175e0d47c112
+msgid "List all users"
+msgstr ""
+
+#: ../../project/docs/views.rst:315
+#: ../../project/docs/views.rst:320
+#: 41ce539b57cc47f989535997a7f66ea4
+#: 30972d334ecf4724be8919ae68ccbe99
+msgid "``POST``"
+msgstr ""
+
+#: ../../project/docs/views.rst:315
+#: c75142de32c64b5399503e71c537b9b8
+msgid "Create a new user"
+msgstr ""
+
+#: ../../project/docs/views.rst:316
+#: ../../project/docs/views.rst:317
+#: ../../project/docs/views.rst:318
+#: cb99c9b689b54d13a68098d58797e984
+#: f9b868a93f824bd28277fffec2f1dc48
+#: 1a649d50b3ef4bd5812c112098ff3849
+msgid "``/users/<id>``"
+msgstr ""
+
+#: ../../project/docs/views.rst:316
+#: cdd4330ce6614f9faa05c3a07dde05b8
+msgid "Show a single user"
+msgstr ""
+
+#: ../../project/docs/views.rst:317
+#: ../../project/docs/views.rst:322
+#: 4802ef53ff88483783bf31c06843abd4
+#: 0f87fe0c4a0944728791decc4ee3012c
+msgid "``PATCH``"
+msgstr ""
+
+#: ../../project/docs/views.rst:317
+#: dee0d62ddab34aa4be2f89cdde502425
+msgid "Update a user"
+msgstr ""
+
+#: ../../project/docs/views.rst:318
+#: ../../project/docs/views.rst:323
+#: 1eda203ed8fd4a97af076d05b76fb53f
+#: d3303db1393d4ad9b42aad99bec6af7e
+msgid "``DELETE``"
+msgstr ""
+
+#: ../../project/docs/views.rst:318
+#: 7ac0e2c75c2b4e38b3b7f501bf52a721
+msgid "Delete a user"
+msgstr ""
+
+#: ../../project/docs/views.rst:319
+#: ../../project/docs/views.rst:320
+#: a8d5550e660f422f984815228bd7bd5d
+#: be63eeba01c34b92bfa8bba385edb155
+msgid "``/stories/``"
+msgstr ""
+
+#: ../../project/docs/views.rst:319
+#: 14516bb407e54734bd54a39ffb8354e3
+msgid "List all stories"
+msgstr ""
+
+#: ../../project/docs/views.rst:320
+#: e9340d13c8ec4e0da73e0d34f0bd9b8c
+msgid "Create a new story"
+msgstr ""
+
+#: ../../project/docs/views.rst:321
+#: ../../project/docs/views.rst:322
+#: ../../project/docs/views.rst:323
+#: 20ec21535194407fb65269c8679ad429
+#: 9403e20ac4ad4c539886c7303c08bb94
+#: e722fa6e29754c759ee370d10e21d4d2
+msgid "``/stories/<id>``"
+msgstr ""
+
+#: ../../project/docs/views.rst:321
+#: 1c58c8d35bc44533ab7ea0cd9624e56f
+msgid "Show a single story"
+msgstr ""
+
+#: ../../project/docs/views.rst:322
+#: a9d1e8d5cd8d4653a0e21fdd20ebe7a5
+msgid "Update a story"
+msgstr ""
+
+#: ../../project/docs/views.rst:323
+#: ee69cf8633cb4b11bd894ca7b74e92d1
+msgid "Delete a story"
+msgstr ""

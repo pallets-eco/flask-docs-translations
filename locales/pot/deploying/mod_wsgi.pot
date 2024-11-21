@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/deploying/mod_wsgi.rst:2
+#: cc528bcd6d1b41c9ba22ffd29f578635
+msgid "mod_wsgi"
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:4
+#: 8ef54472be9a4e9bb5db0768aaedda88
+msgid "`mod_wsgi`_ is a WSGI server integrated with the `Apache httpd`_ server. The modern `mod_wsgi-express`_ command makes it easy to configure and start the server without needing to write Apache httpd configuration."
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:8
+#: cffd51f2ce1f4a9296f04188e2b11182
+msgid "Tightly integrated with Apache httpd."
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:9
+#: b9145535e6684647862eef24f5bc00e4
+msgid "Supports Windows directly."
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:10
+#: 5ca8e5f04aaa4650826e1444dfe67fa6
+msgid "Requires a compiler and the Apache development headers to install."
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:11
+#: e0c6525caccd4f4ab38ae3fb4cedc3d2
+msgid "Does not require a reverse proxy setup."
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:13
+#: 89860ca5523f47ddb9df3916314e2e22
+msgid "This page outlines the basics of running mod_wsgi-express, not the more complex installation and configuration with httpd. Be sure to read the `mod_wsgi-express`_, `mod_wsgi`_, and `Apache httpd`_ documentation to understand what features are available."
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:24
+#: 5e5ec2311cb34746bd6353539a3cdd1b
+msgid "Installing"
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:26
+#: 9b19440d7251413e9d6102df71eba2c1
+msgid "Installing mod_wsgi requires a compiler and the Apache server and development headers installed. You will get an error if they are not. How to install them depends on the OS and package manager that you use."
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:30
+#: becc883b30994633a3e46cba2dd6f8f7
+msgid "Create a virtualenv, install your application, then install ``mod_wsgi``."
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:43
+#: 7538d89d2bdc42a8b7a342f58e1bda0b
+msgid "Running"
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:45
+#: d2483f40c226449b99e15cf54edd095b
+msgid "The only argument to ``mod_wsgi-express`` specifies a script containing your Flask application, which must be called ``application``. You can write a small script to import your app with this name, or to create it if using the app factory pattern."
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:50
+#: ../../project/docs/deploying/mod_wsgi.rst:57
+#: c6171dae97314600b3574b6a76997a53
+#: 6c636c0cb2cf494d8a9ab71fd108f53e
+msgid "``wsgi.py``"
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:64
+#: dd8ae4d020b445e7b6363705ca835018
+msgid "Now run the ``mod_wsgi-express start-server`` command."
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:70
+#: f7dc9084442c4866a49f06ec59497859
+msgid "The ``--processes`` option specifies the number of worker processes to run; a starting value could be ``CPU * 2``."
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:73
+#: 625a23acfbf448569989147bccff9f51
+msgid "Logs for each request aren't show in the terminal. If an error occurs, its information is written to the error log file shown when starting the server."
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:79
+#: fb328056563442c7ba0a6b037385bc91
+msgid "Binding Externally"
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:81
+#: 527f5189b4d24651954b8eec4e5cae3e
+msgid "Unlike the other WSGI servers in these docs, mod_wsgi can be run as root to bind to privileged ports like 80 and 443. However, it must be configured to drop permissions to a different user and group for the worker processes."
+msgstr ""
+
+#: ../../project/docs/deploying/mod_wsgi.rst:86
+#: d96425ca8be24fe1ab0c09456f000732
+msgid "For example, if you created a ``hello`` user and group, you should install your virtualenv and application as that user, then tell mod_wsgi to drop to that user after starting."
+msgstr ""

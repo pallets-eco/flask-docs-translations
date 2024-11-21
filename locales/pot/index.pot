@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:34-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/index.rst:4
+#: f94f2c6827a64b17828681c4fc140c6f
+msgid "Welcome to Flask"
+msgstr ""
+
+#: ../../project/docs/index.rst:9
+#: 6b50595b230d4db5a7d62a0e2f863891
+msgid "Welcome to Flask's project project documentation. Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications."
+msgstr ""
+
+#: ../../project/docs/index.rst:13
+#: f16aa3c71dd64d79bbc3e33f67f5df60
+msgid "Get started with :doc:`installation` and then get an overview with the :doc:`quickstart`. There is also a more detailed :doc:`tutorial/index` that shows how to create a small but complete application with Flask. Common patterns are described in the :doc:`patterns/index` section. The rest of the docs describe each component of Flask in detail, with a full reference in the :doc:`api` section."
+msgstr ""
+
+#: ../../project/docs/index.rst:21
+#: 1c2294972ca34082a357b6fdf146ebe9
+msgid "Flask depends on the `Werkzeug`_ WSGI toolkit, the `Jinja`_ template engine, and the `Click`_ CLI toolkit. Be sure to check their documentation as well as Flask's when looking for information."
+msgstr ""
+
+#: ../../project/docs/index.rst:31
+#: 1f0282600a7240b7b291e14265b4dccc
+msgid "User's Guide"
+msgstr ""
+
+#: ../../project/docs/index.rst:33
+#: c4f24f028d754d2b88ade797da1e04bd
+msgid "Flask provides configuration and conventions, with sensible defaults, to get started. This section of the documentation explains the different parts of the Flask framework and how they can be used, customized, and extended. Beyond Flask itself, look for community-maintained extensions to add even more functionality."
+msgstr ""
+
+#: ../../project/docs/index.rst:67
+#: 2a541c28296d40bea2f93fcfabc5bb86
+msgid "API Reference"
+msgstr ""
+
+#: ../../project/docs/index.rst:69
+#: 9950e85ee4084d0facdbee67b79e6596
+msgid "If you are looking for information on a specific function, class or method, this part of the documentation is for you."
+msgstr ""
+
+#: ../../project/docs/index.rst:79
+#: 17afd5d710844ac59a81fce8eaba3b22
+msgid "Additional Notes"
+msgstr ""

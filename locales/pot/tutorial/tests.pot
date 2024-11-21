@@ -1,0 +1,321 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/tutorial/tests.rst:4
+#: 54277fd02f0d4c8aa1404bb91c053472
+msgid "Test Coverage"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:6
+#: a1772852f8b54b25b1e3060514d08732
+msgid "Writing unit tests for your application lets you check that the code you wrote works the way you expect. Flask provides a test client that simulates requests to the application and returns the response data."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:10
+#: a0281e98fff143739691090f4d6049b0
+msgid "You should test as much of your code as possible. Code in functions only runs when the function is called, and code in branches, such as ``if`` blocks, only runs when the condition is met. You want to make sure that each function is tested with data that covers each branch."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:15
+#: c1e68ade73cf44fd9888d73ad07679a7
+msgid "The closer you get to 100% coverage, the more comfortable you can be that making a change won't unexpectedly change other behavior. However, 100% coverage doesn't guarantee that your application doesn't have bugs. In particular, it doesn't test how the user interacts with the application in the browser. Despite this, test coverage is an important tool to use during development."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:23
+#: f5d2f23c933248eb8f35f07a7776a760
+msgid "This is being introduced late in the tutorial, but in your future projects you should test as you develop."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:26
+#: cb296296dd8944ef8b55a79ed5a26691
+msgid "You'll use `pytest`_ and `coverage`_ to test and measure your code. Install them both:"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:38
+#: 78fa9c6373114c22b1b912a505c095bd
+msgid "Setup and Fixtures"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:40
+#: c1725a6ddbe747aeaab4c92e497d0add
+msgid "The test code is located in the ``tests`` directory. This directory is *next to* the ``flaskr`` package, not inside it. The ``tests/conftest.py`` file contains setup functions called *fixtures* that each test will use. Tests are in Python modules that start with ``test_``, and each test function in those modules also starts with ``test_``."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:47
+#: ae384401eb254bb6952932d5895cc7ed
+msgid "Each test will create a new temporary database file and populate some data that will be used in the tests. Write a SQL file to insert that data."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:51
+#: 1273f8ade2584293adba2134a4c1ec42
+msgid "``tests/data.sql``"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:63
+#: bc0fdf169b164c799fcfb65a856f18fa
+msgid "The ``app`` fixture will call the factory and pass ``test_config`` to configure the application and database for testing instead of using your local development configuration."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:67
+#: ../../project/docs/tutorial/tests.rst:226
+#: 04da6d9057b640b49e3593538c095381
+#: d0934bef849b489fa7978b95b52c5297
+msgid "``tests/conftest.py``"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:109
+#: 895fc21f37a14ae6adcffc2c7ab9804c
+msgid ":func:`tempfile.mkstemp` creates and opens a temporary file, returning the file descriptor and the path to it. The ``DATABASE`` path is overridden so it points to this temporary path instead of the instance folder. After setting the path, the database tables are created and the test data is inserted. After the test is over, the temporary file is closed and removed."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:116
+#: 0f1e73e35aab4cbabeb315440e0a9152
+msgid ":data:`TESTING` tells Flask that the app is in test mode. Flask changes some internal behavior so it's easier to test, and other extensions can also use the flag to make testing them easier."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:120
+#: 1a51426f1f4747748010dcb4e773cb2e
+msgid "The ``client`` fixture calls :meth:`app.test_client() <Flask.test_client>` with the application object created by the ``app`` fixture. Tests will use the client to make requests to the application without running the server."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:125
+#: 507f2303138f4fcf914235934593aed4
+msgid "The ``runner`` fixture is similar to ``client``. :meth:`app.test_cli_runner() <Flask.test_cli_runner>` creates a runner that can call the Click commands registered with the application."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:129
+#: 6862db75ef2345d69a28f1cbff28b58a
+msgid "Pytest uses fixtures by matching their function names with the names of arguments in the test functions. For example, the ``test_hello`` function you'll write next takes a ``client`` argument. Pytest matches that with the ``client`` fixture function, calls it, and passes the returned value to the test function."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:137
+#: 070985d25d3b4277955e0681f17bb102
+msgid "Factory"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:139
+#: 45daac9149fb4c1197e46863c0713fdd
+msgid "There's not much to test about the factory itself. Most of the code will be executed for each test already, so if something fails the other tests will notice."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:143
+#: ac4f623839c54306ba1e8ac63e303c28
+msgid "The only behavior that can change is passing test config. If config is not passed, there should be some default configuration, otherwise the configuration should be overridden."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:147
+#: 1d98dff020da44a3887efab03dc2188f
+msgid "``tests/test_factory.py``"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:162
+#: 3357eeebfcd847579be73505b0598a46
+msgid "You added the ``hello`` route as an example when writing the factory at the beginning of the tutorial. It returns \"Hello, World!\", so the test checks that the response data matches."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:168
+#: 25b462afb17a454a87042a2718d28ab7
+msgid "Database"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:170
+#: c32e875bb6414a84b72f88b67c1310c7
+msgid "Within an application context, ``get_db`` should return the same connection each time it's called. After the context, the connection should be closed."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:174
+#: ../../project/docs/tutorial/tests.rst:196
+#: 983a8657574145ac9e7f5d50c501a86d
+#: 2c0d8401051f4b32b4bcd8bbb03b0041
+msgid "``tests/test_db.py``"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:193
+#: 64a19c8d42e9422f821c0d141e683e70
+msgid "The ``init-db`` command should call the ``init_db`` function and output a message."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:211
+#: 91b9470e17c74e17bd3a1fcadd3a03af
+msgid "This test uses Pytest's ``monkeypatch`` fixture to replace the ``init_db`` function with one that records that it's been called. The ``runner`` fixture you wrote above is used to call the ``init-db`` command by name."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:218
+#: 1f8769991229496bb1a1adfeb3372167
+msgid "Authentication"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:220
+#: bfc88436340947f1a4f94520a018b810
+msgid "For most of the views, a user needs to be logged in. The easiest way to do this in tests is to make a ``POST`` request to the ``login`` view with the client. Rather than writing that out every time, you can write a class with methods to do that, and use a fixture to pass it the client for each test."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:247
+#: 0ed0f3f3eca34f969dc92a88bc1c5c7f
+msgid "With the ``auth`` fixture, you can call ``auth.login()`` in a test to log in as the ``test`` user, which was inserted as part of the test data in the ``app`` fixture."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:251
+#: b75e6360926445298acf54a4e3404af6
+msgid "The ``register`` view should render successfully on ``GET``. On ``POST`` with valid form data, it should redirect to the login URL and the user's data should be in the database. Invalid data should display error messages."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:256
+#: ../../project/docs/tutorial/tests.rst:316
+#: ../../project/docs/tutorial/tests.rst:345
+#: 3afb000fbccb4ba3b0b7ba474bc5b754
+#: 0942ca34cf2f4a7bb906149042b7fdde
+#: 4600e1a043ac47eb82321a6e2aa120b1
+msgid "``tests/test_auth.py``"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:289
+#: 989c1d38a1fc403d939561223d2d83a4
+msgid ":meth:`client.get() <werkzeug.test.Client.get>` makes a ``GET`` request and returns the :class:`Response` object returned by Flask. Similarly, :meth:`client.post() <werkzeug.test.Client.post>` makes a ``POST`` request, converting the ``data`` dict into form data."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:294
+#: 678a9b40ae584bcda22751c7f0c88f23
+msgid "To test that the page renders successfully, a simple request is made and checked for a ``200 OK`` :attr:`~Response.status_code`. If rendering failed, Flask would return a ``500 Internal Server Error`` code."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:299
+#: eb0b51863088459eb3a7ec2f45f6b579
+msgid ":attr:`~Response.headers` will have a ``Location`` header with the login URL when the register view redirects to the login view."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:302
+#: f4511a69638747b88b9bab620b2a6151
+msgid ":attr:`~Response.data` contains the body of the response as bytes. If you expect a certain value to render on the page, check that it's in ``data``. Bytes must be compared to bytes. If you want to compare text, use :meth:`get_data(as_text=True) <werkzeug.wrappers.Response.get_data>` instead."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:308
+#: b16b75f75b2941599dbc814964d79406
+msgid "``pytest.mark.parametrize`` tells Pytest to run the same test function with different arguments. You use it here to test different invalid input and error messages without writing the same code three times."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:312
+#: bc761cb5e5f64d5bb5ede9bc3ca3287f
+msgid "The tests for the ``login`` view are very similar to those for ``register``. Rather than testing the data in the database, :data:`session` should have ``user_id`` set after logging in."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:338
+#: 75dc85757807461bacbe1c60518fceb9
+msgid "Using ``client`` in a ``with`` block allows accessing context variables such as :data:`session` after the response is returned. Normally, accessing ``session`` outside of a request would raise an error."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:342
+#: 9b492cc3cbbb40398d0d977fd340933b
+msgid "Testing ``logout`` is the opposite of ``login``. :data:`session` should not contain ``user_id`` after logging out."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:357
+#: 9ccd877fd24343cc92904229e5ecb5aa
+msgid "Blog"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:359
+#: 20ba76707c724d38a7edd35d54d520e6
+msgid "All the blog views use the ``auth`` fixture you wrote earlier. Call ``auth.login()`` and subsequent requests from the client will be logged in as the ``test`` user."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:363
+#: f220129e8409415793f3263d166f754f
+msgid "The ``index`` view should display information about the post that was added with the test data. When logged in as the author, there should be a link to edit the post."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:367
+#: 729065eb337c47399f3d18d512df3389
+msgid "You can also test some more authentication behavior while testing the ``index`` view. When not logged in, each page shows links to log in or register. When logged in, there's a link to log out."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:371
+#: ../../project/docs/tutorial/tests.rst:397
+#: ../../project/docs/tutorial/tests.rst:439
+#: ../../project/docs/tutorial/tests.rst:476
+#: 921810a6417c47bfae6b786626669a26
+#: 7aca9e5c1fe74ec7905b5b36e17b1a18
+#: 117064b84c694cd6b7f698b528e47444
+#: fe923c661d97421e93489a83f7922215
+msgid "``tests/test_blog.py``"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:391
+#: 19925ce5f75d4e64821b0352f3d8c048
+msgid "A user must be logged in to access the ``create``, ``update``, and ``delete`` views. The logged in user must be the author of the post to access ``update`` and ``delete``, otherwise a ``403 Forbidden`` status is returned. If a ``post`` with the given ``id`` doesn't exist, ``update`` and ``delete`` should return ``404 Not Found``."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:433
+#: 9c1480ef7f034d8dae9d9a1ef7567e6f
+msgid "The ``create`` and ``update`` views should render and return a ``200 OK`` status for a ``GET`` request. When valid data is sent in a ``POST`` request, ``create`` should insert the new post data into the database, and ``update`` should modify the existing data. Both pages should show an error message on invalid data."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:473
+#: 60f54fb3028f43a9b336ffc241455ef3
+msgid "The ``delete`` view should redirect to the index URL and the post should no longer exist in the database."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:491
+#: c294550e069e49ac935ca40335caa160
+msgid "Running the Tests"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:493
+#: 48ae2ba8ddae4d3d8be19b8b3be1473d
+msgid "Some extra configuration, which is not required but makes running tests with coverage less verbose, can be added to the project's ``pyproject.toml`` file."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:496
+#: 6efb2c7275bb44f58f92476af53b2dd2
+msgid "``pyproject.toml``"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:506
+#: ee540533f19a4f149615f467a39617f8
+msgid "To run the tests, use the ``pytest`` command. It will find and run all the test functions you've written."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:525
+#: 70088979e5484b6daa1252760fc92c35
+msgid "If any tests fail, pytest will show the error that was raised. You can run ``pytest -v`` to get a list of each test function rather than dots."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:528
+#: e53b9ddc24c44eacb321e9b49cea89a1
+msgid "To measure the code coverage of your tests, use the ``coverage`` command to run pytest instead of running it directly."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:535
+#: 45460630111646db9cc6b04124ccb27f
+msgid "You can either view a simple coverage report in the terminal:"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:550
+#: 631da6f58e6a49fd8c9586a1168038b2
+msgid "An HTML report allows you to see which lines were covered in each file:"
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:556
+#: 20ff89b8dc8d4ea8be4455d9827fccc4
+msgid "This generates files in the ``htmlcov`` directory. Open ``htmlcov/index.html`` in your browser to see the report."
+msgstr ""
+
+#: ../../project/docs/tutorial/tests.rst:559
+#: 14525ff13cfa4db98ed8d61727c73451
+msgid "Continue to :doc:`deploy`."
+msgstr ""

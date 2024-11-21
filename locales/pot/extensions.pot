@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/extensions.rst:2
+#: 36cfa44384d84746a51fe20c9011b239
+msgid "Extensions"
+msgstr ""
+
+#: ../../project/docs/extensions.rst:4
+#: 5387bb394cbb4ea794f9c77210d47414
+msgid "Extensions are extra packages that add functionality to a Flask application. For example, an extension might add support for sending email or connecting to a database. Some extensions add entire new frameworks to help build certain types of applications, like a REST API."
+msgstr ""
+
+#: ../../project/docs/extensions.rst:11
+#: 8958ba59953e43738d0608deade1e904
+msgid "Finding Extensions"
+msgstr ""
+
+#: ../../project/docs/extensions.rst:13
+#: 03ad2c60b52a44d6b85382d983965b25
+msgid "Flask extensions are usually named \"Flask-Foo\" or \"Foo-Flask\". You can search PyPI for packages tagged with `Framework :: Flask <pypi_>`_."
+msgstr ""
+
+#: ../../project/docs/extensions.rst:18
+#: f78592be7b1c4385a16a01b203daccac
+msgid "Using Extensions"
+msgstr ""
+
+#: ../../project/docs/extensions.rst:20
+#: dd1c25a15c5148749704deac88a0ed74
+msgid "Consult each extension's documentation for installation, configuration, and usage instructions. Generally, extensions pull their own configuration from :attr:`app.config <flask.Flask.config>` and are passed an application instance during initialization. For example, an extension called \"Flask-Foo\" might be used like this::"
+msgstr ""
+
+#: ../../project/docs/extensions.rst:40
+#: 9328db090acd4700a2c104bd670a73e5
+msgid "Building Extensions"
+msgstr ""
+
+#: ../../project/docs/extensions.rst:42
+#: 521583aa832e47fe9e6e5b76b55ce582
+msgid "While `PyPI <pypi_>`_ contains many Flask extensions, you may not find an extension that fits your need. If this is the case, you can create your own, and publish it for others to use as well. Read :doc:`extensiondev` to develop your own Flask extension."
+msgstr ""

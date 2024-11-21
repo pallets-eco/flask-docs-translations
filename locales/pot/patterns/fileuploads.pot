@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../project/docs/patterns/fileuploads.rst:2
+#: 8af349db5e4c4e62bc462ed8554e69ca
+msgid "Uploading Files"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:4
+#: 3385e3b8f9bb49309b368d392dacfe5a
+msgid "Ah yes, the good old problem of file uploads.  The basic idea of file uploads is actually quite simple.  It basically works like this:"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:7
+#: 4463c2784888429ab84c1d2cbf3068f3
+msgid "A ``<form>`` tag is marked with ``enctype=multipart/form-data`` and an ``<input type=file>`` is placed in that form."
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:9
+#: 108bb42831e840f9ab544c9bfb07cca5
+msgid "The application accesses the file from the :attr:`~flask.request.files` dictionary on the request object."
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:11
+#: b6348b077ee64af9a9aa7bd85efe9e18
+msgid "use the :meth:`~werkzeug.datastructures.FileStorage.save` method of the file to save the file permanently somewhere on the filesystem."
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:15
+#: 70d04dd388c24dbfb8061fa6a6d2ca53
+msgid "A Gentle Introduction"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:17
+#: dca32fc7c777453583fd12b96a730e60
+msgid "Let's start with a very basic application that uploads a file to a specific upload folder and displays a file to the user.  Let's look at the bootstrapping code for our application::"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:31
+#: c7ad77962c1041c292a636dae5453c36
+msgid "So first we need a couple of imports.  Most should be straightforward, the :func:`werkzeug.secure_filename` is explained a little bit later.  The ``UPLOAD_FOLDER`` is where we will store the uploaded files and the ``ALLOWED_EXTENSIONS`` is the set of allowed file extensions."
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:36
+#: 3240f7722be14520bce0175016f3a409
+msgid "Why do we limit the extensions that are allowed?  You probably don't want your users to be able to upload everything there if the server is directly sending out the data to the client.  That way you can make sure that users are not able to upload HTML files that would cause XSS problems (see :ref:`security-xss`).  Also make sure to disallow ``.php`` files if the server executes them, but who has PHP installed on their server, right?  :)"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:43
+#: be1b0e8ec1cd4872b6a1dc6e9816c865
+msgid "Next the functions that check if an extension is valid and that uploads the file and redirects the user to the URL for the uploaded file::"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:77
+#: bf4da9577c234e9a9d465e7393ea31e7
+msgid "So what does that :func:`~werkzeug.utils.secure_filename` function actually do? Now the problem is that there is that principle called \"never trust user input\".  This is also true for the filename of an uploaded file.  All submitted form data can be forged, and filenames can be dangerous.  For the moment just remember: always use that function to secure a filename before storing it directly on the filesystem."
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:84
+#: 4b408bfb4d3c4f8085742bb93eaf349a
+msgid "Information for the Pros"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:86
+#: 2e16c11d17a84e46ba57c1bcda093985
+msgid "So you're interested in what that :func:`~werkzeug.utils.secure_filename` function does and what the problem is if you're not using it?  So just imagine someone would send the following information as `filename` to your application::"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:93
+#: 378af13e3c7a4077a7c40023a891428c
+msgid "Assuming the number of ``../`` is correct and you would join this with the ``UPLOAD_FOLDER`` the user might have the ability to modify a file on the server's filesystem he or she should not modify.  This does require some knowledge about how the application looks like, but trust me, hackers are patient :)"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:99
+#: d5ed767bbb574c18ac80884deb6ffcc1
+msgid "Now let's look how that function works:"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:104
+#: 06933e537a314d2d8617c7fa30b2aa39
+msgid "We want to be able to serve the uploaded files so they can be downloaded by users. We'll define a ``download_file`` view to serve files in the upload folder by name. ``url_for(\"download_file\", name=name)`` generates download URLs."
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:117
+#: 5db7b56ea8da47fa8e28358738daff11
+msgid "If you're using middleware or the HTTP server to serve files, you can register the ``download_file`` endpoint as ``build_only`` so ``url_for`` will work without a view function."
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:129
+#: 18d08a4e92e347df944a546e19f12216
+msgid "Improving Uploads"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:133
+#: 47f5caf8bd5e48eea60bbeebe500ee98
+msgid "So how exactly does Flask handle uploads?  Well it will store them in the webserver's memory if the files are reasonably small, otherwise in a temporary location (as returned by :func:`tempfile.gettempdir`).  But how do you specify the maximum file size after which an upload is aborted?  By default Flask will happily accept file uploads with an unlimited amount of memory, but you can limit that by setting the ``MAX_CONTENT_LENGTH`` config key::"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:146
+#: a3ce292275f242d6a0d116630d271a80
+msgid "The code above will limit the maximum allowed payload to 16 megabytes. If a larger file is transmitted, Flask will raise a :exc:`~werkzeug.exceptions.RequestEntityTooLarge` exception."
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:150
+#: 5004b7984e174269a5b03cb233df7b59
+msgid "Connection Reset Issue"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:152
+#: 1920cd1f6c8047df90a224003081a88c
+msgid "When using the local development server, you may get a connection reset error instead of a 413 response. You will get the correct status response when running the app with a production WSGI server."
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:156
+#: 6b3bae97e1da4a96864799b16dafa44c
+msgid "This feature was added in Flask 0.6 but can be achieved in older versions as well by subclassing the request object.  For more information on that consult the Werkzeug documentation on file handling."
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:162
+#: 1f1f62c3d4bc491c98276fd565d4b8c5
+msgid "Upload Progress Bars"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:164
+#: c4b4ea7b7a264a77a7c26265af799a78
+msgid "A while ago many developers had the idea to read the incoming file in small chunks and store the upload progress in the database to be able to poll the progress with JavaScript from the client. The client asks the server every 5 seconds how much it has transmitted, but this is something it should already know."
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:171
+#: 68cc9f8311194b22b05cf077d61e6223
+msgid "An Easier Solution"
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:173
+#: 2b644a9ac7984a61be235b26244ad39c
+msgid "Now there are better solutions that work faster and are more reliable. There are JavaScript libraries like jQuery_ that have form plugins to ease the construction of progress bar."
+msgstr ""
+
+#: ../../project/docs/patterns/fileuploads.rst:177
+#: 1326b1abd104462490fb6b799469f285
+msgid "Because the common pattern for file uploads exists almost unchanged in all applications dealing with uploads, there are also some Flask extensions that implement a full fledged upload mechanism that allows controlling which file extensions are allowed to be uploaded."
+msgstr ""
