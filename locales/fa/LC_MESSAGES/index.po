@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# Komeil Parseh <ahmdparsh129@gmail.com>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 2.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-02 18:20+0330\n"
+"PO-Revision-Date: 2024-02-02 20:03+0330\n"
+"Last-Translator: Komeil Parseh <ahmdparsh129@gmail.com>\n"
+"Language-Team: fa <ahmdparsh129@gmail.com>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"Generated-By: Babel 2.14.0\n"
+"X-Generator: Poedit 3.4\n"
+
+#: ../../index.rst:4
+msgid "Welcome to Flask"
+msgstr "به فلسک خوش آمدید"
+
+#: ../../index.rst:9
+msgid ""
+"Welcome to Flask's documentation. Get started with :doc:`installation` and then get an "
+"overview with the :doc:`quickstart`. There is also a more detailed :doc:`tutorial/"
+"index` that shows how to create a small but complete application with Flask. Common "
+"patterns are described in the :doc:`patterns/index` section. The rest of the docs "
+"describe each component of Flask in detail, with a full reference in the :doc:`api` "
+"section."
+msgstr ""
+"به مستندات فلسک خوش آمدید. از :doc:`installation` شروع کنید و سپس با مطالعهٔ :doc:"
+"`quickstart` یک نمای کلی دریافت کنید. همچنین بخش :doc:`tutorial/index` با جزئیات "
+"بیشتری، نحوه ایجاد یک برنامه کوچک، اما کامل را با فلسک نشان می‌دهد. الگو های رایج نیز "
+"در :doc:`patterns/index` توضیح داده شده است. سایر بخش‌های مستندات نیز با ارجاع کاملی به "
+"بخش :doc:`api` مفصل شرح داده شده اند."
+
+#: ../../index.rst:17
+msgid ""
+"Flask depends on the `Werkzeug`_ WSGI toolkit, the `Jinja`_ template engine, and the "
+"`Click`_ CLI toolkit. Be sure to check their documentation as well as Flask's when "
+"looking for information."
+msgstr ""
+"فلسک به ابزار‌های `Werkzeug`_ WSGI، موتور قالب `Jinja`_ و ابزار‌های `Click`_ CLI وابسته "
+"است. هنگام دانش‌افزویی مستندات آنها و همچین فلسک را بررسی کنید."
+
+#: ../../index.rst:27
+msgid "User's Guide"
+msgstr "راهنمای کاربر"
+
+#: ../../index.rst:29
+msgid ""
+"Flask provides configuration and conventions, with sensible defaults, to get started. "
+"This section of the documentation explains the different parts of the Flask framework "
+"and how they can be used, customized, and extended. Beyond Flask itself, look for "
+"community-maintained extensions to add even more functionality."
+msgstr ""
+"قراردادها و کانفیگ‌های فلسک با پیشفرض معقولی ارائه می‌شوند. این بخش از مستندات، بخش‌های "
+"مختلف فریمورک و نحوهٔ استفاده، شخصی‌سازی و توسعهٔ آنها را شرح می‌دهد. افزون بر خود فلسک، "
+"به دنبال به دنبال برنامه‌های افزودنی توسعه یافته توسط جامعه بگردید تا عملکر‌های بیشتری "
+"را به آن اضافه کنید."
+
+#: ../../index.rst:63
+msgid "API Reference"
+msgstr "مرجع API"
+
+#: ../../index.rst:65
+msgid ""
+"If you are looking for information on a specific function, class or method, this part "
+"of the documentation is for you."
+msgstr ""
+"اگر به دنبال اطلاعاتی در مورد یک تابع، کلاس یا روشی خاص هستید، این بخش از مستندات "
+"مناسب شماست."
+
+#: ../../index.rst:75
+msgid "Additional Notes"
+msgstr "یادداشت های اضافی"
+
+#~ msgid ""
+#~ "This part of the documentation, which is mostly prose, begins with some background "
+#~ "information about Flask, then focuses on step-by-step instructions for web "
+#~ "development with Flask."
+#~ msgstr ""
+#~ "این قسمت از مستندات بیشتر متن هستند و با برخی از اطلاعات پس‌زمینه ای فلاسک شروع "
+#~ "می‌شود. سپس بر روی دستور عمل های گام به گام توسعه وب با فلاسک تمرکز می‌کند."
+
+#~ msgid "Design notes, legal information and changelog are here for the interested."
+#~ msgstr "یادداشت های طراحی، اطلاعات حقوقی و تغییرات در اینجا برای علاقمندان است."
+
+#~ msgid "`Jinja documentation <https://jinja.palletsprojects.com/>`_"
+#~ msgstr "`مستندات jinja <https://jinja.palletsprojects.com/>`_"
+
+#~ msgid "`Werkzeug documentation <https://werkzeug.palletsprojects.com/>`_"
+#~ msgstr "`مستدات Werkzeug <https://werkzeug.palletsprojects.com/>`_"
