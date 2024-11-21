@@ -8,93 +8,153 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-12 19:17+0800\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <withlihui@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../deploying/uwsgi.rst:2
+#: ../../project/docs/deploying/uwsgi.rst:2 ac82ae0714db464196467f689a67cafc
 msgid "uWSGI"
 msgstr ""
 
-#: ../../deploying/uwsgi.rst:4
+#: ../../project/docs/deploying/uwsgi.rst:4 849e4b1ceefe43ab98657076d522472c
 msgid ""
-"uWSGI is a deployment option on servers like `nginx`_, `lighttpd`_, and "
-"`cherokee`_; see :doc:`fastcgi` and :doc:`wsgi-standalone` for other "
-"options. To use your WSGI application with uWSGI protocol you will need a"
-" uWSGI server first. uWSGI is both a protocol and an application server; "
-"the application server can serve uWSGI, FastCGI, and HTTP protocols."
+"`uWSGI`_ is a fast, compiled server suite with extensive configuration "
+"and capabilities beyond a basic server."
 msgstr ""
 
-#: ../../deploying/uwsgi.rst:10
+#: ../../project/docs/deploying/uwsgi.rst:7 b49e8c692c0646678765f64941b5c734
+msgid "It can be very performant due to being a compiled program."
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:8 8159dec0f167402883e6147c0436687a
 msgid ""
-"The most popular uWSGI server is `uwsgi`_, which we will use for this "
-"guide. Make sure to have it installed to follow along."
+"It is complex to configure beyond the basic application, and has so many "
+"options that it can be difficult for beginners to understand."
 msgstr ""
 
-#: ../../deploying/uwsgi.rst:13
-msgid "Watch Out"
+#: ../../project/docs/deploying/uwsgi.rst:10 917177b9e00c423ba5732c30e7b0edae
+msgid "It does not support Windows (but does run on WSL)."
 msgstr ""
 
-#: ../../deploying/uwsgi.rst:15
+#: ../../project/docs/deploying/uwsgi.rst:11 5411b51b655c42028769ce050b8ebb41
+msgid "It requires a compiler to install in some cases."
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:13 bf4ef526257548608816036605de5381
 msgid ""
-"Please make sure in advance that any ``app.run()`` calls you might have "
-"in your application file are inside an ``if __name__ == '__main__':`` "
-"block or moved to a separate file.  Just make sure it's not called "
-"because this will always start a local WSGI server which we do not want "
-"if we deploy that application to uWSGI."
+"This page outlines the basics of running uWSGI. Be sure to read its "
+"documentation to understand what features are available."
 msgstr ""
 
-#: ../../deploying/uwsgi.rst:22
-msgid "Starting your app with uwsgi"
+#: ../../project/docs/deploying/uwsgi.rst:20 b60be3222d1e426ea4383dbc0ae16f55
+msgid "Installing"
 msgstr ""
 
-#: ../../deploying/uwsgi.rst:24
-msgid "`uwsgi` is designed to operate on WSGI callables found in python modules."
-msgstr ""
-
-#: ../../deploying/uwsgi.rst:26
-msgid "Given a flask application in myapp.py, use the following command:"
-msgstr ""
-
-#: ../../deploying/uwsgi.rst:32
+#: ../../project/docs/deploying/uwsgi.rst:22 2c32f029db0c4e71a4677bc618a744cc
 msgid ""
-"The ``--manage-script-name`` will move the handling of ``SCRIPT_NAME`` to"
-" uwsgi, since it is smarter about that. It is used together with the "
-"``--mount`` directive which will make requests to ``/yourapplication`` be"
-" directed to ``myapp:app``. If your application is accessible at root "
-"level, you can use a single ``/`` instead of ``/yourapplication``. "
-"``myapp`` refers to the name of the file of your flask application "
-"(without extension) or the module which provides ``app``. ``app`` is the "
-"callable inside of your application (usually the line reads ``app = "
-"Flask(__name__)``)."
+"uWSGI has multiple ways to install it. The most straightforward is to "
+"install the ``pyuwsgi`` package, which provides precompiled wheels for "
+"common platforms. However, it does not provide SSL support, which can be "
+"provided with a reverse proxy instead."
 msgstr ""
 
-#: ../../deploying/uwsgi.rst:42
+#: ../../project/docs/deploying/uwsgi.rst:27 8e5b2a4f97a341f09822b27a800612c5
+msgid "Create a virtualenv, install your application, then install ``pyuwsgi``."
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:37 75e5140aeefc48eca4b60e4790f0c9df
 msgid ""
-"If you want to deploy your flask application inside of a virtual "
-"environment, you need to also add ``--virtualenv "
-"/path/to/virtual/environment``. You might also need to add ``--plugin "
-"python`` or ``--plugin python3`` depending on which python version you "
-"use for your project."
+"If you have a compiler available, you can install the ``uwsgi`` package "
+"instead. Or install the ``pyuwsgi`` package from sdist instead of wheel. "
+"Either method will include SSL support."
 msgstr ""
 
-#: ../../deploying/uwsgi.rst:48
-msgid "Configuring nginx"
+#: ../../project/docs/deploying/uwsgi.rst:50 36fb21c0526c42da8d9c10755b95dbd8
+msgid "Running"
 msgstr ""
 
-#: ../../deploying/uwsgi.rst:50
-msgid "A basic flask nginx configuration looks like this::"
-msgstr ""
-
-#: ../../deploying/uwsgi.rst:59
+#: ../../project/docs/deploying/uwsgi.rst:52 7bbad29bbf2c4cbd8241e976e3915783
 msgid ""
-"This configuration binds the application to ``/yourapplication``.  If you"
-" want to have it in the URL root its a bit simpler::"
+"The most basic way to run uWSGI is to tell it to start an HTTP server and"
+" import your application."
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:69 4f8ec6b3e2d743c2bae28002c0cfe702
+msgid ""
+"If you're using the app factory pattern, you'll need to create a small "
+"Python file to create the app, then point uWSGI at that."
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:72 c3857654edca48069299f320d2e109a6
+msgid "``wsgi.py``"
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:83 d67b8b0fa6e3484997fc12a9ef322c35
+msgid ""
+"The ``--http`` option starts an HTTP server at 127.0.0.1 port 8000. The "
+"``--master`` option specifies the standard worker manager. The ``-p`` "
+"option starts 4 worker processes; a starting value could be ``CPU * 2``. "
+"The ``-w`` option tells uWSGI how to import your application"
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:90 ed2b24a407c748f8af7a081666711f04
+msgid "Binding Externally"
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:92 faa46ec595a24a488f7477d21eb828df
+msgid ""
+"uWSGI should not be run as root with the configuration shown in this doc "
+"because it would cause your application code to run as root, which is not"
+" secure. However, this means it will not be possible to bind to port 80 "
+"or 443. Instead, a reverse proxy such as :doc:`nginx` or :doc:`apache-"
+"httpd` should be used in front of uWSGI. It is possible to run uWSGI as "
+"root securely, but that is beyond the scope of this doc."
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:99 6b7cc4f9afc7424bbaa446f7b4518330
+msgid ""
+"uWSGI has optimized integration with `Nginx uWSGI`_ and `Apache "
+"mod_proxy_uwsgi`_, and possibly other servers, instead of using a "
+"standard HTTP proxy. That configuration is beyond the scope of this doc, "
+"see the links for more information."
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:107 d7edf48c6c004223843d1df0d3b209ff
+msgid ""
+"You can bind to all external IPs on a non-privileged port using the "
+"``--http 0.0.0.0:8000`` option. Don't do this when using a reverse proxy "
+"setup, otherwise it will be possible to bypass the proxy."
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:115 2691836acd1a468b8dc332d2c0206da9
+msgid ""
+"``0.0.0.0`` is not a valid address to navigate to, you'd use a specific "
+"IP address in your browser."
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:120 39c99af62da04e23b6f89576469c2243
+msgid "Async with gevent"
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:122 b064765883e74203a778d531d21145f7
+msgid ""
+"The default sync worker is appropriate for many use cases. If you need "
+"asynchronous support, uWSGI provides a `gevent`_ worker. This is not the "
+"same as Python's ``async/await``, or the ASGI server spec. You must "
+"actually use gevent in your own code to see any benefit to using the "
+"worker."
+msgstr ""
+
+#: ../../project/docs/deploying/uwsgi.rst:128 5618db106a8b40ef9dd3f3cc4520bca5
+msgid ""
+"When using gevent, greenlet>=1.0 is required, otherwise context locals "
+"such as ``request`` will not work as expected. When using PyPy, "
+"PyPy>=7.3.7 is required."
 msgstr ""
 
 #~ msgid ""
@@ -115,3 +175,94 @@ msgstr ""
 #~ "your application (usually the line reads"
 #~ " ``app = Flask(__name__)``."
 #~ msgstr ""
+
+#~ msgid ""
+#~ "uWSGI is a deployment option on "
+#~ "servers like `nginx`_, `lighttpd`_, and "
+#~ "`cherokee`_; see :doc:`fastcgi` and :doc"
+#~ ":`wsgi-standalone` for other options. To"
+#~ " use your WSGI application with uWSGI"
+#~ " protocol you will need a uWSGI "
+#~ "server first. uWSGI is both a "
+#~ "protocol and an application server; the"
+#~ " application server can serve uWSGI, "
+#~ "FastCGI, and HTTP protocols."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The most popular uWSGI server is "
+#~ "`uwsgi`_, which we will use for "
+#~ "this guide. Make sure to have it"
+#~ " installed to follow along."
+#~ msgstr ""
+
+#~ msgid "Watch Out"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Please make sure in advance that "
+#~ "any ``app.run()`` calls you might have"
+#~ " in your application file are inside"
+#~ " an ``if __name__ == '__main__':`` "
+#~ "block or moved to a separate file."
+#~ "  Just make sure it's not called "
+#~ "because this will always start a "
+#~ "local WSGI server which we do not"
+#~ " want if we deploy that application"
+#~ " to uWSGI."
+#~ msgstr ""
+
+#~ msgid "Starting your app with uwsgi"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`uwsgi` is designed to operate on "
+#~ "WSGI callables found in python modules."
+#~ msgstr ""
+
+#~ msgid "Given a flask application in myapp.py, use the following command:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ``--manage-script-name`` will move"
+#~ " the handling of ``SCRIPT_NAME`` to "
+#~ "uwsgi, since it is smarter about "
+#~ "that. It is used together with the"
+#~ " ``--mount`` directive which will make "
+#~ "requests to ``/yourapplication`` be directed"
+#~ " to ``myapp:app``. If your application "
+#~ "is accessible at root level, you "
+#~ "can use a single ``/`` instead of"
+#~ " ``/yourapplication``. ``myapp`` refers to "
+#~ "the name of the file of your "
+#~ "flask application (without extension) or "
+#~ "the module which provides ``app``. "
+#~ "``app`` is the callable inside of "
+#~ "your application (usually the line reads"
+#~ " ``app = Flask(__name__)``)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you want to deploy your flask"
+#~ " application inside of a virtual "
+#~ "environment, you need to also add "
+#~ "``--virtualenv /path/to/virtual/environment``. You "
+#~ "might also need to add ``--plugin "
+#~ "python`` or ``--plugin python3`` depending "
+#~ "on which python version you use "
+#~ "for your project."
+#~ msgstr ""
+
+#~ msgid "Configuring nginx"
+#~ msgstr ""
+
+#~ msgid "A basic flask nginx configuration looks like this::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This configuration binds the application "
+#~ "to ``/yourapplication``.  If you want to"
+#~ " have it in the URL root its"
+#~ " a bit simpler::"
+#~ msgstr ""
+

@@ -8,20 +8,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-25 19:31+0800\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <withlihui@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../patterns/appdispatch.rst:2
+#: ../../project/docs/patterns/appdispatch.rst:2
+#: e545eb72233b45bcad5d18ada1139bd8
 msgid "Application Dispatching"
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:4
+#: ../../project/docs/patterns/appdispatch.rst:4
+#: b0c7e3472ddb4881abbf9d596fc3c2ea
 msgid ""
 "Application dispatching is the process of combining multiple Flask "
 "applications on the WSGI level.  You can combine not only Flask "
@@ -31,7 +33,8 @@ msgid ""
 "internally."
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:11
+#: ../../project/docs/patterns/appdispatch.rst:11
+#: db6a089a1ebf4dd78069d3ac2caa27f3
 msgid ""
 "The fundamental difference from :doc:`packages` is that in this case you "
 "are running the same or different Flask applications that are entirely "
@@ -39,38 +42,27 @@ msgid ""
 "dispatched on the WSGI level."
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:18
+#: ../../project/docs/patterns/appdispatch.rst:18
+#: 6579d4c353fe4e199154b07953010599
 msgid "Working with this Document"
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:20
+#: ../../project/docs/patterns/appdispatch.rst:20
+#: 3371acd72cdd48e6a73e392c52d997e2
 msgid ""
 "Each of the techniques and examples below results in an ``application`` "
-"object that can be run with any WSGI server. For production, see "
-":doc:`/deploying/index`. For development, Werkzeug provides a server "
-"through :func:`werkzeug.serving.run_simple`::"
-msgstr ""
-
-#: ../../patterns/appdispatch.rst:28
-msgid ""
-"Note that :func:`run_simple <werkzeug.serving.run_simple>` is not "
-"intended for use in production.  Use a production WSGI server. See "
+"object that can be run with any WSGI server. For development, use the "
+"``flask run`` command to start a development server. For production, see "
 ":doc:`/deploying/index`."
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:31
-msgid ""
-"In order to use the interactive debugger, debugging must be enabled both "
-"on the application and the simple server. Here is the \"hello world\" "
-"example with debugging and :func:`run_simple "
-"<werkzeug.serving.run_simple>`::"
-msgstr ""
-
-#: ../../patterns/appdispatch.rst:51
+#: ../../project/docs/patterns/appdispatch.rst:37
+#: 83892e688fc74e93bd937b86213cd856
 msgid "Combining Applications"
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:53
+#: ../../project/docs/patterns/appdispatch.rst:39
+#: 1a2ff7c8e9114ccab0e749e94858ea6b
 msgid ""
 "If you have entirely separated applications and you want them to work "
 "next to each other in the same Python interpreter process you can take "
@@ -80,17 +72,20 @@ msgid ""
 "dispatched based on prefix."
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:60
+#: ../../project/docs/patterns/appdispatch.rst:46
+#: ae21b661cc47493888cf9fa6b81d94af
 msgid ""
 "For example you could have your main application run on ``/`` and your "
-"backend interface on ``/backend``::"
+"backend interface on ``/backend``."
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:73
+#: ../../project/docs/patterns/appdispatch.rst:61
+#: 55913b1a4cfe49e18e5e7850ded3b211
 msgid "Dispatch by Subdomain"
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:75
+#: ../../project/docs/patterns/appdispatch.rst:63
+#: b98b8497f0524f36a62df0a70a646c50
 msgid ""
 "Sometimes you might want to use multiple instances of the same "
 "application with different configurations.  Assuming the application is "
@@ -100,7 +95,8 @@ msgid ""
 " the :doc:`appfactories` pattern."
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:82
+#: ../../project/docs/patterns/appdispatch.rst:70
+#: 35d529ef8d8f44a4b5157a45f0ee15d6
 msgid ""
 "A very common example would be creating applications per subdomain.  For "
 "instance you configure your webserver to dispatch all requests for all "
@@ -110,32 +106,101 @@ msgid ""
 " the dynamic application creation."
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:89
+#: ../../project/docs/patterns/appdispatch.rst:77
+#: bed155f66212489e8f9f9b65e8870948
 msgid ""
 "The perfect level for abstraction in that regard is the WSGI layer.  You "
 "write your own WSGI application that looks at the request that comes and "
 "delegates it to your Flask application.  If that application does not "
-"exist yet, it is dynamically created and remembered::"
+"exist yet, it is dynamically created and remembered."
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:120
-msgid "This dispatcher can then be used like this::"
+#: ../../project/docs/patterns/appdispatch.rst:110
+#: 74a7bb7e4deb479e8393aef23afcd793
+msgid "This dispatcher can then be used like this:"
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:142
+#: ../../project/docs/patterns/appdispatch.rst:134
+#: eae4569c0ce04fbc8cb2532482560395
 msgid "Dispatch by Path"
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:144
+#: ../../project/docs/patterns/appdispatch.rst:136
+#: fda76640a4464b19924403cf0b9485ba
 msgid ""
 "Dispatching by a path on the URL is very similar.  Instead of looking at "
 "the ``Host`` header to figure out the subdomain one simply looks at the "
-"request path up to the first slash::"
+"request path up to the first slash."
 msgstr ""
 
-#: ../../patterns/appdispatch.rst:176
+#: ../../project/docs/patterns/appdispatch.rst:177
+#: 043c8e7cf9b842408fb19caf98474100
 msgid ""
 "The big difference between this and the subdomain one is that this one "
 "falls back to another application if the creator function returns "
-"``None``::"
+"``None``."
 msgstr ""
+
+#~ msgid ""
+#~ "Each of the techniques and examples "
+#~ "below results in an ``application`` "
+#~ "object that can be run with any"
+#~ " WSGI server. For production, see "
+#~ ":doc:`/deploying/index`. For development, Werkzeug"
+#~ " provides a server through "
+#~ ":func:`werkzeug.serving.run_simple`::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that :func:`run_simple "
+#~ "<werkzeug.serving.run_simple>` is not intended "
+#~ "for use in production.  Use a "
+#~ "production WSGI server. See "
+#~ ":doc:`/deploying/index`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In order to use the interactive "
+#~ "debugger, debugging must be enabled both"
+#~ " on the application and the simple"
+#~ " server. Here is the \"hello world\""
+#~ " example with debugging and "
+#~ ":func:`run_simple <werkzeug.serving.run_simple>`::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For example you could have your "
+#~ "main application run on ``/`` and "
+#~ "your backend interface on ``/backend``::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The perfect level for abstraction in "
+#~ "that regard is the WSGI layer.  "
+#~ "You write your own WSGI application "
+#~ "that looks at the request that "
+#~ "comes and delegates it to your "
+#~ "Flask application.  If that application "
+#~ "does not exist yet, it is "
+#~ "dynamically created and remembered::"
+#~ msgstr ""
+
+#~ msgid "This dispatcher can then be used like this::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dispatching by a path on the URL"
+#~ " is very similar.  Instead of looking"
+#~ " at the ``Host`` header to figure "
+#~ "out the subdomain one simply looks "
+#~ "at the request path up to the "
+#~ "first slash::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The big difference between this and "
+#~ "the subdomain one is that this one"
+#~ " falls back to another application if"
+#~ " the creator function returns ``None``::"
+#~ msgstr ""
+

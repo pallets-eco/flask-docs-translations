@@ -8,20 +8,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-01 02:27-0500\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr_FR <victor.levieux@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../patterns/appfactories.rst:2
+#: ../../project/docs/patterns/appfactories.rst:2
+#: b292c6e5555a4f4cb14aa42e265b3836
 msgid "Application Factories"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:4
+#: ../../project/docs/patterns/appfactories.rst:4
+#: 95870a25bc90438c93f19e344226761a
 msgid ""
 "If you are already using packages and blueprints for your application "
 "(:doc:`/blueprints`) there are a couple of really nice ways to further "
@@ -31,17 +33,20 @@ msgid ""
 "this app later."
 msgstr ""
 
-#: ../../patterns/appfactories.rst:10
+#: ../../project/docs/patterns/appfactories.rst:10
+#: 075776ffdb364c5cbd1962c1b1db6bb1
 msgid "So why would you want to do this?"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:12
+#: ../../project/docs/patterns/appfactories.rst:12
+#: 658a7ebe1ac346de8cb1cb1f497cd713
 msgid ""
 "Testing.  You can have instances of the application with different "
 "settings to test every case."
 msgstr ""
 
-#: ../../patterns/appfactories.rst:14
+#: ../../project/docs/patterns/appfactories.rst:14
+#: 98897a11bcbb43ca8cd6a50d755d0ab0
 msgid ""
 "Multiple instances.  Imagine you want to run different versions of the "
 "same application.  Of course you could have multiple instances with "
@@ -50,19 +55,23 @@ msgid ""
 "application process which can be handy."
 msgstr ""
 
-#: ../../patterns/appfactories.rst:20
+#: ../../project/docs/patterns/appfactories.rst:20
+#: e593a97d1c7343e2acb960e31ca59153
 msgid "So how would you then actually implement that?"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:23
+#: ../../project/docs/patterns/appfactories.rst:23
+#: 56a565c92c5648cba3318eeffa047cdd
 msgid "Basic Factories"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:25
+#: ../../project/docs/patterns/appfactories.rst:25
+#: 171f592cb7184009805a68556dd04e87
 msgid "The idea is to set up the application in a function.  Like this::"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:41
+#: ../../project/docs/patterns/appfactories.rst:41
+#: 84206406045b4e519af6eba489f58f0c
 msgid ""
 "The downside is that you cannot use the application object in the "
 "blueprints at import time.  You can however use it from within a request."
@@ -70,36 +79,43 @@ msgid ""
 ":data:`~flask.current_app`::"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:53
+#: ../../project/docs/patterns/appfactories.rst:53
+#: dd9656e5416e486fa12675dec286e74f
 msgid "Here we look up the name of a template in the config."
 msgstr ""
 
-#: ../../patterns/appfactories.rst:56
+#: ../../project/docs/patterns/appfactories.rst:56
+#: 64a8dba912ab4b2e828424880eb29736
 msgid "Factories & Extensions"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:58
+#: ../../project/docs/patterns/appfactories.rst:58
+#: e064f78b5a3d48c491ae84168975a7a5
 msgid ""
 "It's preferable to create your extensions and app factories so that the "
 "extension object does not initially get bound to the application."
 msgstr ""
 
-#: ../../patterns/appfactories.rst:61
+#: ../../project/docs/patterns/appfactories.rst:61
+#: 7096dc1a376b4333a8ea405f93627797
 msgid ""
 "Using `Flask-SQLAlchemy <https://flask-"
 "sqlalchemy.palletsprojects.com/>`_, as an example, you should not do "
 "something along those lines::"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:70
+#: ../../project/docs/patterns/appfactories.rst:70
+#: 8e5286095b5948af9e4ebe6bddbea914
 msgid "But, rather, in model.py (or equivalent)::"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:74
+#: ../../project/docs/patterns/appfactories.rst:74
+#: 2a598c2020194ca08b98e9743871b215
 msgid "and in your application.py (or equivalent)::"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:83
+#: ../../project/docs/patterns/appfactories.rst:83
+#: 55767585b3d348d2988ca21d9e5d9aa3
 msgid ""
 "Using this design pattern, no application-specific state is stored on the"
 " extension object, so one extension object can be used for multiple apps."
@@ -107,64 +123,85 @@ msgid ""
 ":doc:`/extensiondev`."
 msgstr ""
 
-#: ../../patterns/appfactories.rst:88
+#: ../../project/docs/patterns/appfactories.rst:88
+#: 2e47bf79ffa34701bed0a0f6ddcb7058
 msgid "Using Applications"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:90
+#: ../../project/docs/patterns/appfactories.rst:90
+#: 3766c20a2ea14d78b365748fb8bfd35c
 msgid "To run such an application, you can use the :command:`flask` command:"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:94 ../../patterns/appfactories.rst:120
-msgid "Bash"
-msgstr ""
-
-#: ../../patterns/appfactories.rst:101 ../../patterns/appfactories.rst:127
-msgid "CMD"
-msgstr ""
-
-#: ../../patterns/appfactories.rst:108 ../../patterns/appfactories.rst:134
-msgid "Powershell"
-msgstr ""
-
-#: ../../patterns/appfactories.rst:115
+#: ../../project/docs/patterns/appfactories.rst:96
+#: d2ccd6a016b740b8ad4034e45c2ff971
 msgid ""
-"Flask will automatically detect the factory (``create_app`` or "
-"``make_app``) in ``myapp``. You can also pass arguments to the factory "
-"like this:"
+"Flask will automatically detect the factory if it is named ``create_app``"
+" or ``make_app`` in ``hello``. You can also pass arguments to the factory"
+" like this:"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:141
+#: ../../project/docs/patterns/appfactories.rst:104
+#: 6ebff929da954d758a23efafa7bcc4aa
 msgid ""
-"Then the ``create_app`` factory in ``myapp`` is called with the string "
-"``'dev'`` as the argument. See :doc:`/cli` for more detail."
+"Then the ``create_app`` factory in ``myapp`` is called with the keyword "
+"argument ``local_auth=True``. See :doc:`/cli` for more detail."
 msgstr ""
 
-#: ../../patterns/appfactories.rst:145
+#: ../../project/docs/patterns/appfactories.rst:108
+#: 7a013e3a2f8843c79fea7935f3b6023b
 msgid "Factory Improvements"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:147
+#: ../../project/docs/patterns/appfactories.rst:110
+#: 4b8f4ac751014c9c96e3998f31180782
 msgid ""
 "The factory function above is not very clever, but you can improve it. "
 "The following changes are straightforward to implement:"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:150
+#: ../../project/docs/patterns/appfactories.rst:113
+#: ff3114d76b264da18ba41f64ef487e84
 msgid ""
 "Make it possible to pass in configuration values for unit tests so that "
 "you don't have to create config files on the filesystem."
 msgstr ""
 
-#: ../../patterns/appfactories.rst:152
+#: ../../project/docs/patterns/appfactories.rst:115
+#: 4f3f1fb720fb4e8eac22fc24be015243
 msgid ""
 "Call a function from a blueprint when the application is setting up so "
 "that you have a place to modify attributes of the application (like "
 "hooking in before/after request handlers etc.)"
 msgstr ""
 
-#: ../../patterns/appfactories.rst:155
+#: ../../project/docs/patterns/appfactories.rst:118
+#: bf7bb634256e4c96b3254b461cfb2cfe
 msgid ""
 "Add in WSGI middlewares when the application is being created if "
 "necessary."
 msgstr ""
+
+#~ msgid "Bash"
+#~ msgstr ""
+
+#~ msgid "CMD"
+#~ msgstr ""
+
+#~ msgid "Powershell"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Flask will automatically detect the "
+#~ "factory (``create_app`` or ``make_app``) in"
+#~ " ``myapp``. You can also pass "
+#~ "arguments to the factory like this:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Then the ``create_app`` factory in "
+#~ "``myapp`` is called with the string "
+#~ "``'dev'`` as the argument. See "
+#~ ":doc:`/cli` for more detail."
+#~ msgstr ""
+

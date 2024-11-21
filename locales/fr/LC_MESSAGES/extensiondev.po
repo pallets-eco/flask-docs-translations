@@ -8,408 +8,823 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-01 02:27-0500\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr_FR <victor.levieux@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../extensiondev.rst:2
+#: ../../project/docs/extensiondev.rst:2 a9221fea1069457780e84d2dde7ae958
 msgid "Flask Extension Development"
 msgstr ""
 
-#: ../../extensiondev.rst:4
+#: ../../project/docs/extensiondev.rst:6 09f91b58e0e645609fc41521c020abe7
 msgid ""
-"Flask, being a microframework, often requires some repetitive steps to "
-"get a third party library working. Many such extensions are already "
-"available on `PyPI`_."
+"Extensions are extra packages that add functionality to a Flask "
+"application. While `PyPI`_ contains many Flask extensions, you may not "
+"find one that fits your need. If this is the case, you can create your "
+"own, and publish it for others to use as well."
 msgstr ""
 
-#: ../../extensiondev.rst:8
+#: ../../project/docs/extensiondev.rst:11 448403e2808f437faccaa6dba033504c
 msgid ""
-"If you want to create your own Flask extension for something that does "
-"not exist yet, this guide to extension development will help you get your"
-" extension running in no time and to feel like users would expect your "
-"extension to behave."
+"This guide will show how to create a Flask extension, and some of the "
+"common patterns and requirements involved. Since extensions can do "
+"anything, this guide won't be able to cover every possibility."
 msgstr ""
 
-#: ../../extensiondev.rst:14
-msgid "Anatomy of an Extension"
-msgstr ""
-
-#: ../../extensiondev.rst:16
+#: ../../project/docs/extensiondev.rst:15 36073e6999b84934ae2b5c3aa9cdd586
 msgid ""
-"Extensions are all located in a package called ``flask_something`` where "
-"\"something\" is the name of the library you want to bridge.  So for "
-"example if you plan to add support for a library named `simplexml` to "
-"Flask, you would name your extension's package ``flask_simplexml``."
+"The best ways to learn about extensions are to look at how other "
+"extensions you use are written, and discuss with others. Discuss your "
+"design ideas with others on our `Discord Chat`_ or `GitHub Discussions`_."
 msgstr ""
 
-#: ../../extensiondev.rst:21
+#: ../../project/docs/extensiondev.rst:20 c9068a6060874e07a662afeff4dc6142
 msgid ""
-"The name of the actual extension (the human readable name) however would "
-"be something like \"Flask-SimpleXML\".  Make sure to include the name "
-"\"Flask\" somewhere in that name and that you check the capitalization. "
-"This is how users can then register dependencies to your extension in "
-"their :file:`setup.py` files."
+"The best extensions share common patterns, so that anyone familiar with "
+"using one extension won't feel completely lost with another. This can "
+"only work if collaboration happens early."
 msgstr ""
 
-#: ../../extensiondev.rst:27
+#: ../../project/docs/extensiondev.rst:26 1e9b656cb2a147b7b8beb0ea79bb6b64
+msgid "Naming"
+msgstr ""
+
+#: ../../project/docs/extensiondev.rst:28 d3e74d40b75a4d59a0aa79db89f433a3
 msgid ""
-"But what do extensions look like themselves?  An extension has to ensure "
-"that it works with multiple Flask application instances at once.  This is"
-" a requirement because many people will use patterns like the "
-":doc:`/patterns/appfactories` pattern to create their application as "
-"needed to aid unittests and to support multiple configurations. Because "
-"of that it is crucial that your application supports that kind of "
-"behavior."
+"A Flask extension typically has ``flask`` in its name as a prefix or "
+"suffix. If it wraps another library, it should include the library name "
+"as well. This makes it easy to search for extensions, and makes their "
+"purpose clearer."
 msgstr ""
 
-#: ../../extensiondev.rst:35
+#: ../../project/docs/extensiondev.rst:33 845384dacdad4eb7a79a62a9c2598ba7
 msgid ""
-"Most importantly the extension must be shipped with a :file:`setup.py` "
-"file and registered on PyPI.  Also the development checkout link should "
-"work so that people can easily install the development version into their"
-" virtualenv without having to download the library by hand."
+"A general Python packaging recommendation is that the install name from "
+"the package index and the name used in ``import`` statements should be "
+"related. The import name is lowercase, with words separated by "
+"underscores (``_``). The install name is either lower case or title case,"
+" with words separated by dashes (``-``). If it wraps another library, "
+"prefer using the same case as that library's name."
 msgstr ""
 
-#: ../../extensiondev.rst:40
+#: ../../project/docs/extensiondev.rst:40 ea3d2f46dced4147b8712e7037bec32b
+msgid "Here are some example install and import names:"
+msgstr ""
+
+#: ../../project/docs/extensiondev.rst:42 103599ac166040d2bbf1133fd33a91d2
+msgid "``Flask-Name`` imported as ``flask_name``"
+msgstr ""
+
+#: ../../project/docs/extensiondev.rst:43 6562125180704b369470a0a271807776
+msgid "``flask-name-lower`` imported as ``flask_name_lower``"
+msgstr ""
+
+#: ../../project/docs/extensiondev.rst:44 e5cba2392b214431b38a61cb7ce277d0
+msgid "``Flask-ComboName`` imported as ``flask_comboname``"
+msgstr ""
+
+#: ../../project/docs/extensiondev.rst:45 267fc8a3006b4c7a858be36584efaa50
+msgid "``Name-Flask`` imported as ``name_flask``"
+msgstr ""
+
+#: ../../project/docs/extensiondev.rst:49 b39a16c763fb487a8866bbe32455cb88
+msgid "The Extension Class and Initialization"
+msgstr ""
+
+#: ../../project/docs/extensiondev.rst:51 190f0b02a4474978bf7d73f5ad021a78
 msgid ""
-"Flask extensions must be licensed under a BSD, MIT or more liberal "
-"license in order to be listed in the Flask Extension Registry.  Keep in "
-"mind that the Flask Extension Registry is a moderated place and libraries"
-" will be reviewed upfront if they behave as required."
+"All extensions will need some entry point that initializes the extension "
+"with the application. The most common pattern is to create a class that "
+"represents the extension's configuration and behavior, with an "
+"``init_app`` method to apply the extension instance to the given "
+"application instance."
 msgstr ""
 
-#: ../../extensiondev.rst:46
-msgid "\"Hello Flaskext!\""
-msgstr ""
-
-#: ../../extensiondev.rst:48
+#: ../../project/docs/extensiondev.rst:67 8eed5ec0302742f3bb2ceea8a4741e0b
 msgid ""
-"So let's get started with creating such a Flask extension.  The extension"
-" we want to create here will provide very basic support for SQLite3."
+"It is important that the app is not stored on the extension, don't do "
+"``self.app = app``. The only time the extension should have direct access"
+" to an app is during ``init_app``, otherwise it should use "
+":data:`current_app`."
 msgstr ""
 
-#: ../../extensiondev.rst:51
-msgid "First we create the following folder structure::"
-msgstr ""
-
-#: ../../extensiondev.rst:58
-msgid "Here's the contents of the most important files:"
-msgstr ""
-
-#: ../../extensiondev.rst:61
-msgid "setup.py"
-msgstr ""
-
-#: ../../extensiondev.rst:63
+#: ../../project/docs/extensiondev.rst:72 95c9a65a78464ae8acfaccdd14f8c861
 msgid ""
-"The next file that is absolutely required is the :file:`setup.py` file "
-"which is used to install your Flask extension.  The following contents "
-"are something you can work with::"
+"This allows the extension to support the application factory pattern, "
+"avoids circular import issues when importing the extension instance "
+"elsewhere in a user's code, and makes testing with different "
+"configurations easier."
 msgstr ""
 
-#: ../../extensiondev.rst:106
+#: ../../project/docs/extensiondev.rst:86 08eb91e76b2e44269a77e51cef6708be
 msgid ""
-"That's a lot of code but you can really just copy/paste that from "
-"existing extensions and adapt."
+"Above, the ``hello`` extension instance exists independently of the "
+"application. This means that other modules in a user's project can do "
+"``from project import hello`` and use the extension in blueprints before "
+"the app exists."
 msgstr ""
 
-#: ../../extensiondev.rst:110
-msgid "flask_sqlite3.py"
-msgstr ""
-
-#: ../../extensiondev.rst:112
+#: ../../project/docs/extensiondev.rst:91 dbb08adf173a44fe888f29a3c3c3bbe1
 msgid ""
-"Now this is where your extension code goes.  But how exactly should such "
-"an extension look like?  What are the best practices?  Continue reading "
-"for some insight."
+"The :attr:`Flask.extensions` dict can be used to store a reference to the"
+" extension on the application, or some other state specific to the "
+"application. Be aware that this is a single namespace, so use a name "
+"unique to your extension, such as the extension's name without the "
+"\"flask\" prefix."
 msgstr ""
 
-#: ../../extensiondev.rst:117
-msgid "Initializing Extensions"
+#: ../../project/docs/extensiondev.rst:99 0804caedd7364f1f82260d5c6ce0971a
+msgid "Adding Behavior"
 msgstr ""
 
-#: ../../extensiondev.rst:119
+#: ../../project/docs/extensiondev.rst:101 4b170471897445a6ba0ecc591e58fa44
 msgid ""
-"Many extensions will need some kind of initialization step.  For example,"
-" consider an application that's currently connecting to SQLite like the "
-"documentation suggests (:doc:`/patterns/sqlite3`). So how does the "
-"extension know the name of the application object?"
+"There are many ways that an extension can add behavior. Any setup methods"
+" that are available on the :class:`Flask` object can be used during an "
+"extension's ``init_app`` method."
 msgstr ""
 
-#: ../../extensiondev.rst:124
-msgid "Quite simple: you pass it to it."
-msgstr ""
-
-#: ../../extensiondev.rst:126
-msgid "There are two recommended ways for an extension to initialize:"
-msgstr ""
-
-#: ../../extensiondev.rst:128
-msgid "initialization functions:"
-msgstr ""
-
-#: ../../extensiondev.rst:130
+#: ../../project/docs/extensiondev.rst:105 aee0f2cdf03e4dd4be5e5060e46fda66
 msgid ""
-"If your extension is called `helloworld` you might have a function called"
-" ``init_helloworld(app[, extra_args])`` that initializes the extension "
-"for that application.  It could attach before / after handlers etc."
+"A common pattern is to use :meth:`~Flask.before_request` to initialize "
+"some data or a connection at the beginning of each request, then "
+":meth:`~Flask.teardown_request` to clean it up at the end. This can be "
+"stored on :data:`g`, discussed more below."
 msgstr ""
 
-#: ../../extensiondev.rst:135
-msgid "classes:"
-msgstr ""
-
-#: ../../extensiondev.rst:137
+#: ../../project/docs/extensiondev.rst:110 818e4cf6b61f46e8847af77b9a167dcc
 msgid ""
-"Classes work mostly like initialization functions but can later be used "
-"to further change the behavior."
+"A more lazy approach is to provide a method that initializes and caches "
+"the data or connection. For example, a ``ext.get_db`` method could create"
+" a database connection the first time it's called, so that a view that "
+"doesn't use the database doesn't create a connection."
 msgstr ""
 
-#: ../../extensiondev.rst:140
+#: ../../project/docs/extensiondev.rst:115 323641b5a3954b188e82377d5335598a
 msgid ""
-"What to use depends on what you have in mind.  For the SQLite 3 extension"
-" we will use the class-based approach because it will provide users with "
-"an object that handles opening and closing database connections."
+"Besides doing something before and after every view, your extension might"
+" want to add some specific views as well. In this case, you could define "
+"a :class:`Blueprint`, then call :meth:`~Flask.register_blueprint` during "
+"``init_app`` to add the blueprint to the app."
 msgstr ""
 
-#: ../../extensiondev.rst:144
+#: ../../project/docs/extensiondev.rst:122 e7e1ba3dc35641778147bd9a15d56722
+msgid "Configuration Techniques"
+msgstr ""
+
+#: ../../project/docs/extensiondev.rst:124 af6ae16951504644bd5d4246fca7ee64
 msgid ""
-"When designing your classes, it's important to make them easily reusable "
-"at the module level. This means the object itself must not under any "
-"circumstances store any application specific state and must be shareable "
-"between different applications."
+"There can be multiple levels and sources of configuration for an "
+"extension. You should consider what parts of your extension fall into "
+"each one."
 msgstr ""
 
-#: ../../extensiondev.rst:150
-msgid "The Extension Code"
-msgstr ""
-
-#: ../../extensiondev.rst:152
-msgid "Here's the contents of the `flask_sqlite3.py` for copy/paste::"
-msgstr ""
-
-#: ../../extensiondev.rst:185
-msgid "So here's what these lines of code do:"
-msgstr ""
-
-#: ../../extensiondev.rst:187
+#: ../../project/docs/extensiondev.rst:128 4c204315acf44072981fd6c8dab73fb5
 msgid ""
-"The ``__init__`` method takes an optional app object and, if supplied, "
-"will call ``init_app``."
+"Configuration per application instance, through ``app.config`` values. "
+"This is configuration that could reasonably change for each deployment of"
+" an application. A common example is a URL to an external resource, such "
+"as a database. Configuration keys should start with the extension's name "
+"so that they don't interfere with other extensions."
 msgstr ""
 
-#: ../../extensiondev.rst:189
+#: ../../project/docs/extensiondev.rst:134 c3b567b8a8c644118c98451415e04953
 msgid ""
-"The ``init_app`` method exists so that the ``SQLite3`` object can be "
-"instantiated without requiring an app object.  This method supports the "
-"factory pattern for creating applications.  The ``init_app`` will set the"
-" configuration for the database, defaulting to an in memory database if "
-"no configuration is supplied.  In addition, the ``init_app`` method "
-"attaches the ``teardown`` handler."
+"Configuration per extension instance, through ``__init__`` arguments. "
+"This configuration usually affects how the extension is used, such that "
+"it wouldn't make sense to change it per deployment."
 msgstr ""
 
-#: ../../extensiondev.rst:195
-msgid "Next, we define a ``connect`` method that opens a database connection."
-msgstr ""
-
-#: ../../extensiondev.rst:196
+#: ../../project/docs/extensiondev.rst:138 92cb1f7a0f9043c79c4c156725b84fcc
 msgid ""
-"Finally, we add a ``connection`` property that on first access opens the "
-"database connection and stores it on the context.  This is also the "
-"recommended way to handling resources: fetch resources lazily the first "
-"time they are used."
+"Configuration per extension instance, through instance attributes and "
+"decorator methods. It might be more ergonomic to assign to ``ext.value``,"
+" or use a ``@ext.register`` decorator to register a function, after the "
+"extension instance has been created."
 msgstr ""
 
-#: ../../extensiondev.rst:201
+#: ../../project/docs/extensiondev.rst:142 f6ca95864f564b418f009ce4fee6b741
 msgid ""
-"Note here that we're attaching our database connection to the top "
-"application context via ``_app_ctx_stack.top``. Extensions should use the"
-" top context for storing their own information with a sufficiently "
-"complex name."
+"Global configuration through class attributes. Changing a class attribute"
+" like ``Ext.connection_class`` can customize default behavior without "
+"making a subclass. This could be combined per-extension configuration to "
+"override defaults."
 msgstr ""
 
-#: ../../extensiondev.rst:206
+#: ../../project/docs/extensiondev.rst:146 23c7823537ba4ec18aad543556a79a1b
 msgid ""
-"So why did we decide on a class-based approach here?  Because using our "
-"extension looks something like this::"
+"Subclassing and overriding methods and attributes. Making the API of the "
+"extension itself something that can be overridden provides a very "
+"powerful tool for advanced customization."
 msgstr ""
 
-#: ../../extensiondev.rst:216
-msgid "You can then use the database from views like this::"
+#: ../../project/docs/extensiondev.rst:150 3015e21744254bc5bcf9898b291bde0e
+msgid "The :class:`~flask.Flask` object itself uses all of these techniques."
 msgstr ""
 
-#: ../../extensiondev.rst:223
+#: ../../project/docs/extensiondev.rst:152 df7e7f4eda414d37990a60dee794f755
 msgid ""
-"Likewise if you are outside of a request you can use the database by "
-"pushing an app context::"
+"It's up to you to decide what configuration is appropriate for your "
+"extension, based on what you need and what you want to support."
 msgstr ""
 
-#: ../../extensiondev.rst:230
+#: ../../project/docs/extensiondev.rst:155 d4f78a1c352d4d45858b7782c2fb608a
 msgid ""
-"At the end of the ``with`` block the teardown handles will be executed "
-"automatically."
+"Configuration should not be changed after the application setup phase is "
+"complete and the server begins handling requests. Configuration is "
+"global, any changes to it are not guaranteed to be visible to other "
+"workers."
 msgstr ""
 
-#: ../../extensiondev.rst:233
+#: ../../project/docs/extensiondev.rst:162 3a3ff5199b3246368a055ef5da49fb73
+msgid "Data During a Request"
+msgstr ""
+
+#: ../../project/docs/extensiondev.rst:164 3bda972d91f24c6faea015097d094446
 msgid ""
-"Additionally, the ``init_app`` method is used to support the factory "
-"pattern for creating apps::"
+"When writing a Flask application, the :data:`~flask.g` object is used to "
+"store information during a request. For example the :doc:`tutorial "
+"<tutorial/database>` stores a connection to a SQLite database as "
+"``g.db``. Extensions can also use this, with some care. Since ``g`` is a "
+"single global namespace, extensions must use unique names that won't "
+"collide with user data. For example, use the extension name as a prefix, "
+"or as a namespace."
 msgstr ""
 
-#: ../../extensiondev.rst:241
+#: ../../project/docs/extensiondev.rst:182 c68b0942fddb4ad59e4af8ab4b4a409f
 msgid ""
-"Keep in mind that supporting this factory pattern for creating apps is "
-"required for approved flask extensions (described below)."
+"The data in ``g`` lasts for an application context. An application "
+"context is active when a request context is, or when a CLI command is "
+"run. If you're storing something that should be closed, use "
+":meth:`~flask.Flask.teardown_appcontext` to ensure that it gets closed "
+"when the application context ends. If it should only be valid during a "
+"request, or would not be used in the CLI outside a request, use "
+":meth:`~flask.Flask.teardown_request`."
 msgstr ""
 
-#: ../../extensiondev.rst:244
-msgid "Note on ``init_app``"
+#: ../../project/docs/extensiondev.rst:192 2edc9d4e9b734f3897ee4a6ad0272e56
+msgid "Views and Models"
 msgstr ""
 
-#: ../../extensiondev.rst:246
+#: ../../project/docs/extensiondev.rst:194 3499fbd8970c4c22a2b53ce9e1600d01
 msgid ""
-"As you noticed, ``init_app`` does not assign ``app`` to ``self``.  This "
-"is intentional!  Class based Flask extensions must only store the "
-"application on the object when the application was passed to the "
-"constructor.  This tells the extension: I am not interested in using "
-"multiple applications."
+"Your extension views might want to interact with specific models in your "
+"database, or some other extension or data connected to your application. "
+"For example, let's consider a ``Flask-SimpleBlog`` extension that works "
+"with Flask-SQLAlchemy to provide a ``Post`` model and views to write and "
+"read posts."
 msgstr ""
 
-#: ../../extensiondev.rst:252
+#: ../../project/docs/extensiondev.rst:200 2c85f0dd31fe4b348c25221abe58955e
 msgid ""
-"When the extension needs to find the current application and it does not "
-"have a reference to it, it must either use the :data:`~flask.current_app`"
-" context local or change the API in a way that you can pass the "
-"application explicitly."
+"The ``Post`` model needs to subclass the Flask-SQLAlchemy ``db.Model`` "
+"object, but that's only available once you've created an instance of that"
+" extension, not when your extension is defining its views. So how can the"
+" view code, defined before the model exists, access the model?"
 msgstr ""
 
-#: ../../extensiondev.rst:259
-msgid "Using _app_ctx_stack"
-msgstr ""
-
-#: ../../extensiondev.rst:261
+#: ../../project/docs/extensiondev.rst:205 58dafa7720924d22bee606853b5f630e
 msgid ""
-"In the example above, before every request, a ``sqlite3_db`` variable is "
-"assigned to ``_app_ctx_stack.top``.  In a view function, this variable is"
-" accessible using the ``connection`` property of ``SQLite3``.  During the"
-" teardown of a request, the ``sqlite3_db`` connection is closed.  By "
-"using this pattern, the *same* connection to the sqlite3 database is "
-"accessible to anything that needs it for the duration of the request."
+"One method could be to use :doc:`views`. During ``__init__``, create the "
+"model, then create the views by passing the model to the view class's "
+":meth:`~views.View.as_view` method."
 msgstr ""
 
-#: ../../extensiondev.rst:270
-msgid "Learn from Others"
-msgstr ""
-
-#: ../../extensiondev.rst:272
+#: ../../project/docs/extensiondev.rst:235 f099a46f79e145658fcac45aa7683b0e
 msgid ""
-"This documentation only touches the bare minimum for extension "
-"development. If you want to learn more, it's a very good idea to check "
-"out existing extensions on the `PyPI`_.  If you feel lost there is still "
-"the `mailinglist`_ and the `Discord server`_ to get some ideas for nice "
-"looking APIs.  Especially if you do something nobody before you did, it "
-"might be a very good idea to get some more input.  This not only "
-"generates useful feedback on what people might want from an extension, "
-"but also avoids having multiple developers working in isolation on pretty"
-" much the same problem."
+"Another technique could be to use an attribute on the extension, such as "
+"``self.post_model`` from above. Add the extension to ``app.extensions`` "
+"in ``init_app``, then access "
+"``current_app.extensions[\"simple_blog\"].post_model`` from views."
 msgstr ""
 
-#: ../../extensiondev.rst:281
+#: ../../project/docs/extensiondev.rst:240 8c9b2f47567a492e94bfb84ebfe3bc28
 msgid ""
-"Remember: good API design is hard, so introduce your project on the "
-"mailing list, and let other developers give you a helping hand with "
-"designing the API."
+"You may also want to provide base classes so that users can provide their"
+" own ``Post`` model that conforms to the API your extension expects. So "
+"they could implement ``class Post(blog.BasePost)``, then set it as "
+"``blog.post_model``."
 msgstr ""
 
-#: ../../extensiondev.rst:285
+#: ../../project/docs/extensiondev.rst:245 8616a3dde4444272bea3b8324705d4d7
 msgid ""
-"The best Flask extensions are extensions that share common idioms for the"
-" API.  And this can only work if collaboration happens early."
+"As you can see, this can get a bit complex. Unfortunately, there's no "
+"perfect solution here, only different strategies and tradeoffs depending "
+"on your needs and how much customization you want to offer. Luckily, this"
+" sort of resource dependency is not a common need for most extensions. "
+"Remember, if you need help with design, ask on our `Discord Chat`_ or "
+"`GitHub Discussions`_."
 msgstr ""
 
-#: ../../extensiondev.rst:289
-msgid "Approved Extensions"
+#: ../../project/docs/extensiondev.rst:254 18665eb6bbc44a9eaca40fdfa646ae47
+msgid "Recommended Extension Guidelines"
 msgstr ""
 
-#: ../../extensiondev.rst:291
+#: ../../project/docs/extensiondev.rst:256 b3b3eea9fe9348a0b5651702c9d65113
 msgid ""
-"Flask previously had the concept of approved extensions. These came with "
-"some vetting of support and compatibility. While this list became too "
-"difficult to maintain over time, the guidelines are still relevant to all"
-" extensions maintained and developed today, as they help the Flask "
+"Flask previously had the concept of \"approved extensions\", where the "
+"Flask maintainers evaluated the quality, support, and compatibility of "
+"the extensions before listing them. While the list became too difficult "
+"to maintain over time, the guidelines are still relevant to all "
+"extensions maintained and developed today, as they help the Flask "
 "ecosystem remain consistent and compatible."
 msgstr ""
 
-#: ../../extensiondev.rst:297
+#: ../../project/docs/extensiondev.rst:263 852ea4031bc04b598bf13e5835498f96
 msgid ""
-"An approved Flask extension requires a maintainer. In the event an "
-"extension author would like to move beyond the project, the project "
-"should find a new maintainer and transfer access to the repository, "
-"documentation, PyPI, and any other services. If no maintainer is "
-"available, give access to the Pallets core team."
+"An extension requires a maintainer. In the event an extension author "
+"would like to move beyond the project, the project should find a new "
+"maintainer and transfer access to the repository, documentation, PyPI, "
+"and any other services. The `Pallets-Eco`_ organization on GitHub allows "
+"for community maintenance with oversight from the Pallets maintainers."
 msgstr ""
 
-#: ../../extensiondev.rst:302
+#: ../../project/docs/extensiondev.rst:269 141af81f7ca94b44b49c8c49f53fe409
 msgid ""
 "The naming scheme is *Flask-ExtensionName* or *ExtensionName-Flask*. It "
 "must provide exactly one package or module named "
 "``flask_extension_name``."
 msgstr ""
 
-#: ../../extensiondev.rst:305
+#: ../../project/docs/extensiondev.rst:272 6d033b999f544fbfa4d9f59b7ca092ea
 msgid ""
-"The extension must be BSD or MIT licensed. It must be open source and "
-"publicly available."
+"The extension must use an open source license. The Python web ecosystem "
+"tends to prefer BSD or MIT. It must be open source and publicly "
+"available."
 msgstr ""
 
-#: ../../extensiondev.rst:307
+#: ../../project/docs/extensiondev.rst:275 492d34c4aea44dda8dc98de937098fd6
 msgid "The extension's API must have the following characteristics:"
 msgstr ""
 
-#: ../../extensiondev.rst:309
+#: ../../project/docs/extensiondev.rst:277 59a66948efc24ac8b58cf6a25dd55cd1
 msgid ""
 "It must support multiple applications running in the same Python process."
 " Use ``current_app`` instead of ``self.app``, store configuration and "
 "state per application instance."
 msgstr ""
 
-#: ../../extensiondev.rst:312
+#: ../../project/docs/extensiondev.rst:280 1c31d18e9509477284aa20b2f5c6dabe
 msgid ""
 "It must be possible to use the factory pattern for creating applications."
 " Use the ``ext.init_app()`` pattern."
 msgstr ""
 
-#: ../../extensiondev.rst:315
+#: ../../project/docs/extensiondev.rst:283 dbf068c21ef24de2b0fbaf501f51d5a2
 msgid ""
 "From a clone of the repository, an extension with its dependencies must "
-"be installable with ``pip install -e .``."
+"be installable in editable mode with ``pip install -e .``."
 msgstr ""
 
-#: ../../extensiondev.rst:317
+#: ../../project/docs/extensiondev.rst:285 a24d6b67b6354949b29437cc0f311da0
 msgid ""
-"It must ship a testing suite that can be invoked with ``tox -e py`` or "
-"``pytest``. If not using ``tox``, the test dependencies should be "
-"specified in a ``requirements.txt`` file. The tests must be part of the "
-"sdist distribution."
+"It must ship tests that can be invoked with a common tool like ``tox -e "
+"py``, ``nox -s test`` or ``pytest``. If not using ``tox``, the test "
+"dependencies should be specified in a requirements file. The tests must "
+"be part of the sdist distribution."
 msgstr ""
 
-#: ../../extensiondev.rst:321
+#: ../../project/docs/extensiondev.rst:289 d965dc15c7b84d2c8a08d093476f7913
 msgid ""
-"The documentation must use the ``flask`` theme from the `Official Pallets"
-" Themes`_. A link to the documentation or project website must be in the "
-"PyPI metadata or the readme."
+"A link to the documentation or project website must be in the PyPI "
+"metadata or the readme. The documentation should use the Flask theme from"
+" the `Official Pallets Themes`_."
 msgstr ""
 
-#: ../../extensiondev.rst:324
+#: ../../project/docs/extensiondev.rst:292 5f8ed71c43fe432d98560a74f130fa67
 msgid ""
-"For maximum compatibility, the extension should support the same versions"
-" of Python that Flask supports. 3.6+ is recommended as of 2020. Use "
-"``python_requires=\">= 3.6\"`` in ``setup.py`` to indicate supported "
-"versions."
+"The extension's dependencies should not use upper bounds or assume any "
+"particular version scheme, but should use lower bounds to indicate "
+"minimum compatibility support. For example, ``sqlalchemy>=1.4``."
 msgstr ""
+
+#: ../../project/docs/extensiondev.rst:296 cfd371f6e86842b48bb04529001b12fa
+msgid ""
+"Indicate the versions of Python supported using "
+"``python_requires=\">=version\"``. Flask itself supports Python >=3.9 as "
+"of October 2024, and this will update over time."
+msgstr ""
+
+#~ msgid ""
+#~ "Flask, being a microframework, often "
+#~ "requires some repetitive steps to get"
+#~ " a third party library working. Many"
+#~ " such extensions are already available "
+#~ "on `PyPI`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you want to create your own "
+#~ "Flask extension for something that does"
+#~ " not exist yet, this guide to "
+#~ "extension development will help you get"
+#~ " your extension running in no time"
+#~ " and to feel like users would "
+#~ "expect your extension to behave."
+#~ msgstr ""
+
+#~ msgid "Anatomy of an Extension"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Extensions are all located in a "
+#~ "package called ``flask_something`` where "
+#~ "\"something\" is the name of the "
+#~ "library you want to bridge.  So "
+#~ "for example if you plan to add "
+#~ "support for a library named `simplexml`"
+#~ " to Flask, you would name your "
+#~ "extension's package ``flask_simplexml``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The name of the actual extension "
+#~ "(the human readable name) however would"
+#~ " be something like \"Flask-SimpleXML\"."
+#~ "  Make sure to include the name "
+#~ "\"Flask\" somewhere in that name and "
+#~ "that you check the capitalization. This"
+#~ " is how users can then register "
+#~ "dependencies to your extension in their"
+#~ " :file:`setup.py` files."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "But what do extensions look like "
+#~ "themselves?  An extension has to ensure"
+#~ " that it works with multiple Flask"
+#~ " application instances at once.  This "
+#~ "is a requirement because many people "
+#~ "will use patterns like the "
+#~ ":doc:`/patterns/appfactories` pattern to create "
+#~ "their application as needed to aid "
+#~ "unittests and to support multiple "
+#~ "configurations. Because of that it is"
+#~ " crucial that your application supports "
+#~ "that kind of behavior."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Most importantly the extension must be"
+#~ " shipped with a :file:`setup.py` file "
+#~ "and registered on PyPI.  Also the "
+#~ "development checkout link should work so"
+#~ " that people can easily install the"
+#~ " development version into their virtualenv"
+#~ " without having to download the "
+#~ "library by hand."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Flask extensions must be licensed under"
+#~ " a BSD, MIT or more liberal "
+#~ "license in order to be listed in"
+#~ " the Flask Extension Registry.  Keep "
+#~ "in mind that the Flask Extension "
+#~ "Registry is a moderated place and "
+#~ "libraries will be reviewed upfront if"
+#~ " they behave as required."
+#~ msgstr ""
+
+#~ msgid "\"Hello Flaskext!\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "So let's get started with creating "
+#~ "such a Flask extension.  The extension"
+#~ " we want to create here will "
+#~ "provide very basic support for SQLite3."
+#~ msgstr ""
+
+#~ msgid "First we create the following folder structure::"
+#~ msgstr ""
+
+#~ msgid "Here's the contents of the most important files:"
+#~ msgstr ""
+
+#~ msgid "setup.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The next file that is absolutely "
+#~ "required is the :file:`setup.py` file "
+#~ "which is used to install your "
+#~ "Flask extension.  The following contents "
+#~ "are something you can work with::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "That's a lot of code but you "
+#~ "can really just copy/paste that from "
+#~ "existing extensions and adapt."
+#~ msgstr ""
+
+#~ msgid "flask_sqlite3.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now this is where your extension "
+#~ "code goes.  But how exactly should "
+#~ "such an extension look like?  What "
+#~ "are the best practices?  Continue "
+#~ "reading for some insight."
+#~ msgstr ""
+
+#~ msgid "Initializing Extensions"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Many extensions will need some kind "
+#~ "of initialization step.  For example, "
+#~ "consider an application that's currently "
+#~ "connecting to SQLite like the "
+#~ "documentation suggests (:doc:`/patterns/sqlite3`). "
+#~ "So how does the extension know the"
+#~ " name of the application object?"
+#~ msgstr ""
+
+#~ msgid "Quite simple: you pass it to it."
+#~ msgstr ""
+
+#~ msgid "There are two recommended ways for an extension to initialize:"
+#~ msgstr ""
+
+#~ msgid "initialization functions:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If your extension is called `helloworld`"
+#~ " you might have a function called "
+#~ "``init_helloworld(app[, extra_args])`` that "
+#~ "initializes the extension for that "
+#~ "application.  It could attach before /"
+#~ " after handlers etc."
+#~ msgstr ""
+
+#~ msgid "classes:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Classes work mostly like initialization "
+#~ "functions but can later be used to"
+#~ " further change the behavior."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "What to use depends on what you"
+#~ " have in mind.  For the SQLite "
+#~ "3 extension we will use the "
+#~ "class-based approach because it will "
+#~ "provide users with an object that "
+#~ "handles opening and closing database "
+#~ "connections."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When designing your classes, it's "
+#~ "important to make them easily reusable"
+#~ " at the module level. This means "
+#~ "the object itself must not under "
+#~ "any circumstances store any application "
+#~ "specific state and must be shareable "
+#~ "between different applications."
+#~ msgstr ""
+
+#~ msgid "The Extension Code"
+#~ msgstr ""
+
+#~ msgid "Here's the contents of the `flask_sqlite3.py` for copy/paste::"
+#~ msgstr ""
+
+#~ msgid "So here's what these lines of code do:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ``__init__`` method takes an "
+#~ "optional app object and, if supplied,"
+#~ " will call ``init_app``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ``init_app`` method exists so that"
+#~ " the ``SQLite3`` object can be "
+#~ "instantiated without requiring an app "
+#~ "object.  This method supports the "
+#~ "factory pattern for creating applications."
+#~ "  The ``init_app`` will set the "
+#~ "configuration for the database, defaulting "
+#~ "to an in memory database if no "
+#~ "configuration is supplied.  In addition, "
+#~ "the ``init_app`` method attaches the "
+#~ "``teardown`` handler."
+#~ msgstr ""
+
+#~ msgid "Next, we define a ``connect`` method that opens a database connection."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Finally, we add a ``connection`` "
+#~ "property that on first access opens "
+#~ "the database connection and stores it"
+#~ " on the context.  This is also "
+#~ "the recommended way to handling "
+#~ "resources: fetch resources lazily the "
+#~ "first time they are used."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note here that we're attaching our "
+#~ "database connection to the top "
+#~ "application context via ``_app_ctx_stack.top``. "
+#~ "Extensions should use the top context"
+#~ " for storing their own information "
+#~ "with a sufficiently complex name."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "So why did we decide on a "
+#~ "class-based approach here?  Because using"
+#~ " our extension looks something like "
+#~ "this::"
+#~ msgstr ""
+
+#~ msgid "You can then use the database from views like this::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Likewise if you are outside of a"
+#~ " request you can use the database "
+#~ "by pushing an app context::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "At the end of the ``with`` block"
+#~ " the teardown handles will be "
+#~ "executed automatically."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additionally, the ``init_app`` method is "
+#~ "used to support the factory pattern "
+#~ "for creating apps::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Keep in mind that supporting this "
+#~ "factory pattern for creating apps is "
+#~ "required for approved flask extensions "
+#~ "(described below)."
+#~ msgstr ""
+
+#~ msgid "Note on ``init_app``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "As you noticed, ``init_app`` does not"
+#~ " assign ``app`` to ``self``.  This is"
+#~ " intentional!  Class based Flask extensions"
+#~ " must only store the application on"
+#~ " the object when the application was"
+#~ " passed to the constructor.  This "
+#~ "tells the extension: I am not "
+#~ "interested in using multiple applications."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When the extension needs to find "
+#~ "the current application and it does "
+#~ "not have a reference to it, it "
+#~ "must either use the :data:`~flask.current_app`"
+#~ " context local or change the API "
+#~ "in a way that you can pass "
+#~ "the application explicitly."
+#~ msgstr ""
+
+#~ msgid "Using _app_ctx_stack"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the example above, before every "
+#~ "request, a ``sqlite3_db`` variable is "
+#~ "assigned to ``_app_ctx_stack.top``.  In a "
+#~ "view function, this variable is "
+#~ "accessible using the ``connection`` property"
+#~ " of ``SQLite3``.  During the teardown "
+#~ "of a request, the ``sqlite3_db`` "
+#~ "connection is closed.  By using this "
+#~ "pattern, the *same* connection to the"
+#~ " sqlite3 database is accessible to "
+#~ "anything that needs it for the "
+#~ "duration of the request."
+#~ msgstr ""
+
+#~ msgid "Learn from Others"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This documentation only touches the bare"
+#~ " minimum for extension development. If "
+#~ "you want to learn more, it's a "
+#~ "very good idea to check out "
+#~ "existing extensions on the `PyPI`_.  If"
+#~ " you feel lost there is still "
+#~ "the `mailinglist`_ and the `Discord "
+#~ "server`_ to get some ideas for "
+#~ "nice looking APIs.  Especially if you"
+#~ " do something nobody before you did,"
+#~ " it might be a very good idea"
+#~ " to get some more input.  This "
+#~ "not only generates useful feedback on"
+#~ " what people might want from an "
+#~ "extension, but also avoids having "
+#~ "multiple developers working in isolation "
+#~ "on pretty much the same problem."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Remember: good API design is hard, "
+#~ "so introduce your project on the "
+#~ "mailing list, and let other developers"
+#~ " give you a helping hand with "
+#~ "designing the API."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The best Flask extensions are extensions"
+#~ " that share common idioms for the "
+#~ "API.  And this can only work if"
+#~ " collaboration happens early."
+#~ msgstr ""
+
+#~ msgid "Approved Extensions"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Flask previously had the concept of "
+#~ "approved extensions. These came with "
+#~ "some vetting of support and "
+#~ "compatibility. While this list became "
+#~ "too difficult to maintain over time, "
+#~ "the guidelines are still relevant to "
+#~ "all extensions maintained and developed "
+#~ "today, as they help the Flask "
+#~ "ecosystem remain consistent and compatible."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An approved Flask extension requires a"
+#~ " maintainer. In the event an "
+#~ "extension author would like to move "
+#~ "beyond the project, the project should"
+#~ " find a new maintainer and transfer"
+#~ " access to the repository, documentation,"
+#~ " PyPI, and any other services. If "
+#~ "no maintainer is available, give access"
+#~ " to the Pallets core team."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The extension must be BSD or MIT"
+#~ " licensed. It must be open source "
+#~ "and publicly available."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "From a clone of the repository, an"
+#~ " extension with its dependencies must "
+#~ "be installable with ``pip install -e "
+#~ ".``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It must ship a testing suite that"
+#~ " can be invoked with ``tox -e "
+#~ "py`` or ``pytest``. If not using "
+#~ "``tox``, the test dependencies should be"
+#~ " specified in a ``requirements.txt`` file."
+#~ " The tests must be part of the"
+#~ " sdist distribution."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The documentation must use the ``flask``"
+#~ " theme from the `Official Pallets "
+#~ "Themes`_. A link to the documentation"
+#~ " or project website must be in "
+#~ "the PyPI metadata or the readme."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For maximum compatibility, the extension "
+#~ "should support the same versions of "
+#~ "Python that Flask supports. 3.6+ is "
+#~ "recommended as of 2020. Use "
+#~ "``python_requires=\">= 3.6\"`` in ``setup.py`` "
+#~ "to indicate supported versions."
+#~ msgstr ""
+

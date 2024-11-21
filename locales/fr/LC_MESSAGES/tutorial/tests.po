@@ -8,110 +8,112 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-01 02:27-0500\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr_FR <victor.levieux@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../tutorial/tests.rst:4
+#: ../../project/docs/tutorial/tests.rst:4 54277fd02f0d4c8aa1404bb91c053472
 msgid "Test Coverage"
 msgstr "Couverture des tests"
 
-#: ../../tutorial/tests.rst:6
+#: ../../project/docs/tutorial/tests.rst:6 a1772852f8b54b25b1e3060514d08732
 msgid ""
 "Writing unit tests for your application lets you check that the code you "
-"wrote works the way you expect. Flask provides a test client that simulates "
-"requests to the application and returns the response data."
+"wrote works the way you expect. Flask provides a test client that "
+"simulates requests to the application and returns the response data."
 msgstr ""
 "L'écriture de tests unitaires pour votre application vous permet de "
-"vérifier que le code que vous avez écrit fonctionne comme vous l'attendez. "
-"Flask fournit un client de test qui simule les requêtes adressées à "
-"l'application et renvoie les données de réponse."
+"vérifier que le code que vous avez écrit fonctionne comme vous "
+"l'attendez. Flask fournit un client de test qui simule les requêtes "
+"adressées à l'application et renvoie les données de réponse."
 
-#: ../../tutorial/tests.rst:10
+#: ../../project/docs/tutorial/tests.rst:10 a0281e98fff143739691090f4d6049b0
 msgid ""
 "You should test as much of your code as possible. Code in functions only "
 "runs when the function is called, and code in branches, such as ``if`` "
 "blocks, only runs when the condition is met. You want to make sure that "
 "each function is tested with data that covers each branch."
 msgstr ""
-"Vous devez tester votre code autant que possible. Le code des fonctions ne "
-"s'exécute que lorsque la fonction est appelée, et le code des "
+"Vous devez tester votre code autant que possible. Le code des fonctions "
+"ne s'exécute que lorsque la fonction est appelée, et le code des "
 "embranchements, comme les blocs ``if``, ne s'exécute que lorsque la "
 "condition est remplie. Vous devez vous assurer que chaque fonction est "
 "testée avec des données qui couvrent chaque branche."
 
-#: ../../tutorial/tests.rst:15
+#: ../../project/docs/tutorial/tests.rst:15 c1e68ade73cf44fd9888d73ad07679a7
 #, python-format
 msgid ""
-"The closer you get to 100% coverage, the more comfortable you can be that "
-"making a change won't unexpectedly change other behavior. However, "
-"100% coverage doesn't guarantee that your application doesn't have bugs. In "
-"particular, it doesn't test how the user interacts with the application in "
-"the browser. Despite this, test coverage is an important tool to use during "
-"development."
+"The closer you get to 100% coverage, the more comfortable you can be that"
+" making a change won't unexpectedly change other behavior. However, 100% "
+"coverage doesn't guarantee that your application doesn't have bugs. In "
+"particular, it doesn't test how the user interacts with the application "
+"in the browser. Despite this, test coverage is an important tool to use "
+"during development."
 msgstr ""
-"Plus vous vous rapprochez d'une couverture de 100 %, plus vous pouvez être "
-"sûr qu'un changement ne modifiera pas de manière inattendue d'autres "
-"comportements. Cependant, une couverture à 100 % ne garantit pas que votre "
-"application ne comporte pas de bogues. En particulier, elle ne permet pas "
-"de tester la manière dont l'utilisateur interagit avec l'application dans "
-"le navigateur. Malgré cela, la couverture des tests est un outil important "
-"à utiliser pendant le développement."
+"Plus vous vous rapprochez d'une couverture de 100 %, plus vous pouvez "
+"être sûr qu'un changement ne modifiera pas de manière inattendue d'autres"
+" comportements. Cependant, une couverture à 100 % ne garantit pas que "
+"votre application ne comporte pas de bogues. En particulier, elle ne "
+"permet pas de tester la manière dont l'utilisateur interagit avec "
+"l'application dans le navigateur. Malgré cela, la couverture des tests "
+"est un outil important à utiliser pendant le développement."
 
-#: ../../tutorial/tests.rst:23
+#: ../../project/docs/tutorial/tests.rst:23 f5d2f23c933248eb8f35f07a7776a760
 msgid ""
-"This is being introduced late in the tutorial, but in your future projects "
-"you should test as you develop."
+"This is being introduced late in the tutorial, but in your future "
+"projects you should test as you develop."
 msgstr ""
-"Ce point est introduit tardivement dans le tutoriel, mais dans vos futurs "
-"projets, vous devriez tester au fur et à mesure que vous développez."
+"Ce point est introduit tardivement dans le tutoriel, mais dans vos futurs"
+" projets, vous devriez tester au fur et à mesure que vous développez."
 
-#: ../../tutorial/tests.rst:26
+#: ../../project/docs/tutorial/tests.rst:26 cb296296dd8944ef8b55a79ed5a26691
 msgid ""
-"You'll use `pytest`_ and `coverage`_ to test and measure your code. Install "
-"them both:"
+"You'll use `pytest`_ and `coverage`_ to test and measure your code. "
+"Install them both:"
 msgstr ""
-"Vous utiliserez `pytest`_ et `coverage`_ pour tester et mesurer votre code. "
-"Installez-les tous les deux :"
+"Vous utiliserez `pytest`_ et `coverage`_ pour tester et mesurer votre "
+"code. Installez-les tous les deux :"
 
-#: ../../tutorial/tests.rst:38
+#: ../../project/docs/tutorial/tests.rst:38 78fa9c6373114c22b1b912a505c095bd
 msgid "Setup and Fixtures"
 msgstr "Installation et *fixtures*"
 
-#: ../../tutorial/tests.rst:40
+#: ../../project/docs/tutorial/tests.rst:40 c1725a6ddbe747aeaab4c92e497d0add
 msgid ""
 "The test code is located in the ``tests`` directory. This directory is "
-"*next to* the ``flaskr`` package, not inside it. The ``tests/conftest.py`` "
-"file contains setup functions called *fixtures* that each test will use. "
-"Tests are in Python modules that start with ``test_``, and each test "
-"function in those modules also starts with ``test_``."
+"*next to* the ``flaskr`` package, not inside it. The "
+"``tests/conftest.py`` file contains setup functions called *fixtures* "
+"that each test will use. Tests are in Python modules that start with "
+"``test_``, and each test function in those modules also starts with "
+"``test_``."
 msgstr ""
 "Le code de test est situé dans le répertoire ``tests``. Ce répertoire se "
-"trouve *à côté* du paquet ``flaskr``, pas à l'intérieur. Le fichier ``tests/"
-"conftest.py`` contient des fonctions de configuration appelées *fixtures* "
-"que chaque test utilisera. Les tests sont dans des modules Python qui "
-"commencent par ``test_``, et chaque fonction de test dans ces modules "
-"commence aussi par ``test_``."
+"trouve *à côté* du paquet ``flaskr``, pas à l'intérieur. Le fichier "
+"``tests/conftest.py`` contient des fonctions de configuration appelées "
+"*fixtures* que chaque test utilisera. Les tests sont dans des modules "
+"Python qui commencent par ``test_``, et chaque fonction de test dans ces "
+"modules commence aussi par ``test_``."
 
-#: ../../tutorial/tests.rst:47
+#: ../../project/docs/tutorial/tests.rst:47 ae384401eb254bb6952932d5895cc7ed
 msgid ""
-"Each test will create a new temporary database file and populate some data "
-"that will be used in the tests. Write a SQL file to insert that data."
+"Each test will create a new temporary database file and populate some "
+"data that will be used in the tests. Write a SQL file to insert that "
+"data."
 msgstr ""
 "Chaque test créera un nouveau fichier de base de données temporaire et "
-"alimentera certaines données qui seront utilisées dans les tests. Écrivez "
-"un fichier SQL pour insérer ces données."
+"alimentera certaines données qui seront utilisées dans les tests. Écrivez"
+" un fichier SQL pour insérer ces données."
 
-#: ../../tutorial/tests.rst:51
+#: ../../project/docs/tutorial/tests.rst:51 1273f8ade2584293adba2134a4c1ec42
 msgid "``tests/data.sql``"
 msgstr "``tests/data.sql``"
 
-#: ../../tutorial/tests.rst:63
+#: ../../project/docs/tutorial/tests.rst:63 bc0fdf169b164c799fcfb65a856f18fa
 msgid ""
 "The ``app`` fixture will call the factory and pass ``test_config`` to "
 "configure the application and database for testing instead of using your "
@@ -121,413 +123,441 @@ msgstr ""
 "configurer l'application et la base de données pour les tests au lieu "
 "d'utiliser votre configuration de développement locale."
 
-#: ../../tutorial/tests.rst:67 ../../tutorial/tests.rst:226
+#: ../../project/docs/tutorial/tests.rst:67
+#: ../../project/docs/tutorial/tests.rst:226 04da6d9057b640b49e3593538c095381
+#: d0934bef849b489fa7978b95b52c5297
 msgid "``tests/conftest.py``"
 msgstr "``tests/conftest.py``"
 
-#: ../../tutorial/tests.rst:109
+#: ../../project/docs/tutorial/tests.rst:109 895fc21f37a14ae6adcffc2c7ab9804c
 msgid ""
-":func:`tempfile.mkstemp` creates and opens a temporary file, returning the "
-"file descriptor and the path to it. The ``DATABASE`` path is overridden so "
-"it points to this temporary path instead of the instance folder. After "
-"setting the path, the database tables are created and the test data is "
-"inserted. After the test is over, the temporary file is closed and removed."
+":func:`tempfile.mkstemp` creates and opens a temporary file, returning "
+"the file descriptor and the path to it. The ``DATABASE`` path is "
+"overridden so it points to this temporary path instead of the instance "
+"folder. After setting the path, the database tables are created and the "
+"test data is inserted. After the test is over, the temporary file is "
+"closed and removed."
 msgstr ""
-":func:`tempfile.mkstemp` crée et ouvre un fichier temporaire, renvoyant le "
-"descripteur de fichier et le chemin d'accès à celui-ci. Le chemin d'accès à "
-"la ``DATABASE`` est remplacé par le chemin d'accès temporaire au lieu du "
-"dossier de l'instance. Après avoir défini le chemin, les tables de la base "
-"de données sont créées et les données du test sont insérées. Une fois le "
-"test terminé, le fichier temporaire est fermé et supprimé."
+":func:`tempfile.mkstemp` crée et ouvre un fichier temporaire, renvoyant "
+"le descripteur de fichier et le chemin d'accès à celui-ci. Le chemin "
+"d'accès à la ``DATABASE`` est remplacé par le chemin d'accès temporaire "
+"au lieu du dossier de l'instance. Après avoir défini le chemin, les "
+"tables de la base de données sont créées et les données du test sont "
+"insérées. Une fois le test terminé, le fichier temporaire est fermé et "
+"supprimé."
 
-#: ../../tutorial/tests.rst:116
+#: ../../project/docs/tutorial/tests.rst:116 0f1e73e35aab4cbabeb315440e0a9152
 msgid ""
 ":data:`TESTING` tells Flask that the app is in test mode. Flask changes "
 "some internal behavior so it's easier to test, and other extensions can "
 "also use the flag to make testing them easier."
 msgstr ""
-":data:`TESTING` indique à Flask que l'application est en mode test. Flask "
-"modifie certains comportements internes pour faciliter les tests, et "
+":data:`TESTING` indique à Flask que l'application est en mode test. Flask"
+" modifie certains comportements internes pour faciliter les tests, et "
 "d'autres extensions peuvent également utiliser ce *flag* pour faciliter "
 "leurs tests."
 
-#: ../../tutorial/tests.rst:120
+#: ../../project/docs/tutorial/tests.rst:120 1a51426f1f4747748010dcb4e773cb2e
 msgid ""
-"The ``client`` fixture calls :meth:`app.test_client() <Flask.test_client>` "
-"with the application object created by the ``app`` fixture. Tests will use "
-"the client to make requests to the application without running the server."
+"The ``client`` fixture calls :meth:`app.test_client() "
+"<Flask.test_client>` with the application object created by the ``app`` "
+"fixture. Tests will use the client to make requests to the application "
+"without running the server."
 msgstr ""
-"La *fixture* ``client`` appelle :meth:`app.test_client() <Flask."
-"test_client>` avec l'objet application créé par la *fixture* ``app``. Les "
-"tests utiliseront le client pour faire des requêtes à l'application sans "
-"démarrer le serveur."
+"La *fixture* ``client`` appelle :meth:`app.test_client() "
+"<Flask.test_client>` avec l'objet application créé par la *fixture* "
+"``app``. Les tests utiliseront le client pour faire des requêtes à "
+"l'application sans démarrer le serveur."
 
-#: ../../tutorial/tests.rst:125
+#: ../../project/docs/tutorial/tests.rst:125 507f2303138f4fcf914235934593aed4
 msgid ""
-"The ``runner`` fixture is similar to ``client``. :meth:`app."
-"test_cli_runner() <Flask.test_cli_runner>` creates a runner that can call "
-"the Click commands registered with the application."
+"The ``runner`` fixture is similar to ``client``. "
+":meth:`app.test_cli_runner() <Flask.test_cli_runner>` creates a runner "
+"that can call the Click commands registered with the application."
 msgstr ""
-"La *fixture* ``runner`` est similaire à ``client``. :meth:`app."
-"test_cli_runner() <Flask.test_cli_runner>` crée un runner qui peut appeler "
-"les commandes Click enregistrées avec l'application."
+"La *fixture* ``runner`` est similaire à ``client``. "
+":meth:`app.test_cli_runner() <Flask.test_cli_runner>` crée un runner qui "
+"peut appeler les commandes Click enregistrées avec l'application."
 
-#: ../../tutorial/tests.rst:129
+#: ../../project/docs/tutorial/tests.rst:129 6862db75ef2345d69a28f1cbff28b58a
 msgid ""
 "Pytest uses fixtures by matching their function names with the names of "
-"arguments in the test functions. For example, the ``test_hello`` function "
-"you'll write next takes a ``client`` argument. Pytest matches that with the "
-"``client`` fixture function, calls it, and passes the returned value to the "
-"test function."
+"arguments in the test functions. For example, the ``test_hello`` function"
+" you'll write next takes a ``client`` argument. Pytest matches that with "
+"the ``client`` fixture function, calls it, and passes the returned value "
+"to the test function."
 msgstr ""
 "Pytest utilise les *fixtures* en faisant correspondre leurs noms de "
 "fonctions avec les noms des arguments dans les fonctions de test. Par "
-"exemple, la fonction ``test_hello`` que vous allez écrire ensuite prend un "
-"argument ``client``. Pytest fait correspondre cet argument avec la fonction "
-"*fixture* ``client``, l'appelle et passe la valeur retournée à la fonction "
-"de test."
+"exemple, la fonction ``test_hello`` que vous allez écrire ensuite prend "
+"un argument ``client``. Pytest fait correspondre cet argument avec la "
+"fonction *fixture* ``client``, l'appelle et passe la valeur retournée à "
+"la fonction de test."
 
-#: ../../tutorial/tests.rst:137
+#: ../../project/docs/tutorial/tests.rst:137 070985d25d3b4277955e0681f17bb102
 msgid "Factory"
 msgstr "Fabrique"
 
-#: ../../tutorial/tests.rst:139
+#: ../../project/docs/tutorial/tests.rst:139 45daac9149fb4c1197e46863c0713fdd
 msgid ""
-"There's not much to test about the factory itself. Most of the code will be "
-"executed for each test already, so if something fails the other tests will "
-"notice."
+"There's not much to test about the factory itself. Most of the code will "
+"be executed for each test already, so if something fails the other tests "
+"will notice."
 msgstr ""
-"Il n'y a pas grand chose à tester sur l'usine elle-même. La plupart du code "
-"sera déjà exécuté pour chaque test, donc si quelque chose échoue, les "
-"autres tests le remarqueront."
+"Il n'y a pas grand chose à tester sur l'usine elle-même. La plupart du "
+"code sera déjà exécuté pour chaque test, donc si quelque chose échoue, "
+"les autres tests le remarqueront."
 
-#: ../../tutorial/tests.rst:143
+#: ../../project/docs/tutorial/tests.rst:143 ac4f623839c54306ba1e8ac63e303c28
 msgid ""
-"The only behavior that can change is passing test config. If config is not "
-"passed, there should be some default configuration, otherwise the "
+"The only behavior that can change is passing test config. If config is "
+"not passed, there should be some default configuration, otherwise the "
 "configuration should be overridden."
 msgstr ""
-"Le seul comportement qui peut changer est le passage du test config. Si la "
-"configuration n'est pas passée, il doit y avoir une configuration par "
+"Le seul comportement qui peut changer est le passage du test config. Si "
+"la configuration n'est pas passée, il doit y avoir une configuration par "
 "défaut, sinon la configuration doit être remplacée."
 
-#: ../../tutorial/tests.rst:147
+#: ../../project/docs/tutorial/tests.rst:147 1d98dff020da44a3887efab03dc2188f
 msgid "``tests/test_factory.py``"
 msgstr "``tests/test_factory.py``"
 
-#: ../../tutorial/tests.rst:162
+#: ../../project/docs/tutorial/tests.rst:162 3357eeebfcd847579be73505b0598a46
 msgid ""
-"You added the ``hello`` route as an example when writing the factory at the "
-"beginning of the tutorial. It returns \"Hello, World!\", so the test checks "
-"that the response data matches."
+"You added the ``hello`` route as an example when writing the factory at "
+"the beginning of the tutorial. It returns \"Hello, World!\", so the test "
+"checks that the response data matches."
 msgstr ""
-"Vous avez ajouté la route ``hello`` comme exemple lors de l'écriture de la "
-"fabrique au début du tutoriel. Il retourne \"Hello, World !\", donc le test "
-"vérifie que les données de la réponse correspondent."
+"Vous avez ajouté la route ``hello`` comme exemple lors de l'écriture de "
+"la fabrique au début du tutoriel. Il retourne \"Hello, World !\", donc le"
+" test vérifie que les données de la réponse correspondent."
 
-#: ../../tutorial/tests.rst:168
+#: ../../project/docs/tutorial/tests.rst:168 25b462afb17a454a87042a2718d28ab7
 msgid "Database"
 msgstr "Base de données"
 
-#: ../../tutorial/tests.rst:170
+#: ../../project/docs/tutorial/tests.rst:170 c32e875bb6414a84b72f88b67c1310c7
 msgid ""
-"Within an application context, ``get_db`` should return the same connection "
-"each time it's called. After the context, the connection should be closed."
+"Within an application context, ``get_db`` should return the same "
+"connection each time it's called. After the context, the connection "
+"should be closed."
 msgstr ""
-"Dans un contexte d'application, ``get_db`` doit retourner la même connexion "
-"à chaque fois qu'il est appelé. Après le contexte, la connexion doit être "
-"fermée."
+"Dans un contexte d'application, ``get_db`` doit retourner la même "
+"connexion à chaque fois qu'il est appelé. Après le contexte, la connexion"
+" doit être fermée."
 
-#: ../../tutorial/tests.rst:174 ../../tutorial/tests.rst:196
+#: ../../project/docs/tutorial/tests.rst:174
+#: ../../project/docs/tutorial/tests.rst:196 2c0d8401051f4b32b4bcd8bbb03b0041
+#: 983a8657574145ac9e7f5d50c501a86d
 msgid "``tests/test_db.py``"
 msgstr "``tests/test_db.py``"
 
-#: ../../tutorial/tests.rst:193
+#: ../../project/docs/tutorial/tests.rst:193 64a19c8d42e9422f821c0d141e683e70
 msgid ""
-"The ``init-db`` command should call the ``init_db`` function and output a "
-"message."
+"The ``init-db`` command should call the ``init_db`` function and output a"
+" message."
 msgstr ""
-"La commande ``init-db`` devrait appeler la fonction ``init_db`` et produire "
-"un message."
+"La commande ``init-db`` devrait appeler la fonction ``init_db`` et "
+"produire un message."
 
-#: ../../tutorial/tests.rst:211
+#: ../../project/docs/tutorial/tests.rst:211 91b9470e17c74e17bd3a1fcadd3a03af
 msgid ""
-"This test uses Pytest's ``monkeypatch`` fixture to replace the ``init_db`` "
-"function with one that records that it's been called. The ``runner`` "
-"fixture you wrote above is used to call the ``init-db`` command by name."
+"This test uses Pytest's ``monkeypatch`` fixture to replace the "
+"``init_db`` function with one that records that it's been called. The "
+"``runner`` fixture you wrote above is used to call the ``init-db`` "
+"command by name."
 msgstr ""
 "Ce test utilise la *fixture* ``monkeypatch`` de Pytest pour remplacer la "
-"fonction ``init_db`` par une fonction qui enregistre qu'elle a été appelée. "
-"La *fixture* ``runner`` que vous avez écrite ci-dessus est utilisée pour "
-"appeler la commande ``init-db`` par son nom."
+"fonction ``init_db`` par une fonction qui enregistre qu'elle a été "
+"appelée. La *fixture* ``runner`` que vous avez écrite ci-dessus est "
+"utilisée pour appeler la commande ``init-db`` par son nom."
 
-#: ../../tutorial/tests.rst:218
+#: ../../project/docs/tutorial/tests.rst:218 1f8769991229496bb1a1adfeb3372167
 msgid "Authentication"
 msgstr "Authentification"
 
-#: ../../tutorial/tests.rst:220
+#: ../../project/docs/tutorial/tests.rst:220 bfc88436340947f1a4f94520a018b810
 msgid ""
-"For most of the views, a user needs to be logged in. The easiest way to do "
-"this in tests is to make a ``POST`` request to the ``login`` view with the "
-"client. Rather than writing that out every time, you can write a class with "
-"methods to do that, and use a fixture to pass it the client for each test."
+"For most of the views, a user needs to be logged in. The easiest way to "
+"do this in tests is to make a ``POST`` request to the ``login`` view with"
+" the client. Rather than writing that out every time, you can write a "
+"class with methods to do that, and use a fixture to pass it the client "
+"for each test."
 msgstr ""
 "Pour la plupart des vues, un utilisateur doit être connecté. La façon la "
-"plus simple de faire cela dans les tests est de faire une requête ``POST`` "
-"vers la vue ``login`` avec le client. Plutôt que d'écrire cela à chaque "
-"fois, vous pouvez écrire une classe avec des méthodes pour le faire, et "
-"utiliser une *fixture* pour lui passer le client pour chaque test."
+"plus simple de faire cela dans les tests est de faire une requête "
+"``POST`` vers la vue ``login`` avec le client. Plutôt que d'écrire cela à"
+" chaque fois, vous pouvez écrire une classe avec des méthodes pour le "
+"faire, et utiliser une *fixture* pour lui passer le client pour chaque "
+"test."
 
-#: ../../tutorial/tests.rst:247
+#: ../../project/docs/tutorial/tests.rst:247 0ed0f3f3eca34f969dc92a88bc1c5c7f
 msgid ""
-"With the ``auth`` fixture, you can call ``auth.login()`` in a test to log "
-"in as the ``test`` user, which was inserted as part of the test data in the "
-"``app`` fixture."
+"With the ``auth`` fixture, you can call ``auth.login()`` in a test to log"
+" in as the ``test`` user, which was inserted as part of the test data in "
+"the ``app`` fixture."
 msgstr ""
 "Avec la *fixture* ``auth``, vous pouvez appeler ``auth.login()`` dans un "
-"test pour vous connecter en tant qu'utilisateur ``test``, qui a été inséré "
-"comme partie des données de test dans l'interface ``app``."
+"test pour vous connecter en tant qu'utilisateur ``test``, qui a été "
+"inséré comme partie des données de test dans l'interface ``app``."
 
-#: ../../tutorial/tests.rst:251
+#: ../../project/docs/tutorial/tests.rst:251 b75e6360926445298acf54a4e3404af6
 msgid ""
 "The ``register`` view should render successfully on ``GET``. On ``POST`` "
 "with valid form data, it should redirect to the login URL and the user's "
-"data should be in the database. Invalid data should display error messages."
+"data should be in the database. Invalid data should display error "
+"messages."
 msgstr ""
-"La vue ``register`` doit être rendue avec succès sur ``GET``. Sur ``POST`` "
-"avec des données de formulaire valides, elle devrait rediriger vers l'URL "
-"de connexion et les données de l'utilisateur devraient être dans la base de "
-"données. Les données non valides doivent afficher des messages d'erreur."
+"La vue ``register`` doit être rendue avec succès sur ``GET``. Sur "
+"``POST`` avec des données de formulaire valides, elle devrait rediriger "
+"vers l'URL de connexion et les données de l'utilisateur devraient être "
+"dans la base de données. Les données non valides doivent afficher des "
+"messages d'erreur."
 
-#: ../../tutorial/tests.rst:256 ../../tutorial/tests.rst:316
-#: ../../tutorial/tests.rst:345
+#: ../../project/docs/tutorial/tests.rst:256
+#: ../../project/docs/tutorial/tests.rst:316
+#: ../../project/docs/tutorial/tests.rst:345 0942ca34cf2f4a7bb906149042b7fdde
+#: 3afb000fbccb4ba3b0b7ba474bc5b754 4600e1a043ac47eb82321a6e2aa120b1
 msgid "``tests/test_auth.py``"
 msgstr "``tests/test_auth.py``"
 
-#: ../../tutorial/tests.rst:289
+#: ../../project/docs/tutorial/tests.rst:289 989c1d38a1fc403d939561223d2d83a4
 msgid ""
-":meth:`client.get() <werkzeug.test.Client.get>` makes a ``GET`` request and "
-"returns the :class:`Response` object returned by Flask. Similarly, :meth:"
-"`client.post() <werkzeug.test.Client.post>` makes a ``POST`` request, "
-"converting the ``data`` dict into form data."
+":meth:`client.get() <werkzeug.test.Client.get>` makes a ``GET`` request "
+"and returns the :class:`Response` object returned by Flask. Similarly, "
+":meth:`client.post() <werkzeug.test.Client.post>` makes a ``POST`` "
+"request, converting the ``data`` dict into form data."
 msgstr ""
-":meth:`client.get() <werkzeug.test.Client.get>` fait une requête ``GET`` et "
-"renvoie l'objet :class:`Response` retourné par Flask. De même, :meth:"
-"`client.post() <werkzeug.test.Client.post>` fait une requête ``POST``, "
-"convertissant le dictionnaire ``data`` en données de formulaire."
+":meth:`client.get() <werkzeug.test.Client.get>` fait une requête ``GET`` "
+"et renvoie l'objet :class:`Response` retourné par Flask. De même, "
+":meth:`client.post() <werkzeug.test.Client.post>` fait une requête "
+"``POST``, convertissant le dictionnaire ``data`` en données de "
+"formulaire."
 
-#: ../../tutorial/tests.rst:294
+#: ../../project/docs/tutorial/tests.rst:294 678a9b40ae584bcda22751c7f0c88f23
 msgid ""
 "To test that the page renders successfully, a simple request is made and "
 "checked for a ``200 OK`` :attr:`~Response.status_code`. If rendering "
 "failed, Flask would return a ``500 Internal Server Error`` code."
 msgstr ""
 "Pour tester que la page s'affiche correctement, une simple requête est "
-"effectuée et on vérifie si elle renvoie un code ``200 OK`` :attr:`~Response."
-"status_code``. Si le rendu échoue, Flask renvoie un code ``500 Internal "
-"Server Error``."
+"effectuée et on vérifie si elle renvoie un code ``200 OK`` "
+":attr:`~Response.status_code``. Si le rendu échoue, Flask renvoie un code"
+" ``500 Internal Server Error``."
 
-#: ../../tutorial/tests.rst:299
+#: ../../project/docs/tutorial/tests.rst:299 eb0b51863088459eb3a7ec2f45f6b579
 msgid ""
 ":attr:`~Response.headers` will have a ``Location`` header with the login "
 "URL when the register view redirects to the login view."
 msgstr ""
 ":attr:`~Response.headers` aura un en-tête ``Location`` avec l'URL de "
-"connexion lorsque la vue d'enregistrement redirige vers la vue de connexion."
+"connexion lorsque la vue d'enregistrement redirige vers la vue de "
+"connexion."
 
-#: ../../tutorial/tests.rst:302
+#: ../../project/docs/tutorial/tests.rst:302 f4511a69638747b88b9bab620b2a6151
 msgid ""
-":attr:`~Response.data` contains the body of the response as bytes. If you "
-"expect a certain value to render on the page, check that it's in ``data``. "
-"Bytes must be compared to bytes. If you want to compare text, use :meth:"
-"`get_data(as_text=True) <werkzeug.wrappers.Response.get_data>` instead."
+":attr:`~Response.data` contains the body of the response as bytes. If you"
+" expect a certain value to render on the page, check that it's in "
+"``data``. Bytes must be compared to bytes. If you want to compare text, "
+"use :meth:`get_data(as_text=True) <werkzeug.wrappers.Response.get_data>` "
+"instead."
 msgstr ""
-":attr:`~Response.data` contient le corps de la réponse sous forme d'octets. "
-"Si vous vous attendez à ce qu'une certaine valeur soit rendue sur la page, "
-"vérifiez qu'elle se trouve dans ``data``. Les octets doivent être comparés "
-"à des octets. Si vous voulez comparer du texte, utilisez :meth:"
-"`get_data(as_text=True) <werkzeug.wrappers.Response.get_data>` à la place."
+":attr:`~Response.data` contient le corps de la réponse sous forme "
+"d'octets. Si vous vous attendez à ce qu'une certaine valeur soit rendue "
+"sur la page, vérifiez qu'elle se trouve dans ``data``. Les octets doivent"
+" être comparés à des octets. Si vous voulez comparer du texte, utilisez "
+":meth:`get_data(as_text=True) <werkzeug.wrappers.Response.get_data>` à la"
+" place."
 
-#: ../../tutorial/tests.rst:308
+#: ../../project/docs/tutorial/tests.rst:308 b16b75f75b2941599dbc814964d79406
 msgid ""
-"``pytest.mark.parametrize`` tells Pytest to run the same test function with "
-"different arguments. You use it here to test different invalid input and "
-"error messages without writing the same code three times."
+"``pytest.mark.parametrize`` tells Pytest to run the same test function "
+"with different arguments. You use it here to test different invalid input"
+" and error messages without writing the same code three times."
 msgstr ""
-"``pytest.mark.parametrize`` indique à Pytest d'exécuter la même fonction de "
-"test avec différents arguments. Vous l'utilisez ici pour tester différentes "
-"entrées invalides et différents messages d'erreur sans écrire le même code "
-"trois fois."
+"``pytest.mark.parametrize`` indique à Pytest d'exécuter la même fonction "
+"de test avec différents arguments. Vous l'utilisez ici pour tester "
+"différentes entrées invalides et différents messages d'erreur sans écrire"
+" le même code trois fois."
 
-#: ../../tutorial/tests.rst:312
+#: ../../project/docs/tutorial/tests.rst:312 bc761cb5e5f64d5bb5ede9bc3ca3287f
 msgid ""
 "The tests for the ``login`` view are very similar to those for "
-"``register``. Rather than testing the data in the database, :data:`session` "
-"should have ``user_id`` set after logging in."
+"``register``. Rather than testing the data in the database, "
+":data:`session` should have ``user_id`` set after logging in."
 msgstr ""
 "Les tests pour la vue ``login`` sont très similaires à ceux de "
-"``register``. Plutôt que de tester les données dans la base de données, :"
-"data:`session` devrait avoir ``user_id`` défini après la connexion."
+"``register``. Plutôt que de tester les données dans la base de données, "
+":data:`session` devrait avoir ``user_id`` défini après la connexion."
 
-#: ../../tutorial/tests.rst:338
+#: ../../project/docs/tutorial/tests.rst:338 75dc85757807461bacbe1c60518fceb9
 msgid ""
 "Using ``client`` in a ``with`` block allows accessing context variables "
-"such as :data:`session` after the response is returned. Normally, accessing "
-"``session`` outside of a request would raise an error."
+"such as :data:`session` after the response is returned. Normally, "
+"accessing ``session`` outside of a request would raise an error."
 msgstr ""
 "L'utilisation de ``client`` dans un bloc ``with`` permet d'accéder à des "
 "variables contextuelles telles que :data:`session` après le retour de la "
-"réponse. Normalement, l'accès à ``session`` en dehors d'une requête soulève "
-"une erreur."
+"réponse. Normalement, l'accès à ``session`` en dehors d'une requête "
+"soulève une erreur."
 
-#: ../../tutorial/tests.rst:342
+#: ../../project/docs/tutorial/tests.rst:342 9b492cc3cbbb40398d0d977fd340933b
 msgid ""
-"Testing ``logout`` is the opposite of ``login``. :data:`session` should not "
-"contain ``user_id`` after logging out."
+"Testing ``logout`` is the opposite of ``login``. :data:`session` should "
+"not contain ``user_id`` after logging out."
 msgstr ""
-"Le test ``logout`` est le contraire de ``login``. :data:`session` ne doit "
-"pas contenir ``user_id`` après la déconnexion."
+"Le test ``logout`` est le contraire de ``login``. :data:`session` ne doit"
+" pas contenir ``user_id`` après la déconnexion."
 
-#: ../../tutorial/tests.rst:357
+#: ../../project/docs/tutorial/tests.rst:357 9ccd877fd24343cc92904229e5ecb5aa
 msgid "Blog"
 msgstr "Blog"
 
-#: ../../tutorial/tests.rst:359
+#: ../../project/docs/tutorial/tests.rst:359 20ba76707c724d38a7edd35d54d520e6
 msgid ""
-"All the blog views use the ``auth`` fixture you wrote earlier. Call ``auth."
-"login()`` and subsequent requests from the client will be logged in as the "
-"``test`` user."
+"All the blog views use the ``auth`` fixture you wrote earlier. Call "
+"``auth.login()`` and subsequent requests from the client will be logged "
+"in as the ``test`` user."
 msgstr ""
-"Toutes les vues du blog utilisent la *fixture* ``auth`` que vous avez écrit "
-"plus tôt. Appelez ``auth.login()`` et les requêtes suivantes du client "
-"seront connectées en tant qu'utilisateur ``test``."
+"Toutes les vues du blog utilisent la *fixture* ``auth`` que vous avez "
+"écrit plus tôt. Appelez ``auth.login()`` et les requêtes suivantes du "
+"client seront connectées en tant qu'utilisateur ``test``."
 
-#: ../../tutorial/tests.rst:363
+#: ../../project/docs/tutorial/tests.rst:363 f220129e8409415793f3263d166f754f
 msgid ""
-"The ``index`` view should display information about the post that was added "
-"with the test data. When logged in as the author, there should be a link to "
-"edit the post."
+"The ``index`` view should display information about the post that was "
+"added with the test data. When logged in as the author, there should be a"
+" link to edit the post."
 msgstr ""
 "La vue ``index`` doit afficher des informations sur le message qui a été "
 "ajouté avec les données de test. Lorsque l'on est connecté en tant "
 "qu'auteur, il doit y avoir un lien pour modifier le message."
 
-#: ../../tutorial/tests.rst:367
+#: ../../project/docs/tutorial/tests.rst:367 729065eb337c47399f3d18d512df3389
 msgid ""
 "You can also test some more authentication behavior while testing the "
 "``index`` view. When not logged in, each page shows links to log in or "
 "register. When logged in, there's a link to log out."
 msgstr ""
-"Vous pouvez également tester d'autres comportements d'authentification en "
-"testant la vue ``index``. Lorsque vous n'êtes pas connecté, chaque page "
+"Vous pouvez également tester d'autres comportements d'authentification en"
+" testant la vue ``index``. Lorsque vous n'êtes pas connecté, chaque page "
 "affiche des liens pour se connecter ou s'enregistrer. Lorsqu'on est "
 "connecté, il y a un lien pour se déconnecter."
 
-#: ../../tutorial/tests.rst:371 ../../tutorial/tests.rst:397
-#: ../../tutorial/tests.rst:439 ../../tutorial/tests.rst:476
+#: ../../project/docs/tutorial/tests.rst:371
+#: ../../project/docs/tutorial/tests.rst:397
+#: ../../project/docs/tutorial/tests.rst:439
+#: ../../project/docs/tutorial/tests.rst:476 117064b84c694cd6b7f698b528e47444
+#: 7aca9e5c1fe74ec7905b5b36e17b1a18 921810a6417c47bfae6b786626669a26
+#: fe923c661d97421e93489a83f7922215
 msgid "``tests/test_blog.py``"
 msgstr "``tests/test_blog.py``"
 
-#: ../../tutorial/tests.rst:391
+#: ../../project/docs/tutorial/tests.rst:391 19925ce5f75d4e64821b0352f3d8c048
 msgid ""
 "A user must be logged in to access the ``create``, ``update``, and "
 "``delete`` views. The logged in user must be the author of the post to "
-"access ``update`` and ``delete``, otherwise a ``403 Forbidden`` status is "
-"returned. If a ``post`` with the given ``id`` doesn't exist, ``update`` and "
-"``delete`` should return ``404 Not Found``."
+"access ``update`` and ``delete``, otherwise a ``403 Forbidden`` status is"
+" returned. If a ``post`` with the given ``id`` doesn't exist, ``update`` "
+"and ``delete`` should return ``404 Not Found``."
 msgstr ""
 "Un utilisateur doit être connecté pour accéder aux vues ``create``, "
 "``update`` et ``delete``. L'utilisateur connecté doit être l'auteur du "
 "message pour accéder à ``update`` et ``delete``, sinon un état ``403 "
-"Forbidden`` est renvoyé. Si un ``message`` avec l\\'``id`` donné n'existe "
-"pas, ``update`` et ``delete`` doivent retourner ``404 Not Found``."
+"Forbidden`` est renvoyé. Si un ``message`` avec l\\'``id`` donné n'existe"
+" pas, ``update`` et ``delete`` doivent retourner ``404 Not Found``."
 
-#: ../../tutorial/tests.rst:433
+#: ../../project/docs/tutorial/tests.rst:433 9c1480ef7f034d8dae9d9a1ef7567e6f
 msgid ""
-"The ``create`` and ``update`` views should render and return a ``200 OK`` "
-"status for a ``GET`` request. When valid data is sent in a ``POST`` "
-"request, ``create`` should insert the new post data into the database, and "
-"``update`` should modify the existing data. Both pages should show an error "
-"message on invalid data."
+"The ``create`` and ``update`` views should render and return a ``200 OK``"
+" status for a ``GET`` request. When valid data is sent in a ``POST`` "
+"request, ``create`` should insert the new post data into the database, "
+"and ``update`` should modify the existing data. Both pages should show an"
+" error message on invalid data."
 msgstr ""
 "Les vues ``create`` et ``update`` doivent afficher et renvoyer un état "
 "``200 OK`` pour une requête ``GET``. Lorsque des données valides sont "
 "envoyées dans une requête ``POST``, la vue ``create`` doit insérer les "
-"nouvelles données du message dans la base de données et la vue ``update`` "
-"doit modifier les données existantes. Les deux pages doivent afficher un "
-"message d'erreur en cas de données invalides."
+"nouvelles données du message dans la base de données et la vue ``update``"
+" doit modifier les données existantes. Les deux pages doivent afficher un"
+" message d'erreur en cas de données invalides."
 
-#: ../../tutorial/tests.rst:473
+#: ../../project/docs/tutorial/tests.rst:473 60f54fb3028f43a9b336ffc241455ef3
 msgid ""
-"The ``delete`` view should redirect to the index URL and the post should no "
-"longer exist in the database."
+"The ``delete`` view should redirect to the index URL and the post should "
+"no longer exist in the database."
 msgstr ""
 "La vue ``delete`` doit rediriger vers l'URL de l'index et le message ne "
 "doit plus exister dans la base de données."
 
-#: ../../tutorial/tests.rst:491
+#: ../../project/docs/tutorial/tests.rst:491 c294550e069e49ac935ca40335caa160
 msgid "Running the Tests"
 msgstr "Exécution des tests"
 
-#: ../../tutorial/tests.rst:493
+#: ../../project/docs/tutorial/tests.rst:493 48ae2ba8ddae4d3d8be19b8b3be1473d
+#, fuzzy
 msgid ""
 "Some extra configuration, which is not required but makes running tests "
-"with coverage less verbose, can be added to the project's ``setup.cfg`` "
-"file."
+"with coverage less verbose, can be added to the project's "
+"``pyproject.toml`` file."
 msgstr ""
 "Une configuration supplémentaire, qui n'est pas nécessaire mais qui rend "
 "l'exécution des tests de couverture moins verbeuse, peut être ajoutée au "
 "fichier ``setup.cfg`` du projet."
 
-#: ../../tutorial/tests.rst:497
-msgid "``setup.cfg``"
-msgstr "``setup.cfg``"
-
-#: ../../tutorial/tests.rst:508
-msgid ""
-"To run the tests, use the ``pytest`` command. It will find and run all the "
-"test functions you've written."
+#: ../../project/docs/tutorial/tests.rst:496 6efb2c7275bb44f58f92476af53b2dd2
+msgid "``pyproject.toml``"
 msgstr ""
-"Pour exécuter les tests, utilisez la commande ``pytest``. Elle trouvera et "
-"exécutera toutes les fonctions de test que vous avez écrites."
 
-#: ../../tutorial/tests.rst:527
+#: ../../project/docs/tutorial/tests.rst:506 ee540533f19a4f149615f467a39617f8
 msgid ""
-"If any tests fail, pytest will show the error that was raised. You can run "
-"``pytest -v`` to get a list of each test function rather than dots."
+"To run the tests, use the ``pytest`` command. It will find and run all "
+"the test functions you've written."
 msgstr ""
-"Si un test échoue, pytest affichera l'erreur qui a été levée. Vous pouvez "
-"lancer ``pytest -v`` pour obtenir une liste de chaque fonction de test "
+"Pour exécuter les tests, utilisez la commande ``pytest``. Elle trouvera "
+"et exécutera toutes les fonctions de test que vous avez écrites."
+
+#: ../../project/docs/tutorial/tests.rst:525 70088979e5484b6daa1252760fc92c35
+msgid ""
+"If any tests fail, pytest will show the error that was raised. You can "
+"run ``pytest -v`` to get a list of each test function rather than dots."
+msgstr ""
+"Si un test échoue, pytest affichera l'erreur qui a été levée. Vous pouvez"
+" lancer ``pytest -v`` pour obtenir une liste de chaque fonction de test "
 "plutôt que des points."
 
-#: ../../tutorial/tests.rst:530
+#: ../../project/docs/tutorial/tests.rst:528 e53b9ddc24c44eacb321e9b49cea89a1
 msgid ""
-"To measure the code coverage of your tests, use the ``coverage`` command to "
-"run pytest instead of running it directly."
+"To measure the code coverage of your tests, use the ``coverage`` command "
+"to run pytest instead of running it directly."
 msgstr ""
 "Pour mesurer la couverture de code de vos tests, utilisez la commande "
 "``coverage`` pour lancer pytest au lieu de le lancer directement."
 
-#: ../../tutorial/tests.rst:537
+#: ../../project/docs/tutorial/tests.rst:535 45460630111646db9cc6b04124ccb27f
 msgid "You can either view a simple coverage report in the terminal:"
 msgstr ""
-"Vous pouvez soit afficher un simple rapport de couverture dans le terminal :"
+"Vous pouvez soit afficher un simple rapport de couverture dans le "
+"terminal :"
 
-#: ../../tutorial/tests.rst:552
-msgid ""
-"An HTML report allows you to see which lines were covered in each file:"
+#: ../../project/docs/tutorial/tests.rst:550 631da6f58e6a49fd8c9586a1168038b2
+msgid "An HTML report allows you to see which lines were covered in each file:"
 msgstr ""
-"Un rapport HTML vous permet de voir quelles lignes ont été couvertes dans "
-"chaque fichier :"
+"Un rapport HTML vous permet de voir quelles lignes ont été couvertes dans"
+" chaque fichier :"
 
-#: ../../tutorial/tests.rst:558
+#: ../../project/docs/tutorial/tests.rst:556 20ff89b8dc8d4ea8be4455d9827fccc4
 msgid ""
-"This generates files in the ``htmlcov`` directory. Open ``htmlcov/index."
-"html`` in your browser to see the report."
+"This generates files in the ``htmlcov`` directory. Open "
+"``htmlcov/index.html`` in your browser to see the report."
 msgstr ""
-"Cela génère des fichiers dans le répertoire ``htmlcov``. Ouvrez ``htmlcov/"
-"index.html`` dans votre navigateur pour voir le rapport."
+"Cela génère des fichiers dans le répertoire ``htmlcov``. Ouvrez "
+"``htmlcov/index.html`` dans votre navigateur pour voir le rapport."
 
-#: ../../tutorial/tests.rst:561
+#: ../../project/docs/tutorial/tests.rst:559 14525ff13cfa4db98ed8d61727c73451
 msgid "Continue to :doc:`deploy`."
 msgstr "Passez à :doc:`deploy`."
+
+#~ msgid "``setup.cfg``"
+#~ msgstr "``setup.cfg``"
+

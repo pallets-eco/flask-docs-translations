@@ -8,20 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-01 02:27-0500\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr_FR <victor.levieux@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../appcontext.rst:4
+#: ../../project/docs/appcontext.rst:4 85faa7e40162460980c7f5328214cc30
 msgid "The Application Context"
 msgstr ""
 
-#: ../../appcontext.rst:6
+#: ../../project/docs/appcontext.rst:6 88482f8f56dd4923855e01c53e5aa074
 msgid ""
 "The application context keeps track of the application-level data during "
 "a request, CLI command, or other activity. Rather than passing the "
@@ -29,18 +29,18 @@ msgid ""
 ":data:`g` proxies are accessed instead."
 msgstr ""
 
-#: ../../appcontext.rst:11
+#: ../../project/docs/appcontext.rst:11 6c916b94619d45d3afa8d1d17da0e40a
 msgid ""
-"This is similar to the :doc:`/reqcontext`, which keeps track of request-"
-"level data during a request. A corresponding application context is "
-"pushed when a request context is pushed."
+"This is similar to :doc:`/reqcontext`, which keeps track of request-level"
+" data during a request. A corresponding application context is pushed "
+"when a request context is pushed."
 msgstr ""
 
-#: ../../appcontext.rst:16
+#: ../../project/docs/appcontext.rst:16 cbfecd3891e24136a1bb52040e341f8f
 msgid "Purpose of the Context"
 msgstr ""
 
-#: ../../appcontext.rst:18
+#: ../../project/docs/appcontext.rst:18 34d4dd9c3f594ce2bed28257235b9d38
 msgid ""
 "The :class:`Flask` application object has attributes, such as "
 ":attr:`~Flask.config`, that are useful to access within views and "
@@ -51,31 +51,31 @@ msgid ""
 "</extensions>` there won't be an ``app`` instance to import at all."
 msgstr ""
 
-#: ../../appcontext.rst:27
+#: ../../project/docs/appcontext.rst:27 f23fb7b9c79f4ad3b7c228b5d1813210
 msgid ""
 "Flask solves this issue with the *application context*. Rather than "
 "referring to an ``app`` directly, you use the :data:`current_app` proxy, "
 "which points to the application handling the current activity."
 msgstr ""
 
-#: ../../appcontext.rst:31
+#: ../../project/docs/appcontext.rst:31 8cd3a7b3baba40dd89144552e4f41ab8
 msgid ""
 "Flask automatically *pushes* an application context when handling a "
 "request. View functions, error handlers, and other functions that run "
 "during a request will have access to :data:`current_app`."
 msgstr ""
 
-#: ../../appcontext.rst:35
+#: ../../project/docs/appcontext.rst:35 c52c68bb8b3d4edfa21ba6d875626539
 msgid ""
 "Flask will also automatically push an app context when running CLI "
 "commands registered with :attr:`Flask.cli` using ``@app.cli.command()``."
 msgstr ""
 
-#: ../../appcontext.rst:40
+#: ../../project/docs/appcontext.rst:40 c14afadd715b47fc85b445b4406f79fc
 msgid "Lifetime of the Context"
 msgstr ""
 
-#: ../../appcontext.rst:42
+#: ../../project/docs/appcontext.rst:42 c03b489257a34437a2cffc14e7f212ff
 msgid ""
 "The application context is created and destroyed as necessary. When a "
 "Flask application begins handling a request, it pushes an application "
@@ -84,23 +84,23 @@ msgid ""
 "application context will have the same lifetime as a request."
 msgstr ""
 
-#: ../../appcontext.rst:49
+#: ../../project/docs/appcontext.rst:49 f6bf3fe81af34da885012e394edb997c
 msgid ""
 "See :doc:`/reqcontext` for more information about how the contexts work "
 "and the full life cycle of a request."
 msgstr ""
 
-#: ../../appcontext.rst:54
+#: ../../project/docs/appcontext.rst:54 3e4a024beacf4c7a8e08646abf28b14d
 msgid "Manually Push a Context"
 msgstr ""
 
-#: ../../appcontext.rst:56
+#: ../../project/docs/appcontext.rst:56 5ba70ac235354fb4a9662211a56dfc20
 msgid ""
 "If you try to access :data:`current_app`, or anything that uses it, "
 "outside an application context, you'll get this error message:"
 msgstr ""
 
-#: ../../appcontext.rst:67
+#: ../../project/docs/appcontext.rst:67 6113c2c074474cbdb7d2143d9b23dc14
 msgid ""
 "If you see that error while configuring your application, such as when "
 "initializing an extension, you can push a context manually since you have"
@@ -109,18 +109,18 @@ msgid ""
 " :data:`current_app`. ::"
 msgstr ""
 
-#: ../../appcontext.rst:81
+#: ../../project/docs/appcontext.rst:81 5167bdcfb0dd40958e23fdd1a4d849e7
 msgid ""
 "If you see that error somewhere else in your code not related to "
 "configuring the application, it most likely indicates that you should "
 "move that code into a view function or CLI command."
 msgstr ""
 
-#: ../../appcontext.rst:87
+#: ../../project/docs/appcontext.rst:87 029ca1799dad40a4840685ce10a78d5c
 msgid "Storing Data"
 msgstr ""
 
-#: ../../appcontext.rst:89
+#: ../../project/docs/appcontext.rst:89 59db84141d394ee68fe0e049e99eb0e8
 msgid ""
 "The application context is a good place to store common data during a "
 "request or CLI command. Flask provides the :data:`g object <g>` for this "
@@ -128,7 +128,7 @@ msgid ""
 " application context."
 msgstr ""
 
-#: ../../appcontext.rst:95
+#: ../../project/docs/appcontext.rst:95 8516c9337347412998504b1ef5830557
 msgid ""
 "The ``g`` name stands for \"global\", but that is referring to the data "
 "being global *within a context*. The data on ``g`` is lost after the "
@@ -137,68 +137,86 @@ msgid ""
 "requests."
 msgstr ""
 
-#: ../../appcontext.rst:101
+#: ../../project/docs/appcontext.rst:101 5efef3b39c1e4fcdb107b3fb8fe101e9
 msgid "A common use for :data:`g` is to manage resources during a request."
 msgstr ""
 
-#: ../../appcontext.rst:103
+#: ../../project/docs/appcontext.rst:103 94952180eb6344c49325270bfdc0f400
 msgid ""
 "``get_X()`` creates resource ``X`` if it does not exist, caching it as "
 "``g.X``."
 msgstr ""
 
-#: ../../appcontext.rst:105
+#: ../../project/docs/appcontext.rst:105 87acdcf5c9264323b1681caeddac0b67
 msgid ""
 "``teardown_X()`` closes or otherwise deallocates the resource if it "
 "exists. It is registered as a :meth:`~Flask.teardown_appcontext` handler."
 msgstr ""
 
-#: ../../appcontext.rst:109
+#: ../../project/docs/appcontext.rst:109 63e05a2c5d5148cfbaf5740643a4f0c8
 msgid "For example, you can manage a database connection using this pattern::"
 msgstr ""
 
-#: ../../appcontext.rst:126
+#: ../../project/docs/appcontext.rst:126 1e4557844a7941edaa4f698ec939ef9c
 msgid ""
 "During a request, every call to ``get_db()`` will return the same "
 "connection, and it will be closed automatically at the end of the "
 "request."
 msgstr ""
 
-#: ../../appcontext.rst:130
+#: ../../project/docs/appcontext.rst:130 3505906b5c0944038a2329197353c22b
 msgid ""
 "You can use :class:`~werkzeug.local.LocalProxy` to make a new context "
 "local from ``get_db()``::"
 msgstr ""
 
-#: ../../appcontext.rst:136
+#: ../../project/docs/appcontext.rst:136 806d9218384c4078bbfa3bf5e1af6526
 msgid ""
 "Accessing ``db`` will call ``get_db`` internally, in the same way that "
 ":data:`current_app` works."
 msgstr ""
 
-#: ../../appcontext.rst:141
-msgid ""
-"If you're writing an extension, :data:`g` should be reserved for user "
-"code. You may store internal data on the context itself, but be sure to "
-"use a sufficiently unique name. The current context is accessed with "
-":data:`_app_ctx_stack.top <_app_ctx_stack>`. For more information see "
-":doc:`/extensiondev`."
-msgstr ""
-
-#: ../../appcontext.rst:149
+#: ../../project/docs/appcontext.rst:141 aeaf50e4bd5e4391ac3a1cb9131d9d74
 msgid "Events and Signals"
 msgstr ""
 
-#: ../../appcontext.rst:151
+#: ../../project/docs/appcontext.rst:143 a6afb2bea2904499bd301c1bfebd6686
 msgid ""
 "The application will call functions registered with "
 ":meth:`~Flask.teardown_appcontext` when the application context is "
 "popped."
 msgstr ""
 
-#: ../../appcontext.rst:155
+#: ../../project/docs/appcontext.rst:146 42c09029009949308d4416013e7cadb3
 msgid ""
-"If :data:`~signals.signals_available` is true, the following signals are "
-"sent: :data:`appcontext_pushed`, :data:`appcontext_tearing_down`, and "
-":data:`appcontext_popped`."
+"The following signals are sent: :data:`appcontext_pushed`, "
+":data:`appcontext_tearing_down`, and :data:`appcontext_popped`."
 msgstr ""
+
+#~ msgid ""
+#~ "This is similar to the "
+#~ ":doc:`/reqcontext`, which keeps track of "
+#~ "request-level data during a request. "
+#~ "A corresponding application context is "
+#~ "pushed when a request context is "
+#~ "pushed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you're writing an extension, "
+#~ ":data:`g` should be reserved for user"
+#~ " code. You may store internal data"
+#~ " on the context itself, but be "
+#~ "sure to use a sufficiently unique "
+#~ "name. The current context is accessed"
+#~ " with :data:`_app_ctx_stack.top <_app_ctx_stack>`. "
+#~ "For more information see :doc:`/extensiondev`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If :data:`~signals.signals_available` is true, "
+#~ "the following signals are sent: "
+#~ ":data:`appcontext_pushed`, :data:`appcontext_tearing_down`, "
+#~ "and :data:`appcontext_popped`."
+#~ msgstr ""
+

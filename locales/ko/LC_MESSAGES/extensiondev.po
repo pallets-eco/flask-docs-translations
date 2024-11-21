@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-20 15:20-0400\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
@@ -17,13 +17,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../extensiondev.rst:2
+#: ../../project/docs/extensiondev.rst:2 a9221fea1069457780e84d2dde7ae958
 msgid "Flask Extension Development"
 msgstr ""
 
-#: ../../extensiondev.rst:6
+#: ../../project/docs/extensiondev.rst:6 09f91b58e0e645609fc41521c020abe7
 msgid ""
 "Extensions are extra packages that add functionality to a Flask "
 "application. While `PyPI`_ contains many Flask extensions, you may not "
@@ -31,32 +31,32 @@ msgid ""
 "own, and publish it for others to use as well."
 msgstr ""
 
-#: ../../extensiondev.rst:11
+#: ../../project/docs/extensiondev.rst:11 448403e2808f437faccaa6dba033504c
 msgid ""
 "This guide will show how to create a Flask extension, and some of the "
 "common patterns and requirements involved. Since extensions can do "
 "anything, this guide won't be able to cover every possibility."
 msgstr ""
 
-#: ../../extensiondev.rst:15
+#: ../../project/docs/extensiondev.rst:15 36073e6999b84934ae2b5c3aa9cdd586
 msgid ""
 "The best ways to learn about extensions are to look at how other "
 "extensions you use are written, and discuss with others. Discuss your "
 "design ideas with others on our `Discord Chat`_ or `GitHub Discussions`_."
 msgstr ""
 
-#: ../../extensiondev.rst:20
+#: ../../project/docs/extensiondev.rst:20 c9068a6060874e07a662afeff4dc6142
 msgid ""
 "The best extensions share common patterns, so that anyone familiar with "
 "using one extension won't feel completely lost with another. This can "
 "only work if collaboration happens early."
 msgstr ""
 
-#: ../../extensiondev.rst:26
+#: ../../project/docs/extensiondev.rst:26 1e9b656cb2a147b7b8beb0ea79bb6b64
 msgid "Naming"
 msgstr ""
 
-#: ../../extensiondev.rst:28
+#: ../../project/docs/extensiondev.rst:28 d3e74d40b75a4d59a0aa79db89f433a3
 msgid ""
 "A Flask extension typically has ``flask`` in its name as a prefix or "
 "suffix. If it wraps another library, it should include the library name "
@@ -64,7 +64,7 @@ msgid ""
 "purpose clearer."
 msgstr ""
 
-#: ../../extensiondev.rst:33
+#: ../../project/docs/extensiondev.rst:33 845384dacdad4eb7a79a62a9c2598ba7
 msgid ""
 "A general Python packaging recommendation is that the install name from "
 "the package index and the name used in ``import`` statements should be "
@@ -74,31 +74,31 @@ msgid ""
 "prefer using the same case as that library's name."
 msgstr ""
 
-#: ../../extensiondev.rst:40
+#: ../../project/docs/extensiondev.rst:40 ea3d2f46dced4147b8712e7037bec32b
 msgid "Here are some example install and import names:"
 msgstr ""
 
-#: ../../extensiondev.rst:42
+#: ../../project/docs/extensiondev.rst:42 103599ac166040d2bbf1133fd33a91d2
 msgid "``Flask-Name`` imported as ``flask_name``"
 msgstr ""
 
-#: ../../extensiondev.rst:43
+#: ../../project/docs/extensiondev.rst:43 6562125180704b369470a0a271807776
 msgid "``flask-name-lower`` imported as ``flask_name_lower``"
 msgstr ""
 
-#: ../../extensiondev.rst:44
+#: ../../project/docs/extensiondev.rst:44 e5cba2392b214431b38a61cb7ce277d0
 msgid "``Flask-ComboName`` imported as ``flask_comboname``"
 msgstr ""
 
-#: ../../extensiondev.rst:45
+#: ../../project/docs/extensiondev.rst:45 267fc8a3006b4c7a858be36584efaa50
 msgid "``Name-Flask`` imported as ``name_flask``"
 msgstr ""
 
-#: ../../extensiondev.rst:49
+#: ../../project/docs/extensiondev.rst:49 b39a16c763fb487a8866bbe32455cb88
 msgid "The Extension Class and Initialization"
 msgstr ""
 
-#: ../../extensiondev.rst:51
+#: ../../project/docs/extensiondev.rst:51 190f0b02a4474978bf7d73f5ad021a78
 msgid ""
 "All extensions will need some entry point that initializes the extension "
 "with the application. The most common pattern is to create a class that "
@@ -107,7 +107,7 @@ msgid ""
 "application instance."
 msgstr ""
 
-#: ../../extensiondev.rst:67
+#: ../../project/docs/extensiondev.rst:67 8eed5ec0302742f3bb2ceea8a4741e0b
 msgid ""
 "It is important that the app is not stored on the extension, don't do "
 "``self.app = app``. The only time the extension should have direct access"
@@ -115,7 +115,7 @@ msgid ""
 ":data:`current_app`."
 msgstr ""
 
-#: ../../extensiondev.rst:72
+#: ../../project/docs/extensiondev.rst:72 95c9a65a78464ae8acfaccdd14f8c861
 msgid ""
 "This allows the extension to support the application factory pattern, "
 "avoids circular import issues when importing the extension instance "
@@ -123,7 +123,7 @@ msgid ""
 "configurations easier."
 msgstr ""
 
-#: ../../extensiondev.rst:86
+#: ../../project/docs/extensiondev.rst:86 08eb91e76b2e44269a77e51cef6708be
 msgid ""
 "Above, the ``hello`` extension instance exists independently of the "
 "application. This means that other modules in a user's project can do "
@@ -131,7 +131,7 @@ msgid ""
 "the app exists."
 msgstr ""
 
-#: ../../extensiondev.rst:91
+#: ../../project/docs/extensiondev.rst:91 dbb08adf173a44fe888f29a3c3c3bbe1
 msgid ""
 "The :attr:`Flask.extensions` dict can be used to store a reference to the"
 " extension on the application, or some other state specific to the "
@@ -140,18 +140,18 @@ msgid ""
 "\"flask\" prefix."
 msgstr ""
 
-#: ../../extensiondev.rst:99
+#: ../../project/docs/extensiondev.rst:99 0804caedd7364f1f82260d5c6ce0971a
 msgid "Adding Behavior"
 msgstr ""
 
-#: ../../extensiondev.rst:101
+#: ../../project/docs/extensiondev.rst:101 4b170471897445a6ba0ecc591e58fa44
 msgid ""
 "There are many ways that an extension can add behavior. Any setup methods"
 " that are available on the :class:`Flask` object can be used during an "
 "extension's ``init_app`` method."
 msgstr ""
 
-#: ../../extensiondev.rst:105
+#: ../../project/docs/extensiondev.rst:105 aee0f2cdf03e4dd4be5e5060e46fda66
 msgid ""
 "A common pattern is to use :meth:`~Flask.before_request` to initialize "
 "some data or a connection at the beginning of each request, then "
@@ -159,7 +159,7 @@ msgid ""
 "stored on :data:`g`, discussed more below."
 msgstr ""
 
-#: ../../extensiondev.rst:110
+#: ../../project/docs/extensiondev.rst:110 818e4cf6b61f46e8847af77b9a167dcc
 msgid ""
 "A more lazy approach is to provide a method that initializes and caches "
 "the data or connection. For example, a ``ext.get_db`` method could create"
@@ -167,7 +167,7 @@ msgid ""
 "doesn't use the database doesn't create a connection."
 msgstr ""
 
-#: ../../extensiondev.rst:115
+#: ../../project/docs/extensiondev.rst:115 323641b5a3954b188e82377d5335598a
 msgid ""
 "Besides doing something before and after every view, your extension might"
 " want to add some specific views as well. In this case, you could define "
@@ -175,18 +175,18 @@ msgid ""
 "``init_app`` to add the blueprint to the app."
 msgstr ""
 
-#: ../../extensiondev.rst:122
+#: ../../project/docs/extensiondev.rst:122 e7e1ba3dc35641778147bd9a15d56722
 msgid "Configuration Techniques"
 msgstr ""
 
-#: ../../extensiondev.rst:124
+#: ../../project/docs/extensiondev.rst:124 af6ae16951504644bd5d4246fca7ee64
 msgid ""
 "There can be multiple levels and sources of configuration for an "
 "extension. You should consider what parts of your extension fall into "
 "each one."
 msgstr ""
 
-#: ../../extensiondev.rst:128
+#: ../../project/docs/extensiondev.rst:128 4c204315acf44072981fd6c8dab73fb5
 msgid ""
 "Configuration per application instance, through ``app.config`` values. "
 "This is configuration that could reasonably change for each deployment of"
@@ -195,14 +195,14 @@ msgid ""
 "so that they don't interfere with other extensions."
 msgstr ""
 
-#: ../../extensiondev.rst:134
+#: ../../project/docs/extensiondev.rst:134 c3b567b8a8c644118c98451415e04953
 msgid ""
 "Configuration per extension instance, through ``__init__`` arguments. "
 "This configuration usually affects how the extension is used, such that "
 "it wouldn't make sense to change it per deployment."
 msgstr ""
 
-#: ../../extensiondev.rst:138
+#: ../../project/docs/extensiondev.rst:138 92cb1f7a0f9043c79c4c156725b84fcc
 msgid ""
 "Configuration per extension instance, through instance attributes and "
 "decorator methods. It might be more ergonomic to assign to ``ext.value``,"
@@ -210,7 +210,7 @@ msgid ""
 "extension instance has been created."
 msgstr ""
 
-#: ../../extensiondev.rst:142
+#: ../../project/docs/extensiondev.rst:142 f6ca95864f564b418f009ce4fee6b741
 msgid ""
 "Global configuration through class attributes. Changing a class attribute"
 " like ``Ext.connection_class`` can customize default behavior without "
@@ -218,24 +218,24 @@ msgid ""
 "override defaults."
 msgstr ""
 
-#: ../../extensiondev.rst:146
+#: ../../project/docs/extensiondev.rst:146 23c7823537ba4ec18aad543556a79a1b
 msgid ""
 "Subclassing and overriding methods and attributes. Making the API of the "
 "extension itself something that can be overridden provides a very "
 "powerful tool for advanced customization."
 msgstr ""
 
-#: ../../extensiondev.rst:150
+#: ../../project/docs/extensiondev.rst:150 3015e21744254bc5bcf9898b291bde0e
 msgid "The :class:`~flask.Flask` object itself uses all of these techniques."
 msgstr ""
 
-#: ../../extensiondev.rst:152
+#: ../../project/docs/extensiondev.rst:152 df7e7f4eda414d37990a60dee794f755
 msgid ""
 "It's up to you to decide what configuration is appropriate for your "
 "extension, based on what you need and what you want to support."
 msgstr ""
 
-#: ../../extensiondev.rst:155
+#: ../../project/docs/extensiondev.rst:155 d4f78a1c352d4d45858b7782c2fb608a
 msgid ""
 "Configuration should not be changed after the application setup phase is "
 "complete and the server begins handling requests. Configuration is "
@@ -243,11 +243,11 @@ msgid ""
 "workers."
 msgstr ""
 
-#: ../../extensiondev.rst:162
+#: ../../project/docs/extensiondev.rst:162 3a3ff5199b3246368a055ef5da49fb73
 msgid "Data During a Request"
 msgstr ""
 
-#: ../../extensiondev.rst:164
+#: ../../project/docs/extensiondev.rst:164 3bda972d91f24c6faea015097d094446
 msgid ""
 "When writing a Flask application, the :data:`~flask.g` object is used to "
 "store information during a request. For example the :doc:`tutorial "
@@ -258,7 +258,7 @@ msgid ""
 "or as a namespace."
 msgstr ""
 
-#: ../../extensiondev.rst:182
+#: ../../project/docs/extensiondev.rst:182 c68b0942fddb4ad59e4af8ab4b4a409f
 msgid ""
 "The data in ``g`` lasts for an application context. An application "
 "context is active when a request context is, or when a CLI command is "
@@ -269,11 +269,11 @@ msgid ""
 ":meth:`~flask.Flask.teardown_request`."
 msgstr ""
 
-#: ../../extensiondev.rst:192
+#: ../../project/docs/extensiondev.rst:192 2edc9d4e9b734f3897ee4a6ad0272e56
 msgid "Views and Models"
 msgstr ""
 
-#: ../../extensiondev.rst:194
+#: ../../project/docs/extensiondev.rst:194 3499fbd8970c4c22a2b53ce9e1600d01
 msgid ""
 "Your extension views might want to interact with specific models in your "
 "database, or some other extension or data connected to your application. "
@@ -282,7 +282,7 @@ msgid ""
 "read posts."
 msgstr ""
 
-#: ../../extensiondev.rst:200
+#: ../../project/docs/extensiondev.rst:200 2c85f0dd31fe4b348c25221abe58955e
 msgid ""
 "The ``Post`` model needs to subclass the Flask-SQLAlchemy ``db.Model`` "
 "object, but that's only available once you've created an instance of that"
@@ -290,14 +290,14 @@ msgid ""
 " view code, defined before the model exists, access the model?"
 msgstr ""
 
-#: ../../extensiondev.rst:205
+#: ../../project/docs/extensiondev.rst:205 58dafa7720924d22bee606853b5f630e
 msgid ""
 "One method could be to use :doc:`views`. During ``__init__``, create the "
 "model, then create the views by passing the model to the view class's "
 ":meth:`~views.View.as_view` method."
 msgstr ""
 
-#: ../../extensiondev.rst:235
+#: ../../project/docs/extensiondev.rst:235 f099a46f79e145658fcac45aa7683b0e
 msgid ""
 "Another technique could be to use an attribute on the extension, such as "
 "``self.post_model`` from above. Add the extension to ``app.extensions`` "
@@ -305,7 +305,7 @@ msgid ""
 "``current_app.extensions[\"simple_blog\"].post_model`` from views."
 msgstr ""
 
-#: ../../extensiondev.rst:240
+#: ../../project/docs/extensiondev.rst:240 8c9b2f47567a492e94bfb84ebfe3bc28
 msgid ""
 "You may also want to provide base classes so that users can provide their"
 " own ``Post`` model that conforms to the API your extension expects. So "
@@ -313,7 +313,7 @@ msgid ""
 "``blog.post_model``."
 msgstr ""
 
-#: ../../extensiondev.rst:245
+#: ../../project/docs/extensiondev.rst:245 8616a3dde4444272bea3b8324705d4d7
 msgid ""
 "As you can see, this can get a bit complex. Unfortunately, there's no "
 "perfect solution here, only different strategies and tradeoffs depending "
@@ -323,11 +323,11 @@ msgid ""
 "`GitHub Discussions`_."
 msgstr ""
 
-#: ../../extensiondev.rst:254
+#: ../../project/docs/extensiondev.rst:254 18665eb6bbc44a9eaca40fdfa646ae47
 msgid "Recommended Extension Guidelines"
 msgstr ""
 
-#: ../../extensiondev.rst:256
+#: ../../project/docs/extensiondev.rst:256 b3b3eea9fe9348a0b5651702c9d65113
 msgid ""
 "Flask previously had the concept of \"approved extensions\", where the "
 "Flask maintainers evaluated the quality, support, and compatibility of "
@@ -337,7 +337,7 @@ msgid ""
 "ecosystem remain consistent and compatible."
 msgstr ""
 
-#: ../../extensiondev.rst:263
+#: ../../project/docs/extensiondev.rst:263 852ea4031bc04b598bf13e5835498f96
 msgid ""
 "An extension requires a maintainer. In the event an extension author "
 "would like to move beyond the project, the project should find a new "
@@ -346,44 +346,44 @@ msgid ""
 "for community maintenance with oversight from the Pallets maintainers."
 msgstr ""
 
-#: ../../extensiondev.rst:269
+#: ../../project/docs/extensiondev.rst:269 141af81f7ca94b44b49c8c49f53fe409
 msgid ""
 "The naming scheme is *Flask-ExtensionName* or *ExtensionName-Flask*. It "
 "must provide exactly one package or module named "
 "``flask_extension_name``."
 msgstr ""
 
-#: ../../extensiondev.rst:272
+#: ../../project/docs/extensiondev.rst:272 6d033b999f544fbfa4d9f59b7ca092ea
 msgid ""
 "The extension must use an open source license. The Python web ecosystem "
 "tends to prefer BSD or MIT. It must be open source and publicly "
 "available."
 msgstr ""
 
-#: ../../extensiondev.rst:275
+#: ../../project/docs/extensiondev.rst:275 492d34c4aea44dda8dc98de937098fd6
 msgid "The extension's API must have the following characteristics:"
 msgstr ""
 
-#: ../../extensiondev.rst:277
+#: ../../project/docs/extensiondev.rst:277 59a66948efc24ac8b58cf6a25dd55cd1
 msgid ""
 "It must support multiple applications running in the same Python process."
 " Use ``current_app`` instead of ``self.app``, store configuration and "
 "state per application instance."
 msgstr ""
 
-#: ../../extensiondev.rst:280
+#: ../../project/docs/extensiondev.rst:280 1c31d18e9509477284aa20b2f5c6dabe
 msgid ""
 "It must be possible to use the factory pattern for creating applications."
 " Use the ``ext.init_app()`` pattern."
 msgstr ""
 
-#: ../../extensiondev.rst:283
+#: ../../project/docs/extensiondev.rst:283 dbf068c21ef24de2b0fbaf501f51d5a2
 msgid ""
 "From a clone of the repository, an extension with its dependencies must "
 "be installable in editable mode with ``pip install -e .``."
 msgstr ""
 
-#: ../../extensiondev.rst:285
+#: ../../project/docs/extensiondev.rst:285 a24d6b67b6354949b29437cc0f311da0
 msgid ""
 "It must ship tests that can be invoked with a common tool like ``tox -e "
 "py``, ``nox -s test`` or ``pytest``. If not using ``tox``, the test "
@@ -391,23 +391,32 @@ msgid ""
 "be part of the sdist distribution."
 msgstr ""
 
-#: ../../extensiondev.rst:289
+#: ../../project/docs/extensiondev.rst:289 d965dc15c7b84d2c8a08d093476f7913
 msgid ""
 "A link to the documentation or project website must be in the PyPI "
 "metadata or the readme. The documentation should use the Flask theme from"
 " the `Official Pallets Themes`_."
 msgstr ""
 
-#: ../../extensiondev.rst:292
+#: ../../project/docs/extensiondev.rst:292 5f8ed71c43fe432d98560a74f130fa67
 msgid ""
 "The extension's dependencies should not use upper bounds or assume any "
 "particular version scheme, but should use lower bounds to indicate "
 "minimum compatibility support. For example, ``sqlalchemy>=1.4``."
 msgstr ""
 
-#: ../../extensiondev.rst:296
+#: ../../project/docs/extensiondev.rst:296 cfd371f6e86842b48bb04529001b12fa
 msgid ""
 "Indicate the versions of Python supported using "
-"``python_requires=\">=version\"``. Flask itself supports Python >=3.8 as "
-"of April 2023, but this will update over time."
+"``python_requires=\">=version\"``. Flask itself supports Python >=3.9 as "
+"of October 2024, and this will update over time."
 msgstr ""
+
+#~ msgid ""
+#~ "Indicate the versions of Python "
+#~ "supported using ``python_requires=\">=version\"``. "
+#~ "Flask itself supports Python >=3.8 as"
+#~ " of April 2023, but this will "
+#~ "update over time."
+#~ msgstr ""
+

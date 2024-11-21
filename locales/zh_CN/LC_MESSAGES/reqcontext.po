@@ -8,20 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-12 19:17+0800\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: rosekc <rose-kc@hotmail.com>\n"
 "Language-Team: zh_CN <withlihui@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../reqcontext.rst:4
+#: ../../project/docs/reqcontext.rst:4 7bb331ea57304d9c94a4e558bfe1a5e4
 msgid "The Request Context"
 msgstr "请求上下文"
 
-#: ../../reqcontext.rst:6
+#: ../../project/docs/reqcontext.rst:6 4ad95d91a9134131b7d2ea0c4c85acad
 msgid ""
 "The request context keeps track of the request-level data during a "
 "request. Rather than passing the request object to each function that "
@@ -31,7 +31,7 @@ msgstr ""
 "在请求当中，请求上下文保持对请求层级的数据的追踪。相比在请求当中把请求对象传递到每个函数当中，Flask 使用了 :data:`request` "
 "与 :data:`session` 代理对象来访问请求对象。"
 
-#: ../../reqcontext.rst:11
+#: ../../project/docs/reqcontext.rst:11 e068e5f6425a45f0bc2cb2b9f183a059
 #, fuzzy
 msgid ""
 "This is similar to :doc:`/appcontext`, which keeps track of the "
@@ -41,11 +41,11 @@ msgstr ""
 "这与 :doc:`/appcontext` "
 "类似，只不过应用上下文跟踪独立于请求的应用层级数据。在请求上下文被推入线程局部栈时，对应的应用上下文也被推入。"
 
-#: ../../reqcontext.rst:17
+#: ../../project/docs/reqcontext.rst:17 3a6f4b0d32f14412a4284d9b56f936ab
 msgid "Purpose of the Context"
 msgstr "上下文的目的"
 
-#: ../../reqcontext.rst:19
+#: ../../project/docs/reqcontext.rst:19 3d2733654c764ead9ccc291d0ce3bb3b
 msgid ""
 "When the :class:`Flask` application handles a request, it creates a "
 ":class:`Request` object based on the environment it received from the "
@@ -58,7 +58,7 @@ msgstr ""
 "*工作者* （根据不同的服务器可能为线程，进程或协程）一次只能处理一个请求，在请求当中，请求数据可以认为对工作者全局可见、Flask 用术语 "
 "*上下文局部变量（context local）* 来表示这种设计。"
 
-#: ../../reqcontext.rst:26
+#: ../../project/docs/reqcontext.rst:26 6da60934ee044829acee103c4efeff09
 msgid ""
 "Flask automatically *pushes* a request context when handling a request. "
 "View functions, error handlers, and other functions that run during a "
@@ -68,11 +68,11 @@ msgstr ""
 "Flask 在处理请求时，会自动 *推入* 请求上下文。视图函数，错误处理钩子函数与其他在请求当中运行的函数可以访问指向当前请求的请求对象代理对象"
 " :data:`request`。"
 
-#: ../../reqcontext.rst:33
+#: ../../project/docs/reqcontext.rst:33 1a3691b44ac94c49a2aa61335bba8e51
 msgid "Lifetime of the Context"
 msgstr "上下文的生命周期"
 
-#: ../../reqcontext.rst:35
+#: ../../project/docs/reqcontext.rst:35 ab8ec3ad859149c7b0cbdbe8a4040e52
 #, fuzzy
 msgid ""
 "When a Flask application begins handling a request, it pushes a request "
@@ -82,33 +82,36 @@ msgstr ""
 "当 Flask 应用开始处理请求时，推入请求上下文的同时也推入了 "
 ":doc:`/appcontext`。当请求结束，会先弹出请求上下文，然后再弹出应用上下文。"
 
-#: ../../reqcontext.rst:39
+#: ../../project/docs/reqcontext.rst:39 7ba87c5aaa0e437cbc3db0877ba61a8b
+#, fuzzy
 msgid ""
 "The context is unique to each thread (or other worker type). "
-":data:`request` cannot be passed to another thread, the other thread will"
-" have a different context stack and will not know about the request the "
-"parent thread was pointing to."
+":data:`request` cannot be passed to another thread, the other thread has "
+"a different context space and will not know about the request the parent "
+"thread was pointing to."
 msgstr ""
 "每个线程（或者其他工作者类型）的上下文是独立的。:data:`request` "
 "不能传入其他线程，其他线程有不同的上下文栈，因此不会知道父线程会指向哪个请求。"
 
-#: ../../reqcontext.rst:44
+#: ../../project/docs/reqcontext.rst:44 6bc07aef00504a618d1ad32e98728cfa
 msgid ""
-"Context locals are implemented in Werkzeug. See :doc:`werkzeug:local` for"
-" more information on how this works internally."
-msgstr "上下文局部变量的实现在 Werkzeug 中。若要了解更多内部工作细节，参见 :doc:`werkzeug:local`。"
+"Context locals are implemented using Python's :mod:`contextvars` and "
+"Werkzeug's :class:`~werkzeug.local.LocalProxy`. Python manages the "
+"lifetime of context vars automatically, and local proxy wraps that low-"
+"level interface to make the data easier to work with."
+msgstr ""
 
-#: ../../reqcontext.rst:49
+#: ../../project/docs/reqcontext.rst:51 78a8ba17212d40d489ddfbadeb3b4f60
 msgid "Manually Push a Context"
 msgstr "手动推入上下文"
 
-#: ../../reqcontext.rst:51
+#: ../../project/docs/reqcontext.rst:53 c39913a04f5a4401873b88bfbb8f87d1
 msgid ""
 "If you try to access :data:`request`, or anything that uses it, outside a"
 " request context, you'll get this error message:"
 msgstr "如果要在应用上下文之外的地方试图去获取或者使用依赖 :data:`request` 的任何东西，有可能会收到这样的错误信息："
 
-#: ../../reqcontext.rst:62
+#: ../../project/docs/reqcontext.rst:64 4d7ad6504c3a4a36ab2ad668fcf4d1f2
 msgid ""
 "This should typically only happen when testing code that expects an "
 "active request. One option is to use the :meth:`test client "
@@ -122,37 +125,37 @@ msgstr ""
 ":meth:`~Flask.test_request_context`，所有在块中运行的代码将会可以访问由测试数据生成的 "
 ":data:`request`。 ::"
 
-#: ../../reqcontext.rst:77
+#: ../../project/docs/reqcontext.rst:80 f836d5fad1794d918fb840f8d0c1c2a5
 msgid ""
 "If you see that error somewhere else in your code not related to testing,"
 " it most likely indicates that you should move that code into a view "
 "function."
 msgstr "如果你在测试应用以外场景遇到这个错误，绝大多数情况下意味着这些代码应该转移到视图函数下。"
 
-#: ../../reqcontext.rst:81
+#: ../../project/docs/reqcontext.rst:84 24751a369457497d8132481a2262ca47
 msgid ""
 "For information on how to use the request context from the interactive "
 "Python shell, see :doc:`/shell`."
 msgstr "了解更多如何在 Python 交互式命令行中使用请求上下文的信息，参见 :doc:`/shell`。"
 
-#: ../../reqcontext.rst:86
+#: ../../project/docs/reqcontext.rst:89 a24f686ddb064886a458315c10f8ac33
 msgid "How the Context Works"
 msgstr "上下文的运作原理"
 
-#: ../../reqcontext.rst:88
+#: ../../project/docs/reqcontext.rst:91 39adf0ed8bc94379b990e5e3c0b26947
+#, fuzzy
 msgid ""
 "The :meth:`Flask.wsgi_app` method is called to handle each request. It "
 "manages the contexts during the request. Internally, the request and "
-"application contexts work as stacks, :data:`_request_ctx_stack` and "
-":data:`_app_ctx_stack`. When contexts are pushed onto the stack, the "
+"application contexts work like stacks. When contexts are pushed, the "
 "proxies that depend on them are available and point at information from "
-"the top context on the stack."
+"the top item."
 msgstr ""
 "在处理每个请求时，都会调用 :meth:`Flask.wsgi_app` "
 "方法。它在请求中控制上下文。具体来说，存储请求上下文和应用上下文的数据结构为栈，分别为 :data:`_request_ctx_stack` 以及"
 " :data:`_app_ctx_stack`。当上下文被推入栈，依赖栈的代理对象变得可用，指向在栈顶的上下文。"
 
-#: ../../reqcontext.rst:95
+#: ../../project/docs/reqcontext.rst:97 819a650c5a1a4101a83fbdb96c7ce3a4
 msgid ""
 "When the request starts, a :class:`~ctx.RequestContext` is created and "
 "pushed, which creates and pushes an :class:`~ctx.AppContext` first if a "
@@ -166,15 +169,16 @@ msgstr ""
 ":data:`current_app`、:data:`g`、:data:`request` 以及 :data:`session` "
 "在处理请求的线程变得可用。"
 
-#: ../../reqcontext.rst:102
+#: ../../project/docs/reqcontext.rst:104 1a4e12b25cb145908972e9f69ed8979a
+#, fuzzy
 msgid ""
-"Because the contexts are stacks, other contexts may be pushed to change "
-"the proxies during a request. While this is not a common pattern, it can "
-"be used in advanced applications to, for example, do internal redirects "
-"or chain different applications together."
+"Other contexts may be pushed to change the proxies during a request. "
+"While this is not a common pattern, it can be used in advanced "
+"applications to, for example, do internal redirects or chain different "
+"applications together."
 msgstr "因为上下文对象存放在栈中，在请求中，其他上下文对象推入时可能会改变代理对象的指向。尽管这不是常见的设计模式，但它可以让应用能够内部重定向或者将不同应用串联在一起。"
 
-#: ../../reqcontext.rst:107
+#: ../../project/docs/reqcontext.rst:109 5228ab891821489aaa3aca0ec696df50
 msgid ""
 "After the request is dispatched and a response is generated and sent, the"
 " request context is popped, which then pops the application context. "
@@ -186,25 +190,25 @@ msgstr ""
 ":meth:`~Flask.teardown_request` 以及 :meth:`~Flask.teardown_appcontext` "
 "会被执行。即使在请求被分配过程中有未处理的请求抛出，这些函数也会被执行。"
 
-#: ../../reqcontext.rst:117
+#: ../../project/docs/reqcontext.rst:119 d933e700624946e182a76a2204c2f2d8
 msgid "Callbacks and Errors"
 msgstr "回调与错误"
 
-#: ../../reqcontext.rst:119
+#: ../../project/docs/reqcontext.rst:121 a4c6d44de9bc43389d9395028bfd1dfb
 msgid ""
 "Flask dispatches a request in multiple stages which can affect the "
 "request, response, and how errors are handled. The contexts are active "
 "during all of these stages."
 msgstr "Flask 在不同阶段中会分配请求，这会影响请求、响应以及错误处理。在这些阶段中，上下文处于可用状态。"
 
-#: ../../reqcontext.rst:123
+#: ../../project/docs/reqcontext.rst:125 836a5fa2a6b84acba9ba849e257fd537
 msgid ""
 "A :class:`Blueprint` can add handlers for these events that are specific "
 "to the blueprint. The handlers for a blueprint will run if the blueprint "
 "owns the route that matches the request."
 msgstr ":class:`Blueprint` 可以为这些事件添加蓝图专属的钩子函数。当蓝图所属的路由匹配上请求，那么蓝图内的钩子函数将被执行。"
 
-#: ../../reqcontext.rst:127
+#: ../../project/docs/reqcontext.rst:129 93f709592edd4c6d835a5f9fb170abe9
 msgid ""
 "Before each request, :meth:`~Flask.before_request` functions are called. "
 "If one of these functions return a value, the other functions are "
@@ -214,14 +218,14 @@ msgstr ""
 "在每个请求前，会调用 :meth:`~Flask.before_request` "
 "函数。如果其中的一个函数返回了值，那么其他函数会被跳过执行。返回值会当作响应，视图函数不会被调用。"
 
-#: ../../reqcontext.rst:132
+#: ../../project/docs/reqcontext.rst:134 4fc6ce52cdb148e4a5dd0007ae70ad22
 msgid ""
 "If the :meth:`~Flask.before_request` functions did not return a response,"
 " the view function for the matched route is called and returns a "
 "response."
 msgstr "如果 :meth:`~Flask.before_request` 函数不返回响应，被路由匹配的视图函数将被调用，返回请求。"
 
-#: ../../reqcontext.rst:136
+#: ../../project/docs/reqcontext.rst:138 d59b6033b45f44acb6a4d196d0cd1d44
 msgid ""
 "The return value of the view is converted into an actual response object "
 "and passed to the :meth:`~Flask.after_request` functions. Each function "
@@ -230,7 +234,7 @@ msgstr ""
 "视图函数返回的值会被转换成实际的响应对象，然后传递到 :meth:`~Flask.after_request` "
 "函数。每个函数返回一个被修改的或者是新的响应对象。"
 
-#: ../../reqcontext.rst:140
+#: ../../project/docs/reqcontext.rst:142 0883b4ca89af4969b35c98a5cd6c7b3b
 msgid ""
 "After the response is returned, the contexts are popped, which calls the "
 ":meth:`~Flask.teardown_request` and :meth:`~Flask.teardown_appcontext` "
@@ -240,7 +244,7 @@ msgstr ""
 "当响应被返回，在弹出上下文的过程中，会调用 :meth:`~Flask.teardown_request` 和 "
 ":meth:`~Flask.teardown_appcontext` 函数。即使内部有一个未处理的异常抛出，这些函数也会被执行。"
 
-#: ../../reqcontext.rst:145
+#: ../../project/docs/reqcontext.rst:147 af06794eea144c55a2632b956590dfe9
 msgid ""
 "If an exception is raised before the teardown functions, Flask tries to "
 "match it with an :meth:`~Flask.errorhandler` function to handle the "
@@ -253,7 +257,7 @@ msgstr ""
 "函数去处理异常，返回响应。如果没有错误钩子函数，或者钩子函数本身抛出了异常，Flask 返回了通用的 ``500 Internal Server "
 "Error`` 响应。清理函数一样会调用，而且会传入异常对象。"
 
-#: ../../reqcontext.rst:152
+#: ../../project/docs/reqcontext.rst:154 b18273c4c47c46e1afc91609c38c2864
 msgid ""
 "If debug mode is enabled, unhandled exceptions are not converted to a "
 "``500`` response and instead are propagated to the WSGI server. This "
@@ -263,11 +267,11 @@ msgstr ""
 "在 debug 模式开启的时候，未处理的异常不会被转换为 ``500`` 响应，而是传递给 WSGI "
 "服务器。这让开发服务器可以展示带有异常跟踪（trackback）的交互式调试器。"
 
-#: ../../reqcontext.rst:159
+#: ../../project/docs/reqcontext.rst:161 f14012a30e924db5be69516dfe2b3c1c
 msgid "Teardown Callbacks"
 msgstr "清理钩子函数"
 
-#: ../../reqcontext.rst:161
+#: ../../project/docs/reqcontext.rst:163 94dbac347fd24165bf31967b0bc87967
 msgid ""
 "The teardown callbacks are independent of the request dispatch, and are "
 "instead called by the contexts when they are popped. The functions are "
@@ -278,7 +282,7 @@ msgid ""
 "fail."
 msgstr "清理钩子函数独立于请求分配，而是在上下文被弹出的时候才调用。当在请求分配的过程中，或者在手动推入的的上下文中有未捕抓的异常，这些函数依然会被调用。这意味着不会保证在请求分配的每一部分都会首先执行。确保在编写这些函数的时候不要依赖其他钩子函数，不要假设函数不会失败。"
 
-#: ../../reqcontext.rst:169
+#: ../../project/docs/reqcontext.rst:171 1f10f3af00ec425f86fbf33cfe620a6e
 msgid ""
 "During testing, it can be useful to defer popping the contexts after the "
 "request ends, so that their data can be accessed in the test function. "
@@ -288,29 +292,27 @@ msgstr ""
 "在测试的过程中，在请求结束的时候推迟弹出上下文是一种很有用的手段，它可以让测试函数访问上下文中的数据。在 ``with`` 块中使用 "
 ":meth:`~Flask.test_client` 来让上下文在离开 ``with`` 块前保留。"
 
-#: ../../reqcontext.rst:203
+#: ../../project/docs/reqcontext.rst:205 50ae5e2310e5407fb97234a6a4dc64ff
 msgid "Signals"
 msgstr "信号"
 
-#: ../../reqcontext.rst:205
-msgid ""
-"If :data:`~signals.signals_available` is true, the following signals are "
-"sent:"
-msgstr "如果 :data:`~signals.signals_available` 为真，下列信号将被发送："
+#: ../../project/docs/reqcontext.rst:207 4ad6aa183291481f8a865922eeaaba9f
+msgid "The following signals are sent:"
+msgstr ""
 
-#: ../../reqcontext.rst:208
+#: ../../project/docs/reqcontext.rst:209 34097487e61c4ee49c521cc0bb11c926
 msgid ""
 ":data:`request_started` is sent before the :meth:`~Flask.before_request` "
 "functions are called."
 msgstr "在 :meth:`~Flask.before_request` 被调用前，:data:`request_started` 信号会被发送。"
 
-#: ../../reqcontext.rst:211
+#: ../../project/docs/reqcontext.rst:211 e042e92ee79b484898109326c45d93ef
 msgid ""
 ":data:`request_finished` is sent after the :meth:`~Flask.after_request` "
 "functions are called."
 msgstr "在 :meth:`~Flask.after_request` 被调用前，:data:`request_finished` 信号会被发送。"
 
-#: ../../reqcontext.rst:214
+#: ../../project/docs/reqcontext.rst:213 cab6b3f564014eaf9de062401289cc76
 msgid ""
 ":data:`got_request_exception` is sent when an exception begins to be "
 "handled, but before an :meth:`~Flask.errorhandler` is looked up or "
@@ -319,7 +321,7 @@ msgstr ""
 "当异常开始处理时，:data:`got_request_exception` 信号会在 :meth:`~Flask.errorhandler` "
 "被查看或调用前被发送。"
 
-#: ../../reqcontext.rst:218
+#: ../../project/docs/reqcontext.rst:215 d90c799af8e84b9dacd2cd42f3dcb369
 msgid ""
 ":data:`request_tearing_down` is sent after the "
 ":meth:`~Flask.teardown_request` functions are called."
@@ -327,46 +329,11 @@ msgstr ""
 "在 :meth:`~Flask.teardown_request` 被调用后，:data:`request_tearing_down` "
 "信号会被发送。"
 
-#: ../../reqcontext.rst:223
-msgid "Context Preservation on Error"
-msgstr "在错误时保留上下文"
-
-#: ../../reqcontext.rst:225
-msgid ""
-"At the end of a request, the request context is popped and all data "
-"associated with it is destroyed. If an error occurs during development, "
-"it is useful to delay destroying the data for debugging purposes."
-msgstr "在请求结束时，上下文会被弹出，所有与上下文相关的数据会被销毁。如果在开发环境中有错误发生，推迟销毁上下文数据对调试来说非常有用。"
-
-#: ../../reqcontext.rst:229
-msgid ""
-"When the development server is running in development mode (the "
-"``FLASK_ENV`` environment variable is set to ``'development'``), the "
-"error and data will be preserved and shown in the interactive debugger."
-msgstr ""
-"当开发服务器在开发模式运行（``FLASK_ENV`` 环境变量被设置为 "
-"``'development'``），错误与数据会被保留，在交互式调试器中展示。"
-
-#: ../../reqcontext.rst:233
-msgid ""
-"This behavior can be controlled with the "
-":data:`PRESERVE_CONTEXT_ON_EXCEPTION` config. As described above, it "
-"defaults to ``True`` in the development environment."
-msgstr ""
-"这一行为能被 :data:`PRESERVE_CONTEXT_ON_EXCEPTION` 设置项所控制。如上文所述。在开发环境中默认设置为 "
-"``True``。"
-
-#: ../../reqcontext.rst:237
-msgid ""
-"Do not enable :data:`PRESERVE_CONTEXT_ON_EXCEPTION` in production, as it "
-"will cause your application to leak memory on exceptions."
-msgstr "不要在生产环境中开启 :data:`PRESERVE_CONTEXT_ON_EXCEPTION`，因为这会让应用在出现异常时内存泄露。"
-
-#: ../../reqcontext.rst:244
+#: ../../project/docs/reqcontext.rst:222 c2e17c700c2840c9aadd77b4366926b1
 msgid "Notes On Proxies"
 msgstr "代理对象的注意事项"
 
-#: ../../reqcontext.rst:246
+#: ../../project/docs/reqcontext.rst:224 16787365811f44fe85b46d63586bd646
 msgid ""
 "Some of the objects provided by Flask are proxies to other objects. The "
 "proxies are accessed in the same way for each worker thread, but point to"
@@ -376,29 +343,82 @@ msgstr ""
 "一些 Flask "
 "提供的对象，是其他对象的代理。在每个工作线程中，代理对象会以相同的方式被访问。在内部实现中，代理对象指向绑定到工作者的唯一的对象。细节如本页所述。"
 
-#: ../../reqcontext.rst:251
+#: ../../project/docs/reqcontext.rst:229 7011e5b12963429496d144d41e8bc592
 msgid ""
 "Most of the time you don't have to care about that, but there are some "
 "exceptions where it is good to know that this object is actually a proxy:"
 msgstr "大多数时候，这些细节无需担心。但有些时候最好还是知道这个对象实际上是一个代理："
 
-#: ../../reqcontext.rst:254
+#: ../../project/docs/reqcontext.rst:232 460cc3e92ef646a8b45dde62f3f6591f
 msgid ""
 "The proxy objects cannot fake their type as the actual object types. If "
 "you want to perform instance checks, you have to do that on the object "
 "being proxied."
 msgstr "代理对象不能冒充实际指向的对象类型。如果要进行实例检查，应当要在被代理的对象本身进行检查。"
 
-#: ../../reqcontext.rst:257
+#: ../../project/docs/reqcontext.rst:235 d6279a667c14408184dd4478c81fed3c
 msgid ""
 "The reference to the proxied object is needed in some situations, such as"
 " sending :doc:`signals` or passing data to a background thread."
 msgstr "在某些要使用被代理对象的引用的时候，如发送 :doc:`signals` 或者向后台线程传递数据。"
 
-#: ../../reqcontext.rst:261
+#: ../../project/docs/reqcontext.rst:239 bca3be09752246abbb7533050850e255
 msgid ""
 "If you need to access the underlying object that is proxied, use the "
 ":meth:`~werkzeug.local.LocalProxy._get_current_object` method::"
 msgstr ""
 "如果需要访问在底层被代理的对象，使用 :meth:`~werkzeug.local.LocalProxy._get_current_object`"
 " 这个方法： ::"
+
+#~ msgid ""
+#~ "Context locals are implemented in "
+#~ "Werkzeug. See :doc:`werkzeug:local` for more"
+#~ " information on how this works "
+#~ "internally."
+#~ msgstr "上下文局部变量的实现在 Werkzeug 中。若要了解更多内部工作细节，参见 :doc:`werkzeug:local`。"
+
+#~ msgid ""
+#~ "If :data:`~signals.signals_available` is true, "
+#~ "the following signals are sent:"
+#~ msgstr "如果 :data:`~signals.signals_available` 为真，下列信号将被发送："
+
+#~ msgid "Context Preservation on Error"
+#~ msgstr "在错误时保留上下文"
+
+#~ msgid ""
+#~ "At the end of a request, the "
+#~ "request context is popped and all "
+#~ "data associated with it is destroyed."
+#~ " If an error occurs during "
+#~ "development, it is useful to delay "
+#~ "destroying the data for debugging "
+#~ "purposes."
+#~ msgstr "在请求结束时，上下文会被弹出，所有与上下文相关的数据会被销毁。如果在开发环境中有错误发生，推迟销毁上下文数据对调试来说非常有用。"
+
+#~ msgid ""
+#~ "When the development server is running"
+#~ " in development mode (the ``FLASK_ENV`` "
+#~ "environment variable is set to "
+#~ "``'development'``), the error and data "
+#~ "will be preserved and shown in the"
+#~ " interactive debugger."
+#~ msgstr ""
+#~ "当开发服务器在开发模式运行（``FLASK_ENV`` 环境变量被设置为 "
+#~ "``'development'``），错误与数据会被保留，在交互式调试器中展示。"
+
+#~ msgid ""
+#~ "This behavior can be controlled with "
+#~ "the :data:`PRESERVE_CONTEXT_ON_EXCEPTION` config. As"
+#~ " described above, it defaults to "
+#~ "``True`` in the development environment."
+#~ msgstr ""
+#~ "这一行为能被 :data:`PRESERVE_CONTEXT_ON_EXCEPTION` "
+#~ "设置项所控制。如上文所述。在开发环境中默认设置为 ``True``。"
+
+#~ msgid ""
+#~ "Do not enable :data:`PRESERVE_CONTEXT_ON_EXCEPTION`"
+#~ " in production, as it will cause "
+#~ "your application to leak memory on "
+#~ "exceptions."
+#~ msgstr "不要在生产环境中开启 :data:`PRESERVE_CONTEXT_ON_EXCEPTION`，因为这会让应用在出现异常时内存泄露。"
+

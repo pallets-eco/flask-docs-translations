@@ -8,20 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-01 02:27-0500\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr_FR <victor.levieux@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../patterns/celery.rst:2
-msgid "Celery Background Tasks"
+#: ../../project/docs/patterns/celery.rst:2 82d5179f86e444ee91346e650749bb65
+msgid "Background Tasks with Celery"
 msgstr ""
 
-#: ../../patterns/celery.rst:4
+#: ../../project/docs/patterns/celery.rst:4 0e488894546148da9a56816093eb3843
 msgid ""
 "If your application has a long running task, such as processing some "
 "uploaded data or sending email, you don't want to wait for it to finish "
@@ -30,93 +30,312 @@ msgid ""
 "request returns immediately."
 msgstr ""
 
-#: ../../patterns/celery.rst:10
+#: ../../project/docs/patterns/celery.rst:9 580d803d352a4ad68bb02f1d1aeccd9b
 msgid ""
-"Celery is a powerful task queue that can be used for simple background "
-"tasks as well as complex multi-stage programs and schedules. This guide "
-"will show you how to configure Celery using Flask, but assumes you've "
-"already read the `First Steps with Celery "
-"<https://celery.readthedocs.io/en/latest/getting-started/first-steps-"
-"with-celery.html>`_ guide in the Celery documentation."
+"`Celery`_ is a powerful task queue that can be used for simple background"
+" tasks as well as complex multi-stage programs and schedules. This guide "
+"will show you how to configure Celery using Flask. Read Celery's `First "
+"Steps with Celery`_ guide to learn how to use Celery itself."
 msgstr ""
 
-#: ../../patterns/celery.rst:17
+#: ../../project/docs/patterns/celery.rst:17 c456152902ae4e0f92e44033c24e58c3
+msgid ""
+"The Flask repository contains `an example "
+"<https://github.com/pallets/flask/tree/main/examples/celery>`_ based on "
+"the information on this page, which also shows how to use JavaScript to "
+"submit tasks and poll for progress and results."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:23 601e243d65754e10bc16db418758024e
 msgid "Install"
 msgstr ""
 
-#: ../../patterns/celery.rst:19
-msgid "Celery is a separate Python package. Install it from PyPI using pip::"
+#: ../../project/docs/patterns/celery.rst:25 d48d2ccff8d34b3ebd0e3760b8b27d65
+msgid "Install Celery from PyPI, for example using pip:"
 msgstr ""
 
-#: ../../patterns/celery.rst:24
-msgid "Configure"
+#: ../../project/docs/patterns/celery.rst:33 613ceb3eea8149e5a794838e98ceb4ba
+msgid "Integrate Celery with Flask"
 msgstr ""
 
-#: ../../patterns/celery.rst:26
+#: ../../project/docs/patterns/celery.rst:35 1d8654062d8243e1bd903266be2763c2
 msgid ""
-"The first thing you need is a Celery instance, this is called the celery "
-"application.  It serves the same purpose as the :class:`~flask.Flask` "
-"object in Flask, just for Celery.  Since this instance is used as the "
-"entry-point for everything you want to do in Celery, like creating tasks "
-"and managing workers, it must be possible for other modules to import it."
+"You can use Celery without any integration with Flask, but it's "
+"convenient to configure it through Flask's config, and to let tasks "
+"access the Flask application."
 msgstr ""
 
-#: ../../patterns/celery.rst:32
+#: ../../project/docs/patterns/celery.rst:38 7046b5b146ba45c38730e2a3166691e7
 msgid ""
-"For instance you can place this in a ``tasks`` module.  While you can use"
-" Celery without any reconfiguration with Flask, it becomes a bit nicer by"
-" subclassing tasks and adding support for Flask's application contexts "
-"and hooking it up with the Flask configuration."
+"Celery uses similar ideas to Flask, with a ``Celery`` app object that has"
+" configuration and registers tasks. While creating a Flask app, use the "
+"following code to create and configure a Celery app as well."
 msgstr ""
 
-#: ../../patterns/celery.rst:37
-msgid "This is all that is necessary to properly integrate Celery with Flask::"
-msgstr ""
-
-#: ../../patterns/celery.rst:57
+#: ../../project/docs/patterns/celery.rst:58 24f6b337d890491ebea8bfaf10b1ed12
 msgid ""
-"The function creates a new Celery object, configures it with the broker "
-"from the application config, updates the rest of the Celery config from "
-"the Flask config and then creates a subclass of the task that wraps the "
-"task execution in an application context."
+"This creates and returns a ``Celery`` app object. Celery `configuration`_"
+" is taken from the ``CELERY`` key in the Flask configuration. The Celery "
+"app is set as the default, so that it is seen during each request. The "
+"``Task`` subclass automatically runs task functions with a Flask app "
+"context active, so that services like your database connections are "
+"available."
 msgstr ""
 
-#: ../../patterns/celery.rst:63
-msgid "An example task"
-msgstr ""
-
-#: ../../patterns/celery.rst:65
+#: ../../project/docs/patterns/celery.rst:66 f4b24d6d3a944736af88aabed5ead4df
 msgid ""
-"Let's write a task that adds two numbers together and returns the result."
-" We configure Celery's broker and backend to use Redis, create a "
-"``celery`` application using the factory from above, and then use it to "
-"define the task. ::"
+"Here's a basic ``example.py`` that configures Celery to use Redis for "
+"communication. We enable a result backend, but ignore results by default."
+" This allows us to store results only for tasks where we care about the "
+"result."
 msgstr ""
 
-#: ../../patterns/celery.rst:82
-msgid "This task can now be called in the background::"
-msgstr ""
-
-#: ../../patterns/celery.rst:88
-msgid "Run a worker"
-msgstr ""
-
-#: ../../patterns/celery.rst:90
+#: ../../project/docs/patterns/celery.rst:84 5b0fb3d6c2484048b397fabcb846a65a
 msgid ""
-"If you jumped in and already executed the above code you will be "
-"disappointed to learn that ``.wait()`` will never actually return. That's"
-" because you also need to run a Celery worker to receive and execute the "
-"task. ::"
+"Point the ``celery worker`` command at this and it will find the "
+"``celery_app`` object."
 msgstr ""
 
-#: ../../patterns/celery.rst:97
+#: ../../project/docs/patterns/celery.rst:90 0266acdd985244548592ad82aa74ec8b
 msgid ""
-"The ``your_application`` string has to point to your application's "
-"package or module that creates the ``celery`` object."
+"You can also run the ``celery beat`` command to run tasks on a schedule. "
+"See Celery's docs for more information about defining schedules."
 msgstr ""
 
-#: ../../patterns/celery.rst:100
-msgid ""
-"Now that the worker is running, ``wait`` will return the result once the "
-"task is finished."
+#: ../../project/docs/patterns/celery.rst:99 fe572a4ad8e04073b53908c842d7f749
+msgid "Application Factory"
 msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:101 c416b863b8c04848b2e6e5d272324315
+msgid ""
+"When using the Flask application factory pattern, call the "
+"``celery_init_app`` function inside the factory. It sets "
+"``app.extensions[\"celery\"]`` to the Celery app object, which can be "
+"used to get the Celery app from the Flask app returned by the factory."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:120 a1135cc11fae419bad6f082b197f328b
+msgid ""
+"To use ``celery`` commands, Celery needs an app object, but that's no "
+"longer directly available. Create a ``make_celery.py`` file that calls "
+"the Flask app factory and gets the Celery app from the returned Flask "
+"app."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:131 332a98bf4d8741dd9d7865b9152dc5bb
+msgid "Point the ``celery`` command to this file."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:140 f8c048cbea794ac1955655cd05f5478c
+msgid "Defining Tasks"
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:142 e1765672e1034979abf21824b20eb2e9
+msgid ""
+"Using ``@celery_app.task`` to decorate task functions requires access to "
+"the ``celery_app`` object, which won't be available when using the "
+"factory pattern. It also means that the decorated tasks are tied to the "
+"specific Flask and Celery app instances, which could be an issue during "
+"testing if you change configuration for a test."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:147 ece732dc942143a3a08269548a01a618
+msgid ""
+"Instead, use Celery's ``@shared_task`` decorator. This creates task "
+"objects that will access whatever the \"current app\" is, which is a "
+"similar concept to Flask's blueprints and app context. This is why we "
+"called ``celery_app.set_default()`` above."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:151 3aaabed3383c46c4acd78d16ca89b41c
+msgid ""
+"Here's an example task that adds two numbers together and returns the "
+"result."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:161 f69b751f88a84fefa37fa5375b8bf828
+msgid ""
+"Earlier, we configured Celery to ignore task results by default. Since we"
+" want to know the return value of this task, we set "
+"``ignore_result=False``. On the other hand, a task that didn't need a "
+"result, such as sending an email, wouldn't set this."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:167 c8cd8ef45edc44b4865bdad372a90ff3
+msgid "Calling Tasks"
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:169 4449ccde4ef8466eb3880421aaea5a14
+msgid ""
+"The decorated function becomes a task object with methods to call it in "
+"the background. The simplest way is to use the ``delay(*args, **kwargs)``"
+" method. See Celery's docs for more methods."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:173 aa9ab6b059ba407798d1c13955c2e737
+msgid ""
+"A Celery worker must be running to run the task. Starting a worker is "
+"shown in the previous sections."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:187 b084552b1fde470288183caffa851bda
+msgid ""
+"The route doesn't get the task's result immediately. That would defeat "
+"the purpose by blocking the response. Instead, we return the running "
+"task's result id, which we can use later to get the result."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:193 4a8618af22ad4a45bec7bedaba00cc85
+msgid "Getting Results"
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:195 f722f1f29bd74766a9463ac70fe61eb6
+msgid ""
+"To fetch the result of the task we started above, we'll add another route"
+" that takes the result id we returned before. We return whether the task "
+"is finished (ready), whether it finished successfully, and what the "
+"return value (or error) was if it is finished."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:212 b44b44000810484dabc8262e91b45a74
+msgid ""
+"Now you can start the task using the first route, then poll for the "
+"result using the second route. This keeps the Flask request workers from "
+"being blocked waiting for tasks to finish."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:216 57e830f528754947a93b150abc3da939
+msgid ""
+"The Flask repository contains `an example "
+"<https://github.com/pallets/flask/tree/main/examples/celery>`_ using "
+"JavaScript to submit tasks and poll for progress and results."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:221 4b6ac28af68046e1a2b9af57706b685b
+msgid "Passing Data to Tasks"
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:223 8a2d89dd0ec84fc68edc7dbd79a0872c
+msgid ""
+"The \"add\" task above took two integers as arguments. To pass arguments "
+"to tasks, Celery has to serialize them to a format that it can pass to "
+"other processes. Therefore, passing complex objects is not recommended. "
+"For example, it would be impossible to pass a SQLAlchemy model object, "
+"since that object is probably not serializable and is tied to the session"
+" that queried it."
+msgstr ""
+
+#: ../../project/docs/patterns/celery.rst:229 baad227b7cb64c73afe28dad4812a87f
+msgid ""
+"Pass the minimal amount of data necessary to fetch or recreate any "
+"complex data within the task. Consider a task that will run when the "
+"logged in user asks for an archive of their data. The Flask request knows"
+" the logged in user, and has the user object queried from the database. "
+"It got that by querying the database for a given id, so the task can do "
+"the same thing. Pass the user's id rather than the user object."
+msgstr ""
+
+#~ msgid "Celery Background Tasks"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Celery is a powerful task queue "
+#~ "that can be used for simple "
+#~ "background tasks as well as complex "
+#~ "multi-stage programs and schedules. This"
+#~ " guide will show you how to "
+#~ "configure Celery using Flask, but "
+#~ "assumes you've already read the `First"
+#~ " Steps with Celery "
+#~ "<https://celery.readthedocs.io/en/latest/getting-started"
+#~ "/first-steps-with-celery.html>`_ guide in"
+#~ " the Celery documentation."
+#~ msgstr ""
+
+#~ msgid "Celery is a separate Python package. Install it from PyPI using pip::"
+#~ msgstr ""
+
+#~ msgid "Configure"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first thing you need is a "
+#~ "Celery instance, this is called the "
+#~ "celery application.  It serves the same"
+#~ " purpose as the :class:`~flask.Flask` "
+#~ "object in Flask, just for Celery.  "
+#~ "Since this instance is used as the"
+#~ " entry-point for everything you want"
+#~ " to do in Celery, like creating "
+#~ "tasks and managing workers, it must "
+#~ "be possible for other modules to "
+#~ "import it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For instance you can place this in"
+#~ " a ``tasks`` module.  While you can"
+#~ " use Celery without any reconfiguration "
+#~ "with Flask, it becomes a bit nicer"
+#~ " by subclassing tasks and adding "
+#~ "support for Flask's application contexts "
+#~ "and hooking it up with the Flask"
+#~ " configuration."
+#~ msgstr ""
+
+#~ msgid "This is all that is necessary to properly integrate Celery with Flask::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The function creates a new Celery "
+#~ "object, configures it with the broker"
+#~ " from the application config, updates "
+#~ "the rest of the Celery config from"
+#~ " the Flask config and then creates"
+#~ " a subclass of the task that "
+#~ "wraps the task execution in an "
+#~ "application context."
+#~ msgstr ""
+
+#~ msgid "An example task"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Let's write a task that adds two"
+#~ " numbers together and returns the "
+#~ "result. We configure Celery's broker and"
+#~ " backend to use Redis, create a "
+#~ "``celery`` application using the factory "
+#~ "from above, and then use it to "
+#~ "define the task. ::"
+#~ msgstr ""
+
+#~ msgid "This task can now be called in the background::"
+#~ msgstr ""
+
+#~ msgid "Run a worker"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you jumped in and already "
+#~ "executed the above code you will "
+#~ "be disappointed to learn that "
+#~ "``.wait()`` will never actually return. "
+#~ "That's because you also need to "
+#~ "run a Celery worker to receive and"
+#~ " execute the task. ::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ``your_application`` string has to "
+#~ "point to your application's package or"
+#~ " module that creates the ``celery`` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now that the worker is running, "
+#~ "``wait`` will return the result once "
+#~ "the task is finished."
+#~ msgstr ""
+

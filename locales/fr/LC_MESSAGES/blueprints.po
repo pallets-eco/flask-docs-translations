@@ -8,20 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-01 02:27-0500\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr_FR <victor.levieux@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../blueprints.rst:2
+#: ../../project/docs/blueprints.rst:2 7249f5d18f46429d8391ce8921fa56b4
 msgid "Modular Applications with Blueprints"
 msgstr ""
 
-#: ../../blueprints.rst:8
+#: ../../project/docs/blueprints.rst:8 151babcff6a346adbca581718c82a5b3
 msgid ""
 "Flask uses a concept of *blueprints* for making application components "
 "and supporting common patterns within an application or across "
@@ -33,48 +33,48 @@ msgid ""
 "application."
 msgstr ""
 
-#: ../../blueprints.rst:17
+#: ../../project/docs/blueprints.rst:17 f389969a40ea4f27826edbd11e9b8d46
 msgid "Why Blueprints?"
 msgstr ""
 
-#: ../../blueprints.rst:19
+#: ../../project/docs/blueprints.rst:19 4ab4f0a5662245da8caf5a9b97d4555a
 msgid "Blueprints in Flask are intended for these cases:"
 msgstr ""
 
-#: ../../blueprints.rst:21
+#: ../../project/docs/blueprints.rst:21 91eeb1eb60e64bccbd5633fad27ef83c
 msgid ""
 "Factor an application into a set of blueprints.  This is ideal for larger"
 " applications; a project could instantiate an application object, "
 "initialize several extensions, and register a collection of blueprints."
 msgstr ""
 
-#: ../../blueprints.rst:24
+#: ../../project/docs/blueprints.rst:24 002af71c010e4d7d97a7eeb4187821ef
 msgid ""
 "Register a blueprint on an application at a URL prefix and/or subdomain. "
 "Parameters in the URL prefix/subdomain become common view arguments (with"
 " defaults) across all view functions in the blueprint."
 msgstr ""
 
-#: ../../blueprints.rst:27
+#: ../../project/docs/blueprints.rst:27 94f2021c3aca49e7a662aca925989fc1
 msgid ""
 "Register a blueprint multiple times on an application with different URL "
 "rules."
 msgstr ""
 
-#: ../../blueprints.rst:29
+#: ../../project/docs/blueprints.rst:29 18a0204b59154735a78d15e51ffd56d3
 msgid ""
 "Provide template filters, static files, templates, and other utilities "
 "through blueprints.  A blueprint does not have to implement applications "
 "or view functions."
 msgstr ""
 
-#: ../../blueprints.rst:32
+#: ../../project/docs/blueprints.rst:32 7c65fd65d5a849ed97ea63526fe280e1
 msgid ""
 "Register a blueprint on an application for any of these cases when "
 "initializing a Flask extension."
 msgstr ""
 
-#: ../../blueprints.rst:35
+#: ../../project/docs/blueprints.rst:35 a068363aa0b94178945ba9d0a2d9d736
 msgid ""
 "A blueprint in Flask is not a pluggable app because it is not actually an"
 " application -- it's a set of operations which can be registered on an "
@@ -84,7 +84,7 @@ msgid ""
 "layer."
 msgstr ""
 
-#: ../../blueprints.rst:42
+#: ../../project/docs/blueprints.rst:42 0cbbf843cd9d45debd1462cb8eb1951e
 msgid ""
 "Blueprints instead provide separation at the Flask level, share "
 "application config, and can change an application object as necessary "
@@ -93,11 +93,11 @@ msgid ""
 "whole application object."
 msgstr ""
 
-#: ../../blueprints.rst:49
+#: ../../project/docs/blueprints.rst:49 ffffa16adda04239abe03c367c432573
 msgid "The Concept of Blueprints"
 msgstr ""
 
-#: ../../blueprints.rst:51
+#: ../../project/docs/blueprints.rst:51 436e7d374a36475aa5bffe1f7b765dd2
 msgid ""
 "The basic concept of blueprints is that they record operations to execute"
 " when registered on an application.  Flask associates view functions with"
@@ -105,17 +105,17 @@ msgid ""
 "endpoint to another."
 msgstr ""
 
-#: ../../blueprints.rst:57
+#: ../../project/docs/blueprints.rst:57 d41508018b5249c3acb08e2cb727dafc
 msgid "My First Blueprint"
 msgstr ""
 
-#: ../../blueprints.rst:59
+#: ../../project/docs/blueprints.rst:59 d63217b112e84f43906eded7450f740b
 msgid ""
 "This is what a very basic blueprint looks like.  In this case we want to "
 "implement a blueprint that does simple rendering of static templates::"
 msgstr ""
 
-#: ../../blueprints.rst:76
+#: ../../project/docs/blueprints.rst:76 d763adfec985414db93f06127a419116
 msgid ""
 "When you bind a function with the help of the ``@simple_page.route`` "
 "decorator, the blueprint will record the intention of registering the "
@@ -126,21 +126,21 @@ msgid ""
 " URL, only the endpoint."
 msgstr ""
 
-#: ../../blueprints.rst:85
+#: ../../project/docs/blueprints.rst:85 5f08d26b4fd84fad968a2d54e6035489
 msgid "Registering Blueprints"
 msgstr ""
 
-#: ../../blueprints.rst:87
+#: ../../project/docs/blueprints.rst:87 eae314fab0434508a6e1773431a1b05d
 msgid "So how do you register that blueprint?  Like this::"
 msgstr ""
 
-#: ../../blueprints.rst:95
+#: ../../project/docs/blueprints.rst:95 dad020bb759b4e14921e159a93971906
 msgid ""
 "If you check the rules registered on the application, you will find "
 "these::"
 msgstr ""
 
-#: ../../blueprints.rst:103
+#: ../../project/docs/blueprints.rst:103 6ba9a6316a0e493c8575aff5162e352c
 msgid ""
 "The first one is obviously from the application itself for the static "
 "files.  The other two are for the `show` function of the ``simple_page`` "
@@ -148,64 +148,70 @@ msgid ""
 "blueprint and separated by a dot (``.``)."
 msgstr ""
 
-#: ../../blueprints.rst:108
+#: ../../project/docs/blueprints.rst:108 3d0a880e514f4af6862dc8f2d9f25a67
 msgid "Blueprints however can also be mounted at different locations::"
 msgstr ""
 
-#: ../../blueprints.rst:112
+#: ../../project/docs/blueprints.rst:112 0f6891a15a4b423c91786f121b1d7c62
 msgid "And sure enough, these are the generated rules::"
 msgstr ""
 
-#: ../../blueprints.rst:119
+#: ../../project/docs/blueprints.rst:119 a40764ef619e4bacb6cab05cd9b7f59e
 msgid ""
 "On top of that you can register blueprints multiple times though not "
 "every blueprint might respond properly to that.  In fact it depends on "
 "how the blueprint is implemented if it can be mounted more than once."
 msgstr ""
 
-#: ../../blueprints.rst:124
+#: ../../project/docs/blueprints.rst:124 9da3d3f947794876994e55453a18e1da
 msgid "Nesting Blueprints"
 msgstr ""
 
-#: ../../blueprints.rst:126
+#: ../../project/docs/blueprints.rst:126 b3912c82264c403aafb89e487a2baf23
 msgid "It is possible to register a blueprint on another blueprint."
 msgstr ""
 
-#: ../../blueprints.rst:135
+#: ../../project/docs/blueprints.rst:135 28509f32f6bc4f1186e5b11a5c2c4544
 msgid ""
 "The child blueprint will gain the parent's name as a prefix to its name, "
 "and child URLs will be prefixed with the parent's URL prefix."
 msgstr ""
 
-#: ../../blueprints.rst:143
+#: ../../project/docs/blueprints.rst:143 5b9a78d702844979993304985071ee3c
+msgid ""
+"In addition a child blueprint's will gain their parent's subdomain, with "
+"their subdomain as prefix if present i.e."
+msgstr ""
+
+#: ../../project/docs/blueprints.rst:156 a4200eee2e6046b7a9aee869a9ca0b55
 msgid ""
 "Blueprint-specific before request functions, etc. registered with the "
 "parent will trigger for the child. If a child does not have an error "
 "handler that can handle a given exception, the parent's will be tried."
 msgstr ""
 
-#: ../../blueprints.rst:149
+#: ../../project/docs/blueprints.rst:162 c56d22698b2545238406eb8d8e587c9e
 msgid "Blueprint Resources"
 msgstr ""
 
-#: ../../blueprints.rst:151
+#: ../../project/docs/blueprints.rst:164 9cd4f75d35b548a5b3f456df86c63b77
 msgid ""
 "Blueprints can provide resources as well.  Sometimes you might want to "
 "introduce a blueprint only for the resources it provides."
 msgstr ""
 
-#: ../../blueprints.rst:155
+#: ../../project/docs/blueprints.rst:168 b357de247fcc49d3a373331db2592616
 msgid "Blueprint Resource Folder"
 msgstr ""
 
-#: ../../blueprints.rst:157
+#: ../../project/docs/blueprints.rst:170 b70fb50daf7b4c8f9f317a51bf1cf88e
 msgid ""
 "Like for regular applications, blueprints are considered to be contained "
 "in a folder.  While multiple blueprints can originate from the same "
 "folder, it does not have to be the case and it's usually not recommended."
 msgstr ""
 
-#: ../../blueprints.rst:161
+#: ../../project/docs/blueprints.rst:174 fd49590702654303bf6ccaf7bee12301
 msgid ""
 "The folder is inferred from the second argument to :class:`Blueprint` "
 "which is usually `__name__`.  This argument specifies what logical Python"
@@ -216,24 +222,24 @@ msgid ""
 ":attr:`Blueprint.root_path` property to see what the resource folder is::"
 msgstr ""
 
-#: ../../blueprints.rst:172
+#: ../../project/docs/blueprints.rst:185 daab90659f9742e28ff11633037a9d52
 msgid ""
 "To quickly open sources from this folder you can use the "
 ":meth:`~Blueprint.open_resource` function::"
 msgstr ""
 
-#: ../../blueprints.rst:179
+#: ../../project/docs/blueprints.rst:192 5fbf4f97ab164d70bcd342eef7cbf2bc
 msgid "Static Files"
 msgstr ""
 
-#: ../../blueprints.rst:181
+#: ../../project/docs/blueprints.rst:194 273ee0aec15a4b709c7c87e4cbc5c1c5
 msgid ""
 "A blueprint can expose a folder with static files by providing the path "
 "to the folder on the filesystem with the ``static_folder`` argument. It "
 "is either an absolute path or relative to the blueprint's location::"
 msgstr ""
 
-#: ../../blueprints.rst:187
+#: ../../project/docs/blueprints.rst:200 abf15ae1022a488982e981f42bab96fb
 msgid ""
 "By default the rightmost part of the path is where it is exposed on the "
 "web. This can be changed with the ``static_url_path`` argument. Because "
@@ -242,14 +248,14 @@ msgid ""
 "prefix ``/admin``, the static URL will be ``/admin/static``."
 msgstr ""
 
-#: ../../blueprints.rst:193
+#: ../../project/docs/blueprints.rst:206 3422c39cebf44f32a1b7a2b828d8fcd4
 msgid ""
 "The endpoint is named ``blueprint_name.static``. You can generate URLs to"
 " it with :func:`url_for` like you would with the static folder of the "
 "application::"
 msgstr ""
 
-#: ../../blueprints.rst:199
+#: ../../project/docs/blueprints.rst:212 09174ab922444a259242abb77643740b
 msgid ""
 "However, if the blueprint does not have a ``url_prefix``, it is not "
 "possible to access the blueprint's static folder. This is because the URL"
@@ -259,24 +265,24 @@ msgid ""
 "folder."
 msgstr ""
 
-#: ../../blueprints.rst:207
+#: ../../project/docs/blueprints.rst:220 944b342c0a06493aa1b0df7c34f395fc
 msgid "Templates"
 msgstr ""
 
-#: ../../blueprints.rst:209
+#: ../../project/docs/blueprints.rst:222 f7b3d55e496a4798ade2a22f8ab0dc98
 msgid ""
 "If you want the blueprint to expose templates you can do that by "
 "providing the `template_folder` parameter to the :class:`Blueprint` "
 "constructor::"
 msgstr ""
 
-#: ../../blueprints.rst:214
+#: ../../project/docs/blueprints.rst:227 1d0d86bdda6b43e2ba620273328e6a98
 msgid ""
 "For static files, the path can be absolute or relative to the blueprint "
 "resource folder."
 msgstr ""
 
-#: ../../blueprints.rst:217
+#: ../../project/docs/blueprints.rst:230 9e38fe42fa0048ffb505c86d3f8d1c7b
 msgid ""
 "The template folder is added to the search path of templates but with a "
 "lower priority than the actual application's template folder. That way "
@@ -288,7 +294,7 @@ msgid ""
 "registered takes precedence over the others."
 msgstr ""
 
-#: ../../blueprints.rst:226
+#: ../../project/docs/blueprints.rst:239 1261690c946649e890c0ecacb1bcbc4b
 msgid ""
 "So if you have a blueprint in the folder ``yourapplication/admin`` and "
 "you want to render the template ``'admin/index.html'`` and you have "
@@ -299,7 +305,7 @@ msgid ""
 "application template folder."
 msgstr ""
 
-#: ../../blueprints.rst:234
+#: ../../project/docs/blueprints.rst:247 8099bbad980f4db9aa9c91baa2268a7f
 msgid ""
 "To further reiterate this: if you have a blueprint named ``admin`` and "
 "you want to render a template called :file:`index.html` which is specific"
@@ -307,7 +313,7 @@ msgid ""
 "this::"
 msgstr ""
 
-#: ../../blueprints.rst:246
+#: ../../project/docs/blueprints.rst:259 8a463072b4694592a4d7a37e92161f4a
 msgid ""
 "And then when you want to render the template, use "
 ":file:`admin/index.html` as the name to look up the template by.  If you "
@@ -317,11 +323,11 @@ msgid ""
 "``render_template`` call."
 msgstr ""
 
-#: ../../blueprints.rst:253
+#: ../../project/docs/blueprints.rst:266 09f8bb0b65194b9eb368fb2d881385eb
 msgid "Building URLs"
 msgstr ""
 
-#: ../../blueprints.rst:255
+#: ../../project/docs/blueprints.rst:268 e3fcbd79cfc34504bef83ddce73e4c2f
 msgid ""
 "If you want to link from one page to another you can use the "
 ":func:`url_for` function just like you normally would do just that you "
@@ -329,7 +335,7 @@ msgid ""
 "(``.``)::"
 msgstr ""
 
-#: ../../blueprints.rst:261
+#: ../../project/docs/blueprints.rst:274 95aed7fcd67b4d1caca7a7aa055f41df
 msgid ""
 "Additionally if you are in a view function of a blueprint or a rendered "
 "template and you want to link to another endpoint of the same blueprint, "
@@ -337,28 +343,28 @@ msgid ""
 "only::"
 msgstr ""
 
-#: ../../blueprints.rst:267
+#: ../../project/docs/blueprints.rst:280 81bff2e39e414f3bb8c997a1fd3cd9fa
 msgid ""
 "This will link to ``admin.index`` for instance in case the current "
 "request was dispatched to any other admin blueprint endpoint."
 msgstr ""
 
-#: ../../blueprints.rst:272
+#: ../../project/docs/blueprints.rst:285 34273533eb93412fa169fd7987c6e892
 msgid "Blueprint Error Handlers"
 msgstr ""
 
-#: ../../blueprints.rst:274
+#: ../../project/docs/blueprints.rst:287 f409dd6dcf734bfea265479c0f748feb
 msgid ""
 "Blueprints support the ``errorhandler`` decorator just like the "
 ":class:`Flask` application object, so it is easy to make Blueprint-"
 "specific custom error pages."
 msgstr ""
 
-#: ../../blueprints.rst:278
+#: ../../project/docs/blueprints.rst:291 c247020ffb83416ab0597530ce075a29
 msgid "Here is an example for a \"404 Page Not Found\" exception::"
 msgstr ""
 
-#: ../../blueprints.rst:284
+#: ../../project/docs/blueprints.rst:297 71c6758133dd4b6096b900352c6b5367
 msgid ""
 "Most errorhandlers will simply work as expected; however, there is a "
 "caveat concerning handlers for 404 and 405 exceptions.  These "
@@ -372,6 +378,7 @@ msgid ""
 "defined at the application level using the ``request`` proxy object::"
 msgstr ""
 
-#: ../../blueprints.rst:302
+#: ../../project/docs/blueprints.rst:315 a7afd8ba8dae45a89769cc92b7f62836
 msgid "See :doc:`/errorhandling`."
 msgstr ""
+

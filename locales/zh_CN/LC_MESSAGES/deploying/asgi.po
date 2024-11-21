@@ -8,20 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-12 19:17+0800\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Jiahua Wang <wjh180909@gmail.com>\n"
 "Language-Team: zh_CN <withlihui@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../deploying/asgi.rst:4
+#: ../../project/docs/deploying/asgi.rst:2 79dbdfc2ce934f16a5afbf0023177d26
 msgid "ASGI"
 msgstr "ASGI"
 
-#: ../../deploying/asgi.rst:6
+#: ../../project/docs/deploying/asgi.rst:4 839f3095b92a4e7ea8dd785bc3f18ad2
 #, fuzzy
 msgid ""
 "If you'd like to use an ASGI server you will need to utilise WSGI to ASGI"
@@ -35,11 +35,12 @@ msgstr ""
 "adapter)适配器，因为它与 Flask 的 :ref:`async_await` 支持使用的事件循环集成。你可以使用这个适配器来包装 "
 "Flask 应用，"
 
-#: ../../deploying/asgi.rst:24
+#: ../../project/docs/deploying/asgi.rst:22 88f15ac10d554d728dc2c5a1664e5adc
 #, fuzzy
 msgid ""
 "and then serving the ``asgi_app`` with the ASGI server, e.g. using "
-"`Hypercorn <https://gitlab.com/pgjones/hypercorn>`_,"
+"`Hypercorn <https://github.com/pgjones/hypercorn>`_,"
 msgstr ""
 "然后使用 asgi 服务器为 ``asgi_app`` 提供服务。例如，使用`Hypercorn "
 "<https://gitlab.com/pgjones/hypercorn>`_，"
+

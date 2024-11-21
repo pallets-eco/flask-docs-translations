@@ -8,20 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-01 02:27-0500\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr_FR <victor.levieux@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../shell.rst:2
+#: ../../project/docs/shell.rst:2 8913da8dd04d4372a938e37a9b631237
 msgid "Working with the Shell"
 msgstr ""
 
-#: ../../shell.rst:6
+#: ../../project/docs/shell.rst:6 af9de4505ffe47a7b84c21e58f875550
 msgid ""
 "One of the reasons everybody loves Python is the interactive shell.  It "
 "basically allows you to execute Python commands in real time and "
@@ -30,7 +30,7 @@ msgid ""
 "upfront, just import your application and start playing around."
 msgstr ""
 
-#: ../../shell.rst:12
+#: ../../project/docs/shell.rst:12 ea904c0e44694ea58ad5f638c33856a1
 msgid ""
 "There are however some handy helpers to make playing around in the shell "
 "a more pleasant experience.  The main issue with interactive console "
@@ -40,7 +40,7 @@ msgid ""
 "what can you do?"
 msgstr ""
 
-#: ../../shell.rst:19
+#: ../../project/docs/shell.rst:19 ac7bd432be5f4f23a5902dd5ad10297a
 msgid ""
 "This is where some helper functions come in handy.  Keep in mind however "
 "that these functions are not only there for interactive shell usage, but "
@@ -48,17 +48,15 @@ msgid ""
 "context."
 msgstr ""
 
-#: ../../shell.rst:24
-msgid ""
-"Generally it's recommended that you read the :doc:`reqcontext` chapter of"
-" the documentation first."
+#: ../../project/docs/shell.rst:24 efc74d3477e0493eadcd5af7c47fbff0
+msgid "Generally it's recommended that you read :doc:`reqcontext` first."
 msgstr ""
 
-#: ../../shell.rst:28
+#: ../../project/docs/shell.rst:27 f6abe9b3332b4d859f7e68a1a72fd4b4
 msgid "Command Line Interface"
 msgstr ""
 
-#: ../../shell.rst:30
+#: ../../project/docs/shell.rst:29 9c339da0df374802a535a08e34a29375
 msgid ""
 "Starting with Flask 0.11 the recommended way to work with the shell is "
 "the ``flask shell`` command which does a lot of this automatically for "
@@ -66,22 +64,22 @@ msgid ""
 "application context."
 msgstr ""
 
-#: ../../shell.rst:35
+#: ../../project/docs/shell.rst:34 9d8eac28d5a14595bbe6b6a1eb187b7a
 msgid "For more information see :doc:`/cli`."
 msgstr ""
 
-#: ../../shell.rst:38
+#: ../../project/docs/shell.rst:37 02c6a31931374b288c02ab42eb6aae45
 msgid "Creating a Request Context"
 msgstr ""
 
-#: ../../shell.rst:40
+#: ../../project/docs/shell.rst:39 d43b115011fd435cbf857ca04f519bf8
 msgid ""
 "The easiest way to create a proper request context from the shell is by "
 "using the :attr:`~flask.Flask.test_request_context` method which creates "
 "us a :class:`~flask.ctx.RequestContext`:"
 msgstr ""
 
-#: ../../shell.rst:46
+#: ../../project/docs/shell.rst:45 8ac7b8746d864dec83b061a60ff107ee
 msgid ""
 "Normally you would use the ``with`` statement to make this request object"
 " active, but in the shell it's easier to use the "
@@ -89,17 +87,17 @@ msgid ""
 ":meth:`~flask.ctx.RequestContext.pop` methods by hand:"
 msgstr ""
 
-#: ../../shell.rst:53
+#: ../../project/docs/shell.rst:52 8d2f94bd4ad643c3b2453728b4f2682c
 msgid ""
 "From that point onwards you can work with the request object until you "
 "call `pop`:"
 msgstr ""
 
-#: ../../shell.rst:59
+#: ../../project/docs/shell.rst:58 443d5d5897544b278b74acead1a461dd
 msgid "Firing Before/After Request"
 msgstr ""
 
-#: ../../shell.rst:61
+#: ../../project/docs/shell.rst:60 945ef3d18369430bbc5c3cb95b60c524
 msgid ""
 "By just creating a request context, you still don't have run the code "
 "that is normally run before a request.  This might result in your "
@@ -108,26 +106,26 @@ msgid ""
 ":data:`~flask.g` object etc."
 msgstr ""
 
-#: ../../shell.rst:67
+#: ../../project/docs/shell.rst:66 4b79c5bdc9a342618cbb57f819956a83
 msgid ""
 "This however can easily be done yourself.  Just call "
 ":meth:`~flask.Flask.preprocess_request`:"
 msgstr ""
 
-#: ../../shell.rst:74
+#: ../../project/docs/shell.rst:73 fa94891d70ed4112b843397e57f91402
 msgid ""
 "Keep in mind that the :meth:`~flask.Flask.preprocess_request` function "
 "might return a response object, in that case just ignore it."
 msgstr ""
 
-#: ../../shell.rst:77
+#: ../../project/docs/shell.rst:76 a83514a589b2486d8d765ebdc8dc445b
 msgid ""
 "To shutdown a request, you need to trick a bit before the after request "
 "functions (triggered by :meth:`~flask.Flask.process_response`) operate on"
 " a response object:"
 msgstr ""
 
-#: ../../shell.rst:85
+#: ../../project/docs/shell.rst:84 7845ef63d60c4c71a6f73a640e8dd8a6
 msgid ""
 "The functions registered as :meth:`~flask.Flask.teardown_request` are "
 "automatically called when the context is popped.  So this is the perfect "
@@ -135,11 +133,11 @@ msgid ""
 "request context (such as database connections)."
 msgstr ""
 
-#: ../../shell.rst:92
+#: ../../project/docs/shell.rst:91 090907fe0ba14d12a149ff06f7ce66d8
 msgid "Further Improving the Shell Experience"
 msgstr ""
 
-#: ../../shell.rst:94
+#: ../../project/docs/shell.rst:93 a87f3fec7a124415add204e3fb232ca0
 msgid ""
 "If you like the idea of experimenting in a shell, create yourself a "
 "module with stuff you want to star import into your interactive session."
@@ -147,6 +145,13 @@ msgid ""
 "such as initializing the database, dropping tables etc."
 msgstr ""
 
-#: ../../shell.rst:99
+#: ../../project/docs/shell.rst:98 7cb4e8bfcf20403aa6d47352afe4dff5
 msgid "Just put them into a module (like `shelltools`) and import from there:"
 msgstr ""
+
+#~ msgid ""
+#~ "Generally it's recommended that you read"
+#~ " the :doc:`reqcontext` chapter of the "
+#~ "documentation first."
+#~ msgstr ""
+

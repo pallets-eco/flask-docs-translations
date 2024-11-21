@@ -7,87 +7,105 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-02 18:20+0330\n"
+"POT-Creation-Date: 2024-11-20 19:34-0800\n"
 "PO-Revision-Date: 2024-02-02 20:03+0330\n"
 "Last-Translator: Komeil Parseh <ahmdparsh129@gmail.com>\n"
-"Language-Team: fa <ahmdparsh129@gmail.com>\n"
 "Language: fa\n"
+"Language-Team: fa <ahmdparsh129@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
-"Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../index.rst:4
+#: ../../project/docs/index.rst:4 f94f2c6827a64b17828681c4fc140c6f
 msgid "Welcome to Flask"
 msgstr "به فلسک خوش آمدید"
 
-#: ../../index.rst:9
+#: ../../project/docs/index.rst:9 6b50595b230d4db5a7d62a0e2f863891
 msgid ""
-"Welcome to Flask's documentation. Get started with :doc:`installation` and then get an "
-"overview with the :doc:`quickstart`. There is also a more detailed :doc:`tutorial/"
-"index` that shows how to create a small but complete application with Flask. Common "
-"patterns are described in the :doc:`patterns/index` section. The rest of the docs "
-"describe each component of Flask in detail, with a full reference in the :doc:`api` "
-"section."
+"Welcome to Flask's project project documentation. Flask is a lightweight "
+"WSGI web application framework. It is designed to make getting started "
+"quick and easy, with the ability to scale up to complex applications."
 msgstr ""
-"به مستندات فلسک خوش آمدید. از :doc:`installation` شروع کنید و سپس با مطالعهٔ :doc:"
-"`quickstart` یک نمای کلی دریافت کنید. همچنین بخش :doc:`tutorial/index` با جزئیات "
-"بیشتری، نحوه ایجاد یک برنامه کوچک، اما کامل را با فلسک نشان می‌دهد. الگو های رایج نیز "
-"در :doc:`patterns/index` توضیح داده شده است. سایر بخش‌های مستندات نیز با ارجاع کاملی به "
-"بخش :doc:`api` مفصل شرح داده شده اند."
 
-#: ../../index.rst:17
+#: ../../project/docs/index.rst:13 f16aa3c71dd64d79bbc3e33f67f5df60
+#, fuzzy
 msgid ""
-"Flask depends on the `Werkzeug`_ WSGI toolkit, the `Jinja`_ template engine, and the "
-"`Click`_ CLI toolkit. Be sure to check their documentation as well as Flask's when "
-"looking for information."
+"Get started with :doc:`installation` and then get an overview with the "
+":doc:`quickstart`. There is also a more detailed :doc:`tutorial/index` "
+"that shows how to create a small but complete application with Flask. "
+"Common patterns are described in the :doc:`patterns/index` section. The "
+"rest of the docs describe each component of Flask in detail, with a full "
+"reference in the :doc:`api` section."
 msgstr ""
-"فلسک به ابزار‌های `Werkzeug`_ WSGI، موتور قالب `Jinja`_ و ابزار‌های `Click`_ CLI وابسته "
-"است. هنگام دانش‌افزویی مستندات آنها و همچین فلسک را بررسی کنید."
+"به مستندات فلسک خوش آمدید. از :doc:`installation` شروع کنید و سپس با "
+"مطالعهٔ :doc:`quickstart` یک نمای کلی دریافت کنید. همچنین بخش "
+":doc:`tutorial/index` با جزئیات بیشتری، نحوه ایجاد یک برنامه کوچک، اما "
+"کامل را با فلسک نشان می‌دهد. الگو های رایج نیز در :doc:`patterns/index` "
+"توضیح داده شده است. سایر بخش‌های مستندات نیز با ارجاع کاملی به بخش "
+":doc:`api` مفصل شرح داده شده اند."
 
-#: ../../index.rst:27
+#: ../../project/docs/index.rst:21 1c2294972ca34082a357b6fdf146ebe9
+msgid ""
+"Flask depends on the `Werkzeug`_ WSGI toolkit, the `Jinja`_ template "
+"engine, and the `Click`_ CLI toolkit. Be sure to check their "
+"documentation as well as Flask's when looking for information."
+msgstr ""
+"فلسک به ابزار‌های `Werkzeug`_ WSGI، موتور قالب `Jinja`_ و ابزار‌های "
+"`Click`_ CLI وابسته است. هنگام دانش‌افزویی مستندات آنها و همچین فلسک را "
+"بررسی کنید."
+
+#: ../../project/docs/index.rst:31 1f0282600a7240b7b291e14265b4dccc
 msgid "User's Guide"
 msgstr "راهنمای کاربر"
 
-#: ../../index.rst:29
+#: ../../project/docs/index.rst:33 c4f24f028d754d2b88ade797da1e04bd
 msgid ""
-"Flask provides configuration and conventions, with sensible defaults, to get started. "
-"This section of the documentation explains the different parts of the Flask framework "
-"and how they can be used, customized, and extended. Beyond Flask itself, look for "
-"community-maintained extensions to add even more functionality."
+"Flask provides configuration and conventions, with sensible defaults, to "
+"get started. This section of the documentation explains the different "
+"parts of the Flask framework and how they can be used, customized, and "
+"extended. Beyond Flask itself, look for community-maintained extensions "
+"to add even more functionality."
 msgstr ""
-"قراردادها و کانفیگ‌های فلسک با پیشفرض معقولی ارائه می‌شوند. این بخش از مستندات، بخش‌های "
-"مختلف فریمورک و نحوهٔ استفاده، شخصی‌سازی و توسعهٔ آنها را شرح می‌دهد. افزون بر خود فلسک، "
-"به دنبال به دنبال برنامه‌های افزودنی توسعه یافته توسط جامعه بگردید تا عملکر‌های بیشتری "
-"را به آن اضافه کنید."
+"قراردادها و کانفیگ‌های فلسک با پیشفرض معقولی ارائه می‌شوند. این بخش از "
+"مستندات، بخش‌های مختلف فریمورک و نحوهٔ استفاده، شخصی‌سازی و توسعهٔ آنها "
+"را شرح می‌دهد. افزون بر خود فلسک، به دنبال به دنبال برنامه‌های افزودنی "
+"توسعه یافته توسط جامعه بگردید تا عملکر‌های بیشتری را به آن اضافه کنید."
 
-#: ../../index.rst:63
+#: ../../project/docs/index.rst:67 2a541c28296d40bea2f93fcfabc5bb86
 msgid "API Reference"
 msgstr "مرجع API"
 
-#: ../../index.rst:65
+#: ../../project/docs/index.rst:69 9950e85ee4084d0facdbee67b79e6596
 msgid ""
-"If you are looking for information on a specific function, class or method, this part "
-"of the documentation is for you."
+"If you are looking for information on a specific function, class or "
+"method, this part of the documentation is for you."
 msgstr ""
-"اگر به دنبال اطلاعاتی در مورد یک تابع، کلاس یا روشی خاص هستید، این بخش از مستندات "
-"مناسب شماست."
+"اگر به دنبال اطلاعاتی در مورد یک تابع، کلاس یا روشی خاص هستید، این بخش از"
+" مستندات مناسب شماست."
 
-#: ../../index.rst:75
+#: ../../project/docs/index.rst:79 17afd5d710844ac59a81fce8eaba3b22
 msgid "Additional Notes"
 msgstr "یادداشت های اضافی"
 
 #~ msgid ""
-#~ "This part of the documentation, which is mostly prose, begins with some background "
-#~ "information about Flask, then focuses on step-by-step instructions for web "
-#~ "development with Flask."
+#~ "This part of the documentation, which"
+#~ " is mostly prose, begins with some"
+#~ " background information about Flask, then"
+#~ " focuses on step-by-step instructions"
+#~ " for web development with Flask."
 #~ msgstr ""
-#~ "این قسمت از مستندات بیشتر متن هستند و با برخی از اطلاعات پس‌زمینه ای فلاسک شروع "
-#~ "می‌شود. سپس بر روی دستور عمل های گام به گام توسعه وب با فلاسک تمرکز می‌کند."
+#~ "این قسمت از مستندات بیشتر متن "
+#~ "هستند و با برخی از اطلاعات "
+#~ "پس‌زمینه ای فلاسک شروع می‌شود. سپس "
+#~ "بر روی دستور عمل های گام به "
+#~ "گام توسعه وب با فلاسک تمرکز "
+#~ "می‌کند."
 
-#~ msgid "Design notes, legal information and changelog are here for the interested."
+#~ msgid ""
+#~ "Design notes, legal information and "
+#~ "changelog are here for the interested."
 #~ msgstr "یادداشت های طراحی، اطلاعات حقوقی و تغییرات در اینجا برای علاقمندان است."
 
 #~ msgid "`Jinja documentation <https://jinja.palletsprojects.com/>`_"
@@ -95,3 +113,4 @@ msgstr "یادداشت های اضافی"
 
 #~ msgid "`Werkzeug documentation <https://werkzeug.palletsprojects.com/>`_"
 #~ msgstr "`مستدات Werkzeug <https://werkzeug.palletsprojects.com/>`_"
+

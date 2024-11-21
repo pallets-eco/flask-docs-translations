@@ -8,27 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-12 19:17+0800\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: zh_CN <withlihui@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../tutorial/factory.rst:4
+#: ../../project/docs/tutorial/factory.rst:4 fa408ba5c4504fb897e145430ac1d2a3
 msgid "Application Setup"
 msgstr "应用设置"
 
-#: ../../tutorial/factory.rst:6
+#: ../../project/docs/tutorial/factory.rst:6 c3f5c3d52b86419ab6fec78f7a826170
 msgid ""
 "A Flask application is an instance of the :class:`Flask` class. "
 "Everything about the application, such as configuration and URLs, will be"
 " registered with this class."
 msgstr "Flask 应用是 :class:`Flask` 类的实例。关于这个应用的一切，比如配置和 URL，都会使用这个类注册。"
 
-#: ../../tutorial/factory.rst:10
+#: ../../project/docs/tutorial/factory.rst:10 fed9795b095f4de48b54c921cc738481
 msgid ""
 "The most straightforward way to create a Flask application is to create a"
 " global :class:`Flask` instance directly at the top of your code, like "
@@ -39,7 +39,7 @@ msgstr ""
 "创建一个 Flask 应用最直接的方式是直接在你的代码顶部创建一个全局的 :class:`Flask` 实例，就像上一页的“Hello, "
 "World!”示例做的那样。虽然这在某些情况下很简单也很有用，但它在项目变大时会带来一些棘手的问题。"
 
-#: ../../tutorial/factory.rst:16
+#: ../../project/docs/tutorial/factory.rst:16 76d16b3c996741039e3a5ded15c0e6e5
 msgid ""
 "Instead of creating a :class:`Flask` instance globally, you will create "
 "it inside a function. This function is known as the *application "
@@ -50,11 +50,11 @@ msgstr ""
 "与其全局创建一个 :class:`Flask` 类实例，不如在一个函数里创建它。这个函数被称为 "
 "*应用工厂*。应用所需要的任何配置、注册和其他设置都将在这个函数里进行，然后应用会被返回。"
 
-#: ../../tutorial/factory.rst:24
+#: ../../project/docs/tutorial/factory.rst:24 fe3349142f944584af97bca7c36deb8a
 msgid "The Application Factory"
 msgstr "应用工厂"
 
-#: ../../tutorial/factory.rst:26
+#: ../../project/docs/tutorial/factory.rst:26 497c9a0c57844b1ba4fab75dcff59b90
 msgid ""
 "It's time to start coding! Create the ``flaskr`` directory and add the "
 "``__init__.py`` file. The ``__init__.py`` serves double duty: it will "
@@ -64,17 +64,17 @@ msgstr ""
 "是时候开始写代码了！创建 ``flaskr`` 目录并添加 ``__init__.py`` 文件。``__init__.py`` "
 "有两个作用：它将包含应用工厂，而且告诉 Python，``flaskr`` 目录应该被看做一个包。"
 
-#: ../../tutorial/factory.rst:35
+#: ../../project/docs/tutorial/factory.rst:35 aae7b943aa2345c2896f799243a2132b
 msgid "``flaskr/__init__.py``"
 msgstr "``flaskr/__init__.py``"
 
-#: ../../tutorial/factory.rst:71
+#: ../../project/docs/tutorial/factory.rst:71 3d5de3ae5fd746e282e3415a48c62ea0
 msgid ""
 "``create_app`` is the application factory function. You'll add to it "
 "later in the tutorial, but it already does a lot."
 msgstr "``create_app`` 是应用工厂函数。你会在教程后面对它进行补充，不过它已经做了很多事情。"
 
-#: ../../tutorial/factory.rst:74
+#: ../../project/docs/tutorial/factory.rst:74 fa70f448580f4569bf1fde300dc626df
 msgid ""
 "``app = Flask(__name__, instance_relative_config=True)`` creates the "
 ":class:`Flask` instance."
@@ -82,7 +82,7 @@ msgstr ""
 "``app = Flask(__name__, instance_relative_config=True)`` 创建 "
 ":class:`Flask` 实例。"
 
-#: ../../tutorial/factory.rst:77
+#: ../../project/docs/tutorial/factory.rst:77 84d9a218a4aa486ab93244c273619d5c
 msgid ""
 "``__name__`` is the name of the current Python module. The app needs to "
 "know where it's located to set up some paths, and ``__name__`` is a "
@@ -91,7 +91,7 @@ msgstr ""
 "``__name__`` 是当前 Python 模块的名称。为了设置一些路径，应用需要知道它的位置，而 ``__name__`` "
 "是告诉它当前位置的一个便捷方式。"
 
-#: ../../tutorial/factory.rst:81
+#: ../../project/docs/tutorial/factory.rst:81 d77437f5451e417abe8e0e0686878381
 msgid ""
 "``instance_relative_config=True`` tells the app that configuration files "
 "are relative to the :ref:`instance folder <instance-folders>`. The "
@@ -103,13 +103,13 @@ msgstr ""
 "<instance-folders>`。实例文件夹位于 ``flaskr`` "
 "包的外层，它用来存放不应该提交到版本控制软件的本地数据，比如包含私密信息的配置和数据库文件。"
 
-#: ../../tutorial/factory.rst:88
+#: ../../project/docs/tutorial/factory.rst:88 65afca6f0c7c494d98bf2b25c7f557bb
 msgid ""
 ":meth:`app.config.from_mapping() <Config.from_mapping>` sets some default"
 " configuration that the app will use:"
 msgstr ":meth:`app.config.from_mapping() <Config.from_mapping>` 设置一些应用将会使用的默认配置："
 
-#: ../../tutorial/factory.rst:91
+#: ../../project/docs/tutorial/factory.rst:91 1bd88aea52f74282999d5a52e323f5b4
 msgid ""
 ":data:`SECRET_KEY` is used by Flask and extensions to keep data safe. "
 "It's set to ``'dev'`` to provide a convenient value during development, "
@@ -118,7 +118,7 @@ msgstr ""
 ":data:`SECRET_KEY` 被 Flask 和扩展用来保持数据安全。为了方便，在开发时可以将它设为 "
 "``'dev'``，但是它在部署时应该被一个随机值覆写。"
 
-#: ../../tutorial/factory.rst:96
+#: ../../project/docs/tutorial/factory.rst:96 b938956691f44e478422063ee498152f
 msgid ""
 "``DATABASE`` is the path where the SQLite database file will be saved. "
 "It's under :attr:`app.instance_path <Flask.instance_path>`, which is the "
@@ -128,7 +128,7 @@ msgstr ""
 "``DATABASE`` 是保存 SQLite 数据库文件的路径。它在 :attr:`app.instance_path "
 "<Flask.instance_path>` 路径下，这是 Flask 为实例文件夹选择的路径。你会在下一节了解到更多关于数据库的内容。"
 
-#: ../../tutorial/factory.rst:102
+#: ../../project/docs/tutorial/factory.rst:102 46a7b0f5c12347218750639228e57ab9
 msgid ""
 ":meth:`app.config.from_pyfile() <Config.from_pyfile>` overrides the "
 "default configuration with values taken from the ``config.py`` file in "
@@ -139,7 +139,7 @@ msgstr ""
 "<Config.from_pyfile>` 会使用从这个文件中获取到的值来覆写默认配置。例如，当部署时，这可以被用来设置一个真正的 "
 "``SECRET_KEY`` 配置值。"
 
-#: ../../tutorial/factory.rst:107
+#: ../../project/docs/tutorial/factory.rst:107 4ba7084fe9864f05993ae5ac5a63f9b0
 msgid ""
 "``test_config`` can also be passed to the factory, and will be used "
 "instead of the instance configuration. This is so the tests you'll write "
@@ -149,7 +149,7 @@ msgstr ""
 "``test_config`` "
 "也可以传递给工厂函数，这时传入的测试配置会被使用，而不是实例文件夹内的配置。这样可以让你在稍后的教程中会编写的测试被独立配置，以区别于任何开发时使用的值。"
 
-#: ../../tutorial/factory.rst:112
+#: ../../project/docs/tutorial/factory.rst:112 b432ee22ef7f44c4af6a0fbd2f8a734e
 msgid ""
 ":func:`os.makedirs` ensures that :attr:`app.instance_path "
 "<Flask.instance_path>` exists. Flask doesn't create the instance folder "
@@ -159,7 +159,7 @@ msgstr ""
 ":func:`os.makedirs` 确保 :attr:`app.instance_path <Flask.instance_path>` "
 "指向的路径存在。Flask 不会自动创建实例文件夹，但它需要被创建，因为你的项目将在那里创建 SQLite 数据库文件。"
 
-#: ../../tutorial/factory.rst:118
+#: ../../project/docs/tutorial/factory.rst:118 9a0c0a9e22434225a38a024df7ba92f2
 msgid ""
 ":meth:`@app.route() <Flask.route>` creates a simple route so you can see "
 "the application working before getting into the rest of the tutorial. It "
@@ -170,49 +170,35 @@ msgstr ""
 "创建了一个简单的路由，这样在开始下面的教程之前你可以看到应用能够正常工作。它在 URL ``/hello`` "
 "和一个函数之间创建了一个连接，这个函数会返回一个响应，在这里即 ``'Hello, World!'`` 字符串。"
 
-#: ../../tutorial/factory.rst:126
+#: ../../project/docs/tutorial/factory.rst:126 55566ee3486e4b8c8f59188b001bc2e1
 msgid "Run The Application"
 msgstr "运行应用"
 
-#: ../../tutorial/factory.rst:128
+#: ../../project/docs/tutorial/factory.rst:128 173b80c3da05425ea10d8ae61e244a85
+#, fuzzy
 msgid ""
 "Now you can run your application using the ``flask`` command. From the "
-"terminal, tell Flask where to find your application, then run it in "
-"development mode. Remember, you should still be in the top-level ``flask-"
-"tutorial`` directory, not the ``flaskr`` package."
+"terminal, tell Flask where to find your application, then run it in debug"
+" mode. Remember, you should still be in the top-level ``flask-tutorial`` "
+"directory, not the ``flaskr`` package."
 msgstr ""
 "现在你可以用 ``flask`` 命令运行应用。在终端里告诉 Flask 要去哪里找到你的应用，然后以开发模式运行它。请记住，你应该仍然在顶层的 "
 "``flask-tutorial`` 目录下，而不是 ``flaskr`` 包内。"
 
-#: ../../tutorial/factory.rst:133
+#: ../../project/docs/tutorial/factory.rst:133 49d7fc132ba14f6cb4fc1114a1336c90
+#, fuzzy
 msgid ""
-"Development mode shows an interactive debugger whenever a page raises an "
+"Debug mode shows an interactive debugger whenever a page raises an "
 "exception, and restarts the server whenever you make changes to the code."
 " You can leave it running and just reload the browser page as you follow "
 "the tutorial."
 msgstr "在开发模式下，每当页面抛出一个异常时，就会显示一个交互式的调试器（debugger）；每当你对代码进行修改，就会重启服务器。在接下来的教程中，你可以让它保持运行，只需要重载浏览器页面。"
 
-#: ../../tutorial/factory.rst:140
-msgid "Bash"
-msgstr "Bash"
-
-#: ../../tutorial/factory.rst:148
-msgid "Fish"
-msgstr ""
-
-#: ../../tutorial/factory.rst:156
-msgid "CMD"
-msgstr "CMD"
-
-#: ../../tutorial/factory.rst:164
-msgid "Powershell"
-msgstr "Powershell"
-
-#: ../../tutorial/factory.rst:172
+#: ../../project/docs/tutorial/factory.rst:142 3110d2ef700d4cc399523bababd36229
 msgid "You'll see output similar to this:"
 msgstr "你会看到类似下面的输出："
 
-#: ../../tutorial/factory.rst:184
+#: ../../project/docs/tutorial/factory.rst:153 93c51a44cf8a45cfb8b6dbedfdd23700
 msgid ""
 "Visit http://127.0.0.1:5000/hello in a browser and you should see the "
 "\"Hello, World!\" message. Congratulations, you're now running your Flask"
@@ -221,13 +207,26 @@ msgstr ""
 "在浏览器中访问 http://127.0.0.1:5000/hello，你应该会看到“Hello, World!”信息。恭喜，你现在正在运行你的 "
 "Flask web 应用！"
 
-#: ../../tutorial/factory.rst:188
+#: ../../project/docs/tutorial/factory.rst:157 c416c4b6873549faa5393337abeaf5cc
 msgid ""
 "If another program is already using port 5000, you'll see ``OSError: "
 "[Errno 98]`` or ``OSError: [WinError 10013]`` when the server tries to "
 "start. See :ref:`address-already-in-use` for how to handle that."
 msgstr ""
 
-#: ../../tutorial/factory.rst:193
+#: ../../project/docs/tutorial/factory.rst:162 0274ace52eea42449bdd2d46f7d1f4aa
 msgid "Continue to :doc:`database`."
 msgstr "继续阅读 :doc:`database`。"
+
+#~ msgid "Bash"
+#~ msgstr "Bash"
+
+#~ msgid "Fish"
+#~ msgstr ""
+
+#~ msgid "CMD"
+#~ msgstr "CMD"
+
+#~ msgid "Powershell"
+#~ msgstr "Powershell"
+
