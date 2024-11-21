@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <pedrotorcattsoto@gmail.com>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.0.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-12 13:50-0400\n"
+"PO-Revision-Date: 2022-07-12 20:33-0400\n"
+"Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
+"Language-Team: ES\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.1\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: ../../patterns/streaming.rst:2
+msgid "Streaming Contents"
+msgstr "Contenidos en streaming"
+
+#: ../../patterns/streaming.rst:4
+msgid ""
+"Sometimes you want to send an enormous amount of data to the client, much "
+"more than you want to keep in memory.  When you are generating the data on "
+"the fly though, how do you send that back to the client without the "
+"roundtrip to the filesystem?"
+msgstr ""
+"A veces quieres enviar una enorme cantidad de datos al cliente, mucho más de"
+" lo que quieres mantener en la memoria. Sin embargo, cuando estás generando "
+"los datos sobre la marcha, ¿Cómo los envías de vuelta al cliente sin el "
+"viaje de ida y vuelta al sistema de archivos?"
+
+#: ../../patterns/streaming.rst:9
+msgid "The answer is by using generators and direct responses."
+msgstr "La respuesta es utilizar generadores y respuestas directas."
+
+#: ../../patterns/streaming.rst:12
+msgid "Basic Usage"
+msgstr "Uso básico"
+
+#: ../../patterns/streaming.rst:14
+msgid ""
+"This is a basic view function that generates a lot of CSV data on the fly. "
+"The trick is to have an inner function that uses a generator to generate "
+"data and to then invoke that function and pass it to a response object::"
+msgstr ""
+"Esta es una función de vista básica que genera un montón de datos CSV sobre "
+"la marcha. El truco es tener una función interna que utilice un generador "
+"para generar los datos y luego invocar esa función y pasarla a un objeto de "
+"respuesta::"
+
+#: ../../patterns/streaming.rst:25
+msgid ""
+"Each ``yield`` expression is directly sent to the browser.  Note though that"
+" some WSGI middlewares might break streaming, so be careful there in debug "
+"environments with profilers and other things you might have enabled."
+msgstr ""
+"Cada expresión ``yield`` se envía directamente al navegador. Sin embargo, "
+"ten en cuenta que algunos middlewares WSGI pueden romper el streaming, así "
+"que ten cuidado en entornos de depuración con perfiladores y otras cosas que"
+" puedas tener activadas."
+
+#: ../../patterns/streaming.rst:30
+msgid "Streaming from Templates"
+msgstr "Streaming desde plantillas"
+
+#: ../../patterns/streaming.rst:32
+msgid ""
+"The Jinja2 template engine supports rendering a template piece by piece, "
+"returning an iterator of strings. Flask provides the "
+":func:`~flask.stream_template` and :func:`~flask.stream_template_string` "
+"functions to make this easier to use."
+msgstr ""
+"El motor de plantillas de Jinja2 soporta la representación de una plantilla "
+"pieza por pieza, devolviendo un iterador de cadenas. Flask proporciona las "
+"funciones :func:`~flask.stream_template` y "
+":func:`~flask.stream_template_string` para facilitar su uso."
+
+#: ../../patterns/streaming.rst:45
+msgid ""
+"The parts yielded by the render stream tend to match statement blocks in the"
+" template."
+msgstr ""
+"Las partes producidas por el flujo de renderización tienden a coincidir con "
+"los bloques de declaraciones en la plantilla."
+
+#: ../../patterns/streaming.rst:50
+msgid "Streaming with Context"
+msgstr "Streaming con Contexto"
+
+#: ../../patterns/streaming.rst:52
+msgid ""
+"The :data:`~flask.request` will not be active while the generator is "
+"running, because the view has already returned at that point. If you try to "
+"access ``request``, you'll get a ``RuntimeError``."
+msgstr ""
+"El :data:`~flask.request`` no estará activo mientras el generador se esté "
+"ejecutando, porque la vista ya ha regresado en ese momento. Si intentas "
+"acceder a ``request``, obtendrás un ``RuntimeError``."
+
+#: ../../patterns/streaming.rst:56
+msgid ""
+"If your generator function relies on data in ``request``, use the "
+":func:`~flask.stream_with_context` wrapper. This will keep the request "
+"context active during the generator."
+msgstr ""
+"If your generator function relies on data in ``request``, use the "
+":func:`~flask.stream_with_context` wrapper. This will keep the request "
+"context active during the generator."
+
+#: ../../patterns/streaming.rst:73
+msgid "It can also be used as a decorator."
+msgstr "También se puede utilizar como decorador."
+
+#: ../../patterns/streaming.rst:83
+msgid ""
+"The :func:`~flask.stream_template` and :func:`~flask.stream_template_string`"
+" functions automatically use :func:`~flask.stream_with_context` if a request"
+" is active."
+msgstr ""
+"Las funciones :func:`~flask.stream_template` y "
+":func:`~flask.stream_template_string` utilizan automáticamente "
+":func:`~flask.stream_with_context` si hay una petición activa."
