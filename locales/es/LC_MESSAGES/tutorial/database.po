@@ -7,98 +7,105 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-12 13:50-0400\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: 2022-07-12 14:53-0400\n"
 "Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
-"Language-Team: ES\n"
 "Language: es\n"
+"Language-Team: ES\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.10.1\n"
-"X-Generator: Poedit 3.0.1\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../tutorial/database.rst:4
+#: ../../project/docs/tutorial/database.rst:4 c6ca508666cc429499841107fc118d14
 msgid "Define and Access the Database"
 msgstr "Definir y acceder a la base de datos"
 
-#: ../../tutorial/database.rst:6
+#: ../../project/docs/tutorial/database.rst:6 9f0673d8a9af4afe9cb0d859e4c15176
 msgid ""
 "The application will use a `SQLite`_ database to store users and posts. "
-"Python comes with built-in support for SQLite in the :mod:`sqlite3` module."
+"Python comes with built-in support for SQLite in the :mod:`sqlite3` "
+"module."
 msgstr ""
 "La aplicación utilizará una base de datos `SQLite`_ para almacenar los "
-"usuarios y los mensajes. Python viene con soporte incorporado para SQLite en"
-" el módulo :mod:`sqlite3`."
+"usuarios y los mensajes. Python viene con soporte incorporado para SQLite"
+" en el módulo :mod:`sqlite3`."
 
-#: ../../tutorial/database.rst:10
+#: ../../project/docs/tutorial/database.rst:10 1b7c47ae830140d4aea6a4484551dcdd
 msgid ""
 "SQLite is convenient because it doesn't require setting up a separate "
-"database server and is built-in to Python. However, if concurrent requests "
-"try to write to the database at the same time, they will slow down as each "
-"write happens sequentially. Small applications won't notice this. Once you "
-"become big, you may want to switch to a different database."
+"database server and is built-in to Python. However, if concurrent "
+"requests try to write to the database at the same time, they will slow "
+"down as each write happens sequentially. Small applications won't notice "
+"this. Once you become big, you may want to switch to a different "
+"database."
 msgstr ""
-"SQLite es conveniente porque no requiere configurar un servidor de base de "
-"datos separado y está incorporado a Python. Sin embargo, si las solicitudes "
-"concurrentes intentan escribir en la base de datos al mismo tiempo, se "
-"ralentizarán ya que cada escritura se produce de forma secuencial. Las "
-"aplicaciones pequeñas no notarán esto. Una vez que se convierta en grande, "
-"es posible que desee cambiar a una base de datos diferente."
+"SQLite es conveniente porque no requiere configurar un servidor de base "
+"de datos separado y está incorporado a Python. Sin embargo, si las "
+"solicitudes concurrentes intentan escribir en la base de datos al mismo "
+"tiempo, se ralentizarán ya que cada escritura se produce de forma "
+"secuencial. Las aplicaciones pequeñas no notarán esto. Una vez que se "
+"convierta en grande, es posible que desee cambiar a una base de datos "
+"diferente."
 
-#: ../../tutorial/database.rst:17
+#: ../../project/docs/tutorial/database.rst:17 4e9f4e696f0f48d698dca0b71a7a5328
 msgid ""
-"The tutorial doesn't go into detail about SQL. If you are not familiar with "
-"it, the SQLite docs describe the `language`_."
+"The tutorial doesn't go into detail about SQL. If you are not familiar "
+"with it, the SQLite docs describe the `language`_."
 msgstr ""
-"El tutorial no entra en detalles sobre SQL. Si no estás familiarizado con "
-"él, los documentos de SQLite describen el `lenguaje`_."
+"El tutorial no entra en detalles sobre SQL. Si no estás familiarizado con"
+" él, los documentos de SQLite describen el `lenguaje`_."
 
-#: ../../tutorial/database.rst:25
+#: ../../project/docs/tutorial/database.rst:25 140133c44429469183825c05fb6313a3
 msgid "Connect to the Database"
 msgstr "Conectar con la base de datos"
 
-#: ../../tutorial/database.rst:27
+#: ../../project/docs/tutorial/database.rst:27 324f192d9eb947f2afe1fa71b4168868
 msgid ""
-"The first thing to do when working with a SQLite database (and most other "
-"Python database libraries) is to create a connection to it. Any queries and "
-"operations are performed using the connection, which is closed after the "
-"work is finished."
+"The first thing to do when working with a SQLite database (and most other"
+" Python database libraries) is to create a connection to it. Any queries "
+"and operations are performed using the connection, which is closed after "
+"the work is finished."
 msgstr ""
-"Lo primero que hay que hacer cuando se trabaja con una base de datos SQLite "
-"(y con la mayoría de las bibliotecas de bases de datos de Python) es crear "
-"una conexión a la misma. Todas las consultas y operaciones se realizan "
-"utilizando la conexión, que se cierra una vez finalizado el trabajo."
+"Lo primero que hay que hacer cuando se trabaja con una base de datos "
+"SQLite (y con la mayoría de las bibliotecas de bases de datos de Python) "
+"es crear una conexión a la misma. Todas las consultas y operaciones se "
+"realizan utilizando la conexión, que se cierra una vez finalizado el "
+"trabajo."
 
-#: ../../tutorial/database.rst:32
+#: ../../project/docs/tutorial/database.rst:32 7be9486d07f140fd98b436d5fdccf9aa
 msgid ""
-"In web applications this connection is typically tied to the request. It is "
-"created at some point when handling a request, and closed before the "
+"In web applications this connection is typically tied to the request. It "
+"is created at some point when handling a request, and closed before the "
 "response is sent."
 msgstr ""
-"En las aplicaciones web esta conexión suele estar ligada a la petición. Se "
-"crea en algún momento cuando se maneja una solicitud, y se cierra antes de "
-"que se envíe la respuesta."
+"En las aplicaciones web esta conexión suele estar ligada a la petición. "
+"Se crea en algún momento cuando se maneja una solicitud, y se cierra "
+"antes de que se envíe la respuesta."
 
-#: ../../tutorial/database.rst:36 ../../tutorial/database.rst:119
-#: ../../tutorial/database.rst:155
+#: ../../project/docs/tutorial/database.rst:36
+#: ../../project/docs/tutorial/database.rst:120
+#: ../../project/docs/tutorial/database.rst:165
+#: 2e0a076f261e4a5998d97bcee39db3a2 443bbf5dc3244d419a025c7cfb0d2367
+#: 6fe0d9db8c414fc9bcbceec2ab6b6826
 msgid "``flaskr/db.py``"
 msgstr "``flaskr/db.py``"
 
-#: ../../tutorial/database.rst:62
+#: ../../project/docs/tutorial/database.rst:63 ceee35fd31dc4e4a8efb19f9712ba683
 msgid ""
-":data:`g` is a special object that is unique for each request. It is used to"
-" store data that might be accessed by multiple functions during the request."
-" The connection is stored and reused instead of creating a new connection if"
-" ``get_db`` is called a second time in the same request."
+":data:`g` is a special object that is unique for each request. It is used"
+" to store data that might be accessed by multiple functions during the "
+"request. The connection is stored and reused instead of creating a new "
+"connection if ``get_db`` is called a second time in the same request."
 msgstr ""
-":data:`g` es un objeto especial que es único para cada solicitud. Se utiliza"
-" para almacenar datos a los que podrían acceder varias funciones durante la "
-"petición. La conexión se almacena y se reutiliza en lugar de crear una nueva"
-" conexión si se llama a ``get_db`` por segunda vez en la misma petición."
+":data:`g` es un objeto especial que es único para cada solicitud. Se "
+"utiliza para almacenar datos a los que podrían acceder varias funciones "
+"durante la petición. La conexión se almacena y se reutiliza en lugar de "
+"crear una nueva conexión si se llama a ``get_db`` por segunda vez en la "
+"misma petición."
 
-#: ../../tutorial/database.rst:68
+#: ../../project/docs/tutorial/database.rst:69 a1af881658ff4877b1afc1f32e797397
 msgid ""
 ":data:`current_app` is another special object that points to the Flask "
 "application handling the request. Since you used an application factory, "
@@ -106,181 +113,208 @@ msgid ""
 "``get_db`` will be called when the application has been created and is "
 "handling a request, so :data:`current_app` can be used."
 msgstr ""
-":data:`current_app` es otro objeto especial que apunta a la aplicación Flask"
-" que maneja la solicitud. Como has utilizado una fábrica de aplicaciones, no"
-" hay ningún objeto de aplicación cuando escribes el resto de tu código. La "
-"llamada a ``get_db`` se realizará cuando la aplicación haya sido creada y "
-"esté gestionando una petición, por lo que se puede utilizar "
-":data:`current_app`."
+":data:`current_app` es otro objeto especial que apunta a la aplicación "
+"Flask que maneja la solicitud. Como has utilizado una fábrica de "
+"aplicaciones, no hay ningún objeto de aplicación cuando escribes el resto"
+" de tu código. La llamada a ``get_db`` se realizará cuando la aplicación "
+"haya sido creada y esté gestionando una petición, por lo que se puede "
+"utilizar :data:`current_app`."
 
-#: ../../tutorial/database.rst:74
+#: ../../project/docs/tutorial/database.rst:75 50bf1d5f91674bd0802be892e4b09c3a
 msgid ""
-":func:`sqlite3.connect` establishes a connection to the file pointed at by "
-"the ``DATABASE`` configuration key. This file doesn't have to exist yet, and"
-" won't until you initialize the database later."
+":func:`sqlite3.connect` establishes a connection to the file pointed at "
+"by the ``DATABASE`` configuration key. This file doesn't have to exist "
+"yet, and won't until you initialize the database later."
 msgstr ""
-":func:`sqlite3.connect` establece una conexión con el fichero apuntado por "
-"la clave de configuración ``DATABASE``. Este archivo no tiene que existir "
-"todavía, y no lo hará hasta que se inicialice la base de datos más tarde."
+":func:`sqlite3.connect` establece una conexión con el fichero apuntado "
+"por la clave de configuración ``DATABASE``. Este archivo no tiene que "
+"existir todavía, y no lo hará hasta que se inicialice la base de datos "
+"más tarde."
 
-#: ../../tutorial/database.rst:78
+#: ../../project/docs/tutorial/database.rst:79 ea68cfbe00704e798517ca59e3dac68e
 msgid ""
-":class:`sqlite3.Row` tells the connection to return rows that behave like "
-"dicts. This allows accessing the columns by name."
+":class:`sqlite3.Row` tells the connection to return rows that behave like"
+" dicts. This allows accessing the columns by name."
 msgstr ""
 ":class:`sqlite3.Row` indica a la conexión que devuelva filas que se "
 "comporten como dicts. Esto permite acceder a las columnas por su nombre."
 
-#: ../../tutorial/database.rst:81
+#: ../../project/docs/tutorial/database.rst:82 c84fb4081ee141f48f5a0ee9e6581ba4
 msgid ""
-"``close_db`` checks if a connection was created by checking if ``g.db`` was "
-"set. If the connection exists, it is closed. Further down you will tell your"
-" application about the ``close_db`` function in the application factory so "
-"that it is called after each request."
+"``close_db`` checks if a connection was created by checking if ``g.db`` "
+"was set. If the connection exists, it is closed. Further down you will "
+"tell your application about the ``close_db`` function in the application "
+"factory so that it is called after each request."
 msgstr ""
 "``close_db`` comprueba si se ha creado una conexión comprobando si se ha "
 "establecido ``g.db``. Si la conexión existe, se cierra. Más adelante le "
 "dirás a tu aplicación sobre la función ``close_db`` en la fábrica de la "
 "aplicación para que sea llamada después de cada petición."
 
-#: ../../tutorial/database.rst:88
+#: ../../project/docs/tutorial/database.rst:89 96e57b6a81c64d92a7a6c5c3206871f7
 msgid "Create the Tables"
 msgstr "Crear las tablas"
 
-#: ../../tutorial/database.rst:90
+#: ../../project/docs/tutorial/database.rst:91 7bbc95d5d8c34b029fcbd7dc60f1dddb
 msgid ""
 "In SQLite, data is stored in *tables* and *columns*. These need to be "
-"created before you can store and retrieve data. Flaskr will store users in "
-"the ``user`` table, and posts in the ``post`` table. Create a file with the "
-"SQL commands needed to create empty tables:"
+"created before you can store and retrieve data. Flaskr will store users "
+"in the ``user`` table, and posts in the ``post`` table. Create a file "
+"with the SQL commands needed to create empty tables:"
 msgstr ""
-"En SQLite, los datos se almacenan en *tablas* y *columnas*. Estas deben ser "
-"creadas antes de poder almacenar y recuperar los datos. Flaskr almacenará "
-"los usuarios en la tabla ``user``, y las entradas en la tabla ``post``. Crea"
-" un archivo con los comandos SQL necesarios para crear tablas vacías:"
+"En SQLite, los datos se almacenan en *tablas* y *columnas*. Estas deben "
+"ser creadas antes de poder almacenar y recuperar los datos. Flaskr "
+"almacenará los usuarios en la tabla ``user``, y las entradas en la tabla "
+"``post``. Crea un archivo con los comandos SQL necesarios para crear "
+"tablas vacías:"
 
-#: ../../tutorial/database.rst:95
+#: ../../project/docs/tutorial/database.rst:96 c96601a88e5041fb90b2329fbffbb493
 msgid "``flaskr/schema.sql``"
 msgstr "``flaskr/schema.sql``"
 
-#: ../../tutorial/database.rst:116
+#: ../../project/docs/tutorial/database.rst:117
+#: e16fd8f8f05944c48937537b985a9d73
 msgid ""
-"Add the Python functions that will run these SQL commands to the ``db.py`` "
-"file:"
+"Add the Python functions that will run these SQL commands to the "
+"``db.py`` file:"
 msgstr ""
-"Añade las funciones de Python que ejecutarán estos comandos SQL al archivo "
-"``db.py``:"
+"Añade las funciones de Python que ejecutarán estos comandos SQL al "
+"archivo ``db.py``:"
 
-#: ../../tutorial/database.rst:135
+#: ../../project/docs/tutorial/database.rst:141
+#: 0ab5a47db21544fa9bd764c847f13436
 msgid ""
-":meth:`open_resource() <Flask.open_resource>` opens a file relative to the "
-"``flaskr`` package, which is useful since you won't necessarily know where "
-"that location is when deploying the application later. ``get_db`` returns a "
-"database connection, which is used to execute the commands read from the "
-"file."
+":meth:`open_resource() <Flask.open_resource>` opens a file relative to "
+"the ``flaskr`` package, which is useful since you won't necessarily know "
+"where that location is when deploying the application later. ``get_db`` "
+"returns a database connection, which is used to execute the commands read"
+" from the file."
 msgstr ""
-":meth:`open_resource() <Flask.open_resource>` abre un archivo relativo al "
-"paquete ``flaskr``, lo cual es útil ya que no necesariamente se sabrá dónde "
-"está esa ubicación cuando se despliegue la aplicación posteriormente. "
-"``get_db`` devuelve una conexión a la base de datos, que se utiliza para "
-"ejecutar los comandos leídos del archivo."
+":meth:`open_resource() <Flask.open_resource>` abre un archivo relativo al"
+" paquete ``flaskr``, lo cual es útil ya que no necesariamente se sabrá "
+"dónde está esa ubicación cuando se despliegue la aplicación "
+"posteriormente. ``get_db`` devuelve una conexión a la base de datos, que "
+"se utiliza para ejecutar los comandos leídos del archivo."
 
-#: ../../tutorial/database.rst:141
+#: ../../project/docs/tutorial/database.rst:147
+#: 08a50c96644a4bb6a40ef34d7f932a0e
 msgid ""
-":func:`click.command` defines a command line command called ``init-db`` that"
-" calls the ``init_db`` function and shows a success message to the user. You"
-" can read :doc:`/cli` to learn more about writing commands."
+":func:`click.command` defines a command line command called ``init-db`` "
+"that calls the ``init_db`` function and shows a success message to the "
+"user. You can read :doc:`/cli` to learn more about writing commands."
 msgstr ""
-":func:`click.command` define un comando de línea de comandos llamado ``init-"
-"db`` que llama a la función ``init_db`` y muestra un mensaje de éxito al "
-"usuario. Puedes leer :doc:`/cli` para aprender más sobre la escritura de "
-"comandos."
+":func:`click.command` define un comando de línea de comandos llamado "
+"``init-db`` que llama a la función ``init_db`` y muestra un mensaje de "
+"éxito al usuario. Puedes leer :doc:`/cli` para aprender más sobre la "
+"escritura de comandos."
 
-#: ../../tutorial/database.rst:147
+#: ../../project/docs/tutorial/database.rst:151
+#: 163c122b3a2f488187f8f32da7f871d0
+msgid ""
+"The call to :func:`sqlite3.register_converter` tells Python how to "
+"interpret timestamp values in the database. We convert the value to a "
+":class:`datetime.datetime`."
+msgstr ""
+
+#: ../../project/docs/tutorial/database.rst:157
+#: 12ed5fe5f2c24f94b071893ac339f0ba
 msgid "Register with the Application"
 msgstr "Regístrese con la aplicación"
 
-#: ../../tutorial/database.rst:149
+#: ../../project/docs/tutorial/database.rst:159
+#: 09cbf5f8d76c4789a5c34749c412e5a4
 msgid ""
 "The ``close_db`` and ``init_db_command`` functions need to be registered "
 "with the application instance; otherwise, they won't be used by the "
-"application. However, since you're using a factory function, that instance "
-"isn't available when writing the functions. Instead, write a function that "
-"takes an application and does the registration."
+"application. However, since you're using a factory function, that "
+"instance isn't available when writing the functions. Instead, write a "
+"function that takes an application and does the registration."
 msgstr ""
-"Las funciones ``close_db`` y ``init_db_command`` necesitan ser registradas "
-"con la instancia de la aplicación; de lo contrario, no serán utilizadas por "
-"la aplicación. Sin embargo, como estás usando una función de fábrica, esa "
-"instancia no está disponible cuando escribes las funciones. En su lugar, "
-"escribe una función que tome una aplicación y haga el registro."
+"Las funciones ``close_db`` y ``init_db_command`` necesitan ser "
+"registradas con la instancia de la aplicación; de lo contrario, no serán "
+"utilizadas por la aplicación. Sin embargo, como estás usando una función "
+"de fábrica, esa instancia no está disponible cuando escribes las "
+"funciones. En su lugar, escribe una función que tome una aplicación y "
+"haga el registro."
 
-#: ../../tutorial/database.rst:162
+#: ../../project/docs/tutorial/database.rst:172
+#: 733b6d992d43429e8429b4f4135c5aa5
 msgid ""
-":meth:`app.teardown_appcontext() <Flask.teardown_appcontext>` tells Flask to"
-" call that function when cleaning up after returning the response."
+":meth:`app.teardown_appcontext() <Flask.teardown_appcontext>` tells Flask"
+" to call that function when cleaning up after returning the response."
 msgstr ""
 ":meth:`app.teardown_appcontext() <Flask.teardown_appcontext>` le dice a "
 "Flask que llame a esa función cuando se limpie después de devolver la "
 "respuesta."
 
-#: ../../tutorial/database.rst:166
+#: ../../project/docs/tutorial/database.rst:176
+#: f8956fb99d6a403facdfbf157bf959c7
 msgid ""
-":meth:`app.cli.add_command() <click.Group.add_command>` adds a new command "
-"that can be called with the ``flask`` command."
+":meth:`app.cli.add_command() <click.Group.add_command>` adds a new "
+"command that can be called with the ``flask`` command."
 msgstr ""
 ":meth:`app.cli.add_command() <click.Group.add_command>` añade un nuevo "
 "comando que puede ser llamado con el comando ``flask``."
 
-#: ../../tutorial/database.rst:169
+#: ../../project/docs/tutorial/database.rst:179
+#: a52b2296ac85446cb04640e92446a438
 msgid ""
-"Import and call this function from the factory. Place the new code at the "
-"end of the factory function before returning the app."
+"Import and call this function from the factory. Place the new code at the"
+" end of the factory function before returning the app."
 msgstr ""
-"Importa y llama a esta función desde la fábrica. Coloca el nuevo código al "
-"final de la función de fábrica antes de devolver la aplicación."
+"Importa y llama a esta función desde la fábrica. Coloca el nuevo código "
+"al final de la función de fábrica antes de devolver la aplicación."
 
-#: ../../tutorial/database.rst:172
+#: ../../project/docs/tutorial/database.rst:182
+#: e763c27a7c7b4e36af176a8575845a25
 msgid "``flaskr/__init__.py``"
 msgstr "``flaskr/__init__.py``"
 
-#: ../../tutorial/database.rst:186
+#: ../../project/docs/tutorial/database.rst:196
+#: 656158d1eebf4da19d8dcf0f80e9e05d
 msgid "Initialize the Database File"
 msgstr "Inicializar el archivo de la base de datos"
 
-#: ../../tutorial/database.rst:188
+#: ../../project/docs/tutorial/database.rst:198
+#: f77d15ea10e247bfa15ea83b40f77d48
 msgid ""
 "Now that ``init-db`` has been registered with the app, it can be called "
 "using the ``flask`` command, similar to the ``run`` command from the "
 "previous page."
 msgstr ""
 "Ahora que ``init-db`` ha sido registrado con la aplicación, puede ser "
-"llamado usando el comando ``flask``, similar al comando ``run`` de la página"
-" anterior."
+"llamado usando el comando ``flask``, similar al comando ``run`` de la "
+"página anterior."
 
-#: ../../tutorial/database.rst:194
+#: ../../project/docs/tutorial/database.rst:204
+#: 33b1ddc5ea0c44f888d3c3ee992fd5d0
 msgid ""
-"If you're still running the server from the previous page, you can either "
-"stop the server, or run this command in a new terminal. If you use a new "
-"terminal, remember to change to your project directory and activate the env "
-"as described in :doc:`/installation`."
+"If you're still running the server from the previous page, you can either"
+" stop the server, or run this command in a new terminal. If you use a new"
+" terminal, remember to change to your project directory and activate the "
+"env as described in :doc:`/installation`."
 msgstr ""
-"Si todavía estás ejecutando el servidor de la página anterior, puedes parar "
-"el servidor o ejecutar este comando en un nuevo terminal. Si utilizas un "
-"nuevo terminal, recuerda cambiar al directorio de tu proyecto y activar el "
-"env como se describe en :doc:`/installation`."
+"Si todavía estás ejecutando el servidor de la página anterior, puedes "
+"parar el servidor o ejecutar este comando en un nuevo terminal. Si "
+"utilizas un nuevo terminal, recuerda cambiar al directorio de tu proyecto"
+" y activar el env como se describe en :doc:`/installation`."
 
-#: ../../tutorial/database.rst:199
+#: ../../project/docs/tutorial/database.rst:209
+#: 6e6cf49e0a914873a63c923bacedc9d3
 msgid "Run the ``init-db`` command:"
 msgstr "Ejecuta el comando ``init-db``:"
 
-#: ../../tutorial/database.rst:206
+#: ../../project/docs/tutorial/database.rst:216
+#: b211b9fa6c304c2ca5d06a9a802b5d09
 msgid ""
 "There will now be a ``flaskr.sqlite`` file in the ``instance`` folder in "
 "your project."
 msgstr ""
-"Ahora habrá un archivo ``flaskr.sqlite`` en la carpeta ``instance`` de tu "
-"proyecto."
+"Ahora habrá un archivo ``flaskr.sqlite`` en la carpeta ``instance`` de tu"
+" proyecto."
 
-#: ../../tutorial/database.rst:209
+#: ../../project/docs/tutorial/database.rst:219
+#: 24b9e0b8bef2462fab7d31a4f9ec3441
 msgid "Continue to :doc:`views`."
 msgstr "Continúa con :doc:`views`."
+

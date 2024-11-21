@@ -7,35 +7,34 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-11 22:54-0400\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: 2024-05-10 22:44-0400\n"
 "Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
-"Language-Team: ES\n"
 "Language: es\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: ES\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.10.1\n"
-"X-Generator: Poedit 3.4.2\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../deploying/waitress.rst:2
+#: ../../project/docs/deploying/waitress.rst:2 e1465630b06e4a4b839c9c8a34df02cb
 msgid "Waitress"
 msgstr "Waitress"
 
-#: ../../deploying/waitress.rst:4
+#: ../../project/docs/deploying/waitress.rst:4 6f632ba71137418a90e76f4e2b61d0dc
 msgid "`Waitress`_ is a pure Python WSGI server."
 msgstr "`Waitress`_ es un servidor WSGI hecho en Python puro."
 
-#: ../../deploying/waitress.rst:6
+#: ../../project/docs/deploying/waitress.rst:6 e49aa95b72a64deea887e8f07f2108df
 msgid "It is easy to configure."
 msgstr "Es fácil de configurar."
 
-#: ../../deploying/waitress.rst:7
+#: ../../project/docs/deploying/waitress.rst:7 81fe9eebe66b4430b84793be77364c5e
 msgid "It supports Windows directly."
 msgstr "Es compatible directamente con Windows."
 
-#: ../../deploying/waitress.rst:8
+#: ../../project/docs/deploying/waitress.rst:8 d5c6d2597eb34180b5f9648f90a2e4c9
 msgid ""
 "It is easy to install as it does not require additional dependencies or "
 "compilation."
@@ -43,102 +42,116 @@ msgstr ""
 "Es fácil de instalar, ya que no requiere dependencias adicionales ni "
 "compilación."
 
-#: ../../deploying/waitress.rst:10
+#: ../../project/docs/deploying/waitress.rst:10
+#: e79fd5b32e1245c7a92188e38c26df32
 msgid ""
 "It does not support streaming requests, full request data is always "
 "buffered."
 msgstr ""
-"No admite las solicitudes de flujo, los datos de las solicitudes completas "
-"siempre se almacenan en el búfer."
+"No admite las solicitudes de flujo, los datos de las solicitudes "
+"completas siempre se almacenan en el búfer."
 
-#: ../../deploying/waitress.rst:12
+#: ../../project/docs/deploying/waitress.rst:12
+#: 24d54b8086964d3493eabffa00b1b8a2
 msgid "It uses a single process with multiple thread workers."
 msgstr "Utiliza un único proceso con múltiples hilos de trabajo."
 
-#: ../../deploying/waitress.rst:14
+#: ../../project/docs/deploying/waitress.rst:14
+#: 2ab716910a0b401281aa46ccc50a589f
 msgid ""
 "This page outlines the basics of running Waitress. Be sure to read its "
-"documentation and ``waitress-serve --help`` to understand what features are "
-"available."
+"documentation and ``waitress-serve --help`` to understand what features "
+"are available."
 msgstr ""
 "Esta página describe los aspectos básicos de la ejecución de Waitress. "
-"Asegúrese de leer su documentación y ``waitress-serve --help`` para entender"
-" qué características están disponibles."
+"Asegúrese de leer su documentación y ``waitress-serve --help`` para "
+"entender qué características están disponibles."
 
-#: ../../deploying/waitress.rst:22
+#: ../../project/docs/deploying/waitress.rst:22
+#: dd80cc059f46417280d0b9fe1bb2db5b
 msgid "Installing"
 msgstr "Instalación"
 
-#: ../../deploying/waitress.rst:24
-msgid ""
-"Create a virtualenv, install your application, then install ``waitress``."
-msgstr ""
-"Crea un virtualenv, instala tu aplicación y luego instala ``waitress``."
+#: ../../project/docs/deploying/waitress.rst:24
+#: 3a769c6da38649eb834071f6310162ef
+msgid "Create a virtualenv, install your application, then install ``waitress``."
+msgstr "Crea un virtualenv, instala tu aplicación y luego instala ``waitress``."
 
-#: ../../deploying/waitress.rst:37
+#: ../../project/docs/deploying/waitress.rst:37
+#: 4c2b8bb9fd23420c8eac099fbe8318c3
 msgid "Running"
 msgstr "Ejecutando"
 
-#: ../../deploying/waitress.rst:39
+#: ../../project/docs/deploying/waitress.rst:39
+#: 6ca7f9fa5e804f80b9f8920921f7f68a
 msgid ""
-"The only required argument to ``waitress-serve`` tells it how to load your "
-"Flask application. The syntax is ``{module}:{app}``. ``module`` is the "
-"dotted import name to the module with your application. ``app`` is the "
-"variable with the application. If you're using the app factory pattern, use "
-"``--call {module}:{factory}`` instead."
+"The only required argument to ``waitress-serve`` tells it how to load "
+"your Flask application. The syntax is ``{module}:{app}``. ``module`` is "
+"the dotted import name to the module with your application. ``app`` is "
+"the variable with the application. If you're using the app factory "
+"pattern, use ``--call {module}:{factory}`` instead."
 msgstr ""
-"El único argumento necesario para ``waitress-serve`` le indica cómo cargar "
-"tu aplicación Flask. La sintaxis es ``{module}:{app}``. ``module`` es el "
-"nombre de importación con puntos del módulo con tu aplicación. ``app`` es la"
-" variable con la aplicación. Si estás utilizando el patrón de fábrica de "
-"aplicaciones, utiliza ``--call {module}:{factory}`` en su lugar."
+"El único argumento necesario para ``waitress-serve`` le indica cómo "
+"cargar tu aplicación Flask. La sintaxis es ``{module}:{app}``. ``module``"
+" es el nombre de importación con puntos del módulo con tu aplicación. "
+"``app`` es la variable con la aplicación. Si estás utilizando el patrón "
+"de fábrica de aplicaciones, utiliza ``--call {module}:{factory}`` en su "
+"lugar."
 
-#: ../../deploying/waitress.rst:55
+#: ../../project/docs/deploying/waitress.rst:55
+#: 7a7bb26aebe44695b166437573780b21
 msgid "The ``--host`` option binds the server to local ``127.0.0.1`` only."
-msgstr ""
-"La opción ``--host`` vincula el servidor sólo con el local ``127.0.0.1``."
+msgstr "La opción ``--host`` vincula el servidor sólo con el local ``127.0.0.1``."
 
-#: ../../deploying/waitress.rst:57
+#: ../../project/docs/deploying/waitress.rst:57
+#: 53bacd95512940cba0805d148fd70cba
 msgid ""
-"Logs for each request aren't shown, only errors are shown. Logging can be "
-"configured through the Python interface instead of the command line."
+"Logs for each request aren't shown, only errors are shown. Logging can be"
+" configured through the Python interface instead of the command line."
 msgstr ""
 "No se muestran los registros de cada solicitud, sólo se muestran los "
-"errores. El registro se puede configurar a través de la interfaz de Python "
-"en lugar de la línea de comandos."
+"errores. El registro se puede configurar a través de la interfaz de "
+"Python en lugar de la línea de comandos."
 
-#: ../../deploying/waitress.rst:62
+#: ../../project/docs/deploying/waitress.rst:62
+#: 2e4ddcbb23b6417ebf0d20a9dc149ef2
 msgid "Binding Externally"
 msgstr "Vinculación externa"
 
-#: ../../deploying/waitress.rst:64
+#: ../../project/docs/deploying/waitress.rst:64
+#: ad86204e9f2243638a8f5ad58ee65562
 msgid ""
-"Waitress should not be run as root because it would cause your application "
-"code to run as root, which is not secure. However, this means it will not be"
-" possible to bind to port 80 or 443. Instead, a reverse proxy such as "
-":doc:`nginx` or :doc:`apache-httpd` should be used in front of Waitress."
+"Waitress should not be run as root because it would cause your "
+"application code to run as root, which is not secure. However, this means"
+" it will not be possible to bind to port 80 or 443. Instead, a reverse "
+"proxy such as :doc:`nginx` or :doc:`apache-httpd` should be used in front"
+" of Waitress."
 msgstr ""
-"Waitress no debe ejecutarse como root porque provocaría que el código de su "
-"aplicación se ejecutara como root, lo cual no es seguro. Sin embargo, esto "
-"significa que no será posible enlazar con el puerto 80 o 443. En su lugar, "
-"debe utilizarse un proxy inverso como :doc:`nginx` o :doc:`apache-httpd` "
-"delante de Waitress."
+"Waitress no debe ejecutarse como root porque provocaría que el código de "
+"su aplicación se ejecutara como root, lo cual no es seguro. Sin embargo, "
+"esto significa que no será posible enlazar con el puerto 80 o 443. En su "
+"lugar, debe utilizarse un proxy inverso como :doc:`nginx` o :doc:`apache-"
+"httpd` delante de Waitress."
 
-#: ../../deploying/waitress.rst:70
+#: ../../project/docs/deploying/waitress.rst:70
+#: 6ae17564382a46269889936402c507f8
+#, fuzzy
 msgid ""
-"You can bind to all external IPs on a non-privileged port by not specifying "
-"the ``--host`` option. Don't do this when using a revers proxy setup, "
-"otherwise it will be possible to bypass the proxy."
+"You can bind to all external IPs on a non-privileged port by not "
+"specifying the ``--host`` option. Don't do this when using a reverse "
+"proxy setup, otherwise it will be possible to bypass the proxy."
 msgstr ""
-"Puedes enlazar con todas las IPs externas en un puerto no privilegiado no "
-"especificando la opción ``--host``. No hagas esto cuando utilices una "
+"Puedes enlazar con todas las IPs externas en un puerto no privilegiado no"
+" especificando la opción ``--host``. No hagas esto cuando utilices una "
 "configuración de proxy inversa, de lo contrario será posible eludir el "
 "proxy."
 
-#: ../../deploying/waitress.rst:74
+#: ../../project/docs/deploying/waitress.rst:74
+#: 1cfc3f788a6148b78bfae201139b882e
 msgid ""
-"``0.0.0.0`` is not a valid address to navigate to, you'd use a specific IP "
-"address in your browser."
+"``0.0.0.0`` is not a valid address to navigate to, you'd use a specific "
+"IP address in your browser."
 msgstr ""
-"``0.0.0.0`` no es una dirección válida para navegar, sino que debes utilizar"
-" una dirección IP específica en tu navegador."
+"``0.0.0.0`` no es una dirección válida para navegar, sino que debes "
+"utilizar una dirección IP específica en tu navegador."
+

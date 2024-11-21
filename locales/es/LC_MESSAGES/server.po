@@ -7,190 +7,194 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-09 22:02-0400\n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
 "PO-Revision-Date: 2024-05-20 16:46-0400\n"
 "Last-Translator: Luis Alday <alday87@gmail.com>\n"
-"Language-Team: ES\n"
 "Language: es\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: ES\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.10.1\n"
-"X-Generator: Poedit 3.4.4\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../server.rst:4
+#: ../../project/docs/server.rst:4 f05ac35ac0ac407d8f6beed1e933bd8d
 msgid "Development Server"
 msgstr "Servidor de desarrollo"
 
-#: ../../server.rst:6
+#: ../../project/docs/server.rst:6 f4f11b6cddb746969084910b0df7a9fd
 msgid ""
-"Flask provides a ``run`` command to run the application with a development "
-"server. In debug mode, this server provides an interactive debugger and "
-"will reload when code is changed."
+"Flask provides a ``run`` command to run the application with a "
+"development server. In debug mode, this server provides an interactive "
+"debugger and will reload when code is changed."
 msgstr ""
 "Flask proporciona un comando ``run`` para ejecutar la aplicación con un "
 "servidor de desarrollo. En modo depuración, este servidor proporciona un "
 "depurador interactivo y se recargará cuando se modifique el código."
 
-#: ../../server.rst:12
+#: ../../project/docs/server.rst:12 a6621bd025ae435c884a9e5e07782cc3
 msgid ""
 "Do not use the development server when deploying to production. It is "
 "intended for use only during local development. It is not designed to be "
 "particularly efficient, stable, or secure."
 msgstr ""
 "No utilice el servidor de desarrollo cuando lo despliegue en producción. "
-"Está pensado para ser utilizado sólo durante el desarrollo local. No está "
-"diseñado para ser particularmente eficiente, estable o seguro."
+"Está pensado para ser utilizado sólo durante el desarrollo local. No está"
+" diseñado para ser particularmente eficiente, estable o seguro."
 
-#: ../../server.rst:16
+#: ../../project/docs/server.rst:16 1407b26eee584557b2291c6768b67228
 msgid "See :doc:`/deploying/index` for deployment options."
 msgstr "Ver :doc:`/deploying/index` para las opciones de despliegue."
 
-#: ../../server.rst:19
+#: ../../project/docs/server.rst:19 f75ea6385ba34af8a56bda10278ed224
 msgid "Command Line"
 msgstr "Línea de comandos"
 
-#: ../../server.rst:21
+#: ../../project/docs/server.rst:21 4fa1f0019113497a88162b294bddcbe8
 msgid ""
-"The ``flask run`` CLI command is the recommended way to run the development "
-"server. Use the ``--app`` option to point to your application, and the ``--"
-"debug`` option to enable debug mode."
+"The ``flask run`` CLI command is the recommended way to run the "
+"development server. Use the ``--app`` option to point to your "
+"application, and the ``--debug`` option to enable debug mode."
 msgstr ""
 "El comando CLI ``flask run`` es la forma recomendada para ejecutar el "
 "servidor de desarrollo. Utilice la opción ``--app`` para apuntar a su "
 "aplicación, y la opción ``--debug`` para activar el modo de depuración."
 
-#: ../../server.rst:29
+#: ../../project/docs/server.rst:29 d909f8296d8f46f4b533a125433c4e54
 msgid ""
-"This enables debug mode, including the interactive debugger and reloader, "
-"and then starts the server on http://localhost:5000/. Use ``flask run --"
-"help`` to see the available options, and :doc:`/cli` for detailed "
+"This enables debug mode, including the interactive debugger and reloader,"
+" and then starts the server on http://localhost:5000/. Use ``flask run "
+"--help`` to see the available options, and :doc:`/cli` for detailed "
 "instructions about configuring and using the CLI."
 msgstr ""
-"Esto habilita el modo de depuración, incluyendo el depurador interactivo y "
-"el reloader, y luego inicia el servidor en http://localhost:5000/. Utilice "
-"``flask run --help`` para ver las opciones disponibles, y :doc:`/cli` para "
-"obtener instrucciones detalladas sobre la configuración y el uso de la CLI."
+"Esto habilita el modo de depuración, incluyendo el depurador interactivo "
+"y el reloader, y luego inicia el servidor en http://localhost:5000/. "
+"Utilice ``flask run --help`` para ver las opciones disponibles, y "
+":doc:`/cli` para obtener instrucciones detalladas sobre la configuración "
+"y el uso de la CLI."
 
-#: ../../server.rst:38
+#: ../../project/docs/server.rst:38 8c74ded26de7426b99d37490812b1c44
 msgid "Address already in use"
 msgstr "Dirección ya utilizada"
 
-#: ../../server.rst:40
+#: ../../project/docs/server.rst:40 4b4f524dd89945e6968b99eb0ee07ccd
 msgid ""
 "If another program is already using port 5000, you'll see an ``OSError`` "
-"when the server tries to start. It may have one of the following messages:"
+"when the server tries to start. It may have one of the following "
+"messages:"
 msgstr ""
 "Si otro programa ya está utilizando el puerto 5000, verá un ``OSError`` "
 "cuando el servidor intente iniciarse. Puede tener uno de los siguientes "
 "mensajes:"
 
-#: ../../server.rst:44
+#: ../../project/docs/server.rst:44 09dff5800f6a4b599186e6300ae4e2fd
 msgid "``OSError: [Errno 98] Address already in use``"
 msgstr "``OSError: [Errno 98] Address already in use``"
 
-#: ../../server.rst:45
+#: ../../project/docs/server.rst:45 930a1b7c668c4e488a4b604454fd0b59
 msgid ""
-"``OSError: [WinError 10013] An attempt was made to access a socket in a way "
-"forbidden by its access permissions``"
+"``OSError: [WinError 10013] An attempt was made to access a socket in a "
+"way forbidden by its access permissions``"
 msgstr ""
-"``OSError: [WinError 10013] An attempt was made to access a socket in a way "
-"forbidden by its access permissions``"
+"``OSError: [WinError 10013] An attempt was made to access a socket in a "
+"way forbidden by its access permissions``"
 
-#: ../../server.rst:48
+#: ../../project/docs/server.rst:48 733772a1bde844449ada775f0adfc1e0
 msgid ""
 "Either identify and stop the other program, or use ``flask run --port "
 "5001`` to pick a different port."
 msgstr ""
-"Identifique y detenga el otro programa, o utilice ``flask run --port 5001`` "
-"para elegir un puerto diferente."
+"Identifique y detenga el otro programa, o utilice ``flask run --port "
+"5001`` para elegir un puerto diferente."
 
-#: ../../server.rst:51
+#: ../../project/docs/server.rst:51 b6a1c0dab52d49edb5e088e994ffd164
 msgid ""
-"You can use ``netstat`` or ``lsof`` to identify what process id is using a "
-"port, then use other operating system tools stop that process. The "
+"You can use ``netstat`` or ``lsof`` to identify what process id is using "
+"a port, then use other operating system tools stop that process. The "
 "following example shows that process id 6847 is using port 5000."
 msgstr ""
-"Puedes usar ``netstat`` o ``lsof`` para identificar qué id de proceso está "
-"usando un puerto, y luego usar otras herramientas del sistema operativo "
-"para detener ese proceso. El siguiente ejemplo muestra que el proceso 6847 "
-"está usando el puerto 5000."
+"Puedes usar ``netstat`` o ``lsof`` para identificar qué id de proceso "
+"está usando un puerto, y luego usar otras herramientas del sistema "
+"operativo para detener ese proceso. El siguiente ejemplo muestra que el "
+"proceso 6847 está usando el puerto 5000."
 
-#: ../../server.rst:57
+#: ../../project/docs/server.rst:57 a763a1219b4743288bccad60ea394e11
 msgid "``netstat`` (Linux)"
 msgstr "``netstat`` (Linux)"
 
-#: ../../server.rst:64
+#: ../../project/docs/server.rst:64 681fbe7ec4ce47b1bfa90295c6ac502b
 msgid "``lsof`` (macOS / Linux)"
 msgstr "``lsof`` (macOS / Linux)"
 
-#: ../../server.rst:71
+#: ../../project/docs/server.rst:71 bf493d7fbd774bc5b0bef0cebf9225aa
 msgid "``netstat`` (Windows)"
 msgstr "``netstat`` (Windows)"
 
-#: ../../server.rst:78
+#: ../../project/docs/server.rst:78 938669ff0a844074a85f3efdb8ab8fba
+#, fuzzy
 msgid ""
 "macOS Monterey and later automatically starts a service that uses port "
-"5000. To disable the service, go to System Preferences, Sharing, and "
-"disable \"AirPlay Receiver\"."
+"5000. You can choose to disable this service instead of using a different"
+" port by searching for \"AirPlay Receiver\" in System Preferences and "
+"toggling it off."
 msgstr ""
 "macOS Monterey y posteriores inician automáticamente un servicio que "
 "utiliza el puerto 5000. Para desactivar el servicio, vaya a Preferencias "
 "del Sistema, Compartir, y desactive \"AirPlay Receiver\"."
 
-#: ../../server.rst:84
+#: ../../project/docs/server.rst:84 8835989af24d4b40a81805ee5e61e5ec
 msgid "Deferred Errors on Reload"
 msgstr "Errores diferidos en la recarga"
 
-#: ../../server.rst:86
+#: ../../project/docs/server.rst:86 6e6ead56ce6d42ef8e31676367d140ad
 msgid ""
 "When using the ``flask run`` command with the reloader, the server will "
-"continue to run even if you introduce syntax errors or other initialization "
-"errors into the code. Accessing the site will show the interactive debugger "
-"for the error, rather than crashing the server."
+"continue to run even if you introduce syntax errors or other "
+"initialization errors into the code. Accessing the site will show the "
+"interactive debugger for the error, rather than crashing the server."
 msgstr ""
 "Al utilizar el comando ``flask run`` con el reloader, el servidor "
 "continuará ejecutándose aunque introduzcas errores de sintaxis u otros "
-"errores de inicialización en el código. Al acceder al sitio se mostrará el "
-"depurador interactivo para el error, en lugar de bloquear el servidor."
+"errores de inicialización en el código. Al acceder al sitio se mostrará "
+"el depurador interactivo para el error, en lugar de bloquear el servidor."
 
-#: ../../server.rst:91
+#: ../../project/docs/server.rst:91 bbc435e0e67b47e9bb5a1ae4982332bd
 msgid ""
 "If a syntax error is already present when calling ``flask run``, it will "
-"fail immediately and show the traceback rather than waiting until the site "
-"is accessed. This is intended to make errors more visible initially while "
-"still allowing the server to handle errors on reload."
+"fail immediately and show the traceback rather than waiting until the "
+"site is accessed. This is intended to make errors more visible initially "
+"while still allowing the server to handle errors on reload."
 msgstr ""
 "Si hay un error de sintaxis cuando se llama a ``flask run``, fallará "
-"inmediatamente y mostrará el rastro en lugar de esperar hasta que se acceda "
-"al sitio. Esto pretende hacer que los errores sean más visibles al "
-"principio, al tiempo que permite al servidor manejar los errores en la "
+"inmediatamente y mostrará el rastro en lugar de esperar hasta que se "
+"acceda al sitio. Esto pretende hacer que los errores sean más visibles al"
+" principio, al tiempo que permite al servidor manejar los errores en la "
 "recarga."
 
-#: ../../server.rst:98
+#: ../../project/docs/server.rst:98 541315763aab408f93e5e408269051cb
 msgid "In Code"
 msgstr "En Código"
 
-#: ../../server.rst:100
+#: ../../project/docs/server.rst:100 e3bf36522f3b4b59aa94c4372d794001
 msgid ""
-"The development server can also be started from Python with the :meth:"
-"`Flask.run` method. This method takes arguments similar to the CLI options "
-"to control the server. The main difference from the CLI command is that the "
-"server will crash if there are errors when reloading. ``debug=True`` can be "
-"passed to enable debug mode."
+"The development server can also be started from Python with the "
+":meth:`Flask.run` method. This method takes arguments similar to the CLI "
+"options to control the server. The main difference from the CLI command "
+"is that the server will crash if there are errors when reloading. "
+"``debug=True`` can be passed to enable debug mode."
 msgstr ""
-"El servidor de desarrollo también puede ser inicializado desde Python con "
-"el método :meth: `Flask.run`. Este método toma argumentos similares a las "
-"opciones de CLI para controlar el servidor. La principal diferencia con el "
-"comando CLI es que el servidor fallará si hay errores al recargar. Se puede "
-"pasar ``debug=True`` para habilitar el modo de depuración."
+"El servidor de desarrollo también puede ser inicializado desde Python con"
+" el método :meth: `Flask.run`. Este método toma argumentos similares a "
+"las opciones de CLI para controlar el servidor. La principal diferencia "
+"con el comando CLI es que el servidor fallará si hay errores al recargar."
+" Se puede pasar ``debug=True`` para habilitar el modo de depuración."
 
-#: ../../server.rst:105
+#: ../../project/docs/server.rst:105 aace44b5e4f04da096aabe6af3770683
 msgid ""
-"Place the call in a main block, otherwise it will interfere when trying to "
-"import and run the application with a production server later."
+"Place the call in a main block, otherwise it will interfere when trying "
+"to import and run the application with a production server later."
 msgstr ""
-"Coloque la llamada en un bloque principal, de lo contrario interferirá al "
-"intentar importar y ejecutar la aplicación con un servidor de producción "
-"más tarde."
+"Coloque la llamada en un bloque principal, de lo contrario interferirá al"
+" intentar importar y ejecutar la aplicación con un servidor de producción"
+" más tarde."
+
