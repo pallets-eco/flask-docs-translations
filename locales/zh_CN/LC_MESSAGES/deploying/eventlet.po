@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../project/docs/deploying/eventlet.rst:2 67efcbb0eb064867a709d5abb5c13a2a
+msgid "eventlet"
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:4 658c04618eea4e0b99d47f10142a3890
+msgid ""
+"Prefer using :doc:`gunicorn` with eventlet workers rather than using "
+"`eventlet`_ directly. Gunicorn provides a much more configurable and "
+"production-tested server."
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:8 3b7865f22ea04187831baf727ef2500a
+msgid ""
+"`eventlet`_ allows writing asynchronous, coroutine-based code that looks "
+"like standard synchronous Python. It uses `greenlet`_ to enable task "
+"switching without writing ``async/await`` or using ``asyncio``."
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:12
+#: 53b0af9052134a9e9a5e79155af4efb6
+msgid ""
+":doc:`gevent` is another library that does the same thing. Certain "
+"dependencies you have, or other considerations, may affect which of the "
+"two you choose to use."
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:16
+#: a52aa2eb9c9a49f38f9861c0d3b2d8dd
+msgid ""
+"eventlet provides a WSGI server that can handle many connections at once "
+"instead of one per worker process. You must actually use eventlet in your"
+" own code to see any benefit to using the server."
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:25
+#: f47d6b1b86954fd7936767ea572c6430
+msgid "Installing"
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:27
+#: fff0a7ef04504451838e722b72162b56
+msgid ""
+"When using eventlet, greenlet>=1.0 is required, otherwise context locals "
+"such as ``request`` will not work as expected. When using PyPy, "
+"PyPy>=7.3.7 is required."
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:31
+#: 7d26bd13cd3e4ab194339652f7b08a35
+msgid "Create a virtualenv, install your application, then install ``eventlet``."
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:44
+#: bda6199f6b1d4cf6a9ddb9952e2b5ecb
+msgid "Running"
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:46
+#: 026e7eb7583a40bbb675f6ae5a320852
+msgid ""
+"To use eventlet to serve your application, write a script that imports "
+"its ``wsgi.server``, as well as your app or app factory."
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:49
+#: 3ba3383ad9834a498e315a5c6319b4bb
+msgid "``wsgi.py``"
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:66
+#: 181924244c3a49348e4dce9570c96b4b
+msgid "Binding Externally"
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:68
+#: df99d898e86346088bbad04b3a22b2f3
+msgid ""
+"eventlet should not be run as root because it would cause your "
+"application code to run as root, which is not secure. However, this means"
+" it will not be possible to bind to port 80 or 443. Instead, a reverse "
+"proxy such as :doc:`nginx` or :doc:`apache-httpd` should be used in front"
+" of eventlet."
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:74
+#: 5c7ee169b2054b3fb1bf67c96db838d4
+msgid ""
+"You can bind to all external IPs on a non-privileged port by using "
+"``0.0.0.0`` in the server arguments shown in the previous section. Don't "
+"do this when using a reverse proxy setup, otherwise it will be possible "
+"to bypass the proxy."
+msgstr ""
+
+#: ../../project/docs/deploying/eventlet.rst:79
+#: a748e961432a444e9d5e9ef9f4ff95c2
+msgid ""
+"``0.0.0.0`` is not a valid address to navigate to, you'd use a specific "
+"IP address in your browser."
+msgstr ""
+

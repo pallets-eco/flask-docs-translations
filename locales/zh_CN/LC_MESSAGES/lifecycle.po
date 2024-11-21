@@ -1,0 +1,383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-20 19:31-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../project/docs/lifecycle.rst:2 4b2fc6acca574677a03994df2cc8ea03
+msgid "Application Structure and Lifecycle"
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:4 740fbabddf314e6d95469ace7f0b3a36
+msgid ""
+"Flask makes it pretty easy to write a web application. But there are "
+"quite a few different parts to an application and to each request it "
+"handles. Knowing what happens during application setup, serving, and "
+"handling requests will help you know what's possible in Flask and how to "
+"structure your application."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:11 d93da0c51bdc4e1499ea4f8ac675ddb0
+msgid "Application Setup"
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:13 2c00c00638f042d7b97692a856e38945
+msgid ""
+"The first step in creating a Flask application is creating the "
+"application object. Each Flask application is an instance of the "
+":class:`.Flask` class, which collects all configuration, extensions, and "
+"views."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:31 739e64ede413494fb3d15f33ebd2e59b
+msgid ""
+"This is known as the \"application setup phase\", it's the code you write"
+" that's outside any view functions or other handlers. It can be split up "
+"between different modules and sub-packages, but all code that you want to"
+" be part of your application must be imported in order for it to be "
+"registered."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:36 2f43359e5c30466f96f3bf87b02698b6
+msgid ""
+"All application setup must be completed before you start serving your "
+"application and handling requests. This is because WSGI servers divide "
+"work between multiple workers, or can be distributed across multiple "
+"machines. If the configuration changed in one worker, there's no way for "
+"Flask to ensure consistency between other workers."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:41 1326f5748c104665a75d7ac95e762bd3
+msgid ""
+"Flask tries to help developers catch some of these setup ordering issues "
+"by showing an error if setup-related methods are called after requests "
+"are handled. In that case you'll see this error:"
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:45 91d0bc217ecd45bb8f5a4c3d1d9f8f47
+msgid ""
+"The setup method 'route' can no longer be called on the application. It "
+"has already handled its first request, any changes will not be applied "
+"consistently. Make sure all imports, decorators, functions, etc. needed "
+"to set up the application are done before running it."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:50 8abc97f2169a4449854a0b27c224c029
+msgid ""
+"However, it is not possible for Flask to detect all cases of out-of-order"
+" setup. In general, don't do anything to modify the ``Flask`` app object "
+"and ``Blueprint`` objects from within view functions that run during "
+"requests. This includes:"
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:54 1d783476c181431d8330d780b748f72a
+msgid ""
+"Adding routes, view functions, and other request handlers with "
+"``@app.route``, ``@app.errorhandler``, ``@app.before_request``, etc."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:56 15986e9861b642cc90c34dbe8caaa80c
+msgid "Registering blueprints."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:57 0a9a3b2c343545b0a6e722948557ec86
+msgid "Loading configuration with ``app.config``."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:58 5d9e3c9007504dc1883ebe4f3a25abeb
+msgid "Setting up the Jinja template environment with ``app.jinja_env``."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:59 196acc9029a645eebf20d7592a759fa6
+msgid "Setting a session interface, instead of the default itsdangerous cookie."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:60 e81245d3153e4f1881c8f7c8352c8c79
+msgid ""
+"Setting a JSON provider with ``app.json``, instead of the default "
+"provider."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:61 2f645cc924a8438b91071034a40bdc88
+msgid "Creating and initializing Flask extensions."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:65 5a338cec3c174ef4a845d003eb80a4cb
+msgid "Serving the Application"
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:67 cb44b582fdd2404caab82292f9718c70
+msgid ""
+"Flask is a WSGI application framework. The other half of WSGI is the WSGI"
+" server. During development, Flask, through Werkzeug, provides a "
+"development WSGI server with the ``flask run`` CLI command. When you are "
+"done with development, use a production server to serve your application,"
+" see :doc:`deploying/index`."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:72 0accf3e9a3304fa9aeaaa29e048bcbb0
+msgid ""
+"Regardless of what server you're using, it will follow the :pep:`3333` "
+"WSGI spec. The WSGI server will be told how to access your Flask "
+"application object, which is the WSGI application. Then it will start "
+"listening for HTTP requests, translate the request data into a WSGI "
+"environ, and call the WSGI application with that data. The WSGI "
+"application will return data that is translated into an HTTP response."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:78 ecf70383ad604d2ab5c2d45c7551bfc8
+msgid "Browser or other client makes HTTP request."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:79 8894a909049849eba60943ac3c1b8373
+msgid "WSGI server receives request."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:80 1a5efcad94834c6cb16969032fe1fe91
+msgid "WSGI server converts HTTP data to WSGI ``environ`` dict."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:81 43cea27839da4709837ffe90a0a5934d
+msgid "WSGI server calls WSGI application with the ``environ``."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:82 dfc28c2dd5a844c6adf81329764f6db3
+msgid ""
+"Flask, the WSGI application, does all its internal processing to route "
+"the request to a view function, handle errors, etc."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:84 403d08709a0740cabb1d360a74d1be3f
+msgid ""
+"Flask translates View function return into WSGI response data, passes it "
+"to WSGI server."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:86 a738f4b7786d48e0813ede05be4dda1c
+msgid "WSGI server creates and send an HTTP response."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:87 0972c05be31949c79d6b19d10201dd00
+msgid "Client receives the HTTP response."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:91 89892c0cd887449489607018314a6ac0
+msgid "Middleware"
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:93 ce4da31d146a4ec38dbab786c2608032
+msgid ""
+"The WSGI application above is a callable that behaves in a certain way. "
+"Middleware is a WSGI application that wraps another WSGI application. "
+"It's a similar concept to Python decorators. The outermost middleware "
+"will be called by the server. It can modify the data passed to it, then "
+"call the WSGI application (or further middleware) that it wraps, and so "
+"on. And it can take the return value of that call and modify it further."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:99 42cb9fb19c314ca5b5ffe48098a8fd85
+msgid ""
+"From the WSGI server's perspective, there is one WSGI application, the "
+"one it calls directly. Typically, Flask is the \"real\" application at "
+"the end of the chain of middleware. But even Flask can call further WSGI "
+"applications, although that's an advanced, uncommon use case."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:104 65372643b53d4c7ba872400712e9dd47
+msgid ""
+"A common middleware you'll see used with Flask is Werkzeug's "
+":class:`~werkzeug.middleware.proxy_fix.ProxyFix`, which modifies the "
+"request to look like it came directly from a client even if it passed "
+"through HTTP proxies on the way. There are other middleware that can "
+"handle serving static files, authentication, etc."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:111 d505fb2b7bea418990005ae9eebc579d
+msgid "How a Request is Handled"
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:113 8253a2d87d9f4e96a9bc33b25b99f604
+msgid ""
+"For us, the interesting part of the steps above is when Flask gets called"
+" by the WSGI server (or middleware). At that point, it will do quite a "
+"lot to handle the request and generate the response. At the most basic, "
+"it will match the URL to a view function, call the view function, and "
+"pass the return value back to the server. But there are many more parts "
+"that you can use to customize its behavior."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:119 8d6e353b6b0247bba833471286d20636
+msgid "WSGI server calls the Flask object, which calls :meth:`.Flask.wsgi_app`."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:120 ee6cacc36f8541d1947af19a1fc24436
+msgid ""
+"A :class:`.RequestContext` object is created. This converts the WSGI "
+"``environ`` dict into a :class:`.Request` object. It also creates an "
+":class:`AppContext` object."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:122 85b60ebc42ba46f2a182c2c7a5da4851
+msgid ""
+"The :doc:`app context <appcontext>` is pushed, which makes "
+":data:`.current_app` and :data:`.g` available."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:124 c57f651f2b4348e3be3d0e5d85f66841
+msgid "The :data:`.appcontext_pushed` signal is sent."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:125 79af813039db425698992b5893496b6d
+msgid ""
+"The :doc:`request context <reqcontext>` is pushed, which makes "
+":attr:`.request` and :class:`.session` available."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:127 8ee9ad301a4143c1824417cccb93554b
+msgid ""
+"The session is opened, loading any existing session data using the app's "
+":attr:`~.Flask.session_interface`, an instance of "
+":class:`.SessionInterface`."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:129 70220fda12ec4b8e838728c74e3c4ad8
+msgid ""
+"The URL is matched against the URL rules registered with the "
+":meth:`~.Flask.route` decorator during application setup. If there is no "
+"match, the error - usually a 404, 405, or redirect - is stored to be "
+"handled later."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:132 ba764cc49f784383b5cc01efea164446
+msgid "The :data:`.request_started` signal is sent."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:133 7282202ffea84513aac575df3f42c6db
+msgid "Any :meth:`~.Flask.url_value_preprocessor` decorated functions are called."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:134 c7e35d907b2a40cdb9df2531f81bb77d
+msgid ""
+"Any :meth:`~.Flask.before_request` decorated functions are called. If any"
+" of these function returns a value it is treated as the response "
+"immediately."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:136 0bb8c2c469214930b647f733ba6fe087
+msgid "If the URL didn't match a route a few steps ago, that error is raised now."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:137 c884d88bbfaf4218ba99f8576325b8eb
+msgid ""
+"The :meth:`~.Flask.route` decorated view function associated with the "
+"matched URL is called and returns a value to be used as the response."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:139 ffd6bdd65fe54f52ab0f59a9ef33c746
+msgid ""
+"If any step so far raised an exception, and there is an "
+":meth:`~.Flask.errorhandler` decorated function that matches the "
+"exception class or HTTP error code, it is called to handle the error and "
+"return a response."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:142 db864b887d904243bd425d54e9c14536
+msgid ""
+"Whatever returned a response value - a before request function, the view,"
+" or an error handler, that value is converted to a :class:`.Response` "
+"object."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:144 535ed3aabcb14afa97ca79927493c226
+msgid ""
+"Any :func:`~.after_this_request` decorated functions are called, then "
+"cleared."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:145 6b577cdd8a264487848ba81235b0ecba
+msgid ""
+"Any :meth:`~.Flask.after_request` decorated functions are called, which "
+"can modify the response object."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:147 e9febbb99d014d8a982919bef559e6ed
+msgid ""
+"The session is saved, persisting any modified session data using the "
+"app's :attr:`~.Flask.session_interface`."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:149 f0327bd0d03c407dab7111641366eeda
+msgid "The :data:`.request_finished` signal is sent."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:150 fcf1c2fd11234f9287f5fb1e45ea5c3f
+msgid ""
+"If any step so far raised an exception, and it was not handled by an "
+"error handler function, it is handled now. HTTP exceptions are treated as"
+" responses with their corresponding status code, other exceptions are "
+"converted to a generic 500 response. The :data:`.got_request_exception` "
+"signal is sent."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:154 2a6f5a6881c84a43a2cba4f6abf7b00a
+msgid ""
+"The response object's status, headers, and body are returned to the WSGI "
+"server."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:155 29e5ac18945c4231b5e6711788186922
+msgid "Any :meth:`~.Flask.teardown_request` decorated functions are called."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:156 8ba7c91d29734b64bbd6ddb24b2f4def
+msgid "The :data:`.request_tearing_down` signal is sent."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:157 adc4a7c4a32a45fba4c23fd73f1281dd
+msgid ""
+"The request context is popped, :attr:`.request` and :class:`.session` are"
+" no longer available."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:159 13adbf8ea8d54535bfaab3915cbcc178
+msgid "Any :meth:`~.Flask.teardown_appcontext` decorated functions are called."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:160 2fe734ce39074151add24db0e0df982b
+msgid "The :data:`.appcontext_tearing_down` signal is sent."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:161 b5e7893bd02141e0b323991776a7a69b
+msgid ""
+"The app context is popped, :data:`.current_app` and :data:`.g` are no "
+"longer available."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:163 21ee2a830ea9486695099c179a364cc0
+msgid "The :data:`.appcontext_popped` signal is sent."
+msgstr ""
+
+#: ../../project/docs/lifecycle.rst:165 2e0bade33744432e873065d709cbf5c9
+msgid ""
+"There are even more decorators and customization points than this, but "
+"that aren't part of every request lifecycle. They're more specific to "
+"certain things you might use during a request, such as templates, "
+"building URLs, or handling JSON data. See the rest of this documentation,"
+" as well as the :doc:`api` to explore further."
+msgstr ""
+
