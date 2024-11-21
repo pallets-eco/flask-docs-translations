@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 Pallets
+# This file is distributed under the same license as the Flask package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask 3.0.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-20 15:20-0400\n"
+"PO-Revision-Date: 2024-06-21 00:16+0900\n"
+"Last-Translator: \n"
+"Language-Team: ko <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.14.0\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#: ../../tutorial/index.rst:4
+msgid "Contents:"
+msgstr "목차:"
+
+#: ../../tutorial/index.rst:2
+msgid "Tutorial"
+msgstr "튜토리얼"
+
+#: ../../tutorial/index.rst:20
+msgid ""
+"This tutorial will walk you through creating a basic blog application "
+"called Flaskr. Users will be able to register, log in, create posts, and "
+"edit or delete their own posts. You will be able to package and install "
+"the application on other computers."
+msgstr ""
+"이 튜토리얼에서는 Flaskr이라는 기본 블로그 애플리케이션을 만드는 방법을 "
+"안내합니다. 사용자는 등록하고, 로그인하고, 글을 작성하고, 자신의 글을 편"
+"집하거나 삭제할 수 있습니다. 애플리케이션을 패키징하여 다른 컴퓨터에 설치"
+"할 수 있습니다."
+
+#: ../../tutorial/index.rst:-1
+msgid "screenshot of index page"
+msgstr "색인 페이지 스크린샷"
+
+#: ../../tutorial/index.rst:30
+msgid ""
+"It's assumed that you're already familiar with Python. The `official "
+"tutorial`_ in the Python docs is a great way to learn or review first."
+msgstr ""
+"이미 Python에 익숙하다고 가정합니다. Python 문서의 '공식 튜토리얼'을 통"
+"해 먼저 배우거나 복습하는 것도 좋은 방법입니다."
+
+#: ../../tutorial/index.rst:35
+msgid ""
+"While it's designed to give a good starting point, the tutorial doesn't "
+"cover all of Flask's features. Check out the :doc:`/quickstart` for an "
+"overview of what Flask can do, then dive into the docs to find out more. "
+"The tutorial only uses what's provided by Flask and Python. In another "
+"project, you might decide to use :doc:`/extensions` or other libraries "
+"to make some tasks simpler."
+msgstr ""
+"이 튜토리얼은 좋은 시작점을 제공하기 위해 만들어졌지만, Flask의 모든 기능"
+"을 다루지는 않습니다. :doc:`/quickstart`  에서 Flask의 기능에 대한 개요"
+"를 살펴보고 자세한 내용을 알아보려면 문서를 자세히 살펴보세요. 이 튜토리"
+"얼은 Flask와 Python에서 제공하는 것만 사용합니다. 다른 프로젝트에서는 :"
+"doc:`/extensions` 또는 다른 라이브러리를 사용하여 일부 작업을 더 간단하"
+"게 만들 수 있습니다."
+
+#: ../../tutorial/index.rst:-1
+msgid "screenshot of login page"
+msgstr "로그인 페이지 스크린샷"
+
+#: ../../tutorial/index.rst:47
+msgid ""
+"Flask is flexible. It doesn't require you to use any particular project "
+"or code layout. However, when first starting, it's helpful to use a more "
+"structured approach. This means that the tutorial will require a bit of "
+"boilerplate up front, but it's done to avoid many common pitfalls that "
+"new developers encounter, and it creates a project that's easy to expand "
+"on. Once you become more comfortable with Flask, you can step out of "
+"this structure and take full advantage of Flask's flexibility."
+msgstr ""
+"플라스크는 유연합니다. 특정 프로젝트나 코드 레이아웃을 사용할 필요가 없습"
+"니다. 하지만 처음 시작할 때는 조금 더 구조화된 접근 방식을 사용하는 것이 "
+"도움이 됩니다. 이는 튜토리얼이 사전의 작은 보일러플레이트 코드가 필요하지"
+"만 초보 개발자가 흔히 겪을 수 있는 많은 함정을 피하고, 확장하기 쉬운 프로"
+"젝트를 만들 수 있다는 뜻입니다. 플라스크에 한 번 익숙해지면, 이 구조에서 "
+"한 발자국 더 나아가 유연한 플라스크의 장점을 모두 활용할 수 있습니다."
+
+#: ../../tutorial/index.rst:-1
+msgid "screenshot of edit page"
+msgstr "편집 페이지 스크린샷"
+
+#: ../../tutorial/index.rst:60
+msgid ""
+":gh:`The tutorial project is available as an example in the Flask "
+"repository <examples/tutorial>`, if you want to compare your project "
+"with the final product as you follow the tutorial."
+msgstr ""
+"튜토리얼을 따라가면서 완성된 것을 최종 결과물과 비교하고 싶다면 :gh:`플라"
+"스크 리포지토리의 예제 <examples/tutorial>`  로 확인할 수 있습니다 ."
+
+#: ../../tutorial/index.rst:64
+msgid "Continue to :doc:`layout`."
+msgstr ":doc:`layout`  에서 계속."
