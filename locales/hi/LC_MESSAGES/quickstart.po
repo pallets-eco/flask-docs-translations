@@ -8,383 +8,488 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-11-23 12:08+0000\n"
+"Last-Translator: Soham <sohamjobanputra7@gmail.com>\n"
+"Language-Team: Hindi <https://hosted.weblate.org/projects/flask/quickstart/"
+"hi/>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: ../../project/docs/quickstart.rst:2
 #: 072c4cb240e240ee88d518604b3c098d
 msgid "Quickstart"
-msgstr ""
+msgstr "त्वरित शुरुआत"
 
 #: ../../project/docs/quickstart.rst:4
 #: a8ac97379d1e4478b3fccbd67ea024f6
 msgid "Eager to get started? This page gives a good introduction to Flask. Follow :doc:`installation` to set up a project and install Flask first."
 msgstr ""
+"शुरू करने के लिए उत्साहित है? यह दस्तावेज Flask का अच्छा परिचय देता है। प्रोजेक्ट सेटअप और प्रथम "
+"Flask का संस्थापन करने के लिए :doc:`installation` का अनुसरण करें।"
 
 #: ../../project/docs/quickstart.rst:9
 #: e87344e0245f461d9266268c6887cae5
 msgid "A Minimal Application"
-msgstr ""
+msgstr "एक न्यूनतम एप्लिकेशन"
 
 #: ../../project/docs/quickstart.rst:11
 #: 396e00a2c7d94351b2fa9d5b0a4c6c02
 msgid "A minimal Flask application looks something like this:"
-msgstr ""
+msgstr "एक न्यूनतम Flask एप्लिकेशन कुछ इस प्रकार दिखता है:"
 
 #: ../../project/docs/quickstart.rst:23
 #: f0b94c74deca4fb8995c25cb20c840f4
 msgid "So what did that code do?"
-msgstr ""
+msgstr "यह कोड क्या करता है?"
 
 #: ../../project/docs/quickstart.rst:25
 #: 30605ed7b79b4554818bcb61f79ae017
 msgid "First we imported the :class:`~flask.Flask` class. An instance of this class will be our WSGI application."
 msgstr ""
+"सौप्रथम हमने :class:`~flask.Flask` क्लास को आयात किया। इस क्लास का एक ईन्सटन्स हमारा WSGI "
+"एप्लिकेशन होगा।"
 
 #: ../../project/docs/quickstart.rst:27
 #: 641342ec8f934497ab62092bae5a3281
 msgid "Next we create an instance of this class. The first argument is the name of the application's module or package. ``__name__`` is a convenient shortcut for this that is appropriate for most cases. This is needed so that Flask knows where to look for resources such as templates and static files."
 msgstr ""
+"इसके बाद, हम इस क्लास का एक ईन्सटन्स बनाते हैं। प्रथम आर्गयुमेन्ट एप्लिकेशन वाले मॉड्युल या पैकेज का नाम "
+"है। इस के लिए ``__name__`` एक उपयुक्त अल्प मार्ग है जो की ज्यादातर मामलों के लिए उचित है। Flask को "
+"टॅम्प्लेट्स और स्टैटिक फाइल्स जैसे संसाधनों को खोजने के लिए यह आवश्यक है।"
 
 #: ../../project/docs/quickstart.rst:32
 #: 45c6469fa87d4f8aa46d11319a50a860
 msgid "We then use the :meth:`~flask.Flask.route` decorator to tell Flask what URL should trigger our function."
 msgstr ""
+"अब हम :meth:`~flask.Flask.route` डॅकोरेटर का उपयोग Flask को यह संकेत देने के लिए करतें है की "
+"कोनसा URL हमारे फंक्शन को ट्रिगर करेगा।"
 
 #: ../../project/docs/quickstart.rst:34
 #: cfc675cf49514588908182a1fce142d4
 msgid "The function returns the message we want to display in the user's browser. The default content type is HTML, so HTML in the string will be rendered by the browser."
 msgstr ""
+"यह फंक्शन वह संदेश लौटाता है जिसे हम उपयोगकर्ता के ब्राउज़र में प्रदर्शित करना चाहते हैं। निरउचित कंटेंट का "
+"प्रकार HTML है, तो सट्रिंग वाली HTML ब्राउज़र द्वारा प्रदर्शित होगी।"
 
 #: ../../project/docs/quickstart.rst:38
 #: f5ec99a5ae614a9ba26780187216530f
 msgid "Save it as :file:`hello.py` or something similar. Make sure to not call your application :file:`flask.py` because this would conflict with Flask itself."
 msgstr ""
+"इसे hello.py या समान नाम से सेव करें। ध्यान रखें कि अपने एप्लिकेशन का नाम flask.py न रखें, क्योंकि यह "
+"Flask के साथ टकराव पैदा कर सकता है।"
 
 #: ../../project/docs/quickstart.rst:42
 #: 839c0399bdf24a6d986d2849bcdd3c8f
 msgid "To run the application, use the ``flask`` command or ``python -m flask``. You need to tell the Flask where your application is with the ``--app`` option."
 msgstr ""
+"एप्लिकेशन चलाने के लिए, ``flask`` कमांड या ``python -m flask`` का उपयोग करें। आपको ``--app``"
+" विकल्प के साथ Flask को यह बताना होगा कि आपका एप्लिकेशन कहां है।"
 
 #: ../../project/docs/quickstart.rst:52
 #: 065be0391fa9431eac148d38072ca985
 msgid "Application Discovery Behavior"
-msgstr ""
+msgstr "एप्लिकेशन ढूंढ़ने का बर्ताव"
 
 #: ../../project/docs/quickstart.rst:54
 #: 921fab71c2254193ae9a288f2ed6fc48
 msgid "As a shortcut, if the file is named ``app.py`` or ``wsgi.py``, you don't have to use ``--app``. See :doc:`/cli` for more details."
 msgstr ""
+"शॉर्टकट के रूप में, यदि फाइल का नाम ``app.py`` या ``wsgi.py`` है, तो आपको ``--app`` का उपयोग "
+"करने की आवश्यकता नहीं है। अधिक जानकारी के लिए :doc:`/cli` देखें।"
 
 #: ../../project/docs/quickstart.rst:57
 #: c519fca9387f4421b38dd160c9aadb74
 msgid "This launches a very simple builtin server, which is good enough for testing but probably not what you want to use in production. For deployment options see :doc:`deploying/index`."
 msgstr ""
+"यह एक बहुत ही सरल निरउचित सर्वर लॉन्च करता है, जो परीक्षण के लिए पर्याप्त है, लेकिन शायद यह प्रोडक्"
+"शन में उपयोग करने के लिए उपयुक्त नहीं है। डिप्लॉयमेंट विकल्पों के लिए :doc:`deploying/index` देखें।"
 
 #: ../../project/docs/quickstart.rst:61
 #: 2834e151d2ca49f48b990cf655032675
 msgid "Now head over to http://127.0.0.1:5000/, and you should see your hello world greeting."
 msgstr ""
+"अब http://127.0.0.1:5000/ पर जाएं, और आपको आपका hello world स्वागत संदेश दिखाई देना चाहिए।"
 
 #: ../../project/docs/quickstart.rst:64
 #: ad65b3803432439bbbe6c506eca24b97
 msgid "If another program is already using port 5000, you'll see ``OSError: [Errno 98]`` or ``OSError: [WinError 10013]`` when the server tries to start. See :ref:`address-already-in-use` for how to handle that."
 msgstr ""
+"अगर कोई दूसरा प्रोग्राम पहले से पोर्ट 5000 का उपयोग कर रहा है, तो जब सर्वर शुरू करने की कोशिश होगी, तो "
+"आपको ``OSError: [Errno 98]`` या ``OSError: [WinError 10013]`` दिखाई देगा। इस स्थिति को "
+"संभालने के लिए :ref:`address-already-in-use` देखें।"
 
 #: ../../project/docs/quickstart.rst:71
 #: 6881455685bf4518843a3a764c368068
 msgid "Externally Visible Server"
-msgstr ""
+msgstr "बाहरी रूप से दृश्यमान सर्वर"
 
 #: ../../project/docs/quickstart.rst:73
 #: 8182b82dc38e49958d2dccac4afad929
 msgid "If you run the server you will notice that the server is only accessible from your own computer, not from any other in the network.  This is the default because in debugging mode a user of the application can execute arbitrary Python code on your computer."
 msgstr ""
+"यदि आप सर्वर को चलाते हैं, तो आप देखेंगे कि सर्वर केवल आपके अपने कंप्यूटर से ही एक्सेस किया जा सकता है, "
+"नेटवर्क में किसी अन्य कंप्यूटर से नहीं। यह निरउचित है क्योंकि डिबगिंग मोड में एप्लिकेशन का उपयोगकर्ता आपके कंप्यू"
+"टर पर मनमाना Python कोड एक्ज़िक्यूट कर सकता है।"
 
 #: ../../project/docs/quickstart.rst:78
 #: 38963a7aa05347e185944d4615d3c20b
 msgid "If you have the debugger disabled or trust the users on your network, you can make the server publicly available simply by adding ``--host=0.0.0.0`` to the command line::"
 msgstr ""
+"यदि आपने डिबगर को अक्षम किया है या अपने नेटवर्क पर उपयोगकर्ताओं पर भरोसा करते हैं, तो आप कमांड लाइन में "
+"``--host=0.0.0.0`` जोड़कर सर्वर को सार्वजनिक रूप से उपलब्ध करा सकते हैं::"
 
 #: ../../project/docs/quickstart.rst:84
 #: 6976c2592d4b420eb5709d5361a33d90
 msgid "This tells your operating system to listen on all public IPs."
 msgstr ""
+"यह आपके ऑपरेटिंग सिस्टम को सभी सार्वजनिक IPs पर सुनने का निर्देश करता है।"
 
 #: ../../project/docs/quickstart.rst:88
 #: 9cb26ee6c8e449aca7f1184b312b426e
 msgid "Debug Mode"
-msgstr ""
+msgstr "डिबग मोड"
 
 #: ../../project/docs/quickstart.rst:90
 #: caa3121ac3e54402be2cb680649ecda5
 msgid "The ``flask run`` command can do more than just start the development server. By enabling debug mode, the server will automatically reload if code changes, and will show an interactive debugger in the browser if an error occurs during a request."
 msgstr ""
+"``flask run`` कमांड केवल डेवलपमेंट सर्वर शुरू करने से अधिक कर सकता है। डिबग मोड सक्षम करने पर, "
+"यदि कोड में कोई बदलाव होता है तो सर्वर स्वतः रीलोड हो जाएगा, और यदि किसी रिक्वेस्ट के दौरान कोई त्रुटि होती है, "
+"तो ब्राउज़र में एक इंटरैक्टिव डिबगर दिखाएगा।"
 
 #: ../../project/docs/quickstart.rst:95
 #: 7ba338e2ba664f919d528d60dd14365c
 msgid "The interactive debugger in action."
-msgstr ""
+msgstr "क्रियाशील इंटरएक्टिव डिबगर।"
 
 #: ../../project/docs/quickstart.rst:102
 #: 81d0b4087a7d4c5c84c64b8b9e54e959
 msgid "The debugger allows executing arbitrary Python code from the browser. It is protected by a pin, but still represents a major security risk. Do not run the development server or debugger in a production environment."
 msgstr ""
+"डिबगर ब्राउज़र से मनमाना Python कोड एक्ज़िक्यूट करने की अनुमति देता है। यह एक पिन द्वारा संरक्षित होता है, "
+"लेकिन फिर भी यह एक बड़ा सुरक्षा जोखिम प्रस्तुत करता है। प्रोडक्शन वातावरण में डेवलपमेंट सर्वर या डिबगर न "
+"चलाएं।"
 
 #: ../../project/docs/quickstart.rst:107
 #: f0f6e79c9eea4278bf40423dcfdc1db2
 msgid "To enable debug mode, use the ``--debug`` option."
-msgstr ""
+msgstr "डिबग मोड सक्षम करने के लिए ``--debug`` विकल्प का उपयोग करें।"
 
 #: ../../project/docs/quickstart.rst:119
 #: 89b2013e81964b9ca87a46948493ff55
 msgid "See also:"
-msgstr ""
+msgstr "यह भी देखें:"
 
 #: ../../project/docs/quickstart.rst:121
 #: 4ab0d5e448e24eb28393a3a2d65e37a7
 msgid ":doc:`/server` and :doc:`/cli` for information about running in debug mode."
 msgstr ""
+"डिबग मोड में चलाने की जानकारी के लिए :doc:`/server` और :doc:`/cli` देखे।"
 
 #: ../../project/docs/quickstart.rst:122
 #: c8a9fed226cf4064baedea632c412fee
 msgid ":doc:`/debugging` for information about using the built-in debugger and other debuggers."
 msgstr ""
+"निरउचित डिबगर और अन्य डिबगर का उपयोग करने की जानकारी के लिए :doc:`/debugging` देखे।"
 
 #: ../../project/docs/quickstart.rst:124
 #: c7f1d156a5f24431b8516e4295242a67
 msgid ":doc:`/logging` and :doc:`/errorhandling` to log errors and display nice error pages."
 msgstr ""
+"त्रुटियों को लॉग करने और अच्छे त्रुटि पन्नो को प्रदर्शित करने के लिए :doc:`/logging` और "
+":doc:`/errorhandling` देखे।"
 
 #: ../../project/docs/quickstart.rst:129
 #: ccdc5a632e8b4c2abc9c471dca22bf91
 msgid "HTML Escaping"
-msgstr ""
+msgstr "HTML एस्केपिंग"
 
 #: ../../project/docs/quickstart.rst:131
 #: 860638517045439a9d41bab941e9c9bd
 msgid "When returning HTML (the default response type in Flask), any user-provided values rendered in the output must be escaped to protect from injection attacks. HTML templates rendered with Jinja, introduced later, will do this automatically."
 msgstr ""
+"जब HTML लौटाया जाता है (जो Flask में निरउचित रिस्पॉन्स प्रकार है), तो आउटपुट में प्रदर्शित किए गए किसी भी "
+"उपयोगकर्ता द्वारा प्रदान किए गए मूल्यो को एस्केप किया जाना चाहिए ताकि इंजेक्शन हमलों से बचा जा सके। HTML "
+"टेम्प्लेट्स वे कार्य स्वत: करते है, जो की Jinja द्वारा प्रदशित है, यह बाद में पुरःस्थापित था।"
 
 #: ../../project/docs/quickstart.rst:136
 #: 882a6ed30e254d1ead37f0e986be4c38
 msgid ":func:`~markupsafe.escape`, shown here, can be used manually. It is omitted in most examples for brevity, but you should always be aware of how you're using untrusted data."
 msgstr ""
+"यहां दिखाए गए :func:`~markupsafe.escape` का मैन्युअल रूप से उपयोग किया जा सकता है। इसे कई "
+"उदाहरणों में संक्षिप्तता के लिए छोड़ दिया गया है, लेकिन आपको हमेशा अविश्वसनीय डेटा के उपयोग के बारे में सावधान होना "
+"चाहिए।"
 
 #: ../../project/docs/quickstart.rst:148
 #: ba15bb36ab19407081cbfc83c9ee0681
 msgid "If a user managed to submit the name ``<script>alert(\"bad\")</script>``, escaping causes it to be rendered as text, rather than running the script in the user's browser."
 msgstr ""
+"अगर एक उपयोगकर्ता ने नाम ``<script>alert(\"bad\")</script>``सबमीट किया है, तो उपयोगकर्ता के"
+" ब्राउज़र में स्क्रिप्ट को चलाने के बजाय एस्केपिंग के कारण यह टेक्स्ट के रूप में प्रदर्शित होगा।"
 
 #: ../../project/docs/quickstart.rst:152
 #: 4c686c42af1e4309a8469cd0e743c4d7
 msgid "``<name>`` in the route captures a value from the URL and passes it to the view function. These variable rules are explained below."
 msgstr ""
+"राउट में ``<name>`` URL से एक मूल्य लेता है और उसे व्यू फंक्शन को पास करता है। यह वैरिएबल नियमों को "
+"नीचे विस्तार से समझाया हैं।"
 
 #: ../../project/docs/quickstart.rst:157
 #: b1e18677e1f944c1adfe059c9fb5e3ef
 msgid "Routing"
-msgstr ""
+msgstr "राउटिंग"
 
 #: ../../project/docs/quickstart.rst:159
 #: 1bc848c730424794bff4c31a70f806a5
 msgid "Modern web applications use meaningful URLs to help users. Users are more likely to like a page and come back if the page uses a meaningful URL they can remember and use to directly visit a page."
 msgstr ""
+"आधुनिक वेब एप्लिकेशन्स उपयोगकर्ताओं की मदद के लिए अर्थपूर्ण URL का उपयोग करते हैं। यदि पेज एक अर्थपूर्ण "
+"URL का उपयोग करता है जिसे उपयोगकर्ता याद रख सकते हैं तो वे उस पेज को पसंद करने की और फिर से आने की "
+"संभावना अधिक होती है और सीधे पेज पर जाने के लिए उपयोग कर सकते हैं।"
 
 #: ../../project/docs/quickstart.rst:163
 #: f2b9df10b8184644a95ee9df3a1906b7
 msgid "Use the :meth:`~flask.Flask.route` decorator to bind a function to a URL. ::"
 msgstr ""
+":meth:`~flask.Flask.route` डेकोरेटर का उपयोग एक फ़ंक्शन को URL से जोड़ने के लिए करें। ::"
 
 #: ../../project/docs/quickstart.rst:173
 #: a125e8809bf74a2abf4c3a41aca1fc19
 msgid "You can do more! You can make parts of the URL dynamic and attach multiple rules to a function."
 msgstr ""
+"आप और भी अधिक कर सकते हैं! आप URL के कुछ हिस्सों को डायनामिक बना सकते हैं और एक फ़ंक्शन से कई नियमो को "
+"जोड़ सकते हैं।"
 
 #: ../../project/docs/quickstart.rst:177
 #: 54ff811a374e4590b3dda562119f2c02
 msgid "Variable Rules"
-msgstr ""
+msgstr "वेरिएबल रूल्स"
 
 #: ../../project/docs/quickstart.rst:179
 #: 44a9f1eccd4742bf90a71c7b80282f8c
 msgid "You can add variable sections to a URL by marking sections with ``<variable_name>``. Your function then receives the ``<variable_name>`` as a keyword argument. Optionally, you can use a converter to specify the type of the argument like ``<converter:variable_name>``. ::"
 msgstr ""
+"आप URL में वेरिएबल हिस्सों जोड़ने के लिए उनको ``<variable_name>`` से चिह्नित करते हैं। फिर आपका फ़ंक्"
+"शन ``<variable_name>`` को एक कीवर्ड आर्ग्युमेंट के रूप में प्राप्त करता है। वैकल्पिक रूप से, आप एक "
+"कन्वर्टर का उपयोग कर सकते हैं ताकि आर्ग्युमेंट के प्रकार को निर्दिष्ट किया जा सके, जैसे "
+"``<converter:variable_name>``। ::"
 
 #: ../../project/docs/quickstart.rst:201
 #: 0c1d64ff76be4ff6b52b7d3e1b833245
 msgid "Converter types:"
-msgstr ""
+msgstr "कन्वर्टर के प्रकार:"
 
 #: ../../project/docs/quickstart.rst:204
 #: abdfc2de097b4bb49338652271c1d52e
 msgid "``string``"
-msgstr ""
+msgstr "``string``"
 
 #: ../../project/docs/quickstart.rst:204
 #: 42a40812e2404ae2aa21cd2eefe6f2de
 msgid "(default) accepts any text without a slash"
-msgstr ""
+msgstr "(निरउचित) स्लैश बगैर का कोई भी लिखाण स्वीकारता है"
 
 #: ../../project/docs/quickstart.rst:205
 #: 812f474f73c447869e63be912ea61492
 msgid "``int``"
-msgstr ""
+msgstr "``int``"
 
 #: ../../project/docs/quickstart.rst:205
 #: 0dcc8042218b40e1a838225b493416b4
 msgid "accepts positive integers"
-msgstr ""
+msgstr "धन पूर्णांकों को स्वीकारता है"
 
 #: ../../project/docs/quickstart.rst:206
 #: cd10e5dd4e644fbc9759e6b0000fa398
 msgid "``float``"
-msgstr ""
+msgstr "``float``"
 
 #: ../../project/docs/quickstart.rst:206
 #: 115a2c7b2e384ae0adbd4a70c0fb94e9
 msgid "accepts positive floating point values"
-msgstr ""
+msgstr "धन अपूर्णांक मूल्यों को स्वीकारता है"
 
 #: ../../project/docs/quickstart.rst:207
 #: 8d00c0ee5d5949649dbb552a9c7b7a55
 msgid "``path``"
-msgstr ""
+msgstr "``path``"
 
 #: ../../project/docs/quickstart.rst:207
 #: c16b271f6640414893a3fa5acf32330b
 msgid "like ``string`` but also accepts slashes"
-msgstr ""
+msgstr "``string`` के जैसा किंतु स्लैश को भी स्वीकारता है"
 
 #: ../../project/docs/quickstart.rst:208
 #: ca8584245682488cbbbe56766f06a7e0
 msgid "``uuid``"
-msgstr ""
+msgstr "``uuid``"
 
 #: ../../project/docs/quickstart.rst:208
 #: 00321a5d7dff4ce0aab1cf4e2b60e66d
 msgid "accepts UUID strings"
-msgstr ""
+msgstr "UUID स्ट्रींग्स को स्वीकारता है"
 
 #: ../../project/docs/quickstart.rst:213
 #: c14cc837143a41ffa3ff3b4954b90ec3
 msgid "Unique URLs / Redirection Behavior"
-msgstr ""
+msgstr "अद्वितीय URLs / रीडाइरेक्शन बर्ताव"
 
 #: ../../project/docs/quickstart.rst:215
 #: fe8df7deb1a64de5ac02e5453cf20530
 msgid "The following two rules differ in their use of a trailing slash. ::"
-msgstr ""
+msgstr "निम्नलिखित दो नियमों में उनके अंतिम स्लैश के उपयोग में अंतर है। ::"
 
 #: ../../project/docs/quickstart.rst:225
 #: 09c1960c2ce14c3c8e2dbbdf3dfbf80a
 msgid "The canonical URL for the ``projects`` endpoint has a trailing slash. It's similar to a folder in a file system. If you access the URL without a trailing slash (``/projects``), Flask redirects you to the canonical URL with the trailing slash (``/projects/``)."
 msgstr ""
+"``projects`` एंडपॉइंट के मानक URL में एक अंतिम स्लैश है। यह एक फाइल सिस्टम में फ़ोल्डर के समान है। "
+"यदि आप बिना अंतिम स्लैश के URL (``/projects``) तक पहुँचते हैं, तो Flask आपको मानक URL के साथ अंति"
+"म स्लैश (``/projects/``) पर रीडाइरॅक्ट करता है।"
 
 #: ../../project/docs/quickstart.rst:230
 #: 48c5af12fd634d34a79d2e75a9670824
 msgid "The canonical URL for the ``about`` endpoint does not have a trailing slash. It's similar to the pathname of a file. Accessing the URL with a trailing slash (``/about/``) produces a 404 \"Not Found\" error. This helps keep URLs unique for these resources, which helps search engines avoid indexing the same page twice."
 msgstr ""
+"``about`` एंडपॉइंट के लिए मानक URL में अंतिम स्लैश (trailing slash) नहीं है। यह एक फ़ाइल के पथना"
+"म के समान है। यदि आप अंतिम स्लैश के साथ URL (``/about/``) तक पहुँचते हैं, तो यह 404 \"Not "
+"Found\" त्रुटि दिखाता है। यह इन संसाधनों के लिए URL को अद्वितीय बनाए रखने में मदद करता है, जिससे सर्च इं"
+"जन एक ही पेज को दो बार ईन्डॅक्स करने से बचते हैं।"
 
 #: ../../project/docs/quickstart.rst:240
 #: c35a47346603474c98280f584038e767
 msgid "URL Building"
-msgstr ""
+msgstr "URL निर्माण"
 
 #: ../../project/docs/quickstart.rst:242
 #: 96b281646519448e93eddd340e2a4900
 msgid "To build a URL to a specific function, use the :func:`~flask.url_for` function. It accepts the name of the function as its first argument and any number of keyword arguments, each corresponding to a variable part of the URL rule. Unknown variable parts are appended to the URL as query parameters."
 msgstr ""
+"किसी विशेष फ़ंक्शन का URL बनाने के लिए :func:`~flask.url_for` फ़ंक्शन का उपयोग करें। यह पहले "
+"आर्ग्युमेंट के रूप में फ़ंक्शन के नाम को स्वीकारता है और उसके बाद किसी भी संख्या में कीवर्ड आर्ग्युमेंट्स लेता है, "
+"प्रत्येक अनुरूप URL रूल के वैरिएबल भाग का है। अज्ञात वैरिएबल भागों को URL में क्वेरी पैरामीटर के रूप में जोड़ा "
+"जाता है।"
 
 #: ../../project/docs/quickstart.rst:247
 #: 3e41eabc111c45b5a6a2cbb05c69c495
 msgid "Why would you want to build URLs using the URL reversing function :func:`~flask.url_for` instead of hard-coding them into your templates?"
 msgstr ""
+"आप URLs को अपने टेम्पलेट्स में हार्ड-कोड करने के बजाय :func:`~flask.url_for` जैसे URL रिवर्सिंग "
+"फ़ंक्शन का उपयोग करके क्यों बनाना चाहेंगे?"
 
 #: ../../project/docs/quickstart.rst:250
 #: 83242835c2184f11be23fda4c1f3bec4
 msgid "Reversing is often more descriptive than hard-coding the URLs."
 msgstr ""
+"रिवर्सिंग अक्सर URL को हार्ड-कोड करने की तुलना में अधिक वर्णनात्मक होता है।"
 
 #: ../../project/docs/quickstart.rst:251
 #: 7239d0f7a149454e8f4400f1ca14bb29
 msgid "You can change your URLs in one go instead of needing to remember to manually change hard-coded URLs."
 msgstr ""
+"आप अपने URLs को एक बार में बदल सकते हैं बजाय इसके की आपको याद करके हार्ड-कोडेड URLs को मैन्युअली "
+"बदलना पड़े।"
 
 #: ../../project/docs/quickstart.rst:253
 #: 4c1e8285c41c4a37b02c714cddb08b5c
 msgid "URL building handles escaping of special characters transparently."
 msgstr ""
+"URL निर्माण विशेष-अक्षरों(special characters) के एस्केपिंग स्वतः करता है।"
 
 #: ../../project/docs/quickstart.rst:254
 #: 494f632ea1f44c0cbeddc09b7ac402b8
 msgid "The generated paths are always absolute, avoiding unexpected behavior of relative paths in browsers."
 msgstr ""
+"निर्मीत पाथ हंमेशा पूर्ण (absolute) होते हैं, जिससे ब्राउज़रों में सापेक्ष (relative) पथों के आकस्मिक बर्ताव "
+"से बचा जा सकता है।"
 
 #: ../../project/docs/quickstart.rst:256
 #: c3ee43d067d44187aefd037e2e5b2c66
 msgid "If your application is placed outside the URL root, for example, in ``/myapplication`` instead of ``/``, :func:`~flask.url_for` properly handles that for you."
 msgstr ""
+"यदि आपका एप्लिकेशन URL रूट(root) के बाहर रखा गया है, जैसे ``/`` के बजाय ``/myapplication`` में"
+", तो :func:`~flask.url_for` इसे सही तरीके से संभालता है।"
 
 #: ../../project/docs/quickstart.rst:260
 #: 95a85f98bb3e4a28a4119f3e8b6dde03
 msgid "For example, here we use the :meth:`~flask.Flask.test_request_context` method to try out :func:`~flask.url_for`. :meth:`~flask.Flask.test_request_context` tells Flask to behave as though it's handling a request even while we use a Python shell. See :ref:`context-locals`."
 msgstr ""
+"उदाहरण के लिए, यहां हम :func:`~flask.url_for` को आज़माने के लिए :meth:`~flask.Flask."
+"test_request_context` मेथड का उपयोग करते हैं। :meth:`~flask.Flask."
+"test_request_context` Flask को यह बताता है कि वह एक रिक्वेस्ट को संभाल रहा है, भले ही हम "
+"Python शेल का उपयोग कर रहे हों। देखें :ref:`context-locals`।"
 
 #: ../../project/docs/quickstart.rst:296
 #: 2bf0e7c3cca5413487009a1aa2bbeff4
 msgid "HTTP Methods"
-msgstr ""
+msgstr "HTTP मेथड्स"
 
 #: ../../project/docs/quickstart.rst:298
 #: c95a61d9ef7049728417940101edae2c
 msgid "Web applications use different HTTP methods when accessing URLs. You should familiarize yourself with the HTTP methods as you work with Flask. By default, a route only answers to ``GET`` requests. You can use the ``methods`` argument of the :meth:`~flask.Flask.route` decorator to handle different HTTP methods. ::"
 msgstr ""
+"वेब एप्लिकेशन URLs एक्सेस करने के लिए विभिन्न HTTP मेथड्स का उपयोग करते हैं। आपको Flask के साथ काम "
+"करते समय HTTP मेथड्स से परिचित होना चाहिए। निरउचित(default) रूप से, एक राउट केवल ``GET`` "
+"रिक्वेस्ट्स का उत्तर देता है। आप :meth:`~flask.Flask.route` डेकोरेटर के ``methods`` आर्ग्युमेंट "
+"का उपयोग करके विभिन्न HTTP मेथड्स को संभाल सकते हैं। ::"
 
 #: ../../project/docs/quickstart.rst:313
 #: 97f958d655574e5ba545d0e9d67cdc3c
 msgid "The example above keeps all methods for the route within one function, which can be useful if each part uses some common data."
 msgstr ""
+"ऊपर दिया गया उदाहरण एक ही फ़ंक्शन में राउट के सभी मेथड्स रखता है, जो उपयोगी हो सकता है यदि प्रत्येक भाग कु"
+"छ सामान्य डेटा का उपयोग करता हो।"
 
 #: ../../project/docs/quickstart.rst:316
 #: 772583c8c0434b61b01779821fa51155
 msgid "You can also separate views for different methods into different functions. Flask provides a shortcut for decorating such routes with :meth:`~flask.Flask.get`, :meth:`~flask.Flask.post`, etc. for each common HTTP method."
 msgstr ""
+"आप विभिन्न मेथड्स के लिए व्यूज़ (views) को विभिन्न फ़ंक्शनों में भी विभाजित कर सकते हैं। Flask प्रत्येक सामान्"
+"य HTTP मेथड के लिए ऐसे राउट्स को डेकोरेट करने के लिए :meth:`~flask.Flask.get`, "
+":meth:`~flask.Flask.post` आदि का शॉर्टकट प्रदान करता है।"
 
 #: ../../project/docs/quickstart.rst:331
 #: 6b104b969468453db9dde902877a7576
 msgid "If ``GET`` is present, Flask automatically adds support for the ``HEAD`` method and handles ``HEAD`` requests according to the `HTTP RFC`_. Likewise, ``OPTIONS`` is automatically implemented for you."
 msgstr ""
+"यदि ``GET`` मौजूद है, तो Flask स्वचालित रूप से ``HEAD`` मेथड के लिए समर्थन जोड़ता है और "
+"``HEAD`` रिक्वेस्ट्स को `HTTP RFC`_ के अनुसार संभालता है। इसी तरह, ``OPTIONS`` भी आपके लिए "
+"स्वचालित रूप से लागू कर दिया जाता है।"
 
 #: ../../project/docs/quickstart.rst:338
 #: 5b1adc0a2b194e35bc0977c5bf28a221
 msgid "Static Files"
-msgstr ""
+msgstr "स्टैटिक फाइल्स"
 
 #: ../../project/docs/quickstart.rst:340
 #: b8aeff8562be496c999d208752cebc3b
 msgid "Dynamic web applications also need static files.  That's usually where the CSS and JavaScript files are coming from.  Ideally your web server is configured to serve them for you, but during development Flask can do that as well.  Just create a folder called :file:`static` in your package or next to your module and it will be available at ``/static`` on the application."
 msgstr ""
+"डायनामिक वेब एप्लिकेशन को स्टैटिक फ़ाइलों की भी आवश्यकता होती है। आमतौर पर, CSS और JavaScript फ़ाइलें यहीं"
+" से आती हैं। आदर्श रूप से, आपका वेब सर्वर इन्हें आपके लिए सर्व करने के लिए कॉन्फ़िगर किया गया होता है, लेकि"
+"न डॅवलपमेंट के दौरान Flask यह भी कर सकता है। बस अपने पैकेज में या अपने मॉड्यूल के पास "
+":file:`static` नामक एक फ़ोल्डर बनाएं और यह एप्लिकेशन में ``/static`` पर उपलब्ध हो जाएगा।"
 
 #: ../../project/docs/quickstart.rst:346
 #: b2ff85243bca4b199efce4c5f3a2910e
 msgid "To generate URLs for static files, use the special ``'static'`` endpoint name::"
 msgstr ""
+"स्टैटिक फ़ाइलों के लिए URLs उत्पन्न करने के लिए, विशेष ``'static'`` एंडपॉइंट नाम का उपयोग करें::"
 
 #: ../../project/docs/quickstart.rst:350
 #: e777693155da432ca1ae17df3166716a
 msgid "The file has to be stored on the filesystem as :file:`static/style.css`."
 msgstr ""
+"फ़ाइल को फ़ाइल सिस्टम पर :file:`static/style.css` के रूप में स्टोर किया जाना चाहिए।"
 
 #: ../../project/docs/quickstart.rst:353
 #: 4e4f12c1dc0543569fa3126eb2b55ea9
 msgid "Rendering Templates"
-msgstr ""
+msgstr "टेम्प्लेट रेंडर करना"
 
 #: ../../project/docs/quickstart.rst:355
 #: 09b6de77ee174edc9eefb58e81931718
