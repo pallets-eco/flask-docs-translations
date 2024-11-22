@@ -8,55 +8,70 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:34-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-11-22 05:36+0000\n"
+"Last-Translator: Soham <sohamjobanputra7@gmail.com>\n"
+"Language-Team: Hindi <https://hosted.weblate.org/projects/flask/index/hi/>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: ../../project/docs/index.rst:4
 #: f94f2c6827a64b17828681c4fc140c6f
 msgid "Welcome to Flask"
-msgstr ""
+msgstr "Flask में स्वागत है"
 
 #: ../../project/docs/index.rst:9
 #: 6b50595b230d4db5a7d62a0e2f863891
 msgid "Welcome to Flask's project project documentation. Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications."
 msgstr ""
+"Flask के प्रलेखन में आपका स्वागत है। Flask एक सरल WSGI वॅब एप्लिकेशन तंत्र है। यह तेज़ और आसान "
+"शुरुआत के लिए रचा गया है, साथ ही जटिल एप्लिकेशन्स को बढ़ावा प्रदान करता है।"
 
 #: ../../project/docs/index.rst:13
 #: f16aa3c71dd64d79bbc3e33f67f5df60
 msgid "Get started with :doc:`installation` and then get an overview with the :doc:`quickstart`. There is also a more detailed :doc:`tutorial/index` that shows how to create a small but complete application with Flask. Common patterns are described in the :doc:`patterns/index` section. The rest of the docs describe each component of Flask in detail, with a full reference in the :doc:`api` section."
 msgstr ""
+":doc:`संस्थापन <installation>` से शुरुआत करें और फिर :doc:`त्वरित शुरुआत <quickstart>` का "
+"निरीक्षण करें। यहाँ एक अधिक विस्तृत :doc:`ट्यूटोरियल <tutorial/index>` भी है जो दिखाता है कि Flask के"
+" साथ एक छोटा लेकिन पूर्ण एप्लिकेशन कैसे बनाया जाए। आम कार्यप्रणालीयों को :doc:`Flask की कार्यप्रणालीयों <"
+"patterns/index>` वाले अनुभाग में वर्णित किया गया है। बाकी का प्रलेखन Flask के प्रत्येक घटक का विस्तार "
+"से वर्णन करता हैं, और :doc:`api` अनुभाग में पूरा संदर्भ दिया गया है।"
 
 #: ../../project/docs/index.rst:21
 #: 1c2294972ca34082a357b6fdf146ebe9
 msgid "Flask depends on the `Werkzeug`_ WSGI toolkit, the `Jinja`_ template engine, and the `Click`_ CLI toolkit. Be sure to check their documentation as well as Flask's when looking for information."
 msgstr ""
+"Flask `Werkzeug`_WSGI टूलकिट पर आधारित है, `Jinja`_ टॅम्प्लेट इंजन, और `Click`_CLI "
+"टूलकिट। उनका और Flask का प्रलेखन जानकारी पाने के लिए जरूर देखें।"
 
 #: ../../project/docs/index.rst:31
 #: 1f0282600a7240b7b291e14265b4dccc
 msgid "User's Guide"
-msgstr ""
+msgstr "उपयोगकर्ता मार्गदर्शीका"
 
 #: ../../project/docs/index.rst:33
 #: c4f24f028d754d2b88ade797da1e04bd
 msgid "Flask provides configuration and conventions, with sensible defaults, to get started. This section of the documentation explains the different parts of the Flask framework and how they can be used, customized, and extended. Beyond Flask itself, look for community-maintained extensions to add even more functionality."
 msgstr ""
+"Flask कॉन्फ़िगरेशन और प्रथा प्रदान करता है, साथ में शुरुआत करने के लिए अनुभूत डिफोल्ट्झ। प्रलेखन का यह "
+"अनुभाग Flask तंत्र के विभिन्न घटको और वपराश, कस्टमाइज़ेशन और ॲक्सटेन्ड करना समझाता है। Flask के अलावा"
+", अत्यधिक फंक्शनालिटी जुटाने के लिए कॉम्युनिटी अनुरक्षित ॲक्सटेन्शन्स को देखें।"
 
 #: ../../project/docs/index.rst:67
 #: 2a541c28296d40bea2f93fcfabc5bb86
 msgid "API Reference"
-msgstr ""
+msgstr "API संदर्भ"
 
 #: ../../project/docs/index.rst:69
 #: 9950e85ee4084d0facdbee67b79e6596
 msgid "If you are looking for information on a specific function, class or method, this part of the documentation is for you."
 msgstr ""
+"यदि आप किसी विशिष्ट फ़ंक्शन, क्लास या मेथड की जानकारी खोज रहे हैं, तो प्रलेखन का यह भाग आपके लिए है।"
 
 #: ../../project/docs/index.rst:79
 #: 17afd5d710844ac59a81fce8eaba3b22
 msgid "Additional Notes"
-msgstr ""
+msgstr "अतिरिक्ति टिप्पणी"
