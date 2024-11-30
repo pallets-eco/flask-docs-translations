@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2024-05-20 19:37-0400\n"
+"PO-Revision-Date: 2024-11-30 02:00+0000\n"
 "Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/flask/"
+"tutorialinstall/es/>\n"
 "Language: es\n"
-"Language-Team: ES\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/tutorial/install.rst:2 1901b4d9c96543ff90db0fa9ca78a0d3
@@ -92,14 +94,13 @@ msgid "``pyproject.toml``"
 msgstr "``pyproject.toml``"
 
 #: ../../project/docs/tutorial/install.rst:47 19b9aaceda5d4dada2031dd68bd9242c
-#, fuzzy
 msgid ""
 "See the official `Packaging tutorial <packaging tutorial_>`_ for more "
 "explanation of the files and options used."
 msgstr ""
-"Consulte el `tutorial oficial de empaquetado <packaging tutorial_>`_ y la"
-" `guía detallada <packaging guide_>`_ para obtener más explicaciones "
-"sobre los archivos y las opciones utilizadas."
+"Consulte el tutorial oficial `Tutorial de empaquetado <packaging tutorial_>`"
+"_ para obtener más explicaciones sobre los archivos y las opciones "
+"utilizadas."
 
 #: ../../project/docs/tutorial/install.rst:54 abcedc200b834e55a8ed51069672b962
 msgid "Install the Project"
@@ -169,4 +170,3 @@ msgstr "Continúe con :doc:`tests`."
 #~ "``static`` y ``templates``, y el archivo"
 #~ " ``schema.sql``, pero que excluya todos "
 #~ "los archivos de código de bytes."
-
