@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2022-07-13 17:42-0400\n"
+"PO-Revision-Date: 2024-12-01 11:00+0000\n"
 "Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/flask/changes/es/"
+">\n"
 "Language: es\n"
-"Language-Team: ES\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/changes.rst:2 6c654bc202cc487ba62c2cb0ffa3b2e5
@@ -23,35 +25,33 @@ msgid "Changes"
 msgstr "Cambios"
 
 #: ../../project/CHANGES.rst:2 9d08fe7d70ce4f8ba8c7bdec202ac16f
-#, fuzzy
 msgid "Version 3.1.0"
-msgstr "Versión 2.0.0"
+msgstr "Versión 3.1.0"
 
 #: ../../project/CHANGES.rst:4 69aa06e9859144d984e24e75967ccf35
-#, fuzzy
 msgid "Released 2024-11-13"
-msgstr "Publicado el 2022-02-14"
+msgstr "Publicado el 13-11-2024"
 
 #: ../../project/CHANGES.rst:6 348b349e18c14d1d9df992d45c50753e
-#, fuzzy
 msgid "Drop support for Python 3.8. :pr:`5623`"
-msgstr "Deja de ser compatible con Python 3.6. :pr:`4335`"
+msgstr "Deja de ser compatible con Python 3.8. :pr:`5623`"
 
 #: ../../project/CHANGES.rst:7 e420e61fceda4b4395d63b9e1e6b60a2
-#, fuzzy
 msgid ""
 "Update minimum dependency versions to latest feature releases. Werkzeug "
 ">= 3.1, ItsDangerous >= 2.2, Blinker >= 1.9. :pr:`5624,5633`"
 msgstr ""
-"Aumenta las versiones mínimas de las dependencias a las últimas versiones"
-" estables: Werkzeug >= 0.14, Jinja >= 2.10, itsdangerous >= 0.24, Click "
-">= 5.1. :issue:`2586`"
+"Actualiza las versiones de dependencia mínima a las últimas versiones de "
+"características. Werkzeug >= 3.1, ItsDangerous >= 2.2, Blinker >= 1.9. "
+":pr:`5624,5633`"
 
 #: ../../project/CHANGES.rst:9 933352aabc8d440d8ea22ac552d38bd4
 msgid ""
 "Provide a configuration option to control automatic option responses. "
 ":pr:`5496`"
 msgstr ""
+"Proporciona una opción de configuración para controlar las respuestas "
+"automáticas de las opciones. :pr:`5496`"
 
 #: ../../project/CHANGES.rst:11 d3ecae35a99143d3bf82898a993f5a9f
 msgid ""
@@ -59,6 +59,9 @@ msgid ""
 "``Blueprint.open_resource`` take an ``encoding`` parameter to use when "
 "opening in text mode. It defaults to ``utf-8``. :issue:`5504`"
 msgstr ""
+"``Flask.open_resource``/`open_instance_resource`` y ``Blueprint."
+"open_resource`` toman un parámetro ``encoding`` para usarlo al abrir en modo "
+"texto. Por defecto es ``utf-8``. :issue:`5504`"
 
 #: ../../project/CHANGES.rst:14 2fe7052517ae4a8a818216eca2e4049c
 msgid ""
@@ -67,12 +70,19 @@ msgid ""
 "``MAX_FORM_MEMORY_SIZE`` and ``MAX_FORM_PARTS`` config. Added "
 "documentation about resource limits to the security page. :issue:`5625`"
 msgstr ""
+"``Request.max_content_length`` se puede personalizar por petición en lugar "
+"de sólo a través de la ``MAX_CONTENT_LENGTH`` config. Añadida la "
+"configuración ``MAX_FORM_MEMORY_SIZE`` y ``MAX_FORM_PARTS``. Añadida "
+"documentación sobre límites de recursos a la página de seguridad. "
+":issue:`5625`"
 
 #: ../../project/CHANGES.rst:18 b83b13ef1e7840f7b2f3224bd4294ebd
 msgid ""
 "Add support for the ``Partitioned`` cookie attribute (CHIPS), with the "
 "``SESSION_COOKIE_PARTITIONED`` config. :issue:`5472`"
 msgstr ""
+"Añadir soporte para el atributo ``Partitioned`` cookie (CHIPS), con la "
+"configuración ``SESSION_COOKIE_PARTITIONED``. :issue:`5472`?"
 
 #: ../../project/CHANGES.rst:20 39a370bdc5ed412a8b23a2b9b2c76bfa
 msgid ""
@@ -4661,4 +4671,3 @@ msgstr "Primer lanzamiento público."
 
 #~ msgid "Correct type for ``path`` argument to ``send_file``. :issue:`5230`"
 #~ msgstr ""
-
