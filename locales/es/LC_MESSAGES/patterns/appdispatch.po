@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2022-02-15 21:58-0400\n"
+"PO-Revision-Date: 2024-11-30 02:00+0000\n"
 "Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/flask/"
+"patternsappdispatch/es/>\n"
 "Language: es\n"
-"Language-Team: ES\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/patterns/appdispatch.rst:2
@@ -60,18 +62,16 @@ msgstr "Trabajar con este documento"
 
 #: ../../project/docs/patterns/appdispatch.rst:20
 #: 3371acd72cdd48e6a73e392c52d997e2
-#, fuzzy
 msgid ""
 "Each of the techniques and examples below results in an ``application`` "
 "object that can be run with any WSGI server. For development, use the "
 "``flask run`` command to start a development server. For production, see "
 ":doc:`/deploying/index`."
 msgstr ""
-"Cada una de las técnicas y ejemplos que aparecen a continuación dan como "
-"resultado un objeto ``aplicación`` que puede ejecutarse con cualquier "
-"servidor WSGI. Para producción, vea :doc:`/deploying/index`. Para "
-"desarrollo, Werkzeug proporciona un servidor a través de "
-":func:`werkzeug.serving.run_simple`::"
+"Cada una de las técnicas y ejemplos siguientes da como resultado un objeto "
+"``application`` que puede ejecutarse con cualquier servidor WSGI. Para "
+"desarrollo, utilice el comando ``flask run`` para iniciar un servidor de "
+"desarrollo. Para producción, véase :doc:`/deploying/index`."
 
 #: ../../project/docs/patterns/appdispatch.rst:37
 #: 83892e688fc74e93bd937b86213cd856
@@ -97,13 +97,12 @@ msgstr ""
 
 #: ../../project/docs/patterns/appdispatch.rst:46
 #: ae21b661cc47493888cf9fa6b81d94af
-#, fuzzy
 msgid ""
 "For example you could have your main application run on ``/`` and your "
 "backend interface on ``/backend``."
 msgstr ""
-"Por ejemplo, podrías tener tu aplicación principal ejecutada en ``/`` y "
-"tu interfaz backend en ``/backend``::"
+"Por ejemplo, podrías tener tu aplicación principal en ``/`` y tu interfaz "
+"backend en ``/backend``."
 
 #: ../../project/docs/patterns/appdispatch.rst:61
 #: 55913b1a4cfe49e18e5e7850ded3b211
@@ -147,23 +146,21 @@ msgstr ""
 
 #: ../../project/docs/patterns/appdispatch.rst:77
 #: bed155f66212489e8f9f9b65e8870948
-#, fuzzy
 msgid ""
 "The perfect level for abstraction in that regard is the WSGI layer.  You "
 "write your own WSGI application that looks at the request that comes and "
 "delegates it to your Flask application.  If that application does not "
 "exist yet, it is dynamically created and remembered."
 msgstr ""
-"El nivel perfecto de abstracción en ese sentido es la capa WSGI. Escribes"
-" tu propia aplicación WSGI que mira la petición que llega y la delega a "
-"tu aplicación Flask. Si esa aplicación no existe todavía, se crea "
-"dinámicamente y se recuerda::"
+"El nivel perfecto para la abstracción en ese sentido es la capa WSGI.  "
+"Escribes tu propia aplicación WSGI que mira la petición que llega y la "
+"delega a tu aplicación Flask.  Si esa aplicación no existe todavía, se crea "
+"dinámicamente y se recuerda."
 
 #: ../../project/docs/patterns/appdispatch.rst:110
 #: 74a7bb7e4deb479e8393aef23afcd793
-#, fuzzy
 msgid "This dispatcher can then be used like this:"
-msgstr "Este despachador puede usarse así::"
+msgstr "Este despachador se puede utilizar así:"
 
 #: ../../project/docs/patterns/appdispatch.rst:134
 #: eae4569c0ce04fbc8cb2532482560395
@@ -172,26 +169,24 @@ msgstr "Despacho por Ruta"
 
 #: ../../project/docs/patterns/appdispatch.rst:136
 #: fda76640a4464b19924403cf0b9485ba
-#, fuzzy
 msgid ""
 "Dispatching by a path on the URL is very similar.  Instead of looking at "
 "the ``Host`` header to figure out the subdomain one simply looks at the "
 "request path up to the first slash."
 msgstr ""
-"La distribución por una ruta en la URL es muy similar. En lugar de mirar "
-"la cabecera ``Host`` para averiguar el subdominio simplemente se mira la "
-"ruta de la petición hasta la primera barra::"
+"El envío por una ruta en la URL es muy similar.  En lugar de mirar la "
+"cabecera ``Host`` para averiguar el subdominio, simplemente se mira la ruta "
+"de la petición hasta la primera barra."
 
 #: ../../project/docs/patterns/appdispatch.rst:177
 #: 043c8e7cf9b842408fb19caf98474100
-#, fuzzy
 msgid ""
 "The big difference between this and the subdomain one is that this one "
 "falls back to another application if the creator function returns "
 "``None``."
 msgstr ""
-"La gran diferencia entre ésta y la del subdominio es que ésta retrocede a"
-" otra aplicación si la función del creador devuelve ``None``::"
+"La gran diferencia entre éste y el de subdominio es que éste se devuelve a "
+"otra aplicación si la función creadora devuelve ``None``."
 
 #~ msgid ""
 #~ "Note that :func:`run_simple "
@@ -221,4 +216,3 @@ msgstr ""
 #~ "el ejemplo de \"hola mundo\" con "
 #~ "depuración y :func:`run_simple "
 #~ "<werkzeug.serving.run_simple>`::"
-
