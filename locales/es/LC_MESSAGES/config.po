@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2022-07-13 17:35-0400\n"
+"PO-Revision-Date: 2024-11-30 02:00+0000\n"
 "Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/flask/config/es/>"
+"\n"
 "Language: es\n"
-"Language-Team: ES\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/config.rst:2 c5d0b3d8080e43468073b788676a564f
@@ -103,9 +105,14 @@ msgid ""
 "``flask run`` command. ``flask run`` will use the interactive debugger "
 "and reloader by default in debug mode."
 msgstr ""
+"El valor de configuración :data:`DEBUG` es especial porque puede comportarse "
+"de forma inconsistente si se cambia después de que la aplicación haya "
+"comenzado a configurarse. Para establecer el modo de depuración de forma "
+"fiable, utiliza la opción ``--debug`` en el comando ``flask`` o ``flask run``"
+". ``flask run`` utilizará el depurador interactivo y el recargador por "
+"defecto en modo depuración."
 
 #: ../../project/docs/config.rst:57 39e065ac2adc41668f1078583f6cff5e
-#, fuzzy
 msgid ""
 "Using the option is recommended. While it is possible to set "
 ":data:`DEBUG` in your config or code, this is strongly discouraged. It "
@@ -113,11 +120,10 @@ msgid ""
 "extensions may have already configured themselves based on a previous "
 "value."
 msgstr ""
-"Se recomienda utilizar las opciones o variables de entorno descritas "
-"anteriormente. Aunque es posible establecer :data:`ENV` y :data:`DEBUG` "
-"en su configuración o código, se desaconseja encarecidamente hacerlo. No "
-"pueden ser leídos antes por el comando ``flask``, y algunos sistemas o "
-"extensiones pueden haberse configurado ya en base a un valor anterior."
+"Se recomienda utilizar esta opción. Aunque es posible establecer "
+":data:`DEBUG` en su configuración o código, esto se desaconseja totalmente. "
+"El comando ``flask run`` no puede leerlo antes, y algunos sistemas o "
+"extensiones pueden haberse configurado ya basándose en un valor anterior."
 
 #: ../../project/docs/config.rst:64 31a6cb2ca4e3461e919f876cfc6642b8
 msgid "Builtin Configuration Values"
@@ -130,7 +136,6 @@ msgstr ""
 "Flask:"
 
 #: ../../project/docs/config.rst:70 0b7d38b48b15404f8cd2f0c0b9d9f3a3
-#, fuzzy
 msgid ""
 "Whether debug mode is enabled. When using ``flask run`` to start the "
 "development server, an interactive debugger will be shown for unhandled "
@@ -139,13 +144,12 @@ msgid ""
 " with the ``FLASK_DEBUG`` environment variable. It may not behave as "
 "expected if set in code."
 msgstr ""
-"Si el modo de depuración está activado. Cuando se utiliza ``flask run`` "
-"para iniciar el servidor de desarrollo, se mostrará un depurador "
-"interactivo para las excepciones no manejadas, y el servidor se recargará"
-" cuando el código cambie. El atributo :attr:`~flask.Flask.debug` se "
-"asigna a esta clave de configuración. Se activa cuando :data:`ENV` es "
-"``'development'`` y se anula con la variable de entorno ``FLASK_DEBUG``. "
-"Puede que no se comporte como se espera si se establece en el código."
+"Si el modo de depuración está habilitado. Cuando se usa ``flask run`` para "
+"iniciar el servidor de desarrollo, se mostrará un depurador interactivo para "
+"las excepciones no manejadas, y el servidor se recargará cuando cambie el "
+"código. El atributo :attr:`~flask.Flask.debug` se asigna a esta clave de "
+"configuración. Se establece con la variable de entorno ``FLASK_DEBUG``. "
+"Puede no comportarse como se espera si se establece en el código."
 
 #: ../../project/docs/config.rst:76 4cc8d8452eab45cd9cd302d102d36de4
 msgid "**Do not enable debug mode when deploying in production.**"
@@ -249,18 +253,26 @@ msgid ""
 "recent first. This allows a project to implement key rotation without "
 "invalidating active sessions or other recently-signed secrets."
 msgstr ""
+"Una lista de claves secretas antiguas que aún pueden utilizarse para "
+"desfirmar, la más reciente primero. Esto permite a un proyecto implementar "
+"la rotación de claves sin invalidar sesiones activas u otros secretos "
+"firmados recientemente."
 
 #: ../../project/docs/config.rst:134 6ca02089d43a46ee9a960223f2817c37
 msgid ""
 "Keys should be removed after an appropriate period of time, as checking "
 "each additional key adds some overhead."
 msgstr ""
+"Las claves deben eliminarse tras un periodo de tiempo adecuado, ya que "
+"comprobar cada clave adicional añade cierta sobrecarga."
 
 #: ../../project/docs/config.rst:137 e022dbd74c7242e48d9f71e1d5e069ad
 msgid ""
 "Flask's built-in secure cookie session supports this. Extensions that use"
 " :data:`SECRET_KEY` may not support this yet."
 msgstr ""
+"La sesión de cookie segura incorporada de Flask soporta esto. Las "
+"extensiones que usan :data:`SECRET_KEY` pueden no soportarlo todavía."
 
 #: ../../project/docs/config.rst:146 96c6fcbd383842ab97f040d67f3f79c1
 msgid ""
@@ -283,7 +295,7 @@ msgstr ""
 
 #: ../../project/docs/config.rst:157 288180cff46242daac266c4e14de80d0
 msgid "Not setting this value is more restricted and secure than setting it."
-msgstr ""
+msgstr "No fijar este valor es más restringido y seguro que fijarlo."
 
 #: ../../project/docs/config.rst:162 ba866c91cbb34b3f826c15cffe2bee82
 msgid ""
@@ -292,6 +304,11 @@ msgid ""
 "both in an undefined order. In that case, you may want to change "
 ":data:`SESSION_COOKIE_NAME` as well or otherwise invalidate old sessions."
 msgstr ""
+"Si esto se cambia después de que el navegador haya creado una cookie con una "
+"configuración, puede resultar en la creación de otra. Los navegadores pueden "
+"enviar ambas en un orden indefinido. En ese caso, es posible que desee "
+"cambiar :data:`SESSION_COOKIE_NAME` también o invalidar de otro modo las "
+"sesiones antiguas."
 
 #: ../../project/docs/config.rst:167 ce5224698e0f46b1af903ae83e769c1b
 msgid "Not set by default, does not fall back to ``SERVER_NAME``."
@@ -337,6 +354,10 @@ msgid ""
 "prevents third party cookies set in iframes from \"leaking\" between "
 "separate sites."
 msgstr ""
+"Los navegadores enviarán las cookies basándose en el dominio del documento "
+"de nivel superior, en lugar de basarse únicamente en el dominio del "
+"documento que establece la cookie. Esto evita que las cookies de terceros "
+"establecidas en iframes se \"filtren\" entre sitios distintos."
 
 #: ../../project/docs/config.rst:198 26714478aef0498fafc1d801e4ccd511
 msgid ""
@@ -344,12 +365,17 @@ msgid ""
 "so you need to mark your cookies partitioned if you expect them to work "
 "in such embedded situations."
 msgstr ""
+"Los navegadores están empezando a desautorizar las cookies de terceros no "
+"particionadas, por lo que deberá marcar sus cookies como particionadas si "
+"espera que funcionen en dichas situaciones de incrustación."
 
 #: ../../project/docs/config.rst:202 33641915928349d094a1bce482866179
 msgid ""
 "Enabling this implicitly enables :data:`SESSION_COOKIE_SECURE` as well, "
 "as it is only valid when served over HTTPS."
 msgstr ""
+"Habilitar esto implícitamente habilita :data:`SESSION_COOKIE_SECURE` "
+"también, ya que sólo es válido cuando se sirve a través de HTTPS."
 
 #: ../../project/docs/config.rst:211 4e1c58c193094b29b4ecd00aeb050027
 msgid ""
@@ -438,48 +464,56 @@ msgid ""
 "all hosts are valid. Each value is either an exact match, or can start "
 "with a dot ``.`` to match any subdomain."
 msgstr ""
+"Validar :attr:`.Request.host` y otros atributos que lo utilizan contra estos "
+"valores de confianza. Lanza un :exc:`~werkzeug.exceptions.SecurityError` si "
+"el host no es válido, lo que resulta en un error 400. Si es ``None``, todos "
+"los hosts son válidos. Cada valor es una coincidencia exacta, o puede "
+"empezar con un punto ``.`` para coincidir con cualquier subdominio."
 
 #: ../../project/docs/config.rst:269 3b029d07737c4474bcc7875013b5aa48
 msgid ""
 "Validation is done during routing against this value. ``before_request`` "
 "and ``after_request`` callbacks will still be called."
 msgstr ""
+"La validación se realiza durante el enrutamiento contra este valor. Las "
+"llamadas de retorno ``before_request`` y ``after_request`` se seguirán "
+"realizando."
 
 #: ../../project/docs/config.rst:278 842666892c504f7fa6bf29ce61cde67a
-#, fuzzy
 msgid "Inform the application what host and port it is bound to."
-msgstr ""
-"Informa a la aplicación de a qué host y puerto está vinculada. Necesario "
-"para el soporte de coincidencia de rutas de subdominio."
+msgstr "Informa a la aplicación a qué host y puerto está vinculada."
 
 #: ../../project/docs/config.rst:280 8f145963bc8a4ee09030272e364b9667
 msgid ""
 "Must be set if ``subdomain_matching`` is enabled, to be able to extract "
 "the subdomain from the request."
 msgstr ""
+"Debe establecerse si ``subdomain_matching`` está activado, para poder "
+"extraer el subdominio de la petición."
 
 #: ../../project/docs/config.rst:283 1b1d2ffae91f4c0791bb4d5aca5dbc9f
-#, fuzzy
 msgid ""
 "Must be set for ``url_for`` to generate external URLs outside of a "
 "request context."
 msgstr ""
-"Utilice este esquema para generar URLs externas cuando no esté en un "
-"contexto de solicitud."
+"Debe establecerse para ``url_for`` para generar URLs externas fuera de un "
+"contexto de petición."
 
 #: ../../project/docs/config.rst:288 0bd6498cdadc4b8b8dadd385914186ea
 msgid ""
 "Does not restrict requests to only this domain, for both "
 "``subdomain_matching`` and ``host_matching``."
 msgstr ""
+"No restringe las peticiones sólo a este dominio, tanto para "
+"``subdomain_matching`` como para ``host_matching``."
 
 #: ../../project/docs/config.rst:295 5819cf19ba9d4f9a8f53adc0fe2617d1
 msgid "Does not affect ``SESSION_COOKIE_DOMAIN``."
-msgstr ""
+msgstr "No afecta a ``SESSION_COOKIE_DOMAIN``."
 
 #: ../../project/docs/config.rst:292 e38affa2fee7440498bf7305fefd9334
 msgid "Does not implicitly enable ``subdomain_matching``."
-msgstr ""
+msgstr "No habilita implícitamente ``subdomain_matching``."
 
 #: ../../project/docs/config.rst:300 d38be52495484e709dc4f13aa557dd31
 msgid ""
@@ -489,11 +523,11 @@ msgid ""
 "``SCRIPT_NAME`` instead; see :doc:`/patterns/appdispatch` for examples of"
 " dispatch configuration)."
 msgstr ""
-"Informa a la aplicación de la ruta en la que está montada por la "
-"aplicación/servidor web. Esto se utiliza para generar URLs fuera del "
-"contexto de una solicitud (dentro de una solicitud, el despachador es "
-"responsable de establecer ``SCRIPT_NAME`` en su lugar; ver "
-":doc:`/patterns/appdispatch` para ejemplos de configuración de despachos)"
+"Informa a la aplicación bajo qué ruta está montada por la aplicación / "
+"servidor web. Esto se utiliza para generar URLs fuera del contexto de una "
+"solicitud (dentro de una solicitud, el despachador es responsable de "
+"establecer ``SCRIPT_NAME`` en su lugar; ver :doc:`/patterns/appdispatch` "
+"para ejemplos de configuración de despacho)."
 
 #: ../../project/docs/config.rst:306 56e4b242ec8d454bbeffc4f5e85eba7b
 msgid ""
@@ -537,6 +571,10 @@ msgid ""
 "view. This should be set appropriately based on an application's or "
 "view's specific needs."
 msgstr ""
+"Cada solicitud tiene por defecto esta configuración. Puede establecerse en "
+"un :attr:`.Request.max_content_length` específico para aplicar el límite a "
+"esa vista concreta. Esto debe establecerse adecuadamente en función de las "
+"necesidades específicas de una aplicación o vista."
 
 #: ../../project/docs/config.rst:337 7d9ecbee10bf47c4934e38f35d2d33e3
 msgid ""
@@ -553,11 +591,14 @@ msgid ""
 "specific view. This should be set appropriately based on an application's"
 " or view's specific needs."
 msgstr ""
+"Cada solicitud tiene por defecto esta configuración. Puede establecerse en "
+"un :attr:`.Request.max_form_memory_parts` específico para aplicar el límite "
+"a esa vista concreta. Esto debe establecerse adecuadamente en función de las "
+"necesidades específicas de una aplicación o vista."
 
 #: ../../project/docs/config.rst:347 c2f114a987974ee5b4995e378a7e3028
-#, fuzzy
 msgid "Default: ``500_000``"
-msgstr "Por defecto: ``'/'``"
+msgstr "Por defecto: ``500_000``"
 
 #: ../../project/docs/config.rst:353 c364b87e16924f3e862cb3650529f6d4
 msgid ""
@@ -574,11 +615,14 @@ msgid ""
 " This should be set appropriately based on an application's or view's "
 "specific needs."
 msgstr ""
+"Cada solicitud tiene por defecto esta configuración. Puede establecerse en "
+"un :attr:`.Request.max_form_parts` específico para aplicar el límite a esa "
+"vista concreta. Esto debe establecerse adecuadamente en función de las "
+"necesidades específicas de una aplicación o vista."
 
 #: ../../project/docs/config.rst:363 ea6dc1964f514ff1b8e30cdd1954e2f8
-#, fuzzy
 msgid "Default: ``1_000``"
-msgstr "Por defecto: ``'/'``"
+msgstr "Por defecto: ``1_000``"
 
 #: ../../project/docs/config.rst:369 90e5c8c246da400e97a4278fdd28c1d5
 msgid ""
@@ -615,12 +659,17 @@ msgid ""
 "This can be overridden per route by altering the "
 "``provide_automatic_options`` attribute."
 msgstr ""
+"Establece ``False`` para deshabilitar la adición automática de respuestas "
+"OPTIONS. Se puede anular por ruta modificando el atributo "
+"``provide_automatic_options``."
 
 #: ../../project/docs/config.rst:445 1c7a096ecf2447fd8b48967191393bfe
 msgid ""
 "Added :data:`PROVIDE_AUTOMATIC_OPTIONS` to control the default addition "
 "of autogenerated OPTIONS responses."
 msgstr ""
+"Añadido :data:`PROVIDE_AUTOMATIC_OPTIONS` para controlar la adición por "
+"defecto de respuestas OPTIONS autogeneradas."
 
 #: ../../project/docs/config.rst:437 7108cab674524fce99ca4070690caefb
 msgid ""
@@ -628,10 +677,13 @@ msgid ""
 "``JSONIFY_PRETTYPRINT_REGULAR`` were removed. The default ``app.json`` "
 "provider has equivalent attributes instead."
 msgstr ""
+"Se han eliminado los atributos ``JSON_AS_ASCII``, ``JSON_SORT_KEYS``, "
+"``JSONIFY_MIMETYPE`` y ``JSONIFY_PRETTYPRINT_REGULAR``. El proveedor por "
+"defecto ``app.json`` tiene atributos equivalentes."
 
 #: ../../project/docs/config.rst:442 9ae95caee06641899231060e9a137842
 msgid "``ENV`` was removed."
-msgstr ""
+msgstr "Se ha eliminado ``ENV``."
 
 #: ../../project/docs/config.rst:434 cd84d1c5ee6a4e238c1954a1629d6a23
 msgid "Removed ``PRESERVE_CONTEXT_ON_EXCEPTION``."
@@ -716,11 +768,14 @@ msgid ""
 "your application, then separately configure it for the specific "
 "deployment."
 msgstr ""
+"La configuración resulta más útil si puede almacenarla en un archivo "
+"independiente, idealmente ubicado fuera del paquete de la aplicación real. "
+"Puedes desplegar tu aplicación y luego configurarla por separado para el "
+"despliegue específico."
 
 #: ../../project/docs/config.rst:457 3d28d280f59a4798bad5451d6e8a39a6
-#, fuzzy
 msgid "A common pattern is this::"
-msgstr "Así que un patrón común es este::"
+msgstr "Un patrón común es el siguiente::"
 
 #: ../../project/docs/config.rst:463 9b699e5e3f064fedae687c9d70b45391
 msgid ""
@@ -833,9 +888,8 @@ msgid ""
 "The variables can then be loaded and accessed via the config with a key "
 "equal to the environment variable name without the prefix i.e."
 msgstr ""
-"Las variables se pueden cargar y acceder a través de la configuración con"
-" una clave igual al nombre de la variable de entorno sin el prefijo, por "
-"ejemplo:"
+"Las variables se pueden cargar y acceder a través de la configuración con "
+"una clave igual al nombre de la variable de entorno sin el prefijo, es decir."
 
 #: ../../project/docs/config.rst:597 05d2170c3b5b4fc8b267a91e977aa211
 msgid ""
@@ -910,10 +964,10 @@ msgid ""
 "general, but there are a couple of things you can keep in mind to improve"
 " that experience:"
 msgstr ""
-"El inconveniente del enfoque mencionado anteriormente es que hace que las"
-" pruebas sean un poco más difíciles. No hay una solución única al 100% "
-"para este problema en general, pero hay un par de cosas que puedes tener "
-"en cuenta para mejorar esa experiencia:"
+"El inconveniente del planteamiento antes mencionado es que dificulta un poco "
+"las pruebas.  No existe una solución única al 100% para este problema en "
+"general, pero hay un par de cosas que puedes tener en cuenta para mejorar "
+"esa experiencia:"
 
 #: ../../project/docs/config.rst:639 d7144bc1c238450696b92315d01ff3f6
 msgid ""
@@ -1071,15 +1125,12 @@ msgstr ""
 "virtualenv y exporte la configuración de desarrollo por ti."
 
 #: ../../project/docs/config.rst:749 1838054835da4d2cb9a24e3be1703855
-#, fuzzy
 msgid ""
 "Use a tool like `fabric`_ to push code and configuration separately to "
 "the production server(s)."
 msgstr ""
-"Utiliza una herramienta como `fabric`_ en producción para enviar el "
-"código y las configuraciones por separado a los servidores de producción."
-" Para algunos detalles sobre cómo hacerlo, dirígete al patrón "
-":doc:`/patterns/fabric`."
+"Utilice una herramienta como `fabric`_ para enviar el código y la "
+"configuración por separado a los servidores de producción."
 
 #: ../../project/docs/config.rst:758 3d67dcb85ccb46f9b5e82471666e35ff
 msgid "Instance Folders"
@@ -1232,4 +1283,3 @@ msgstr "Ejemplo de uso de ambos::"
 #~ " y la solicitud no especifica un "
 #~ "``CONTENT_LENGTH``, no se leerá ningún "
 #~ "dato por seguridad."
-
