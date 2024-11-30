@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-09 22:02-0400\n"
-"PO-Revision-Date: 2022-07-12 14:19-0400\n"
+"PO-Revision-Date: 2024-12-01 11:00+0000\n"
 "Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
-"Language-Team: ES\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/flask/"
+"contributing/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 "Generated-By: Babel 2.10.1\n"
 
 #: ../../../CONTRIBUTING.rst:2
@@ -163,7 +165,7 @@ msgstr ""
 
 #: ../../../CONTRIBUTING.rst:71
 msgid "First time setup using GitHub Codespaces"
-msgstr ""
+msgstr "Configuración por primera vez utilizando GitHub Codespaces"
 
 #: ../../../CONTRIBUTING.rst:73
 msgid ""
@@ -172,6 +174,10 @@ msgid ""
 "but this can be changed in your GitHub profile settings to use Visual Studio"
 " Code or JetBrains PyCharm on your local computer."
 msgstr ""
+"`GitHub Codespaces`_ crea un entorno de desarrollo ya configurado para el "
+"proyecto. Por defecto se abre en Visual Studio Code para la Web, pero esto "
+"se puede cambiar en la configuración de tu perfil de GitHub para utilizar "
+"Visual Studio Code o JetBrains PyCharm en tu ordenador local."
 
 #: ../../../CONTRIBUTING.rst:78 ../../../CONTRIBUTING.rst:92
 msgid "Make sure you have a `GitHub account`_."
@@ -182,6 +188,8 @@ msgid ""
 "From the project's repository page, click the green \"Code\" button and then"
 " \"Create codespace on main\"."
 msgstr ""
+"En la página del repositorio del proyecto, haz clic en el botón verde "
+"\"Código\" y luego en \"Crear espacio de código en main\"."
 
 #: ../../../CONTRIBUTING.rst:81
 msgid ""
@@ -190,14 +198,18 @@ msgid ""
 "You'll know it's ready when the terminal at the bottom shows that the "
 "virtualenv was activated."
 msgstr ""
+"Se configurará el espacio de código y se abrirá Visual Studio Code. Sin "
+"embargo, tendrás que esperar un poco más para que se instale la extensión "
+"Python. Sabrás que está lista cuando el terminal en la parte inferior "
+"muestre que el virtualenv fue activado."
 
 #: ../../../CONTRIBUTING.rst:84
 msgid "Check out a branch and `start coding`_."
-msgstr ""
+msgstr "Comprueba una rama y `empieza a codificar`_."
 
 #: ../../../CONTRIBUTING.rst:90
 msgid "First time setup in your local environment"
-msgstr ""
+msgstr "Configuración por primera vez en su entorno local"
 
 #: ../../../CONTRIBUTING.rst:93
 msgid "Download and install the `latest version of git`_."
@@ -216,11 +228,12 @@ msgid ""
 "`Clone`_ your fork locally, replacing ``your-username`` in the command below"
 " with your actual username."
 msgstr ""
+"`Clona`_ tu fork localmente, sustituyendo ``tu-nombre-de-usuario`` en el "
+"comando de abajo por tu nombre de usuario real."
 
 #: ../../../CONTRIBUTING.rst:110
-#, fuzzy
 msgid "Create a virtualenv. Use the latest version of Python."
-msgstr "Descargue e instale la `última versión de git`_."
+msgstr "Crea un virtualenv. Utiliza la última versión de Python."
 
 #: ../../../CONTRIBUTING.rst:112
 msgid "Linux/macOS"
@@ -275,6 +288,8 @@ msgid ""
 "If you are in a codespace, you will be prompted to `create a fork`_ the "
 "first time you make a commit. Enter ``Y`` to continue."
 msgstr ""
+"Si estás en un espacio de código, se te pedirá `crear una bifurcación`_ la "
+"primera vez que hagas una confirmación. Introduce ``Y`` para continuar."
 
 #: ../../../CONTRIBUTING.rst:171
 msgid ""
@@ -286,18 +301,18 @@ msgstr ""
 "a continuación."
 
 #: ../../../CONTRIBUTING.rst:173
-#, fuzzy
 msgid ""
 "Push your commits to your fork on GitHub and `create a pull request`_. Link "
 "to the issue being addressed with ``fixes #123`` in the pull request "
 "description."
 msgstr ""
-"Empuja tus commits a tu fork en GitHub y `crea un pull request`_. Enlaza el "
-"problema que se está tratando con ``fixes #123`` en el pull request."
+"Sube tus commits a tu fork en GitHub y `crea un pull request`_. En la "
+"descripción del pull request, pon un enlace a la incidencia con ``fixes "
+"#123``."
 
 #: ../../../CONTRIBUTING.rst:187
 msgid "Running the tests"
-msgstr "Ejecución de las pruebas"
+msgstr "Ejecutar las pruebas"
 
 #: ../../../CONTRIBUTING.rst:189
 msgid "Run the basic test suite with pytest."
@@ -332,6 +347,8 @@ msgid ""
 "If you are using GitHub Codespaces, ``coverage`` is already installed so you"
 " can skip the installation command."
 msgstr ""
+"Si utilizas GitHub Codespaces, ``coverage`` ya está instalado, por lo que "
+"puedes omitir el comando de instalación."
 
 #: ../../../CONTRIBUTING.rst:221
 msgid "Open ``htmlcov/index.html`` in your browser to explore the report."
