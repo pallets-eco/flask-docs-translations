@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2024-05-10 19:48-0400\n"
+"PO-Revision-Date: 2024-11-30 02:00+0000\n"
 "Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/flask/quickstart/"
+"es/>\n"
 "Language: es\n"
-"Language-Team: ES\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/quickstart.rst:2 072c4cb240e240ee88d518604b3c098d
@@ -177,7 +179,7 @@ msgstr "Esto le dice a su sistema operativo que escuche en todas las IPs públic
 
 #: ../../project/docs/quickstart.rst:88 9cb26ee6c8e449aca7f1184b312b426e
 msgid "Debug Mode"
-msgstr "Modo de depuración"
+msgstr "Modo depuración"
 
 #: ../../project/docs/quickstart.rst:90 caa3121ac3e54402be2cb680649ecda5
 msgid ""
@@ -677,7 +679,6 @@ msgstr ""
 "cabecera, la navegación y el pie de página)."
 
 #: ../../project/docs/quickstart.rst:422 6d8dbc88b53c4561b67060e949704958
-#, fuzzy
 msgid ""
 "Automatic escaping is enabled, so if ``person`` contains HTML it will be "
 "escaped automatically.  If you can trust a variable and you know that it "
@@ -686,12 +687,12 @@ msgid ""
 ":class:`~markupsafe.Markup` class or by using the ``|safe`` filter in the"
 " template.  Head over to the Jinja 2 documentation for more examples."
 msgstr ""
-"El escape automático está activado, así que si ``name`` contiene HTML "
-"será escapado automáticamente. Si puedes confiar en una variable y sabes "
-"que será HTML seguro (por ejemplo, porque proviene de un módulo que "
-"convierte el marcado wiki en HTML) puedes marcarla como segura usando la "
-"clase :class:`~markupsafe.Markup` o usando el filtro ``|safe`` en la "
-"plantilla. Dirígete a la documentación de Jinja 2 para ver más ejemplos."
+"El escape automático está activado, así que si ``person`` contiene HTML será "
+"escapado automáticamente. Si puedes confiar en una variable y sabes que será "
+"HTML seguro (por ejemplo porque viene de un módulo que convierte el marcado "
+"wiki a HTML) puedes marcarla como segura usando la clase :class:`~markupsafe."
+"Markup` o usando el filtro ``|safe`` en la plantilla. Visita la "
+"documentación de Jinja 2 para ver más ejemplos."
 
 #: ../../project/docs/quickstart.rst:429 ada69b9b080a4cbdb54f030720af4b9c
 msgid ""
@@ -1407,4 +1408,3 @@ msgid "Ready to deploy your new Flask app? See :doc:`deploying/index`."
 msgstr ""
 "¿Listo para desplegar tu nueva aplicación Flask? Consulte "
 ":doc:`deploying/index`."
-
