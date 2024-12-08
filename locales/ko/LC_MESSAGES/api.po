@@ -3,25 +3,25 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-12-09 14:00+0000\n"
+"Last-Translator: jonghak <jonghak9028@gmail.com>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/flask/api/ko/>\n"
 "Language: ko\n"
-"Language-Team: ko <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.9-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/api.rst:2 84591d17c43147579d5eb589f573be7b
 msgid "API"
-msgstr ""
+msgstr "응용 프로그래밍 인터페이스"
 
 #: ../../project/docs/api.rst:6 012de3a87b8242bfb8c79703927d41b5
 msgid ""
@@ -29,10 +29,13 @@ msgid ""
 "parts where Flask depends on external libraries, we document the most "
 "important right here and provide links to the canonical documentation."
 msgstr ""
+"문서의 이 부분은 Flask의 모든 인터페이스를 다룹니다. Flask가 외부 "
+"라이브러리에 의존하는 부분에 대해서는 가장 중요한 내용을 여기에서 설명하고, "
+"공식 문서로 연결되는 링크를 제공합니다."
 
 #: ../../project/docs/api.rst:12 40a4a4243efc4f9696be423286c7c86d
 msgid "Application Object"
-msgstr ""
+msgstr "애플리케이션 객체"
 
 #: 9adb63f365864c068340387b49815eb3 flask.app.Flask:1 of
 msgid ""
@@ -41,6 +44,9 @@ msgid ""
 "application.  Once it is created it will act as a central registry for "
 "the view functions, the URL rules, template configuration and much more."
 msgstr ""
+"Flask 객체는 WSGI 애플리케이션을 구현하며 중앙 객체로 동작합니다. "
+"애플리케이션의 모듈 또는 패키지 이름이 전달됩니다. 생성된 후에는 뷰 함수, "
+"URL 규칙, 템플릿 구성 등을 위한 중앙 레지스트리 역할을 합니다."
 
 #: 12d83766a0a3478f8e1d4ff8256584a2 flask.app.Flask:6 of
 msgid ""
@@ -7584,4 +7590,3 @@ msgstr ""
 
 #~ msgid "``True`` if a file was loaded."
 #~ msgstr ""
-
