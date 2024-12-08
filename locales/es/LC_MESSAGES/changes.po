@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2024-12-01 11:00+0000\n"
+"PO-Revision-Date: 2024-12-09 14:00+0000\n"
 "Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/flask/changes/es/"
 ">\n"
@@ -90,6 +90,9 @@ msgid ""
 "files. ``load_dotenv`` loads default files in addition to a path unless "
 "``load_defaults=False`` is passed. :issue:`5628`"
 msgstr ""
+"``-e path`` tiene prioridad sobre los archivos por defecto ``.env`` y ``."
+"flaskenv``. ``load_dotenv`` carga los archivos por defecto además de una "
+"ruta a menos que se pase ``load_defaults=False``. :issue:`5628`"
 
 #: ../../project/CHANGES.rst:23 2857725883af4032a1c3fa588d87f572
 msgid ""
@@ -97,6 +100,9 @@ msgid ""
 "old secret keys that can still be used for unsigning. Extensions will "
 "need to add support. :issue:`5621`"
 msgstr ""
+"Admite la rotación de claves con la configuración ``SECRET_KEY_FALLBACKS``, "
+"una lista de claves secretas antiguas que aún pueden utilizarse para "
+"desfirmar. Las extensiones tendrán que añadir soporte. :issue:`5621`."
 
 #: ../../project/CHANGES.rst:26 abcb0d9e43ef4357a5f74cee87ad710e
 msgid ""
@@ -104,17 +110,22 @@ msgid ""
 "interacts with ``SERVER_NAME``. Setting ``SERVER_NAME`` no longer "
 "restricts requests to only that domain. :issue:`5553`"
 msgstr ""
+"Se ha corregido la interacción de ``host_matching=True`` o "
+"``subdomain_matching=False`` con ``SERVER_NAME``. Al establecer "
+"``SERVER_NAME``, ya no se restringen las peticiones únicamente a ese "
+"dominio. :issue:`5553`"
 
 #: ../../project/CHANGES.rst:29 2eaf45e1008e4f34b607888e46a95945
 msgid ""
 "``Request.trusted_hosts`` is checked during routing, and can be set "
 "through the ``TRUSTED_HOSTS`` config. :issue:`5636`"
 msgstr ""
+"Se comprueba ``Request.trusted_hosts`` durante el enrutamiento, y puede "
+"establecerse mediante la configuración ``TRUSTED_HOSTS``. :issue:`5636`"
 
 #: ../../project/CHANGES.rst:34 dc0139e82bbb4036a3ee281e06823288
-#, fuzzy
 msgid "Version 3.0.3"
-msgstr "Versión 2.0.3"
+msgstr "Versión 3.0.3"
 
 #: ../../project/CHANGES.rst:36 acc07933c53d41bb9343410d5b8fc4b4
 #, fuzzy
