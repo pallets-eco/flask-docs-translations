@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2024-12-14 18:01+0000\n"
+"Last-Translator: ZhiQing <qlear@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/cli/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.9-rc\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/cli.rst:4 d7c5656610504bd397a73b4cb1231778
 msgid "Command Line Interface"
-msgstr ""
+msgstr "命令行接口"
 
 #: ../../project/docs/cli.rst:6 3674eddf4e7f4af1ab0ca4951d9d8dd2
 msgid ""
@@ -29,10 +32,13 @@ msgid ""
 "The ``--help`` option will give more information about any commands and "
 "options."
 msgstr ""
+"安装 Flask 会在你的虚拟环境中安装 ``flask`` 脚本，一个 `Click`_ 命令行接口。"
+"在终端中执行这个脚本，可以访问内置、扩展和应用定义的命令。``--help`` "
+"选项会给出关于任何命令和选项的更多信息。"
 
 #: ../../project/docs/cli.rst:15 8a58be9d0ef14579bb008c7cdb54a56c
 msgid "Application Discovery"
-msgstr ""
+msgstr "应用发现"
 
 #: ../../project/docs/cli.rst:17 60e0a832e2dd41afb5cf189319aa9460
 msgid ""
@@ -40,17 +46,21 @@ msgid ""
 "must be told where to find your application in order to use it. The "
 "``--app`` option is used to specify how to load the application."
 msgstr ""
+"``flask`` 命令由 Flask "
+"安装，而不是你的应用；必须告诉它在哪里找到你的应用才能使用它。``--app`` "
+"选项用于指定如何加载应用。"
 
 #: ../../project/docs/cli.rst:21 7354e899483c4326bbceb36beabbf7c9
 msgid ""
 "While ``--app`` supports a variety of options for specifying your "
 "application, most use cases should be simple. Here are the typical "
 "values:"
-msgstr ""
+msgstr "虽然 ``--app`` "
+"支持多种选项来指定你的应用，但大多数用例应该是简单的。这里是典型的值："
 
 #: ../../project/docs/cli.rst:24 1d34c7613e4a456281f9c29dcb28133a
 msgid "(nothing)"
-msgstr ""
+msgstr "（无）"
 
 #: ../../project/docs/cli.rst:25 78226d8d0284494d944c95b5e43cce9c
 msgid ""
@@ -58,16 +68,21 @@ msgid ""
 " automatically detecting an app (``app`` or ``application``) or factory "
 "(``create_app`` or ``make_app``)."
 msgstr ""
+"导入名为 \"app\" 或 \"wsgi\" 的模块（作为 \".py\" "
+"文件或包），自动检测应用（``app`` 或 ``application``）或工厂（``create_app`` "
+"或 ``make_app``）。"
 
 #: ../../project/docs/cli.rst:29 13a02a61a89144cf93dff471c1d29d63
 msgid "``--app hello``"
-msgstr ""
+msgstr "``--app hello``"
 
 #: ../../project/docs/cli.rst:30 4d13d14d8c4f4e278107ad3488559196
 msgid ""
 "The given name is imported, automatically detecting an app (``app`` or "
 "``application``) or factory (``create_app`` or ``make_app``)."
 msgstr ""
+"导入给定的名称，自动检测应用（``app`` 或 "
+"``application``）或工厂（``create_app`` 或 ``make_app``）。"
 
 #: ../../project/docs/cli.rst:35 0902b5c1b9214743b99c5cda9d30f73f
 msgid ""
@@ -77,30 +92,33 @@ msgid ""
 "optionally be followed by arguments in parentheses. The following values "
 "demonstrate these parts:"
 msgstr ""
+"``--app`` 有三部分：一个可选的路径，用于设置当前工作目录，一个 Python 文件或"
+"点分隔的导入路径，以及一个实例或工厂的可选变量名。如果名称是一个工厂，它可以"
+"选择在括号中跟随参数。以下值演示了这些部分："
 
 #: ../../project/docs/cli.rst:41 b580dba2b2094823b98788470312a07b
 msgid "``--app src/hello``"
-msgstr ""
+msgstr "``--app src/hello``"
 
 #: ../../project/docs/cli.rst:42 0122a66601504108a621e039af63c9ee
 msgid "Sets the current working directory to ``src`` then imports ``hello``."
-msgstr ""
+msgstr "将当前工作目录设置为 ``src``，然后导入 ``hello``。"
 
 #: ../../project/docs/cli.rst:44 340d759df707487c8b66959ac0d9a08a
 msgid "``--app hello.web``"
-msgstr ""
+msgstr "``--app hello.web``"
 
 #: ../../project/docs/cli.rst:45 af565b9049da4fa2af4cd8215338ef93
 msgid "Imports the path ``hello.web``."
-msgstr ""
+msgstr "导入路径 ``hello.web``。"
 
 #: ../../project/docs/cli.rst:47 51a7876f46ce4791bdfb33ad253b5f83
 msgid "``--app hello:app2``"
-msgstr ""
+msgstr "``--app hello:app2``"
 
 #: ../../project/docs/cli.rst:48 b1b57b5ca5c04dde85b0c3054336dea7
 msgid "Uses the ``app2`` Flask instance in ``hello``."
-msgstr ""
+msgstr "在 ``hello`` 中使用 ``app2`` Flask 实例。"
 
 #: ../../project/docs/cli.rst:50 3f39c01d769c4425a94211d553c63137
 msgid "``--app 'hello:create_app(\"dev\")'``"
@@ -857,4 +875,3 @@ msgstr ""
 #~ " run a different CLI command, e.g."
 #~ " ``flask shell``."
 #~ msgstr ""
-
