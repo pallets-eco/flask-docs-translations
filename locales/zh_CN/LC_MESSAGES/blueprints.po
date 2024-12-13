@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Frost Ming <mianghong@gmail.com>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2024-12-14 18:01+0000\n"
+"Last-Translator: ZhiQing <qlear@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/blueprints/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.9-rc\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/blueprints.rst:2 7249f5d18f46429d8391ce8921fa56b4
@@ -194,7 +197,8 @@ msgstr "子蓝图的名称会以父蓝图的名称作为前缀，子蓝图的 UR
 msgid ""
 "In addition a child blueprint's will gain their parent's subdomain, with "
 "their subdomain as prefix if present i.e."
-msgstr ""
+msgstr "此外，子蓝图会继承父蓝图的子域名，如果存在子域名，则会以其子域名作为前缀，即"
+"："
 
 #: ../../project/docs/blueprints.rst:156 a4200eee2e6046b7a9aee869a9ca0b55
 msgid ""
@@ -423,4 +427,3 @@ msgstr ""
 #: ../../project/docs/blueprints.rst:315 a7afd8ba8dae45a89769cc92b7f62836
 msgid "See :doc:`/errorhandling`."
 msgstr "参见 :doc:`/errorhandling`。"
-
