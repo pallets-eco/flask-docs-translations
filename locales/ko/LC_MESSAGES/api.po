@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2024-12-09 14:00+0000\n"
+"PO-Revision-Date: 2024-12-20 06:23+0000\n"
 "Last-Translator: jonghak <jonghak9028@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/flask/api/ko/>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.9.2-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/api.rst:2 84591d17c43147579d5eb589f573be7b
@@ -44,9 +44,10 @@ msgid ""
 "application.  Once it is created it will act as a central registry for "
 "the view functions, the URL rules, template configuration and much more."
 msgstr ""
-"Flask 객체는 WSGI 애플리케이션을 구현하며 중앙 객체로 동작합니다. "
-"애플리케이션의 모듈 또는 패키지 이름이 전달됩니다. 생성된 후에는 뷰 함수, "
-"URL 규칙, 템플릿 구성 등을 위한 중앙 레지스트리 역할을 합니다."
+"Flask 객체는 WSGI 애플리케이션을 구현하며 중심 역할을 하는 객체입니다. 이 "
+"객체는 애플리케이션의 모듈 또는 패키지 이름을 전달받습니다. 생성된 이후에는 "
+"view 함수, URL 규칙, 템플릿 설정 등 다양한 요소를 위한 중앙 레지스트리로 "
+"작동합니다."
 
 #: 12d83766a0a3478f8e1d4ff8256584a2 flask.app.Flask:6 of
 msgid ""
@@ -56,20 +57,25 @@ msgid ""
 ":file:`__init__.py` file inside) or a standard module (just a ``.py`` "
 "file)."
 msgstr ""
+"패키지 이름은 해당 패키지가 실제 파이썬 패키지인지(내부에 :file:``__init__``"
+".py 파일이 있는 폴더) 아니면 일반 모듈인지(단순히 ``.py`` 파일인 경우)에 "
+"따라 패키지 내부 또는 모듈이 포함된 폴더에서 리소스를 확인하는 데 사용됩니다."
 
 #: b9f7ce5d3ac249d88e4497b62b85f80c flask.app.Flask:11 of
 msgid "For more information about resource loading, see :func:`open_resource`."
-msgstr ""
+msgstr "리소스 로드에 대한 자세한 내용은 :func: `open_resource`를 참조하세요."
 
 #: 936f015c8b7d4e2a870ce58b218924c6 flask.app.Flask:13 of
 msgid ""
 "Usually you create a :class:`Flask` instance in your main module or in "
 "the :file:`__init__.py` file of your package like this::"
 msgstr ""
+"일반적으로 다음과 같이 메인 모듈이나 패키지의 :file:`__init__.py` 파일에서 "
+":class:`Flask` 인스턴스를 생성합니다::"
 
 #: ed04515766d74e19a9c3b82e04b4a222 flask.app.Flask:19 of
 msgid "About the First Parameter"
-msgstr ""
+msgstr "첫 번째 파라미터에 대하여"
 
 #: cde1c7e8a694474d9c7b591e2ba91c41 flask.app.Flask:21 of
 msgid ""
@@ -78,6 +84,9 @@ msgid ""
 "filesystem, can be used by extensions to improve debugging information "
 "and a lot more."
 msgstr ""
+"첫 번째 파라미터의 목적은 Flask에 애플리케이션에 속하는 요소가 무엇인지 "
+"알려주는 것입니다. 이 이름은 파일 시스템에서 리소스를 찾는 데 사용되며, 확장 "
+"프로그램에서 디버깅 정보를 개선하거나 다양한 다른 용도로 활용될 수 있습니다."
 
 #: b21a95539ae54abb844747ddc3529aaf flask.app.Flask:26 of
 msgid ""
@@ -86,6 +95,9 @@ msgid ""
 " a package, it's usually recommended to hardcode the name of your package"
 " there."
 msgstr ""
+"따라서 여기에 어떤 값을 제공하는지가 중요합니다. 단일 모듈을 사용하는 "
+"경우에는 `__name__`이 항상 올바른 값입니다. 하지만 패키지를 사용하는 "
+"경우에는 패키지 이름을 직접 명시하는 것이 일반적으로 권장됩니다."
 
 #: ce720efee6894fbf9fbe1dc74036c1fb flask.app.Flask:31 of
 msgid ""
@@ -93,6 +105,8 @@ msgid ""
 ":file:`yourapplication/app.py` you should create it with one of the two "
 "versions below::"
 msgstr ""
+"예를 들어, 애플리케이션이 :file: `yourapplication/app.py`에 정의되어 있다면, "
+"아래 두 가지 버전 중 하나로 생성해야 합니다::"
 
 #: 9b63e9682bc744b48d477b88195faeb8 flask.app.Flask:37 of
 msgid ""
@@ -105,10 +119,17 @@ msgid ""
 "information is lost.  (For example it would only pick up SQL queries in "
 "`yourapplication.app` and not `yourapplication.views.frontend`)"
 msgstr ""
+"왜 그렇게 해야 할까요? 리소스를 조회하는 방식 덕분에 `__name__ `을 사용해도 "
+"애플리케이션은 동작합니다. 그러나 디버깅이 더 어려워질 수 있습니다. 일부 "
+"확장은 애플리케이션의 import 이름을 기반으로 동작을 가정합니다. 예를 들어, "
+"Flask-SQLAlchemy 확장은 디버그 모드에서 SQL 쿼리를 실행한 애플리케이션 "
+"코드를 찾으려고 합니다. 하지만 import 이름이 제대로 설정되지 않은 경우 해당 "
+"디버깅 정보가 손실됩니다. (예를들어, `yourapplication.app`에서는 SQL 쿼리를 "
+"추적할 수 있지만, `yourapplication.views.frontend`에서는 추적할 수 없습니다.)"
 
 #: bb788d742e684d71af2766657529365e flask.app.Flask:58 of
 msgid "The ``host_matching`` and ``static_host`` parameters were added."
-msgstr ""
+msgstr "``host_matching``및 `` static_host`` 매개변수가 추가되었습니다."
 
 #: c302dfae6c264a4d89022720784c9bbe flask.app.Flask:61 of
 msgid ""
@@ -116,20 +137,25 @@ msgid ""
 "to be enabled manually now. Setting :data:`SERVER_NAME` does not "
 "implicitly enable it."
 msgstr ""
+"` ` subdomain_matching `` 파라미터가 추가되었습니다. 이제 서브도메인 매칭은 "
+"수동으로 활성화해야 합니다. :data: ` SERVER_NAME `을 설정한다고 해서 "
+"자동으로 활성화되지는 않습니다."
 
 #: a7199deb9d3f4ed6a36d61ec06896a80 flask.app.Flask:55 of
 msgid "The `root_path` parameter was added."
-msgstr ""
+msgstr "` root_path ` 파라미터가 추가되었습니다."
 
 #: 536ba779b701434f9e6ea70f4305383a flask.app.Flask:51 of
 msgid "The `instance_path` and `instance_relative_config` parameters were added."
-msgstr ""
+msgstr "` instance_path ` 및 ` instance_relative_config ` 파라미터가 추가되었습니다."
 
 #: 887df21910044de394102b2eb1f5dc9f flask.app.Flask:47 of
 msgid ""
 "The `static_url_path`, `static_folder`, and `template_folder` parameters "
 "were added."
 msgstr ""
+"` static_url_path `, ` static_folder `, ` template_folder ` 파라미터가 "
+"추가되었습니다."
 
 #: ../../docstring ../../project/docs/api.rst 00d8d7c6e533428d9f194cff60143a3e
 #: 012676e99a5e4c3aa924bdd336b56901 040d092bd78a49fcae1ae2946735b809
@@ -287,17 +313,18 @@ msgstr ""
 #: flask.views.MethodView.dispatch_request of
 #: werkzeug.sansio.response.Response.set_etag
 msgid "Parameters"
-msgstr ""
+msgstr "파라미터"
 
 #: fa96b03fdf5d460e9250888721aa2629 flask.app.Flask:66 of
 msgid "the name of the application package"
-msgstr ""
+msgstr "애플리케이션 패키지의 이름"
 
 #: 7eca34b86c9a46b28999c88321a0451f flask.app.Flask:67 of
 msgid ""
 "can be used to specify a different path for the static files on the web."
 "  Defaults to the name of the `static_folder` folder."
-msgstr ""
+msgstr "웹에서 정적 파일의 경로를 다르게 지정하는 데 사용할 수 있습니다. 기본값은 "
+"`static_folder` 폴더의 이름입니다."
 
 #: 7c92665e2c7c4b47abb64caec7aec676 flask.app.Flask:70 of
 msgid ""
@@ -305,22 +332,29 @@ msgid ""
 "Relative to the application ``root_path`` or an absolute path. Defaults "
 "to ``'static'``."
 msgstr ""
+"`` static_url_path ``에서 제공되는 정적 파일이 포함된 폴더입니다. "
+"애플리케이션의 ``root_path ``를 기준으로 하거나 절대 경로를 사용할 수 "
+"있습니다. 기본값은 ``'static'``입니다."
 
 #: b6035cd6ebd84157a2f7e238f0d1d6e2 flask.app.Flask:73 of
 msgid ""
 "the host to use when adding the static route. Defaults to None. Required "
 "when using ``host_matching=True`` with a ``static_folder`` configured."
 msgstr ""
+"정적 라우트를 추가할 때 사용할 호스트입니다. 기본값은 "
+"None입니다.``host_matching=True``와 ``static_folder ``를 함께 설정할 때 "
+"필수로 지정해야 합니다."
 
 #: b6fd2b09d9c04bd99d689ab9018b6872 flask.app.Flask:76 of
 msgid "set ``url_map.host_matching`` attribute. Defaults to False."
-msgstr ""
+msgstr "``url_map.host_matching`` 속성을 설정합니다. 기본값은 False입니다."
 
 #: 944f99017c6c4b5fb83a5ef1c72bac01 flask.app.Flask:78 of
 msgid ""
 "consider the subdomain relative to :data:`SERVER_NAME` when matching "
 "routes. Defaults to False."
-msgstr ""
+msgstr "라우트를 매칭할 때 :data:`SERVER_NAME`을 기준으로 서브도메인을 고려합니다. "
+"기본값은 False입니다."
 
 #: e77b7a96dcb84957922a500374b87652 flask.app.Flask:80 of
 msgid ""
@@ -328,6 +362,8 @@ msgid ""
 "application.  Defaults to ``'templates'`` folder in the root path of the "
 "application."
 msgstr ""
+"애플리케이션에서 사용할 템플릿이 포함된 폴더입니다. 기본값은 애플리케이션의 "
+"루트 경로에 있는 ``'templates'`` 폴더입니다."
 
 #: 909bfb5766584286804887a2db5571e9 flask.app.Flask:84 of
 msgid ""
@@ -335,19 +371,23 @@ msgid ""
 "``'instance'`` next to the package or module is assumed to be the "
 "instance path."
 msgstr ""
+"애플리케이션의 대체 인스턴스 경로입니다. 기본값으로는 패키지나 모듈 옆에 "
+"위치한 ``'instance'`` 폴더가 인스턴스 경로로 간주됩니다."
 
 #: f473171271094b47b9e6e80ceba3dcb7 flask.app.Flask:88 of
 msgid ""
 "if set to ``True`` relative filenames for loading the config are assumed "
 "to be relative to the instance path instead of the application root."
-msgstr ""
+msgstr "``True``로 설정하면 구성 파일을 로드할 때 상대 경로가 애플리케이션 루트가 "
+"아닌 인스턴스 경로를 기준으로 간주됩니다."
 
 #: 01c907bb73f24163801a136eee64be86 flask.app.Flask:92 of
 msgid ""
 "The path to the root of the application files. This should only be set "
 "manually when it can't be detected automatically, such as for namespace "
 "packages."
-msgstr ""
+msgstr "애플리케이션 파일의 루트 경로입니다. 네임스페이스 패키지와 같이 자동으로 "
+"감지할 수 없는 경우에만 수동으로 설정해야 합니다."
 
 #: ../../docstring 315a450abbbb471e91d23e2901669834
 #: flask.Flask.session_interface:1 of
@@ -355,6 +395,9 @@ msgid ""
 "the session interface to use.  By default an instance of "
 ":class:`~flask.sessions.SecureCookieSessionInterface` is used here."
 msgstr ""
+"사용할 세션 인터페이스입니다. 기본값으로는 "
+":class:`~flask.sessions.SecureCookieSessionInterface`의 인스턴스가 "
+"사용됩니다."
 
 #: ../../docstring 8e5a1c7915e14ae8ba2483e58d677c8f
 #: a47145f97f8c4faeb22317c692ec9890 flask.Blueprint.cli:1 flask.Flask.cli:1 of
@@ -363,6 +406,9 @@ msgid ""
 " commands are available from the ``flask`` command once the application "
 "has been discovered and blueprints have been registered."
 msgstr ""
+"이 객체에 대한 CLI 명령을 등록하기 위한 Click 명령 그룹입니다. "
+"애플리케이션이 발견되고 블루프린트가 등록된 후에는 ``flask`` 명령을 통해 "
+"해당 명령을 사용할 수 있습니다."
 
 #: 07e01e206b514927958f61b634b94082 ded9bdd1a36e4bd388f3885cd6c10a36
 #: flask.app.Flask.get_send_file_max_age:1
@@ -371,6 +417,8 @@ msgid ""
 "Used by :func:`send_file` to determine the ``max_age`` cache value for a "
 "given file path if it wasn't passed."
 msgstr ""
+":func:`send_file`에서 주어진 파일 경로에 대해 ``max_age`` 캐시 값을 결정하는 "
+"데 사용됩니다. 해당 값이 전달되지 않은 경우 적용됩니다."
 
 #: 0468a34ae4b9477b99b1806b379d9a5c e306ef82affd415d92d39ce02d0210b5
 #: flask.app.Flask.get_send_file_max_age:4
@@ -381,6 +429,10 @@ msgid ""
 "which tells the browser to use conditional requests instead of a timed "
 "cache, which is usually preferable."
 msgstr ""
+"기본적으로, 이는 :data:`~flask.current_app`의 설정에서 "
+":data:`SEND_FILE_MAX_AGE_DEFAULT` 값을 반환합니다. 기본값은 ``None``이며, "
+"이는 브라우저가 시간 기반 캐시 대신 조건부 요청을 사용하도록 지시합니다. "
+"이는 일반적으로 더 바람직한 방식입니다."
 
 #: 0c401ed295a34f94917c620b631ead89 815cf87e8e3143ec9bacd1b52eed7664
 #: 86335385ed7847e4b5efaed64cd5438e fc930cd31dc1419b8ca741f192e517ee
@@ -388,13 +440,13 @@ msgstr ""
 #: flask.blueprints.Blueprint.get_send_file_max_age:9
 #: flask.blueprints.Blueprint.send_static_file:6 of
 msgid "Note this is a duplicate of the same method in the Flask class."
-msgstr ""
+msgstr "이 메서드는 Flask 클래스에 있는 동일한 메서드의 중복임을 유의하세요."
 
 #: 23e9bd47cc3640388d5d962dee4fbf39 7a2030a8391d481e9ee2275c5bd3b4fb
 #: flask.app.Flask.get_send_file_max_age:12
 #: flask.blueprints.Blueprint.get_send_file_max_age:12 of
 msgid "The default configuration is ``None`` instead of 12 hours."
-msgstr ""
+msgstr "기본 구성은 12시간 대신 ``None``입니다."
 
 #: ../../docstring ../../project/docs/api.rst 01408e3c5b5a4579b1f0246e02689f0c
 #: 016d3b6b70c54f629badc79ee748f229 02c1cd6883654abc8c0543253d997c89
@@ -563,7 +615,7 @@ msgstr ""
 #: werkzeug.wrappers.response.Response.calculate_content_length
 #: werkzeug.wrappers.response.Response.iter_encoded
 msgid "Return type"
-msgstr ""
+msgstr "반환 타입"
 
 #: 66554d3608bf427d82c2cd11d41021a9 a6bf3d3a5423436aa68fc02ec2c6a642
 #: flask.app.Flask.send_static_file:1
@@ -573,22 +625,27 @@ msgid ""
 " is automatically registered for this view at :attr:`static_url_path` if "
 ":attr:`static_folder` is set."
 msgstr ""
+":attr:`static_folder`에서 파일을 제공하는 데 사용되는 뷰 함수입니다. "
+":attr:`static_folder`가 설정되어 있으면 이 뷰에 대해 :attr:`static_url_path`"
+"에 자동으로 라우트가 등록됩니다."
 
 #: 553d187f8ef444b69b1a11ec1a453838 flask.app.Flask.open_resource:1 of
 msgid "Open a resource file relative to :attr:`root_path` for reading."
-msgstr ""
+msgstr ":attr:`root_path`를 기준으로 리소스 파일을 열어 읽습니다."
 
 #: 86ad171ed23b499ea7ead5d3f572d46f flask.app.Flask.open_resource:3 of
 msgid ""
 "For example, if the file ``schema.sql`` is next to the file ``app.py`` "
 "where the ``Flask`` app is defined, it can be opened with:"
 msgstr ""
+"예를 들어, ``Flask`` 애플리케이션이 정의된 ``app.py`` 파일 옆에 "
+"``schema.sql`` 파일이 있다면 다음과 같이 열 수 있습니다:"
 
 #: 03df730239f74b5198ce0d456f27218a 2854d1a4d5224f8ca1e22d7a609bbce7
 #: flask.app.Flask.open_resource:12 flask.blueprints.Blueprint.open_resource:5
 #: of
 msgid "Path to the resource relative to :attr:`root_path`."
-msgstr ""
+msgstr ":attr:`root_path`를 기준으로 한 리소스의 경로입니다."
 
 #: 36298e8b458543cdb4d61dc33b8a3d54 7f3bf49031454e2f804984edb5972375
 #: flask.app.Flask.open_resource:13 flask.blueprints.Blueprint.open_resource:6
@@ -597,6 +654,8 @@ msgid ""
 "Open the file in this mode. Only reading is supported, valid values are "
 "``\"r\"`` (or ``\"rt\"``) and ``\"rb\"``."
 msgstr ""
+"이 모드로 파일을 엽니다. 읽기 전용만 지원되며, 유효한 값은 ``\"r\"`` (또는 ``"
+"\"rt\"``)와 ``\"rb\"``입니다."
 
 #: 34af2675567f406eb79e9fc75d0c4ef1 8ca0e3c635854d8caa4e708f637d0daf
 #: fc8fd07694fa4bfa88f3c6559597046c flask.app.Flask.open_instance_resource:7
@@ -605,14 +664,15 @@ msgstr ""
 msgid ""
 "Open the file with this encoding when opening in text mode. This is "
 "ignored when opening in binary mode."
-msgstr ""
+msgstr "텍스트 모드로 파일을 열 때 사용할 인코딩입니다. 바이너리 모드로 열 경우에는 "
+"무시됩니다."
 
 #: 105e1068004644379693b0fbcf9ddce0 626e13e235ee49fb8077c3974c8338ee
 #: 833f3e5d4df44929bc5eddc3c32528b0 flask.app.Flask.open_instance_resource:10
 #: flask.app.Flask.open_resource:18 flask.blueprints.Blueprint.open_resource:11
 #: of
 msgid "Added the ``encoding`` parameter."
-msgstr ""
+msgstr "``encoding`` 파라미터가 추가되었습니다."
 
 #: d34a76e5238e4316bc35e12fd92650e9 flask.app.Flask.open_instance_resource:1 of
 msgid ""
@@ -620,14 +680,17 @@ msgid ""
 ":attr:`instance_path`. Unlike :meth:`open_resource`, files in the "
 "instance folder can be opened for writing."
 msgstr ""
+"애플리케이션의 인스턴스 폴더 :attr:`instance_path`를 기준으로 리소스 파일을 "
+"엽니다. :meth:`open_resource`와 달리, 인스턴스 폴더의 파일은 쓰기 모드로 열 "
+"수 있습니다."
 
 #: edd6743d9b76415584d38e96db53e413 flask.app.Flask.open_instance_resource:5 of
 msgid "Path to the resource relative to :attr:`instance_path`."
-msgstr ""
+msgstr ":attr:`instance_path`를 기준으로 한 리소스의 경로입니다."
 
 #: 638efa39fddc4597a3ba844d6e649f46 flask.app.Flask.open_instance_resource:6 of
 msgid "Open the file in this mode."
-msgstr ""
+msgstr "이 모드로 파일을 엽니다."
 
 #: de1ae59b8bee407fb1a117862cb539fb flask.app.Flask.create_jinja_environment:1
 #: of
@@ -637,13 +700,18 @@ msgid ""
 "after this will have no effect. Also adds Flask-related globals and "
 "filters to the environment."
 msgstr ""
+":attr:`jinja_options`와 애플리케이션의 다양한 Jinja 관련 메서드를 기반으로 "
+"Jinja 환경을 생성합니다. 이 작업 이후에 :attr:`jinja_options`를 변경해도 "
+"영향을 미치지 않습니다. 또한 환경에 Flask 관련 글로벌 변수와 필터를 "
+"추가합니다."
 
 #: f6c4988b23ee455eaadb54b042ae5c12 flask.app.Flask.create_jinja_environment:6
 #: of
 msgid ""
 "``Environment.auto_reload`` set in accordance with "
 "``TEMPLATES_AUTO_RELOAD`` configuration option."
-msgstr ""
+msgstr "``Environment.auto_reload``는 ``TEMPLATES_AUTO_RELOAD`` 구성 옵션에 따라 "
+"설정됩니다."
 
 #: e5ce5d39a7e24c6d9be082bc9faf29c4 flask.app.Flask.create_url_adapter:1 of
 msgid ""
@@ -651,24 +719,31 @@ msgid ""
 "at a point where the request context is not yet set up so the request is "
 "passed explicitly."
 msgstr ""
+"주어진 요청에 대해 URL 어댑터를 생성합니다. URL 어댑터는 요청 컨텍스트가 "
+"아직 설정되지 않은 시점에 생성되므로 요청이 명시적으로 전달됩니다."
 
 #: 91d9966d454a4ed0a1418a37c1405aca flask.app.Flask.create_url_adapter:5 of
 msgid ""
 "If :data:`SERVER_NAME` is set, it does not restrict requests to only that"
 " domain, for both ``subdomain_matching`` and ``host_matching``."
 msgstr ""
+":data:`SERVER_NAME`이 설정된 경우, ``subdomain_matching`` 및 "
+"``host_matching`` 모두 해당 도메인으로만 요청을 제한하지 않습니다."
 
 #: 1150b45ebd2b49ae9fcc634abe2a6ecb flask.app.Flask.create_url_adapter:10 of
 msgid ""
 ":data:`SERVER_NAME` no longer implicitly enables subdomain matching. Use "
 ":attr:`subdomain_matching` instead."
 msgstr ""
+":data:`SERVER_NAME`은 더 이상 서브 도메인 매칭을 암시적으로 활성화하지 "
+"않습니다. 대신 :attr:`subdomain_matching`을 사용하세요."
 
 #: 07159228b4dd41778723fb7476c93542 flask.app.Flask.create_url_adapter:14 of
 msgid ""
 "This can be called outside a request when the URL adapter is created for "
 "an application context."
-msgstr ""
+msgstr "이것은 URL 어댑터가 애플리케이션 컨텍스트를 위해 생성될 때 요청 외부에서도 "
+"호출할 수 있습니다."
 
 #: 9c93af9f60da4712ac56e191c33685fd flask.app.Flask.update_template_context:1
 #: of
@@ -680,23 +755,30 @@ msgid ""
 "overridden if a context processor decides to return a value with the same"
 " key."
 msgstr ""
+"템플릿 컨텍스트에 자주 사용되는 변수를 업데이트합니다. 이 작업은 request, "
+"session, config, g를 템플릿 컨텍스트에 추가하며, 템플릿 컨텍스트 프로세서가 "
+"추가하고자 하는 모든 값도 포함됩니다. Flask 0.6부터는 컨텍스트 프로세서가 "
+"동일한 키로 값을 반환하더라도 컨텍스트의 기존 값은 덮어쓰지 않는다는 점에 "
+"유의하세요."
 
 #: 083591645e6242c7be728604e231d974 flask.app.Flask.update_template_context:8
 #: of
 msgid ""
 "the context as a dictionary that is updated in place to add extra "
 "variables."
-msgstr ""
+msgstr "컨텍스트는 딕셔너리 형태로 제공되며, 여기에 추가 변수를 더해 실시간으로 "
+"업데이트됩니다."
 
 #: d4d711bda427450ab7979a7c5a98bf5c flask.app.Flask.make_shell_context:1 of
 msgid ""
 "Returns the shell context for an interactive shell for this application."
 "  This runs all the registered shell context processors."
-msgstr ""
+msgstr "이 애플리케이션을 위한 인터랙티브 셸의 컨텍스트를 반환합니다. 이 과정에서 "
+"등록된 모든 셸 컨텍스트 프로세서가 실행됩니다."
 
 #: d88bfa50562441629704bdcd277b5546 flask.app.Flask.run:1 of
 msgid "Runs the application on a local development server."
-msgstr ""
+msgstr "애플리케이션을 로컬 개발 서버에서 실행합니다."
 
 #: 013440040a7f48039f6e0671e2434a40 flask.app.Flask.run:3 of
 msgid ""
@@ -704,12 +786,17 @@ msgid ""
 "security and performance requirements for a production server. Instead, "
 "see :doc:`/deploying/index` for WSGI server recommendations."
 msgstr ""
+"``run()``은 프로덕션 환경에서 사용하지 마세요. 이 함수는 프로덕션 서버의 "
+"보안 및 성능 요구 사항을 충족하도록 설계되지 않았습니다. 대신, WSGI 서버에 "
+"대한 권장 사항은 :doc:`/deploying/index`를 참조하세요."
 
 #: a834455b2f104a9f929ffd41b4901d64 flask.app.Flask.run:7 of
 msgid ""
 "If the :attr:`debug` flag is set the server will automatically reload for"
 " code changes and show a debugger in case an exception happened."
 msgstr ""
+":attr:`debug` 플래그가 설정된 경우, 서버는 코드 변경 시 자동으로 다시 "
+"로드되며, 예외가 발생했을 때 디버거를 표시합니다."
 
 #: 79d1c36d8d754825be884aab95151cfc flask.app.Flask.run:10 of
 msgid ""
@@ -718,6 +805,10 @@ msgid ""
 "as parameter.  This will keep the debugger's traceback screen active, but"
 " disable code execution."
 msgstr ""
+"애플리케이션을 디버그 모드로 실행하되 인터랙티브 디버거에서 코드 실행을 "
+"비활성화하고 싶다면, 파라미터로 ``use_evalex=False``를 전달하면 됩니다. "
+"이렇게 하면 디버거의 트레이스백 화면은 활성 상태로 유지되지만 코드 실행은 "
+"비활성화됩니다."
 
 #: b1a5d1388f5b4dd2a97fb4ac7fb10032 flask.app.Flask.run:15 of
 msgid ""
@@ -725,10 +816,13 @@ msgid ""
 " reloading as this is badly supported.  Instead you should be using the "
 ":command:`flask` command line script's ``run`` support."
 msgstr ""
+"이 함수는 자동 재로딩이 제대로 지원되지 않기 때문에 개발 목적으로 사용하는 "
+"것이 권장되지 않습니다. 대신 :command:`flask` 명령줄 스크립트의 ``run`` "
+"기능을 사용하는 것이 좋습니다."
 
 #: 481578f939254bd8a1bc19d2c582097f flask.app.Flask.run:19 of
 msgid "Keep in Mind"
-msgstr ""
+msgstr "주의할 점"
 
 #: 8ab0317665ce49ed89f08fc3226c06c3 flask.app.Flask.run:21 of
 msgid ""
@@ -739,6 +833,11 @@ msgid ""
 "``True`` without being in debug mode won't catch any exceptions because "
 "there won't be any to catch."
 msgstr ""
+"Flask는 디버그 모드가 아닐 경우 일반적인 오류 페이지로 서버 오류를 숨깁니다. "
+"따라서 코드 재로딩 없이 인터랙티브 디버거만 활성화하려면, :meth:`run`을 "
+"호출할 때 ``debug=True``와 ``use_reloader=False``를 설정해야 합니다. 디버그 "
+"모드가 아닌 상태에서 ``use_debugger``를 ``True``로 설정하면 예외를 잡을 수 "
+"없습니다. 이는 디버거가 잡을 예외가 없기 때문입니다."
 
 #: 76a8eeafb3f74cbf94a3de04f7bb277b flask.app.Flask.run:29 of
 msgid ""
@@ -746,16 +845,22 @@ msgid ""
 "available externally as well. Defaults to ``'127.0.0.1'`` or the host in "
 "the ``SERVER_NAME`` config variable if present."
 msgstr ""
+"서버가 요청을 수신할 호스트 이름입니다. 외부에서도 서버에 접근 가능하도록 "
+"하려면 ``'0.0.0.0'``으로 설정하세요. 기본값은 ``'127.0.0.1'``이며, "
+"``SERVER_NAME`` 구성 변수에 호스트가 지정된 경우 해당 값을 사용합니다."
 
 #: 154c04ce65cb43d483817e3e42c6837b flask.app.Flask.run:33 of
 msgid ""
 "the port of the webserver. Defaults to ``5000`` or the port defined in "
 "the ``SERVER_NAME`` config variable if present."
 msgstr ""
+"웹 서버의 포트입니다. 기본값은 ``5000``이며, ``SERVER_NAME`` 구성 변수에 "
+"포트가 정의되어 있는 경우 해당 값을 사용합니다."
 
 #: 2d04be27bb2a4670bb6022ca2802d11f flask.app.Flask.run:35 of
 msgid "if given, enable or disable debug mode. See :attr:`debug`."
-msgstr ""
+msgstr "지정된 경우 디버그 모드를 활성화하거나 비활성화합니다. 자세한 내용은 "
+":attr:`debug`를 참조하세요."
 
 #: 981bbd4bfcc545678ec9a8dba933fa6a b4145cbaf3234f3585b6bba80f70e6d7
 #: flask.app.Flask.run:37 flask.cli.FlaskGroup:12 of
@@ -764,12 +869,17 @@ msgid ""
 "environment variables. Will also change the working directory to the "
 "directory containing the first file found."
 msgstr ""
+"가장 가까운 :file:`.env` 및 :file:`.flaskenv` 파일을 로드하여 환경 변수를 "
+"설정합니다. 또한, 첫 번째로 발견된 파일이 위치한 디렉터리로 작업 디렉터리를 "
+"변경합니다."
 
 #: 41fe9228d1fc48c4a29fb5d669ffe41c flask.app.Flask.run:40 of
 msgid ""
 "the options to be forwarded to the underlying Werkzeug server. See "
 ":func:`werkzeug.serving.run_simple` for more information."
 msgstr ""
+"기본 Werkzeug 서버에 전달될 옵션입니다. 자세한 내용은 "
+":func:`werkzeug.serving.run_simple`을 참조하세요."
 
 #: 30c696404374432596bd8844f2c3f593 be26c276c9f04626947d62803a740a5f
 #: flask.app.Flask.run:44 flask.cli.FlaskGroup:27 of
@@ -777,26 +887,30 @@ msgid ""
 "If installed, python-dotenv will be used to load environment variables "
 "from :file:`.env` and :file:`.flaskenv` files."
 msgstr ""
+"`python-dotenv`이 설치되어 있으면 :file:`.env` 및 :file:`.flaskenv` 파일에서 "
+"환경 변수를 로드하는 데 사용됩니다."
 
 #: be4b68fe110f4758aa99009c3c0e18f5 flask.app.Flask.run:48 of
 msgid ""
 "The :envvar:`FLASK_DEBUG` environment variable will override "
 ":attr:`debug`."
-msgstr ""
+msgstr ":envvar:`FLASK_DEBUG` 환경 변수는 :attr:`debug` 값을 덮어씁니다."
 
 #: ff032cfa4a0b40baa0a2d1cb6a54c812 flask.app.Flask.run:50 of
 msgid "Threaded mode is enabled by default."
-msgstr ""
+msgstr "스레드 모드는 기본적으로 활성화되어 있습니다."
 
 #: ca0cc28cd8804235b0742f81b1a26ff0 flask.app.Flask.run:52 of
 msgid "The default port is now picked from the ``SERVER_NAME`` variable."
-msgstr ""
+msgstr "기본 포트는 이제 ``SERVER_NAME`` 변수에서 선택됩니다."
 
 #: 183494bbbde04cb4aad3e48d35854e0d flask.app.Flask.test_client:1 of
 msgid ""
 "Creates a test client for this application.  For information about unit "
 "testing head over to :doc:`/testing`."
 msgstr ""
+"이 애플리케이션을 위한 테스트 클라이언트를 생성합니다. 단위 테스트에 대한 "
+"자세한 정보는 :doc:`/testing`를 참조하세요."
 
 #: 98bd7f765aa64e89b97e7303718ae220 flask.app.Flask.test_client:4 of
 msgid ""
@@ -808,6 +922,11 @@ msgid ""
 " status code response to the test client.  See the :attr:`testing` "
 "attribute.  For example::"
 msgstr ""
+"애플리케이션 코드에서 어설션이나 예외를 테스트하려면 app.testing = True로 "
+"설정해야 예외가 테스트 클라이언트로 전달됩니다. 그렇지 않으면 예외가 "
+"애플리케이션에서 처리되어 테스트 클라이언트에는 보이지 않으며, "
+"AssertionError나 다른 예외가 발생했다는 유일한 표시로 500 상태 코드 응답만 "
+"반환됩니다. 자세한 내용은 :attr:testing 속성을 참조하세요. 예를 들어::"
 
 #: 364261fcfef74217a622ba0951d2f752 flask.app.Flask.test_client:15 of
 msgid ""
@@ -815,6 +934,9 @@ msgid ""
 " of the context until the end of the ``with`` block.  This is useful if "
 "you want to access the context locals for testing::"
 msgstr ""
+"테스트 클라이언트는 with 블록 내에서 사용할 수 있으며, 블록이 끝날 때까지 "
+"컨텍스트 종료를 지연시킵니다. 이는 테스트를 위해 컨텍스트 로컬에 접근하려는 "
+"경우에 유용합니다::"
 
 #: 61f1bc1361b84e66b8fe0387d09e6f7e flask.app.Flask.test_client:23 of
 msgid ""
@@ -822,30 +944,37 @@ msgid ""
 "passed to the application's :attr:`test_client_class` constructor. For "
 "example::"
 msgstr ""
+"또한 선택적인 키워드 인수를 전달할 수 있으며, 이는 애플리케이션의 "
+":attr:`test_client_class` 생성자에 전달됩니다. 예를 들어::"
 
 #: de58eb7108ed45478cc69be5c88b7017 flask.app.Flask.test_client:37 of
 msgid "See :class:`~flask.testing.FlaskClient` for more information."
-msgstr ""
+msgstr "자세한 내용은 :class:`~flask.testing.FlaskClient`를 참조하세요."
 
 #: 3788b55a0f534eeda073b1ece90eb28b flask.app.Flask.test_client:47 of
 msgid ""
 "Added `**kwargs` to support passing additional keyword arguments to the "
 "constructor of :attr:`test_client_class`."
 msgstr ""
+"`**kwargs`가 추가되어 :attr:`test_client_class`의 생성자에 추가적인 키워드 "
+"인수를 전달할 수 있게 되었습니다."
 
 #: 93a46c6097d44f1187fe60f5cdb80a09 flask.app.Flask.test_client:42 of
 msgid ""
 "The `use_cookies` parameter was added as well as the ability to override "
 "the client to be used by setting the :attr:`test_client_class` attribute."
 msgstr ""
+"`use_cookies` 파라미터가 추가되었으며, :attr:`test_client_class` 속성을 "
+"설정하여 사용될 클라이언트를 재정의할 수 있는 기능이 추가되었습니다."
 
 #: 33eead4e05c44e0d9c5f4f239aafd494 flask.app.Flask.test_client:39 of
 msgid "added support for ``with`` block usage for the client."
-msgstr ""
+msgstr "클라이언트에서 ``with`` 블록 사용을 지원하게 되었습니다."
 
 #: 6f9125f7bad64f45be308e3722dbbc73 flask.app.Flask.test_cli_runner:1 of
 msgid "Create a CLI runner for testing CLI commands. See :ref:`testing-cli`."
-msgstr ""
+msgstr "CLI 명령어 테스트를 위한 CLI 러너를 생성합니다. 자세한 내용은 :ref:`testing-"
+"cli`를 참조하세요."
 
 #: e365ea6eeeca4ace993fff7d920e144e flask.app.Flask.test_cli_runner:4 of
 msgid ""
@@ -853,18 +982,24 @@ msgid ""
 ":class:`~flask.testing.FlaskCliRunner`. The Flask app object is passed as"
 " the first argument."
 msgstr ""
+"기본적으로 :class:`~flask.testing.FlaskCliRunner`인 "
+":attr:`test_cli_runner_class`의 인스턴스를 반환합니다. Flask 앱 객체는 첫 "
+"번째 인수로 전달됩니다."
 
 #: 1c135b119acc4146bcfc29cd5df258e8 flask.app.Flask.handle_http_exception:1 of
 msgid ""
 "Handles an HTTP exception.  By default this will invoke the registered "
 "error handlers and fall back to returning the exception as response."
-msgstr ""
+msgstr "HTTP 예외를 처리합니다. 기본적으로 등록된 오류 처리기를 호출하고, 예외를 "
+"응답으로 반환하는 방식으로 처리됩니다."
 
 #: bc3e9c634b3f4c7c90796280894a9062 flask.app.Flask.handle_http_exception:5 of
 msgid ""
 "``RoutingException``, used internally for actions such as  slash "
 "redirects during routing, is not passed to error  handlers."
 msgstr ""
+"``RoutingException``은 라우팅 중 슬래시 리다이렉션과 같은 작업에 내부적으로 "
+"사용되며, 오류 처리기로 전달되지 않습니다."
 
 #: 7384cb4d6a4b43fbb2a75475d6060cd1 flask.app.Flask.handle_http_exception:10 of
 msgid ""
@@ -872,6 +1007,9 @@ msgid ""
 "subclasses can be handled with a catch-all handler for the base "
 "``HTTPException``."
 msgstr ""
+"예외는 코드와 MRO(메서드 해석 순서)에 따라 조회되므로, ``HTTPException``의 "
+"서브클래스는 기본 ``HTTPException``에 대한 포괄적인 핸들러로 처리할 수 "
+"있습니다."
 
 #: 1559c41c1aea4c68a7f2dd8748a71ac9 flask.app.Flask.handle_user_exception:1 of
 msgid ""
@@ -881,12 +1019,18 @@ msgid ""
 "function will either return a response value or reraise the exception "
 "with the same traceback."
 msgstr ""
+"이 메서드는 처리해야 할 예외가 발생할 때마다 호출됩니다. 특별한 경우로는 "
+":class:`~werkzeug.exceptions.HTTPException`이 있으며, 이는 "
+":meth:`handle_http_exception` 메서드로 전달됩니다. 이 함수는 응답 값을 "
+"반환하거나 동일한 트레이스백을 가진 예외를 다시 발생시킵니다."
 
 #: 97e9168ae800407d805ca42283014b7a flask.app.Flask.handle_user_exception:8 of
 msgid ""
 "Key errors raised from request data like ``form`` show the bad key in "
 "debug mode rather than a generic bad request message."
 msgstr ""
+"``form``과 같은 요청 데이터에서 발생한 키 오류는 디버그 모드에서 일반적인 "
+"잘못된 요청 메시지 대신 잘못된 키를 표시합니다."
 
 #: 90fe742a767643b9a3df36ffa1d1b2ed flask.app.Flask.handle_exception:1 of
 msgid ""
@@ -894,10 +1038,12 @@ msgid ""
 "it, or that was raised from an error handler. This always causes a 500 "
 "``InternalServerError``."
 msgstr ""
+"오류 처리기와 연결되지 않았거나 오류 처리기에서 발생한 예외를 처리합니다. 이 "
+"경우 항상 500 ``InternalServerError``가 발생합니다."
 
 #: 7bb3141e0baf43b3b21277c933d783e4 flask.app.Flask.handle_exception:5 of
 msgid "Always sends the :data:`got_request_exception` signal."
-msgstr ""
+msgstr "항상 :data:`got_request_exception` 신호를 보냅니다."
 
 #: 59cb1460031b43dabae642bd7bbc387f flask.app.Flask.handle_exception:7 of
 msgid ""
@@ -906,6 +1052,10 @@ msgid ""
 "the original exception is logged, and an "
 ":exc:`~werkzeug.exceptions.InternalServerError` is returned."
 msgstr ""
+":data:`PROPAGATE_EXCEPTIONS`가 ``True``인 경우(예: 디버그 모드에서), 오류는 "
+"다시 발생하여 디버거가 이를 표시할 수 있게 됩니다. 그렇지 않으면 원래 예외가 "
+"로그에 기록되고, :exc:`~werkzeug.exceptions.InternalServerError`가 "
+"반환됩니다."
 
 #: 4b27837690594e49ab3d26ee7d5eb925 flask.app.Flask.handle_exception:12 of
 msgid ""
@@ -914,18 +1064,25 @@ msgid ""
 "``InternalServerError``. The original unhandled exception is available as"
 " ``e.original_exception``."
 msgstr ""
+"``InternalServerError`` 또는 ``500``에 대한 오류 처리기가 등록되어 있으면, "
+"해당 처리기가 사용됩니다. 일관성을 위해, 처리기는 항상 "
+"``InternalServerError``를 받게 됩니다. 원래 처리되지 않은 예외는 "
+"``e.original_exception``으로 접근할 수 있습니다."
 
 #: c4b74ab1ed4d4ceab4ba90f13a60eae6 flask.app.Flask.handle_exception:17 of
 msgid ""
 "Always passes the ``InternalServerError`` instance to the handler, "
 "setting ``original_exception`` to the unhandled error."
 msgstr ""
+"항상 ``InternalServerError`` 인스턴스를 처리기로 전달하며, "
+"``original_exception``을 처리되지 않은 오류로 설정합니다."
 
 #: 214d67f8652c499ba820c8d45d7e00d5 flask.app.Flask.handle_exception:22 of
 msgid ""
 "``after_request`` functions and other finalization is done even for the "
 "default 500 response when there is no handler."
-msgstr ""
+msgstr "``after_request`` 함수와 기타 마무리 작업은 오류 처리기가 없을 때 기본 500 "
+"응답에도 수행됩니다."
 
 #: 0b56d96e19904e959ea810a55e74ba33 flask.app.Flask.log_exception:1 of
 msgid ""
@@ -933,6 +1090,9 @@ msgid ""
 "debugging is disabled and right before the handler is called. The default"
 " implementation logs the exception as error on the :attr:`logger`."
 msgstr ""
+"예외를 로그에 기록합니다. 이는 디버깅이 비활성화된 상태에서 "
+":meth:`handle_exception`이 호출될 때, 그리고 오류 처리기가 호출되기 직전에 "
+"실행됩니다. 기본 구현은 예외를 :attr:`logger`에 오류로 기록합니다."
 
 #: 077bb3a8f57a45eb91695c5be353fcd8 flask.app.Flask.dispatch_request:1 of
 msgid ""
@@ -941,18 +1101,23 @@ msgid ""
 "object.  In order to convert the return value to a proper response "
 "object, call :func:`make_response`."
 msgstr ""
+"요청을 처리합니다. URL을 매칭하고 뷰 또는 오류 처리기의 반환 값을 "
+"반환합니다. 반환 값이 반드시 응답 객체일 필요는 없습니다. 반환 값을 적절한 "
+"응답 객체로 변환하려면 :func:`make_response`를 호출해야 합니다."
 
 #: 2c4709d9ab8f405fb4a8dbb79ffc5f80 flask.app.Flask.dispatch_request:6 of
 msgid ""
 "This no longer does the exception handling, this code was moved to the "
 "new :meth:`full_dispatch_request`."
-msgstr ""
+msgstr "이제 예외 처리를 수행하지 않습니다. 이 코드는 새로운 "
+":meth:`full_dispatch_request`로 이동되었습니다."
 
 #: baf9debfbb8844a3bb57cb2fed227b98 flask.app.Flask.full_dispatch_request:1 of
 msgid ""
 "Dispatches the request and on top of that performs request pre and "
 "postprocessing as well as HTTP exception catching and error handling."
-msgstr ""
+msgstr "요청을 처리하고, 그 위에 요청 전후 처리 및 HTTP 예외 처리와 오류 처리를 "
+"수행합니다."
 
 #: 3a817dcaa3a64002bf80f1ae4bc37d46 flask.app.Flask.finalize_request:1 of
 msgid ""
@@ -961,6 +1126,9 @@ msgid ""
 "  This is invoked for both normal request dispatching as well as error "
 "handlers."
 msgstr ""
+"뷰 함수에서 반환된 값을 바탕으로 요청을 최종 처리하여 응답으로 변환하고 "
+"후처리 함수를 호출합니다. 이는 일반적인 요청 처리와 오류 처리기 모두에 대해 "
+"호출됩니다."
 
 #: e327a91dc7b14f56a62eba7fb72d829c flask.app.Flask.finalize_request:6 of
 msgid ""
@@ -969,10 +1137,13 @@ msgid ""
 "`from_error_handler` flag.  If enabled, failures in response processing "
 "will be logged and otherwise ignored."
 msgstr ""
+"이것은 실패로 인해 호출될 수 있기 때문에, `from_error_handler` 플래그로 "
+"활성화할 수 있는 특별한 안전 모드가 제공됩니다. 이 모드가 활성화되면, 응답 "
+"처리 중 발생한 실패가 로그에 기록되고, 그 외의 실패는 무시됩니다."
 
 #: 2cdf755c912d4cd0b088aca3d67adb45 flask.app.Flask.finalize_request of
 msgid "internal"
-msgstr ""
+msgstr "내부"
 
 #: 81dcf7a073ba4dc989bb75ab5cbe8d32
 #: flask.app.Flask.make_default_options_response:1 of
@@ -981,6 +1152,8 @@ msgid ""
 "can be changed through subclassing to change the default behavior of "
 "``OPTIONS`` responses."
 msgstr ""
+"이 메서드는 기본 ``OPTIONS`` 응답을 생성하기 위해 호출됩니다. 이 동작은 "
+"서브클래싱을 통해 변경하여 ``OPTIONS`` 응답의 기본 동작을 수정할 수 있습니다."
 
 #: 4a73b003997a47beb96a57b675e64d35 flask.app.Flask.ensure_sync:1 of
 msgid ""
@@ -988,31 +1161,35 @@ msgid ""
 "functions are returned as-is. ``async def`` functions are wrapped to run "
 "and wait for the response."
 msgstr ""
+"이 함수가 WSGI 워커에 대해 동기식 함수임을 보장합니다. 일반 ``def`` 함수는 "
+"그대로 반환되며, ``async def`` 함수는 응답을 기다리도록 랩핑됩니다."
 
 #: b040a17ca08a43f9a7616ffff7c32740 flask.app.Flask.ensure_sync:5 of
 msgid "Override this method to change how the app runs async views."
-msgstr ""
+msgstr "이 메서드를 오버라이드하여 앱이 비동기 뷰를 실행하는 방식을 변경할 수 "
+"있습니다."
 
 #: 567bc8357d5f455094d2be1c49433247 flask.app.Flask.async_to_sync:1 of
 msgid "Return a sync function that will run the coroutine function."
-msgstr ""
+msgstr "코루틴 함수를 실행할 동기 함수를 반환합니다."
 
 #: 0423349801034c51856e93ccf9b0ab0c flask.app.Flask.async_to_sync:7 of
 msgid ""
 "Override this method to change how the app converts async code to be "
 "synchronously callable."
-msgstr ""
+msgstr "이 메서드를 오버라이드하여 앱이 비동기 코드를 동기적으로 호출할 수 있도록 "
+"변환하는 방식을 변경할 수 있습니다."
 
 #: 47a01b0de6f245738eb23aac2fcd39a4 bb88bb1640424e2c9a08441da50b6825
 #: flask.app.Flask.url_for:1 flask.helpers.url_for:1 of
 msgid "Generate a URL to the given endpoint with the given values."
-msgstr ""
+msgstr "주어진 엔드포인트와 값을 사용하여 URL을 생성합니다."
 
 #: 3f4f458123ad40218eacb97472246737 flask.app.Flask.url_for:3 of
 msgid ""
 "This is called by :func:`flask.url_for`, and can be called directly as "
 "well."
-msgstr ""
+msgstr "이 함수는 :func:`flask.url_for`에 의해 호출되며, 직접 호출할 수도 있습니다."
 
 #: 3e9a03ff9c784dd8bf2d9734dede2aab flask.app.Flask.url_for:6 of
 msgid ""
@@ -1021,6 +1198,10 @@ msgid ""
 "function. A route defined in a :class:`~flask.Blueprint` will prepend the"
 " blueprint's name separated by a ``.`` to the endpoint."
 msgstr ""
+"*엔드포인트*는 URL 규칙의 이름으로, 보통 :meth:`@app.route() <route>`로 "
+"추가되며, 일반적으로 뷰 함수의 이름과 같습니다. :class:`~flask.Blueprint`"
+"에서 정의된 라우트는 엔드포인트 앞에 블루프린트의 이름을 ``.``으로 구분하여 "
+"추가합니다."
 
 #: cd22e98840cc43c5b7e65a370b72b861 flask.app.Flask.url_for:12 of
 msgid ""
@@ -1032,12 +1213,19 @@ msgid ""
 "configured as needed. This config is only used when not in an active "
 "request."
 msgstr ""
+"일부 경우, 예를 들어 이메일 메시지에서는 URL에 스킴과 도메인이 포함되기를 "
+"원할 수 있습니다. 예를 들어 ``https://example.com/hello``와 같은 형식입니다. "
+"활성화된 요청이 아닐 경우, URL은 기본적으로 외부 URL로 처리되지만, Flask가 "
+"어떤 도메인을 사용할지 알 수 있도록 :data:`SERVER_NAME`을 설정해야 합니다. "
+"또한 :data:`APPLICATION_ROOT`와 :data:`PREFERRED_URL_SCHEME`도 필요에 따라 "
+"설정해야 합니다. 이 설정은 활성 요청이 아닐 때만 사용됩니다."
 
 #: 579799d0a2614c0fa452fb20e20a5c79 flask.app.Flask.url_for:20 of
 msgid ""
 "Functions can be decorated with :meth:`url_defaults` to modify keyword "
 "arguments before the URL is built."
-msgstr ""
+msgstr "함수는 :meth:`url_defaults`로 데코레이터를 적용하여 URL이 생성되기 전에 "
+"키워드 인수를 수정할 수 있습니다."
 
 #: 8755121a8d7d4561b283251e5a72e1e8 flask.app.Flask.url_for:23 of
 msgid ""
@@ -1046,6 +1234,10 @@ msgid ""
 "called. If that returns a string, that is returned, otherwise a "
 ":exc:`~werkzeug.routing.BuildError` is raised."
 msgstr ""
+"생성이 실패할 경우, 예를 들어 알 수 없는 엔드포인트나 잘못된 값이 주어졌을 "
+"때, 애플리케이션의 :meth:`handle_url_build_error` 메서드가 호출됩니다. "
+"메서드가 문자열을 반환하면 그 값이 반환되고, 그렇지 않으면 "
+":exc:`~werkzeug.routing.BuildError`가 발생합니다."
 
 #: 3f071613f92c4d81a11527c4eaeea95b be217bbc768a4cabaab75e8ceef6fb8d
 #: flask.app.Flask.url_for:28 flask.helpers.url_for:7 of
@@ -1053,21 +1245,23 @@ msgid ""
 "The endpoint name associated with the URL to generate. If this starts "
 "with a ``.``, the current blueprint name (if any) will be used."
 msgstr ""
+"생성할 URL과 연관된 엔드포인트 이름입니다. 만약 이 이름이 ``.``으로 "
+"시작하면, 현재 블루프린트 이름(있을 경우)이 사용됩니다."
 
 #: 019ad4672afa4e05b040fc65d4bee93a 19609a8847644a60901ed4258d8d0fd2
 #: flask.app.Flask.url_for:31 flask.helpers.url_for:10 of
 msgid "If given, append this as ``#anchor`` to the URL."
-msgstr ""
+msgstr "주어진 경우, 이를 ``#anchor`` 형태로 URL에 추가합니다."
 
 #: 8fa08813f1aa4a9a83f06123b1690248 f1a79d48ba6f405daf6403ce378f80d2
 #: flask.app.Flask.url_for:32 flask.helpers.url_for:11 of
 msgid "If given, generate the URL associated with this method for the endpoint."
-msgstr ""
+msgstr "주어진 경우, 이 메서드와 관련된 엔드포인트의 URL을 생성합니다."
 
 #: 1c2386cbd39b41019574e54646366c1d 80437a2ef92342199df412ff88c4161e
 #: flask.app.Flask.url_for:34 flask.helpers.url_for:13 of
 msgid "If given, the URL will have this scheme if it is external."
-msgstr ""
+msgstr "주어진 경우, 외부 URL일 경우 이 스킴이 URL에 적용됩니다."
 
 #: 431b840e92b54384a743f1bfc21ffca3 a0c8f5a91c9b475b961c172b2e18ffd0
 #: flask.app.Flask.url_for:36 flask.helpers.url_for:15 of
@@ -1076,6 +1270,9 @@ msgid ""
 "external (True). External URLs include the scheme and domain. When not in"
 " an active request, URLs are external by default."
 msgstr ""
+"주어진 경우, URL이 내부 URL로 설정될지(False) 또는 외부 URL로 설정될지(True)"
+"를 선호합니다. 외부 URL은 스킴과 도메인을 포함합니다. 활성 요청이 아닐 때는 "
+"기본적으로 URL이 외부 URL로 처리됩니다."
 
 #: 1d53be6578c84b6ea16b662f081b22fb 76180cd0f445458caa7c2657aa4419bf
 #: flask.app.Flask.url_for:40 flask.helpers.url_for:19 of
@@ -1083,16 +1280,19 @@ msgid ""
 "Values to use for the variable parts of the URL rule. Unknown keys are "
 "appended as query string arguments, like ``?a=b&c=d``."
 msgstr ""
+"URL 규칙의 변수 부분에 사용할 값들입니다. 알 수 없는 키는 쿼리 문자열 인수로 "
+"추가되며, 예를 들어 ``?a=b&c=d``와 같은 형식이 됩니다."
 
 #: 3721401527ae42b3a1c698977a30de77 flask.app.Flask.url_for:44 of
 msgid "Moved from ``flask.url_for``, which calls this method."
-msgstr ""
+msgstr "이 메서드는 ``flask.url_for``에서 이동된 것으로, ``flask.url_for``가 이 "
+"메서드를 호출합니다."
 
 #: ab75c173d39248d0a7525edd8368e526 flask.app.Flask.make_response:1 of
 msgid ""
 "Convert the return value from a view function to an instance of "
 ":attr:`response_class`."
-msgstr ""
+msgstr "뷰 함수의 반환 값을 :attr:`response_class`의 인스턴스로 변환합니다."
 
 #: b70363664e1446e88c9982fde5ed72b3 flask.app.Flask.make_response:4 of
 msgid ""
@@ -1116,6 +1316,22 @@ msgid ""
 ":func:`callable`     The function is called as a WSGI application. The "
 "result is     used to create a response object."
 msgstr ""
+"뷰 함수의 반환 값은 응답이어야 합니다. 반환 값이 ``None``이거나 뷰 함수가 "
+"반환 없이 끝나는 것은 허용되지 않습니다. ``view_rv``에 허용되는 유형은 "
+"다음과 같습니다: ``str``은 문자열이 UTF-8로 인코딩되어 본문으로 사용된 응답 "
+"객체가 생성됩니다. ``bytes``는 바이트가 본문으로 사용된 응답 객체가 "
+"생성됩니다. ``dict``는 반환 전에 JSON으로 변환되는 딕셔너리입니다. ``list``"
+"는 반환 전에 JSON으로 변환되는 리스트입니다. ``generator`` 또는 ``iterator``"
+"는 ``str`` 또는 ``bytes``를 반환하여 스트리밍 응답으로 사용되는 "
+"제너레이터입니다. ``tuple``은 ``(body, status, headers)``, ``(body, status)``"
+", 또는 ``(body, headers)`` 형식으로, 여기서 ``body``는 위에서 허용된 다른 "
+"유형 중 하나, ``status``는 문자열 또는 정수, ``headers``는 딕셔너리 또는 ``("
+"key, value)`` 튜플의 리스트입니다. 만약 ``body``가 :attr:`response_class` "
+"인스턴스이면, ``status``는 기존 값을 덮어쓰고 ``headers``는 확장됩니다. "
+":attr:`response_class`는 객체가 변경되지 않고 그대로 반환됩니다. 다른 "
+":class:`~werkzeug.wrappers.Response` 클래스는 객체가 :attr:`response_class`"
+"로 강제 변환됩니다. :func:`callable`은 함수가 WSGI 애플리케이션으로 호출되어 "
+"그 결과가 응답 객체를 생성하는 데 사용됩니다."
 
 #: 389d275569d7464ebfaf871d73f42646 flask.app.Flask.make_response:4 of
 msgid ""
@@ -1123,52 +1339,56 @@ msgid ""
 "response. Returning ``None``, or the view ending without returning, is "
 "not allowed. The following types are allowed for ``view_rv``:"
 msgstr ""
+"뷰 함수의 반환 값입니다. 뷰 함수는 반드시 응답을 반환해야 합니다. ``None``을 "
+"반환하거나 반환 없이 뷰 함수가 종료되는 것은 허용되지 않습니다. ``view_rv``"
+"에 허용되는 유형은 다음과 같습니다:"
 
 #: 5a6149b6119c4a1295bd7a7fe608fc25 flask.app.Flask.make_response:9 of
 msgid "``str``"
-msgstr ""
+msgstr "``str``"
 
 #: 7e2c7fec987d40f0aac450cda89ebd81 flask.app.Flask.make_response:10 of
 msgid "A response object is created with the string encoded to UTF-8 as the body."
-msgstr ""
+msgstr "응답 객체는 문자열을 UTF-8로 인코딩하여 본문으로 생성됩니다."
 
 #: 9313fbaa37aa461faed82865e175e608 flask.app.Flask.make_response:13 of
 msgid "``bytes``"
-msgstr ""
+msgstr "``bytes``"
 
 #: 7578ef68dbd24bd390d12b54afca3c78 flask.app.Flask.make_response:14 of
 msgid "A response object is created with the bytes as the body."
-msgstr ""
+msgstr "응답 객체는 바이트 데이터를 본문으로 생성합니다."
 
 #: 7ca627149c1540df82e60a4b015a2717 flask.app.Flask.make_response:16 of
 msgid "``dict``"
-msgstr ""
+msgstr "``dict``"
 
 #: 476c1c23fe654c8797f2e7e24b355942 flask.app.Flask.make_response:17 of
 msgid "A dictionary that will be jsonify'd before being returned."
-msgstr ""
+msgstr "반환되기 전에 JSON으로 변환되는 딕셔너리입니다."
 
 #: d84727946fe4406090cd3c98fca387c5 flask.app.Flask.make_response:19 of
 msgid "``list``"
-msgstr ""
+msgstr "``list``"
 
 #: 327ea47a8b344ba8ad84eeb2562b9cde flask.app.Flask.make_response:20 of
 msgid "A list that will be jsonify'd before being returned."
-msgstr ""
+msgstr "반환되기 전에 JSON으로 변환되는 리스트입니다."
 
 #: ddfef3508f594bcbbf3f1c43311c4412 flask.app.Flask.make_response:22 of
 msgid "``generator`` or ``iterator``"
-msgstr ""
+msgstr "``제너레이터`` 또는 ``이터레이터``"
 
 #: 97ecf97318094e0189f505d96c2ba8d7 flask.app.Flask.make_response:23 of
 msgid ""
 "A generator that returns ``str`` or ``bytes`` to be streamed as the "
 "response."
-msgstr ""
+msgstr "응답으로 스트리밍하기 위해 ``str`` 또는 ``bytes``를 반환하는 "
+"제너레이터입니다."
 
 #: 663e8d49bb3e40288320ea18dd4eb215 flask.app.Flask.make_response:26 of
 msgid "``tuple``"
-msgstr ""
+msgstr "``tuple``"
 
 #: a4bc2d628feb4a4c85c7eb9802f7c9ea flask.app.Flask.make_response:27 of
 msgid ""
@@ -1179,48 +1399,54 @@ msgid ""
 ":attr:`response_class` instance, ``status`` overwrites the exiting value "
 "and ``headers`` are extended."
 msgstr ""
+"``(body, status, headers)``, ``(body, status)``, 또는 ``(body, headers)`` "
+"형식으로, 여기서 ``body``는 이곳에서 허용된 다른 유형 중 하나이며, ``status``"
+"는 문자열 또는 정수, ``headers``는 딕셔너리 또는 ``(key, value)`` 튜플의 "
+"리스트입니다. 만약 ``body``가 :attr:`response_class` 인스턴스라면, ``status``"
+"는 기존 값을 덮어쓰고, ``headers``는 확장됩니다."
 
 #: eb95392039f84b1087ffe338545b0778 flask.app.Flask.make_response:35 of
 msgid ":attr:`response_class`"
-msgstr ""
+msgstr ":attr:`response_class`"
 
 #: 0b070731b26442029cc1a6342b9df2b7 flask.app.Flask.make_response:36 of
 msgid "The object is returned unchanged."
-msgstr ""
+msgstr "객체는 변경되지 않고 그대로 반환됩니다."
 
 #: ca56cd929cd04ae7ae7af17aa80cea6b flask.app.Flask.make_response:38 of
 msgid "other :class:`~werkzeug.wrappers.Response` class"
-msgstr ""
+msgstr "다른 :class:`~werkzeug.wrappers.Response` 클래스"
 
 #: 2112b63736014a31bd6bac70b0a8e8c4 flask.app.Flask.make_response:39 of
 msgid "The object is coerced to :attr:`response_class`."
-msgstr ""
+msgstr "객체는 :attr:`response_class`로 변환됩니다."
 
 #: c35b779e228142808db66f2a385afb43 flask.app.Flask.make_response:41 of
 msgid ":func:`callable`"
-msgstr ""
+msgstr ":func:`callable`"
 
 #: 97bfed50217f4ff68afbf522646b113c flask.app.Flask.make_response:42 of
 msgid ""
 "The function is called as a WSGI application. The result is used to "
 "create a response object."
-msgstr ""
+msgstr "함수는 WSGI 애플리케이션으로 호출되며, 그 결과는 응답 객체를 생성하는 데 "
+"사용됩니다."
 
 #: f190f1fc90e642df87100217ebbf878d flask.app.Flask.make_response:45 of
 msgid ""
 "A generator will be converted to a streaming response. A list will be "
 "converted to a JSON response."
-msgstr ""
+msgstr "제너레이터는 스트리밍 응답으로 변환되며, 리스트는 JSON 응답으로 변환됩니다."
 
 #: 2c491f6af0974514b88a9c89b605e47f flask.app.Flask.make_response:49 of
 msgid "A dict will be converted to a JSON response."
-msgstr ""
+msgstr "딕셔너리는 JSON 응답으로 변환됩니다."
 
 #: 9fc929fa94da426b8a35ed86f9741052 flask.app.Flask.make_response:52 of
 msgid ""
 "Previously a tuple was interpreted as the arguments for the response "
 "object."
-msgstr ""
+msgstr "이전에 튜플은 응답 객체의 인수로 해석되었습니다."
 
 #: d973fee46d544bc3b88ec83416617577 flask.app.Flask.preprocess_request:1 of
 msgid ""
@@ -1229,6 +1455,9 @@ msgid ""
 "blueprint (if any). Then calls :attr:`before_request_funcs` registered "
 "with the app and the blueprint."
 msgstr ""
+"요청이 디스패치되기 전에 호출됩니다. 애플리케이션과 현재 블루프린트(있는 "
+"경우)에 등록된 :attr:`url_value_preprocessors`를 호출한 후, 애플리케이션과 "
+"블루프린트에 등록된 :attr:`before_request_funcs`를 호출합니다."
 
 #: 356b1c8ceb6e4563bc55acba5a406675 flask.app.Flask.preprocess_request:6 of
 msgid ""
@@ -1236,6 +1465,8 @@ msgid ""
 " is handled as if it was the return value from the view, and further "
 "request handling is stopped."
 msgstr ""
+":meth:`before_request` 핸들러 중 하나가 ``None``이 아닌 값을 반환하면, 해당 "
+"값은 뷰 함수의 반환 값처럼 처리되며, 이후 요청 처리는 중단됩니다."
 
 #: 246fb385cd9d41a38ce40bd132d7d1f8 flask.app.Flask.process_response:1 of
 msgid ""
@@ -1243,16 +1474,20 @@ msgid ""
 " to the WSGI server.  By default this will call all the "
 ":meth:`after_request` decorated functions."
 msgstr ""
+"응답 객체가 WSGI 서버로 전달되기 전에 수정하려면 이 메서드를 오버라이드할 수 "
+"있습니다. 기본적으로, 이 메서드는 모든 :meth:`after_request` 데코레이터가 "
+"적용된 함수를 호출합니다."
 
 #: 7cbe3ea37bce4aa0b1f5aac7377d14da flask.app.Flask.process_response:5 of
 msgid ""
 "As of Flask 0.5 the functions registered for after request execution are "
 "called in reverse order of registration."
-msgstr ""
+msgstr "Flask 0.5부터 요청 후 실행을 위해 등록된 함수들은 등록된 순서의 역순으로 "
+"호출됩니다."
 
 #: bfbb0fed600e4b4380ab7baf99422606 flask.app.Flask.process_response:9 of
 msgid "a :attr:`response_class` object."
-msgstr ""
+msgstr ":attr:`response_class` 객체."
 
 #: ../../project/docs/api.rst 08ccf9af0a3b4427b1429a719047641a
 #: 13690c76f53245e6be5d24b3422bb19c 215269961c9b44bdab717663499b6cce
@@ -1263,19 +1498,21 @@ msgstr ""
 #: b5f498f0ecbe47b89321638571efb473 d37f2def1aba44249805a17cdd7973c1
 #: fd665573ca854b2f9a8e6a25b7cb7f46
 msgid "Returns"
-msgstr ""
+msgstr "반환값"
 
 #: 727eab8b478744dfae9ca7c5073346c8 flask.app.Flask.process_response:10 of
 msgid ""
 "a new response object or the same, has to be an instance of "
 ":attr:`response_class`."
-msgstr ""
+msgstr "새로운 응답 객체 또는 동일한 객체를 반환하며, 반드시 :attr:`response_class`"
+"의 인스턴스여야 합니다."
 
 #: e2bdcf2a2bfb4a6b85f7726bfeda6464 flask.app.Flask.do_teardown_request:1 of
 msgid ""
 "Called after the request is dispatched and the response is returned, "
 "right before the request context is popped."
-msgstr ""
+msgstr "요청이 디스패치되고 응답이 반환된 후, 요청 컨텍스트가 제거되기 직전에 "
+"호출됩니다."
 
 #: eb3a19bb057e463a877030fe888880fc flask.app.Flask.do_teardown_request:4 of
 msgid ""
@@ -1283,6 +1520,9 @@ msgid ""
 ":meth:`Blueprint.teardown_request` if a blueprint handled the request. "
 "Finally, the :data:`request_tearing_down` signal is sent."
 msgstr ""
+"요청을 처리한 블루프린트가 있을 경우, :meth:`teardown_request`로 "
+"데코레이터된 모든 함수와 :meth:`Blueprint.teardown_request`를 호출합니다. "
+"마지막으로 :data:`request_tearing_down` 신호가 전송됩니다."
 
 #: f6559f2f4a554802b1a54c1264c73fa5 flask.app.Flask.do_teardown_request:9 of
 msgid ""
@@ -1290,6 +1530,9 @@ msgid ""
 "<flask.ctx.RequestContext.pop>`, which may be delayed during testing to "
 "maintain access to resources."
 msgstr ""
+"이 메서드는 :meth:`RequestContext.pop() <flask.ctx.RequestContext.pop>`에 "
+"의해 호출됩니다. 테스트 중에는 리소스에 대한 접근을 유지하기 위해 호출이 "
+"지연될 수 있습니다."
 
 #: 79c617ba47f040579476f6736016b353 flask.app.Flask.do_teardown_request:14 of
 msgid ""
@@ -1297,31 +1540,38 @@ msgid ""
 "from the current exception information if not passed. Passed to each "
 "teardown function."
 msgstr ""
+"요청을 디스패치하는 동안 발생한 처리되지 않은 예외입니다. 전달되지 않은 "
+"경우, 현재 예외 정보를 통해 감지됩니다. 각 teardown 함수에 전달됩니다."
 
 #: fbcbdfe4c4364f5783ef9edd0aed4c23 flask.app.Flask.do_teardown_request:18 of
 msgid "Added the ``exc`` argument."
-msgstr ""
+msgstr "``exc`` 인수가 추가되었습니다."
 
 #: 10757f75733d411d9cafd5ca25508125 flask.app.Flask.do_teardown_appcontext:1 of
 msgid "Called right before the application context is popped."
-msgstr ""
+msgstr "애플리케이션 컨텍스트가 제거되기 직전에 호출됩니다."
 
 #: b901898db1174be5970d8bc04a6d9ba9 flask.app.Flask.do_teardown_appcontext:3 of
 msgid ""
 "When handling a request, the application context is popped after the "
 "request context. See :meth:`do_teardown_request`."
 msgstr ""
+"요청을 처리할 때, 애플리케이션 컨텍스트는 요청 컨텍스트가 제거된 후에 "
+"제거됩니다. 자세한 내용은 :meth:`do_teardown_request`를 참조하세요."
 
 #: 13fa7a0759c049c19a0570251098f300 flask.app.Flask.do_teardown_appcontext:6 of
 msgid ""
 "This calls all functions decorated with :meth:`teardown_appcontext`. Then"
 " the :data:`appcontext_tearing_down` signal is sent."
 msgstr ""
+":meth:`teardown_appcontext`로 데코레이터된 모든 함수를 호출한 다음, "
+":data:`appcontext_tearing_down` 신호를 전송합니다."
 
 #: 949ad352d03b4f71b796d4bb86394ecb flask.app.Flask.do_teardown_appcontext:10
 #: of
 msgid "This is called by :meth:`AppContext.pop() <flask.ctx.AppContext.pop>`."
-msgstr ""
+msgstr "이 메서드는 :meth:`AppContext.pop() <flask.ctx.AppContext.pop>`에 의해 "
+"호출됩니다."
 
 #: c85ea39c7344491692accefa896dc361 flask.app.Flask.app_context:1 of
 msgid ""
@@ -1329,6 +1579,9 @@ msgid ""
 " the context, which will make :data:`current_app` point at this "
 "application."
 msgstr ""
+":class:`~flask.ctx.AppContext`를 생성합니다. ``with`` 블록에서 사용하여 "
+"컨텍스트를 푸시하면, :data:`current_app`이 해당 애플리케이션을 가리키도록 "
+"설정됩니다."
 
 #: e75bb6421daf4135aa468734fd374af2 flask.app.Flask.app_context:5 of
 msgid ""
@@ -1337,10 +1590,14 @@ msgid ""
 "handling a request, and when running a CLI command. Use this to manually "
 "create a context outside of these situations."
 msgstr ""
+"애플리케이션 컨텍스트는 요청 처리 시 :meth:`RequestContext.push() "
+"<flask.ctx.RequestContext.push>`에 의해 자동으로 푸시되며, CLI 명령 실행 "
+"시에도 자동으로 푸시됩니다. 이 메서드는 이러한 상황 외부에서 컨텍스트를 "
+"수동으로 생성할 때 사용됩니다."
 
 #: 463011caea3245eaa4b0fac88840c65a flask.app.Flask.app_context:15 of
 msgid "See :doc:`/appcontext`."
-msgstr ""
+msgstr "자세한 내용은 :doc:`/appcontext`를 참조하세요."
 
 #: 97e144485b1f4475871a9a919b5c9871 flask.app.Flask.request_context:1 of
 msgid ""
@@ -1348,11 +1605,14 @@ msgid ""
 "environment. Use a ``with`` block to push the context, which will make "
 ":data:`request` point at this request."
 msgstr ""
+":class:`~flask.ctx.RequestContext`를 생성하여 WSGI 환경을 나타냅니다. "
+"``with`` 블록을 사용하여 컨텍스트를 푸시하면 :data:`request`가 해당 요청을 "
+"가리키도록 설정됩니다."
 
 #: 5bc284e77a174991a346eb32188ce75a 6a605627b8c24716b4fd8b6b392af33b
 #: flask.app.Flask.request_context:5 flask.app.Flask.test_request_context:6 of
 msgid "See :doc:`/reqcontext`."
-msgstr ""
+msgstr "자세한 내용은 :doc:`/reqcontext`를 참조하세요."
 
 #: 21e6d13c9db9437cb9236270989a0640 flask.app.Flask.request_context:7 of
 msgid ""
@@ -1361,10 +1621,13 @@ msgid ""
 "Use :meth:`test_request_context` to create an environment and context "
 "instead of this method."
 msgstr ""
+"일반적으로 이 메서드를 직접 호출하지 않아야 합니다. 요청 컨텍스트는 요청을 "
+"처리할 때 :meth:`wsgi_app`에 의해 자동으로 푸시됩니다. 이 메서드 대신 "
+":meth:`test_request_context`를 사용하여 환경과 컨텍스트를 생성하세요."
 
 #: d2e7ce77d0e247a9b040292c49845c0e flask.app.Flask.request_context:12 of
 msgid "a WSGI environment"
-msgstr ""
+msgstr "WSGI 환경"
 
 #: 862d69955f25460483c82e0e95f386cb flask.app.Flask.test_request_context:1 of
 msgid ""
@@ -1373,18 +1636,24 @@ msgid ""
 "where you may want to run a function that uses request data without "
 "dispatching a full request."
 msgstr ""
+"주어진 값으로 생성된 WSGI 환경을 기반으로 :class:`~flask.ctx.RequestContext`"
+"를 생성합니다. 이는 주로 테스트 중에 유용하며, 전체 요청을 디스패치하지 않고 "
+"요청 데이터를 사용하는 함수를 실행하고자 할 때 사용할 수 있습니다."
 
 #: 767aece3fa074a95aca7e4f45da4a7c0 flask.app.Flask.test_request_context:8 of
 msgid ""
 "Use a ``with`` block to push the context, which will make :data:`request`"
 " point at the request for the created environment. ::"
 msgstr ""
+"``with`` 블록을 사용하여 컨텍스트를 푸시하면 :data:`request`가 생성된 환경의 "
+"요청을 가리키도록 설정됩니다. ::"
 
 #: 5df5da55cd8e4b4d91849e83906b1ca6 flask.app.Flask.test_request_context:15 of
 msgid ""
 "When using the shell, it may be easier to push and pop the context "
 "manually to avoid indentation. ::"
-msgstr ""
+msgstr "셸을 사용할 때는 들여쓰기를 피하기 위해 컨텍스트를 수동으로 푸시하고 팝하는 "
+"것이 더 편리할 수 있습니다. ::"
 
 #: 0e2149a442eb4ee18f67ecfe046b545f flask.app.Flask.test_request_context:23 of
 msgid ""
@@ -1393,10 +1662,14 @@ msgid ""
 "application. See the linked Werkzeug docs for most of the available "
 "arguments. Flask-specific behavior is listed here."
 msgstr ""
+"Werkzeug의 :class:`~werkzeug.test.EnvironBuilder`와 동일한 인수를 사용하며, "
+"애플리케이션에서 일부 기본값을 제공합니다. 사용 가능한 대부분의 인수는 "
+"링크된 Werkzeug 문서를 참조하세요. Flask에 특화된 동작은 여기에 나열되어 "
+"있습니다."
 
 #: b54e99e4c47240ebbd9773dcf2f6ff99 flask.app.Flask.test_request_context:28 of
 msgid "URL path being requested."
-msgstr ""
+msgstr "요청되는 URL 경로입니다."
 
 #: c914a00b667a44f8b27ecccee1a5ea0e flask.app.Flask.test_request_context:29 of
 msgid ""
@@ -1404,34 +1677,40 @@ msgid ""
 " not given, built from :data:`PREFERRED_URL_SCHEME`, ``subdomain``, "
 ":data:`SERVER_NAME`, and :data:`APPLICATION_ROOT`."
 msgstr ""
+"앱이 제공되는 기준 URL로, ``path``는 이에 상대적입니다. 지정되지 않은 경우, "
+":data:`PREFERRED_URL_SCHEME`, ``subdomain``, :data:`SERVER_NAME`, 및 "
+":data:`APPLICATION_ROOT`를 기반으로 생성됩니다."
 
 #: 763e14b0aa814e468b71b38686dfd78b flask.app.Flask.test_request_context:33 of
 msgid "Subdomain name to append to :data:`SERVER_NAME`."
-msgstr ""
+msgstr ":data:`SERVER_NAME`에 추가할 서브도메인 이름입니다."
 
 #: 973e9acfcc714ea5a5aca8dbd547c0bf flask.app.Flask.test_request_context:35 of
 msgid "Scheme to use instead of :data:`PREFERRED_URL_SCHEME`."
-msgstr ""
+msgstr ":data:`PREFERRED_URL_SCHEME` 대신 사용할 스킴입니다."
 
 #: 0bed630b54a04f9982499d23f0e12f4e flask.app.Flask.test_request_context:37 of
 msgid "The request body, either as a string or a dict of form keys and values."
-msgstr ""
+msgstr "요청 본문으로, 문자열 또는 폼 키와 값으로 이루어진 딕셔너리 형태일 수 "
+"있습니다."
 
 #: 7f962f388acc4cea86e242f026193a6d flask.app.Flask.test_request_context:39 of
 msgid ""
 "If given, this is serialized as JSON and passed as ``data``. Also "
 "defaults ``content_type`` to ``application/json``."
 msgstr ""
+"지정된 경우, 이는 JSON으로 직렬화되어 ``data``로 전달됩니다. 또한 "
+"``content_type``의 기본값은 ``application/json``으로 설정됩니다."
 
 #: 961501d3e597400abe925572c50af5b5 flask.app.Flask.test_request_context:42 of
 msgid ""
 "other positional arguments passed to "
 ":class:`~werkzeug.test.EnvironBuilder`."
-msgstr ""
+msgstr ":class:`~werkzeug.test.EnvironBuilder`에 전달되는 기타 위치 인수입니다."
 
 #: 2e179df740b545eb8d6a6b002c9d91ce flask.app.Flask.test_request_context:44 of
 msgid "other keyword arguments passed to :class:`~werkzeug.test.EnvironBuilder`."
-msgstr ""
+msgstr ":class:`~werkzeug.test.EnvironBuilder`에 전달되는 기타 키워드 인수입니다."
 
 #: 0c2d9d25be5c46ffa19a71dbafa57fdf flask.app.Flask.wsgi_app:1 of
 msgid ""
@@ -1439,10 +1718,13 @@ msgid ""
 "so that middlewares can be applied without losing a reference to the app "
 "object. Instead of doing this::"
 msgstr ""
+"실제 WSGI 애플리케이션입니다. :meth:`__call__`에서 구현되지 않으므로, "
+"미들웨어를 적용해도 앱 객체에 대한 참조를 잃지 않습니다. 대신 다음과 같이 "
+"처리합니다::"
 
 #: 641ac0e3665145af94889822b546f46f flask.app.Flask.wsgi_app:7 of
 msgid "It's a better idea to do this instead::"
-msgstr ""
+msgstr "다음과 같이 처리하는 것이 더 나은 방법입니다::"
 
 #: 4ec1b5f9157e42c192a236ec4e1ea46e flask.app.Flask.wsgi_app:11 of
 msgid ""
