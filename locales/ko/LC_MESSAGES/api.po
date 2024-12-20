@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2024-12-20 09:12+0000\n"
+"PO-Revision-Date: 2024-12-21 14:00+0000\n"
 "Last-Translator: jonghak <jonghak9028@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/flask/api/ko/>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.9.2-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/api.rst:2 84591d17c43147579d5eb589f573be7b
@@ -1353,7 +1353,7 @@ msgstr "응답 객체는 문자열을 UTF-8로 인코딩하여 본문으로 생�
 
 #: 9313fbaa37aa461faed82865e175e608 flask.app.Flask.make_response:13 of
 msgid "``bytes``"
-msgstr "``bytes``"
+msgstr "``바이트``"
 
 #: 7578ef68dbd24bd390d12b54afca3c78 flask.app.Flask.make_response:14 of
 msgid "A response object is created with the bytes as the body."
@@ -1369,7 +1369,7 @@ msgstr "반환되기 전에 JSON으로 변환되는 딕셔너리입니다."
 
 #: d84727946fe4406090cd3c98fca387c5 flask.app.Flask.make_response:19 of
 msgid "``list``"
-msgstr "``list``"
+msgstr "``리스트``"
 
 #: 327ea47a8b344ba8ad84eeb2562b9cde flask.app.Flask.make_response:20 of
 msgid "A list that will be jsonify'd before being returned."
@@ -1388,7 +1388,7 @@ msgstr "응답으로 스트리밍하기 위해 ``str`` 또는 ``bytes``를 반�
 
 #: 663e8d49bb3e40288320ea18dd4eb215 flask.app.Flask.make_response:26 of
 msgid "``tuple``"
-msgstr "``tuple``"
+msgstr "``튜플``"
 
 #: a4bc2d628feb4a4c85c7eb9802f7c9ea flask.app.Flask.make_response:27 of
 msgid ""
@@ -3691,21 +3691,22 @@ msgstr ""
 msgid ""
 "As of Werkzeug 0.14 HTTP exceptions are automatically caught and "
 "converted to responses instead of failing."
-msgstr ""
+msgstr "Werkzeug 0.14부터 HTTP 예외는 자동으로 처리되어 실패하지 않고 응답으로 "
+"변환됩니다."
 
 #: c6d128f7803542e9901e022ea14a83d6 of
 #: werkzeug.wrappers.request.Request.application:14
 msgid "the WSGI callable to decorate"
-msgstr ""
+msgstr "데코레이트할 WSGI 호출 가능 객체"
 
 #: af645af7dbe743b5afe8ba1d6d6868f7 of
 #: werkzeug.wrappers.request.Request.application:15
 msgid "a new WSGI callable"
-msgstr ""
+msgstr "새로운 WSGI 호출 가능 객체"
 
 #: ec93f102a2824475bfab30ecf4ae0f1d flask.Request.args:1 of
 msgid "The parsed URL parameters (the part in the URL after the question mark)."
-msgstr ""
+msgstr "구문 분석된 URL 매개변수(물음표 뒤의 URL 부분)."
 
 #: 73b933f2ea9449c58ac63aa460ddd7b5 flask.Request.args:4 of
 msgid ""
@@ -3714,32 +3715,41 @@ msgid ""
 ":attr:`parameter_storage_class` to a different type.  This might be "
 "necessary if the order of the form data is important."
 msgstr ""
+"기본적으로 이 함수는 :class:`~werkzeug.datastructures.ImmutableMultiDict`를 "
+"반환합니다. 양식 데이터의 순서가 중요한 경우, :attr:`parameter_storage_class`"
+"를 다른 타입으로 설정하여 이를 변경할 수 있습니다."
 
 #: 1927bf93e71a4ddaa415414d889f8b43 flask.Request.args:10 of
 msgid "Invalid bytes remain percent encoded."
-msgstr ""
+msgstr "유효하지 않은 바이트는 퍼센트 인코딩된 상태로 유지됩니다."
 
 #: 4ec4fd24c3604e3687e5e528320d7fa7 flask.Request.authorization:1 of
 msgid ""
 "The ``Authorization`` header parsed into an :class:`.Authorization` "
 "object. ``None`` if the header is not present."
 msgstr ""
+"``Authorization`` 헤더가 :class:`.Authorization` 객체로 파싱됩니다. 헤더가 "
+"존재하지 않으면 ``None``을 반환합니다."
 
 #: c060f68c816f4cfe9fc36bd00f597e12 flask.Request.authorization:4 of
 msgid ""
 ":class:`Authorization` is no longer a ``dict``. The ``token`` attribute "
 "was added for auth schemes that use a token instead of parameters."
 msgstr ""
+":class:`Authorization`은 더 이상 ``dict``가 아닙니다. 매개변수 대신 토큰을 "
+"사용하는 인증 스킴에서는 ``token`` 속성이 추가되었습니다."
 
 #: 143a8edffe914859b5b98e639e22101b flask.Request.base_url:1 of
 msgid "Like :attr:`url` but without the query string."
-msgstr ""
+msgstr ":attr:`url`과 비슷하지만 쿼리 문자열은 포함되지 않습니다."
 
 #: 1ddca3a319564ee7ba155b63e3ee32dd flask.Request.cache_control:1 of
 msgid ""
 "A :class:`~werkzeug.datastructures.RequestCacheControl` object for the "
 "incoming cache control headers."
 msgstr ""
+"들어오는 캐시 제어 헤더에 대한 "
+":class:`~werkzeug.datastructures.RequestCacheControl` 객체입니다."
 
 #: f22e14a5a814480a8154a5ef54aaaf0f of
 #: werkzeug.wrappers.request.Request.close:1
@@ -3748,6 +3758,9 @@ msgid ""
 " handles explicitly.  You can also use the request object in a with "
 "statement which will automatically close it."
 msgstr ""
+"이 요청 객체와 관련된 리소스를 닫습니다. 이 작업은 모든 파일 핸들을 "
+"명시적으로 닫습니다. 또한, 요청 객체를 `with` 문에서 사용하면 자동으로 "
+"닫힙니다."
 
 #: ../../docstring 232f6bedb6a541f180810f3643294f82
 #: 4312414850644ca5ba18c29b7b9e9f8d flask.Request.content_encoding:1
@@ -3759,6 +3772,10 @@ msgid ""
 "mechanisms must be applied in order to obtain the media-type referenced "
 "by the Content-Type header field."
 msgstr ""
+"`Content-Encoding` 엔티티 헤더 필드는 미디어 타입에 대한 수정자로 "
+"사용됩니다. 이 헤더가 존재할 경우, 값은 엔티티 본문에 적용된 추가 콘텐츠 "
+"코딩을 나타내며, 이를 통해 `Content-Type` 헤더 필드에서 참조한 미디어 타입을 "
+"얻기 위해 필요한 디코딩 메커니즘을 지정합니다."
 
 #: a92ac32df8fc436b873822a8928bfa52 flask.Request.content_length:1 of
 msgid ""
@@ -3766,6 +3783,9 @@ msgid ""
 "body in bytes or, in the case of the HEAD method, the size of the entity-"
 "body that would have been sent had the request been a GET."
 msgstr ""
+"`Content-Length` 엔티티 헤더 필드는 엔티티 본문의 크기를 바이트 단위로 "
+"나타냅니다. HEAD 메서드의 경우, 요청이 GET이었다면 전송되었을 엔티티 본문의 "
+"크기를 나타냅니다."
 
 #: ../../docstring 2cc0203db4ef4ecea805331349f3c135
 #: 63d2e6df030e477c9889938d3fe2c2e2 flask.Request.content_md5:1
@@ -3777,6 +3797,11 @@ msgid ""
 "for detecting accidental modification of the entity-body in transit, but "
 "is not proof against malicious attacks.)"
 msgstr ""
+"`Content-MD5` 엔티티 헤더 필드는 RFC 1864에 정의된 바와 같이 엔티티 본문의 "
+"MD5 다이제스트를 나타내며, 엔티티 본문의 종단 간 메시지 무결성 검사(MIC)를 "
+"제공하기 위한 용도로 사용됩니다. (참고: MIC는 전송 중 발생할 수 있는 본문의 "
+"우발적인 수정은 감지할 수 있지만, 악의적인 공격에 대한 증명으로는 충분하지 "
+"않습니다.)"
 
 #: ../../docstring 3ff884c550484601898ca8c4815aec10
 #: dc880a3506e64f769d973cc8a061fbfa flask.Request.content_type:1
@@ -3786,22 +3811,26 @@ msgid ""
 "entity-body sent to the recipient or, in the case of the HEAD method, the"
 " media type that would have been sent had the request been a GET."
 msgstr ""
+"`Content-Type` 엔티티 헤더 필드는 수신자에게 전송된 엔티티 본문의 미디어 "
+"타입을 나타냅니다. HEAD 메서드의 경우, 요청이 GET이었다면 전송되었을 미디어 "
+"타입을 나타냅니다."
 
 #: 542a3b6ed5c14227a9cb4537c50a1090 flask.Request.cookies:1 of
 msgid ""
 "A :class:`dict` with the contents of all cookies transmitted with the "
 "request."
-msgstr ""
+msgstr "요청과 함께 전송된 모든 쿠키 내용을 포함한 :class:`dict`입니다."
 
 #: 0fd81cfd15c44ee893f2c1bebb46dd40 flask.Request.data:1 of
 msgid ""
 "The raw data read from :attr:`stream`. Will be empty if the request "
 "represents form data."
-msgstr ""
+msgstr ":attr:`stream`에서 읽은 로우 데이터입니다. 요청이 폼 데이터인 경우 비어 "
+"있습니다."
 
 #: 3a165973a47d4d749753d4857e5a3628 flask.Request.data:4 of
 msgid "To get the raw data even if it represents form data, use :meth:`get_data`."
-msgstr ""
+msgstr "로우 데이터가 폼 데이터인 경우에도 가져오려면 :meth:get_data를 사용하세요."
 
 #: ../../docstring 91e58c0e2b8d40958670cbfcad164422
 #: e89b1d22ef894915aaca49357b141185 flask.Request.date:1 flask.Response.date:1
@@ -3810,7 +3839,8 @@ msgid ""
 "The Date general-header field represents the date and time at which the "
 "message was originated, having the same semantics as orig-date in RFC "
 "822."
-msgstr ""
+msgstr "Date 일반 헤더 필드는 메시지가 생성된 날짜와 시간을 나타내며, RFC 822의 orig-"
+"date와 동일한 의미를 갖습니다."
 
 #: ../../docstring 18dc3c5442674cc287acfe32d694c13f
 #: 45fa47f0659f42a8bcc0a8e2b57726a4 82d8f2b5923c47ff8cde859dcd5778e2
@@ -3821,7 +3851,7 @@ msgstr ""
 #: flask.Response.expires:5 flask.Response.last_modified:5
 #: flask.Response.retry_after:7 of
 msgid "The datetime object is timezone-aware."
-msgstr ""
+msgstr "datetime 객체는 시간대 정보를 인식합니다."
 
 #: b143a809c0764aa495525a4b26362a64 flask.Request.files:1 of
 msgid ""
@@ -3830,6 +3860,10 @@ msgid ""
 "type=\"file\" name=\"\">``.  Each value in :attr:`files` is a Werkzeug "
 ":class:`~werkzeug.datastructures.FileStorage` object."
 msgstr ""
+"**업로드된 모든 파일을 포함하는 :class:`~werkzeug.datastructures.MultiDict` "
+"객체입니다.** :attr:`files`의 각 키는 ``<input type=\"file\" name=\"\">``의 "
+"name 속성 값이며, :attr:`files`의 각 값은 Werkzeug의 "
+":class:`~werkzeug.datastructures.FileStorage` 객체입니다."
 
 #: c05875662d75495f84f95ecc6a8260dd flask.Request.files:6 of
 msgid ""
@@ -3838,6 +3872,9 @@ msgid ""
 ":meth:`~werkzeug.datastructures.FileStorage.save` function that can store"
 " the file on the filesystem."
 msgstr ""
+"이 객체는 기본적으로 Python의 표준 파일 객체처럼 동작합니다. 하지만 파일을 "
+"파일 시스템에 저장할 수 있는 "
+":meth:`~werkzeug.datastructures.FileStorage.save` 메서드를 추가로 제공합니다."
 
 #: 97400ad30566473cafa2752fe4150a25 flask.Request.files:11 of
 msgid ""
@@ -3845,6 +3882,9 @@ msgid ""
 "POST, PUT or PATCH and the ``<form>`` that posted to the request had "
 "``enctype=\"multipart/form-data\"``.  It will be empty otherwise."
 msgstr ""
+"`:attr:`files``는 요청 메서드가 POST, PUT 또는 PATCH이고, 요청을 보낸 "
+"``<form>``이 ``enctype=\"multipart/form-data\"``를 사용한 경우에만 데이터를 "
+"포함합니다. 그렇지 않으면 비어 있습니다."
 
 #: 98195d9500204f35a6d66051999f7cd1 flask.Request.files:15 of
 msgid ""
@@ -3852,6 +3892,9 @@ msgid ""
 ":class:`~werkzeug.datastructures.FileStorage` documentation for more "
 "details about the used data structure."
 msgstr ""
+"사용된 데이터 구조에 대한 자세한 내용은 "
+":class:`~werkzeug.datastructures.MultiDict` / "
+":class:`~werkzeug.datastructures.FileStorage` 문서를 참조하세요."
 
 #: 6dc8e2b567354567831c1fd527e0c385 flask.Request.form:1 of
 msgid ""
@@ -3861,18 +3904,22 @@ msgid ""
 ":attr:`parameter_storage_class` to a different type.  This might be "
 "necessary if the order of the form data is important."
 msgstr ""
+"폼 파라미터입니다. 기본적으로 이 함수는 "
+":class:`~werkzeug.datastructures.ImmutableMultiDict` 를 반환합니다. 이 "
+"동작은 :attr:`parameter_storage_class` 를 다른 타입으로 설정하여 변경할 수 "
+"있습니다. 폼 데이터의 순서가 중요한 경우 이를 설정해야 할 수도 있습니다."
 
 #: 3ed9659f925044e1b80acb8b209bb464 flask.Request.form:7 of
 msgid ""
 "Please keep in mind that file uploads will not end up here, but instead "
 "in the :attr:`files` attribute."
-msgstr ""
+msgstr "파일 업로드는 여기에 저장되지 않으며, 대신 :attr:`files` 속성에 저장됩니다."
 
 #: 1ec11507fed74dcdb87fcac9317ea9ec flask.Request.form:12 of
 msgid ""
 "Previous to Werkzeug 0.9 this would only contain form data for POST and "
 "PUT requests."
-msgstr ""
+msgstr "Werkzeug 0.9 이전에는 POST 및 PUT 요청의 폼 데이터만 포함되었습니다."
 
 #: f09c046562934b1cafbe0e16ad162dbe of
 #: werkzeug.wrappers.request.Request.from_values:1
@@ -3884,13 +3931,18 @@ msgid ""
 "(:class:`Client`) that allows to create multipart requests, support for "
 "cookies etc."
 msgstr ""
+"제공된 값에 기반하여 새로운 요청 객체를 생성합니다. `environ`이 주어지면 "
+"누락된 값은 거기서 채워집니다. 이 메서드는 URL에서 요청을 시뮬레이션해야 "
+"하는 작은 스크립트에 유용합니다. 이 메서드는 유닛 테스트에 사용하지 마세요. "
+"멀티파트 요청 생성, 쿠키 지원 등을 제공하는 완전한 기능의 클라이언트 "
+"객체(:class:`Client`)가 있습니다."
 
 #: 1670f76ab4af463484ac51799366e43e of
 #: werkzeug.wrappers.request.Request.from_values:8
 msgid ""
 "This accepts the same options as the "
 ":class:`~werkzeug.test.EnvironBuilder`."
-msgstr ""
+msgstr "이것은 :class:`~werkzeug.test.EnvironBuilder`와 동일한 옵션을 허용합니다."
 
 #: b6160241db704cad99d77b6e15d9be17 of
 #: werkzeug.wrappers.request.Request.from_values:11
@@ -3899,15 +3951,17 @@ msgid ""
 ":class:`~werkzeug.test.EnvironBuilder`.  Because of this the `environ` "
 "parameter is now called `environ_overrides`."
 msgstr ""
+"이 메서드는 이제 :class:`~werkzeug.test.EnvironBuilder`와 동일한 인자를 "
+"받습니다. 따라서 `environ` 파라미터는 이제 `environ_overrides`로 불립니다."
 
 #: 3694e48660ac47ca92da201b603dda37 of
 #: werkzeug.wrappers.request.Request.from_values:16
 msgid "request object"
-msgstr ""
+msgstr "요청 객체"
 
 #: 6be2b8a2048b4c5da926f0d6ad9b50aa flask.Request.full_path:1 of
 msgid "Requested path, including the query string."
-msgstr ""
+msgstr "쿼리 문자열을 포함한, 요청된 경로."
 
 #: 0cbf564f40ab4b3aa60f93a075858820 of
 #: werkzeug.wrappers.request.Request.get_data:1
@@ -3916,6 +3970,9 @@ msgid ""
 "object.  By default this is cached but that behavior can be changed by "
 "setting `cache` to `False`."
 msgstr ""
+"클라이언트로부터 버퍼링된 들어오는 데이터를 하나의 바이트 객체로 읽습니다. "
+"기본적으로 이 데이터는 캐시되지만, `cache`를 `False`로 설정하여 이 동작을 "
+"변경할 수 있습니다."
 
 #: 7052d1962d7c4500b11f6dd3eed5b458 of
 #: werkzeug.wrappers.request.Request.get_data:5
@@ -3924,6 +3981,9 @@ msgid ""
 "length first as a client could send dozens of megabytes or more to cause "
 "memory problems on the server."
 msgstr ""
+"클라이언트가 수십 메가바이트 이상의 데이터를 보내 서버에 메모리 문제가 "
+"발생할 수 있으므로, 이 메서드를 호출하기 전에 먼저 콘텐츠 길이를 확인하지 "
+"않고 호출하는 것은 일반적으로 좋지 않은 방법입니다."
 
 #: 7305731b33674a0589af4152f8695d06 of
 #: werkzeug.wrappers.request.Request.get_data:9
@@ -3938,17 +3998,25 @@ msgid ""
 "data.  Please be generally aware of checking the content length first in "
 "any case before calling this method to avoid exhausting server memory."
 msgstr ""
+"폼 데이터가 이미 파싱된 경우, 이 메서드는 아무것도 반환하지 않습니다. 폼 "
+"데이터 파싱은 이 메서드처럼 데이터를 캐시하지 않기 때문입니다. "
+"`parse_form_data`를 `True`로 설정하면 폼 데이터 파싱이 암시적으로 "
+"호출됩니다. 이 경우 폼 파서가 데이터를 처리하면 이 메서드의 반환 값은 빈 "
+"문자열이 됩니다. 일반적으로 이는 필요하지 않습니다. 데이터가 전체적으로 "
+"캐시된 경우(기본값) 폼 파서는 캐시된 데이터를 사용해 폼 데이터를 파싱합니다. "
+"서버 메모리 소모를 방지하기 위해 이 메서드를 호출하기 전에 반드시 콘텐츠 "
+"길이를 먼저 확인하는 것이 좋습니다."
 
 #: 0841010ca189447399feb8111baa4d48 957fec8ee804454faf49b4c038d1c0cc of
 #: werkzeug.wrappers.request.Request.get_data:20
 #: werkzeug.wrappers.response.Response.get_data:8
 msgid "If `as_text` is set to `True` the return value will be a decoded string."
-msgstr ""
+msgstr "`as_text`가 `True`로 설정된 경우, 반환 값은 디코딩된 문자열이 됩니다."
 
 #: 2266af444b1647478e09d8aac08babb1 of
 #: werkzeug.wrappers.request.Request.get_json:1
 msgid "Parse :attr:`data` as JSON."
-msgstr ""
+msgstr ":attr:`data`를 JSON으로 파싱합니다."
 
 #: 5a5051573a0741498ba178bf2164a344 of
 #: werkzeug.wrappers.request.Request.get_json:3
@@ -3958,33 +4026,38 @@ msgid ""
 "called and its return value is used as the return value. By default this "
 "raises a 415 Unsupported Media Type resp."
 msgstr ""
+"mimetype가 JSON을 나타내지 않거나 (:mimetype:`application/json`, "
+":attr:`is_json` 참조), 파싱에 실패하면 :meth:`on_json_loading_failed`가 "
+"호출되며 해당 메서드의 반환 값이 사용됩니다. 기본적으로 이는 415 Unsupported "
+"Media Type resp을 발생시킵니다."
 
 #: 2d09ff34196b4ee09bf6c2e12c9083b5 b870fcbe689c4ca2be4b2b73c335db22 of
 #: werkzeug.wrappers.request.Request.get_json:9
 #: werkzeug.wrappers.response.Response.get_json:9
 msgid "Ignore the mimetype and always try to parse JSON."
-msgstr ""
+msgstr "mimetype을 무시하고 항상 JSON을 파싱합니다."
 
 #: 57773a6594d6471994e6c58e74dc9eee of
 #: werkzeug.wrappers.request.Request.get_json:10
 msgid "Silence mimetype and parsing errors, and return ``None`` instead."
-msgstr ""
+msgstr "mimetype 및 파싱 오류를 무시하고 ``None``을 반환합니다."
 
 #: 1189f10eca854fddb1ad93207086b9a0 of
 #: werkzeug.wrappers.request.Request.get_json:12
 msgid "Store the parsed JSON to return for subsequent calls."
-msgstr ""
+msgstr "파싱된 JSON을 저장하여 이후 호출 시 반환합니다."
 
 #: 2e1ead94163e4d3e946c7d2dba2f3b83 306e521c2e6e48da942177179b7c25e2
 #: flask.Request.json:12 of werkzeug.wrappers.request.Request.get_json:18
 msgid "Raise a 400 error if the content type is incorrect."
-msgstr ""
+msgstr "콘텐츠 타입이 올바르지 않으면 400 오류를 발생시킵니다."
 
 #: cdbb62bde30d4dbcaf7f4ca73f770a9e flask.Request.host:1 of
 msgid ""
 "The host name the request was made to, including the port if it's non-"
 "standard. Validated with :attr:`trusted_hosts`."
-msgstr ""
+msgstr "요청이 전송된 호스트 이름이며, 비표준 포트일 경우 포트까지 포함됩니다. "
+":attr:`trusted_hosts`로 검증됩니다."
 
 #: 793ad1d484bd4757a2650127c8d183f0 flask.Request.host_url:1 of
 msgid "The request URL scheme and host only."
