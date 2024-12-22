@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2024-12-21 14:00+0000\n"
+"PO-Revision-Date: 2024-12-22 07:04+0000\n"
 "Last-Translator: jonghak <jonghak9028@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/flask/api/ko/>\n"
 "Language: ko\n"
@@ -1977,7 +1977,7 @@ msgid ""
 msgstr ""
 "이 기능은 앱과 블루프린트 객체 모두에서 사용 가능합니다. 앱에서 사용할 경우, "
 "모든 요청 전에 실행됩니다. 블루프린트에서 사용할 경우, 블루프린트가 처리하는 "
-"모든 요청 전에 실행됩니다. 블루프린트에서 모든 요청 전에 실행되도록 "
+"요청 전에만 실행됩니다. 블루프린트에서 모든 요청에 대해 실행되도록 "
 "등록하려면 :meth:`.Blueprint.before_app_request`를 사용하세요."
 
 #: 97ce7cf74e5b4ae5ad217bc5b3c6779a f8e5c8d6b4354394935fdc7acb9ceb24
@@ -2862,10 +2862,11 @@ msgid ""
 "function returns ``None`` or raises a ``BuildError``, it is skipped. "
 "Otherwise, its return value is returned by ``url_for``."
 msgstr ""
-":func:`handle_url_build_error`가 호출될 때 호출되는 함수들의 목록입니다. 각 "
-"함수는 ``error``, ``endpoint``, ``values``를 인수로 받습니다. 함수가 ``None``"
-"을 반환하거나 ``BuildError``를 발생시키면 건너뛰고, 그렇지 않으면 반환 값이 "
-"``url_for``에 의해 반환됩니다."
+":meth:`.url_for`에서 :exc:`~werkzeug.routing.BuildError`가 발생할 때 "
+":meth:`handle_url_build_error`에 의해 호출되는 함수들의 리스트입니다. 각 "
+"함수는 ``error``, ``endpoint``, 그리고 ``values``와 함께 호출됩니다. 함수가 "
+"``None``을 반환하거나 ``BuildError``를 발생시키면 건너뜁니다. 그렇지 않으면 "
+"해당 함수의 반환 값이 ``url_for``의 반환 값이 됩니다."
 
 #: ../../docstring 6920b44ed2dd43d08ebed6936cd92200
 #: flask.Flask.teardown_appcontext_funcs:1 of
@@ -3365,8 +3366,8 @@ msgid ""
 "Register a :class:`~flask.Blueprint` on this blueprint. Keyword arguments"
 " passed to this method will override the defaults set on the blueprint."
 msgstr ""
-"이 블루프린트에 :class:`~flask.Blueprint`를 등록합니다. 이 메서드로 전달된 "
-"키워드 인수는 블루프린트에서 설정된 기본값을 덮어씁니다."
+"현재 블루프린트에 다른 :class:`~flask.Blueprint`를 등록합니다. 이 메서드에 "
+"전달된 키워드 인수는 새로 등록되는 블루프린트의 기본값을 덮어씁니다."
 
 #: eb717da1af3e4881bb15e1d165041cdf
 #: flask.sansio.blueprints.Blueprint.teardown_app_request:1 of
@@ -3691,8 +3692,8 @@ msgstr ""
 msgid ""
 "As of Werkzeug 0.14 HTTP exceptions are automatically caught and "
 "converted to responses instead of failing."
-msgstr "Werkzeug 0.14부터 HTTP 예외는 자동으로 처리되어 실패하지 않고 응답으로 "
-"변환됩니다."
+msgstr "Werkzeug 0.14부터는 HTTP 예외가 자동으로 포착되어, 서버가 중단되지 않고 "
+"응답으로 변환됩니다."
 
 #: c6d128f7803542e9901e022ea14a83d6 of
 #: werkzeug.wrappers.request.Request.application:14
