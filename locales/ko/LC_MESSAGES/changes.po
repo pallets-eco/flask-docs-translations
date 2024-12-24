@@ -3,25 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-12-25 03:00+0000\n"
+"Last-Translator: Jason Son <weblate.sash858@passmail.net>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/flask/changes/ko/>"
+"\n"
 "Language: ko\n"
-"Language-Team: ko <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.10-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/changes.rst:2 6c654bc202cc487ba62c2cb0ffa3b2e5
 msgid "Changes"
-msgstr ""
+msgstr "변경 사항"
 
 #: ../../project/CHANGES.rst:2 9d08fe7d70ce4f8ba8c7bdec202ac16f
 msgid "Version 3.1.0"
@@ -29,11 +30,11 @@ msgstr ""
 
 #: ../../project/CHANGES.rst:4 69aa06e9859144d984e24e75967ccf35
 msgid "Released 2024-11-13"
-msgstr ""
+msgstr "2024-11-13 배포"
 
 #: ../../project/CHANGES.rst:6 348b349e18c14d1d9df992d45c50753e
 msgid "Drop support for Python 3.8. :pr:`5623`"
-msgstr ""
+msgstr "Python 3.8에 대한 지원을 중단. :pr:`5623`"
 
 #: ../../project/CHANGES.rst:7 e420e61fceda4b4395d63b9e1e6b60a2
 msgid ""
@@ -101,7 +102,7 @@ msgstr ""
 
 #: ../../project/CHANGES.rst:36 acc07933c53d41bb9343410d5b8fc4b4
 msgid "Released 2024-04-07"
-msgstr ""
+msgstr "2024-04-07 배포"
 
 #: ../../project/CHANGES.rst:38 46cb80bf905c4116986f714ed0b682b8
 msgid ""
@@ -122,7 +123,7 @@ msgstr ""
 
 #: ../../project/CHANGES.rst:48 a83de2cddbb34f56ae6f1e5a4ef0aae0
 msgid "Released 2024-02-03"
-msgstr ""
+msgstr "2024-02-03 배포"
 
 #: ../../project/CHANGES.rst:50 1f6ece646eb3477c8640725f1e97ec33
 msgid "Correct type for ``jinja_loader`` property. :issue:`5388`"
@@ -140,7 +141,7 @@ msgstr ""
 
 #: ../../project/CHANGES.rst:58 0354487cb66e46b1be21e1a3ba69db1b
 msgid "Released 2024-01-18"
-msgstr ""
+msgstr "2024-01-18 배포"
 
 #: ../../project/CHANGES.rst:60 34590af619554210861bf7ea57acfdb6
 msgid "Correct type for ``path`` argument to ``send_file``. :issue:`5336`"
@@ -169,7 +170,7 @@ msgstr ""
 
 #: ../../project/CHANGES.rst:71 9549cdc9992841e083146645a91a36a7
 msgid "Released 2023-09-30"
-msgstr ""
+msgstr "2023-09-30 배포"
 
 #: ../../project/CHANGES.rst:73 b8d46ee81c1a4a1a80df0f8d5032f888
 msgid "Remove previously deprecated code. :pr:`5223`"
@@ -201,7 +202,7 @@ msgstr ""
 
 #: ../../project/CHANGES.rst:85 92af0c995e7343d7a18008ae182e9607
 msgid "Released 2023-08-21"
-msgstr ""
+msgstr "2023-08-21 배포"
 
 #: ../../project/CHANGES.rst:87 3755f1bf15324e8ba807cc399eaf32fd
 msgid "Python 3.12 compatibility."
@@ -227,7 +228,7 @@ msgstr ""
 
 #: ../../project/CHANGES.rst:96 9f1db289dd744252b1d49b2c8e4fc493
 msgid "Released 2023-05-01"
-msgstr ""
+msgstr "2023-05-01 배포"
 
 #: ../../project/CHANGES.rst:98 ../../project/CHANGES.rst:170
 #: 2b579d22676844dd900725d697e3a6c2 689db365f4fb4ef2ace058e3115c05a8
@@ -248,7 +249,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:176 08ac8745153a49dc95f9d388e8e31e5d
 #: 862e47e11648463c9d162ec25c9883ac 99bd41e60f9e43a99206e2ac4006c2d6
 msgid "Released 2023-04-25"
-msgstr ""
+msgstr "2023-04-25 배포"
 
 #: ../../project/CHANGES.rst:107 fff3f9c03c0d4e9d8796b6369589db57
 msgid "Restore deprecated ``from flask import Markup``. :issue:`5084`"
@@ -3508,4 +3509,3 @@ msgstr ""
 #~ " mode even even if ``Flask.jinja_env`` "
 #~ "was already accessed. :pr:`2373`"
 #~ msgstr ""
-
