@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-12-25 03:00+0000\n"
+"Last-Translator: Jason Son <weblate.sash858@passmail.net>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/flask/config/ko/>"
+"\n"
 "Language: ko\n"
-"Language-Team: ko <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.10-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/config.rst:2 c5d0b3d8080e43468073b788676a564f
@@ -73,7 +74,7 @@ msgstr ""
 
 #: ../../project/docs/config.rst:46 51b852a9ecfb4a93b9bdb797bcf192d5
 msgid "Debug Mode"
-msgstr ""
+msgstr "디버그 모드"
 
 #: ../../project/docs/config.rst:48 6cdbc25530834402af86381d49fe5c0e
 msgid ""
@@ -152,7 +153,7 @@ msgstr ""
 #: aee21751487b467694e5d1a347ec8a34 b903fb1638e34dd3803e7f30767d05e1
 #: bfb1ad6d990045f491914bb2c2fa209f d3fe86ccda8c463a85978ec72b6b3c16
 msgid "Default: ``None``"
-msgstr ""
+msgstr "기본 값: ``None``"
 
 #: ../../project/docs/config.rst:98 d521e32564a940488ce1cdeae3484efc
 msgid ""
@@ -211,7 +212,7 @@ msgstr ""
 
 #: ../../project/docs/config.rst:149 6827cc85d3a045b197a7bcd1b2fef6d4
 msgid "Default: ``'session'``"
-msgstr ""
+msgstr "기본 값: ``'session'``"
 
 #: ../../project/docs/config.rst:153 5b1b2c55ad5a4260906f60d3fd528bcb
 msgid ""
@@ -252,7 +253,7 @@ msgstr ""
 #: ../../project/docs/config.rst:182 ../../project/docs/config.rst:237
 #: 4def2d4a85bf4396a60af5d52ee0161f 4efd47de7f3b4779bde24bd479128a60
 msgid "Default: ``True``"
-msgstr ""
+msgstr "기본 값: ``True``"
 
 #: ../../project/docs/config.rst:186 392d9639955e471e9606069828292d07
 msgid ""
@@ -949,4 +950,3 @@ msgstr ""
 #~ "does not specify a ``CONTENT_LENGTH``, "
 #~ "no data will be read for security."
 #~ msgstr ""
-
