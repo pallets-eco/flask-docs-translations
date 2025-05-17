@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-05-17 19:17+0000\n"
+"PO-Revision-Date: 2025-05-17 20:28+0000\n"
 "Last-Translator: Aleksey Kolodchuk <vasyapinfo@ya.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/flask/"
 "installation/ru/>\n"
@@ -187,14 +187,14 @@ msgstr "Создайте папку проекта и папку :file:`.venv` �
 #: 85002bd03fce4b6e8f857899278f7db6
 #: dc46a4858ddd4f03b1be2344ed01cc81
 msgid "macOS/Linux"
-msgstr ""
+msgstr "macOS/Linux"
 
 #: ../../project/docs/installation.rst:99
 #: ../../project/docs/installation.rst:123
 #: aa68893b78a8428e89385f0c0840e489
 #: ae7e149511d045b2a0c3e77082c532b7
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../project/docs/installation.rst:111
 #: b6af5964da0d4b708f1fb7267452be8f
