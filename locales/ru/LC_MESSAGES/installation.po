@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-05-17 14:40+0000\n"
+"PO-Revision-Date: 2025-05-17 19:17+0000\n"
 "Last-Translator: Aleksey Kolodchuk <vasyapinfo@ya.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/flask/"
 "installation/ru/>\n"
@@ -118,7 +118,7 @@ msgstr ""
 #: ../../project/docs/installation.rst:52
 #: bd207b7fbf754b1281da6c1d07e194d9
 msgid "greenlet"
-msgstr ""
+msgstr "Библиотека greenlet"
 
 #: ../../project/docs/installation.rst:54
 #: 63b639d89b044270a82a8f53a3693ae9
