@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # Grey Li <withlihui@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-05-17 13:56+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/tutorialfactory/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/tutorial/factory.rst:4 fa408ba5c4504fb897e145430ac1d2a3
@@ -175,24 +178,26 @@ msgid "Run The Application"
 msgstr "运行应用"
 
 #: ../../project/docs/tutorial/factory.rst:128 173b80c3da05425ea10d8ae61e244a85
-#, fuzzy
 msgid ""
 "Now you can run your application using the ``flask`` command. From the "
 "terminal, tell Flask where to find your application, then run it in debug"
 " mode. Remember, you should still be in the top-level ``flask-tutorial`` "
 "directory, not the ``flaskr`` package."
 msgstr ""
-"现在你可以用 ``flask`` 命令运行应用。在终端里告诉 Flask 要去哪里找到你的应用，然后以开发模式运行它。请记住，你应该仍然在顶层的 "
+"现在你可以用 ``flask`` 命令运行应用。在终端里告诉 Flask "
+"要去哪里找到你的应用，然后以开发模式运行它。请记住，你应该仍然在顶层的 "
 "``flask-tutorial`` 目录下，而不是 ``flaskr`` 包内。"
 
 #: ../../project/docs/tutorial/factory.rst:133 49d7fc132ba14f6cb4fc1114a1336c90
-#, fuzzy
 msgid ""
 "Debug mode shows an interactive debugger whenever a page raises an "
 "exception, and restarts the server whenever you make changes to the code."
 " You can leave it running and just reload the browser page as you follow "
 "the tutorial."
-msgstr "在开发模式下，每当页面抛出一个异常时，就会显示一个交互式的调试器（debugger）；每当你对代码进行修改，就会重启服务器。在接下来的教程中，你可以让它保持运行，只需要重载浏览器页面。"
+msgstr ""
+"在开发模式下，每当页面抛出一个异常时，就会显示一个交互式的调试器（debugger）"
+"；每当你对代码进行修改，就会重启服务器。在接下来的教程中，你可以让它保持运行"
+"，只需要重载浏览器页面。"
 
 #: ../../project/docs/tutorial/factory.rst:142 3110d2ef700d4cc399523bababd36229
 msgid "You'll see output similar to this:"
@@ -229,4 +234,3 @@ msgstr "继续阅读 :doc:`database`。"
 
 #~ msgid "Powershell"
 #~ msgstr "Powershell"
-
