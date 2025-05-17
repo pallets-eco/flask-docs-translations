@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:34-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-05-17 13:56+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/index/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/index.rst:4 f94f2c6827a64b17828681c4fc140c6f
@@ -27,9 +30,10 @@ msgid ""
 "WSGI web application framework. It is designed to make getting started "
 "quick and easy, with the ability to scale up to complex applications."
 msgstr ""
+"欢迎阅读 Flask 项目的文档。Flask 是一个轻量级的 WSGI Web "
+"应用框架。它旨在帮助用户快速轻松地开始开发，并具备扩展为复杂应用的能力。"
 
 #: ../../project/docs/index.rst:13 f16aa3c71dd64d79bbc3e33f67f5df60
-#, fuzzy
 msgid ""
 "Get started with :doc:`installation` and then get an overview with the "
 ":doc:`quickstart`. There is also a more detailed :doc:`tutorial/index` "
@@ -38,18 +42,21 @@ msgid ""
 "rest of the docs describe each component of Flask in detail, with a full "
 "reference in the :doc:`api` section."
 msgstr ""
-"欢迎来到 Flask 的文档。你可以从 :doc:`installation` 入手，然后阅读 :doc:`quickstart` "
-"来了解基本概念。还有一个包含更多细节的 :doc:`tutorial/index` 介绍如何用 Flask "
-"创建一个很小但是完整的程序。一般的开发模式可以在 :doc:`patterns/index` 章节找到。剩下的文档详细的介绍了 Flask "
-"的每一个组成部件，其中 :doc:`api` 章节包括完整的 API 参考信息。"
+"你可以从 :doc:`installation` 入手，然后阅读 :doc:`quickstart` "
+"来了解基本概念。还有一个包含更多细节的 :doc:`tutorial/index` 介绍如何用 "
+"Flask 创建一个很小但是完整的程序。一般的开发模式可以在 :doc:`patterns/index` "
+"章节找到。剩下的文档详细的介绍了 Flask 的每一个组成部件，其中 :doc:`api` "
+"章节包括完整的 API 参考信息。"
 
 #: ../../project/docs/index.rst:21 1c2294972ca34082a357b6fdf146ebe9
-#, fuzzy
 msgid ""
 "Flask depends on the `Werkzeug`_ WSGI toolkit, the `Jinja`_ template "
 "engine, and the `Click`_ CLI toolkit. Be sure to check their "
 "documentation as well as Flask's when looking for information."
-msgstr "Flask 依赖 `Jinja`_ 模板引擎和 `Werkzeug`_ WSGI 工具集。这些库的文档如下："
+msgstr ""
+"Flask 依赖于 `Werkzeug`_ WSGI 工具包、`Jinja`_ 模板引擎以及 `Click`_ "
+"命令行工具包。在查找相关信息时，除了查看 Flask "
+"的文档，也请务必参考它们各自的文档。"
 
 #: ../../project/docs/index.rst:31 1f0282600a7240b7b291e14265b4dccc
 msgid "User's Guide"
@@ -63,6 +70,10 @@ msgid ""
 "extended. Beyond Flask itself, look for community-maintained extensions "
 "to add even more functionality."
 msgstr ""
+"Flask "
+"提供了一些配置选项和约定行为，并为它们设定了合理的默认值，方便你快速上手。"
+"本部分文档将介绍 Flask 框架的各个组成部分，以及如何使用、定制和扩展它们。"
+"除了 Flask 本身，还可以查找由社区维护的扩展，以添加更多功能。"
 
 #: ../../project/docs/index.rst:67 2a541c28296d40bea2f93fcfabc5bb86
 msgid "API Reference"
@@ -102,4 +113,3 @@ msgstr "附加笔记"
 #~ "Design notes, legal information and "
 #~ "changelog are here for the interested."
 #~ msgstr "如果你感兴趣的话，这里有一些设计笔记、法律信息和变更日志（changelog）。"
-
