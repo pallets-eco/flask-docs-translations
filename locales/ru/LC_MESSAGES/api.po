@@ -8,28 +8,34 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-05-17 21:32+0000\n"
+"Last-Translator: Aleksey Kolodchuk <vasyapinfo@ya.ru>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/flask/api/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: ../../project/docs/api.rst:2
 #: 84591d17c43147579d5eb589f573be7b
 msgid "API"
-msgstr ""
+msgstr "API"
 
 #: ../../project/docs/api.rst:6
 #: 012de3a87b8242bfb8c79703927d41b5
 msgid "This part of the documentation covers all the interfaces of Flask. For parts where Flask depends on external libraries, we document the most important right here and provide links to the canonical documentation."
 msgstr ""
+"Эта часть документации описывает все интерфейсы Flask. В тех местах, где "
+"Flask зависит от внешних библиотек, мы документируем самое важное прямо "
+"здесь и оставляем ссылки на каноничную документацию."
 
 #: ../../project/docs/api.rst:12
 #: 40a4a4243efc4f9696be423286c7c86d
 msgid "Application Object"
-msgstr ""
+msgstr "Объект Приложения"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask:1
 #: 9adb63f365864c068340387b49815eb3
@@ -54,7 +60,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask:19
 #: ed04515766d74e19a9c3b82e04b4a222
 msgid "About the First Parameter"
-msgstr ""
+msgstr "О Первом Аргументе"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask:21
 #: cde1c7e8a694474d9c7b591e2ba91c41
@@ -5980,7 +5986,7 @@ msgstr ""
 #: ../../project/docs/api.rst:334
 #: 5e417e0d6d654e4b9fc032ef2cf385a1
 msgid "Signals"
-msgstr ""
+msgstr "Сигналы"
 
 #: ../../project/docs/api.rst:336
 #: afe0199c4f3743279dfedead1fb9b9ea
