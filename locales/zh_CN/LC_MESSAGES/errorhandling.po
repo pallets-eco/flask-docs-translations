@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-05-17 13:56+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/errorhandling/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/errorhandling.rst:2 504a96bc3d1f4d4a8db5cfdaa37a08a8
@@ -399,7 +402,7 @@ msgstr ""
 
 #: ../../project/docs/errorhandling.rst:392 bf3cf0c2373b44bc929ad6a66ada41f0
 msgid "Blueprint Error Handlers"
-msgstr ""
+msgstr "蓝图的错误处理器"
 
 #: ../../project/docs/errorhandling.rst:394 32c36dd0fe66409f8d1ea10e5b7cfbbc
 msgid ""
@@ -461,7 +464,7 @@ msgstr ""
 
 #: ../../project/docs/errorhandling.rst:513 bc5af0b66ad943a987b3c29d0a27c74a
 msgid "Logging"
-msgstr ""
+msgstr "日志"
 
 #: ../../project/docs/errorhandling.rst:515 0aad75bf05fc444a8acd29f06b6a9130
 msgid ""
@@ -504,4 +507,3 @@ msgstr ""
 #~ "subclasses because it the ``HTTPException``"
 #~ " handler is more specific."
 #~ msgstr ""
-
