@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-05-17 13:56+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/tutorialindex/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/tutorial/index.rst:4
@@ -36,9 +39,8 @@ msgstr ""
 "Flaskr。在这个程序里，用户将可以注册、登录、创建文章、编辑或删除文章。你还将会学习打包程序，这样就可以在其他电脑上安装这个程序。"
 
 #: ../../project/docs/tutorial/index.rst:25 eeb7f86c5c904b97aaf37eb5cbdb837b
-#, fuzzy
 msgid "screenshot of index page"
-msgstr "登录页截图"
+msgstr "主页截图"
 
 #: ../../project/docs/tutorial/index.rst:30 0cb5e49d02a74b5c92ebe8112922b9c4
 msgid ""
@@ -60,9 +62,8 @@ msgstr ""
 "提供的功能。在你开发的另一个项目里，你也许会想要使用 :doc:`/extensions` 或其他库让某些功能实现起来更简单。"
 
 #: ../../project/docs/tutorial/index.rst:42 f38afb489e73426a95bd0ec51cb0f643
-#, fuzzy
 msgid "screenshot of login page"
-msgstr "登录页截图"
+msgstr "登录页面截图"
 
 #: ../../project/docs/tutorial/index.rst:47 105985c774cc411583611748ffc0e49a
 msgid ""
@@ -79,9 +80,8 @@ msgstr ""
 " Flask，你就可以跳出这个结构并充分利用 Flask 的灵活性。"
 
 #: ../../project/docs/tutorial/index.rst:55 fe59e8a99f4c492b9779bdfcf02872af
-#, fuzzy
 msgid "screenshot of edit page"
-msgstr "登录页截图"
+msgstr "编辑页截图"
 
 #: ../../project/docs/tutorial/index.rst:60 c9a3a8c5ddf04ecc8381403a47070822
 msgid ""
@@ -107,4 +107,3 @@ msgstr "下一节是 :doc:`layout`。"
 
 #~ msgid "登录页截图"
 #~ msgstr ""
-
