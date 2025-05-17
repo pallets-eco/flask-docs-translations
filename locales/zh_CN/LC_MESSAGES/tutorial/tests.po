@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # Grey Li <withlihui@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-05-17 13:56+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/tutorialtests/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/tutorial/tests.rst:4 54277fd02f0d4c8aa1404bb91c053472
@@ -405,16 +408,16 @@ msgid "Running the Tests"
 msgstr "运行测试"
 
 #: ../../project/docs/tutorial/tests.rst:493 48ae2ba8ddae4d3d8be19b8b3be1473d
-#, fuzzy
 msgid ""
 "Some extra configuration, which is not required but makes running tests "
 "with coverage less verbose, can be added to the project's "
 "``pyproject.toml`` file."
-msgstr "有一些额外的配置可以添加到项目的 ``setup.cfg`` 文件。它们并不是必须的，但是可以简化运行测试和计算覆盖率的命令。"
+msgstr "有一些额外的配置可以添加到项目的 ``pyproject.toml`` "
+"文件。它们并不是必须的，但是可以简化运行测试和计算覆盖率的命令。"
 
 #: ../../project/docs/tutorial/tests.rst:496 6efb2c7275bb44f58f92476af53b2dd2
 msgid "``pyproject.toml``"
-msgstr ""
+msgstr "``pyproject.toml``"
 
 #: ../../project/docs/tutorial/tests.rst:506 ee540533f19a4f149615f467a39617f8
 msgid ""
@@ -456,4 +459,3 @@ msgstr "继续阅读 :doc:`deploy`。"
 
 #~ msgid "``setup.cfg``"
 #~ msgstr "``setup.cfg``"
-
