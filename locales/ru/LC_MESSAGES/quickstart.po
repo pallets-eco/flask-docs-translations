@@ -8,68 +8,93 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-05-17 17:57+0000\n"
+"Last-Translator: Aleksey Kolodchuk <vasyapinfo@ya.ru>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/flask/quickstart/"
+"ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: ../../project/docs/quickstart.rst:2
 #: 072c4cb240e240ee88d518604b3c098d
 msgid "Quickstart"
-msgstr ""
+msgstr "Быстрый Запуск"
 
 #: ../../project/docs/quickstart.rst:4
 #: a8ac97379d1e4478b3fccbd67ea024f6
 msgid "Eager to get started? This page gives a good introduction to Flask. Follow :doc:`installation` to set up a project and install Flask first."
 msgstr ""
+"Не терпится начать? Эта страница предоставляет хорошее введение во Flask. Во-"
+"первых, проследуйте в :doc:`installation`, чтобы создать проект и установить "
+"Flask."
 
 #: ../../project/docs/quickstart.rst:9
 #: e87344e0245f461d9266268c6887cae5
 msgid "A Minimal Application"
-msgstr ""
+msgstr "Минимальное Приложение"
 
 #: ../../project/docs/quickstart.rst:11
 #: 396e00a2c7d94351b2fa9d5b0a4c6c02
 msgid "A minimal Flask application looks something like this:"
-msgstr ""
+msgstr "Минимально работоспособное приложение Flask выглядит как-то так:"
 
 #: ../../project/docs/quickstart.rst:23
 #: f0b94c74deca4fb8995c25cb20c840f4
 msgid "So what did that code do?"
-msgstr ""
+msgstr "Что же делает этот код?"
 
 #: ../../project/docs/quickstart.rst:25
 #: 30605ed7b79b4554818bcb61f79ae017
 msgid "First we imported the :class:`~flask.Flask` class. An instance of this class will be our WSGI application."
 msgstr ""
+"Во-первых, мы импортировали класс :class:`~flask.Flask`. Инстанция этого "
+"класса станет нашим WSGI-приложением."
 
 #: ../../project/docs/quickstart.rst:27
 #: 641342ec8f934497ab62092bae5a3281
 msgid "Next we create an instance of this class. The first argument is the name of the application's module or package. ``__name__`` is a convenient shortcut for this that is appropriate for most cases. This is needed so that Flask knows where to look for resources such as templates and static files."
 msgstr ""
+"Затем мы создали инстанцию этого класса. Первым аргументом является название "
+"модуля или пакета, в котором находится приложение. ``__name__`` - это "
+"удобное сокращение для этого, которое в большинстве случаев корректно. Это "
+"необходимо для того, чтобы Flask знал, где искать такие ресурсы, как шаблоны "
+"и статичные файлы."
 
 #: ../../project/docs/quickstart.rst:32
 #: 45c6469fa87d4f8aa46d11319a50a860
 msgid "We then use the :meth:`~flask.Flask.route` decorator to tell Flask what URL should trigger our function."
 msgstr ""
+"После этого мы используем декоратор `~flask.Flask.route`, чтобы сообщить "
+"Flask, какая URL-ссылка должна вызывать нашу функцию."
 
 #: ../../project/docs/quickstart.rst:34
 #: cfc675cf49514588908182a1fce142d4
 msgid "The function returns the message we want to display in the user's browser. The default content type is HTML, so HTML in the string will be rendered by the browser."
 msgstr ""
+"Функция возвращает сообщение, которое мы хотим вывести в браузере "
+"пользователя. По умолчанию, тип его содержимого - HTML, поэтому HTML-код в "
+"строке будет обрабатываться браузером."
 
 #: ../../project/docs/quickstart.rst:38
 #: f5ec99a5ae614a9ba26780187216530f
 msgid "Save it as :file:`hello.py` or something similar. Make sure to not call your application :file:`flask.py` because this would conflict with Flask itself."
 msgstr ""
+"Сохраните его в :file:`hello.py`или что-то похожее. Только учтите, что "
+"приложение нельзя называть :file:`flask.py`, потому что это будет "
+"конфликтовать с самим Flask."
 
 #: ../../project/docs/quickstart.rst:42
 #: 839c0399bdf24a6d986d2849bcdd3c8f
 msgid "To run the application, use the ``flask`` command or ``python -m flask``. You need to tell the Flask where your application is with the ``--app`` option."
 msgstr ""
+"Чтобы запустить приложение, используйте команду ``flask`` или ``python -m "
+"flask``. Вам необходимо указать Flask, где находится ваше приложение, при "
+"помощи ключа ``--app``."
 
 #: ../../project/docs/quickstart.rst:52
 #: 065be0391fa9431eac148d38072ca985
