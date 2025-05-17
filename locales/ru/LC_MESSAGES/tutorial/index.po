@@ -8,23 +8,27 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-05-17 21:32+0000\n"
+"Last-Translator: Aleksey Kolodchuk <vasyapinfo@ya.ru>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/flask/"
+"tutorialindex/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: ../../project/docs/tutorial/index.rst:4
 #: 
 msgid "Contents:"
-msgstr ""
+msgstr "Содержание:"
 
 #: ../../project/docs/tutorial/index.rst:2
 #: 2d99c452fba84267a84076cf7520070c
 msgid "Tutorial"
-msgstr ""
+msgstr "Руководство"
 
 #: ../../project/docs/tutorial/index.rst:20
 #: 90be280d543445449b06d91dc322e28d
@@ -34,12 +38,14 @@ msgstr ""
 #: ../../project/docs/tutorial/index.rst:25
 #: eeb7f86c5c904b97aaf37eb5cbdb837b
 msgid "screenshot of index page"
-msgstr ""
+msgstr "скриншот страницы index"
 
 #: ../../project/docs/tutorial/index.rst:30
 #: 0cb5e49d02a74b5c92ebe8112922b9c4
 msgid "It's assumed that you're already familiar with Python. The `official tutorial`_ in the Python docs is a great way to learn or review first."
 msgstr ""
+"Предполагается, что вы уже знакомы с Python. `официальное руководство`_ в "
+"документации Python - отличный способ выучить его первым делом."
 
 #: ../../project/docs/tutorial/index.rst:35
 #: 3c9ca489ec9d4782a768f7802413b0b3
@@ -49,7 +55,7 @@ msgstr ""
 #: ../../project/docs/tutorial/index.rst:42
 #: f38afb489e73426a95bd0ec51cb0f643
 msgid "screenshot of login page"
-msgstr ""
+msgstr "скриншот страницы логина"
 
 #: ../../project/docs/tutorial/index.rst:47
 #: 105985c774cc411583611748ffc0e49a
