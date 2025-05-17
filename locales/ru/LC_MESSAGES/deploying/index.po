@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-05-17 17:57+0000\n"
+"PO-Revision-Date: 2025-05-17 19:17+0000\n"
 "Last-Translator: Aleksey Kolodchuk <vasyapinfo@ya.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/flask/"
 "deployingindex/ru/>\n"
@@ -106,21 +106,29 @@ msgstr ""
 #: d4b21d72522c40598e14c44e32165f78
 msgid "`PythonAnywhere <https://help.pythonanywhere.com/pages/Flask/>`_"
 msgstr ""
+"`PythonAnywhere <https://help.pythonanywhere.com/pages/Flask/>`_ (на "
+"английском)"
 
 #: ../../project/docs/deploying/index.rst:69
 #: e49a9adc1b0244f094fdd2f2712b188e
 msgid "`Google App Engine <https://cloud.google.com/appengine/docs/standard/python3/building-app>`_"
 msgstr ""
+"`Google App Engine <https://cloud.google.com/appengine/docs/standard/python3/"
+"building-app>`_ (на английском)"
 
 #: ../../project/docs/deploying/index.rst:70
 #: 930841b37df7471fad49c1f608333017
 msgid "`Google Cloud Run <https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service>`_"
 msgstr ""
+"`Google Cloud Run <https://cloud.google.com/run/docs/quickstarts/"
+"build-and-deploy/deploy-python-service>`_ (на английском)"
 
 #: ../../project/docs/deploying/index.rst:71
 #: 73aa458a13d84d6a871b2f3c3deb9824
 msgid "`AWS Elastic Beanstalk <https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html>`_"
 msgstr ""
+"`AWS Elastic Beanstalk <https://docs.aws.amazon.com/elasticbeanstalk/latest/"
+"dg/create-deploy-python-flask.html>`_ (на английском)"
 
 #: ../../project/docs/deploying/index.rst:72
 #: 6eb24a691ce84ec6a62c04b4c9319c81
