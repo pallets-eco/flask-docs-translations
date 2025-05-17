@@ -8,25 +8,37 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-05-17 21:02+0000\n"
+"Last-Translator: Aleksey Kolodchuk <vasyapinfo@ya.ru>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/flask/"
+"deployingasgi/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: ../../project/docs/deploying/asgi.rst:2
 #: 79dbdfc2ce934f16a5afbf0023177d26
 msgid "ASGI"
-msgstr ""
+msgstr "ASGI"
 
 #: ../../project/docs/deploying/asgi.rst:4
 #: 839f3095b92a4e7ea8dd785bc3f18ad2
 msgid "If you'd like to use an ASGI server you will need to utilise WSGI to ASGI middleware. The asgiref `WsgiToAsgi <https://github.com/django/asgiref#wsgi-to-asgi-adapter>`_ adapter is recommended as it integrates with the event loop used for Flask's :ref:`async_await` support. You can use the adapter by wrapping the Flask app,"
 msgstr ""
+"Если вы хотите использовать ASGI-сервер, вам нужно использовать ПО, "
+"связывающее WSGI и ASGI. К использованию рекомендуется адаптер asgiref `"
+"WsgiToAsgi <https://github.com/django/asgiref#wsgi-to-asgi-adapter>`_, так "
+"как он интегрируется с циклом событий, используемым в поддержке "
+":ref:`async_await` Flask. Вы можете использовать адаптер, обёртывая "
+"приложение Flask,"
 
 #: ../../project/docs/deploying/asgi.rst:22
 #: 88f15ac10d554d728dc2c5a1664e5adc
 msgid "and then serving the ``asgi_app`` with the ASGI server, e.g. using `Hypercorn <https://github.com/pgjones/hypercorn>`_,"
 msgstr ""
+"и затем обслуживая ``asgi_app`` ASGI-сервером, например, используя `"
+"Hypercorn <https://github.com/pgjones/hypercorn>`_,"
