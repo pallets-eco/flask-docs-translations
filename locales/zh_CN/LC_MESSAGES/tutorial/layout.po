@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # Grey Li <withlihui@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-05-17 13:56+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/tutoriallayout/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/tutorial/layout.rst:2 58819f5d57c74c67922d7816a41efc10
@@ -69,11 +72,10 @@ msgid "``tests/``, a directory containing test modules."
 msgstr "``tests/``，一个包含测试模块的目录。"
 
 #: ../../project/docs/tutorial/layout.rst:44 a053f22d6e6147ebb17430d34fc04364
-#, fuzzy
 msgid ""
 "``.venv/``, a Python virtual environment where Flask and other "
 "dependencies are installed."
-msgstr "``venv/``，一个 Python 虚拟环境文件夹，Flask 和其他依赖会被安装到这里。"
+msgstr "``.venv/``，一个 Python 虚拟环境文件夹，Flask 和其他依赖会被安装到这里。"
 
 #: ../../project/docs/tutorial/layout.rst:46 caa369d1b1264ac5920a8e4b83b38839
 msgid "Installation files telling Python how to install your project."
@@ -110,4 +112,3 @@ msgstr "``.gitignore``"
 #: ../../project/docs/tutorial/layout.rst:110 d4c405136bb040dab49478b5db0e6524
 msgid "Continue to :doc:`factory`."
 msgstr "继续阅读 :doc:`factory`。"
-
