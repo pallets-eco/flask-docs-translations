@@ -8,73 +8,91 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-05-17 20:28+0000\n"
+"Last-Translator: Aleksey Kolodchuk <vasyapinfo@ya.ru>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/flask/"
+"contributing/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: ../../project/CONTRIBUTING.rst:2
 #: 76aeaf570dd3498aa69a07074a7c93e6
 msgid "How to contribute to Flask"
-msgstr ""
+msgstr "Как внести свой вклад во Flask"
 
 #: ../../project/CONTRIBUTING.rst:4
 #: 1af1c616faa548ceaf1cd9808c1e9447
 msgid "Thank you for considering contributing to Flask!"
-msgstr ""
+msgstr "Спасибо, что рассматриваете внесение своего вклада во Flask!"
 
 #: ../../project/CONTRIBUTING.rst:8
 #: 1186a1fd10d642d89e492d0cfebffcb6
 msgid "Support questions"
-msgstr ""
+msgstr "Просьбы помочь"
 
 #: ../../project/CONTRIBUTING.rst:10
 #: 857535fee5f34be8911a2d35fae66446
 msgid "Please don't use the issue tracker for this. The issue tracker is a tool to address bugs and feature requests in Flask itself. Use one of the following resources for questions about using Flask or issues with your own code:"
 msgstr ""
+"Пожалуйста, не используйте трекер задач для этого. Трекер задач - это "
+"инструмент для информирования о багах или запросах функционала в самом "
+"Flask. Используйте один из ресурсов ниже по вопросам о использовании Flask "
+"или проблемах с вашим собственным кодом:"
 
 #: ../../project/CONTRIBUTING.rst:15
 #: f7f74e65d17d4948adeb1d036c97011d
 msgid "The ``#questions`` channel on our Discord chat: https://discord.gg/pallets"
 msgstr ""
+"Канал ``#questions`` в нашем Discord-сервере: https://discord.gg/pallets"
 
 #: ../../project/CONTRIBUTING.rst:17
 #: 653ee9491a5246308a8905be9a916d08
 msgid "Ask on `Stack Overflow`_. Search with Google first using: ``site:stackoverflow.com flask {search term, exception message, etc.}``"
 msgstr ""
+"Спросите на `Stack Overflow`_. Первым делом поищите в Яндексе следующим "
+"образом: ``site:stackoverflow.com flask {запрос, ошибка и т.п.}``"
 
 #: ../../project/CONTRIBUTING.rst:19
 #: a513be49cc92451496c42d70175cea9a
 msgid "Ask on our `GitHub Discussions`_ for long term discussion or larger questions."
 msgstr ""
+"Спросите в наших `GitHub Discussions`_ для долгосрочного обсуждения или "
+"крупных вопросов."
 
 #: ../../project/CONTRIBUTING.rst:27
 #: f8dcace4ad744b3cbfb994e663aef061
 msgid "Reporting issues"
-msgstr ""
+msgstr "Сообщение о проблемах"
 
 #: ../../project/CONTRIBUTING.rst:29
 #: d15ae1e69d9b43a2a9e69413206ad1d3
 msgid "Include the following information in your post:"
-msgstr ""
+msgstr "Внесите следующую информацию в ваш пост:"
 
 #: ../../project/CONTRIBUTING.rst:31
 #: 4c6026ef22544b8cabb41fbbc6123ff5
 msgid "Describe what you expected to happen."
-msgstr ""
+msgstr "Опишите, какое поведение вы ожидали."
 
 #: ../../project/CONTRIBUTING.rst:32
 #: ba30944f94b24a3bbc74926ea03c0980
 msgid "If possible, include a `minimal reproducible example`_ to help us identify the issue. This also helps check that the issue is not with your own code."
 msgstr ""
+"Если это возможно, укажите `минимальный воспроизводимый пример`_, чтобы "
+"помочь нам идентифицировать проблему. Это также позволит нам убедиться в "
+"том, что проблема не в вашем собственном коде."
 
 #: ../../project/CONTRIBUTING.rst:35
 #: 6b4ab34d37e8402aab58eb444acd4f2d
 msgid "Describe what actually happened. Include the full traceback if there was an exception."
 msgstr ""
+"Опишите поведение, случившееся на самом деле. Включите в него трассировку, "
+"если появилась ошибка."
 
 #: ../../project/CONTRIBUTING.rst:37
 #: fe2c16d5d4c54c15809866f7d662ca98
@@ -186,7 +204,7 @@ msgstr ""
 #: ../../project/CONTRIBUTING.rst:119
 #: 0898f918c8804504a64efa5232630ed7
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../project/CONTRIBUTING.rst:126
 #: 3267dc96c2c84fb5bccb81c9fb422e22
