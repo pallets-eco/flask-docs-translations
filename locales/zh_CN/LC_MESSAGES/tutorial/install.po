@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # Grey Li <withlihui@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-05-17 13:56+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/tutorialinstall/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/tutorial/install.rst:2 1901b4d9c96543ff90db0fa9ca78a0d3
@@ -75,7 +78,7 @@ msgstr "``setup.py`` 文件描述了项目和项目相关的文件。"
 
 #: ../../project/docs/tutorial/install.rst:32 2ab32e91159b460993dee5fcb07d3f9e
 msgid "``pyproject.toml``"
-msgstr ""
+msgstr "``pyproject.toml``"
 
 #: ../../project/docs/tutorial/install.rst:47 19b9aaceda5d4dada2031dd68bd9242c
 #, fuzzy
@@ -156,4 +159,3 @@ msgstr "继续阅读 :doc:`tests`。"
 #~ "这会告诉 Python 复制 ``static`` 和 "
 #~ "``templates`` 目录下的所有文件以及 ``schema.sql`` "
 #~ "文件，但是排除所有字节码（bytecode）文件。"
-
