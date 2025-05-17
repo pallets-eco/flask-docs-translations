@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # Grey Li <withlihui@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-05-17 13:56+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/tutorialdatabase/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/tutorial/database.rst:4 c6ca508666cc429499841107fc118d14
@@ -178,6 +181,9 @@ msgid ""
 "interpret timestamp values in the database. We convert the value to a "
 ":class:`datetime.datetime`."
 msgstr ""
+"调用 :func:`sqlite3.register_converter` 是为了告诉 Python "
+"如何解析数据库中的时间戳值。我们将该值转换为 :class:`datetime.datetime` "
+"对象。"
 
 #: ../../project/docs/tutorial/database.rst:157
 #: 12ed5fe5f2c24f94b071893ac339f0ba
@@ -241,16 +247,15 @@ msgstr "现在 ``init-db`` 已经注册到应用，你可以使用 ``flask`` 命
 
 #: ../../project/docs/tutorial/database.rst:204
 #: 33b1ddc5ea0c44f888d3c3ee992fd5d0
-#, fuzzy
 msgid ""
 "If you're still running the server from the previous page, you can either"
 " stop the server, or run this command in a new terminal. If you use a new"
 " terminal, remember to change to your project directory and activate the "
 "env as described in :doc:`/installation`."
 msgstr ""
-"如果你仍然运行着上一章介绍的服务器，你可以停止服务器，或是在新的终端运行这个命令。如果你使用一个新的终端，记得切换到项目目录，激活在 "
-":doc:`/installation` 里描述的虚拟环境。你还将需要设置上一章介绍的 ``FLASK_APP`` 和 "
-"``FLASK_ENV``。"
+"如果你仍然运行着上一章介绍的服务器，你可以停止服务器，或是在新的终端运行这个"
+"命令。如果你使用一个新的终端，记得切换到项目目录，激活在 :doc:`/installation`"
+" 里描述的虚拟环境。"
 
 #: ../../project/docs/tutorial/database.rst:209
 #: 6e6cf49e0a914873a63c923bacedc9d3
@@ -268,4 +273,3 @@ msgstr "现在在你项目的 ``instance`` 文件夹中会有一个 ``flaskr.sql
 #: 24b9e0b8bef2462fab7d31a4f9ec3441
 msgid "Continue to :doc:`views`."
 msgstr "继续阅读 :doc:`views`。"
-
