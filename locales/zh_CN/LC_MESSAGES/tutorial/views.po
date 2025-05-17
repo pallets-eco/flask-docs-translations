@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # Grey Li <withlihui@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-12 19:17+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-05-17 13:56+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/tutorialviews/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../tutorial/views.rst:4
@@ -77,8 +80,9 @@ msgid ""
 ":meth:`app.register_blueprint() <Flask.register_blueprint>`. Place the "
 "new code at the end of the factory function before returning the app."
 msgstr ""
-"导入并在应用工厂里使用 :meth:`app.register_blueprint() <Flask.register_blueprint>` "
-"注册蓝图。把新代码放到工厂函数的末尾，在返回应用实例之前。"
+"导入并在工厂中使用 :meth:`app.register_blueprint() "
+"<Flask.register_blueprint>` "
+"注册蓝图。把新代码放到工厂函数的底部，在返回应用实例之前。"
 
 #: ../../tutorial/views.rst:50
 msgid "``flaskr/__init__.py``"
