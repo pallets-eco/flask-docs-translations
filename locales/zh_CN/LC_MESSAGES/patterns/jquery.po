@@ -3,27 +3,30 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-05-17 13:56+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/patternsjquery/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/patterns/jquery.rst:4 2548245c827b43418fb5e011fc71f4a9
 msgid "AJAX with jQuery"
-msgstr ""
+msgstr "使用 jQuery 实现 AJAX"
 
 #: ../../project/docs/patterns/jquery.rst:6 75a1da8781204c64bb01585e5c290397
 msgid "Obsolete, see :doc:`/patterns/javascript` instead."
-msgstr ""
+msgstr "该文档已废弃，请参阅 :doc:`/patterns/javascript`。"
 
 #~ msgid ""
 #~ "`jQuery`_ is a small JavaScript library"
@@ -218,4 +221,3 @@ msgstr ""
 #~ " as well as the same thing "
 #~ "using ``XMLHttpRequest`` and ``fetch``."
 #~ msgstr ""
-
