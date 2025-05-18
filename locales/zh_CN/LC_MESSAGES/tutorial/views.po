@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-12 19:17+0800\n"
-"PO-Revision-Date: 2025-05-17 13:56+0000\n"
+"PO-Revision-Date: 2025-05-18 22:02+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/tutorialviews/zh_Hans/>\n"
@@ -152,22 +152,21 @@ msgstr "验证 ``username`` 和 ``password`` 不为空。"
 
 #: ../../tutorial/views.rst:128
 msgid "If validation succeeds, insert the new user data into the database."
-msgstr ""
+msgstr "如果验证成功，插入新的用户数据到数据库。"
 
 #: ../../tutorial/views.rst:130
-#, fuzzy
 msgid ""
 ":meth:`db.execute <sqlite3.Connection.execute>` takes a SQL query with "
 "``?`` placeholders for any user input, and a tuple of values to replace "
 "the placeholders with. The database library will take care of escaping "
 "the values so you are not vulnerable to a *SQL injection attack*."
 msgstr ""
-"通过查询数据库并检查是否有结果返回，验证 ``username`` 是否已经被注册。:meth:`db.execute "
-"<sqlite3.Connection.execute>` 接受一个 SQL 查询，其中包含代表任意用户输入的 ``?`` "
-"占位符，以及一个用来替换占位符的数据元组。数据库相关的库将负责转义值，使得你不易受到 *SQL 注入攻击*"
+":meth:`db.execute <sqlite3.Connection.execute>` 接受一个 SQL 查询，"
+"其中包含代表任意用户输入的 ``?`` "
+"占位符，以及一个用来替换占位符的数据元组。数据库相关的库将负责转义值，"
+"使得你不易受到 *SQL 注入攻击*。"
 
 #: ../../tutorial/views.rst:136
-#, fuzzy
 msgid ""
 "For security, passwords should never be stored in the database directly. "
 "Instead, :func:`~werkzeug.security.generate_password_hash` is used to "
@@ -175,15 +174,17 @@ msgid ""
 "modifies data, :meth:`db.commit() <sqlite3.Connection.commit>` needs to "
 "be called afterwards to save the changes."
 msgstr ""
-"如果验证成功，插入新的用户数据到数据库。为了安全起见，密码绝对不应该直接存储到数据库中。相反，:func:`~werkzeug.security.generate_password_hash`"
-" 被用来安全地计算出密码散列值，并存储该散列值。因为这个查询修改了数据，为了保存变动，:meth:`db.commit() "
-"<sqlite3.Connection.commit>` 需要在之后被调用。"
+"为了安全起见，密码绝对不应该直接存储到数据库中。相反，:func:`~werkzeug.securi"
+"ty.generate_password_hash` "
+"被用来安全地计算出密码散列值，并存储该散列值。因为这个查询修改了数据，为了保"
+"存变动，:meth:`db.commit() <sqlite3.Connection.commit>` 需要在之后被调用。"
 
 #: ../../tutorial/views.rst:144
 msgid ""
 "An :exc:`sqlite3.IntegrityError` will occur if the username already "
 "exists, which should be shown to the user as another validation error."
-msgstr ""
+msgstr "如果用户名已存在，则会触发 :exc:`sqlite3.IntegrityError` "
+"异常，应该将其作为另一个验证错误显示给用户。"
 
 #: ../../tutorial/views.rst:148
 msgid ""
@@ -230,15 +231,15 @@ msgid "The user is queried first and stored in a variable for later use."
 msgstr "首先查询用户，并存储到一个变量供后面使用。"
 
 #: ../../tutorial/views.rst:202
-#, fuzzy
 msgid ""
 ":meth:`~sqlite3.Cursor.fetchone` returns one row from the query. If the "
 "query returned no results, it returns ``None``. Later, "
 ":meth:`~sqlite3.Cursor.fetchall` will be used, which returns a list of "
 "all results."
 msgstr ""
-":meth:`~sqlite3.Cursor.fetchone` 从查询返回一行。如果查询没有返回结果，它返回 "
-"``None``。接着，:meth:`~sqlite3.Cursor.fetchall` 被使用，它返回一个包含所有结果的列表。"
+":meth:`~sqlite3.Cursor.fetchone` 从查询返回一行。如果查询没有返回结果，"
+"它返回 ``None``。接着，:meth:`~sqlite3.Cursor.fetchall` "
+"被使用，它返回一个包含所有结果的列表。"
 
 #: ../../tutorial/views.rst:207
 msgid ""
