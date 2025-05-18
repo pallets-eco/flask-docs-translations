@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-05-17 13:56+0000\n"
+"PO-Revision-Date: 2025-05-18 22:02+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/templating/zh_Hans/>\n"
@@ -50,17 +50,17 @@ msgstr "Jinja 设置"
 
 #: ../../project/docs/templating.rst:18 96d2d443bce44a7a97e0c9275a7da52f
 msgid "Unless customized, Jinja2 is configured by Flask as follows:"
-msgstr "除非被自定义，Jinja2 被 Flask 配置为以下内容"
+msgstr "除非被自定义，Jinja2 被 Flask 配置为以下内容："
 
 #: ../../project/docs/templating.rst:20 34a534b1eb844fe291d2a849adc79874
-#, fuzzy
 msgid ""
 "autoescaping is enabled for all templates ending in ``.html``, ``.htm``, "
 "``.xml``, ``.xhtml``, as well as ``.svg`` when using "
 ":func:`~flask.templating.render_template`."
 msgstr ""
 "当使用 :func:`~flask.templating.render_template` 时，所有文件名以 "
-"``.html``，``.htm``，``.xml`` 和 ``.xhtml`` 结尾的模板被配置了自动转义。"
+"``.html``，``.htm``，``.xml``，``.xhtml`` 以及 ``.svg`` "
+"结尾的模板被配置了自动转义。"
 
 #: ../../project/docs/templating.rst:23 61df07f3fc474b4e904f268b87b94ba6
 msgid ""
@@ -125,7 +125,7 @@ msgstr ":func:`flask.url_for` 函数。"
 
 #: ../../project/docs/templating.rst:76 834d737d486b402185e51561cdd75bee
 msgid "The :func:`flask.get_flashed_messages` function."
-msgstr ":func:`flask.get_flashed_messages` 函数"
+msgstr ":func:`flask.get_flashed_messages` 函数。"
 
 #: ../../project/docs/templating.rst:78 8732643371a24ddb994db8a37b5af4d5
 msgid "The Jinja Context Behavior"
@@ -194,14 +194,13 @@ msgid "There are three ways to accomplish that:"
 msgstr "有三种方法可以做到这一点："
 
 #: ../../project/docs/templating.rst:118 fbc6be9de1ec48fb815d4e7c6a70beb5
-#, fuzzy
 msgid ""
 "In the Python code, wrap the HTML string in a :class:`~markupsafe.Markup`"
 " object before passing it to the template.  This is in general the "
 "recommended way."
 msgstr ""
-"在 Python 代码中，在将 HTML 字符串传递给模板之前，将其包装在 :class:`~flack.Markup` "
-"对象中。这通常是推荐的方式。"
+"在 Python 代码中，在将 HTML 字符串传递给模板之前，将其包装在 "
+":class:`~markupsafe.Markup` 对象中。这通常是推荐的方式。"
 
 #: ../../project/docs/templating.rst:121 50b952e3b6df449daf6642f7f8cf44c6
 msgid ""
