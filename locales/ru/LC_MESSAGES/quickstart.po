@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-05-17 17:57+0000\n"
+"PO-Revision-Date: 2025-05-18 22:02+0000\n"
 "Last-Translator: Aleksey Kolodchuk <vasyapinfo@ya.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/flask/quickstart/"
 "ru/>\n"
@@ -99,22 +99,29 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:52
 #: 065be0391fa9431eac148d38072ca985
 msgid "Application Discovery Behavior"
-msgstr ""
+msgstr "Процесс Поиска Приложения"
 
 #: ../../project/docs/quickstart.rst:54
 #: 921fab71c2254193ae9a288f2ed6fc48
 msgid "As a shortcut, if the file is named ``app.py`` or ``wsgi.py``, you don't have to use ``--app``. See :doc:`/cli` for more details."
 msgstr ""
+"Если файл называется ``app.py`` или ``wsgi.py``, вам не нужно использовать "
+"ключ ``--app``. Детали смотрите в :doc:`/cli`."
 
 #: ../../project/docs/quickstart.rst:57
 #: c519fca9387f4421b38dd160c9aadb74
 msgid "This launches a very simple builtin server, which is good enough for testing but probably not what you want to use in production. For deployment options see :doc:`deploying/index`."
 msgstr ""
+"Эта команда запускает простенький встроенный сервер, который хорош для "
+"тестирования, но, скорее всего, не то, что вы хотели бы использовать в "
+"продакшне. Подробнее о развёртывании см. :doc:`deploying/index`."
 
 #: ../../project/docs/quickstart.rst:61
 #: 2834e151d2ca49f48b990cf655032675
 msgid "Now head over to http://127.0.0.1:5000/, and you should see your hello world greeting."
 msgstr ""
+"Теперь, перейдя по http://127.0.0.1:5000/, вы должны увидеть ваше "
+"приветствие."
 
 #: ../../project/docs/quickstart.rst:64
 #: ad65b3803432439bbbe6c506eca24b97
