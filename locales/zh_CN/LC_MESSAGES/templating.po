@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-05-18 22:02+0000\n"
+"PO-Revision-Date: 2025-05-20 02:02+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/templating/zh_Hans/>\n"
@@ -303,7 +303,7 @@ msgstr ""
 
 #: ../../project/docs/templating.rst:206 d2b07d6426584b5e87726bb277c6f7fc
 msgid "Streaming"
-msgstr ""
+msgstr "流式渲染"
 
 #: ../../project/docs/templating.rst:208 3d7bc75969c243488059f7c488084b5f
 msgid ""
@@ -312,6 +312,9 @@ msgid ""
 "This can be used for streaming HTML in chunks to speed up initial page "
 "load, or to save memory when rendering a very large template."
 msgstr ""
+"有时候不需要将整个模板渲染为一个完整的字符串，而是可以将其作为一个数据流来渲"
+"染，逐步产出较小的字符串片段。这种方式可以用于分块传输 "
+"HTML，从而加快页面的首次加载速度，或者在渲染非常大的模板时节省内存。"
 
 #: ../../project/docs/templating.rst:214 9f361a165b634a9b8e5a1ee7e9896e4a
 msgid ""
@@ -320,6 +323,9 @@ msgid ""
 ":func:`~flask.stream_template` and :func:`~flask.stream_template_string` "
 "functions to make this easier to use."
 msgstr ""
+"Jinja2 模板引擎支持按片段渲染模板，返回一个字符串迭代器。Flask 提供了 "
+":func:`~flask.stream_template` 和 :func:`~flask.stream_template_string` "
+"函数，使得这种用法更加方便。"
 
 #: ../../project/docs/templating.rst:227 87ea2d360de24eca97d1a93f3ccd6c0b
 msgid ""
@@ -327,6 +333,8 @@ msgid ""
 ":func:`~flask.stream_with_context` wrapper if a request is active, so "
 "that it remains available in the template."
 msgstr ""
+"如果请求处于活动状态，这些函数会自动应用 :func:`~flask.stream_with_context` "
+"包装器，以确保在模板中仍然可以访问请求上下文。"
 
 #~ msgid "The current configuration object (:data:`flask.config`)"
 #~ msgstr "当前配置对象（:data:`flask.config`）"
