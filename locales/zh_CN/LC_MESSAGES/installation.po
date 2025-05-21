@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-05-22 12:23+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/installation/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/installation.rst:2 791a32301f644c9e8942729df679662f
@@ -26,11 +29,10 @@ msgid "Python Version"
 msgstr "Python 版本"
 
 #: ../../project/docs/installation.rst:8 9de49b1dbb0944e7ac2a371afba0ff0a
-#, fuzzy
 msgid ""
 "We recommend using the latest version of Python. Flask supports Python "
 "3.9 and newer."
-msgstr "我们建议使用最新版本的 Python。Flask 支持 Python 3.6 及其以上版本。"
+msgstr "我们建议使用最新版本的 Python。Flask 支持 Python 3.9 及其以上版本。"
 
 #: ../../project/docs/installation.rst:12 4c2422928253437e9faf99ca8725119d
 msgid "Dependencies"
@@ -99,7 +101,7 @@ msgstr "`Watchdog`_ 为开发服务器提供更快和更高效的重载器（rel
 
 #: ../../project/docs/installation.rst:52 bd207b7fbf754b1281da6c1d07e194d9
 msgid "greenlet"
-msgstr ""
+msgstr "greenlet"
 
 #: ../../project/docs/installation.rst:54 63b639d89b044270a82a8f53a3693ae9
 msgid ""
@@ -107,13 +109,16 @@ msgid ""
 "case, greenlet>=1.0 is required. When using PyPy, PyPy>=7.3.7 is "
 "required."
 msgstr ""
+"你可以选择在应用中使用 gevent 或 eventlet。在这种情况下，需安装 "
+"greenlet>=1.0。若使用 PyPy，则需要 PyPy>=7.3.7。"
 
 #: ../../project/docs/installation.rst:58 762fdf98d0aa425b85e2c6f8b6a4e217
 msgid ""
 "These are not minimum supported versions, they only indicate the first "
 "versions that added necessary features. You should use the latest "
 "versions of each."
-msgstr ""
+msgstr "这些并不是最低支持的版本，而是指首次引入所需功能的版本。建议始终使用各组件的"
+"最新版本。"
 
 #: ../../project/docs/installation.rst:64 8a4ad55703d14f12bd5c3f6e796a3330
 msgid "Virtual environments"
@@ -153,9 +158,8 @@ msgid "Create an environment"
 msgstr "创建虚拟环境"
 
 #: ../../project/docs/installation.rst:87 5d430b20fa8345f7b9d6754f8f235548
-#, fuzzy
 msgid "Create a project folder and a :file:`.venv` folder within:"
-msgstr "创建一个项目文件夹，并在其中创建虚拟环境文件夹 :file:`venv`："
+msgstr "创建一个项目文件夹，并在其中创建虚拟环境文件夹 :file:`.venv`："
 
 #: ../../project/docs/installation.rst:91
 #: ../../project/docs/installation.rst:117 85002bd03fce4b6e8f857899278f7db6
@@ -205,4 +209,3 @@ msgstr ""
 #~ "``async`` support in Flask requires "
 #~ "Python 3.7+ for ``contextvars.ContextVar``."
 #~ msgstr ""
-
