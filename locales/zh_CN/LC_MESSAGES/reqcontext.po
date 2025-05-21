@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-05-17 13:56+0000\n"
+"PO-Revision-Date: 2025-05-22 12:23+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/reqcontext/zh_Hans/>\n"
@@ -35,14 +35,14 @@ msgstr ""
 "与 :data:`session` 代理对象来访问请求对象。"
 
 #: ../../project/docs/reqcontext.rst:11 e068e5f6425a45f0bc2cb2b9f183a059
-#, fuzzy
 msgid ""
 "This is similar to :doc:`/appcontext`, which keeps track of the "
 "application-level data independent of a request. A corresponding "
 "application context is pushed when a request context is pushed."
 msgstr ""
 "这与 :doc:`/appcontext` "
-"类似，只不过应用上下文跟踪独立于请求的应用层级数据。在请求上下文被推入线程局部栈时，对应的应用上下文也被推入。"
+"类似，只不过应用上下文跟踪独立于请求的应用层级数据。在请求上下文被推入时，对"
+"应的应用上下文也被推入。"
 
 #: ../../project/docs/reqcontext.rst:17 3a6f4b0d32f14412a4284d9b56f936ab
 msgid "Purpose of the Context"
@@ -76,25 +76,24 @@ msgid "Lifetime of the Context"
 msgstr "上下文的生命周期"
 
 #: ../../project/docs/reqcontext.rst:35 ab8ec3ad859149c7b0cbdbe8a4040e52
-#, fuzzy
 msgid ""
 "When a Flask application begins handling a request, it pushes a request "
 "context, which also pushes an :doc:`app context </appcontext>`. When the "
 "request ends it pops the request context then the application context."
 msgstr ""
-"当 Flask 应用开始处理请求时，推入请求上下文的同时也推入了 "
-":doc:`/appcontext`。当请求结束，会先弹出请求上下文，然后再弹出应用上下文。"
+"当 Flask 应用开始处理请求时，推入请求上下文的同时也推入了 :doc:`app context "
+"</appcontext>`。当请求结束，会先弹出请求上下文，然后再弹出应用上下文。"
 
 #: ../../project/docs/reqcontext.rst:39 7ba87c5aaa0e437cbc3db0877ba61a8b
-#, fuzzy
 msgid ""
 "The context is unique to each thread (or other worker type). "
 ":data:`request` cannot be passed to another thread, the other thread has "
 "a different context space and will not know about the request the parent "
 "thread was pointing to."
 msgstr ""
-"每个线程（或者其他工作者类型）的上下文是独立的。:data:`request` "
-"不能传入其他线程，其他线程有不同的上下文栈，因此不会知道父线程会指向哪个请求。"
+"上下文对于每个线程（或其他类型的工作单元）都是唯一的。:data:`request` "
+"不能被传递到另一个线程，因为其他线程拥有不同的上下文空间，无法识别父线程所指"
+"向的请求对象。"
 
 #: ../../project/docs/reqcontext.rst:44 6bc07aef00504a618d1ad32e98728cfa
 msgid ""
@@ -103,6 +102,10 @@ msgid ""
 "lifetime of context vars automatically, and local proxy wraps that low-"
 "level interface to make the data easier to work with."
 msgstr ""
+"上下文局部变量（context locals）是通过 Python 的 :mod:`contextvars` 模块和 "
+"Werkzeug 的 :class:`~werkzeug.local.LocalProxy` 类实现的。 Python "
+"会自动管理上下文变量的生命周期，而本地代理（local "
+"proxy）封装了这些底层接口，使数据的使用更加方便。"
 
 #: ../../project/docs/reqcontext.rst:51 78a8ba17212d40d489ddfbadeb3b4f60
 msgid "Manually Push a Context"
@@ -146,7 +149,6 @@ msgid "How the Context Works"
 msgstr "上下文的运作原理"
 
 #: ../../project/docs/reqcontext.rst:91 39adf0ed8bc94379b990e5e3c0b26947
-#, fuzzy
 msgid ""
 "The :meth:`Flask.wsgi_app` method is called to handle each request. It "
 "manages the contexts during the request. Internally, the request and "
@@ -155,8 +157,9 @@ msgid ""
 "the top item."
 msgstr ""
 "在处理每个请求时，都会调用 :meth:`Flask.wsgi_app` "
-"方法。它在请求中控制上下文。具体来说，存储请求上下文和应用上下文的数据结构为栈，分别为 :data:`_request_ctx_stack` 以及"
-" :data:`_app_ctx_stack`。当上下文被推入栈，依赖栈的代理对象变得可用，指向在栈顶的上下文。"
+"方法。它负责在请求过程中管理上下文。在内部，请求上下文和应用上下文的工作方式"
+"类似于栈（stack）。当上下文被推入时，依赖它们的代理对象就会可用，并指向在顶部"
+"元素的相关信息。"
 
 #: ../../project/docs/reqcontext.rst:97 819a650c5a1a4101a83fbdb96c7ce3a4
 msgid ""
@@ -173,13 +176,15 @@ msgstr ""
 "在处理请求的线程变得可用。"
 
 #: ../../project/docs/reqcontext.rst:104 1a4e12b25cb145908972e9f69ed8979a
-#, fuzzy
 msgid ""
 "Other contexts may be pushed to change the proxies during a request. "
 "While this is not a common pattern, it can be used in advanced "
 "applications to, for example, do internal redirects or chain different "
 "applications together."
-msgstr "因为上下文对象存放在栈中，在请求中，其他上下文对象推入时可能会改变代理对象的指向。尽管这不是常见的设计模式，但它可以让应用能够内部重定向或者将不同应用串联在一起。"
+msgstr ""
+"在请求中，其他上下文对象推入时可能会改变代理对象的指向。虽然这不是一种常见的"
+"使用模式，但在一些高级应用中可以使用，例如实现内部重定向或将不同的应用串联在"
+"一起。"
 
 #: ../../project/docs/reqcontext.rst:109 5228ab891821489aaa3aca0ec696df50
 msgid ""
@@ -301,7 +306,7 @@ msgstr "信号"
 
 #: ../../project/docs/reqcontext.rst:207 4ad6aa183291481f8a865922eeaaba9f
 msgid "The following signals are sent:"
-msgstr ""
+msgstr "下面的信号被发送："
 
 #: ../../project/docs/reqcontext.rst:209 34097487e61c4ee49c521cc0bb11c926
 msgid ""
