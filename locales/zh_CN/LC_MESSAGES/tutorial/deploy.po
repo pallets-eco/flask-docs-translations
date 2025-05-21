@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # Grey Li <withlihui@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-05-22 12:23+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/tutorialdeploy/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/tutorial/deploy.rst:2 d632c9c13dfc4f8c8046a802d145d236
@@ -44,6 +47,8 @@ msgid ""
 "When you want to deploy your application elsewhere, you build a *wheel* "
 "(``.whl``) file. Install and use the ``build`` tool to do this."
 msgstr ""
+"当你想将应用部署到其他地方时，需要构建一个 *wheel*（``.whl``） 文件。 "
+"可以安装并使用 ``build`` 工具来完成这个操作。"
 
 #: ../../project/docs/tutorial/deploy.rst:25 e65a96ede59a433f8106eb8808290176
 msgid ""
@@ -71,14 +76,14 @@ msgid ""
 msgstr "由于这是一台不同的机器，你需要再次运行 ``init-db`` 命令在实例文件夹内创建数据库。"
 
 #: ../../project/docs/tutorial/deploy.rst:46 d4dced71dd3d47248a13a7e54c0819ac
-#, fuzzy
 msgid ""
 "When Flask detects that it's installed (not in editable mode), it uses a "
 "different directory for the instance folder. You can find it at "
 "``.venv/var/flaskr-instance`` instead."
 msgstr ""
-"当 Flask 检测到它已经被安装（不在可编辑模式下），它会使用一个不同的目录作为实例文件夹。你可以在 ``venv/var/flaskr-"
-"instance`` 找到它。"
+"当 Flask "
+"检测到它已经被安装（不在可编辑模式下），它会使用一个不同的目录作为实例文件夹"
+"。你可以在 ``.venv/var/flaskr-instance`` 找到它。"
 
 #: ../../project/docs/tutorial/deploy.rst:52 d35819b97ea14785aaa2ca2e875276bb
 msgid "Configure the Secret Key"
@@ -103,12 +108,12 @@ msgstr "你可以使用下面的命令生成一个随机密钥："
 msgid ""
 "Create the ``config.py`` file in the instance folder, which the factory "
 "will read from if it exists. Copy the generated value into it."
-msgstr "在实例文件夹中创建 ``config.py`` 文件，如果这个文件存在，程序工厂将会从它读取配置。把生成的值复制进去："
+msgstr "在实例文件夹中创建 ``config.py`` "
+"文件，如果这个文件存在，程序工厂将会从它读取配置。把生成的值复制进去。"
 
 #: ../../project/docs/tutorial/deploy.rst:70 fa3df89a52f34de9bb13442ec9aa0113
-#, fuzzy
 msgid "``.venv/var/flaskr-instance/config.py``"
-msgstr "``venv/var/flaskr-instance/config.py``"
+msgstr "``.venv/var/flaskr-instance/config.py``"
 
 #: ../../project/docs/tutorial/deploy.rst:75 73ebeabb2c4a419895a1c498975bad63
 msgid ""
@@ -137,14 +142,13 @@ msgid ""
 msgstr "相反，请使用一个生产 WSGI 服务器。举例来说，要使用 `Waitress`_，首先在虚拟环境下安装它："
 
 #: ../../project/docs/tutorial/deploy.rst:94 f0a4ef66cc1642f884948e32adea61af
-#, fuzzy
 msgid ""
 "You need to tell Waitress about your application, but it doesn't use "
 "``--app`` like ``flask run`` does. You need to tell it to import and call"
 " the application factory to get an application object."
 msgstr ""
 "你需要告诉 Waitress 你的应用在哪里，但是它并不像 ``flask run`` 那样读取 "
-"``FLASK_APP``。你需要告诉它去导入并调用应用工厂来获取一个应用对象。"
+"``--app``。你需要告诉它去导入并调用应用工厂来获取一个应用对象。"
 
 #: ../../project/docs/tutorial/deploy.rst:104 6ec34911005345ffbab2e0e1eca147a8
 msgid ""
@@ -194,4 +198,3 @@ msgstr "继续阅读 :doc:`next`。"
 
 #~ msgid "Powershell"
 #~ msgstr "Powershell"
-
