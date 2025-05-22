@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-05-17 13:56+0000\n"
+"PO-Revision-Date: 2025-05-22 12:23+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/tutorialinstall/zh_Hans/>\n"
@@ -25,7 +25,6 @@ msgid "Make the Project Installable"
 msgstr "让项目可安装"
 
 #: ../../project/docs/tutorial/install.rst:4 ebcdff9e84c4402f869b24fb37c9ae5b
-#, fuzzy
 msgid ""
 "Making your project installable means that you can build a *wheel* file "
 "and install that in another environment, just like you installed Flask in"
@@ -33,8 +32,9 @@ msgid ""
 "as installing any other library, so you're using all the standard Python "
 "tools to manage everything."
 msgstr ""
-"让你的项目可以被安装意味着你可以构建一个 *发行* 文件并在另一个环境安装它，就像你在项目环境安装 Flask "
-"一样。这使得部署你的项目和安装其他任何库没有区别，你就可以使用所有标准的 Python 工具去管理一切。"
+"让你的项目可以被安装意味着你可以构建一个 *wheel* 文件并在另一个环境安装它，"
+"就像你在项目环境安装 Flask 一样。这使得部署你的项目和安装其他任何库没有区别，"
+"你就可以使用所有标准的 Python 工具去管理一切。"
 
 #: ../../project/docs/tutorial/install.rst:9 b4b9e50184964b28bb5c45f7704bc457
 msgid ""
@@ -72,20 +72,19 @@ msgid "Describe the Project"
 msgstr "描述项目"
 
 #: ../../project/docs/tutorial/install.rst:30 efcb1e2c2be943229aedc7b645cd3f41
-#, fuzzy
 msgid "The ``pyproject.toml`` file describes your project and how to build it."
-msgstr "``setup.py`` 文件描述了项目和项目相关的文件。"
+msgstr "``pyproject.toml`` 文件描述了你的项目和项目的构建信息。"
 
 #: ../../project/docs/tutorial/install.rst:32 2ab32e91159b460993dee5fcb07d3f9e
 msgid "``pyproject.toml``"
 msgstr "``pyproject.toml``"
 
 #: ../../project/docs/tutorial/install.rst:47 19b9aaceda5d4dada2031dd68bd9242c
-#, fuzzy
 msgid ""
 "See the official `Packaging tutorial <packaging tutorial_>`_ for more "
 "explanation of the files and options used."
-msgstr "参阅 `官方打包教程`_ 了解对所使用的文件和选项的更多解释。"
+msgstr "参阅 `官方打包教程 <packaging tutorial_>`_ "
+"了解对所使用的文件和选项的更多解释。"
 
 #: ../../project/docs/tutorial/install.rst:54 abcedc200b834e55a8ed51069672b962
 msgid "Install the Project"
@@ -96,7 +95,6 @@ msgid "Use ``pip`` to install your project in the virtual environment."
 msgstr "使用 ``pip`` 在虚拟环境中安装你的项目。"
 
 #: ../../project/docs/tutorial/install.rst:62 0c0d22cdd6394233969bcd7d28244b2e
-#, fuzzy
 msgid ""
 "This tells pip to find ``pyproject.toml`` in the current directory and "
 "install the project in *editable* or *development* mode. Editable mode "
@@ -104,23 +102,24 @@ msgid ""
 "re-install if you change the metadata about the project, such as its "
 "dependencies."
 msgstr ""
-"这告诉 pip 在当前目录找到 ``setup.py`` 并以 *可编辑* 或 *开发* "
-"模式安装它。可编辑模式意味着当你对本地代码做出改动时，只有改变了 setup.py 文件中的关于项目的元信息（比如它的依赖），才需要重新安装项目。"
+"这告诉 pip 在当前目录找到 ``pyproject.toml`` 并以 *可编辑* 或 *开发* "
+"模式安装项目。可编辑模式意味着当你对本地代码做出改动时，只有改变了关于项目的"
+"元信息（比如它的依赖），才需要重新安装项目。"
 
 #: ../../project/docs/tutorial/install.rst:67 729fe23045b246fc9ae1d853aade5118
 msgid "You can observe that the project is now installed with ``pip list``."
 msgstr "项目现在已经被安装了，你可以在 ``pip list`` 命令的输出里找到它。"
 
 #: ../../project/docs/tutorial/install.rst:84 6d02557fdef64a67b14e611f65b555fc
-#, fuzzy
 msgid ""
 "Nothing changes from how you've been running your project so far. "
 "``--app`` is still set to ``flaskr`` and ``flask run`` still runs the "
 "application, but you can call it from anywhere, not just the ``flask-"
 "tutorial`` directory."
 msgstr ""
-"目前为止，运行项目的方式并没有任何改变。``FLASK_APP`` 仍然被设为 ``flaskr``，``flask run`` "
-"仍然会运行应用，不过现在你可以在任意位置运行它，而不仅仅是 ``flask-tutorial`` 目录。"
+"目前为止，运行项目的方式并没有任何改变。``--app`` 仍然被设为 ``flaskr``，``"
+"flask run`` 仍然会运行应用，不过现在你可以在任意位置运行它，而不仅仅是 "
+"``flask-tutorial`` 目录。"
 
 #: ../../project/docs/tutorial/install.rst:89 c6292f5778264841bf74f3b31955bb70
 msgid "Continue to :doc:`tests`."
