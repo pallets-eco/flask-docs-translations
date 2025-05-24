@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # Grey Li <withlihui@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-05-25 04:01+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/contributing/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/CONTRIBUTING.rst:2 76aeaf570dd3498aa69a07074a7c93e6
@@ -40,7 +43,6 @@ msgstr ""
 "以及提出新特性请求的工具。对于使用 Flask 时遇到的问题，或是关于你自己代码的问题，请使用下面的资源获取帮助："
 
 #: ../../project/CONTRIBUTING.rst:15 f7f74e65d17d4948adeb1d036c97011d
-#, fuzzy
 msgid "The ``#questions`` channel on our Discord chat: https://discord.gg/pallets"
 msgstr "我们的 Discord 聊天组的 ``#questions`` 频道：https://discord.gg/pallets"
 
@@ -53,11 +55,10 @@ msgstr ""
 "{搜索关键词，异常信息等}`` 在 Google 上搜索。"
 
 #: ../../project/CONTRIBUTING.rst:19 a513be49cc92451496c42d70175cea9a
-#, fuzzy
 msgid ""
 "Ask on our `GitHub Discussions`_ for long term discussion or larger "
 "questions."
-msgstr "如果是长期的讨论或是比较大的问题，可以发到邮件列表 flask@python.org。"
+msgstr "如果是长期的讨论或是比较大的问题，可以到 `GitHub Discussions`_ 上提问。"
 
 #: ../../project/CONTRIBUTING.rst:27 f8dcace4ad744b3cbfb994e663aef061
 msgid "Reporting issues"
@@ -139,7 +140,7 @@ msgstr ""
 
 #: ../../project/CONTRIBUTING.rst:71 907e590a060e4ea68e8b9c9b41d6deae
 msgid "First time setup using GitHub Codespaces"
-msgstr ""
+msgstr "使用 GitHub Codespaces 的首次设置"
 
 #: ../../project/CONTRIBUTING.rst:73 47527e02748b4f509c3fe6f461790662
 msgid ""
@@ -148,6 +149,10 @@ msgid ""
 " Web, but this can be changed in your GitHub profile settings to use "
 "Visual Studio Code or JetBrains PyCharm on your local computer."
 msgstr ""
+"`GitHub Codespaces`_ 会创建一个已为项目配置好的开发环境。默认情况下，它会在 "
+"Web 版的 Visual Studio Code 中打开， 但你也可以在 GitHub "
+"个人设置中修改为在你的本地计算机上使用 Visual Studio Code 或 JetBrains "
+"PyCharm。"
 
 #: ../../project/CONTRIBUTING.rst:78 ../../project/CONTRIBUTING.rst:92
 #: 564316d7dd6e49de88f2591fde372149 ab474f82ddea44baba83e2deb44d656e
@@ -158,7 +163,8 @@ msgstr "确保你有一个 `GitHub 账号`_。"
 msgid ""
 "From the project's repository page, click the green \"Code\" button and "
 "then \"Create codespace on main\"."
-msgstr ""
+msgstr "在项目的仓库页面中，点击绿色的 “Code” 按钮，然后选择 “Create codespace on "
+"main”。"
 
 #: ../../project/CONTRIBUTING.rst:81 45323aa51b3744c294c95564092621e0
 msgid ""
@@ -167,14 +173,17 @@ msgid ""
 "installed. You'll know it's ready when the terminal at the bottom shows "
 "that the virtualenv was activated."
 msgstr ""
+"系统会开始设置 codespace，之后 Visual Studio Code 会自动打开。 "
+"不过，你需要再稍等片刻，以便 Python 扩展安装完成。 "
+"当底部的终端显示虚拟环境（virtualenv）已被激活时，说明一切准备就绪。"
 
 #: ../../project/CONTRIBUTING.rst:84 12c79356b81c4828b845ecd7e2a111c9
 msgid "Check out a branch and `start coding`_."
-msgstr ""
+msgstr "签出一个分支然后 `开始编码`_。"
 
 #: ../../project/CONTRIBUTING.rst:90 fd87bde9b8ae4a22903bba644853f5c9
 msgid "First time setup in your local environment"
-msgstr ""
+msgstr "在本地环境中进行首次设置"
 
 #: ../../project/CONTRIBUTING.rst:93 f8bd102a78734184b6fa0badc9ea82a6
 msgid "Download and install the `latest version of git`_."
@@ -192,12 +201,12 @@ msgstr "点击 `Fork`_ 按钮把 Flask 复刻（Fork）到你的 GitHub 仓库�
 msgid ""
 "`Clone`_ your fork locally, replacing ``your-username`` in the command "
 "below with your actual username."
-msgstr ""
+msgstr "在本地 `克隆`_ 你的复刻（fork），使用你的真实用户名替代下面命令中的 ``your-"
+"username``。"
 
 #: ../../project/CONTRIBUTING.rst:110 2b9ed4cca94743fb9865252c798f2c61
-#, fuzzy
 msgid "Create a virtualenv. Use the latest version of Python."
-msgstr "下载并安装 `最新版本的 git`_。"
+msgstr "创建一个虚拟环境。使用最新版本的 Python。"
 
 #: ../../project/CONTRIBUTING.rst:112 3513dbf3f45b470b9a5626a7cb3a03dd
 msgid "Linux/macOS"
@@ -240,7 +249,8 @@ msgstr "使用你最喜欢的编辑器做出改动，`大胆提交代码`_。"
 msgid ""
 "If you are in a codespace, you will be prompted to `create a fork`_ the "
 "first time you make a commit. Enter ``Y`` to continue."
-msgstr ""
+msgstr "如果你在一个 codespace 中，当你第一次提交 commit 的时候会被提示 "
+"`创建一个复刻（fork）`_。按下 ``Y`` 继续。"
 
 #: ../../project/CONTRIBUTING.rst:171 4d5b0fe2a43d4d72b879614ad7603fb2
 msgid ""
@@ -249,13 +259,13 @@ msgid ""
 msgstr "包含覆盖所有变动代码的测试。确保测试在没有你的补丁时会失败。参考下面的说明运行测试。"
 
 #: ../../project/CONTRIBUTING.rst:173 9e7f6bca33974700a54d6fb42fa9ab63
-#, fuzzy
 msgid ""
 "Push your commits to your fork on GitHub and `create a pull request`_. "
 "Link to the issue being addressed with ``fixes #123`` in the pull request"
 " description."
 msgstr ""
-"把你的提交推送到在 GitHub 上的派生仓库并 `创建一个拉取请求（pull request）`_。在拉取请求中使用 ``fixes "
+"把你的提交推送到在 GitHub 上的派生仓库（your fork）并 `create a pull "
+"request`_（创建一个拉取请求，即 pull request）。在拉取请求中使用 ``fixes "
 "#123`` 链接到关联的 issue。"
 
 #: ../../project/CONTRIBUTING.rst:187 b79ea617394d4afe9d2a5ad0acab8851
@@ -288,7 +298,8 @@ msgstr "生成一份包含测试未覆盖行数的报告，可以指明从哪里
 msgid ""
 "If you are using GitHub Codespaces, ``coverage`` is already installed so "
 "you can skip the installation command."
-msgstr ""
+msgstr "如果你在使用 GitHub Codespaces，那么 ``coverage`` "
+"已经被安装了，因此你可以跳过安装命令。"
 
 #: ../../project/CONTRIBUTING.rst:221 7ec2b73add3c4a1e893eceb7d9523da7
 msgid "Open ``htmlcov/index.html`` in your browser to explore the report."
@@ -338,4 +349,3 @@ msgstr "更多内容请参阅 `Sphinx 文档 <https://www.sphinx-doc.org/en/stab
 
 #~ msgid "Upgrade pip and setuptools."
 #~ msgstr "更新 pip 和 setuptools。"
-
