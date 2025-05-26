@@ -3,36 +3,39 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-25 19:31+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-05-26 15:01+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/patternssubclassing/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../patterns/subclassing.rst:2
 msgid "Subclassing Flask"
-msgstr ""
+msgstr "子类化 Flask"
 
 #: ../../patterns/subclassing.rst:4
 msgid "The :class:`~flask.Flask` class is designed for subclassing."
-msgstr ""
+msgstr ":class:`~flask.Flask` 类是专门为子类化设计的。"
 
 #: ../../patterns/subclassing.rst:6
 msgid ""
 "For example, you may want to override how request parameters are handled "
 "to preserve their order::"
-msgstr ""
+msgstr "例如，你可能希望重写请求参数的处理方式，以保留它们的顺序::"
 
 #: ../../patterns/subclassing.rst:17
 msgid ""
 "This is the recommended approach for overriding or augmenting Flask's "
 "internal functionality."
-msgstr ""
+msgstr "这是用于重写或扩展 Flask 内部功能的推荐方式。"
