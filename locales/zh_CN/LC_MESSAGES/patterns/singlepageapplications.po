@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-25 19:31+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-05-26 15:01+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/patternssinglepageapplications/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../patterns/singlepageapplications.rst:2
 msgid "Single-Page Applications"
-msgstr ""
+msgstr "单页应用"
 
 #: ../../patterns/singlepageapplications.rst:4
 msgid ""
@@ -28,7 +31,10 @@ msgid ""
 " your project. You will also need to create a catch-all endpoint that "
 "routes all requests to your SPA."
 msgstr ""
+"Flask 可以用于构建单页应用（SPA，Single-Page "
+"Applications），方法是将前端框架构建生成的静态文件放在项目中的一个子目录下。 "
+"你还需要创建一个“兜底”路由端点，将所有请求转发到你的 SPA 页面。"
 
 #: ../../patterns/singlepageapplications.rst:9
 msgid "The following example demonstrates how to serve an SPA along with an API::"
-msgstr ""
+msgstr "下面的示例演示了如何同时提供一个 SPA 和一个 API 服务::"
