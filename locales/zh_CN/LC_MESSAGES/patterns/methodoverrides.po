@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-25 19:31+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-05-28 12:05+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/patternsmethodoverrides/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../patterns/methodoverrides.rst:2
 msgid "Adding HTTP Method Overrides"
-msgstr ""
+msgstr "添加 HTTP 方法重写支持"
 
 #: ../../patterns/methodoverrides.rst:4
 msgid ""
@@ -27,6 +30,9 @@ msgid ""
 "methods (such as PATCH). In that case it's possible to \"proxy\" HTTP "
 "methods through another HTTP method in total violation of the protocol."
 msgstr ""
+"某些 HTTP 代理不支持任意的 HTTP 方法，或者不支持较新的方法（如 PATCH）。 "
+"在这种情况下，可以通过另一种 HTTP "
+"方法来“代理”实际想要使用的方法，尽管这在协议层面是不规范的做法。"
 
 #: ../../patterns/methodoverrides.rst:8
 msgid ""
@@ -34,11 +40,14 @@ msgid ""
 "set the ``X-HTTP-Method-Override`` header. Then the method is replaced "
 "with the header value before being passed to Flask."
 msgstr ""
+"其工作方式是：客户端发送一个 HTTP POST 请求，并设置 ``X-HTTP-Method-"
+"Override`` 请求头。 在请求传递给 Flask "
+"之前，服务器会用该请求头中的值替换原始的方法。"
 
 #: ../../patterns/methodoverrides.rst:12
 msgid "This can be accomplished with an HTTP middleware::"
-msgstr ""
+msgstr "可以通过编写一个 HTTP 中间件来实现这一功能::"
 
 #: ../../patterns/methodoverrides.rst:37
 msgid "To use this with Flask, wrap the app object with the middleware::"
-msgstr ""
+msgstr "要在 Flask 中使用该功能，只需使用该中间件包装 app 对象::"
