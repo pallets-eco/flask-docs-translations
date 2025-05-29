@@ -3,26 +3,27 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-05-30 14:01+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/deployingproxy_fix/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/deploying/proxy_fix.rst:2
 #: db65e33d048044fd91926a1b6ab8eee8
 msgid "Tell Flask it is Behind a Proxy"
-msgstr ""
+msgstr "告知 Flask 它运行在代理之后"
 
 #: ../../project/docs/deploying/proxy_fix.rst:4
 #: 9f185dc3288a4a4ca62d1494aa45615d
@@ -30,7 +31,8 @@ msgid ""
 "When using a reverse proxy, or many Python hosting platforms, the proxy "
 "will intercept and forward all external requests to the local WSGI "
 "server."
-msgstr ""
+msgstr "在使用反向代理，或托管在许多 Python 平台上时， 代理会拦截所有外部请求，"
+"并将其转发给本地的 WSGI 服务器。"
 
 #: ../../project/docs/deploying/proxy_fix.rst:8
 #: 9d98c0b27df44b8586f85e2a89527dc5
@@ -38,7 +40,8 @@ msgid ""
 "From the WSGI server and Flask application's perspectives, requests are "
 "now coming from the HTTP server to the local address, rather than from "
 "the remote address to the external server address."
-msgstr ""
+msgstr "从 WSGI 服务器和 Flask 应用的角度来看， 请求是从 HTTP "
+"服务器发往本地地址的，而不是从远程地址发往外部服务器地址。"
 
 #: ../../project/docs/deploying/proxy_fix.rst:12
 #: e04c66af9f8346418bdad9bf0c2aac9e
@@ -48,6 +51,10 @@ msgid ""
 "use those values by wrapping it with the "
 ":doc:`werkzeug:middleware/proxy_fix` middleware provided by Werkzeug."
 msgstr ""
+"为了解决这个问题，HTTP 服务器应设置 ``X-Forwarded-`` "
+"开头的请求头，以将真实的客户端信息传递给应用。 应用可以通过 Werkzeug 提供的 "
+":doc:`werkzeug:middleware/proxy_fix` 中间件进行包装， "
+"以信任并使用这些请求头中的真实信息。"
 
 #: ../../project/docs/deploying/proxy_fix.rst:17
 #: f430d10ef9a3401db4f0265efa40d1c0
@@ -58,6 +65,10 @@ msgid ""
 "incoming headers can be faked, you must set how many proxies are setting "
 "each header so the middleware knows what to trust."
 msgstr ""
+"只有在应用确实部署在代理后方时，才应使用此中间件，并且必须正确配置代理的数量"
+"（即前方代理链的层数）。 并非所有代理都会设置所有相关请求头。 "
+"由于传入请求头可能被伪造，因此必须指定由多少个代理设置了每个请求头， "
+"以便中间件知道哪些信息是可信的。"
 
 #: ../../project/docs/deploying/proxy_fix.rst:31
 #: 41f77fc710c44ca2bf14fb119dff7f8b
@@ -65,5 +76,6 @@ msgid ""
 "Remember, only apply this middleware if you are behind a proxy, and set "
 "the correct number of proxies that set each header. It can be a security "
 "issue if you get this configuration wrong."
-msgstr ""
-
+msgstr "请记住，只有在你处于代理之后时才使用该中间件， "
+"并且要为设置了每个请求头的那些代理设置正确的数量值。如果配置错误，可能会带来"
+"安全风险。"
