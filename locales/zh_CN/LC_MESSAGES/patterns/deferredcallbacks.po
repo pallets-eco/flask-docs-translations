@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-25 19:31+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-06-07 14:01+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/patternsdeferredcallbacks/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../patterns/deferredcallbacks.rst:2
 msgid "Deferred Request Callbacks"
-msgstr ""
+msgstr "延迟执行的请求回调"
 
 #: ../../patterns/deferredcallbacks.rst:4
 msgid ""
@@ -29,6 +32,10 @@ msgid ""
 "response object yet. It is created as necessary either by a view function"
 " or by some other component in the system."
 msgstr ""
+"Flask "
+"的一个设计原则是：响应对象被创建并会被传递到一系列可能会修改或替换它的回调函"
+"数中。 在请求处理开始时，响应对象尚不存在。 "
+"它通常会在视图函数或其他系统组件中按需创建。"
 
 #: ../../patterns/deferredcallbacks.rst:10
 msgid ""
@@ -37,6 +44,9 @@ msgid ""
 ":meth:`~flask.Flask.before_request` callback that wants to set a cookie "
 "on the response object."
 msgstr ""
+"那么，如果你想在响应对象尚未生成的阶段修改它，该怎么办？ "
+"一个常见的例子是你想在 :meth:`~flask.Flask.before_request` "
+"回调中在响应对象上设置一个 cookie。"
 
 #: ../../patterns/deferredcallbacks.rst:15
 msgid ""
@@ -45,6 +55,9 @@ msgid ""
 ":meth:`~flask.Flask.after_request` callback instead. However, sometimes "
 "moving code there makes it more complicated or awkward to reason about."
 msgstr ""
+"一种解决方法是避免这种情况——通常是可以的。 例如，你可以尝试将这段逻辑挪到 "
+":meth:`~flask.Flask.after_request` 回调中去处理。 "
+"不过，有时这么做会让代码变得复杂或不易理解。"
 
 #: ../../patterns/deferredcallbacks.rst:20
 msgid ""
@@ -53,6 +66,9 @@ msgid ""
 " way you can defer code execution from anywhere in the application, based"
 " on the current request."
 msgstr ""
+"作为替代方案，你可以使用 :func:`~flask.after_this_request` "
+"来注册一个只在当前请求结束执行的回调函数。 "
+"这种方式允许你在应用的任何位置，根据当前请求来延迟执行一些操作。"
 
 #: ../../patterns/deferredcallbacks.rst:25
 msgid ""
@@ -61,3 +77,6 @@ msgid ""
 " of the user in a cookie in a :meth:`~flask.Flask.before_request` "
 "callback::"
 msgstr ""
+"在请求的任何阶段，你都可以注册一个函数，让它在请求结束时被调用。 "
+"比如你可以在 :meth:`~flask.Flask.before_request` 回调中，设置一个 cookie "
+"来保存当前用户的语言偏好::"
