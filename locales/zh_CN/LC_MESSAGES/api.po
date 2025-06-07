@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-05-22 12:23+0000\n"
+"PO-Revision-Date: 2025-06-07 14:01+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/api/zh_Hans/>\n"
@@ -6810,7 +6810,7 @@ msgstr ""
 
 #: ../../project/docs/api.rst:475 02847176106a4496aa652ca97362c209
 msgid "Example usage::"
-msgstr ""
+msgstr "示例用法如下::"
 
 #: ../../project/docs/api.rst:487 729c2900f79a41bea5eb24035daaba76
 msgid "And in the testcode::"
