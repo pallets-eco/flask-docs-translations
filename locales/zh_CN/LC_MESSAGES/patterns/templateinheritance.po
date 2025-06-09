@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-25 19:31+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-06-10 14:01+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/patternstemplateinheritance/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../patterns/templateinheritance.rst:2
 msgid "Template Inheritance"
-msgstr ""
+msgstr "模板继承"
 
 #: ../../patterns/templateinheritance.rst:4
 msgid ""
@@ -28,16 +31,19 @@ msgid ""
 "contains all the common elements of your site and defines **blocks** that"
 " child templates can override."
 msgstr ""
+"Jinja "
+"最强大的功能之一就是模板继承。模板继承允许你构建一个包含网站所有通用元素的基"
+"础“骨架”模板， 并定义一些 **块（blocks）**，供子模板覆盖。"
 
 #: ../../patterns/templateinheritance.rst:8
 msgid ""
 "Sounds complicated but is very basic. It's easiest to understand it by "
 "starting with an example."
-msgstr ""
+msgstr "听起来可能有些复杂，但其实非常基础。我们通过一个示例来理解会更加直观。"
 
 #: ../../patterns/templateinheritance.rst:13
 msgid "Base Template"
-msgstr ""
+msgstr "基础模板"
 
 #: ../../patterns/templateinheritance.rst:15
 msgid ""
@@ -46,6 +52,9 @@ msgid ""
 "It's the job of \"child\" templates to fill the empty blocks with "
 "content:"
 msgstr ""
+"下面这个模板，我们称之为 :file:`layout.html`，它定义了一个简单的 HTML "
+"页面框架，适用于一个基本的双栏页面。 "
+"子模板的任务就是在预定义的空白块中插入内容："
 
 #: ../../patterns/templateinheritance.rst:39
 msgid ""
@@ -53,14 +62,16 @@ msgid ""
 "templates can fill in. All the `block` tag does is tell the template "
 "engine that a child template may override those portions of the template."
 msgstr ""
+"在这个示例中，``{% block %}`` 标签定义了四个可以由子模板填充的内容块。所有的 "
+"`block` 标签的作用是告诉模板引擎：这些区域可以被子模板覆盖。"
 
 #: ../../patterns/templateinheritance.rst:44
 msgid "Child Template"
-msgstr ""
+msgstr "子模板"
 
 #: ../../patterns/templateinheritance.rst:46
 msgid "A child template might look like this:"
-msgstr ""
+msgstr "一个子模板可能如下所示："
 
 #: ../../patterns/templateinheritance.rst:64
 #, python-format
@@ -71,3 +82,8 @@ msgid ""
 " tag must be the first tag in the template.  To render the contents of a "
 "block defined in the parent template, use ``{{ super() }}``."
 msgstr ""
+"这里的 ``{% extends %}`` "
+"标签是关键所在。它告诉模板引擎，这个模板是基于另一个模板“扩展”而来的。在模板"
+"系统解析这个模板时，它会首先定位父模板。`extends` "
+"标签必须是模板中的第一个标签。如果你想在子模板中保留并显示父模板中 `block` "
+"定义的内容，可以使用 ``{{ super() }}``。"
