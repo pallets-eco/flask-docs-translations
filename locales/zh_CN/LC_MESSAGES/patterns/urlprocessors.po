@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-25 19:31+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-06-12 12:01+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/patternsurlprocessors/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../patterns/urlprocessors.rst:2
 msgid "Using URL Processors"
-msgstr ""
+msgstr "使用 URL 处理器"
 
 #: ../../patterns/urlprocessors.rst:6
 msgid ""
@@ -29,21 +32,26 @@ msgid ""
 "bunch of URLs that have the language code in it but you don't want to "
 "have to handle it in every single function yourself."
 msgstr ""
+"Flask 0.7 引入了 URL 处理器（URL Processors）的概念。 这个功能的设计理念是："
+"你可能有一批具有相同 URL 部分的资源， "
+"而你并不希望在每一个视图函数中都显式地处理这些相同的部分。 例如，你的多个 "
+"URL 中可能都包含语言代码，但你不想在每个函数中都手动处理这个参数。"
 
 #: ../../patterns/urlprocessors.rst:12
 msgid ""
 "URL processors are especially helpful when combined with blueprints.  We "
 "will handle both application specific URL processors here as well as "
 "blueprint specifics."
-msgstr ""
+msgstr "当 URL 处理器与蓝图（Blueprint）结合使用时，尤其有用。"
+"本节将介绍应用级别和蓝图级别的 URL 处理器。"
 
 #: ../../patterns/urlprocessors.rst:17
 msgid "Internationalized Application URLs"
-msgstr ""
+msgstr "国际化应用的 URL"
 
 #: ../../patterns/urlprocessors.rst:19
 msgid "Consider an application like this::"
-msgstr ""
+msgstr "设想你有如下的应用结构::"
 
 #: ../../patterns/urlprocessors.rst:35
 msgid ""
@@ -53,6 +61,10 @@ msgid ""
 "want to generate URLs from one function to another you would have to "
 "still provide the language code explicitly which can be annoying."
 msgstr ""
+"这种做法中会有大量重复的代码，因为你必须在每个函数中手动将语言代码设置到 "
+":data:`~flask.g` 对象中。当然，也可以使用装饰器来简化这一过程，"
+"但如果你想从一个函数生成另一个函数的 "
+"URL，你仍然必须显式地提供语言代码，这可能会很烦人。"
 
 #: ../../patterns/urlprocessors.rst:41
 msgid ""
@@ -62,6 +74,9 @@ msgid ""
 "not yet in the dictionary of URL values and if the endpoint wants a value"
 " named ``'lang_code'``::"
 msgstr ""
+"为了解决后者，可以使用 :func:`~flask.Flask.url_defaults` 函数。"
+"它们可以在调用 :func:`~flask.url_for` 时自动注入值。下面的代码会检查 URL "
+"参数字典中是否缺少语言代码，以及端点是否需要一个名为 ``'lang_code'`` 的参数::"
 
 #: ../../patterns/urlprocessors.rst:54
 msgid ""
@@ -69,6 +84,8 @@ msgid ""
 " map can be used to figure out if it would make sense to provide a "
 "language code for the given endpoint."
 msgstr ""
+"URL map 的 :meth:`~werkzeug.routing.Map.is_endpoint_expecting` "
+"方法可以用于判断给定的端点是否需要提供语言代码。"
 
 #: ../../patterns/urlprocessors.rst:58
 msgid ""
@@ -78,6 +95,9 @@ msgid ""
 "values.  The idea is that they pull information out of the values "
 "dictionary and put it somewhere else::"
 msgstr ""
+"与该函数相对的是 :meth:`~flask.Flask.url_value_preprocessor`\\s"
+"。它们会在请求匹配之后立即执行，并可以基于 URL "
+"参数运行代码。其目标是从值字典中提取信息并放到其他位置::"
 
 #: ../../patterns/urlprocessors.rst:68
 msgid ""
@@ -88,10 +108,14 @@ msgid ""
 "``'lang_code'`` is popped from the values dictionary and it will no "
 "longer be forwarded to the view function reducing the code to this::"
 msgstr ""
+"这样你就不再需要在每个函数中将 `lang_code` 赋值给 :data:`~flask.g`。"
+"你还可以进一步通过编写装饰器将语言代码前缀添加到 URL "
+"中，但更优雅的解决方案是使用蓝图。一旦 ``'lang_code'`` "
+"从参数字典中被弹出，它将不再被传递给视图函数，使代码简化如下::"
 
 #: ../../patterns/urlprocessors.rst:99
 msgid "Internationalized Blueprint URLs"
-msgstr ""
+msgstr "国际化蓝图的 URL"
 
 #: ../../patterns/urlprocessors.rst:101
 msgid ""
@@ -102,3 +126,8 @@ msgid ""
 "it no longer has to check if the URL is really interested in a "
 "``'lang_code'`` parameter::"
 msgstr ""
+"由于蓝图可以自动为所有 URL "
+"添加一个公共字符串前缀，因此可以轻松地对每个函数实现自动处理。此外，"
+"蓝图可以有各自的 URL 处理器，这样就不需要在 :meth:`~flask.Flask.url_defaults`"
+" 函数中处理所有逻辑，因为它无需再判断某个 URL 是否确实需要 ``'lang_code'`` "
+"参数::"
