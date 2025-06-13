@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-12 12:01+0000\n"
+"PO-Revision-Date: 2025-06-14 02:01+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/deployingnginx/zh_Hans/>\n"
@@ -59,7 +59,8 @@ msgid ""
 " In general, you will buy a domain name from a registrar, pay for server "
 "space with a hosting provider, and then point your registrar at the "
 "hosting provider's name servers."
-msgstr ""
+msgstr "获取和配置域名不在本文档的范围内。通常，你需要从域名注册商购买一个域名，在主"
+"机服务商处购买服务器资源，然后将你的域名指向该主机服务商的服务器。"
 
 #: ../../project/docs/deploying/nginx.rst:27 2ddf4846535e4757bf4b5adfb5bb02ed
 msgid ""
@@ -67,12 +68,16 @@ msgid ""
 "``/etc/hosts`` on Linux. Add a line that associates a name with the local"
 " IP."
 msgstr ""
+"为了模拟这种情况，你也可以编辑你的 ``hosts`` 文件，在 Linux 系统中该文件位于 "
+"``/etc/hosts``。添加一行，将一个名称关联到本地 IP。"
 
 #: ../../project/docs/deploying/nginx.rst:31 c84782d67aff4c5da0f3d2aaf8ff4447
 msgid ""
 "Modern Linux systems may be configured to treat any domain name that ends"
 " with ``.localhost`` like this without adding it to the ``hosts`` file."
 msgstr ""
+"现代的 Linux 系统可能已经配置好自动将以 ``.localhost`` "
+"结尾的域名当作本地地址，无需将其添加到 ``hosts`` 文件中。"
 
 #: ../../project/docs/deploying/nginx.rst:35 ce22f4e4e5d6420ca1c00cd27445f644
 msgid "``/etc/hosts``"
@@ -88,6 +93,9 @@ msgid ""
 " It may be different depending on your operating system. Check the docs "
 "and look for ``nginx.conf``."
 msgstr ""
+"Nginx 的配置文件在 Linux 系统中位于 ``/etc/nginx/"
+"nginx.conf``。在其他操作系统上可能有所不同，请查看相关文档并搜索 "
+"``nginx.conf``。"
 
 #: ../../project/docs/deploying/nginx.rst:48 98fee79dd617486ea4e2d9f27a43885f
 msgid ""
@@ -96,6 +104,9 @@ msgid ""
 "WSGI server is listening on. We'll assume the WSGI server is listening "
 "locally at ``http://127.0.0.1:8000``."
 msgstr ""
+"移除或注释掉现有的任何 ``server`` 段。添加一个 ``server`` 段，并使用 "
+"``proxy_pass`` 指令指向 WSGI 服务器正在监听的地址。我们假设 WSGI "
+"服务器在本地监听 ``http://127.0.0.1:8000``。"
 
 #: ../../project/docs/deploying/nginx.rst:53 5505f696d5d941cbbb05419e30551136
 msgid "``/etc/nginx.conf``"
@@ -103,4 +114,4 @@ msgstr "``/etc/nginx.conf``"
 
 #: ../../project/docs/deploying/nginx.rst:69 fea04017ddc94d7e86b54cb3c535b86c
 msgid "Then :doc:`proxy_fix` so that your application uses these headers."
-msgstr ""
+msgstr "然后配置 :doc:`proxy_fix`，以便你的应用程序可以使用这些头部信息。"
