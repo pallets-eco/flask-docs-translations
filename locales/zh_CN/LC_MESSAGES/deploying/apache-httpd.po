@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-12 12:01+0000\n"
+"PO-Revision-Date: 2025-06-14 02:01+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/deployingapache-httpd/zh_Hans/>\n"
@@ -57,7 +57,8 @@ msgid ""
 " In general, you will buy a domain name from a registrar, pay for server "
 "space with a hosting provider, and then point your registrar at the "
 "hosting provider's name servers."
-msgstr ""
+msgstr "获取和配置域名不在本文档的范围内。通常，你需要从域名注册商购买一个域名，在主"
+"机服务商处购买服务器资源，然后将你的域名指向该主机服务商的服务器。"
 
 #: ../../project/docs/deploying/apache-httpd.rst:27
 #: 9014d8abd7d74efdac88493c45eb560f
@@ -66,6 +67,8 @@ msgid ""
 "``/etc/hosts`` on Linux. Add a line that associates a name with the local"
 " IP."
 msgstr ""
+"为了模拟这种情况，你也可以编辑你的 ``hosts`` 文件，在 Linux 系统中该文件位于 "
+"``/etc/hosts``。添加一行，将一个名称关联到本地 IP。"
 
 #: ../../project/docs/deploying/apache-httpd.rst:31
 #: 9ae5c56797de4893b16d350e640ca41e
@@ -73,6 +76,8 @@ msgid ""
 "Modern Linux systems may be configured to treat any domain name that ends"
 " with ``.localhost`` like this without adding it to the ``hosts`` file."
 msgstr ""
+"现代的 Linux 系统可能已经配置好自动将以 ``.localhost`` "
+"结尾的域名当作本地地址，无需将其添加到 ``hosts`` 文件中。"
 
 #: ../../project/docs/deploying/apache-httpd.rst:35
 #: 633bc2c9ef674ff98292401681971ceb
