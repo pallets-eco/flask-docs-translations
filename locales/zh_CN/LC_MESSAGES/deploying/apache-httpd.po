@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-14 02:01+0000\n"
+"PO-Revision-Date: 2025-06-16 15:04+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/deployingapache-httpd/zh_Hans/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: ../../project/docs/deploying/apache-httpd.rst:2
 #: bcb33e7b9c6641e49ccd803ec616e8f9
 msgid "Apache httpd"
-msgstr ""
+msgstr "Apache httpd"
 
 #: ../../project/docs/deploying/apache-httpd.rst:4
 #: 6fe2a1baab1640d185cb07a2957cb8c8
@@ -34,6 +34,10 @@ msgid ""
 " This \"reverse proxy\" can handle incoming requests, TLS, and other "
 "security and performance concerns better than the WSGI server."
 msgstr ""
+"`Apache httpd`_ 是一个快速、可用于生产环境的 HTTP 服务器。当你使用 "
+":doc:`index` 中列出的某个 WSGI 服务器来运行你的应用时，"
+"通常建议或有必要在其前面放置一个专用的 HTTP 服务器。这个“反向代理”可以比 "
+"WSGI 服务器更好地处理传入请求、TLS 以及其他安全性和性能相关的问题。"
 
 #: ../../project/docs/deploying/apache-httpd.rst:10
 #: 2d22a6ab85ff4f488f0645ed2c987bef
@@ -44,6 +48,9 @@ msgid ""
 " to proxy your application. Be sure to read its documentation to "
 "understand what features are available."
 msgstr ""
+"httpd 可以使用系统的包管理器安装，或在 Windows 上使用预构建的可执行文件。"
+"httpd 本身的安装与运行不在本文档的范围内。本页面仅介绍将 httpd "
+"配置为代理你的应用的基础步骤。请务必阅读其官方文档以了解可用的功能。"
 
 #: ../../project/docs/deploying/apache-httpd.rst:20
 #: a6182bf5cbd8466ba254d54436da63f1
@@ -96,6 +103,9 @@ msgid ""
 "Linux. It may be different depending on your operating system. Check the "
 "docs and look for ``httpd.conf``."
 msgstr ""
+"httpd 的配置文件在 Linux 系统中位于 ``/etc/httpd/conf/"
+"httpd.conf``。在其他操作系统中可能有所不同，请查阅相关文档并搜索 "
+"``httpd.conf``。"
 
 #: ../../project/docs/deploying/apache-httpd.rst:48
 #: 132354a7a72b40f7a3868c63ae15a2da
@@ -104,18 +114,21 @@ msgid ""
 "config lines below. We'll assume the WSGI server is listening locally at "
 "``http://127.0.0.1:8000``."
 msgstr ""
+"移除或注释掉现有的 ``DocumentRoot`` 指令。添加如下配置行。我们假设 WSGI "
+"服务器在本地监听 ``http://127.0.0.1:8000``。"
 
 #: ../../project/docs/deploying/apache-httpd.rst:52
 #: a1d22db5ebf645a58bd2de19e028c988
 msgid "``/etc/httpd/conf/httpd.conf``"
-msgstr ""
+msgstr "``/etc/httpd/conf/httpd.conf``"
 
 #: ../../project/docs/deploying/apache-httpd.rst:61
 #: 1d427d3860424a7097297e12d8226d44
 msgid ""
 "The ``LoadModule`` lines might already exist. If so, make sure they are "
 "uncommented instead of adding them manually."
-msgstr ""
+msgstr "``LoadModule`` "
+"行可能已经存在。如果是，请确保它们没有被注释，而不是手动添加新的。"
 
 #: ../../project/docs/deploying/apache-httpd.rst:64
 #: d7ee40cd8ee54cd1bcdf63a51d54e2a6
@@ -124,3 +137,6 @@ msgid ""
 "headers. ``X-Forwarded-For`` and ``X-Forwarded-Host`` are automatically "
 "set by ``ProxyPass``."
 msgstr ""
+"然后配置 :doc:`proxy_fix`，以便你的应用程序可以使用 ``X-Forwarded`` "
+"头部信息。``ProxyPass`` 会自动设置 ``X-Forwarded-For`` 和 ``X-Forwarded-"
+"Host``。"
