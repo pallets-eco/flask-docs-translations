@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # Jiahua Wang <wjh180909@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-06-21 03:04+0000\n"
+"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/deployingmod_wsgi/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:2 cc528bcd6d1b41c9ba22ffd29f578635
@@ -28,6 +31,9 @@ msgid ""
 "The modern `mod_wsgi-express`_ command makes it easy to configure and "
 "start the server without needing to write Apache httpd configuration."
 msgstr ""
+"`mod_wsgi`_ 是一个与 `Apache httpd`_ 服务器集成的 WSGI 服务器。现代的 "
+"`mod_wsgi-express`_ 命令可以轻松配置和启动服务器，而无需更改 Apache httpd "
+"配置文件。"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:8 cffd51f2ce1f4a9296f04188e2b11182
 msgid "Tightly integrated with Apache httpd."
@@ -420,4 +426,3 @@ msgstr ""
 #~ "virtual environment.  Keep in mind that"
 #~ " the path has to be absolute."
 #~ msgstr "这样设置，就会根据虚拟环境的设置加载路径。请记住，必须是绝对路径。"
-
