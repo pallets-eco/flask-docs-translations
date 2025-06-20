@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-05-18 22:02+0000\n"
-"Last-Translator: Grey Li <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-06-21 03:04+0000\n"
+"Last-Translator: deng <xzkdeng@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/quickstart/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,36 +17,38 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/quickstart.rst:2 072c4cb240e240ee88d518604b3c098d
 msgid "Quickstart"
-msgstr ""
+msgstr "快速入门"
 
 #: ../../project/docs/quickstart.rst:4 a8ac97379d1e4478b3fccbd67ea024f6
 msgid ""
 "Eager to get started? This page gives a good introduction to Flask. "
 "Follow :doc:`installation` to set up a project and install Flask first."
-msgstr ""
+msgstr "迫不及待地想开始使用？本页面有详细介绍。请先按照 :doc:`installation` "
+"的说明安装 Flask 并设置项目。"
 
 #: ../../project/docs/quickstart.rst:9 e87344e0245f461d9266268c6887cae5
 msgid "A Minimal Application"
-msgstr ""
+msgstr "一个最小的应用程序"
 
 #: ../../project/docs/quickstart.rst:11 396e00a2c7d94351b2fa9d5b0a4c6c02
 msgid "A minimal Flask application looks something like this:"
-msgstr ""
+msgstr "一个最小的Flask程序看起来像这样："
 
 #: ../../project/docs/quickstart.rst:23 f0b94c74deca4fb8995c25cb20c840f4
 msgid "So what did that code do?"
-msgstr ""
+msgstr "所以这些代码做了什么？"
 
 #: ../../project/docs/quickstart.rst:25 30605ed7b79b4554818bcb61f79ae017
 msgid ""
 "First we imported the :class:`~flask.Flask` class. An instance of this "
 "class will be our WSGI application."
-msgstr ""
+msgstr "首先，我们导入了 :class:`~flask.Flask` 类。该类的一个实例将成为我们的 WSGI "
+"应用。"
 
 #: ../../project/docs/quickstart.rst:27 641342ec8f934497ab62092bae5a3281
 msgid ""
@@ -56,19 +58,24 @@ msgid ""
 "that Flask knows where to look for resources such as templates and static"
 " files."
 msgstr ""
+"接下来我们创建这个类的一个实例。第一个参数是程序模块或包的名称，这是必要的，"
+"以便 Flask 知道在哪里查找资源，例如模板和静态文件。 ``__name__`` "
+"是一个方便的方式，适用于大多数情况。"
 
 #: ../../project/docs/quickstart.rst:32 45c6469fa87d4f8aa46d11319a50a860
 msgid ""
 "We then use the :meth:`~flask.Flask.route` decorator to tell Flask what "
 "URL should trigger our function."
-msgstr ""
+msgstr "然后我们使用 :meth:`~flask.Flask.route` 装饰器来告诉 Flask 哪个 URL "
+"应该触发我们的函数。"
 
 #: ../../project/docs/quickstart.rst:34 cfc675cf49514588908182a1fce142d4
 msgid ""
 "The function returns the message we want to display in the user's "
 "browser. The default content type is HTML, so HTML in the string will be "
 "rendered by the browser."
-msgstr ""
+msgstr "该函数返回我们想要在用户浏览器中显示的内容。默认的内容类型是 HTML，"
+"因此字符串中的 HTML 将由浏览器显示。"
 
 #: ../../project/docs/quickstart.rst:38 f5ec99a5ae614a9ba26780187216530f
 msgid ""
@@ -76,6 +83,8 @@ msgid ""
 "your application :file:`flask.py` because this would conflict with Flask "
 "itself."
 msgstr ""
+"将这个文件其保存为 :file:`hello.py` 或类似的名称。不要将程序文件命名为 "
+":file:`flask.py`，因为这会与 Flask 本身冲突。"
 
 #: ../../project/docs/quickstart.rst:42 839c0399bdf24a6d986d2849bcdd3c8f
 msgid ""
@@ -83,16 +92,20 @@ msgid ""
 " You need to tell the Flask where your application is with the ``--app`` "
 "option."
 msgstr ""
+"要运行该程序，请使用 ``flask`` 或 ``python -m flask`` 命令。您需要使用 "
+"``--app`` 选项告诉 Flask 程序的位置。"
 
 #: ../../project/docs/quickstart.rst:52 065be0391fa9431eac148d38072ca985
 msgid "Application Discovery Behavior"
-msgstr ""
+msgstr "查找应用程序的过程"
 
 #: ../../project/docs/quickstart.rst:54 921fab71c2254193ae9a288f2ed6fc48
 msgid ""
 "As a shortcut, if the file is named ``app.py`` or ``wsgi.py``, you don't "
 "have to use ``--app``. See :doc:`/cli` for more details."
 msgstr ""
+"作为一种快捷方式，如果文件名为 ``app.py`` 或 ``wsgi.py``，则无需使用 "
+"``--app``。更多详情请参阅 :doc:`/cli` 。"
 
 #: ../../project/docs/quickstart.rst:57 c519fca9387f4421b38dd160c9aadb74
 msgid ""
@@ -100,12 +113,14 @@ msgid ""
 "testing but probably not what you want to use in production. For "
 "deployment options see :doc:`deploying/index`."
 msgstr ""
+"这将启动一个非常简单的自带的服务器，它足以用于测试，但可能不适合在生产环境中"
+"使用。有关部署选项，请参阅 :doc:`deploying/index` 。"
 
 #: ../../project/docs/quickstart.rst:61 2834e151d2ca49f48b990cf655032675
 msgid ""
 "Now head over to http://127.0.0.1:5000/, and you should see your hello "
 "world greeting."
-msgstr ""
+msgstr "现在转到 http://127.0.0.1:5000/ ，您应该会看到您的 hello world 问候。"
 
 #: ../../project/docs/quickstart.rst:64 ad65b3803432439bbbe6c506eca24b97
 msgid ""
@@ -115,11 +130,11 @@ msgid ""
 msgstr ""
 "如果端口 5000 已被其他程序占用，当服务器尝试启动时，你会看到 ``OSError: "
 "[Errno 98]`` 或 ``OSError: [WinError 10013]`` 错误。有关如何处理此问题，"
-"请参阅 :ref:`address-already-in-use`。"
+"请参阅 :ref:`address-already-in-use` 。"
 
 #: ../../project/docs/quickstart.rst:71 6881455685bf4518843a3a764c368068
 msgid "Externally Visible Server"
-msgstr ""
+msgstr "外部可见的服务器"
 
 #: ../../project/docs/quickstart.rst:73 8182b82dc38e49958d2dccac4afad929
 msgid ""
@@ -128,21 +143,25 @@ msgid ""
 "default because in debugging mode a user of the application can execute "
 "arbitrary Python code on your computer."
 msgstr ""
+"如果你运行服务器，你会发现你只能从你自己的电脑访问它，而不能从网络上的任何其"
+"他电脑访问。这是默认设置，因为在调试模式下，"
+"应用程序的用户可以在你的电脑上执行任意 Python 代码。"
 
 #: ../../project/docs/quickstart.rst:78 38963a7aa05347e185944d4615d3c20b
 msgid ""
 "If you have the debugger disabled or trust the users on your network, you"
 " can make the server publicly available simply by adding "
 "``--host=0.0.0.0`` to the command line::"
-msgstr ""
+msgstr "如果您禁用了调试器或信任网络上的用户，则只需在命令行中添加 ``--host=0.0.0.0``"
+" 即可使服务器公开可用::"
 
 #: ../../project/docs/quickstart.rst:84 6976c2592d4b420eb5709d5361a33d90
 msgid "This tells your operating system to listen on all public IPs."
-msgstr ""
+msgstr "这会告诉你的操作系统监听所有公共 IP。"
 
 #: ../../project/docs/quickstart.rst:88 9cb26ee6c8e449aca7f1184b312b426e
 msgid "Debug Mode"
-msgstr ""
+msgstr "调试模式"
 
 #: ../../project/docs/quickstart.rst:90 caa3121ac3e54402be2cb680649ecda5
 msgid ""
@@ -151,47 +170,52 @@ msgid ""
 "code changes, and will show an interactive debugger in the browser if an "
 "error occurs during a request."
 msgstr ""
+"``flask run`` "
+"命令的功能远不止启动开发服务器。启用调试模式后，服务器会在代码更改时自动重新"
+"加载；如果请求过程中出现错误，则会在浏览器中显示交互式调试器。"
 
 #: ../../project/docs/quickstart.rst:95 7ba338e2ba664f919d528d60dd14365c
 msgid "The interactive debugger in action."
-msgstr ""
+msgstr "正在运行的交互式调试器。"
 
 #: ../../project/docs/quickstart.rst:102 81d0b4087a7d4c5c84c64b8b9e54e959
 msgid ""
 "The debugger allows executing arbitrary Python code from the browser. It "
 "is protected by a pin, but still represents a major security risk. Do not"
 " run the development server or debugger in a production environment."
-msgstr ""
+msgstr "该调试器允许从浏览器执行任意 Python "
+"代码。虽然它受密码保护，但仍然存在重大安全风险。请勿在生产环境中运行开发用服"
+"务器或调试器。"
 
 #: ../../project/docs/quickstart.rst:107 f0f6e79c9eea4278bf40423dcfdc1db2
 msgid "To enable debug mode, use the ``--debug`` option."
-msgstr ""
+msgstr "要启用调试模式，请使用 ``--debug`` 选项。"
 
 #: ../../project/docs/quickstart.rst:119 89b2013e81964b9ca87a46948493ff55
 msgid "See also:"
-msgstr ""
+msgstr "另请参阅："
 
 #: ../../project/docs/quickstart.rst:121 4ab0d5e448e24eb28393a3a2d65e37a7
 msgid ""
 ":doc:`/server` and :doc:`/cli` for information about running in debug "
 "mode."
-msgstr ""
+msgstr ":doc:`/server` 和 :doc:`/cli` 来了解有关在调试模式下运行的信息。"
 
 #: ../../project/docs/quickstart.rst:122 c8a9fed226cf4064baedea632c412fee
 msgid ""
 ":doc:`/debugging` for information about using the built-in debugger and "
 "other debuggers."
-msgstr ""
+msgstr ":doc:`/debugging` 了解有关使用内置调试器和其他调试器的信息。"
 
 #: ../../project/docs/quickstart.rst:124 c7f1d156a5f24431b8516e4295242a67
 msgid ""
 ":doc:`/logging` and :doc:`/errorhandling` to log errors and display nice "
 "error pages."
-msgstr ""
+msgstr ":doc:`/logging` 和 :doc:`/errorhandling` 用于记录错误并显示漂亮的错误页面。"
 
 #: ../../project/docs/quickstart.rst:129 ccdc5a632e8b4c2abc9c471dca22bf91
 msgid "HTML Escaping"
-msgstr ""
+msgstr "HTML转义"
 
 #: ../../project/docs/quickstart.rst:131 860638517045439a9d41bab941e9c9bd
 msgid ""
@@ -200,6 +224,9 @@ msgid ""
 "injection attacks. HTML templates rendered with Jinja, introduced later, "
 "will do this automatically."
 msgstr ""
+"返回 HTML（Flask "
+"中的默认响应类型）时，必须对输出中嵌入的任何用户提供的值进行转义，以防止注入"
+"攻击。稍后介绍的使用 Jinja 渲染的 HTML 模板将自动执行此操作。"
 
 #: ../../project/docs/quickstart.rst:136 882a6ed30e254d1ead37f0e986be4c38
 msgid ""
@@ -207,6 +234,9 @@ msgid ""
 "omitted in most examples for brevity, but you should always be aware of "
 "how you're using untrusted data."
 msgstr ""
+"此处所示的 :func:`~markupsafe.escape` "
+"可以手动使用。为了简洁起见，大多数示例中都省略了它，但您应始终注意如何处理不"
+"受信任的数据。"
 
 #: ../../project/docs/quickstart.rst:148 ba15bb36ab19407081cbfc83c9ee0681
 msgid ""
@@ -214,39 +244,44 @@ msgid ""
 " escaping causes it to be rendered as text, rather than running the "
 "script in the user's browser."
 msgstr ""
+"如果用户设法提交名称 ``<script>alert(\"bad\")</script>`` "
+"，则转义会导致其呈现为文本，而不是在用户的浏览器中运行脚本。"
 
 #: ../../project/docs/quickstart.rst:152 4c686c42af1e4309a8469cd0e743c4d7
 msgid ""
 "``<name>`` in the route captures a value from the URL and passes it to "
 "the view function. These variable rules are explained below."
-msgstr ""
+msgstr "路径中的 ``<name>`` 从 URL "
+"中捕获一个值并将其传递给视图函数。这些变量规则如下所述。"
 
 #: ../../project/docs/quickstart.rst:157 b1e18677e1f944c1adfe059c9fb5e3ef
 msgid "Routing"
-msgstr ""
+msgstr "路径"
 
 #: ../../project/docs/quickstart.rst:159 1bc848c730424794bff4c31a70f806a5
 msgid ""
 "Modern web applications use meaningful URLs to help users. Users are more"
 " likely to like a page and come back if the page uses a meaningful URL "
 "they can remember and use to directly visit a page."
-msgstr ""
+msgstr "现代 Web 应用程序使用有意义的 URL "
+"来帮助用户。如果页面使用有意义的用户能够记住的URL，那么他们更有可能喜欢该页面"
+"并再次访问。"
 
 #: ../../project/docs/quickstart.rst:163 f2b9df10b8184644a95ee9df3a1906b7
 msgid ""
 "Use the :meth:`~flask.Flask.route` decorator to bind a function to a URL."
 " ::"
-msgstr ""
+msgstr "使用 :meth:`~flask.Flask.route` 装饰器将函数绑定到 URL::"
 
 #: ../../project/docs/quickstart.rst:173 a125e8809bf74a2abf4c3a41aca1fc19
 msgid ""
 "You can do more! You can make parts of the URL dynamic and attach "
 "multiple rules to a function."
-msgstr ""
+msgstr "你还可以做更多！你可以使 URL 的某些部分动态化，并将多个规则附加到一个函数。"
 
 #: ../../project/docs/quickstart.rst:177 54ff811a374e4590b3dda562119f2c02
 msgid "Variable Rules"
-msgstr ""
+msgstr "变量规则"
 
 #: ../../project/docs/quickstart.rst:179 44a9f1eccd4742bf90a71c7b80282f8c
 msgid ""
@@ -255,58 +290,62 @@ msgid ""
 "as a keyword argument. Optionally, you can use a converter to specify the"
 " type of the argument like ``<converter:variable_name>``. ::"
 msgstr ""
+"您可以通过使用 "
+"``<variable_name>``标记部分URL来向其添加变量部分。然后，您的函数将接收“<varia"
+"ble_name>”作为参数。您也可以选择使用转换器来指定参数的类型，例如 "
+"``<converter:variable_name>``. ::"
 
 #: ../../project/docs/quickstart.rst:201 0c1d64ff76be4ff6b52b7d3e1b833245
 msgid "Converter types:"
-msgstr ""
+msgstr "转换器类型："
 
 #: ../../project/docs/quickstart.rst:204 abdfc2de097b4bb49338652271c1d52e
 msgid "``string``"
-msgstr ""
+msgstr "``string`` （字符串）"
 
 #: ../../project/docs/quickstart.rst:204 42a40812e2404ae2aa21cd2eefe6f2de
 msgid "(default) accepts any text without a slash"
-msgstr ""
+msgstr "（默认）接受任何不带斜杠的文本"
 
 #: ../../project/docs/quickstart.rst:205 812f474f73c447869e63be912ea61492
 msgid "``int``"
-msgstr ""
+msgstr "``int`` （正整数）"
 
 #: ../../project/docs/quickstart.rst:205 0dcc8042218b40e1a838225b493416b4
 msgid "accepts positive integers"
-msgstr ""
+msgstr "接受正整数"
 
 #: ../../project/docs/quickstart.rst:206 cd10e5dd4e644fbc9759e6b0000fa398
 msgid "``float``"
-msgstr ""
+msgstr "``float`` （浮点数）"
 
 #: ../../project/docs/quickstart.rst:206 115a2c7b2e384ae0adbd4a70c0fb94e9
 msgid "accepts positive floating point values"
-msgstr ""
+msgstr "接受正浮点数"
 
 #: ../../project/docs/quickstart.rst:207 8d00c0ee5d5949649dbb552a9c7b7a55
 msgid "``path``"
-msgstr ""
+msgstr "``path`` （路径）"
 
 #: ../../project/docs/quickstart.rst:207 c16b271f6640414893a3fa5acf32330b
 msgid "like ``string`` but also accepts slashes"
-msgstr ""
+msgstr "与 ``string`` 类似，但也接受斜杠"
 
 #: ../../project/docs/quickstart.rst:208 ca8584245682488cbbbe56766f06a7e0
 msgid "``uuid``"
-msgstr ""
+msgstr "``uuid`` （唯一标识符）"
 
 #: ../../project/docs/quickstart.rst:208 00321a5d7dff4ce0aab1cf4e2b60e66d
 msgid "accepts UUID strings"
-msgstr ""
+msgstr "接受 UUID 字符串"
 
 #: ../../project/docs/quickstart.rst:213 c14cc837143a41ffa3ff3b4954b90ec3
 msgid "Unique URLs / Redirection Behavior"
-msgstr ""
+msgstr "唯一的 URL / 重定向行为"
 
 #: ../../project/docs/quickstart.rst:215 fe8df7deb1a64de5ac02e5453cf20530
 msgid "The following two rules differ in their use of a trailing slash. ::"
-msgstr ""
+msgstr "以下两个规则在尾部斜杠的使用上有所不同。::"
 
 #: ../../project/docs/quickstart.rst:225 09c1960c2ce14c3c8e2dbbdf3dfbf80a
 msgid ""
@@ -315,6 +354,9 @@ msgid ""
 "a trailing slash (``/projects``), Flask redirects you to the canonical "
 "URL with the trailing slash (``/projects/``)."
 msgstr ""
+"``projects`` 端点的规范 URL 末尾有一个斜杠。它类似于文件系统中的文件夹。"
+"如果您访问的 URL 末尾没有斜杠(``/projects``)，Flask "
+"会将您重定向到末尾带有斜杠的规范 URL (``/projects/``)。"
 
 #: ../../project/docs/quickstart.rst:230 48c5af12fd634d34a79d2e75a9670824
 msgid ""
@@ -324,10 +366,13 @@ msgid ""
 "helps keep URLs unique for these resources, which helps search engines "
 "avoid indexing the same page twice."
 msgstr ""
+"``about`` 端点的规范 URL 没有尾部斜杠。它类似于文件的路径名。"
+"访问带有尾部斜杠的 URL（“/about/”）会产生 404 \"Not Found\"错误。"
+"这有助于保持这些资源的 URL 唯一，从而帮助搜索引擎避免对同一页面进行两次索引。"
 
 #: ../../project/docs/quickstart.rst:240 c35a47346603474c98280f584038e767
 msgid "URL Building"
-msgstr ""
+msgstr "构建URL"
 
 #: ../../project/docs/quickstart.rst:242 96b281646519448e93eddd340e2a4900
 msgid ""
@@ -337,32 +382,36 @@ msgid ""
 " the URL rule. Unknown variable parts are appended to the URL as query "
 "parameters."
 msgstr ""
+"要构建指向特定函数的 URL，请使用 :func:`~flask.url_for` "
+"函数。它接受函数名称作为其第一个参数，以及任意数量的参数，每个参数对应于 URL "
+"规则的一个变量部分。未知的变量部分将作为查询参数附加到 URL 中。"
 
 #: ../../project/docs/quickstart.rst:247 3e41eabc111c45b5a6a2cbb05c69c495
 msgid ""
 "Why would you want to build URLs using the URL reversing function "
 ":func:`~flask.url_for` instead of hard-coding them into your templates?"
-msgstr ""
+msgstr "为什么要使用函数 :func:`~flask.url_for` 来构建 "
+"URL，而不是将它们硬编码到模板中？"
 
 #: ../../project/docs/quickstart.rst:250 83242835c2184f11be23fda4c1f3bec4
 msgid "Reversing is often more descriptive than hard-coding the URLs."
-msgstr ""
+msgstr "使用函数 :func:`~flask.url_for` 通常比硬编码 URL 更具描述性 。"
 
 #: ../../project/docs/quickstart.rst:251 7239d0f7a149454e8f4400f1ca14bb29
 msgid ""
 "You can change your URLs in one go instead of needing to remember to "
 "manually change hard-coded URLs."
-msgstr ""
+msgstr "您可以一次性更改 URL，而不需要手动去更改硬编码的 URL。"
 
 #: ../../project/docs/quickstart.rst:253 4c1e8285c41c4a37b02c714cddb08b5c
 msgid "URL building handles escaping of special characters transparently."
-msgstr ""
+msgstr "URL 构建透明地处理特殊字符的转义。"
 
 #: ../../project/docs/quickstart.rst:254 494f632ea1f44c0cbeddc09b7ac402b8
 msgid ""
 "The generated paths are always absolute, avoiding unexpected behavior of "
 "relative paths in browsers."
-msgstr ""
+msgstr "生成的路径始终是绝对路径，避免了在浏览器中相对路径的意外行为。"
 
 #: ../../project/docs/quickstart.rst:256 c3ee43d067d44187aefd037e2e5b2c66
 msgid ""
@@ -370,6 +419,8 @@ msgid ""
 "``/myapplication`` instead of ``/``, :func:`~flask.url_for` properly "
 "handles that for you."
 msgstr ""
+"如果您的应用程序被放置在 URL 根目录之外，例如，在 ``/myapplication`` 而不是 "
+"``/``， :func:`~flask.url_for` 会为您正确处理。"
 
 #: ../../project/docs/quickstart.rst:260 95a85f98bb3e4a28a4119f3e8b6dde03
 msgid ""
@@ -379,10 +430,14 @@ msgid ""
 " it's handling a request even while we use a Python shell. See :ref"
 ":`context-locals`."
 msgstr ""
+"例如，这里我们使用 :meth:`~flask.Flask.test_request_context` 方法来测试 "
+":func:`~flask.url_for` 。 :meth:`~flask.Flask.test_request_context` 会告诉 "
+"Flask 即使在使用 Python shell 时也要像在处理请求一样运行。参见 :ref:`context-"
+"locals` 。"
 
 #: ../../project/docs/quickstart.rst:296 2bf0e7c3cca5413487009a1aa2bbeff4
 msgid "HTTP Methods"
-msgstr ""
+msgstr "HTTP 方法"
 
 #: ../../project/docs/quickstart.rst:298 c95a61d9ef7049728417940101edae2c
 msgid ""
@@ -392,12 +447,17 @@ msgid ""
 "``methods`` argument of the :meth:`~flask.Flask.route` decorator to "
 "handle different HTTP methods. ::"
 msgstr ""
+"Web 应用程序在访问 URL 时使用不同的 HTTP 方法。在使用 Flask 时，"
+"您应该熟悉这些 HTTP 方法。默认情况下，一个路径仅响应 ``GET`` 请求。"
+"您可以使用 :meth:`~flask.Flask.route` 装饰器的 ``methods`` 参数来处理不同的 "
+"HTTP 方法。::"
 
 #: ../../project/docs/quickstart.rst:313 97f958d655574e5ba545d0e9d67cdc3c
 msgid ""
 "The example above keeps all methods for the route within one function, "
 "which can be useful if each part uses some common data."
-msgstr ""
+msgstr "上面的示例将路径的所有HTTP方法保存在一个函数中，如果每个部分都要使用一些公共"
+"数据，这将很有用。"
 
 #: ../../project/docs/quickstart.rst:316 772583c8c0434b61b01779821fa51155
 msgid ""
@@ -406,6 +466,9 @@ msgid ""
 ":meth:`~flask.Flask.get`, :meth:`~flask.Flask.post`, etc. for each common"
 " HTTP method."
 msgstr ""
+"您还可以将不同方法的视图分离到不同的函数中。Flask 提供了适用于每种常见的 "
+"HTTP 方法的函数 :meth:`~flask.Flask.get`、:meth:`~flask.Flask.post` "
+"等来装饰这些路径的快捷方式。"
 
 #: ../../project/docs/quickstart.rst:331 6b104b969468453db9dde902877a7576
 msgid ""
@@ -413,6 +476,8 @@ msgid ""
 "method and handles ``HEAD`` requests according to the `HTTP RFC`_. "
 "Likewise, ``OPTIONS`` is automatically implemented for you."
 msgstr ""
+"如果存在 ``GET``，Flask 会自动添加对 ``HEAD`` 方法的支持，并根据 `HTTP RFC`_ "
+"处理 ``HEAD`` 请求。同样，``OPTIONS`` 也会自动为您实现。"
 
 #: ../../project/docs/quickstart.rst:338 5b1adc0a2b194e35bc0977c5bf28a221
 msgid "Static Files"
@@ -427,20 +492,25 @@ msgid ""
 " or next to your module and it will be available at ``/static`` on the "
 "application."
 msgstr ""
+"动态 Web 应用程序也需要静态文件。CSS 和 JavaScript "
+"文件通常就来自它们。理想情况下，您的 Web "
+"服务器已配置为提供这些文件，但在开发过程中，Flask 也可以做到这一点。"
+"只需在您的包中或模块旁边创建一个名为 :file:`static` 的文件夹，"
+"它就可以在应用程序的 ``/static`` 目录下找到。"
 
 #: ../../project/docs/quickstart.rst:346 b2ff85243bca4b199efce4c5f3a2910e
 msgid ""
 "To generate URLs for static files, use the special ``'static'`` endpoint "
 "name::"
-msgstr ""
+msgstr "要生成静态文件的 URL，请使用特殊的 ``'static'`` 端点名称::"
 
 #: ../../project/docs/quickstart.rst:350 e777693155da432ca1ae17df3166716a
 msgid "The file has to be stored on the filesystem as :file:`static/style.css`."
-msgstr ""
+msgstr "该文件必须作为 :file:`static/style.css` 存储在文件系统中。"
 
 #: ../../project/docs/quickstart.rst:353 4e4f12c1dc0543569fa3126eb2b55ea9
 msgid "Rendering Templates"
-msgstr ""
+msgstr "渲染模板"
 
 #: ../../project/docs/quickstart.rst:355 09b6de77ee174edc9eefb58e81931718
 msgid ""
@@ -450,6 +520,9 @@ msgid ""
 "<https://palletsprojects.com/p/jinja/>`_ template engine for you "
 "automatically."
 msgstr ""
+"在 Python 中生成 HTML 并不好玩，实际上相当繁琐，因为你必须自己进行 HTML "
+"转义才能保证应用程序的安全。因此，Flask 会自动为你配置 `Jinja2 <https://"
+"palletsprojects.com/p/jinja/>`_ 模板引擎。"
 
 #: ../../project/docs/quickstart.rst:360 a0c257e3541e41e99a6fa23e00678046
 msgid ""
@@ -457,10 +530,12 @@ msgid ""
 "applications, you'll primarily be generating HTML pages, but you can also"
 " generate markdown, plain text for emails, and anything else."
 msgstr ""
+"模板可用于生成任何类型的文本文件。对于 Web 应用程序，您会主要生成 HTML 页面，"
+"但您也可以生成 Markdown 文件、电子邮件的文本以及其他任何内容。"
 
 #: ../../project/docs/quickstart.rst:364 fc360802189b4c71a4bd9b6ff2a88f24
 msgid "For a reference to HTML, CSS, and other web APIs, use the `MDN Web Docs`_."
-msgstr ""
+msgstr "有关 HTML、CSS 和其他 Web API 的参考，请使用 `MDN Web Docs`_."
 
 #: ../../project/docs/quickstart.rst:368 06be61d85a6b4834a610ffe47c8af62a
 msgid ""
@@ -469,6 +544,9 @@ msgid ""
 "variables you want to pass to the template engine as keyword arguments. "
 "Here's a simple example of how to render a template::"
 msgstr ""
+"要渲染模板，您可以使用 :func:`~flask.render_template` "
+"方法。您只需提供模板名称以及要作为关键字参数传递给模板引擎的变量即可。以下是"
+"如何渲染模板的简单示例："
 
 #: ../../project/docs/quickstart.rst:380 f8999b415603498fbf3293a2f1d797e4
 msgid ""
@@ -476,14 +554,17 @@ msgid ""
 "your application is a module, this folder is next to that module, if it's"
 " a package it's actually inside your package:"
 msgstr ""
+"Flask 会在 :file:`templates` "
+"文件夹中查找模板。如果你的应用是一个模块，那么这个文件夹就位于模块旁边；如果"
+"你的应用是一个包，那么它实际上位于包内部:"
 
 #: ../../project/docs/quickstart.rst:384 725024a0a7b24f658246b76fe5fde7d2
 msgid "**Case 1**: a module::"
-msgstr ""
+msgstr "**情况 1**: 一个模块::"
 
 #: ../../project/docs/quickstart.rst:390 cf4038d89e1f451eb0cb66829016c94d
 msgid "**Case 2**: a package::"
-msgstr ""
+msgstr "**情况 2**: 一个包::"
 
 #: ../../project/docs/quickstart.rst:397 949e7841b7bb4a0a998c86c5785134b3
 msgid ""
@@ -491,10 +572,12 @@ msgid ""
 "to the official `Jinja2 Template Documentation "
 "<https://jinja.palletsprojects.com/templates/>`_ for more information."
 msgstr ""
+"对于模板，您可以充分利用 Jinja2 模板的全部功能。更多信息，请访问官方的 `"
+"Jinja2 模板文档 <https://jinja.palletsprojects.com/templates/>`_ ."
 
 #: ../../project/docs/quickstart.rst:401 6041f1d659c049859e9e77d76313073e
 msgid "Here is an example template:"
-msgstr ""
+msgstr "以下是一个示例模板:"
 
 #: ../../project/docs/quickstart.rst:413 39e9998610124e3fbbd0a099673e3427
 msgid ""
@@ -503,6 +586,9 @@ msgid ""
 "[#]_ objects as well as the :func:`~flask.url_for` and "
 ":func:`~flask.get_flashed_messages` functions."
 msgstr ""
+"在模板内部，您还可以访问 :data:`~flask.Flask.config`, :class:`~flask.request`"
+", :class:`~flask.session` 和 :class:`~flask.g` [#]_ "
+"对象以及:func:`~flask.url_for` 和 :func:`~flask.get_flashed_messages` 函数。"
 
 #: ../../project/docs/quickstart.rst:417 54eaa417b0b64e778da620c2f2a41032
 msgid ""
@@ -511,6 +597,10 @@ msgid ""
 "template inheritance makes it possible to keep certain elements on each "
 "page (like header, navigation and footer)."
 msgstr ""
+"如果使用继承，模板会特别有用。如果你想了解它的工作原理，请参阅 :doc:`"
+"patterns/templateinheritance` "
+"。基本上，模板继承使得在每个页面上保留某些元素（例如页眉、导航和页脚）成为可"
+"能。"
 
 #: ../../project/docs/quickstart.rst:422 6d8dbc88b53c4561b67060e949704958
 msgid ""
@@ -521,12 +611,17 @@ msgid ""
 ":class:`~markupsafe.Markup` class or by using the ``|safe`` filter in the"
 " template.  Head over to the Jinja 2 documentation for more examples."
 msgstr ""
+"转义已自动启用，因此如果 ``person`` 包含 "
+"HTML，它将被自动转义。如果您信任某个变量，并且您知道它是安全的 HTML（例如，"
+"因为它来自将 wiki 标记语言转换为 HTML 的模块），您可以使用 "
+":class:`~markupsafe.Markup` 类或使用模板中的 ``|safe`` "
+"过滤器将其标记为安全。更多示例，请参阅 Jinja 2 文档。"
 
 #: ../../project/docs/quickstart.rst:429 ada69b9b080a4cbdb54f030720af4b9c
 msgid ""
 "Here is a basic introduction to how the :class:`~markupsafe.Markup` class"
 " works::"
-msgstr ""
+msgstr "以下是对 :class:`~markupsafe.Markup` 类工作原理的基本介绍::"
 
 #: ../../project/docs/quickstart.rst:441 75088945204f4d628dae178bd8859566
 msgid ""
@@ -535,6 +630,8 @@ msgid ""
 "``.xml``, ``.xhtml``.  Templates loaded from a string will have "
 "autoescaping disabled."
 msgstr ""
+"自动转义功能不再对所有模板启用。仅以下模板扩展名会触发自动转义: ``.html``, "
+"``.htm``, ``.xml``, ``.xhtml`` . 从字符串加载的模板将被禁用自动转义。"
 
 #: ../../project/docs/quickstart.rst:446 084b4823ae5a4f3fbfb18984439bc6c9
 msgid ""
@@ -542,10 +639,12 @@ msgid ""
 " can store information for your own needs. See the documentation for "
 ":class:`flask.g` and :doc:`patterns/sqlite3`."
 msgstr ""
+"不确定 :class:`~flask.g` 对象是什么？它是一个可以用来存储您所需信息的东西。"
+"请参阅 :class:`flask.g` 和 :doc:`patterns/sqlite3` 的文档。"
 
 #: ../../project/docs/quickstart.rst:452 c9fb081781fe490a83dcaf8be7557d4d
 msgid "Accessing Request Data"
-msgstr ""
+msgstr "访问请求数据"
 
 #: ../../project/docs/quickstart.rst:454 358feb5793c748c590de43585b9d04a0
 msgid ""
@@ -555,20 +654,25 @@ msgid ""
 "you might be wondering how that object can be global and how Flask "
 "manages to still be threadsafe.  The answer is context locals:"
 msgstr ""
+"对于 Web 应用来说，响应客户端发送到服务器的数据至关重要。在 Flask 中，"
+"这些信息由全局的 :class:`~flask.request` 对象提供。如果您有使用 Python "
+"的经验，您可能会好奇这个对象怎么能是全局的，以及 Flask "
+"是如何做到多线程安全的。答案是上下文局部变量："
 
 #: ../../project/docs/quickstart.rst:464 9b77582917424d869548423e671761f5
 msgid "Context Locals"
-msgstr ""
+msgstr "上下文局部变量"
 
 #: ../../project/docs/quickstart.rst:466 5320b4c6327e490590c76bdf3b528fdc
 msgid "Insider Information"
-msgstr ""
+msgstr "内部信息"
 
 #: ../../project/docs/quickstart.rst:468 5e4457f3c2f54051876635f5149c9c72
 msgid ""
 "If you want to understand how that works and how you can implement tests "
 "with context locals, read this section, otherwise just skip it."
-msgstr ""
+msgstr "如果您想了解其工作原理以及如何使用上下文局部变量实现测试，请阅读本节，否则请"
+"跳过它。"
 
 #: ../../project/docs/quickstart.rst:471 6e1283f9569741bdab7e96d8dfd14bab
 msgid ""
@@ -576,7 +680,9 @@ msgid ""
 "These objects are actually proxies to objects that are local to a "
 "specific context.  What a mouthful.  But that is actually quite easy to "
 "understand."
-msgstr ""
+msgstr "Flask "
+"中的某些对象是全局对象，但并非通常意义上的全局对象。这些对象实际上是特定上下"
+"文中局部对象的代理。听起来有点拗口，但其实很容易理解。"
 
 #: ../../project/docs/quickstart.rst:475 b9b507d3410b42f9a7592feb12031e96
 msgid ""
@@ -589,6 +695,12 @@ msgid ""
 "It does that in an intelligent way so that one application can invoke "
 "another application without breaking."
 msgstr ""
+"想象一下，上下文就是在处理请求的线程。一个请求到来，Web "
+"服务器决定创建一个新线程（或者能够处理除线程之外的并发系统的其他底层对象）。"
+"当 Flask 启动其内部请求处理时，它会判断当前线程是活动上下文，"
+"并将当前应用程序和 WSGI "
+"环境绑定到该上下文（线程）。它以一种智能的方式执行此操作，以便一个应用程序可"
+"以调用另一个应用程序而不会中断。"
 
 #: ../../project/docs/quickstart.rst:484 d56253d6a237477b9b3901c05dd3ef44
 msgid ""
@@ -602,16 +714,23 @@ msgid ""
 "combination with the ``with`` statement it will bind a test request so "
 "that you can interact with it.  Here is an example::"
 msgstr ""
+"那么这对你意味着什么？基本上，除非你正在进行单元测试之类的工作，否则你完全可"
+"以忽略这种情况。你会注意到，依赖于请求对象的代码会突然出错，因为没有请求对象"
+"。解决方案是自己创建一个请求对象并将其绑定到上下文。"
+"单元测试最简单的解决方案是使用 "
+":meth:`~flask.Flask.test_request_context`上下文管理器。结合 ``with`` "
+"语句，它会绑定一个测试用请求，以便你能够与其交互。以下是一个例子::"
 
 #: ../../project/docs/quickstart.rst:501 064b412a60c744e08eae3124f71691bf
 msgid ""
 "The other possibility is passing a whole WSGI environment to the "
 ":meth:`~flask.Flask.request_context` method::"
-msgstr ""
+msgstr "另一种可能性是将整个 WSGI 环境传递给 :meth:`~flask.Flask.request_context` "
+"方法::"
 
 #: ../../project/docs/quickstart.rst:508 47f00f986222487dbc372111507a23fc
 msgid "The Request Object"
-msgstr ""
+msgstr "请求对象"
 
 #: ../../project/docs/quickstart.rst:510 1102326be78340b7a7c6dc20cbbc83d9
 msgid ""
@@ -620,6 +739,8 @@ msgid ""
 "overview of some of the most common operations.  First of all you have to"
 " import it from the ``flask`` module::"
 msgstr ""
+"请求对象已在 API 部分中记录，我们在此不再赘述（参见 :class:`~flask.Request` "
+"）。以下是对一些最常见操作的概述。首先，您需要从 ``flask`` 模块导入它："
 
 #: ../../project/docs/quickstart.rst:517 7b8bfff6046c43ef8f54d62de8c51528
 msgid ""
@@ -629,6 +750,9 @@ msgid ""
 ":attr:`~flask.Request.form` attribute.  Here is a full example of the two"
 " attributes mentioned above::"
 msgstr ""
+"当前的请求方法可以通过 :attr:`~flask.Request.method` "
+"属性获取。要访问表单数据（通过 ``POST`` 或 ``PUT`` 请求传输的数据），"
+"可以使用 :attr:`~flask.Request.form` 属性。以下是上述两个属性的完整示例::"
 
 #: ../../project/docs/quickstart.rst:536 6013c5e9f87845518e7446d368a50e82
 msgid ""
@@ -638,12 +762,17 @@ msgid ""
 " error page is shown instead.  So for many situations you don't have to "
 "deal with that problem."
 msgstr ""
+"如果 ``form`` 属性中不存在该键，会发生什么情况？在这种情况下，"
+"会引发一个特殊的 :exc:`KeyError` 错误。您可以像捕获正常 KeyError "
+"错误一样捕获它，但如果不这样做，则会显示 HTTP 400 Bad Request "
+"错误页面。因此，在很多情况下，您无需处理这个问题。"
 
 #: ../../project/docs/quickstart.rst:542 643318ce914049f4a0f557544ada1b11
 msgid ""
 "To access parameters submitted in the URL (``?key=value``) you can use "
 "the :attr:`~flask.Request.args` attribute::"
-msgstr ""
+msgstr "要访问 URL 中提交的参数(``?key=value``)，您可以使用 "
+":attr:`~flask.Request.args` 属性::"
 
 #: ../../project/docs/quickstart.rst:547 5504a43a1fcf4a7d8d9522292baeb9b3
 msgid ""
@@ -651,16 +780,19 @@ msgid ""
 ":exc:`KeyError` because users might change the URL and presenting them a "
 "400 bad request page in that case is not user friendly."
 msgstr ""
+"我们建议使用 `get` 或捕获 :exc:`KeyError` 来访问 URL 参数，"
+"因为用户可能会更改 URL，在这种情况下向他们显示 400 "
+"错误请求页面并不方便用户使用。"
 
 #: ../../project/docs/quickstart.rst:551 7207c12c2d744bdcbee6089ed111fc85
 msgid ""
 "For a full list of methods and attributes of the request object, head "
 "over to the :class:`~flask.Request` documentation."
-msgstr ""
+msgstr "有关请求对象的方法和属性的完整列出，请转到 :class:`~flask.Request` 文档。"
 
 #: ../../project/docs/quickstart.rst:556 2f8e45f852194235945ae217d6d061aa
 msgid "File Uploads"
-msgstr ""
+msgstr "文件上传"
 
 #: ../../project/docs/quickstart.rst:558 f5e2ed924b9d469c872e6ae5811dcc5e
 msgid ""
@@ -668,6 +800,8 @@ msgid ""
 "forget to set the ``enctype=\"multipart/form-data\"`` attribute on your "
 "HTML form, otherwise the browser will not transmit your files at all."
 msgstr ""
+"你可以使用 Flask 轻松处理上传的文件。只需确保不要忘记在 HTML 表单上设置 "
+"``enctype=\"multipart/form-data\"`` 属性，否则浏览器将根本不会传输你的文件。"
 
 #: ../../project/docs/quickstart.rst:562 6ec6b626ad33496dbcfde422fc6f0c9a
 msgid ""
@@ -680,6 +814,13 @@ msgid ""
 "to store that file on the filesystem of the server. Here is a simple "
 "example showing how that works::"
 msgstr ""
+"上传的文件存储在内存中或文件系统的一个临时位置。您可以通过查看请求对象上的 "
+":attr:`~flask.request.files` "
+"属性来访问这些文件。每个上传的文件都存储在该字典中。它的行为类似于标准的 "
+"Python :class:`file` 对象，但它还具有一个 "
+":meth:`~werkzeug.datastructures.FileStorage.save` "
+"方法，允许您将该文件存储在服务器的文件系统上。以下是一个简单的示例，展示了它"
+"的工作原理::"
 
 #: ../../project/docs/quickstart.rst:580 9f4a0748bea04aed97864aeb47f30a0e
 msgid ""
@@ -692,14 +833,19 @@ msgid ""
 ":func:`~werkzeug.utils.secure_filename` function that Werkzeug provides "
 "for you::"
 msgstr ""
+"如果您想知道文件在上传到你的应用程序之前在客户端是如何命名的，可以访问 "
+":attr:`~werkzeug.datastructures.FileStorage.filename` "
+"属性。但请记住，此值可以被伪造，所以永远不要相信它。如果您想使用客户端的文件"
+"名将文件存储在服务器上，请将其传递给 Werkzeug 提供的 "
+":func:`~werkzeug.utils.secure_filename` 函数::"
 
 #: ../../project/docs/quickstart.rst:598 aeadcf5a908d427e9730d01cb8c6f435
 msgid "For some better examples, see :doc:`patterns/fileuploads`."
-msgstr ""
+msgstr "要查看一些更好的示例，请参阅 :doc:`patterns/fileuploads`."
 
 #: ../../project/docs/quickstart.rst:601 4203df7cc3a641a88ceea94ef83c677a
 msgid "Cookies"
-msgstr ""
+msgstr "浏览器 Cookies"
 
 #: ../../project/docs/quickstart.rst:603 561f9fc236e54c9c8068cca7fd34e847
 msgid ""
@@ -712,14 +858,20 @@ msgid ""
 ":ref:`sessions` in Flask that add some security on top of cookies for "
 "you."
 msgstr ""
+"要访问 Cookie，您可以使用 :attr:`~flask.Request.cookies` 属性。要设置 "
+"Cookie，您可以使用响应对象的 :attr:`~flask.Response.set_cookie` 方法。"
+"请求对象的 :attr:`~flask.Request.cookies` 属性是一个字典，"
+"其中包含用户端传输的所有 Cookie。如果您想使用sessions，请不要直接使用 "
+"Cookie，而是使用 Flask 中的 :ref:`sessions` ，它会在 Cookie "
+"的基础上为您增加一些安全性。"
 
 #: ../../project/docs/quickstart.rst:611 ae2f698a08804ce7a6bb7c7457abea84
 msgid "Reading cookies::"
-msgstr ""
+msgstr "读取 Cookies::"
 
 #: ../../project/docs/quickstart.rst:621 13c85b76ae694187b27205eee86f6005
 msgid "Storing cookies::"
-msgstr ""
+msgstr "存储 Cookies::"
 
 #: ../../project/docs/quickstart.rst:631 c68c134f44f7428fa7d22b8d3f2daaa1
 msgid ""
@@ -728,6 +880,9 @@ msgid ""
 "response objects for you.  If you explicitly want to do that you can use "
 "the :meth:`~flask.make_response` function and then modify it."
 msgstr ""
+"请注意，Cookie 是设置在响应对象上的。由于您通常只是从视图函数返回字符串，"
+"因此 Flask 会将它们转换为响应对象。如果您想要显式地这样做，可以使用 "
+":meth:`~flask.make_response` 函数，然后对其进行修改。"
 
 #: ../../project/docs/quickstart.rst:636 7357520c4ca04ef7af6e0eaac84d8bd7
 msgid ""
@@ -735,14 +890,16 @@ msgid ""
 "object does not exist yet.  This is possible by utilizing the "
 ":doc:`patterns/deferredcallbacks` pattern."
 msgstr ""
+"有时你可能想在响应对象尚不存在时设置 cookie。这可以通过使用 :doc:`patterns/"
+"deferredcallbacks` 模式来实现。"
 
 #: ../../project/docs/quickstart.rst:640 65aef4e23b8648088d3e825932cac560
 msgid "For this also see :ref:`about-responses`."
-msgstr ""
+msgstr "另请参阅 :ref:`about-responses` 。"
 
 #: ../../project/docs/quickstart.rst:643 900239962731409da689cac7fefd85a6
 msgid "Redirects and Errors"
-msgstr ""
+msgstr "重定向和错误"
 
 #: ../../project/docs/quickstart.rst:645 14070bd0c596437fad855009c5e77eb1
 msgid ""
@@ -750,13 +907,16 @@ msgid ""
 "function; to abort a request early with an error code, use the "
 ":func:`~flask.abort` function::"
 msgstr ""
+"要将用户重定向到另一个端点，请使用 :func:`~flask.redirect` "
+"函数；要带着一个错误代码提前中止请求，请使用 :func:`~flask.abort` 函数::"
 
 #: ../../project/docs/quickstart.rst:660 a30026feae9c4fa08da0406f3e7a05ac
 msgid ""
 "This is a rather pointless example because a user will be redirected from"
 " the index to a page they cannot access (401 means access denied) but it "
 "shows how that works."
-msgstr ""
+msgstr "这是一个毫无意义的例子，因为用户将从索引被重定向到一个他们无法访问的页面（"
+"401 表示拒绝访问），但它展示了其工作原理。"
 
 #: ../../project/docs/quickstart.rst:664 86cbd88a6754454cb51931c4ce854293
 msgid ""
@@ -764,6 +924,8 @@ msgid ""
 " you want to customize the error page, you can use the "
 ":meth:`~flask.Flask.errorhandler` decorator::"
 msgstr ""
+"默认情况下，每个错误代码都会显示一个黑白的错误页面。如果要自定义错误页面，"
+"可以使用 :meth:`~flask.Flask.errorhandler` 装饰器::"
 
 #: ../../project/docs/quickstart.rst:674 edd42ac99b204aa59b8b3901d6e4adf0
 msgid ""
@@ -771,14 +933,17 @@ msgid ""
 "tells Flask that the status code of that page should be 404 which means "
 "not found.  By default 200 is assumed which translates to: all went well."
 msgstr ""
+"注意 :func:`~flask.render_template` 调用后面的 ``404`` 。这告诉 Flask "
+"该页面的状态码应该是 404，表示未找到。默认情况下，状态码为 "
+"200，翻译过来就是：一切顺利。"
 
 #: ../../project/docs/quickstart.rst:678 27e7fbe53df041d7aff8008e09e94e3e
 msgid "See :doc:`errorhandling` for more details."
-msgstr ""
+msgstr "请参阅 :doc:`errorhandling` 以了解更多详细信息。"
 
 #: ../../project/docs/quickstart.rst:683 1882d493586849f59523eeb1adee2185
 msgid "About Responses"
-msgstr ""
+msgstr "关于响应"
 
 #: ../../project/docs/quickstart.rst:685 596ba648a9a64dd4b0a3668159010650
 msgid ""
@@ -790,30 +955,34 @@ msgid ""
 "logic that Flask applies to converting return values into response "
 "objects is as follows:"
 msgstr ""
+"视图函数的返回值会自动转换为响应对象。如果返回值是字符串，则会转换为一个包含"
+"字符串作为响应主体、 ``200 OK`` 状态码和 :mimetype:`text/html` MIME "
+"类型的响应对象。如果返回值是字典或列表，则会调用 :func:`jsonify` 来生成响应。"
+"Flask 将返回值转换为响应对象的逻辑如下："
 
 #: ../../project/docs/quickstart.rst:693 2c9f467984134e16a76fdb95e4048c8d
 msgid ""
 "If a response object of the correct type is returned it's directly "
 "returned from the view."
-msgstr ""
+msgstr "如果返回了类型正确的响应对象，则它将直接从视图返回。"
 
 #: ../../project/docs/quickstart.rst:695 58a6187142da48f49cd0b2751bded845
 msgid ""
 "If it's a string, a response object is created with that data and the "
 "default parameters."
-msgstr ""
+msgstr "如果它是一个字符串，则使用该数据和默认参数创建一个响应对象。"
 
 #: ../../project/docs/quickstart.rst:697 fa638289bcc94a6eb758a5f50da39323
 msgid ""
 "If it's an iterator or generator returning strings or bytes, it is "
 "treated as a streaming response."
-msgstr ""
+msgstr "如果它是一个返回字符串或bytes的迭代器或生成器，则它将被视为流响应。"
 
 #: ../../project/docs/quickstart.rst:699 29c4c1d71bd8407483d87963627c3744
 msgid ""
 "If it's a dict or list, a response object is created using "
 ":func:`~flask.json.jsonify`."
-msgstr ""
+msgstr "如果它是一个字典或列表，则使用 :func:`~flask.json.jsonify` 创建一个响应对象。"
 
 #: ../../project/docs/quickstart.rst:701 bf39ae965d7c468bbfbe751b7384420f
 msgid ""
@@ -823,33 +992,40 @@ msgid ""
 "``status`` value will override the status code and ``headers`` can be a "
 "list or dictionary of additional header values."
 msgstr ""
+"如果返回的是元组，则元组中的项可以提供额外的信息。此类元组的格式必须为 ``("
+"response, status)``, ``(response, headers)``, 或 ``(response, status, "
+"headers)`` 。 ``status`` 值将覆盖状态码， ``headers`` "
+"可以是包含附加HTTP标头值的列表或字典。"
 
 #: ../../project/docs/quickstart.rst:707 0d26ad448b114bd29792d29fc92bdc1a
 msgid ""
 "If none of that works, Flask will assume the return value is a valid WSGI"
 " application and convert that into a response object."
-msgstr ""
+msgstr "如果这些都不符合，Flask 将假定返回值是一个有效的 WSGI "
+"应用程序并将其转换为响应对象。"
 
 #: ../../project/docs/quickstart.rst:710 62f41f823ec744d5bb06ba244a6003c7
 msgid ""
 "If you want to get hold of the resulting response object inside the view "
 "you can use the :func:`~flask.make_response` function."
-msgstr ""
+msgstr "如果您想要在视图中获取响应对象的结果，您可以使用 :func:`~flask.make_response`"
+" 函数。"
 
 #: ../../project/docs/quickstart.rst:713 e4d2a3787e0249f09281336d10a5da00
 msgid "Imagine you have a view like this::"
-msgstr ""
+msgstr "想象一下你有一个这样的视图函数::"
 
 #: ../../project/docs/quickstart.rst:721 aed13e5240f24633afad39f632857129
 msgid ""
 "You just need to wrap the return expression with "
 ":func:`~flask.make_response` and get the response object to modify it, "
 "then return it::"
-msgstr ""
+msgstr "您只需要用 :func:`~flask.make_response` "
+"包装返回表达式然后获取响应对象来修改它，最后返回它::"
 
 #: ../../project/docs/quickstart.rst:735 c4149ece0c044e609f2b778cfbae5a51
 msgid "APIs with JSON"
-msgstr ""
+msgstr "JSON 格式的 API"
 
 #: ../../project/docs/quickstart.rst:737 7e9e80dac42e44b9ad391153956ce08f
 msgid ""
@@ -857,6 +1033,8 @@ msgid ""
 "started writing such an API with Flask. If you return a ``dict`` or "
 "``list`` from a view, it will be converted to a JSON response."
 msgstr ""
+"编写 API 时，JSON 是一种常见的响应格式。使用 Flask 编写这样的 API 非常简单。"
+"如果你从视图返回一个 ``dict`` 或 ``list`` ，它将被转换为 JSON 响应。"
 
 #: ../../project/docs/quickstart.rst:757 9171c64ce29b4a538711a592d7022219
 msgid ""
@@ -864,6 +1042,9 @@ msgid ""
 " function, which will serialize any supported JSON data type. That means "
 "that all the data in the dict or list must be JSON serializable."
 msgstr ""
+"这是将数据传递给 :func:`~flask.json.jsonify` 函数的快捷方式，"
+"该函数将序列化任何支持的 JSON 数据类型。"
+"这意味着字典或列表中的所有数据都必须是可 JSON 序列化的。"
 
 #: ../../project/docs/quickstart.rst:762 4d735a16c9d740d6b82148252c1f7f95
 msgid ""
@@ -872,10 +1053,12 @@ msgid ""
 "There are many serialization libraries and Flask API extensions "
 "maintained by the community that support more complex applications."
 msgstr ""
+"对于数据库模型等复杂类型，您需要先使用序列化库将数据转换为有效的 JSON 类型。"
+"Flask 社区维护着许多序列化库和 Flask API 扩展，它们支持更复杂的应用程序。"
 
 #: ../../project/docs/quickstart.rst:771 4f50a2e48371416c89703f4178280bfb
 msgid "Sessions"
-msgstr ""
+msgstr "会话"
 
 #: ../../project/docs/quickstart.rst:773 9d545cb4c35d4d459ffbab9839b2b375
 msgid ""
@@ -886,16 +1069,20 @@ msgid ""
 " is that the user could look at the contents of your cookie but not "
 "modify it, unless they know the secret key used for signing."
 msgstr ""
+"除了请求对象之外，还有一个名为 :class:`~flask.session` "
+"的对象，它允许你在几个请求间存储特定于用户的信息。它基于 cookie 实现，并对 "
+"cookie 进行加密签名。这意味着用户可以查看你的 cookie "
+"内容，但无法修改，除非他们知道用于签名的密钥。"
 
 #: ../../project/docs/quickstart.rst:780 3255b31bc3e94fb1aca09e01bbd8af6e
 msgid ""
 "In order to use sessions you have to set a secret key.  Here is how "
 "sessions work::"
-msgstr ""
+msgstr "要使用sessions，您必须设置一个密钥。session的工作原理如下::"
 
 #: ../../project/docs/quickstart.rst:812 8ebc9807d96e43718d33c811b88ab638
 msgid "How to generate good secret keys"
-msgstr ""
+msgstr "如何生成好的密钥"
 
 #: ../../project/docs/quickstart.rst:814 f3afd8a65fe3427f82e03b34d4fb3d18
 msgid ""
@@ -904,6 +1091,9 @@ msgid ""
 "generator. Use the following command to quickly generate a value for "
 ":attr:`Flask.secret_key` (or :data:`SECRET_KEY`)::"
 msgstr ""
+"密钥应该尽可能随机。你的操作系统有办法基于加密随机生成器生成相当随机的数据。"
+"使用以下命令可以快速生成用于 :attr:`Flask.secret_key` (或 "
+":data:`SECRET_KEY`)的值::"
 
 #: ../../project/docs/quickstart.rst:822 c25f257f72ac4bb196af49632d0748a6
 msgid ""
@@ -914,17 +1104,23 @@ msgid ""
 "cookie in your page responses compared to the size supported by web "
 "browsers."
 msgstr ""
+"关于基于 Cookie 的sessions的注意事项：Flask "
+"会将您传入session对象的值序列化为 "
+"Cookie。如果您发现某些值在请求之间无法保持，且 Cookie "
+"确实已启用，而您没有收到清晰的错误消息，请检查页面响应中 Cookie 的大小，"
+"并将其与 Web 浏览器支持的大小进行比较。"
 
 #: ../../project/docs/quickstart.rst:828 066e85986c1143e3a9c05db8d3dcfd5e
 msgid ""
 "Besides the default client-side based sessions, if you want to handle "
 "sessions on the server-side instead, there are several Flask extensions "
 "that support this."
-msgstr ""
+msgstr "除了默认的基于用户端的sessions之外，如果您想在服务器端处理sessions，有几个 "
+"Flask 扩展可以支持此功能。"
 
 #: ../../project/docs/quickstart.rst:833 772479203dc7413ea182de7a26debed6
 msgid "Message Flashing"
-msgstr ""
+msgstr "消息闪现"
 
 #: ../../project/docs/quickstart.rst:835 71c9dd0b969745c58235da85c6d13f8d
 msgid ""
@@ -936,6 +1132,11 @@ msgid ""
 " next (and only the next) request.  This is usually combined with a "
 "layout template to expose the message."
 msgstr ""
+"好的应用程序和用户界面都离不开反馈。如果用户得不到足够的反馈，他们最终可能会"
+"讨厌这个应用程序。Flask "
+"的消息闪现系统提供了一种非常简单的方法来向用户提供反馈。消息闪现系统基本上是"
+"在一次请求末尾中存储消息，并在下一次请求中显示的机制。这通常与布局模板结合使"
+"用来显示消息。"
 
 #: ../../project/docs/quickstart.rst:843 cf3f3c1119044837b4e599c0a0f20493
 msgid ""
@@ -944,10 +1145,13 @@ msgid ""
 "also available in the templates. See :doc:`patterns/flashing` for a full "
 "example."
 msgstr ""
+"要闪现消息，请使用 :func:`~flask.flash` 方法；要获取消息，可以使用 "
+":func:`~flask.get_flashed_messages` 方法，该方法在模板中也可用。"
+"完整示例请参阅 :doc:`patterns/flashing` 。"
 
 #: ../../project/docs/quickstart.rst:849 ea5dad8560974fe98185bd8af8ea4f5b
 msgid "Logging"
-msgstr "日志"
+msgstr "日志记录"
 
 #: ../../project/docs/quickstart.rst:853 ecae835344c344a58d6a0433ff0c7e9e
 msgid ""
@@ -959,17 +1163,23 @@ msgid ""
 "with ``400 Bad Request`` in that situation, but sometimes that won't do "
 "and the code has to continue working."
 msgstr ""
+"有时您可能会遇到这样的情况：您处理的数据应该正确，但实际上却不正确。例如，"
+"您可能有一些用户端代码向服务器发送 HTTP "
+"请求，但该请求显然格式错误。这可能是由于用户篡改了数据，或者用户端代码出现故"
+"障造成的。大多数情况下，在这种情况下回复 ``400 Bad Request`` "
+"是可以的，但有时这样做是不行的，代码必须继续工作。"
 
 #: ../../project/docs/quickstart.rst:861 b24e3b0bb52d40cda76bc641149df232
 msgid ""
 "You may still want to log that something fishy happened.  This is where "
 "loggers come in handy.  As of Flask 0.3 a logger is preconfigured for you"
 " to use."
-msgstr ""
+msgstr "你可能仍然想记录下有一些可疑的事情发生。这时，记录器就派上用场了。从 Flask "
+"0.3 开始会预配置一个记录器供你使用。"
 
 #: ../../project/docs/quickstart.rst:865 9cdf2178e8a04bcf84515522291e4a51
 msgid "Here are some example log calls::"
-msgstr ""
+msgstr "以下是一些日志调用示例::"
 
 #: ../../project/docs/quickstart.rst:871 a35f4692e1be42539c3e7ab6109741b8
 msgid ""
@@ -977,14 +1187,16 @@ msgid ""
 ":class:`~logging.Logger`, so head over to the official :mod:`logging` "
 "docs for more information."
 msgstr ""
+"附加的 :attr:`~flask.Flask.logger` 是一个标准日志记录器 "
+":class:`~logging.Logger`，因此请转到官方 :mod:`logging` 文档以获取更多信息。"
 
 #: ../../project/docs/quickstart.rst:875 1d9877fe417d4c9db821a67915cfc751
 msgid "See :doc:`errorhandling`."
-msgstr ""
+msgstr "参见 :doc:`errorhandling` 。"
 
 #: ../../project/docs/quickstart.rst:879 094d60d91d974ba79355fb13c7b9cfc7
 msgid "Hooking in WSGI Middleware"
-msgstr ""
+msgstr "添加WSGI中间件"
 
 #: ../../project/docs/quickstart.rst:881 79c3a49435e343bbb74f589099845536
 msgid ""
@@ -993,6 +1205,9 @@ msgid ""
 ":class:`~werkzeug.middleware.proxy_fix.ProxyFix` middleware for running "
 "behind Nginx:"
 msgstr ""
+"要将 WSGI 中间件添加到 Flask 应用，请包装应用的 ``wsgi_app`` 属性。例如，"
+"要应用 Werkzeug 的 :class:`~werkzeug.middleware.proxy_fix.ProxyFix` "
+"中间件来在 Nginx 后运行:"
 
 #: ../../project/docs/quickstart.rst:891 93696bcd9bfc43ce92bd572a05c27b71
 msgid ""
@@ -1000,10 +1215,13 @@ msgid ""
 "points at your Flask application, not at the middleware, so you can "
 "continue to use and configure ``app`` directly."
 msgstr ""
+"包装 ``app.wsgi_app`` 而不是 ``app`` 意味着 ``app`` "
+"仍然指向您的Flask应用程序，而不是中间件，因此您可以继续直接使用和配置 ``app``"
+" 。"
 
 #: ../../project/docs/quickstart.rst:896 5d27055db2834af8b78def315a569849
 msgid "Using Flask Extensions"
-msgstr ""
+msgstr "使用 Flask 扩展"
 
 #: ../../project/docs/quickstart.rst:898 8f76cfde967043b49472ed98114718ce
 msgid ""
@@ -1011,18 +1229,20 @@ msgid ""
 "example, Flask-SQLAlchemy provides SQLAlchemy support that makes it "
 "simple and easy to use with Flask."
 msgstr ""
+"扩展是一些可帮助您完成常见任务的软件包。例如，Flask-SQLAlchemy 提供了 "
+"SQLAlchemy 支持，让您能够轻松便捷地将其与 Flask 配合使用。"
 
 #: ../../project/docs/quickstart.rst:902 64f20461409f4128ad443b3fb22a4342
 msgid "For more on Flask extensions, see :doc:`extensions`."
-msgstr ""
+msgstr "有关 Flask 扩展的更多信息，请参阅 :doc:`extensions` 。"
 
 #: ../../project/docs/quickstart.rst:905 fbc9c1223fd9453fa25239d351bff730
 msgid "Deploying to a Web Server"
-msgstr ""
+msgstr "部署到 Web 服务器"
 
 #: ../../project/docs/quickstart.rst:907 d8c7e5b2239f4e37ba38ef491e742e42
 msgid "Ready to deploy your new Flask app? See :doc:`deploying/index`."
-msgstr ""
+msgstr "准备好部署你的新 Flask 应用了吗？请参阅 :doc:`deploying/index` 。"
 
 #~ msgid ""
 #~ "Inside templates you also have access"
