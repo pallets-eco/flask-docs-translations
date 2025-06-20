@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-06-21 03:05+0000\n"
+"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/patternspackages/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/patterns/packages.rst:2 8d719a6b7bbe4dd090579d8510c50499
 msgid "Large Applications as Packages"
-msgstr ""
+msgstr "打包大型程序"
 
 #: ../../project/docs/patterns/packages.rst:4 c989feeacfe04b29a10d4d994f0bbfdd
 msgid "Imagine a simple flask application structure that looks like this::"
@@ -187,4 +190,3 @@ msgstr ""
 #~ ":doc:`/becomingbig` section for some "
 #~ "inspiration how to deal with that."
 #~ msgstr ""
-
