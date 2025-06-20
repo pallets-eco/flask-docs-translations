@@ -3,24 +3,27 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-06-21 03:05+0000\n"
+"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/patternsappdispatch/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/patterns/appdispatch.rst:2
 #: e545eb72233b45bcad5d18ada1139bd8
 msgid "Application Dispatching"
-msgstr ""
+msgstr "应用分流"
 
 #: ../../project/docs/patterns/appdispatch.rst:4
 #: b0c7e3472ddb4881abbf9d596fc3c2ea
@@ -203,4 +206,3 @@ msgstr ""
 #~ " falls back to another application if"
 #~ " the creator function returns ``None``::"
 #~ msgstr ""
-
