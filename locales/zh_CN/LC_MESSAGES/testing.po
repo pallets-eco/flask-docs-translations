@@ -3,34 +3,39 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-06-21 03:05+0000\n"
+"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/testing/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/testing.rst:2 86b5754bc9f94d18889791001c256f90
 msgid "Testing Flask Applications"
-msgstr ""
+msgstr "测试Flask程序"
 
 #: ../../project/docs/testing.rst:4 d16cf6038e184a5facf0b86b391f2791
 msgid ""
 "Flask provides utilities for testing an application. This documentation "
 "goes over techniques for working with different parts of the application "
 "in tests."
-msgstr ""
+msgstr "Flask "
+"提供了一些用于测试应用程序的工具和功能。本文档介绍了用于在测试应用程序不同部"
+"分的技术。"
 
 #: ../../project/docs/testing.rst:8 d68f12b54aec4a0db5fdc19caea45876
 msgid "We will use the `pytest`_ framework to set up and run our tests."
-msgstr ""
+msgstr "我们将使用 `pytest`_ 框架来设置和运行我们的测试。"
 
 #: ../../project/docs/testing.rst:16 95fb6dc6dad1444cb9bda2f6ba7f1ae8
 #, python-format
@@ -40,10 +45,13 @@ msgid ""
 "tutorial on tests </tutorial/tests>` for a detailed explanation of "
 "specific tests for an application."
 msgstr ""
+"这个 :doc:`教程 </tutorial/index>` 介绍了如何编写测试来以 100% 覆盖率测试 "
+"Flaskr 博客示例应用。有关特定应用测试的详细说明，请参阅 :doc:`测试教程 </"
+"tutorial/tests>` 。"
 
 #: ../../project/docs/testing.rst:23 d35fb0911048413c9bc60e779c6cc653
 msgid "Identifying Tests"
-msgstr ""
+msgstr "识别测试"
 
 #: ../../project/docs/testing.rst:25 f8ed8445464046fa864d87555a144df2
 msgid ""
@@ -51,6 +59,8 @@ msgid ""
 "that start with ``test_``, in Python modules that start with ``test_``. "
 "Tests can also be further grouped in classes that start with ``Test``."
 msgstr ""
+"测试通常位于 ``tests`` 文件夹中。测试是位于以 ``test_`` 开头的 Python "
+"模块中以 ``test_`` 开头的函数。测试也可以进一步分组到以 ``Test`` 开头的类中。"
 
 #: ../../project/docs/testing.rst:29 4465387068224523a3431abe75457704
 msgid ""
@@ -59,6 +69,8 @@ msgid ""
 "already tested. Try to extract complex behaviors as separate functions to"
 " test individually."
 msgstr ""
+"确定要测试什么可能很困难。通常是尝试测试您编写的代码，而不是您使用的库的代码"
+"，因为它们已经经过测试。尝试将复杂的行为提取为单独的函数进行单独测试。"
 
 #: ../../project/docs/testing.rst:36 0918d8c127b74fb2a9204e510f30e55d
 msgid "Fixtures"
@@ -72,6 +84,10 @@ msgid ""
 "client, and CLI runner are shown below, they can be placed in "
 "``tests/conftest.py``."
 msgstr ""
+"Pytest 的 *fixtures* 允许编写可在测试之间复用的代码片段。一个简单的 Fixture "
+"会返回一个值，但 Fixture "
+"也可以执行设置、产生一个值，然后执行teardown。用于应用程序、测试客户端和 CLI "
+"运行器的 Fixture 如下所示，它们可以放在 ``tests/conftest.py`` 中。"
 
 #: ../../project/docs/testing.rst:44 49343d23a749432bb163a81c8a22ab87
 msgid ""
@@ -80,6 +96,9 @@ msgid ""
 "can add code before and after the ``yield`` to set up and tear down other"
 " resources, such as creating and clearing a database."
 msgstr ""
+"如果您使用的是 :doc:`application factory </patterns/appfactories>` ，"
+"定义一个 ``app`` fixture来创建和配置应用实例。您可以在 ``yield`` "
+"前后添加代码来设置和销毁其他资源，例如创建和清除数据库。"
 
 #: ../../project/docs/testing.rst:50 f25e0b0465e14f7eb52ef2dec7855bfd
 msgid ""
@@ -87,10 +106,12 @@ msgid ""
 "import and configure directly. You can still use an ``app`` fixture to "
 "set up and tear down resources."
 msgstr ""
+"如果您不使用application factory ，而是有一个可以直接导入和配置的 app 对象。"
+"您仍然可以使用 ``app`` 装置来设置和移除资源。"
 
 #: ../../project/docs/testing.rst:84 b21be58e440c4a1b8926b3b718f5113a
 msgid "Sending Requests with the Test Client"
-msgstr ""
+msgstr "使用测试用用户端发送请求"
 
 #: ../../project/docs/testing.rst:86 899710c2413e45329678278788973270
 msgid ""
@@ -98,6 +119,8 @@ msgid ""
 "server. Flask's client extends :doc:`Werkzeug's client <werkzeug:test>`, "
 "see those docs for additional information."
 msgstr ""
+"测试客户端无需运行实际服务器即可向应用程序发出请求。Flask 的用户端扩展了 "
+":doc:`Werkzeug的 <werkzeug:test>` ，请参阅该文档了解更多信息。"
 
 #: ../../project/docs/testing.rst:91 fb8af8b25e93474996ec3beb4a6f3dec
 msgid ""
@@ -107,6 +130,10 @@ msgid ""
 ":class:`~werkzeug.test.EnvironBuilder`. Typically you'll use ``path``, "
 "``query_string``, ``headers``, and ``data`` or ``json``."
 msgstr ""
+"``client`` 具有与常见 HTTP 请求方法匹配的方法，例如 ``client.get()`` 和 "
+"``client.post()`` 。它们接收许多参数来构建请求；完整文档可在 "
+":class:`~werkzeug.test.EnvironBuilder` 中找到。较常使用的参数有 ``path`` 、 "
+"``query_string`` 、 ``headers`` 以及 ``data`` 或 ``json`` 等。"
 
 #: ../../project/docs/testing.rst:97 448e5b7351644b519cc16a6817f72b9f
 msgid ""
@@ -117,6 +144,11 @@ msgid ""
 "bytes returned by the view. If you want to use text, Werkzeug 2.1 "
 "provides ``response.text``, or use ``response.get_data(as_text=True)``."
 msgstr ""
+"要发出请求，请调用请求应使用的对应方法，并传入要测试的路由路径。一个 "
+":class:`~werkzeug.test.TestResponse` "
+"将被返回来检查响应数据。它具有响应对象的所有属性。您通常会查看 "
+"``response.data`` ，它是视图返回的字节数据。如果您想使用文本，Werkzeug 2.1 "
+"提供了 ``response.text`` ，或者使用 ``response.get_data(as_text=True)`` 。"
 
 #: ../../project/docs/testing.rst:111 3c403a351ce841b8b53fdf911c29d616
 msgid ""
@@ -124,6 +156,9 @@ msgid ""
 "in the query string (after the ``?`` in the URL). Pass a dict "
 "``headers={}`` to set request headers."
 msgstr ""
+"传递一个字典 ``query_string={\"key\": \"value\", ...}`` "
+"来设置查询字符串中的参数（在 URL 中的 ``?`` 之后）。传递一个字典 "
+"``headers={}`` 来设置请求标头。"
 
 #: ../../project/docs/testing.rst:115 ee7570fd5e074d9982589988b1515585
 msgid ""
@@ -706,4 +741,3 @@ msgstr ""
 
 #~ msgid "Pass a dict to ``headers={}`` to set request headers."
 #~ msgstr ""
-
