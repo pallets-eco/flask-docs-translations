@@ -3,29 +3,33 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-12 19:17+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-06-21 03:04+0000\n"
+"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/patternsfileuploads/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../patterns/fileuploads.rst:2
 msgid "Uploading Files"
-msgstr ""
+msgstr "上传文件"
 
 #: ../../patterns/fileuploads.rst:4
 msgid ""
 "Ah yes, the good old problem of file uploads.  The basic idea of file "
 "uploads is actually quite simple.  It basically works like this:"
-msgstr ""
+msgstr "啊，没错，又是一个老问题：文件上传。文件上传的基本原理其实很简单。它的工作原"
+"理大致如下："
 
 #: ../../patterns/fileuploads.rst:7
 msgid ""
