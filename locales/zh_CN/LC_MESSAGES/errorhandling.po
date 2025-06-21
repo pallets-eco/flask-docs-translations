@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-21 03:05+0000\n"
+"PO-Revision-Date: 2025-06-22 10:01+0000\n"
 "Last-Translator: deng <xzkdeng@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/errorhandling/zh_Hans/>\n"
@@ -33,36 +33,39 @@ msgid ""
 "involved will fail. Here are some situations where perfectly fine code "
 "can lead to server errors:"
 msgstr ""
+"应用程序会出错，服务器也会出错。生产环境中迟早会出现异常。即使你的代码 100% "
+"正确，你仍然会时不时地看到异常。为什么？因为其他所有相关的东西都可能出错。以"
+"下是一些完全正确的代码仍然可能导致服务器错误的情况："
 
 #: ../../project/docs/errorhandling.rst:10 19ee86ca9ef34cbe8a52862d50006ede
 msgid ""
 "the client terminated the request early and the application was still "
 "reading from the incoming data"
-msgstr ""
+msgstr "客户端提前终止请求，可是应用程序仍在读取传入的数据"
 
 #: ../../project/docs/errorhandling.rst:12 c72fecf83df6413fb5b1a1cf40b15e9e
 msgid "the database server was overloaded and could not handle the query"
-msgstr ""
+msgstr "数据库服务器过载，无法处理查询"
 
 #: ../../project/docs/errorhandling.rst:13 7f88b163766f4d89a9d5db775d809e6d
 msgid "a filesystem is full"
-msgstr ""
+msgstr "文件系统已满"
 
 #: ../../project/docs/errorhandling.rst:14 af85d30c88a04937ae88b0bcc86b2549
 msgid "a harddrive crashed"
-msgstr ""
+msgstr "硬盘崩溃"
 
 #: ../../project/docs/errorhandling.rst:15 b0e27ae5b9f24a6e97a001f993bfd310
 msgid "a backend server overloaded"
-msgstr ""
+msgstr "后端服务器过载"
 
 #: ../../project/docs/errorhandling.rst:16 589a6e2e50414e5d868be032ae3831ca
 msgid "a programming error in a library you are using"
-msgstr ""
+msgstr "您正在使用的库中存在程序错误"
 
 #: ../../project/docs/errorhandling.rst:17 0961264e9cae40b4a11f6a819d176c3c
 msgid "network connection of the server to another system failed"
-msgstr ""
+msgstr "服务器与另一个系统的网络连接出错"
 
 #: ../../project/docs/errorhandling.rst:19 f2cefa3249794815b1180642b1c98657
 msgid ""
@@ -72,16 +75,20 @@ msgid ""
 "simple page for you and log the exception to the "
 ":attr:`~flask.Flask.logger`."
 msgstr ""
+"这只是您可能遇到的问题的一小部分。那么我们该如何处理这类问题呢？默认情况下，"
+"如果您的应用程序在生产模式下运行时发生异常，Flask "
+"会为您显示一个非常简单的页面，并将异常记录到 :attr:`~flask.Flask.logger` 中。"
 
 #: ../../project/docs/errorhandling.rst:24 2b717dc2a31741b4a5da1229866ba0e9
 msgid ""
 "But there is more you can do, and we will cover some better setups to "
 "deal with errors including custom exceptions and 3rd party tools."
-msgstr ""
+msgstr "但您可以做更多，我们将介绍一些更好的设置来处理错误，包括自定义异常和第三方工"
+"具。"
 
 #: ../../project/docs/errorhandling.rst:31 9f6a1a3317b740ef9565513802a6bb7a
 msgid "Error Logging Tools"
-msgstr ""
+msgstr "错误记录工具"
 
 #: ../../project/docs/errorhandling.rst:33 bfd37e36928346399add39541b2047ac
 msgid ""
@@ -96,29 +103,37 @@ msgid ""
 "local variables for debugging, and sends you mails based on new errors or"
 " frequency thresholds."
 msgstr ""
+"即使只针对严重错误发送邮件，在大量用户遇到该问题时也会变得非常繁琐；日志文件"
+"通常永远不会被查看。因此，我们建议使用 `Sentry <https://sentry.io/>`_ "
+"来处理应用程序错误。它在 `GitHub <https://github.com/getsentry/sentry>`_ "
+"上提供源代码，并且还提供 `托管版本 <https://sentry.io/signup/>`_ "
+"，您可以免费使用。Sentry "
+"会聚合重复错误，捕获完整的堆栈跟踪和局部变量以进行调试，并根据新错误或频率阈"
+"值向您发送邮件。"
 
 #: ../../project/docs/errorhandling.rst:44 8d06514c86504e00b25115fe4cd718b9
 msgid ""
 "To use Sentry you need to install the ``sentry-sdk`` client with extra "
 "``flask`` dependencies."
-msgstr ""
+msgstr "要使用 Sentry，您需要安装带有额外 ``flask`` 依赖项的 ``sentry-sdk`` 客户端。"
 
 #: ../../project/docs/errorhandling.rst:51 8fffbf94a2c5496a8fbf8f50a3775034
 msgid "And then add this to your Flask app:"
-msgstr ""
+msgstr "然后将这添加到您的 Flask 应用程序中："
 
 #: ../../project/docs/errorhandling.rst:60 18c00281bd104a329be6a80e37734f34
 msgid ""
 "The ``YOUR_DSN_HERE`` value needs to be replaced with the DSN value you "
 "get from your Sentry installation."
-msgstr ""
+msgstr "``YOUR_DSN_HERE`` 值需要替换为您从 Sentry 安装中获得的 DSN 值。"
 
 #: ../../project/docs/errorhandling.rst:63 1823f403e09c46b089b270cda2f78f37
 msgid ""
 "After installation, failures leading to an Internal Server Error are "
 "automatically reported to Sentry and from there you can receive error "
 "notifications."
-msgstr ""
+msgstr "安装后，导致内部服务器错误的故障会自动报告给 "
+"Sentry，您可以从那里收到错误通知。"
 
 #: ../../project/docs/errorhandling.rst:67 9b84a8a429174abbaff014a4333a9385
 msgid "See also:"
