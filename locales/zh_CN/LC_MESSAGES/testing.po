@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-21 03:05+0000\n"
+"PO-Revision-Date: 2025-06-22 10:01+0000\n"
 "Last-Translator: deng <xzkdeng@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/testing/zh_Hans/>\n"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../project/docs/testing.rst:36 0918d8c127b74fb2a9204e510f30e55d
 msgid "Fixtures"
-msgstr ""
+msgstr "使用 Fixtures 测试"
 
 #: ../../project/docs/testing.rst:38 6f27f946ddb04fc49d16c9741ff0a33e
 msgid ""
@@ -166,10 +166,13 @@ msgid ""
 "``data``. If raw bytes are passed, that exact body is used. Usually, "
 "you'll pass a dict to set form data."
 msgstr ""
+"要在 POST 或 PUT 请求中发送请求主体，请将数据传递给 ``data`` "
+"。如果传递的是原始的bytes，则使用它作为主体。通常会传递一个字典来设置表单数据"
+"。"
 
 #: ../../project/docs/testing.rst:121 2c254a61f55749f69e2303bf16cd47df
 msgid "Form Data"
-msgstr ""
+msgstr "表单数据"
 
 #: ../../project/docs/testing.rst:123 20c9a1ea496d4cd7af87d4ec2597caf1
 msgid ""
@@ -177,6 +180,9 @@ msgid ""
 "will be set to ``multipart/form-data`` or ``application/x-www-form-"
 "urlencoded`` automatically."
 msgstr ""
+"要发送表单数据，请将一个字典传递给 ``data`` 。 ``Content-Type`` "
+"标头将自动设置为 ``multipart/form-data`` 或 ``application/x-www-form-"
+"urlencoded`` 。"
 
 #: ../../project/docs/testing.rst:127 eb74eb73c1174c12a2785a7239f0ef0a
 msgid ""
@@ -186,32 +192,41 @@ msgid ""
 "objects will be closed after making the request, so they do not need to "
 "use the usual ``with open() as f:`` pattern."
 msgstr ""
+"如果值是一个已打开并用于读取字节的文件对象（ ``\"rb\"`` "
+"模式），它将被视为已上传的文件。要更改检测到的文件名和内容类型，请传递一个 "
+"``(file, filename, content_type)`` 元组。文件对象将在发出请求后关闭，"
+"因此无需使用平时的 ``with open() as f:`` 模式。"
 
 #: ../../project/docs/testing.rst:133 ef662159a39b4979b5d1302061aa671a
 msgid ""
 "It can be useful to store files in a ``tests/resources`` folder, then use"
 " ``pathlib.Path`` to get files relative to the current test file."
 msgstr ""
+"将文件存储在 ``tests/resources`` 文件夹中，然后使用 ``pathlib.Path`` "
+"获取相对于当前测试文件的文件会很有用。"
 
 #: ../../project/docs/testing.rst:153 cffbfd08318543da9f34480164869c24
 msgid "JSON Data"
-msgstr ""
+msgstr "JSON 数据"
 
 #: ../../project/docs/testing.rst:155 476d3764dd5d43a286ff79ad2088f481
 msgid ""
 "To send JSON data, pass an object to ``json``. The ``Content-Type`` "
 "header will be set to ``application/json`` automatically."
 msgstr ""
+"要发送 JSON 数据，将对象传递给 ``json`` 。 ``Content-Type`` 标头将自动设置为 "
+"``application/json`` 。"
 
 #: ../../project/docs/testing.rst:158 3964c0314f2a4923bee58f6869f818a2
 msgid ""
 "Similarly, if the response contains JSON data, the ``response.json`` "
 "attribute will contain the deserialized object."
-msgstr ""
+msgstr "类似地，如果响应包含 JSON 数据，则 ``response.json`` "
+"属性将包含反序列化的对象。"
 
 #: ../../project/docs/testing.rst:180 2bf449d71ae64ce084fa03af933bda79
 msgid "Following Redirects"
-msgstr ""
+msgstr "跟随重定向"
 
 #: ../../project/docs/testing.rst:182 b16c8b1144484e2eb6a587528ce4602c
 msgid ""
@@ -220,6 +235,9 @@ msgid ""
 "the client will continue to make requests until a non-redirect response "
 "is returned."
 msgstr ""
+"默认情况下，如果响应是一个重定向，客户端不会发出其他请求。通过将 "
+"``follow_redirects=True`` "
+"传递给请求方法，客户端将继续发出请求，直到收到非重定向的响应。"
 
 #: ../../project/docs/testing.rst:187 f9a11a2335b14d0db0d9b0d081250201
 msgid ""
@@ -228,10 +246,14 @@ msgid ""
 "has a :attr:`~werkzeug.test.TestResponse.request` attribute which records"
 " the request that produced that response."
 msgstr ""
+":attr:`TestResponse.history <werkzeug.test.TestResponse.history>` "
+"是一个包含所有重定向响应的元组，这些响应最终形成了最终的响应。"
+"每个响应都有一个 :attr:`~werkzeug.test.TestResponse.request` "
+"属性，用于记录产生该响应的请求。"
 
 #: ../../project/docs/testing.rst:203 46509cacaae44c788d44dabc014c18c1
 msgid "Accessing and Modifying the Session"
-msgstr ""
+msgstr "访问和修改Session"
 
 #: ../../project/docs/testing.rst:205 b9ac7e3207404a4f9944fa322a27d861
 msgid ""
@@ -239,6 +261,9 @@ msgid ""
 "the client in a ``with`` statement. The app and request context will "
 "remain active *after* making a request, until the ``with`` block ends."
 msgstr ""
+"要访问 Flask 的上下文变量（主要是 :data:`~flask.session` ），在客户端中使用 "
+"``with`` 语句。应用程序和请求上下文将在发出请求 *后* 保持活动状态，直到 "
+"``with`` 块结束。"
 
 #: ../../project/docs/testing.rst:222 1032e66adc1e4cad8de6c3d00d01e3b7
 msgid ""
@@ -248,10 +273,13 @@ msgid ""
 "``with`` statement. It returns a session object, and will save the "
 "session once the block ends."
 msgstr ""
+"如果您想在发出请求 *之前* 访问或设置会话中的值，请在 ``with`` "
+"语句中使用客户端的 :meth:`~flask.testing.FlaskClient.session_transaction` "
+"方法。该方法返回一个会话对象，并在代码块结束后保存会话。"
 
 #: ../../project/docs/testing.rst:246 d61057de66574b9088bac890f311d0f6
 msgid "Running Commands with the CLI Runner"
-msgstr ""
+msgstr "使用 CLI Runner 运行命令"
 
 #: ../../project/docs/testing.rst:248 49e3d46289644b8cac37abcde08f52b5
 msgid ""
@@ -261,6 +289,10 @@ msgid ""
 "object. Flask's runner extends :doc:`Click's runner <click:testing>`, see"
 " those docs for additional information."
 msgstr ""
+"Flask 提供了 :meth:`~flask.Flask.test_cli_runner` 来创建 "
+":class:`~flask.testing.FlaskCliRunner`，它可以独立运行 CLI 命令，"
+"并将输出捕获到 :class:`~click.testing.Result` 对象中。Flask 的运行器扩展了 "
+":doc:`Click 的运行器 <click:testing>` ，请参阅该文档了解更多信息。"
 
 #: ../../project/docs/testing.rst:254 3421b4270a9b4e6181e1ef3ee42d98c0
 msgid ""
@@ -268,10 +300,12 @@ msgid ""
 "call commands in the same way they would be called with the ``flask`` "
 "command from the command line."
 msgstr ""
+"使用运行器的 :meth:`~flask.testing.FlaskCliRunner.invoke` "
+"方法以与从命令行使用 ``flask`` 命令调用相同的方式调用命令。"
 
 #: ../../project/docs/testing.rst:276 553107178d0349aab51ceb54b07b3322
 msgid "Tests that depend on an Active Context"
-msgstr ""
+msgstr "依赖于上下文存在的测试"
 
 #: ../../project/docs/testing.rst:278 6b9510a2a79c46b1a8265cf89a31ce4b
 msgid ""
@@ -282,19 +316,26 @@ msgid ""
 "request or invoking the command, you can create and activate a context "
 "directly."
 msgstr ""
+"您可能有一些被视图或命令调用的函数，由于它们访问 ``request``, ``session``, "
+"或 ``current_app`` ，因此需要活动的 :doc:`应用程序上下文 </appcontext>` 或 "
+":doc:`请求上下文 </reqcontext>` "
+"。与其通过发出请求或调用命令来测试它们，你可以直接创建并激活上下文。"
 
 #: ../../project/docs/testing.rst:285 b7d1bd7954c4493da2444dbaf73b4a2d
 msgid ""
 "Use ``with app.app_context()`` to push an application context. For "
 "example, database extensions usually require an active app context to "
 "make queries."
-msgstr ""
+msgstr "使用 ``with app.app_context()`` "
+"来推送应用程序上下文。例如，数据库扩展通常需要活动的应用程序上下文才能进行查"
+"询。"
 
 #: ../../project/docs/testing.rst:295 4ec7c592d0ae4e119d712b6918501e78
 msgid ""
 "Use ``with app.test_request_context()`` to push a request context. It "
 "takes the same arguments as the test client's request methods."
-msgstr ""
+msgstr "使用 ``with app.test_request_context()`` "
+"来推送请求上下文。它接收与测试客户端的请求方法相同的参数。"
 
 #: ../../project/docs/testing.rst:309 8865ef897e76420aa44ed151645058a3
 msgid ""
@@ -303,6 +344,10 @@ msgid ""
 " these, usually it's better to make a full request instead. However, it's"
 " possible to call them manually."
 msgstr ""
+"创建测试请求上下文不会运行任何 Flask 调度代码，因此不会调用 "
+"``before_request`` "
+"函数。如果需要调用这些函数，通常最好发起一个完整的请求。当然，也可以手动调用"
+"它们。"
 
 #~ msgid "**Something that is untested is broken.**"
 #~ msgstr ""
