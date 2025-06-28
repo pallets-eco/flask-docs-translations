@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-25 19:31+0800\n"
-"PO-Revision-Date: 2025-06-21 03:05+0000\n"
-"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"PO-Revision-Date: 2025-06-29 02:03+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/patternsmongoengine/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -30,10 +30,13 @@ msgid ""
 "relational SQL databases. This pattern shows how to use `MongoEngine`_, a"
 " document mapper library, to integrate with MongoDB."
 msgstr ""
+"使用 MongoDB 这样的文档数据库是关系型 SQL 数据库的常见替代方案。 "
+"本模式展示了如何使用 `MongoEngine`_（一个文档映射器库）将 Flask 与 MongoDB "
+"集成。"
 
 #: ../../patterns/mongoengine.rst:8
 msgid "A running MongoDB server and `Flask-MongoEngine`_ are required. ::"
-msgstr ""
+msgstr "你需要一个正在运行的 MongoDB 服务器以及 `Flask-MongoEngine`_ 包。 ::"
 
 #: ../../patterns/mongoengine.rst:17
 msgid "Configuration"
@@ -44,16 +47,19 @@ msgid ""
 "Basic setup can be done by defining ``MONGODB_SETTINGS`` on "
 "``app.config`` and creating a ``MongoEngine`` instance. ::"
 msgstr ""
+"基础配置可以通过在 ``app.config`` 中定义 ``MONGODB_SETTINGS``， 然后创建一个 "
+"``MongoEngine`` 实例来完成。 ::"
 
 #: ../../patterns/mongoengine.rst:33
 msgid "Mapping Documents"
-msgstr ""
+msgstr "文档映射"
 
 #: ../../patterns/mongoengine.rst:35
 msgid ""
 "To declare a model that represents a Mongo document, create a class that "
 "inherits from ``Document`` and declare each of the fields. ::"
-msgstr ""
+msgstr "要声明一个代表 Mongo 文档的模型，可以创建一个继承自 ``Document`` 的类， "
+"并在其中声明每个字段。 ::"
 
 #: ../../patterns/mongoengine.rst:47
 msgid ""
@@ -61,48 +67,55 @@ msgid ""
 "the fields of the embedded document and ``EmbeddedDocumentField`` to "
 "declare it on the parent document. ::"
 msgstr ""
+"如果文档中包含嵌套字段，可以使用 ``EmbeddedDocument`` 来定义嵌套文档的字段， "
+"并使用 ``EmbeddedDocumentField`` 在父文档中声明该嵌套文档。 ::"
 
 #: ../../patterns/mongoengine.rst:62
 msgid "Creating Data"
-msgstr ""
+msgstr "创建数据"
 
 #: ../../patterns/mongoengine.rst:64
 msgid ""
 "Instantiate your document class with keyword arguments for the fields. "
 "You can also assign values to the field attributes after instantiation. "
 "Then call ``doc.save()``. ::"
-msgstr ""
+msgstr "使用字段作为关键字参数实例化你的文档类。 也可以在实例化之后为字段属性赋值，"
+"然后调用 ``doc.save()``。 ::"
 
 #: ../../patterns/mongoengine.rst:78
 msgid "Queries"
-msgstr ""
+msgstr "查询"
 
 #: ../../patterns/mongoengine.rst:80
 msgid ""
 "Use the class ``objects`` attribute to make queries. A keyword argument "
 "looks for an equal value on the field. ::"
-msgstr ""
+msgstr "使用类的 ``objects`` 属性进行查询。关键字参数会匹配字段的等值。 ::"
 
 #: ../../patterns/mongoengine.rst:85
 msgid ""
 "Query operators may be used by concatenating them with the field name "
 "using a double-underscore. ``objects``, and queries returned by calling "
 "it, are iterable. ::"
-msgstr ""
+msgstr "可以通过使用双下划线将查询操作符连接到字段名称来使用查询运算符。 ``objects`` "
+"及其返回的查询结果是可迭代的。 ::"
 
 #: ../../patterns/mongoengine.rst:96
 msgid "Documentation"
-msgstr ""
+msgstr "文档"
 
 #: ../../patterns/mongoengine.rst:98
 msgid ""
 "There are many more ways to define and query documents with MongoEngine. "
 "For more information, check out the `official documentation "
 "<MongoEngine_>`_."
-msgstr ""
+msgstr "MongoEngine 支持更多定义和查询文档的方式。 详细信息请参阅其 `官方文档 "
+"<MongoEngine_>`_。"
 
 #: ../../patterns/mongoengine.rst:102
 msgid ""
 "Flask-MongoEngine adds helpful utilities on top of MongoEngine. Check out"
 " their `documentation <Flask-MongoEngine_>`_ as well."
 msgstr ""
+"Flask-MongoEngine 在 MongoEngine 的基础上增加了实用工具， 可以参考它们的 `"
+"文档 <Flask-MongoEngine_>`_。"
