@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-25 19:31+0800\n"
-"PO-Revision-Date: 2025-06-21 03:04+0000\n"
-"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"PO-Revision-Date: 2025-06-29 02:03+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/patternslazyloading/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -43,6 +43,9 @@ msgid ""
 " if you suddenly notice that your application outgrows this approach you "
 "can fall back to a centralized URL mapping."
 msgstr ""
+"如果你的应用需要非常快地导入（例如在 Google App Engine 或其他类似平台上）， "
+"这种装饰器方式可能会成为瓶颈。 当你的应用变复杂、超出这种用法时，"
+"可以改用集中式的 URL 映射方式。"
 
 #: ../../patterns/lazyloading.rst:15
 msgid ""
@@ -50,30 +53,34 @@ msgid ""
 ":meth:`~flask.Flask.add_url_rule` function.  Instead of using decorators,"
 " you have a file that sets up the application with all URLs."
 msgstr ""
+"实现集中式 URL 映射的方式是使用 :meth:`~flask.Flask.add_url_rule` 方法。 "
+"与使用装饰器不同，这种方式通过一个单独的文件来配置所有的 URL "
+"与视图函数之间的映射。"
 
 #: ../../patterns/lazyloading.rst:20
 msgid "Converting to Centralized URL Map"
-msgstr ""
+msgstr "转换到集中式 URL Map"
 
 #: ../../patterns/lazyloading.rst:22
 msgid "Imagine the current application looks somewhat like this::"
-msgstr ""
+msgstr "设想你当前的应用看起来是这样的::"
 
 #: ../../patterns/lazyloading.rst:35
 msgid ""
 "Then, with the centralized approach you would have one file with the "
 "views (:file:`views.py`) but without any decorator::"
-msgstr ""
+msgstr "使用集中式方式后，你可以将视图函数写在一个文件中（如 "
+":file:`views.py`），但不加装饰器::"
 
 #: ../../patterns/lazyloading.rst:44
 msgid ""
 "And then a file that sets up an application which maps the functions to "
 "URLs::"
-msgstr ""
+msgstr "然后使用另一个文件来创建应用对象，并将视图函数与 URL 映射::"
 
 #: ../../patterns/lazyloading.rst:54
 msgid "Loading Late"
-msgstr ""
+msgstr "延迟加载"
 
 #: ../../patterns/lazyloading.rst:56
 msgid ""
@@ -82,6 +89,9 @@ msgid ""
 " needed. This can be accomplished with a helper class that behaves just "
 "like a function but internally imports the real function on first use::"
 msgstr ""
+"目前为止，我们只是将视图函数与路由拆分了，但视图模块仍然在启动时被加载。 "
+"我们可以进一步优化，只在首次请求时再按需加载视图函数。 "
+"为此，我们可以定义一个行为类似函数的类，它在首次调用时动态导入真正的函数::"
 
 #: ../../patterns/lazyloading.rst:76
 msgid ""
@@ -89,10 +99,12 @@ msgid ""
 " set.  This is used by Flask internally to figure out how to name the URL"
 " rules in case you don't provide a name for the rule yourself."
 msgstr ""
+"关键点在于你需要正确设置 `__module__` 和 `__name__`， Flask "
+"内部会使用这两个属性来为 URL 规则命名（如果你没有手动指定名称的话）。"
 
 #: ../../patterns/lazyloading.rst:80
 msgid "Then you can define your central place to combine the views like this::"
-msgstr ""
+msgstr "接下来，你可以在集中式文件中像下面这样组合视图::"
 
 #: ../../patterns/lazyloading.rst:90
 msgid ""
@@ -102,6 +114,9 @@ msgid ""
 "name and a dot, and by wrapping `view_func` in a `LazyView` as needed.  "
 "::"
 msgstr ""
+"你还可以进一步简化代码，比如写一个辅助函数， 自动调用 "
+":meth:`~flask.Flask.add_url_rule`， 为 rule name 添加项目名前缀，"
+"同时根据需要自动将 `view_func` 包装为 `LazyView`。::"
 
 #: ../../patterns/lazyloading.rst:107
 msgid ""
@@ -109,3 +124,6 @@ msgid ""
 "to be in a file that is imported upfront to work properly on the first "
 "request.  The same goes for any kind of remaining decorator."
 msgstr ""
+"需要注意的是，before request 和 after request "
+"处理器必须写在启动时就被导入的文件中， "
+"才能在第一次请求时正确生效。任何其他装饰器也是一样。"
