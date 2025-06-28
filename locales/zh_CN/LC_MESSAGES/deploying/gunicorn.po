@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-06-29 02:03+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/deployinggunicorn/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/deploying/gunicorn.rst:2 f91403a8d1304d1ebb3c738f5fe29e38
@@ -59,7 +60,7 @@ msgstr ""
 #: ../../project/docs/deploying/gunicorn.rst:22
 #: 0fcb800a0d634a2f89829caff15dec3a
 msgid "Installing"
-msgstr ""
+msgstr "安装"
 
 #: ../../project/docs/deploying/gunicorn.rst:24
 #: b7c6ff6c18a84732bba645b1c3c6446b
@@ -76,7 +77,7 @@ msgstr ""
 #: ../../project/docs/deploying/gunicorn.rst:40
 #: 378afde2c9aa42289554d9242130d3b4
 msgid "Running"
-msgstr ""
+msgstr "运行"
 
 #: ../../project/docs/deploying/gunicorn.rst:42
 #: 6f030826e43e4414b7d32faf8c3d587f
@@ -108,7 +109,7 @@ msgstr ""
 #: ../../project/docs/deploying/gunicorn.rst:75
 #: 081a5aed0e4543959f91b8e39bdea330
 msgid "Binding Externally"
-msgstr ""
+msgstr "外部绑定"
 
 #: ../../project/docs/deploying/gunicorn.rst:77
 #: 8a63da8147284a2c88caf720c9c2d1b7
@@ -133,7 +134,8 @@ msgstr ""
 msgid ""
 "``0.0.0.0`` is not a valid address to navigate to, you'd use a specific "
 "IP address in your browser."
-msgstr ""
+msgstr "注意：``0.0.0.0`` 不是一个可以在浏览器中访问的有效地址，浏览器中应使用具体的 "
+"IP 地址。"
 
 #: ../../project/docs/deploying/gunicorn.rst:97
 #: 30db3a9e96064b6cb36dae0b06d8fdf2
@@ -167,4 +169,3 @@ msgstr ""
 #: 91db759c0ee74c129fa7dd8516cd7bd9
 msgid "To use eventlet:"
 msgstr ""
-
