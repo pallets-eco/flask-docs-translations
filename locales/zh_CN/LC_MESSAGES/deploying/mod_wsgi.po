@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-21 03:04+0000\n"
-"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"PO-Revision-Date: 2025-06-29 02:03+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/deployingmod_wsgi/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -64,9 +64,8 @@ msgstr ""
 
 #: ../../project/docs/deploying/mod_wsgi.rst:24
 #: 5e5ec2311cb34746bd6353539a3cdd1b
-#, fuzzy
 msgid "Installing"
-msgstr "安装 `mod_wsgi`"
+msgstr "安装"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:26
 #: 9b19440d7251413e9d6102df71eba2c1
@@ -84,7 +83,7 @@ msgstr ""
 #: ../../project/docs/deploying/mod_wsgi.rst:43
 #: 7538d89d2bdc42a8b7a342f58e1bda0b
 msgid "Running"
-msgstr ""
+msgstr "运行"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:45
 #: d2483f40c226449b99e15cf54edd095b
@@ -99,7 +98,7 @@ msgstr ""
 #: ../../project/docs/deploying/mod_wsgi.rst:57
 #: 6c636c0cb2cf494d8a9ab71fd108f53e c6171dae97314600b3574b6a76997a53
 msgid "``wsgi.py``"
-msgstr ""
+msgstr "``wsgi.py``"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:64
 #: dd8ae4d020b445e7b6363705ca835018
@@ -124,7 +123,7 @@ msgstr ""
 #: ../../project/docs/deploying/mod_wsgi.rst:79
 #: fb328056563442c7ba0a6b037385bc91
 msgid "Binding Externally"
-msgstr ""
+msgstr "外部绑定"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:81
 #: 527f5189b4d24651954b8eec4e5cae3e
