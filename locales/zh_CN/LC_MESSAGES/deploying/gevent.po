@@ -3,25 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-06-29 02:03+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/deployinggevent/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/deploying/gevent.rst:2 3f3c9adb92e849a497d2f4779a6f9a20
 msgid "gevent"
-msgstr ""
+msgstr "gevent"
 
 #: ../../project/docs/deploying/gevent.rst:4 77aa4cd9e7a54f158f7d6a176a34ae47
 msgid ""
@@ -53,7 +54,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/gevent.rst:25 285a1d676b5347268c17d4a20a4a63a4
 msgid "Installing"
-msgstr ""
+msgstr "安装"
 
 #: ../../project/docs/deploying/gevent.rst:27 9066dbf798984e28bf193c4aff2f8526
 msgid ""
@@ -68,7 +69,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/gevent.rst:43 f16a7b3c6010462993f48b8ee9ed89f2
 msgid "Running"
-msgstr ""
+msgstr "运行"
 
 #: ../../project/docs/deploying/gevent.rst:45 3e94b84ed4514967abf8aa400f252d3b
 msgid ""
@@ -78,7 +79,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/gevent.rst:48 3364ec26b3b14fe9bc929a0d4451dd9e
 msgid "``wsgi.py``"
-msgstr ""
+msgstr "``wsgi.py``"
 
 #: ../../project/docs/deploying/gevent.rst:62 03267eed1f3a450486c95728c0f9dcec
 msgid "No output is shown when the server starts."
@@ -86,7 +87,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/gevent.rst:66 c83fd808cac64acda950fae95ed1293f
 msgid "Binding Externally"
-msgstr ""
+msgstr "外部绑定"
 
 #: ../../project/docs/deploying/gevent.rst:68 1ccbb11ae9e64cefbe6b40499ad986f3
 msgid ""
@@ -103,10 +104,13 @@ msgid ""
 "do this when using a reverse proxy setup, otherwise it will be possible "
 "to bypass the proxy."
 msgstr ""
+"你可以通过传入 ``0.0.0.0``（在上一节的 server 参数中）绑定到所有外部 IP "
+"的非特权端口。 "
+"**如果你使用了反向代理，请不要这样做**，否则可能绕过代理直接访问应用。"
 
 #: ../../project/docs/deploying/gevent.rst:79 a877f07d204f41acb8e8e1ceecbd5c1e
 msgid ""
 "``0.0.0.0`` is not a valid address to navigate to, you'd use a specific "
 "IP address in your browser."
-msgstr ""
-
+msgstr "注意：``0.0.0.0`` 不是一个可以在浏览器中访问的有效地址，浏览器中应使用具体的 "
+"IP 地址。"
