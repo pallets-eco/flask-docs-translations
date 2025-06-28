@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-25 19:31+0800\n"
-"PO-Revision-Date: 2025-06-21 03:05+0000\n"
-"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"PO-Revision-Date: 2025-06-29 02:03+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/patternsflashing/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -37,34 +37,41 @@ msgid ""
 "are too large for session cookies causes message flashing to fail "
 "silently."
 msgstr ""
+"良好的应用和用户界面都强调“反馈”。 "
+"如果用户得不到足够的反馈，他们很可能会讨厌这个应用。 Flask "
+"提供了一个非常简单的方式来向用户提供反馈 —— 闪现系统（flashing system）。 "
+"闪现系统的基本原理是在一个请求结束时记录一条消息，并在**下一个请求**中访问该"
+"消息，仅限一次。 这通常配合一个包含通用布局的模板一起使用。 请注意，"
+"浏览器以及某些 Web 服务器会限制 Cookie 的大小， 这意味着如果闪现的消息过大，"
+"超过了 session cookie 的大小限制，消息将静默失效，不会提示错误。"
 
 #: ../../patterns/flashing.rst:15
 msgid "Simple Flashing"
-msgstr ""
+msgstr "简单的消息闪现"
 
 #: ../../patterns/flashing.rst:17
 msgid "So here is a full example::"
-msgstr ""
+msgstr "下面是一个完整的示例::"
 
 #: ../../patterns/flashing.rst:41
 msgid "And here is the :file:`layout.html` template which does the magic:"
-msgstr ""
+msgstr "这是 :file:`layout.html` 模板，它负责展示消息："
 
 #: ../../patterns/flashing.rst:58
 msgid ""
 "Here is the :file:`index.html` template which inherits from "
 ":file:`layout.html`:"
-msgstr ""
+msgstr "这是继承自 :file:`layout.html` 的 :file:`index.html` 模板："
 
 #: ../../patterns/flashing.rst:68
 msgid ""
 "And here is the :file:`login.html` template which also inherits from "
 ":file:`layout.html`:"
-msgstr ""
+msgstr "这是同样继承自 :file:`layout.html` 的 :file:`login.html` 模板："
 
 #: ../../patterns/flashing.rst:92
 msgid "Flashing With Categories"
-msgstr ""
+msgstr "闪现消息的分类"
 
 #: ../../patterns/flashing.rst:96
 msgid ""
@@ -73,30 +80,35 @@ msgid ""
 "categories can be used to give the user better feedback.  For example "
 "error messages could be displayed with a red background."
 msgstr ""
+"闪现消息时也可以添加“类别”（categories）。 如果没有指定，默认类别是 "
+"``'message'``。 "
+"使用不同的类别可以为用户提供更清晰的反馈，例如错误信息可以用红色背景显示。"
 
 #: ../../patterns/flashing.rst:101
 msgid ""
 "To flash a message with a different category, just use the second "
 "argument to the :func:`~flask.flash` function::"
-msgstr ""
+msgstr "要使用其他类别，只需在调用 :func:`~flask.flash` 函数时传入第二个参数::"
 
 #: ../../patterns/flashing.rst:106
 msgid ""
 "Inside the template you then have to tell the "
 ":func:`~flask.get_flashed_messages` function to also return the "
 "categories.  The loop looks slightly different in that situation then:"
-msgstr ""
+msgstr "在模板中，需要告诉 :func:`~flask.get_flashed_messages` 函数返回类别信息。 "
+"对应的模板循环代码会有所不同："
 
 #: ../../patterns/flashing.rst:122
 msgid ""
 "This is just one example of how to render these flashed messages.  One "
 "might also use the category to add a prefix such as "
 "``<strong>Error:</strong>`` to the message."
-msgstr ""
+msgstr "这只是渲染闪现消息的一种方式。你也可以使用类别信息为消息添加前缀， 例如 "
+"``<strong>错误：</strong>``。"
 
 #: ../../patterns/flashing.rst:127
 msgid "Filtering Flash Messages"
-msgstr ""
+msgstr "过滤闪现的消息"
 
 #: ../../patterns/flashing.rst:131
 msgid ""
@@ -104,3 +116,5 @@ msgid ""
 " :func:`~flask.get_flashed_messages`.  This is useful if you wish to "
 "render each category in a separate block."
 msgstr ""
+"你还可以选择传入一个类别列表，以过滤 :func:`~flask.get_flashed_messages` "
+"的返回结果。 这对于想要将不同类别的消息分别渲染在不同区域时非常有用。"
