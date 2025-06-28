@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-21 03:04+0000\n"
-"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"PO-Revision-Date: 2025-06-29 02:03+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/patternsstreaming/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -35,12 +35,12 @@ msgstr "有时候你想要向用户端发送特别巨量的数据，远比你想
 
 #: ../../project/docs/patterns/streaming.rst:9 55730560ec2c4efa9773f1cc04905c08
 msgid "The answer is by using generators and direct responses."
-msgstr ""
+msgstr "答案是使用生成器（generators）和直接响应（direct responses）。"
 
 #: ../../project/docs/patterns/streaming.rst:12
 #: b518f1e5940b4d78ab36390348fc75c1
 msgid "Basic Usage"
-msgstr ""
+msgstr "基本用法"
 
 #: ../../project/docs/patterns/streaming.rst:14
 #: 1140570a9ac94e62beaafb83daf06017
@@ -49,7 +49,9 @@ msgid ""
 "fly. The trick is to have an inner function that uses a generator to "
 "generate data and to then invoke that function and pass it to a response "
 "object::"
-msgstr ""
+msgstr "下面是一个基本的视图函数，它动态生成大量的 CSV "
+"数据。关键是在内部定义一个使用生成器生成数据的函数，然后将该函数传递给响应对"
+"象::"
 
 #: ../../project/docs/patterns/streaming.rst:25
 #: 66d7891bc1d9448d850d047bdca1056a
@@ -59,11 +61,14 @@ msgid ""
 "debug environments with profilers and other things you might have "
 "enabled."
 msgstr ""
+"每个 ``yield`` 表达式会被直接发送到浏览器。但请注意，有些 WSGI "
+"中间件可能会破坏流式传输，因此在启用调试环境中的分析器（profilers）或其他工具"
+"时要小心。"
 
 #: ../../project/docs/patterns/streaming.rst:30
 #: 4d57ba1fd827400dac61a65547a44a5d
 msgid "Streaming from Templates"
-msgstr ""
+msgstr "基于模板发送流内容"
 
 #: ../../project/docs/patterns/streaming.rst:32
 #: 54c04eb16cb2471fb7f7d3ba47bf30b1
@@ -82,12 +87,12 @@ msgstr ""
 msgid ""
 "The parts yielded by the render stream tend to match statement blocks in "
 "the template."
-msgstr ""
+msgstr "渲染流中产生的部分通常与模板中的语句块相对应。"
 
 #: ../../project/docs/patterns/streaming.rst:50
 #: 78f9462399ad4324b357c96ba681bc05
 msgid "Streaming with Context"
-msgstr ""
+msgstr "基于上下文的流传输"
 
 #: ../../project/docs/patterns/streaming.rst:52
 #: 2130174773114c34a823f22d0a6cd38a
@@ -96,6 +101,9 @@ msgid ""
 "running, because the view has already returned at that point. If you try "
 "to access ``request``, you'll get a ``RuntimeError``."
 msgstr ""
+"当生成器正在运行时，:data:`~flask.request` "
+"将不再处于活动状态，因为此时视图函数已经返回。如果你尝试访问 ``request``，"
+"将会得到一个 ``RuntimeError``。"
 
 #: ../../project/docs/patterns/streaming.rst:56
 #: 93a8ba372cf5435c8be23ccc361192ef
@@ -104,11 +112,14 @@ msgid ""
 ":func:`~flask.stream_with_context` wrapper. This will keep the request "
 "context active during the generator."
 msgstr ""
+"如果你的生成器函数依赖于 ``request`` 中的数据，请使用 "
+":func:`~flask.stream_with_context` "
+"包装器。它会在生成器运行期间保持请求上下文为活动状态。"
 
 #: ../../project/docs/patterns/streaming.rst:73
 #: 029d226a8cee41ddb25889c2d7d1be3e
 msgid "It can also be used as a decorator."
-msgstr ""
+msgstr "该函数也可以用作装饰器。"
 
 #: ../../project/docs/patterns/streaming.rst:83
 #: e669da68a9e64aada446ad810a1d8c80
@@ -117,6 +128,9 @@ msgid ""
 ":func:`~flask.stream_template_string` functions automatically use "
 ":func:`~flask.stream_with_context` if a request is active."
 msgstr ""
+"当有请求处于活动状态时，:func:`~flask.stream_template` 和 "
+":func:`~flask.stream_template_string` 函数会自动使用 "
+":func:`~flask.stream_with_context`。"
 
 #~ msgid ""
 #~ "The Jinja2 template engine also supports"
