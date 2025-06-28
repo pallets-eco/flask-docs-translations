@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-21 03:04+0000\n"
-"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"PO-Revision-Date: 2025-06-29 02:03+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/deployinguwsgi/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/uwsgi.rst:20 b60be3222d1e426ea4383dbc0ae16f55
 msgid "Installing"
-msgstr ""
+msgstr "安装"
 
 #: ../../project/docs/deploying/uwsgi.rst:22 2c32f029db0c4e71a4677bc618a744cc
 msgid ""
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/uwsgi.rst:50 36fb21c0526c42da8d9c10755b95dbd8
 msgid "Running"
-msgstr ""
+msgstr "运行"
 
 #: ../../project/docs/deploying/uwsgi.rst:52 7bbad29bbf2c4cbd8241e976e3915783
 msgid ""
@@ -95,7 +95,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/uwsgi.rst:72 c3857654edca48069299f320d2e109a6
 msgid "``wsgi.py``"
-msgstr ""
+msgstr "``wsgi.py``"
 
 #: ../../project/docs/deploying/uwsgi.rst:83 d67b8b0fa6e3484997fc12a9ef322c35
 msgid ""
@@ -107,7 +107,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/uwsgi.rst:90 ed2b24a407c748f8af7a081666711f04
 msgid "Binding Externally"
-msgstr ""
+msgstr "外部绑定"
 
 #: ../../project/docs/deploying/uwsgi.rst:92 faa46ec595a24a488f7477d21eb828df
 msgid ""
@@ -138,7 +138,8 @@ msgstr ""
 msgid ""
 "``0.0.0.0`` is not a valid address to navigate to, you'd use a specific "
 "IP address in your browser."
-msgstr ""
+msgstr "注意：``0.0.0.0`` 不是一个可以在浏览器中访问的有效地址，浏览器中应使用具体的 "
+"IP 地址。"
 
 #: ../../project/docs/deploying/uwsgi.rst:120 39c99af62da04e23b6f89576469c2243
 msgid "Async with gevent"
