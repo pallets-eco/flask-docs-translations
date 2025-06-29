@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-29 02:03+0000\n"
+"PO-Revision-Date: 2025-06-30 16:01+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/deployinggevent/zh_Hans/>\n"
@@ -30,6 +30,9 @@ msgid ""
 "than using `gevent`_ directly. Gunicorn and uWSGI provide much more "
 "configurable and production-tested servers."
 msgstr ""
+"建议使用带有 gevent worker 的 :doc:`gunicorn` 或 :doc:`uwsgi`，"
+"而不是直接使用 `gevent`_。Gunicorn 和 uWSGI "
+"提供了更易配置、经过生产验证的服务器。"
 
 #: ../../project/docs/deploying/gevent.rst:8 1523185648f84cbf923e877088cf5e74
 msgid ""
@@ -37,13 +40,18 @@ msgid ""
 "like standard synchronous Python. It uses `greenlet`_ to enable task "
 "switching without writing ``async/await`` or using ``asyncio``."
 msgstr ""
+"`gevent`_ 允许你编写异步的、基于协程的代码，其风格类似标准的同步 Python。"
+"它使用 `greenlet`_ 来实现任务切换，无需编写 ``async/await`` 或使用 "
+"``asyncio``。"
 
 #: ../../project/docs/deploying/gevent.rst:12 6b0ebeb7e5d64f2cb27317dcc7e6ab0e
 msgid ""
 ":doc:`eventlet` is another library that does the same thing. Certain "
 "dependencies you have, or other considerations, may affect which of the "
 "two you choose to use."
-msgstr ""
+msgstr ":doc:`eventlet` "
+"是另一个具有相同功能的库。你使用的某些依赖项或其他因素可能会影响你选择其中哪"
+"一个。"
 
 #: ../../project/docs/deploying/gevent.rst:16 45e28f71476a47eca441f8944da03a5e
 msgid ""
@@ -51,6 +59,9 @@ msgid ""
 "instead of one per worker process. You must actually use gevent in your "
 "own code to see any benefit to using the server."
 msgstr ""
+"gevent 提供了一个 WSGI 服务器，它可以同时处理多个连接，而不是每个 worker "
+"进程仅处理一个连接。要想从该服务器中受益，必须在你自己的代码中实际使用 "
+"gevent。"
 
 #: ../../project/docs/deploying/gevent.rst:25 285a1d676b5347268c17d4a20a4a63a4
 msgid "Installing"
@@ -62,10 +73,13 @@ msgid ""
 "such as ``request`` will not work as expected. When using PyPy, "
 "PyPy>=7.3.7 is required."
 msgstr ""
+"使用 gevent 时，要求 greenlet 版本不低于 1.0，否则类似 ``request`` "
+"这样的上下文局部变量将无法正常工作。使用 PyPy 时，要求 PyPy 版本不低于 "
+"7.3.7。"
 
 #: ../../project/docs/deploying/gevent.rst:31 a459e151bd274349b6db7327cdab97ac
 msgid "Create a virtualenv, install your application, then install ``gevent``."
-msgstr ""
+msgstr "请先创建一个虚拟环境，安装你的应用程序，然后再安装 ``gevent``。"
 
 #: ../../project/docs/deploying/gevent.rst:43 f16a7b3c6010462993f48b8ee9ed89f2
 msgid "Running"
@@ -75,7 +89,8 @@ msgstr "运行"
 msgid ""
 "To use gevent to serve your application, write a script that imports its "
 "``WSGIServer``, as well as your app or app factory."
-msgstr ""
+msgstr "若要使用 gevent 来提供应用服务，请编写一个脚本，导入 ``WSGIServer`` "
+"和你的应用实例或应用工厂函数。"
 
 #: ../../project/docs/deploying/gevent.rst:48 3364ec26b3b14fe9bc929a0d4451dd9e
 msgid "``wsgi.py``"
@@ -83,7 +98,7 @@ msgstr "``wsgi.py``"
 
 #: ../../project/docs/deploying/gevent.rst:62 03267eed1f3a450486c95728c0f9dcec
 msgid "No output is shown when the server starts."
-msgstr ""
+msgstr "当服务器启动时不会有任何输出。"
 
 #: ../../project/docs/deploying/gevent.rst:66 c83fd808cac64acda950fae95ed1293f
 msgid "Binding Externally"
@@ -96,6 +111,9 @@ msgid ""
 " be possible to bind to port 80 or 443. Instead, a reverse proxy such as "
 ":doc:`nginx` or :doc:`apache-httpd` should be used in front of gevent."
 msgstr ""
+"不应以 root 用户运行 gevent，因为这会导致你的应用代码也以 root "
+"身份运行，这是不安全的。然而，这也意味着无法绑定到 80 或 443 端口。因此，"
+"应在 gevent 前面使用反向代理，例如 :doc:`nginx` 或 :doc:`apache-httpd`。"
 
 #: ../../project/docs/deploying/gevent.rst:74 cf00273db3e3491db42729d24320c532
 msgid ""
