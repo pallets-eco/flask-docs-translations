@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-29 02:03+0000\n"
+"PO-Revision-Date: 2025-06-30 16:01+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/deployingmod_wsgi/zh_Hans/>\n"
@@ -21,9 +21,8 @@ msgstr ""
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:2 cc528bcd6d1b41c9ba22ffd29f578635
-#, fuzzy
 msgid "mod_wsgi"
-msgstr "mod_wsgi (Apache)"
+msgstr "mod_wsgi"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:4 8ef54472be9a4e9bb5db0768aaedda88
 msgid ""
@@ -37,21 +36,21 @@ msgstr ""
 
 #: ../../project/docs/deploying/mod_wsgi.rst:8 cffd51f2ce1f4a9296f04188e2b11182
 msgid "Tightly integrated with Apache httpd."
-msgstr ""
+msgstr "与 Apache httpd 紧密集成。"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:9 b9145535e6684647862eef24f5bc00e4
 msgid "Supports Windows directly."
-msgstr ""
+msgstr "直接支持 Windows。"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:10
 #: 5ca8e5f04aaa4650826e1444dfe67fa6
 msgid "Requires a compiler and the Apache development headers to install."
-msgstr ""
+msgstr "安装时需要编译器和 Apache 的开发头文件。"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:11
 #: e0c6525caccd4f4ab38ae3fb4cedc3d2
 msgid "Does not require a reverse proxy setup."
-msgstr ""
+msgstr "不需要配置反向代理。"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:13
 #: 89860ca5523f47ddb9df3916314e2e22
@@ -61,6 +60,9 @@ msgid ""
 "`mod_wsgi-express`_, `mod_wsgi`_, and `Apache httpd`_ documentation to "
 "understand what features are available."
 msgstr ""
+"本页介绍如何运行 mod_wsgi-express 的基础内容，不包括更复杂的 httpd "
+"安装和配置。请务必阅读 `mod_wsgi-express`_、`mod_wsgi`_ 和 `Apache httpd`_ "
+"的官方文档，以了解支持的功能。"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:24
 #: 5e5ec2311cb34746bd6353539a3cdd1b
@@ -74,11 +76,13 @@ msgid ""
 "development headers installed. You will get an error if they are not. How"
 " to install them depends on the OS and package manager that you use."
 msgstr ""
+"安装 mod_wsgi 需要系统中已安装编译器和 Apache 的服务器及开发头文件。 "
+"如果缺失，会在安装时出现错误。具体安装方式取决于你使用的操作系统和包管理器。"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:30
 #: becc883b30994633a3e46cba2dd6f8f7
 msgid "Create a virtualenv, install your application, then install ``mod_wsgi``."
-msgstr ""
+msgstr "创建一个虚拟环境，安装你的应用，然后安装 ``mod_wsgi``。"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:43
 #: 7538d89d2bdc42a8b7a342f58e1bda0b
@@ -93,6 +97,9 @@ msgid ""
 "write a small script to import your app with this name, or to create it "
 "if using the app factory pattern."
 msgstr ""
+"``mod_wsgi-express`` 的唯一参数是一个包含你的 Flask 应用的脚本，"
+"该脚本中必须有一个名为 ``application`` 的对象。 如果你使用了应用工厂模式，"
+"可以写一个简单的脚本来导入或创建这个 ``application`` 对象。"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:50
 #: ../../project/docs/deploying/mod_wsgi.rst:57
@@ -103,14 +110,14 @@ msgstr "``wsgi.py``"
 #: ../../project/docs/deploying/mod_wsgi.rst:64
 #: dd8ae4d020b445e7b6363705ca835018
 msgid "Now run the ``mod_wsgi-express start-server`` command."
-msgstr ""
+msgstr "然后运行 ``mod_wsgi-express start-server`` 命令。"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:70
 #: f7dc9084442c4866a49f06ec59497859
 msgid ""
 "The ``--processes`` option specifies the number of worker processes to "
 "run; a starting value could be ``CPU * 2``."
-msgstr ""
+msgstr "``--processes`` 选项指定要运行的工作进程数量，初始值可以设为 ``CPU * 2``。"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:73
 #: 625a23acfbf448569989147bccff9f51
@@ -118,7 +125,8 @@ msgid ""
 "Logs for each request aren't show in the terminal. If an error occurs, "
 "its information is written to the error log file shown when starting the "
 "server."
-msgstr ""
+msgstr "请求日志不会在终端中显示。若出现错误，相关信息会写入启动服务器时显示的错误日"
+"志文件中。"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:79
 #: fb328056563442c7ba0a6b037385bc91
@@ -133,6 +141,9 @@ msgid ""
 "configured to drop permissions to a different user and group for the "
 "worker processes."
 msgstr ""
+"与本手册中的其他 WSGI 服务器不同，mod_wsgi 可以以 root 身份运行，从而绑定到 "
+"80 和 443 等特权端口。 "
+"但它必须配置为在启动后将工作进程的权限降级为其他用户和用户组。"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:86
 #: d96425ca8be24fe1ab0c09456f000732
@@ -141,6 +152,8 @@ msgid ""
 "install your virtualenv and application as that user, then tell mod_wsgi "
 "to drop to that user after starting."
 msgstr ""
+"例如，如果你创建了一个 ``hello`` 用户和用户组， 你应以该用户身份安装 "
+"virtualenv 和应用程序，并告诉 mod_wsgi 在启动后切换到该用户权限运行。"
 
 #~ msgid "If you are using the `Apache`_ webserver, consider using `mod_wsgi`_."
 #~ msgstr "如果你使用的是 `Apache`_ 网络服务器 ，可以考虑使用 `mod_wsgi`_ 。"
