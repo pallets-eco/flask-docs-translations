@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-29 02:03+0000\n"
+"PO-Revision-Date: 2025-07-02 13:01+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/deployingwaitress/zh_Hans/>\n"
@@ -22,37 +22,37 @@ msgstr ""
 
 #: ../../project/docs/deploying/waitress.rst:2 e1465630b06e4a4b839c9c8a34df02cb
 msgid "Waitress"
-msgstr ""
+msgstr "Waitress"
 
 #: ../../project/docs/deploying/waitress.rst:4 6f632ba71137418a90e76f4e2b61d0dc
 msgid "`Waitress`_ is a pure Python WSGI server."
-msgstr ""
+msgstr "`Waitress`_ 是一个纯 Python 编写的 WSGI 服务器。"
 
 #: ../../project/docs/deploying/waitress.rst:6 e49aa95b72a64deea887e8f07f2108df
 msgid "It is easy to configure."
-msgstr ""
+msgstr "配置简单。"
 
 #: ../../project/docs/deploying/waitress.rst:7 81fe9eebe66b4430b84793be77364c5e
 msgid "It supports Windows directly."
-msgstr ""
+msgstr "原生支持 Windows。"
 
 #: ../../project/docs/deploying/waitress.rst:8 d5c6d2597eb34180b5f9648f90a2e4c9
 msgid ""
 "It is easy to install as it does not require additional dependencies or "
 "compilation."
-msgstr ""
+msgstr "安装便捷，无需额外依赖或编译过程。"
 
 #: ../../project/docs/deploying/waitress.rst:10
 #: e79fd5b32e1245c7a92188e38c26df32
 msgid ""
 "It does not support streaming requests, full request data is always "
 "buffered."
-msgstr ""
+msgstr "不支持流式请求，所有请求数据都会被完整缓冲。"
 
 #: ../../project/docs/deploying/waitress.rst:12
 #: 24d54b8086964d3493eabffa00b1b8a2
 msgid "It uses a single process with multiple thread workers."
-msgstr ""
+msgstr "使用单进程 + 多线程工作模型。"
 
 #: ../../project/docs/deploying/waitress.rst:14
 #: 2ab716910a0b401281aa46ccc50a589f
@@ -60,7 +60,8 @@ msgid ""
 "This page outlines the basics of running Waitress. Be sure to read its "
 "documentation and ``waitress-serve --help`` to understand what features "
 "are available."
-msgstr ""
+msgstr "本页介绍了运行 Waitress 的基本方法。请阅读其官方文档以及执行 ``waitress-"
+"serve --help`` 以了解可用功能。"
 
 #: ../../project/docs/deploying/waitress.rst:22
 #: dd80cc059f46417280d0b9fe1bb2db5b
@@ -70,7 +71,7 @@ msgstr "安装"
 #: ../../project/docs/deploying/waitress.rst:24
 #: 3a769c6da38649eb834071f6310162ef
 msgid "Create a virtualenv, install your application, then install ``waitress``."
-msgstr ""
+msgstr "创建一个虚拟环境，安装你的应用程序，然后安装 ``waitress``。"
 
 #: ../../project/docs/deploying/waitress.rst:37
 #: 4c2b8bb9fd23420c8eac099fbe8318c3
@@ -86,18 +87,23 @@ msgid ""
 "the variable with the application. If you're using the app factory "
 "pattern, use ``--call {module}:{factory}`` instead."
 msgstr ""
+"``waitress-serve`` 的唯一必需参数用于指定如何加载你的 Flask 应用。语法为 "
+"``{模块}:{应用}``。 其中 ``模块`` 是应用所在模块的导入路径，``应用`` 是你的 "
+"Flask 应用对象的变量名。 如果你使用的是应用工厂模式（app factory pattern），"
+"则使用 ``--call {模块}:{工厂函数}`` 语法。"
 
 #: ../../project/docs/deploying/waitress.rst:55
 #: 7a7bb26aebe44695b166437573780b21
 msgid "The ``--host`` option binds the server to local ``127.0.0.1`` only."
-msgstr ""
+msgstr "``--host`` 选项默认只将服务器绑定到本地 ``127.0.0.1``。"
 
 #: ../../project/docs/deploying/waitress.rst:57
 #: 53bacd95512940cba0805d148fd70cba
 msgid ""
 "Logs for each request aren't shown, only errors are shown. Logging can be"
 " configured through the Python interface instead of the command line."
-msgstr ""
+msgstr "每个请求的日志不会显示，只有错误会被记录。日志记录可以通过 Python "
+"接口配置，而不是通过命令行。"
 
 #: ../../project/docs/deploying/waitress.rst:62
 #: 2e4ddcbb23b6417ebf0d20a9dc149ef2
@@ -113,6 +119,9 @@ msgid ""
 "proxy such as :doc:`nginx` or :doc:`apache-httpd` should be used in front"
 " of Waitress."
 msgstr ""
+"不应以 root 身份运行 Waitress，因为这会导致你的应用代码以 root "
+"权限执行，存在安全隐患。 不过，这也会导致无法绑定到 80 或 443 等特权端口。"
+"推荐在 Waitress 前使用反向代理，如 :doc:`nginx` 或 :doc:`apache-httpd`。"
 
 #: ../../project/docs/deploying/waitress.rst:70
 #: 6ae17564382a46269889936402c507f8
@@ -121,6 +130,8 @@ msgid ""
 "specifying the ``--host`` option. Don't do this when using a reverse "
 "proxy setup, otherwise it will be possible to bypass the proxy."
 msgstr ""
+"如不指定 ``--host`` 选项，服务器将绑定到所有外部 IP 上的非特权端口。 "
+"但在使用反向代理的情况下不要这样做，否则可能会绕过代理访问。"
 
 #: ../../project/docs/deploying/waitress.rst:74
 #: 1cfc3f788a6148b78bfae201139b882e
