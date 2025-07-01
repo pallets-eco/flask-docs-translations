@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-29 02:03+0000\n"
+"PO-Revision-Date: 2025-07-02 13:01+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/deployinggunicorn/zh_Hans/>\n"
@@ -42,7 +42,7 @@ msgstr ""
 msgid ""
 "It is easy to install as it does not require additional dependencies or "
 "compilation."
-msgstr ""
+msgstr "安装便捷，无需额外依赖或编译过程。"
 
 #: ../../project/docs/deploying/gunicorn.rst:11
 #: f804f5c687364af59a201c724cad505c
