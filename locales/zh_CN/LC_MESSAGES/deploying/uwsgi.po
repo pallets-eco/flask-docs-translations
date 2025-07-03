@@ -111,9 +111,10 @@ msgid ""
 "option starts 4 worker processes; a starting value could be ``CPU * 2``. "
 "The ``-w`` option tells uWSGI how to import your application"
 msgstr ""
-"``--http`` 选项会在 127.0.0.1:8000 启动一个 HTTP 服务器。 ``--master`` "
-"选项指定使用标准的 worker 管理器。``-p`` 选项设置启动 4 个 worker 进程（可从 "
-"``CPU * 2`` 开始估算）。``-w`` 选项告诉 uWSGI 如何导入你的应用。"
+"``--http`` 选项会在本地机 127.0.0.1 的 8000 端口启动一个 HTTP 服务器。 "
+"``--master`` 选项指定使用标准的 worker 管理器。``-p`` 选项设置启动 4 个 "
+"worker 进程（可从 ``CPU * 2`` 开始估算）。``-w`` 选项告诉 uWSGI "
+"如何导入你的应用"
 
 #: ../../project/docs/deploying/uwsgi.rst:90 ed2b24a407c748f8af7a081666711f04
 msgid "Binding Externally"
@@ -128,6 +129,9 @@ msgid ""
 "httpd` should be used in front of uWSGI. It is possible to run uWSGI as "
 "root securely, but that is beyond the scope of this doc."
 msgstr ""
+"不应以 root 身份运行本文档展示的配置，因为这会导致你的应用代码以 root "
+"权限运行，存在安全风险。不过，这样就无法绑定到 80 或 443 等特权端口。推荐在 "
+"uWSGI 前使用反向代理，如 :doc:`nginx` 或 :doc:`apache-httpd`。"
 
 #: ../../project/docs/deploying/uwsgi.rst:99 6b7cc4f9afc7424bbaa446f7b4518330
 msgid ""
