@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-07-02 13:01+0000\n"
+"PO-Revision-Date: 2025-07-04 12:01+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/deployinggunicorn/zh_Hans/>\n"
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/gunicorn.rst:8 4760fcd10cfe4a5f83b6c10dbf30656c
 msgid "It does not support Windows (but does run on WSL)."
-msgstr ""
+msgstr "不支持 Windows（但可运行在 WSL 上）。"
 
 #: ../../project/docs/deploying/gunicorn.rst:9 ecfa6d92bc9847f78c0308692944cda4
 msgid ""
