@@ -132,6 +132,7 @@ msgstr ""
 "不应以 root 身份运行本文档展示的配置，因为这会导致你的应用代码以 root "
 "权限运行，存在安全风险。不过，这样就无法绑定到 80 或 443 等特权端口。推荐在 "
 "uWSGI 前使用反向代理，如 :doc:`nginx` 或 :doc:`apache-httpd`。"
+"虽然可以安全地以 root 身份运行 uWSGI，但该配置超出了本文档的范围。"
 
 #: ../../project/docs/deploying/uwsgi.rst:99 6b7cc4f9afc7424bbaa446f7b4518330
 msgid ""
@@ -140,6 +141,9 @@ msgid ""
 "standard HTTP proxy. That configuration is beyond the scope of this doc, "
 "see the links for more information."
 msgstr ""
+"相比使用标准 HTTP 代理，uWSGI 与 `Nginx uWSGI`_ 和 `Apache mod_proxy_uwsgi`_ "
+"等服务器具有优化后的集成方式。 "
+"这些配置同样不在本页讨论范围内，请参考上述链接了解更多信息。"
 
 #: ../../project/docs/deploying/uwsgi.rst:107 d7edf48c6c004223843d1df0d3b209ff
 msgid ""
@@ -147,6 +151,8 @@ msgid ""
 "``--http 0.0.0.0:8000`` option. Don't do this when using a reverse proxy "
 "setup, otherwise it will be possible to bypass the proxy."
 msgstr ""
+"你可以使用 ``--http 0.0.0.0:8000`` 选项绑定到所有外部 IP 的非特权端口。 "
+"但在使用反向代理的情况下请勿这样做，否则可能会绕过代理访问应用。"
 
 #: ../../project/docs/deploying/uwsgi.rst:115 2691836acd1a468b8dc332d2c0206da9
 msgid ""
@@ -157,7 +163,7 @@ msgstr "注意：``0.0.0.0`` 不是一个可以在浏览器中访问的有效地
 
 #: ../../project/docs/deploying/uwsgi.rst:120 39c99af62da04e23b6f89576469c2243
 msgid "Async with gevent"
-msgstr ""
+msgstr "使用 gevent 实现异步"
 
 #: ../../project/docs/deploying/uwsgi.rst:122 b064765883e74203a778d531d21145f7
 msgid ""
@@ -167,6 +173,10 @@ msgid ""
 "actually use gevent in your own code to see any benefit to using the "
 "worker."
 msgstr ""
+"默认的同步（sync）worker 已适用于许多使用场景。如果你需要异步支持，uWSGI "
+"提供了一个 `gevent`_ worker。 需要注意的是，这与 Python 的 ``async/await`` "
+"或 ASGI 服务器规范不同。你必须在自己的代码中实际使用 gevent，才能从该 worker "
+"中获得性能收益。"
 
 #: ../../project/docs/deploying/uwsgi.rst:128 5618db106a8b40ef9dd3f3cc4520bca5
 msgid ""
