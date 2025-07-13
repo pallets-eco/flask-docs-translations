@@ -140,7 +140,7 @@ msgid ""
 msgstr ""
 "在这方面，最理想的抽象层就是 WSGI 层。 你可以编写自己的 WSGI "
 "应用来检查每个传入请求，并将请求委托给相应的 Flask 应用。 "
-"如果目标应用还不存在，它就会被动态创建并记住。"
+"如果目标应用还不存在，它就会被动态创建并记录下来。"
 
 #: ../../project/docs/patterns/appdispatch.rst:110
 #: 74a7bb7e4deb479e8393aef23afcd793
