@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-07-06 03:01+0000\n"
+"PO-Revision-Date: 2025-07-14 04:01+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/patternsappdispatch/zh_Hans/>\n"
@@ -35,6 +35,10 @@ msgid ""
 "you want.  The usefulness of this depends on how the applications work "
 "internally."
 msgstr ""
+"应用程序分发是指在 WSGI 层级上组合多个 Flask 应用的过程。你不仅可以组合多个 "
+"Flask 应用，还可以组合任意的 WSGI 应用程序。 例如，如果你愿意，"
+"可以在同一个解释器中同时运行一个 Django 应用和一个 Flask "
+"应用。是否有用取决于这些应用程序的内部工作方式。"
 
 #: ../../project/docs/patterns/appdispatch.rst:11
 #: db6a089a1ebf4dd78069d3ac2caa27f3
@@ -44,11 +48,13 @@ msgid ""
 "isolated from each other. They run different configurations and are "
 "dispatched on the WSGI level."
 msgstr ""
+"这与 :doc:`packages` 的根本区别在于：应用程序分发中你运行的是彼此完全隔离的 "
+"Flask 应用（相同或不同）。 它们运行各自的配置，并在 WSGI 层级上完成分发。"
 
 #: ../../project/docs/patterns/appdispatch.rst:18
 #: 6579d4c353fe4e199154b07953010599
 msgid "Working with this Document"
-msgstr ""
+msgstr "如何使用本文档"
 
 #: ../../project/docs/patterns/appdispatch.rst:20
 #: 3371acd72cdd48e6a73e392c52d997e2
@@ -58,11 +64,14 @@ msgid ""
 "``flask run`` command to start a development server. For production, see "
 ":doc:`/deploying/index`."
 msgstr ""
+"下面的每种技术和示例最终都会生成一个 ``application`` 对象，你可以使用任何 "
+"WSGI 服务器来运行它。 开发时可以使用 ``flask run`` 命令启动开发服务器；"
+"部署到生产环境时请参考 :doc:`/deploying/index`。"
 
 #: ../../project/docs/patterns/appdispatch.rst:37
 #: 83892e688fc74e93bd937b86213cd856
 msgid "Combining Applications"
-msgstr ""
+msgstr "组合多个应用程序"
 
 #: ../../project/docs/patterns/appdispatch.rst:39
 #: 1a2ff7c8e9114ccab0e749e94858ea6b
@@ -74,18 +83,22 @@ msgid ""
 "are combined by the dispatcher middleware into a larger one that is "
 "dispatched based on prefix."
 msgstr ""
+"如果你有完全分离的应用程序，并希望它们在同一个 Python 解释器进程中并行运行，"
+"你可以使用 :class:`werkzeug.wsgi.DispatcherMiddleware`。 每个 Flask "
+"应用本身就是一个有效的 WSGI 应用，Dispatcher Middleware 的作用是根据 URL "
+"前缀将它们组合成一个更大的应用程序进行分发。"
 
 #: ../../project/docs/patterns/appdispatch.rst:46
 #: ae21b661cc47493888cf9fa6b81d94af
 msgid ""
 "For example you could have your main application run on ``/`` and your "
 "backend interface on ``/backend``."
-msgstr ""
+msgstr "例如，你可以让主应用运行在 ``/``，而后台接口运行在 ``/backend``。"
 
 #: ../../project/docs/patterns/appdispatch.rst:61
 #: 55913b1a4cfe49e18e5e7850ded3b211
 msgid "Dispatch by Subdomain"
-msgstr ""
+msgstr "按子域分发"
 
 #: ../../project/docs/patterns/appdispatch.rst:63
 #: b98b8497f0524f36a62df0a70a646c50
@@ -97,6 +110,10 @@ msgid ""
 "application to support creating new instances in functions have a look at"
 " the :doc:`appfactories` pattern."
 msgstr ""
+"有时你可能想使用多个配置不同的相同应用实例。 "
+"只要这个应用是通过一个函数创建的，你就可以通过调用该函数来实例化多个应用，这"
+"样的实现非常容易。 要让你的应用支持基于函数创建新实例，请查看 "
+":doc:`appfactories` 模式。"
 
 #: ../../project/docs/patterns/appdispatch.rst:70
 #: 35d529ef8d8f44a4b5157a45f0ee15d6
@@ -108,6 +125,10 @@ msgid ""
 "listen on all subdomains you can use a very simple WSGI application to do"
 " the dynamic application creation."
 msgstr ""
+"一个常见的例子是为每个子域创建不同的应用实例。你可以配置 Web "
+"服务器让所有子域的请求都发送给你的应用， "
+"然后在应用中使用子域的信息为每个用户动态创建应用实例。只要你的服务器能够监听"
+"所有子域，就可以使用一个简单的 WSGI 应用来实现动态实例创建和缓存。"
 
 #: ../../project/docs/patterns/appdispatch.rst:77
 #: bed155f66212489e8f9f9b65e8870948
@@ -117,16 +138,19 @@ msgid ""
 "delegates it to your Flask application.  If that application does not "
 "exist yet, it is dynamically created and remembered."
 msgstr ""
+"在这方面，最理想的抽象层就是 WSGI 层。 你可以编写自己的 WSGI "
+"应用来检查每个传入请求，并将请求委托给相应的 Flask 应用。 "
+"如果目标应用还不存在，它就会被动态创建并缓存起来以备下次使用。"
 
 #: ../../project/docs/patterns/appdispatch.rst:110
 #: 74a7bb7e4deb479e8393aef23afcd793
 msgid "This dispatcher can then be used like this:"
-msgstr ""
+msgstr "这个分发器就可以像下面这样使用："
 
 #: ../../project/docs/patterns/appdispatch.rst:134
 #: eae4569c0ce04fbc8cb2532482560395
 msgid "Dispatch by Path"
-msgstr ""
+msgstr "按路径分发"
 
 #: ../../project/docs/patterns/appdispatch.rst:136
 #: fda76640a4464b19924403cf0b9485ba
@@ -135,6 +159,9 @@ msgid ""
 "the ``Host`` header to figure out the subdomain one simply looks at the "
 "request path up to the first slash."
 msgstr ""
+"按 URL "
+"路径进行分发与子域分发非常类似。不同之处在于，这种方式是根据请求路径（直到第"
+"一个斜杠）来决定分发目标， 而不是根据 ``Host`` 请求头来判断子域。"
 
 #: ../../project/docs/patterns/appdispatch.rst:177
 #: 043c8e7cf9b842408fb19caf98474100
@@ -142,7 +169,8 @@ msgid ""
 "The big difference between this and the subdomain one is that this one "
 "falls back to another application if the creator function returns "
 "``None``."
-msgstr ""
+msgstr "与子域分发相比，一个显著区别是：路径分发在创建函数返回 ``None`` "
+"的情况下可以回退到另一个应用程序。"
 
 #~ msgid ""
 #~ "Each of the techniques and examples "
