@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-07-14 04:01+0000\n"
+"PO-Revision-Date: 2025-07-25 12:04+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/deployinggunicorn/zh_Hans/>\n"
@@ -57,6 +57,8 @@ msgid ""
 "`documentation`_ and use ``gunicorn --help`` to understand what features "
 "are available."
 msgstr ""
+"本页介绍了运行 Gunicorn 的基础内容。请务必阅读其 `documentation`_，并使用 `"
+"gunicorn --help` 查看可用功能。"
 
 #: ../../project/docs/deploying/gunicorn.rst:22
 #: 0fcb800a0d634a2f89829caff15dec3a
@@ -68,12 +70,12 @@ msgstr "安装"
 msgid ""
 "Gunicorn is easy to install, as it does not require external dependencies"
 " or compilation. It runs on Windows only under WSL."
-msgstr ""
+msgstr "Gunicorn 安装非常简单，无需外部依赖或编译。它仅在 WSL 上支持 Windows。"
 
 #: ../../project/docs/deploying/gunicorn.rst:27
 #: ec4bed65ae2247bba9a1dc92d7667be8
 msgid "Create a virtualenv, install your application, then install ``gunicorn``."
-msgstr ""
+msgstr "创建一个虚拟环境，安装你的应用，然后安装 ``gunicorn``。"
 
 #: ../../project/docs/deploying/gunicorn.rst:40
 #: 378afde2c9aa42289554d9242130d3b4
@@ -90,6 +92,11 @@ msgid ""
 "can also be a function call (with any arguments) if you're using the app "
 "factory pattern."
 msgstr ""
+"使用 Gunicorn 运行 Flask 应用时，只需要一个参数，指定如何加载你的 Flask "
+"应用。语法为 ``{module_import}:{app_variable}``。其中 ``module_import`` "
+"是指向应用模块的导入路径，``app_variable`` "
+"是应用实例的变量名。如果使用的是工厂函数模式，也可以传入函数调用（包含参数）"
+"。"
 
 #: ../../project/docs/deploying/gunicorn.rst:65
 #: 567f42aeb7254e1b8090d2ab6e3834d4
@@ -98,6 +105,8 @@ msgid ""
 "value could be ``CPU * 2``. The default is only 1 worker, which is "
 "probably not what you want for the default worker type."
 msgstr ""
+"``-w`` 选项用于指定要运行的进程数量；一个推荐的初始值是 ``CPU * 2``。"
+"默认只有 1 个 worker，这对于默认的 worker 类型来说可能不够。"
 
 #: ../../project/docs/deploying/gunicorn.rst:69
 #: 9a2a7fbee2d04ec6a646878f8ac030cd
@@ -106,6 +115,8 @@ msgid ""
 "errors are shown. To show access logs on stdout, use the ``--access-"
 "logfile=-`` option."
 msgstr ""
+"默认情况下不会显示每个请求的日志，只会显示 worker 信息和错误。"
+"若要将访问日志输出到 stdout，使用 ``--access-logfile=-`` 选项。"
 
 #: ../../project/docs/deploying/gunicorn.rst:75
 #: 081a5aed0e4543959f91b8e39bdea330
@@ -121,6 +132,9 @@ msgid ""
 "proxy such as :doc:`nginx` or :doc:`apache-httpd` should be used in front"
 " of Gunicorn."
 msgstr ""
+"不建议以 root 身份运行 Gunicorn，因为这会导致应用代码也以 root "
+"身份运行，存在安全隐患。然而，这也意味着无法绑定到 80 或 443 端口。此时应在 "
+"Gunicorn 前使用诸如 :doc:`nginx` 或 :doc:`apache-httpd` 的反向代理服务器。"
 
 #: ../../project/docs/deploying/gunicorn.rst:83
 #: 8692be8b62fb4fdaaadf7823da001107
@@ -129,6 +143,9 @@ msgid ""
 "0.0.0.0`` option. Don't do this when using a reverse proxy setup, "
 "otherwise it will be possible to bypass the proxy."
 msgstr ""
+"你可以使用 ``-b 0.0.0.0`` 选项将服务器绑定到所有外部 IP "
+"上的非特权端口。但在使用反向代理的设置中不要这样做，否则可能绕过代理访问服务"
+"。"
 
 #: ../../project/docs/deploying/gunicorn.rst:92
 #: 5e4eb3866e724558946e0638b5c83490
@@ -141,7 +158,7 @@ msgstr "注意：``0.0.0.0`` 不是一个可以在浏览器中访问的有效地
 #: ../../project/docs/deploying/gunicorn.rst:97
 #: 30db3a9e96064b6cb36dae0b06d8fdf2
 msgid "Async with gevent or eventlet"
-msgstr ""
+msgstr "异步支持：gevent 或 eventlet"
 
 #: ../../project/docs/deploying/gunicorn.rst:99
 #: 36cde87f56b44fc4b4f86e41741f3de5
@@ -152,6 +169,10 @@ msgid ""
 "ASGI server spec. You must actually use gevent/eventlet in your own code "
 "to see any benefit to using the workers."
 msgstr ""
+"默认的同步 worker 适用于大多数场景。如果你需要异步支持，Gunicorn 提供了使用 "
+"`gevent`_ 或 `eventlet`_ 的 worker。这与 Python 的 ``async/await`` 或 ASGI "
+"服务器规范不同。你必须在自己的代码中实际使用 gevent 或 eventlet，"
+"才能真正发挥这些 worker 的优势。"
 
 #: ../../project/docs/deploying/gunicorn.rst:105
 #: a15f2d5b611b4272ab56e4da537886e3
@@ -160,13 +181,16 @@ msgid ""
 "otherwise context locals such as ``request`` will not work as expected. "
 "When using PyPy, PyPy>=7.3.7 is required."
 msgstr ""
+"当使用 gevent 或 eventlet 时，必须使用 greenlet>=1.0，否则像 ``request`` "
+"这样的上下文局部变量将无法按预期工作。 如果使用 PyPy，则要求 PyPy 版本不低于 "
+"7.3.7。"
 
 #: ../../project/docs/deploying/gunicorn.rst:109
 #: 8d13c243471947acb8f5d7f8ea6904a8
 msgid "To use gevent:"
-msgstr ""
+msgstr "使用 gevent："
 
 #: ../../project/docs/deploying/gunicorn.rst:119
 #: 91db759c0ee74c129fa7dd8516cd7bd9
 msgid "To use eventlet:"
-msgstr ""
+msgstr "使用 eventlet："
