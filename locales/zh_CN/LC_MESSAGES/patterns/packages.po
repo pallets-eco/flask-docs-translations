@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-21 03:05+0000\n"
-"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"PO-Revision-Date: 2025-07-29 13:07+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/patternspackages/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: ../../project/docs/patterns/packages.rst:2 8d719a6b7bbe4dd090579d8510c50499
 msgid "Large Applications as Packages"
-msgstr "打包大型程序"
+msgstr "将大型应用作为包组织"
 
 #: ../../project/docs/patterns/packages.rst:4 c989feeacfe04b29a10d4d994f0bbfdd
 msgid "Imagine a simple flask application structure that looks like this::"
-msgstr ""
+msgstr "想象一个简单的 Flask 应用结构如下::"
 
 #: ../../project/docs/patterns/packages.rst:16 db34dc2f2b0a4c4c8e96c90998d8b616
 msgid ""
@@ -35,10 +35,13 @@ msgid ""
 ":doc:`/tutorial/index` is structured to use the package pattern, see the "
 ":gh:`example code <examples/tutorial>`."
 msgstr ""
+"虽然这对于小型应用来说已经足够，但对于更大的应用，建议使用包而不是模块。:doc:"
+"`/tutorial/index` 教程使用的是包结构，请参见 :gh:`示例代码 <examples/"
+"tutorial>`。"
 
 #: ../../project/docs/patterns/packages.rst:22 518cf99cef8644739d3b38238f100f2a
 msgid "Simple Packages"
-msgstr ""
+msgstr "简单的包结构"
 
 #: ../../project/docs/patterns/packages.rst:24 e7279c7c7e53466893cf70d0d41fa6ad
 msgid ""
@@ -48,12 +51,16 @@ msgid ""
 "(Make sure to delete all ``.pyc`` files first, otherwise things would "
 "most likely break)"
 msgstr ""
+"要将其转换为一个更大的结构，只需在现有目录中创建一个新的文件夹 "
+":file:`yourapplication`，并将所有内容移入其中。然后将 "
+":file:`yourapplication.py` 重命名为 :file:`__init__.py`。（请确保先删除所有 "
+"``.pyc`` 文件，否则很可能会出错）"
 
 #: ../../project/docs/patterns/packages.rst:29
 #: ../../project/docs/patterns/packages.rst:101
 #: 0dc08173cc2a4aa89a73e9bf72865904 2632f3059339475ca677d4ccda39ac93
 msgid "You should then end up with something like that::"
-msgstr ""
+msgstr "此时，你应该得到类似以下的结构::"
 
 #: ../../project/docs/patterns/packages.rst:42 7a00ee18d14a4a678e59ceec405254f7
 msgid ""
