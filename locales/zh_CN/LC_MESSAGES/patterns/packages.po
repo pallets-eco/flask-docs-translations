@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-07-29 13:07+0000\n"
+"PO-Revision-Date: 2025-08-01 12:02+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/patternspackages/zh_Hans/>\n"
@@ -70,24 +70,29 @@ msgid ""
 "not a big problem, just add a new file called :file:`pyproject.toml` next"
 " to the inner :file:`yourapplication` folder with the following contents:"
 msgstr ""
+"但现在该如何运行你的应用呢？直接运行 ``python yourapplication/__init__.py`` "
+"是行不通的。简单来说，Python 不允许包中的模块作为启动文件。但这并不是大问题，"
+"只需在内层 :file:`yourapplication` 文件夹旁边添加一个名为 "
+":file:`pyproject.toml` 的新文件，内容如下："
 
 #: ../../project/docs/patterns/packages.rst:60 76888da3afe142f59cb96fdf80503b97
 msgid "Install your application so it is importable:"
-msgstr ""
+msgstr "安装你的应用，使其可以被导入："
 
 #: ../../project/docs/patterns/packages.rst:66 128e49141b554732817e7db2fa53d6ed
 msgid ""
 "To use the ``flask`` command and run your application you need to set the"
 " ``--app`` option that tells Flask where to find the application "
 "instance:"
-msgstr ""
+msgstr "要使用 ``flask`` 命令运行你的应用，需要设置 ``--app`` 选项来告诉 Flask "
+"去哪里寻找应用实例："
 
 #: ../../project/docs/patterns/packages.rst:74 ca9b945e36ac4a17bb6c41db9b8e77d4
 msgid ""
 "What did we gain from this?  Now we can restructure the application a bit"
 " into multiple modules.  The only thing you have to remember is the "
 "following quick checklist:"
-msgstr ""
+msgstr "这样做有什么好处？现在我们可以将应用重新组织为多个模块。只需要记住以下几点："
 
 #: ../../project/docs/patterns/packages.rst:78 a13e4e703b764c3b9b63e290995ce92f
 msgid ""
@@ -95,6 +100,9 @@ msgid ""
 ":file:`__init__.py` file.  That way each module can import it safely and "
 "the `__name__` variable will resolve to the correct package."
 msgstr ""
+"`Flask` 应用对象的创建必须在 :file:`__init__.py` "
+"文件中。这样每个模块都可以安全地导入它，并且 `__name__` "
+"变量会解析为正确的包。"
 
 #: ../../project/docs/patterns/packages.rst:81 20edda21f6504486b0712a8f41d725a7
 msgid ""
@@ -103,19 +111,23 @@ msgid ""
 "Not the object itself, but the module it is in. Import the view module "
 "**after the application object is created**."
 msgstr ""
+"所有的视图函数（那些带有 :meth:`~flask.Flask.route` 装饰器的函数）必须在 "
+":file:`__init__.py` "
+"文件中导入。不是导入函数本身，而是导入它所在的模块。**在创建应用对象之后**再"
+"导入视图模块。"
 
 #: ../../project/docs/patterns/packages.rst:86 a2ed3634a1be443c829135faf2856621
 msgid "Here's an example :file:`__init__.py`::"
-msgstr ""
+msgstr "这是一个示例 :file:`__init__.py`::"
 
 #: ../../project/docs/patterns/packages.rst:93 5500457d4d84412ca235fda5abcd0017
 msgid "And this is what :file:`views.py` would look like::"
-msgstr ""
+msgstr "然后这是 :file:`views.py` 的内容::"
 
 #: ../../project/docs/patterns/packages.rst:116
 #: bfe531686a7d448dbc88d0daf0a81356
 msgid "Circular Imports"
-msgstr ""
+msgstr "循环导入"
 
 #: ../../project/docs/patterns/packages.rst:118
 #: 9271d482d63249e88df8ff9220204a5a
@@ -128,11 +140,17 @@ msgid ""
 "and just ensuring the module is imported and we are doing that at the "
 "bottom of the file."
 msgstr ""
+"每个 Python "
+"程序员都讨厌循环导入，但我们刚刚引入了它们：循环导入（即两个模块互相依赖。"
+"本例中 :file:`views.py` 依赖 "
+":file:`__init__.py`）。通常这是个坏主意，但在这里其实没问题。"
+"原因是我们并没有在 :file:`__init__.py` "
+"中真正使用视图，只是确保模块被导入，而且我们是在文件底部导入的。"
 
 #: ../../project/docs/patterns/packages.rst:128
 #: 7fee5afdde9e4686b32a0553da084507
 msgid "Working with Blueprints"
-msgstr ""
+msgstr "使用蓝图"
 
 #: ../../project/docs/patterns/packages.rst:130
 #: f8d8e163fc7f4d78b46a7f8e402cc7eb
@@ -142,6 +160,8 @@ msgid ""
 "blueprint.  For a gentle introduction into this topic refer to the "
 ":doc:`/blueprints` chapter of the documentation."
 msgstr ""
+"如果你的应用较大，推荐将其划分为多个小模块，每个模块使用蓝图实现。有关该主题"
+"的入门介绍，请参阅文档中的 :doc:`/blueprints` 章节。"
 
 #~ msgid ""
 #~ "But how do you run your "
