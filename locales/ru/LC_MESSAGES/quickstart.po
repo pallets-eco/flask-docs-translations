@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-05-18 22:02+0000\n"
-"Last-Translator: Aleksey Kolodchuk <vasyapinfo@ya.ru>\n"
+"PO-Revision-Date: 2025-08-06 05:03+0000\n"
+"Last-Translator: Pavel Dittenbier <pavel.ditenbir@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/flask/quickstart/"
 "ru/>\n"
 "Language: ru\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: ../../project/docs/quickstart.rst:2
 #: 072c4cb240e240ee88d518604b3c098d
 msgid "Quickstart"
-msgstr "Быстрый Запуск"
+msgstr "Быстрый старт"
 
 #: ../../project/docs/quickstart.rst:4
 #: a8ac97379d1e4478b3fccbd67ea024f6
@@ -127,86 +127,117 @@ msgstr ""
 #: ad65b3803432439bbbe6c506eca24b97
 msgid "If another program is already using port 5000, you'll see ``OSError: [Errno 98]`` or ``OSError: [WinError 10013]`` when the server tries to start. See :ref:`address-already-in-use` for how to handle that."
 msgstr ""
+"Если при попытке старта сервера порт 500 уже используется другой программой, "
+"вы увидите ошибку вида ``OSError: [Errno 98]`` или ``OSError: "
+"[WinError 10013]``. Чтобы это исправить, обратитесь к разделу :ref:`address-"
+"already-in-use`."
 
 #: ../../project/docs/quickstart.rst:71
 #: 6881455685bf4518843a3a764c368068
 msgid "Externally Visible Server"
-msgstr ""
+msgstr "Сервер, который виден снаружи"
 
 #: ../../project/docs/quickstart.rst:73
 #: 8182b82dc38e49958d2dccac4afad929
 msgid "If you run the server you will notice that the server is only accessible from your own computer, not from any other in the network.  This is the default because in debugging mode a user of the application can execute arbitrary Python code on your computer."
 msgstr ""
+"При запуске сервера вы сможете заметить, что он доступен только с вашего "
+"компьютера, но не с какого-либо другого в сети. Это сделано по умолчанию, "
+"так как в режиме отладки пользователь приложения может исполнять питоновский "
+"код только на вашем компьютере."
 
 #: ../../project/docs/quickstart.rst:78
 #: 38963a7aa05347e185944d4615d3c20b
 msgid "If you have the debugger disabled or trust the users on your network, you can make the server publicly available simply by adding ``--host=0.0.0.0`` to the command line::"
 msgstr ""
+"Если же режим отладки выключен или вы доверяете пользователям вашей сети, вы "
+"можете сделать сервер публично доступным просто добавив в командной строке "
+"``--host=0.0.0.0``::"
 
 #: ../../project/docs/quickstart.rst:84
 #: 6976c2592d4b420eb5709d5361a33d90
 msgid "This tells your operating system to listen on all public IPs."
-msgstr ""
+msgstr "Это укажет операционной системе слушать со всех публичных IP-адреса."
 
 #: ../../project/docs/quickstart.rst:88
 #: 9cb26ee6c8e449aca7f1184b312b426e
 msgid "Debug Mode"
-msgstr ""
+msgstr "Режим отладки"
 
 #: ../../project/docs/quickstart.rst:90
 #: caa3121ac3e54402be2cb680649ecda5
 msgid "The ``flask run`` command can do more than just start the development server. By enabling debug mode, the server will automatically reload if code changes, and will show an interactive debugger in the browser if an error occurs during a request."
 msgstr ""
+"Команда ``flask run`` может больше, чем просто запустить сервер для "
+"разработки. При включении режима отладки сервер будет автоматически "
+"обновляться при изменениях в коде, а также будет показывать интерактивный "
+"отладчик в браузере, если во время запроса произошла ошибка."
 
 #: ../../project/docs/quickstart.rst:95
 #: 7ba338e2ba664f919d528d60dd14365c
 msgid "The interactive debugger in action."
-msgstr ""
+msgstr "Интерактивный отладчик в действии."
 
 #: ../../project/docs/quickstart.rst:102
 #: 81d0b4087a7d4c5c84c64b8b9e54e959
 msgid "The debugger allows executing arbitrary Python code from the browser. It is protected by a pin, but still represents a major security risk. Do not run the development server or debugger in a production environment."
 msgstr ""
+"Отладчик позволяет выполнять из браузера произвольный код на Питоне. И хоть "
+"он защищен пином, это все еще представляет большой риск безопасности. Не "
+"запускайте сервер для разработки или отладчик в продакшене."
 
 #: ../../project/docs/quickstart.rst:107
 #: f0f6e79c9eea4278bf40423dcfdc1db2
 msgid "To enable debug mode, use the ``--debug`` option."
-msgstr ""
+msgstr "Используйте опцию ``--debug``, чтобы включить отладочный режим."
 
 #: ../../project/docs/quickstart.rst:119
 #: 89b2013e81964b9ca87a46948493ff55
 msgid "See also:"
-msgstr ""
+msgstr "См. также:"
 
 #: ../../project/docs/quickstart.rst:121
 #: 4ab0d5e448e24eb28393a3a2d65e37a7
 msgid ":doc:`/server` and :doc:`/cli` for information about running in debug mode."
 msgstr ""
+":doc:`/server` и :doc:`/cli`для дополнительной информации о запуске в "
+"отладочном режиме."
 
 #: ../../project/docs/quickstart.rst:122
 #: c8a9fed226cf4064baedea632c412fee
 msgid ":doc:`/debugging` for information about using the built-in debugger and other debuggers."
 msgstr ""
+":doc:`/debugging`для информации об использовании встроенного и сторонних "
+"отладчиков."
 
 #: ../../project/docs/quickstart.rst:124
 #: c7f1d156a5f24431b8516e4295242a67
 msgid ":doc:`/logging` and :doc:`/errorhandling` to log errors and display nice error pages."
 msgstr ""
+":doc:`/logging` и :doc:`/errorhandling`, чтобы узнать о логгировании ошибок "
+"и вывода красивых страниц с ошибками."
 
 #: ../../project/docs/quickstart.rst:129
 #: ccdc5a632e8b4c2abc9c471dca22bf91
 msgid "HTML Escaping"
-msgstr ""
+msgstr "Экранирование символов в HTML"
 
 #: ../../project/docs/quickstart.rst:131
 #: 860638517045439a9d41bab941e9c9bd
 msgid "When returning HTML (the default response type in Flask), any user-provided values rendered in the output must be escaped to protect from injection attacks. HTML templates rendered with Jinja, introduced later, will do this automatically."
 msgstr ""
+"При возвращении HTML (тип ответа по умолчанию во Flask) любое значение, "
+"полученное от пользователя и которое будет рендериться на странице, должно "
+"быть защищено от атак типа \"инъекция\". HTML-шаблоны, рендерируемые с "
+"помощью Jinja (который будет описан позже), делают это автоматически."
 
 #: ../../project/docs/quickstart.rst:136
 #: 882a6ed30e254d1ead37f0e986be4c38
 msgid ":func:`~markupsafe.escape`, shown here, can be used manually. It is omitted in most examples for brevity, but you should always be aware of how you're using untrusted data."
 msgstr ""
+"Показанная ниже :func:`~markupsafe.escape` может быть также вызвана вручную. "
+"Ее вызов опускается в большинстве примеров для краткости, но вы должны "
+"всегда обращать внимание, как вы обрабатываете ненадежные данные."
 
 #: ../../project/docs/quickstart.rst:148
 #: ba15bb36ab19407081cbfc83c9ee0681
@@ -791,7 +822,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:849
 #: ea5dad8560974fe98185bd8af8ea4f5b
 msgid "Logging"
-msgstr ""
+msgstr "Логгирование"
 
 #: ../../project/docs/quickstart.rst:853
 #: ecae835344c344a58d6a0433ff0c7e9e
