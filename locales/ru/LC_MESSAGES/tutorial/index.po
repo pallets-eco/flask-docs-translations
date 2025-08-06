@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-05-18 22:02+0000\n"
-"Last-Translator: Aleksey Kolodchuk <vasyapinfo@ya.ru>\n"
+"PO-Revision-Date: 2025-08-06 13:21+0000\n"
+"Last-Translator: Pavel Dittenbier <pavel.ditenbir@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/flask/"
 "tutorialindex/ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: ../../project/docs/tutorial/index.rst:4
 #: 
@@ -73,18 +73,30 @@ msgstr "скриншот страницы логина"
 #: 105985c774cc411583611748ffc0e49a
 msgid "Flask is flexible. It doesn't require you to use any particular project or code layout. However, when first starting, it's helpful to use a more structured approach. This means that the tutorial will require a bit of boilerplate up front, but it's done to avoid many common pitfalls that new developers encounter, and it creates a project that's easy to expand on. Once you become more comfortable with Flask, you can step out of this structure and take full advantage of Flask's flexibility."
 msgstr ""
+"Flask гибкий. Он не обязывает вас использовать какую-то определенную "
+"структуру кода или проекта. Однако, в самом начале полезно использовать "
+"более структурированный подход. Это означает, что данное руководство будет "
+"заранее иметь некоторое количество готового шаблонного кода, но сделано это "
+"для того, чтобы избежать многих типичных ловушек, с которыми сталкиваются "
+"начинающие разработчики. Этот готовый шаблонный код выливается проект, с "
+"которого просто начать. Как только вы освоитесь с Flask, можете отходить от "
+"этой структуры и довольствоваться всеми преимуществами гибкости Flask."
 
 #: ../../project/docs/tutorial/index.rst:55
 #: fe59e8a99f4c492b9779bdfcf02872af
 msgid "screenshot of edit page"
-msgstr ""
+msgstr "скриншот страницы редактирования"
 
 #: ../../project/docs/tutorial/index.rst:60
 #: c9a3a8c5ddf04ecc8381403a47070822
 msgid ":gh:`The tutorial project is available as an example in the Flask repository <examples/tutorial>`, if you want to compare your project with the final product as you follow the tutorial."
 msgstr ""
+"Если захотите сравнить свой проект, полученный в ходе следования данному "
+"руководству, с полностью готовым проектом, обратитесь к :gh:`обучающему "
+"проекту, доступному в качестве примера в репозитории Flask <examples/"
+"tutorial>`."
 
 #: ../../project/docs/tutorial/index.rst:64
 #: ea2aba2c158c4e2cb975ded363600118
 msgid "Continue to :doc:`layout`."
-msgstr ""
+msgstr "Перейти к :doc:`layout`."
