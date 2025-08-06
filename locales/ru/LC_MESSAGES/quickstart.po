@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-08-06 05:03+0000\n"
+"PO-Revision-Date: 2025-08-06 13:21+0000\n"
 "Last-Translator: Pavel Dittenbier <pavel.ditenbir@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/flask/quickstart/"
 "ru/>\n"
@@ -243,116 +243,143 @@ msgstr ""
 #: ba15bb36ab19407081cbfc83c9ee0681
 msgid "If a user managed to submit the name ``<script>alert(\"bad\")</script>``, escaping causes it to be rendered as text, rather than running the script in the user's browser."
 msgstr ""
+"Если пользователь попытается отправить в качестве имени ``<script>alert("
+"\"bad\")</script>``, экранирование приведет к отображению этой строки как "
+"текста, вместо того, чтобы выполнить ее как скрипт в браузере пользователя."
 
 #: ../../project/docs/quickstart.rst:152
 #: 4c686c42af1e4309a8469cd0e743c4d7
 msgid "``<name>`` in the route captures a value from the URL and passes it to the view function. These variable rules are explained below."
 msgstr ""
+"Выражение ``<name>`` в пути получает значение из URL и передает его в "
+"функцию отображения. Подобные правила переменных объясняются ниже."
 
 #: ../../project/docs/quickstart.rst:157
 #: b1e18677e1f944c1adfe059c9fb5e3ef
 msgid "Routing"
-msgstr ""
+msgstr "Маршрутизация (роутинг)"
 
 #: ../../project/docs/quickstart.rst:159
 #: 1bc848c730424794bff4c31a70f806a5
 msgid "Modern web applications use meaningful URLs to help users. Users are more likely to like a page and come back if the page uses a meaningful URL they can remember and use to directly visit a page."
 msgstr ""
+"Современные веб-приложения используют осмысленные URL-ы для удобства "
+"пользователей. Пользователям с большей вероятностью понравятся страницы с "
+"осмысленными путями в URL и они вероятнее всего вернутся на страницу по "
+"адресу, который им будет проще запомнить."
 
 #: ../../project/docs/quickstart.rst:163
 #: f2b9df10b8184644a95ee9df3a1906b7
 msgid "Use the :meth:`~flask.Flask.route` decorator to bind a function to a URL. ::"
 msgstr ""
+"Используйте декоратор :meth:`~flask.Flask.route`, чтобы забиндить (привязать)"
+" функцию к определенному URL. ::"
 
 #: ../../project/docs/quickstart.rst:173
 #: a125e8809bf74a2abf4c3a41aca1fc19
 msgid "You can do more! You can make parts of the URL dynamic and attach multiple rules to a function."
 msgstr ""
+"Вы можете даже больше! Вы можете указывать части URL динамическими и "
+"прикреплять разные правила к функции."
 
 #: ../../project/docs/quickstart.rst:177
 #: 54ff811a374e4590b3dda562119f2c02
 msgid "Variable Rules"
-msgstr ""
+msgstr "Указание переменных частей пути"
 
 #: ../../project/docs/quickstart.rst:179
 #: 44a9f1eccd4742bf90a71c7b80282f8c
 msgid "You can add variable sections to a URL by marking sections with ``<variable_name>``. Your function then receives the ``<variable_name>`` as a keyword argument. Optionally, you can use a converter to specify the type of the argument like ``<converter:variable_name>``. ::"
 msgstr ""
+"Вы можете добавить переменную часть к URL используя ``<variable_name>``. "
+"Таким образом, ваша функция получит ``<variable_name>`` как аргумент. Также "
+"вы можете использовать конвертер для указания конкретного типа аргумента – "
+"``<converter:variable_name>``. ::"
 
 #: ../../project/docs/quickstart.rst:201
 #: 0c1d64ff76be4ff6b52b7d3e1b833245
 msgid "Converter types:"
-msgstr ""
+msgstr "Типы конвертеров:"
 
 #: ../../project/docs/quickstart.rst:204
 #: abdfc2de097b4bb49338652271c1d52e
 msgid "``string``"
-msgstr ""
+msgstr "``string``"
 
 #: ../../project/docs/quickstart.rst:204
 #: 42a40812e2404ae2aa21cd2eefe6f2de
 msgid "(default) accepts any text without a slash"
-msgstr ""
+msgstr "(по умолчанию) принимает любой текст без слэша"
 
 #: ../../project/docs/quickstart.rst:205
 #: 812f474f73c447869e63be912ea61492
 msgid "``int``"
-msgstr ""
+msgstr "``int``"
 
 #: ../../project/docs/quickstart.rst:205
 #: 0dcc8042218b40e1a838225b493416b4
 msgid "accepts positive integers"
-msgstr ""
+msgstr "принимает положительное числа"
 
 #: ../../project/docs/quickstart.rst:206
 #: cd10e5dd4e644fbc9759e6b0000fa398
 msgid "``float``"
-msgstr ""
+msgstr "``float``"
 
 #: ../../project/docs/quickstart.rst:206
 #: 115a2c7b2e384ae0adbd4a70c0fb94e9
 msgid "accepts positive floating point values"
-msgstr ""
+msgstr "принимает положительные числа с плавающей точкой"
 
 #: ../../project/docs/quickstart.rst:207
 #: 8d00c0ee5d5949649dbb552a9c7b7a55
 msgid "``path``"
-msgstr ""
+msgstr "``path``"
 
 #: ../../project/docs/quickstart.rst:207
 #: c16b271f6640414893a3fa5acf32330b
 msgid "like ``string`` but also accepts slashes"
-msgstr ""
+msgstr "то же, что и ``string``, но также принимает слэши"
 
 #: ../../project/docs/quickstart.rst:208
 #: ca8584245682488cbbbe56766f06a7e0
 msgid "``uuid``"
-msgstr ""
+msgstr "``uuid``"
 
 #: ../../project/docs/quickstart.rst:208
 #: 00321a5d7dff4ce0aab1cf4e2b60e66d
 msgid "accepts UUID strings"
-msgstr ""
+msgstr "принимает UUID-строки"
 
 #: ../../project/docs/quickstart.rst:213
 #: c14cc837143a41ffa3ff3b4954b90ec3
 msgid "Unique URLs / Redirection Behavior"
-msgstr ""
+msgstr "Уникальные URL-ы / Поведение перенаправления"
 
 #: ../../project/docs/quickstart.rst:215
 #: fe8df7deb1a64de5ac02e5453cf20530
 msgid "The following two rules differ in their use of a trailing slash. ::"
 msgstr ""
+"Следующие два правила отличаются в их использовании завершающего слэша. ::"
 
 #: ../../project/docs/quickstart.rst:225
 #: 09c1960c2ce14c3c8e2dbbdf3dfbf80a
 msgid "The canonical URL for the ``projects`` endpoint has a trailing slash. It's similar to a folder in a file system. If you access the URL without a trailing slash (``/projects``), Flask redirects you to the canonical URL with the trailing slash (``/projects/``)."
 msgstr ""
+"Канонический URL для эндпоинта ``projects`` имеет завершающий слэш. Это "
+"похоже на папку в файловой системе. Если вы обращаетесь к URL без "
+"завершающего слэша (``/projects``), Flask перенаправит вас на канонический "
+"URL с завершающим слэшем (``/projects/``)."
 
 #: ../../project/docs/quickstart.rst:230
 #: 48c5af12fd634d34a79d2e75a9670824
 msgid "The canonical URL for the ``about`` endpoint does not have a trailing slash. It's similar to the pathname of a file. Accessing the URL with a trailing slash (``/about/``) produces a 404 \"Not Found\" error. This helps keep URLs unique for these resources, which helps search engines avoid indexing the same page twice."
 msgstr ""
+"Канонический URL для эндпоинта ``about`` не содержит завершающего слэша. Это "
+"похоже на путь к файлу. Попытка обратиться к URL с завершающим слэшем (``/"
+"about/``) приведет к ошибке 404 \"Не найдено\". Это помогает иметь "
+"уникальные URL-ы для таких ресурсов, что помогает поисковым движкам избегать "
+"индексирования одной и той же страницы дважды."
 
 #: ../../project/docs/quickstart.rst:240
 #: c35a47346603474c98280f584038e767
