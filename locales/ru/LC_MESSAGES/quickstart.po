@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-08-06 13:21+0000\n"
+"PO-Revision-Date: 2025-08-07 03:19+0000\n"
 "Last-Translator: Pavel Dittenbier <pavel.ditenbir@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/flask/quickstart/"
 "ru/>\n"
@@ -384,42 +384,57 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:240
 #: c35a47346603474c98280f584038e767
 msgid "URL Building"
-msgstr ""
+msgstr "Построение URL"
 
 #: ../../project/docs/quickstart.rst:242
 #: 96b281646519448e93eddd340e2a4900
 msgid "To build a URL to a specific function, use the :func:`~flask.url_for` function. It accepts the name of the function as its first argument and any number of keyword arguments, each corresponding to a variable part of the URL rule. Unknown variable parts are appended to the URL as query parameters."
 msgstr ""
+"Чтобы построить URL для какой-то определенной функции, используйте "
+":func:`~flask.url_for`. Она принимает имя функции первым аргументом и "
+"произвольное количество дополнительных именованных аргументов, каждый из "
+"которых соответствует переменной части URL-правила. Неизвестные переменные "
+"части добавляются к URL как параметры запроса."
 
 #: ../../project/docs/quickstart.rst:247
 #: 3e41eabc111c45b5a6a2cbb05c69c495
 msgid "Why would you want to build URLs using the URL reversing function :func:`~flask.url_for` instead of hard-coding them into your templates?"
 msgstr ""
+"Почему вы можете выбрать функцию :func:`~flask.url_for` для построения URL-"
+"ов, вместо того, чтобы захардкодить их напрямую в шаблонах?"
 
 #: ../../project/docs/quickstart.rst:250
 #: 83242835c2184f11be23fda4c1f3bec4
 msgid "Reversing is often more descriptive than hard-coding the URLs."
-msgstr ""
+msgstr "Частно это более наглядно, нежели URL-ы, жестко прописанные в коде."
 
 #: ../../project/docs/quickstart.rst:251
 #: 7239d0f7a149454e8f4400f1ca14bb29
 msgid "You can change your URLs in one go instead of needing to remember to manually change hard-coded URLs."
 msgstr ""
+"Вы можете изменить ваши URL-ы в одном месте, вместо того, чтобы не забыть "
+"вручную изменить каждый жестко записанный в коде URL."
 
 #: ../../project/docs/quickstart.rst:253
 #: 4c1e8285c41c4a37b02c714cddb08b5c
 msgid "URL building handles escaping of special characters transparently."
 msgstr ""
+"Построение URL прозрачно обрабатывает экранирование специальных символов."
 
 #: ../../project/docs/quickstart.rst:254
 #: 494f632ea1f44c0cbeddc09b7ac402b8
 msgid "The generated paths are always absolute, avoiding unexpected behavior of relative paths in browsers."
 msgstr ""
+"Сгенерированные пути всегда абсолютные, что исключает непредвиденное "
+"поведение относительных путей в браузерах."
 
 #: ../../project/docs/quickstart.rst:256
 #: c3ee43d067d44187aefd037e2e5b2c66
 msgid "If your application is placed outside the URL root, for example, in ``/myapplication`` instead of ``/``, :func:`~flask.url_for` properly handles that for you."
 msgstr ""
+"В случае, если ваше приложение расположено вне корня URL, например, в "
+"``/myapplication`` вместо ``/``, функция :func:`~flask.url_for` корректно "
+"обработает этот случай за вас."
 
 #: ../../project/docs/quickstart.rst:260
 #: 95a85f98bb3e4a28a4119f3e8b6dde03
