@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-21 03:05+0000\n"
-"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"PO-Revision-Date: 2025-08-07 13:25+0000\n"
+"Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/async-await/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -31,6 +31,10 @@ msgid ""
 "``async`` extra (``pip install flask[async]``). This allows views to be "
 "defined with ``async def`` and use ``await``."
 msgstr ""
+"如果安装 Flask 时包含了额外的 ``async`` 依赖（通过 ``pip install flask[async]"
+"`` 安装），那么路由、错误处理器、请求前后钩子（before request、after "
+"request）以及 teardown 函数都可以是协程函数。这使得视图可以使用 ``async def``"
+" 定义，并使用 ``await``。"
 
 #: ../../project/docs/async-await.rst:20 a5f41a34d9114051b2c5c827a744a7f8
 msgid ""
@@ -41,10 +45,14 @@ msgid ""
 "handlers in views that inherit from the :class:`flask.views.MethodView` "
 "class."
 msgstr ""
+"可插拔的基于类的视图也支持使用协程实现的处理函数。这适用于继承自 "
+":class:`flask.views.View` 类的视图中的 "
+":meth:`~flask.views.View.dispatch_request` 方法，以及继承自 "
+":class:`flask.views.MethodView` 类的视图中的所有 HTTP 方法处理函数。"
 
 #: ../../project/docs/async-await.rst:26 cd4f2d5d79b84bc0ad7436847937e2b2
 msgid "Using ``async`` with greenlet"
-msgstr ""
+msgstr "与 greenlet 一起使用 ``async``"
 
 #: ../../project/docs/async-await.rst:28 3a884aa9925f412cbc56d8e5d17f7ca2
 msgid ""
@@ -52,10 +60,12 @@ msgid ""
 "runtime, greenlet>=1.0 is required. When using PyPy, PyPy>=7.3.7 is "
 "required."
 msgstr ""
+"当使用 gevent 或 eventlet 提供应用服务或对运行环境打补丁时，要求 greenlet "
+"版本不低于 1.0。使用 PyPy 时，要求 PyPy 版本不低于 7.3.7。"
 
 #: ../../project/docs/async-await.rst:34 fa4fcab614de41eaa854df94e34883ac
 msgid "Performance"
-msgstr ""
+msgstr "性能"
 
 #: ../../project/docs/async-await.rst:36 fbbf3957144d41a4be61f1732f976efd
 msgid ""
@@ -64,6 +74,9 @@ msgid ""
 " request comes in to an async view, Flask will start an event loop in a "
 "thread, run the view function there, then return the result."
 msgstr ""
+"异步函数需要事件循环来运行。Flask 作为一个 WSGI 应用，每个 worker "
+"处理一个请求/响应周期。当请求到达一个异步视图时，Flask "
+"会在线程中启动一个事件循环，在其中运行该视图函数，然后返回结果。"
 
 #: ../../project/docs/async-await.rst:41 1e47da6cd9064adf8fb98c3d0ecc2b9d
 msgid ""
