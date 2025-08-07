@@ -86,6 +86,9 @@ msgid ""
 "etc. However, the number of requests your application can handle at one "
 "time will remain the same."
 msgstr ""
+"即使是异步视图，每个请求仍然会占用一个 "
+"worker。好处是你可以在视图中运行异步代码，例如并发进行多个数据库查询、向外部 "
+"API 发出 HTTP 请求等。但你应用能同时处理的请求数量并不会因此增加。"
 
 #: ../../project/docs/async-await.rst:47 5f1059021da4421581539d99894a1fe0
 msgid ""
