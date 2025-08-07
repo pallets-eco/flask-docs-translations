@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-08-07 13:25+0000\n"
+"PO-Revision-Date: 2025-08-08 14:02+0000\n"
 "Last-Translator: Grey Li <withlihui@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/async-await/zh_Hans/>\n"
@@ -98,10 +98,13 @@ msgid ""
 "most use cases, but Flask's async support enables writing and using code "
 "that wasn't possible natively before."
 msgstr ""
+"**异步代码本身并不一定比同步代码更快。** 异步适用于并发的 IO 密集型任务，"
+"但对 CPU 密集型任务通常没有帮助。传统的 Flask 视图对于大多数用例仍然适用，但 "
+"Flask 的异步支持让之前无法实现的一些代码成为可能。"
 
 #: ../../project/docs/async-await.rst:55 a9a51856ba294d4c917773054d68d158
 msgid "Background tasks"
-msgstr ""
+msgstr "后台任务"
 
 #: ../../project/docs/async-await.rst:57 68dbcd38ebb14a65aabc0a37682cf15d
 msgid ""
@@ -111,6 +114,9 @@ msgid ""
 "cancelled. Therefore you cannot spawn background tasks, for example via "
 "``asyncio.create_task``."
 msgstr ""
+"异步函数将在事件循环中运行直到完成，此时事件循环会停止。这意味着，在该异步函"
+"数完成时，任何未完成的额外任务都会被取消。因此，你不能通过 "
+"``asyncio.create_task`` 等方式在视图中启动后台任务。"
 
 #: ../../project/docs/async-await.rst:63 c5ae275ae549455a9d52d6ccf524cae8
 msgid ""
@@ -121,10 +127,14 @@ msgid ""
 ":doc:`deploying/asgi`. This works as the adapter creates an event loop "
 "that runs continually."
 msgstr ""
+"如果你想使用后台任务，最好通过任务队列来触发后台工作，而不是在视图函数中启动"
+"任务。考虑到这一点，你可以通过 ASGI 服务器运行 Flask，并使用 :doc:`deploying/"
+"asgi` 中描述的 asgiref 的 WsgiToAsgi 适配器来启动 asyncio "
+"任务。这样可行，是因为该适配器会创建一个持续运行的事件循环。"
 
 #: ../../project/docs/async-await.rst:72 591df275c2c3418d9b6fdc9cdc7cff37
 msgid "When to use Quart instead"
-msgstr ""
+msgstr "何时改用 Quart"
 
 #: ../../project/docs/async-await.rst:74 b18e4cc101a94211aa8f4e0fba5998c3
 msgid ""
@@ -135,6 +145,11 @@ msgid ""
 "handle many concurrent requests, long running requests, and websockets "
 "without requiring multiple worker processes or threads."
 msgstr ""
+"由于实现方式的限制，Flask "
+"的异步支持性能不如以异步为优先的框架。如果你的代码库主要是异步的，那么使用 "
+"`Quart`_ 会更合适。Quart 是基于 `ASGI`_ 标准重新实现的 Flask，而不是基于 "
+"WSGI，这使它可以在不需要多个 worker 或线程的情况下处理大量并发请求、"
+"长时间运行的请求和 WebSocket。"
 
 #: ../../project/docs/async-await.rst:81 ebe671f8c38740a9af75dde9609e74a5
 msgid ""
@@ -145,6 +160,10 @@ msgid ""
 "whether you should use Flask, Quart, or something else is ultimately up "
 "to understanding the specific needs of your project."
 msgstr ""
+"其实早就可以使用 Gevent 或 Eventlet 来运行 "
+"Flask，从而获得许多异步请求处理的优势。这些库是通过修改底层 Python "
+"函数实现的，而 ``async``/``await`` 和 ASGI 则使用的是现代 Python 的标准特性。"
+"至于你应该使用 Flask、Quart，还是其他框架，最终取决于你项目的具体需求。"
 
 #: ../../project/docs/async-await.rst:93 ced981879b554ce187fb5ae6ac886382
 msgid "Extensions"
@@ -159,6 +178,11 @@ msgid ""
 "awaitable either and will probably be blocking if called within an async "
 "view."
 msgstr ""
+"早于 Flask "
+"异步支持的扩展通常不支持异步视图。如果这些扩展提供用于增强视图功能的装饰器，"
+"那么这些装饰器很可能无法与异步视图正常配合使用，因为它们不会等待（await）函数"
+"执行，也无法被等待。此外，这些扩展提供的其他函数也不会是可等待的，如果在异步"
+"视图中调用它们，很可能会造成阻塞。"
 
 #: ../../project/docs/async-await.rst:101 b972f141b32c4a5f9e4a6f82d7ff1c4c
 msgid ""
@@ -167,16 +191,20 @@ msgid ""
 "provides a view function decorator add ``ensure_sync`` before calling the"
 " decorated function,"
 msgstr ""
+"扩展的作者可以通过使用 :meth:`flask.Flask.ensure_sync` "
+"方法来支持异步函数。例如，如果扩展提供一个视图函数装饰器，"
+"可以在调用被装饰函数之前使用 ``ensure_sync`` 包裹它，"
 
 #: ../../project/docs/async-await.rst:116 d909c50d9790432c998c0c30ce69e5bf
 msgid ""
 "Check the changelog of the extension you want to use to see if they've "
 "implemented async support, or make a feature request or PR to them."
-msgstr ""
+msgstr "查看你打算使用的扩展的更新日志，看看是否已经实现了对异步的支持；如果没有，"
+"可以向他们提出功能请求或提交 PR。"
 
 #: ../../project/docs/async-await.rst:121 d9c6cb98710e43b6a846fa1356815385
 msgid "Other event loops"
-msgstr ""
+msgstr "其他事件循环"
 
 #: ../../project/docs/async-await.rst:123 6a3b2bd86e0e442d94f07c091a1ae624
 msgid ""
@@ -184,6 +212,9 @@ msgid ""
 "override :meth:`flask.Flask.ensure_sync` to change how async functions "
 "are wrapped to use a different library."
 msgstr ""
+"目前，Flask 仅支持 :mod:`asyncio`。你可以通过重写 "
+":meth:`flask.Flask.ensure_sync` "
+"方法，修改异步函数的包装方式，从而使用其他异步库。"
 
 #~ msgid ""
 #~ "Routes, error handlers, before request, "
