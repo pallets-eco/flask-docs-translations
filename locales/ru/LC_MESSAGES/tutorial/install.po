@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-05-17 21:32+0000\n"
-"Last-Translator: Aleksey Kolodchuk <vasyapinfo@ya.ru>\n"
+"PO-Revision-Date: 2025-08-07 13:25+0000\n"
+"Last-Translator: Pavel Dittenbier <pavel.ditenbir@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/flask/"
 "tutorialinstall/ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: ../../project/docs/tutorial/install.rst:2
 #: 1901b4d9c96543ff90db0fa9ca78a0d3
@@ -46,16 +46,24 @@ msgstr ""
 #: 541eebff374843b091c305e1cedff64e
 msgid "Currently, Python and Flask understand how to use the ``flaskr`` package only because you're running from your project's directory. Installing means you can import it no matter where you run from."
 msgstr ""
+"На данный момент, Питон и Flask понимают, как использовать пакет``flaskr``"
+"только лишь потому, что вы делаете запуск из папки проекта. Установка "
+"означает, что он может быть импортирован независимо от того, из какого места "
+"происходит запуск."
 
 #: ../../project/docs/tutorial/install.rst:16
 #: cab0369479f040fb999a3231e47368ae
 msgid "You can manage your project's dependencies just like other packages do, so ``pip install yourproject.whl`` installs them."
 msgstr ""
+"Вы можете управлять зависимостями проекта так же, как это делают любые "
+"другие пакеты, то есть ``pip install yourproject.whl`` установит их."
 
 #: ../../project/docs/tutorial/install.rst:19
 #: 8e75c3c5f0ba464c87a48b7bcc769c25
 msgid "Test tools can isolate your test environment from your development environment."
 msgstr ""
+"Инструменты тестирования могут изолировать ваше тестовое окружение от "
+"окружения разработки."
 
 #: ../../project/docs/tutorial/install.rst:23
 #: 5f8bb2e29b9143e18640ba723f3a8f16
