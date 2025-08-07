@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-08-06 13:21+0000\n"
+"PO-Revision-Date: 2025-08-07 13:25+0000\n"
 "Last-Translator: Pavel Dittenbier <pavel.ditenbir@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/flask/api/ru/>\n"
 "Language: ru\n"
@@ -5600,7 +5600,7 @@ msgstr ""
 #: ../../project/docs/api.rst:288
 #: 337331b31543479e9e771ac7ad431006
 msgid "Configuration"
-msgstr ""
+msgstr "Конфигурация"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config:1
 #: e5cf629d7d0f412997359e4386aafc44
