@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-08-07 13:25+0000\n"
+"Last-Translator: Pavel Dittenbier <pavel.ditenbir@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/flask/"
+"deployingapache-httpd/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: ../../project/docs/deploying/apache-httpd.rst:2
 #: bcb33e7b9c6641e49ccd803ec616e8f9
@@ -36,32 +38,41 @@ msgstr ""
 #: ../../project/docs/deploying/apache-httpd.rst:20
 #: a6182bf5cbd8466ba254d54436da63f1
 msgid "Domain Name"
-msgstr ""
+msgstr "Доменное имя"
 
 #: ../../project/docs/deploying/apache-httpd.rst:22
 #: 4690ad6ff00a425da24235b3d0cce4fb
 msgid "Acquiring and configuring a domain name is outside the scope of this doc. In general, you will buy a domain name from a registrar, pay for server space with a hosting provider, and then point your registrar at the hosting provider's name servers."
 msgstr ""
+"Получение и настройка доменного имени выходит за рамки этой документации. В "
+"общем случае, вы покупаете доменное имя у регистратора, платите за место на "
+"сервере у хостинг-провайдера, а потом указываете регистратору на имена "
+"серверов хостинг-провайдера."
 
 #: ../../project/docs/deploying/apache-httpd.rst:27
 #: 9014d8abd7d74efdac88493c45eb560f
 msgid "To simulate this, you can also edit your ``hosts`` file, located at ``/etc/hosts`` on Linux. Add a line that associates a name with the local IP."
 msgstr ""
+"Для имитации вы можете поправить ваш файл ``hosts``, в Линуксе расположенный "
+"в ``/etc/hosts``. Добавьте строку, которая ассоциирует имя с локальным IP."
 
 #: ../../project/docs/deploying/apache-httpd.rst:31
 #: 9ae5c56797de4893b16d350e640ca41e
 msgid "Modern Linux systems may be configured to treat any domain name that ends with ``.localhost`` like this without adding it to the ``hosts`` file."
 msgstr ""
+"Современные системы Линукс могут быть настроены таким образом, чтобы "
+"обращаться к любому доменному имени, оканчивающемся на ``.localhost``, без "
+"его добавления в файл ``hosts``."
 
 #: ../../project/docs/deploying/apache-httpd.rst:35
 #: 633bc2c9ef674ff98292401681971ceb
 msgid "``/etc/hosts``"
-msgstr ""
+msgstr "``/etc/hosts``"
 
 #: ../../project/docs/deploying/apache-httpd.rst:42
 #: 70edbd66795d4ef68936c445f1114ca8
 msgid "Configuration"
-msgstr ""
+msgstr "Настройка"
 
 #: ../../project/docs/deploying/apache-httpd.rst:44
 #: edaff7b255ee4c5d852a1af2e35b8150
