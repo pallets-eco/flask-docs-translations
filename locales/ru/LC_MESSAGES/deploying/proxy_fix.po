@@ -8,42 +8,64 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-08-07 07:12+0000\n"
+"Last-Translator: Pavel Dittenbier <pavel.ditenbir@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/flask/"
+"deployingproxy_fix/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: ../../project/docs/deploying/proxy_fix.rst:2
 #: db65e33d048044fd91926a1b6ab8eee8
 msgid "Tell Flask it is Behind a Proxy"
-msgstr ""
+msgstr "Сообщите Flask-у, что он расположен за прокси"
 
 #: ../../project/docs/deploying/proxy_fix.rst:4
 #: 9f185dc3288a4a4ca62d1494aa45615d
 msgid "When using a reverse proxy, or many Python hosting platforms, the proxy will intercept and forward all external requests to the local WSGI server."
 msgstr ""
+"Когда вы используете обратный прокси или многие хостинг-платформы для "
+"Питона, прокси будет перехватывать и передавать все внешние запросы на "
+"локальный WSGI-сервер."
 
 #: ../../project/docs/deploying/proxy_fix.rst:8
 #: 9d98c0b27df44b8586f85e2a89527dc5
 msgid "From the WSGI server and Flask application's perspectives, requests are now coming from the HTTP server to the local address, rather than from the remote address to the external server address."
 msgstr ""
+"С точки зрения WSGI-сервера и Flask-приложения, запросы теперь приходят с "
+"HTTP-сервера на локальный адрес, а не с удаленного адреса на внешний адрес "
+"сервера."
 
 #: ../../project/docs/deploying/proxy_fix.rst:12
 #: e04c66af9f8346418bdad9bf0c2aac9e
 msgid "HTTP servers should set ``X-Forwarded-`` headers to pass on the real values to the application. The application can then be told to trust and use those values by wrapping it with the :doc:`werkzeug:middleware/proxy_fix` middleware provided by Werkzeug."
 msgstr ""
+"HTTP-сервера должны выставить заголовок ``X-Forwarded-``, чтобы передавать "
+"реальные значения дальше приложению. Тогда приложение может доверять и "
+"использовать эти значения, оборачивая их с помощью промежуточного "
+"программного звена (middleware) :doc:`werkzeug:middleware/proxy_fix`, "
+"предоставленного от Werkzeug."
 
 #: ../../project/docs/deploying/proxy_fix.rst:17
 #: f430d10ef9a3401db4f0265efa40d1c0
 msgid "This middleware should only be used if the application is actually behind a proxy, and should be configured with the number of proxies that are chained in front of it. Not all proxies set all the headers. Since incoming headers can be faked, you must set how many proxies are setting each header so the middleware knows what to trust."
 msgstr ""
+"Этот промежуточный программный слой (middleware) следует использовать только "
+"если приложение действительно находится за прокси, а также следует настроить "
+"его таким образом, чтобы учитывать все прокси, находящиеся в цепочке перед "
+"ним. Так как входящие заголовки могут быть подделаны, вы должны указать, "
+"сколько прокси добавляют свои заголовки, чтобы middleware знало, чему "
+"доверять."
 
 #: ../../project/docs/deploying/proxy_fix.rst:31
 #: 41f77fc710c44ca2bf14fb119dff7f8b
 msgid "Remember, only apply this middleware if you are behind a proxy, and set the correct number of proxies that set each header. It can be a security issue if you get this configuration wrong."
 msgstr ""
+"Помните! Применяйте это middleware только если приложение находится за "
+"прокси, и указывайте точное количество прокси, которые устанавливают каждый "
+"заголовок. Неправильная настройка может привести к проблемам безопасности."
