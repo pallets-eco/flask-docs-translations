@@ -8,75 +8,105 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-08-07 03:19+0000\n"
+"Last-Translator: Pavel Dittenbier <pavel.ditenbir@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/flask/"
+"deployingnginx/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: ../../project/docs/deploying/nginx.rst:2
 #: c47160e4440b4ed3bb9f2c952dec5c16
 msgid "nginx"
-msgstr ""
+msgstr "nginx"
 
 #: ../../project/docs/deploying/nginx.rst:4
 #: b0dc224951b84e76a09a15f070e1c8b5
 msgid "`nginx`_ is a fast, production level HTTP server. When serving your application with one of the WSGI servers listed in :doc:`index`, it is often good or necessary to put a dedicated HTTP server in front of it. This \"reverse proxy\" can handle incoming requests, TLS, and other security and performance concerns better than the WSGI server."
 msgstr ""
+"`nginx`_ является быстрым HTTP-сервером продакшен уровня. Когда ваше "
+"приложение запущено на базе одного из WSGI-серверов, указанных в :doc:`index`"
+", зачастую это хорошая идея либо даже необходимость, чтобы перед ним стоял "
+"выделенный HTTP-сервер. Этот \"обратный прокси\" (reverse proxy) может "
+"обрабатывать входящие запросы, заботиться о TLS и остальных вопросах "
+"безопасности и скорости работы лучше, чем это сделает WSGI-сервер."
 
 #: ../../project/docs/deploying/nginx.rst:10
 #: c6676b7703714eeb86fb3d89f55ebc09
 msgid "Nginx can be installed using your system package manager, or a pre-built executable for Windows. Installing and running Nginx itself is outside the scope of this doc. This page outlines the basics of configuring Nginx to proxy your application. Be sure to read its documentation to understand what features are available."
 msgstr ""
+"Nginx может быть установлен используя пакетный менеджер в вашей системе или "
+"же с помощью пре-собранного исполняемого файла для Windows. Установка и "
+"запуск Nginx как такового выходит за рамки данной документации. Эта страница "
+"всего лишь обрисовывает основы настройки Nginx для проксирования вашего "
+"приложения. Убедитесь, что вы ознакомились с документацией Nginx для "
+"понимания имеющейся в нем функциональности."
 
 #: ../../project/docs/deploying/nginx.rst:20
 #: 1d3e23a326ba480488bf38f6db8698d4
 msgid "Domain Name"
-msgstr ""
+msgstr "Доменное имя"
 
 #: ../../project/docs/deploying/nginx.rst:22
 #: ae389f8416d64695afb0d08fe315b855
 msgid "Acquiring and configuring a domain name is outside the scope of this doc. In general, you will buy a domain name from a registrar, pay for server space with a hosting provider, and then point your registrar at the hosting provider's name servers."
 msgstr ""
+"Получение и настройка доменного имени выходит за рамки этой документации. В "
+"общем случае, вы покупаете доменное имя у регистратора, платите за место на "
+"сервере у хостинг-провайдера, а потом указываете регистратору на имена "
+"серверов хостинг-провайдера."
 
 #: ../../project/docs/deploying/nginx.rst:27
 #: 2ddf4846535e4757bf4b5adfb5bb02ed
 msgid "To simulate this, you can also edit your ``hosts`` file, located at ``/etc/hosts`` on Linux. Add a line that associates a name with the local IP."
 msgstr ""
+"Для имитации вы можете поправить ваш файл ``hosts``, в Линуксе расположенный "
+"в ``/etc/hosts``. Добавьте строку, которая ассоциирует имя с локальным IP."
 
 #: ../../project/docs/deploying/nginx.rst:31
 #: c84782d67aff4c5da0f3d2aaf8ff4447
 msgid "Modern Linux systems may be configured to treat any domain name that ends with ``.localhost`` like this without adding it to the ``hosts`` file."
 msgstr ""
+"Современные системы Линукс могут быть настроены таким образом, чтобы "
+"обращаться к любому доменному имени, оканчивающемся на ``.localhost``, без "
+"его добавления в файл ``hosts``."
 
 #: ../../project/docs/deploying/nginx.rst:35
 #: ce22f4e4e5d6420ca1c00cd27445f644
 msgid "``/etc/hosts``"
-msgstr ""
+msgstr "``/etc/hosts``"
 
 #: ../../project/docs/deploying/nginx.rst:42
 #: 78f767f9d6c5483f96ff33d1441a84e8
 msgid "Configuration"
-msgstr ""
+msgstr "Настройка"
 
 #: ../../project/docs/deploying/nginx.rst:44
 #: 9a9ab4c4e2604f7eb4f1e253de350c96
 msgid "The nginx configuration is located at ``/etc/nginx/nginx.conf`` on Linux. It may be different depending on your operating system. Check the docs and look for ``nginx.conf``."
 msgstr ""
+"Настройки nginx на Линуксе расположены в ``/etc/nginx/nginx.conf``. Это "
+"место может отличаться в зависимости от вашей операционной системы. "
+"Обратитесь к документации и ищите по слову ``nginx.conf``."
 
 #: ../../project/docs/deploying/nginx.rst:48
 #: 98fee79dd617486ea4e2d9f27a43885f
 msgid "Remove or comment out any existing ``server`` section. Add a ``server`` section and use the ``proxy_pass`` directive to point to the address the WSGI server is listening on. We'll assume the WSGI server is listening locally at ``http://127.0.0.1:8000``."
 msgstr ""
+"Удалите или закомментируйте все существующие секции ``server``. Добавьте "
+"новую секцию ``server`` и используйте директиву ``proxy_pass`` для указания "
+"адреса, по которому слушает WSGI-сервер. Допустим, наш WSGI-сервер слушает "
+"на локальной машине по адресу ``http://127.0.0.1:8000``."
 
 #: ../../project/docs/deploying/nginx.rst:53
 #: 5505f696d5d941cbbb05419e30551136
 msgid "``/etc/nginx.conf``"
-msgstr ""
+msgstr "``/etc/nginx.conf``"
 
 #: ../../project/docs/deploying/nginx.rst:69
 #: fea04017ddc94d7e86b54cb3c535b86c
