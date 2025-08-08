@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-08-07 03:19+0000\n"
+"PO-Revision-Date: 2025-08-08 14:02+0000\n"
 "Last-Translator: Pavel Dittenbier <pavel.ditenbir@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/flask/quickstart/"
 "ru/>\n"
@@ -440,51 +440,79 @@ msgstr ""
 #: 95a85f98bb3e4a28a4119f3e8b6dde03
 msgid "For example, here we use the :meth:`~flask.Flask.test_request_context` method to try out :func:`~flask.url_for`. :meth:`~flask.Flask.test_request_context` tells Flask to behave as though it's handling a request even while we use a Python shell. See :ref:`context-locals`."
 msgstr ""
+"К примеру, тут мы используем метод :meth:`~flask.Flask.test_request_context`"
+", чтобы проверить :func:`~flask.url_for`. "
+":meth:`~flask.Flask.test_request_context`говорит Flask-у вести себя так, "
+"будто бы он обрабатывает запрос, хотя это происходи в командной оболочке "
+"Питона. См. :ref:`context-locals`."
 
 #: ../../project/docs/quickstart.rst:296
 #: 2bf0e7c3cca5413487009a1aa2bbeff4
 msgid "HTTP Methods"
-msgstr ""
+msgstr "HTTP-методы"
 
 #: ../../project/docs/quickstart.rst:298
 #: c95a61d9ef7049728417940101edae2c
 msgid "Web applications use different HTTP methods when accessing URLs. You should familiarize yourself with the HTTP methods as you work with Flask. By default, a route only answers to ``GET`` requests. You can use the ``methods`` argument of the :meth:`~flask.Flask.route` decorator to handle different HTTP methods. ::"
 msgstr ""
+"Веб-приложения используют различные HTTP-методы для доступа к URL-ам. "
+"Поскольку вы работаете с Flask, вам следует ознакомиться с HTTP-методами. По "
+"умолчанию, функция-роутинга отвечает только на ``GET``-запросы. Вы можете "
+"использовать аргумент ``methods`` декоратора :meth:`~flask.Flask.route` для "
+"обработки различных HTTP-методов. ::"
 
 #: ../../project/docs/quickstart.rst:313
 #: 97f958d655574e5ba545d0e9d67cdc3c
 msgid "The example above keeps all methods for the route within one function, which can be useful if each part uses some common data."
 msgstr ""
+"Пример выше содержит все методы маршрута внутри одной функции, что может "
+"быть полезно, если каждый использует общие данные."
 
 #: ../../project/docs/quickstart.rst:316
 #: 772583c8c0434b61b01779821fa51155
 msgid "You can also separate views for different methods into different functions. Flask provides a shortcut for decorating such routes with :meth:`~flask.Flask.get`, :meth:`~flask.Flask.post`, etc. for each common HTTP method."
 msgstr ""
+"Также вы можете разделить отображение для разных HTTP-методов на отдельные "
+"функции. Flask предоставляет удобные декораторы для каждого из популярных "
+"HTTP-методов: :meth:`~flask.Flask.get`, :meth:`~flask.Flask.post` и так "
+"далее."
 
 #: ../../project/docs/quickstart.rst:331
 #: 6b104b969468453db9dde902877a7576
 msgid "If ``GET`` is present, Flask automatically adds support for the ``HEAD`` method and handles ``HEAD`` requests according to the `HTTP RFC`_. Likewise, ``OPTIONS`` is automatically implemented for you."
 msgstr ""
+"Если ``GET`` присутствует, Flask автоматически добавляет поддержку для "
+"метода ``HEAD`` и обрабатывает ``HEAD``-запросы в соответствии с `HTTP RFC`"
+"_. Подобным же образом автоматически реализуется и ``OPTIONS``."
 
 #: ../../project/docs/quickstart.rst:338
 #: 5b1adc0a2b194e35bc0977c5bf28a221
 msgid "Static Files"
-msgstr ""
+msgstr "Статичные файлы"
 
 #: ../../project/docs/quickstart.rst:340
 #: b8aeff8562be496c999d208752cebc3b
 msgid "Dynamic web applications also need static files.  That's usually where the CSS and JavaScript files are coming from.  Ideally your web server is configured to serve them for you, but during development Flask can do that as well.  Just create a folder called :file:`static` in your package or next to your module and it will be available at ``/static`` on the application."
 msgstr ""
+"Динамичным веб-приложениям также нужны статичные файлы. Это то, чем обычно "
+"являются CSS и JavaScript-файлы. В идеале ваш веб-сервер сконфигурирован "
+"таким образом, чтобы предоставлять вам доступ к ним, но в процессе "
+"разработки Flask также может это делать. Просто создайте папку с названием "
+":file:`static` в вашем пакете или рядом с вашим модулем, и она будет "
+"доступна в вашем приложении по пути ``/static``."
 
 #: ../../project/docs/quickstart.rst:346
 #: b2ff85243bca4b199efce4c5f3a2910e
 msgid "To generate URLs for static files, use the special ``'static'`` endpoint name::"
 msgstr ""
+"Для генерации URL-ов для статичных файлов используйте специальное "
+"endpoint-имя``'static'``::"
 
 #: ../../project/docs/quickstart.rst:350
 #: e777693155da432ca1ae17df3166716a
 msgid "The file has to be stored on the filesystem as :file:`static/style.css`."
 msgstr ""
+"Файл должен быть сохранен в файловой системе как :file:`static/style.css`."
 
 #: ../../project/docs/quickstart.rst:353
 #: 4e4f12c1dc0543569fa3126eb2b55ea9
