@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-08-07 13:25+0000\n"
+"PO-Revision-Date: 2025-08-08 14:02+0000\n"
 "Last-Translator: Pavel Dittenbier <pavel.ditenbir@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/flask/"
 "deployingnginx/ru/>\n"
@@ -29,12 +29,12 @@ msgstr "nginx"
 #: b0dc224951b84e76a09a15f070e1c8b5
 msgid "`nginx`_ is a fast, production level HTTP server. When serving your application with one of the WSGI servers listed in :doc:`index`, it is often good or necessary to put a dedicated HTTP server in front of it. This \"reverse proxy\" can handle incoming requests, TLS, and other security and performance concerns better than the WSGI server."
 msgstr ""
-"`nginx`_ является быстрым HTTP-сервером продакшен уровня. Когда ваше "
-"приложение запущено на базе одного из WSGI-серверов, указанных в :doc:`index`"
-", зачастую это хорошая идея либо даже необходимость, чтобы перед ним стоял "
-"выделенный HTTP-сервер. Этот \"обратный прокси\" (reverse proxy) может "
-"обрабатывать входящие запросы, заботиться о TLS и остальных вопросах "
-"безопасности и скорости работы лучше, чем это сделает WSGI-сервер."
+"`nginx`_ – это быстрый HTTP-сервер продакшен уровня. Когда ваше приложение "
+"запущено на базе одного из WSGI-серверов, указанных в :doc:`index`, зачастую "
+"это хорошая идея либо даже необходимость, чтобы перед ним стоял выделенный "
+"HTTP-сервер. Этот \"обратный прокси\" (reverse proxy) может обрабатывать "
+"входящие запросы, заботиться о TLS и остальных вопросах безопасности и "
+"скорости работы лучше, чем это сделает WSGI-сервер."
 
 #: ../../project/docs/deploying/nginx.rst:10
 #: c6676b7703714eeb86fb3d89f55ebc09
@@ -100,8 +100,8 @@ msgid "Remove or comment out any existing ``server`` section. Add a ``server`` s
 msgstr ""
 "Удалите или закомментируйте все существующие секции ``server``. Добавьте "
 "новую секцию ``server`` и используйте директиву ``proxy_pass`` для указания "
-"адреса, по которому слушает WSGI-сервер. Допустим, наш WSGI-сервер слушает "
-"на локальной машине по адресу ``http://127.0.0.1:8000``."
+"адреса, по которому слушает WSGI-сервер. Мы предполагаем, что наш WSGI-"
+"сервер слушает на локальной машине по адресу ``http://127.0.0.1:8000``."
 
 #: ../../project/docs/deploying/nginx.rst:53
 #: 5505f696d5d941cbbb05419e30551136
