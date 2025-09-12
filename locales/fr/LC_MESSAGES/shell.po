@@ -3,23 +3,25 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/shell/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/shell.rst:2 8913da8dd04d4372a938e37a9b631237
 msgid "Working with the Shell"
-msgstr ""
+msgstr "Travailler avec le shell"
 
 #: ../../project/docs/shell.rst:6 af9de4505ffe47a7b84c21e58f875550
 msgid ""
@@ -54,7 +56,7 @@ msgstr ""
 
 #: ../../project/docs/shell.rst:27 f6abe9b3332b4d859f7e68a1a72fd4b4
 msgid "Command Line Interface"
-msgstr ""
+msgstr "Interface en ligne de commande"
 
 #: ../../project/docs/shell.rst:29 9c339da0df374802a535a08e34a29375
 msgid ""
@@ -154,4 +156,3 @@ msgstr ""
 #~ " the :doc:`reqcontext` chapter of the "
 #~ "documentation first."
 #~ msgstr ""
-
