@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2024-11-22 03:55+0000\n"
-"Last-Translator: Benjamin LECHA <benjaminlecha@yahoo.fr>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/api/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/api.rst:2 84591d17c43147579d5eb589f573be7b
@@ -5568,7 +5568,7 @@ msgstr ""
 
 #: ../../project/docs/api.rst:222 0667dd31c6334947b210c808686f6ec1
 msgid "Message Flashing"
-msgstr ""
+msgstr "Les messages flash"
 
 #: b69c87780d8e4c58a0975b531333f68c flask.helpers.flash:1 of
 msgid ""
@@ -6707,7 +6707,7 @@ msgstr ""
 
 #: ../../project/docs/api.rst:334 5e417e0d6d654e4b9fc032ef2cf385a1
 msgid "Signals"
-msgstr ""
+msgstr "Les signaux"
 
 #: ../../project/docs/api.rst:336 afe0199c4f3743279dfedead1fb9b9ea
 msgid ""
@@ -7223,7 +7223,7 @@ msgstr ""
 
 #: ../../project/docs/api.rst:693 a4d65cddfa9646cf9c7f536f4fa40870
 msgid "Command Line Interface"
-msgstr ""
+msgstr "Interface en ligne de commande"
 
 #: 04322693e3d0456eaaef010984054827 flask.cli.FlaskGroup:1 of
 msgid ""
