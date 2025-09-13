@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-09-13 12:06+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/api/fr/>\n"
 "Language: fr\n"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../project/docs/api.rst:12 40a4a4243efc4f9696be423286c7c86d
 msgid "Application Object"
-msgstr ""
+msgstr "L'objet Application"
 
 #: 9adb63f365864c068340387b49815eb3 flask.app.Flask:1 of
 msgid ""
