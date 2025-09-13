@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"patternsjavascript/fr/>\n"
 "Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/patterns/javascript.rst:2
@@ -32,6 +33,11 @@ msgid ""
 "performing a redirect to re-render the template, you can add "
 "`JavaScript`_ that calls |fetch|_ and replaces content on the page."
 msgstr ""
+"Vous pouvez souhaiter que votre page HTML soit dynamique, en mettant à jour "
+"des données sans recharger la page complète. Au lieu de soumettre un "
+"formulaire HTML ``<form>`` et de faire une redirection pour ré-afficher "
+"votre patron, vous pouvez ajouter du `Javascript`_ qui appelle |fetch| pour "
+"remplacer du contenu sur la page."
 
 #: ../../project/docs/patterns/javascript.rst:9
 #: d20cb31264b44330bf9830710503a3fa
@@ -243,4 +249,3 @@ msgid ""
 "the body is not valid JSON, or the ``Content-Type`` header is not set to "
 "``application/json``, a 400 Bad Request error will be raised."
 msgstr ""
-
