@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2025-09-13 12:06+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"deployingmod_wsgi/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:2 cc528bcd6d1b41c9ba22ffd29f578635
@@ -30,7 +33,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/mod_wsgi.rst:8 cffd51f2ce1f4a9296f04188e2b11182
 msgid "Tightly integrated with Apache httpd."
-msgstr ""
+msgstr "Étroitement intégré à Apache httpd."
 
 #: ../../project/docs/deploying/mod_wsgi.rst:9 b9145535e6684647862eef24f5bc00e4
 msgid "Supports Windows directly."
@@ -396,4 +399,3 @@ msgstr ""
 #~ "virtual environment.  Keep in mind that"
 #~ " the path has to be absolute."
 #~ msgstr ""
-
