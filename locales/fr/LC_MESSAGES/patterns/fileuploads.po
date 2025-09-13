@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-09-14 13:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "patternsfileuploads/fr/>\n"
@@ -38,6 +38,8 @@ msgid ""
 "A ``<form>`` tag is marked with ``enctype=multipart/form-data`` and an "
 "``<input type=file>`` is placed in that form."
 msgstr ""
+"On ajoute au tag ``<form>`` l'attribut ``enctype=multipart/form-data`` et "
+"ensuite un tag ``<input type=file>`` est ajouté dans ce formulaire."
 
 #: ../../project/docs/patterns/fileuploads.rst:9
 #: 108bb42831e840f9ab544c9bfb07cca5
