@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"patternssqlite3/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/patterns/sqlite3.rst:2 a74bb7c9574548c3a992b3e1deac9a77
 msgid "Using SQLite 3 with Flask"
-msgstr ""
+msgstr "Utiliser SQLite3 avec Flask"
 
 #: ../../project/docs/patterns/sqlite3.rst:4 2fc662d56cf1462580ba635e287a9cbe
 msgid ""
@@ -27,6 +30,9 @@ msgid ""
 "demand and closing them when the context dies (usually at the end of the "
 "request)."
 msgstr ""
+"Avec Flask, vous pouvez aisément mettre en place la création de connexions à "
+"des bases de données à la demande et leur fermeture lorsque le contexte est "
+"détruit (en général à la fin de la gestion de la requête)."
 
 #: ../../project/docs/patterns/sqlite3.rst:8 0862bfa5aa1142368b1b728597a63d76
 msgid "Here is a simple example of how you can use SQLite 3 with Flask::"
@@ -150,4 +156,3 @@ msgstr ""
 #~ " to the request and not application"
 #~ " context."
 #~ msgstr ""
-
