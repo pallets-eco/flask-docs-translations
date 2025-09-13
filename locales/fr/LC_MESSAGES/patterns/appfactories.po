@@ -3,24 +3,27 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"patternsappfactories/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/patterns/appfactories.rst:2
 #: b292c6e5555a4f4cb14aa42e265b3836
 msgid "Application Factories"
-msgstr ""
+msgstr "Fabriques d'application"
 
 #: ../../project/docs/patterns/appfactories.rst:4
 #: 95870a25bc90438c93f19e344226761a
@@ -32,6 +35,12 @@ msgid ""
 "this object into a function, you can then create multiple instances of "
 "this app later."
 msgstr ""
+"Si vous avez déjà utilisé des packages ou des blueprints dans votre "
+"application (:doc:`/blueprints`), il existe un certain nombre de moyens "
+"d'améliorer encore votre expérience. Un moyen souvent utilisé est de créer "
+"l'application lorsque le blueprnt est importé. Mais si vous déplacez la "
+"création de celle-ci dans une fonction, vous pouvez alors créer de multiples "
+"instances de l'application plus tard."
 
 #: ../../project/docs/patterns/appfactories.rst:10
 #: 075776ffdb364c5cbd1962c1b1db6bb1
@@ -204,4 +213,3 @@ msgstr ""
 #~ "``'dev'`` as the argument. See "
 #~ ":doc:`/cli` for more detail."
 #~ msgstr ""
-
