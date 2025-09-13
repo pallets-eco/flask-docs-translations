@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/blueprints/"
+"fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/blueprints.rst:2 7249f5d18f46429d8391ce8921fa56b4
 msgid "Modular Applications with Blueprints"
-msgstr ""
+msgstr "Applications modulaires avec les blueprints"
 
 #: ../../project/docs/blueprints.rst:8 151babcff6a346adbca581718c82a5b3
 msgid ""
@@ -381,4 +384,3 @@ msgstr ""
 #: ../../project/docs/blueprints.rst:315 a7afd8ba8dae45a89769cc92b7f62836
 msgid "See :doc:`/errorhandling`."
 msgstr ""
-
