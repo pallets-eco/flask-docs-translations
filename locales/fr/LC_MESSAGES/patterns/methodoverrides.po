@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-01 02:27-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"patternsmethodoverrides/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../patterns/methodoverrides.rst:2
@@ -27,6 +30,10 @@ msgid ""
 "methods (such as PATCH). In that case it's possible to \"proxy\" HTTP "
 "methods through another HTTP method in total violation of the protocol."
 msgstr ""
+"Certains proxies HTTP ne supportent pas les méthodes HTTP arbitraires ou de "
+"nouvelles méthodes HTTP (comme PATCH). Dans ce cas, il est possible de "
+"\"substituer\" ces méthodes HTTP en se basant sur une autre méthode HTTP en "
+"totale violation du protocole."
 
 #: ../../patterns/methodoverrides.rst:8
 msgid ""
