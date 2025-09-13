@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-01 02:27-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"patternsmongoengine/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../patterns/mongoengine.rst:2
 msgid "MongoDB with MongoEngine"
-msgstr ""
+msgstr "Utiliser MongoDB avec MongoEngine"
 
 #: ../../patterns/mongoengine.rst:4
 msgid ""
@@ -27,6 +30,10 @@ msgid ""
 "relational SQL databases. This pattern shows how to use `MongoEngine`_, a"
 " document mapper library, to integrate with MongoDB."
 msgstr ""
+"L'utilisation d'une base de données orientée documents comme MongoDB est une "
+"alternative courante aux bases de données relationnelles. Cet exemple montre "
+"comment utiliser `MongoEngine`_, une bibliothèque d'indexation de documents, "
+"s'intégrant avec MongoDB."
 
 #: ../../patterns/mongoengine.rst:8
 msgid "A running MongoDB server and `Flask-MongoEngine`_ are required. ::"
