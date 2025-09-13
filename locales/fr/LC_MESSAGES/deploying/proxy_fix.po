@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-09-14 13:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "deployingproxy_fix/fr/>\n"
@@ -40,6 +40,9 @@ msgid ""
 "now coming from the HTTP server to the local address, rather than from "
 "the remote address to the external server address."
 msgstr ""
+"Du point de vue du serveur WSGI et de l'application Flask, les requêtes "
+"proviennent désormais du serveur HTTP local, plutôt que de l'adresse "
+"distante."
 
 #: ../../project/docs/deploying/proxy_fix.rst:12
 #: e04c66af9f8346418bdad9bf0c2aac9e
