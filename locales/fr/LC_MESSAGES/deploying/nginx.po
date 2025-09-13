@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"deployingnginx/fr/>\n"
 "Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/deploying/nginx.rst:2 c47160e4440b4ed3bb9f2c952dec5c16
@@ -31,6 +32,12 @@ msgid ""
 "This \"reverse proxy\" can handle incoming requests, TLS, and other "
 "security and performance concerns better than the WSGI server."
 msgstr ""
+"`nginx`_ est un serveur HTTP rapide et dédié à la production. Lorsque votre "
+"application est servie via un des serveurs WSGI listés dans :doc:`index`, il "
+"est souvent nécessaire et meilleur de positionner un serveur HTTP dédié en "
+"amont. Ce \"reverse proxy\" prend en charge les requêtes entrantes, le TLS, "
+"ainsi que les autres notions de sécurité et de performance bien mieux que le "
+"serveur WSGI."
 
 #: ../../project/docs/deploying/nginx.rst:10 c6676b7703714eeb86fb3d89f55ebc09
 msgid ""
@@ -96,4 +103,3 @@ msgstr ""
 #: ../../project/docs/deploying/nginx.rst:69 fea04017ddc94d7e86b54cb3c535b86c
 msgid "Then :doc:`proxy_fix` so that your application uses these headers."
 msgstr ""
-
