@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-01 02:27-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"patternssinglepageapplications/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../patterns/singlepageapplications.rst:2
 msgid "Single-Page Applications"
-msgstr ""
+msgstr "Applications monopage"
 
 #: ../../patterns/singlepageapplications.rst:4
 msgid ""
@@ -28,7 +31,11 @@ msgid ""
 " your project. You will also need to create a catch-all endpoint that "
 "routes all requests to your SPA."
 msgstr ""
+"Flask peut être utiliser pour servir des applications monopages (SPA) en "
+"positionnant les fichiers statiques produits par le frontend dans un "
+"répertoire inclus dans votre projet. Vous aurez également besoin de créer un "
+"endpoint spécifique permettant de capturer toutes les requêtes de votre SPA."
 
 #: ../../patterns/singlepageapplications.rst:9
 msgid "The following example demonstrates how to serve an SPA along with an API::"
-msgstr ""
+msgstr "L'exemple qui suit montre comment servir une SPA adossée à une API ::"
