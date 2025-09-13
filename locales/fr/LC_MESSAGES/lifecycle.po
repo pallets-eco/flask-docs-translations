@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-09-14 13:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/lifecycle/"
 "fr/>\n"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../project/docs/lifecycle.rst:11 d93da0c51bdc4e1499ea4f8ac675ddb0
 msgid "Application Setup"
-msgstr ""
+msgstr "Configuration de l'application"
 
 #: ../../project/docs/lifecycle.rst:13 2c00c00638f042d7b97692a856e38945
 msgid ""
