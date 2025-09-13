@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"patternspackages/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/patterns/packages.rst:2 8d719a6b7bbe4dd090579d8510c50499
@@ -24,6 +27,7 @@ msgstr ""
 #: ../../project/docs/patterns/packages.rst:4 c989feeacfe04b29a10d4d994f0bbfdd
 msgid "Imagine a simple flask application structure that looks like this::"
 msgstr ""
+"Imaginons une structure simple d'application Flask qui ressemble à ça ::"
 
 #: ../../project/docs/patterns/packages.rst:16 db34dc2f2b0a4c4c8e96c90998d8b616
 msgid ""
@@ -184,4 +188,3 @@ msgstr ""
 #~ ":doc:`/becomingbig` section for some "
 #~ "inspiration how to deal with that."
 #~ msgstr ""
-
