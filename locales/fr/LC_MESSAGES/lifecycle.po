@@ -3,25 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/lifecycle/"
+"fr/>\n"
 "Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/lifecycle.rst:2 4b2fc6acca574677a03994df2cc8ea03
 msgid "Application Structure and Lifecycle"
-msgstr ""
+msgstr "Cycle de vie et structure d'une application"
 
 #: ../../project/docs/lifecycle.rst:4 740fbabddf314e6d95469ace7f0b3a36
 msgid ""
@@ -31,6 +32,12 @@ msgid ""
 "handling requests will help you know what's possible in Flask and how to "
 "structure your application."
 msgstr ""
+"Flask rend l'écriture d'une application web vraiment simple. Mais il existe "
+"un bon nombre de composants dans une application et pour chacune des "
+"requêtes qu'elle prend en charge. Savoir ce qui se passe lorsque "
+"l'application démarre, répond, et prend en charge les requêtes aide à mieux "
+"comprendre ce qu'il est possible de faire avec Flask et à comment structurer "
+"votre application."
 
 #: ../../project/docs/lifecycle.rst:11 d93da0c51bdc4e1499ea4f8ac675ddb0
 msgid "Application Setup"
@@ -380,4 +387,3 @@ msgid ""
 "building URLs, or handling JSON data. See the rest of this documentation,"
 " as well as the :doc:`api` to explore further."
 msgstr ""
-
