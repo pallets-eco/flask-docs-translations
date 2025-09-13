@@ -3,26 +3,27 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"deployingproxy_fix/fr/>\n"
 "Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/deploying/proxy_fix.rst:2
 #: db65e33d048044fd91926a1b6ab8eee8
 msgid "Tell Flask it is Behind a Proxy"
-msgstr ""
+msgstr "Signaler à Flask qu'il est situé derrière un proxy"
 
 #: ../../project/docs/deploying/proxy_fix.rst:4
 #: 9f185dc3288a4a4ca62d1494aa45615d
@@ -66,4 +67,3 @@ msgid ""
 "the correct number of proxies that set each header. It can be a security "
 "issue if you get this configuration wrong."
 msgstr ""
-
