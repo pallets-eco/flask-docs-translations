@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-09-13 12:03+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "deployinguwsgi/fr/>\n"
@@ -32,7 +32,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/uwsgi.rst:7 b49e8c692c0646678765f64941b5c734
 msgid "It can be very performant due to being a compiled program."
-msgstr ""
+msgstr "Il est très performant du fait qu'il s'agit d'un programme compilé."
 
 #: ../../project/docs/deploying/uwsgi.rst:8 8159dec0f167402883e6147c0436687a
 msgid ""
