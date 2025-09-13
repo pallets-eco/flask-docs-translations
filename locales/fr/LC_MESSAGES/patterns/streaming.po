@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"patternsstreaming/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/patterns/streaming.rst:2 7139e6f60f6a4f85a5a53bf34e77c867
 msgid "Streaming Contents"
-msgstr ""
+msgstr "Renvoyer un flux de données"
 
 #: ../../project/docs/patterns/streaming.rst:4 7b7dbcaef2a5431498002a6aaa36d04d
 msgid ""
@@ -28,10 +31,15 @@ msgid ""
 "on the fly though, how do you send that back to the client without the "
 "roundtrip to the filesystem?"
 msgstr ""
+"Il peut arriver que vous souhaitiez renvoyer au client une grosse masse "
+"d'information, plus que ce que la mémoire du serveur peut supporter. Cela "
+"peut aussi se produire lorsque vous générez les données à la volée, comment "
+"envoyer celles-ci au client sans passer par un fichier ?"
 
 #: ../../project/docs/patterns/streaming.rst:9 55730560ec2c4efa9773f1cc04905c08
 msgid "The answer is by using generators and direct responses."
 msgstr ""
+"Cela peut se faire en utilisant des générateurs et des réponses directes."
 
 #: ../../project/docs/patterns/streaming.rst:12
 #: b518f1e5940b4d78ab36390348fc75c1
@@ -158,4 +166,3 @@ msgstr ""
 #~ "function you would get a "
 #~ ":class:`RuntimeError` at that point."
 #~ msgstr ""
-
