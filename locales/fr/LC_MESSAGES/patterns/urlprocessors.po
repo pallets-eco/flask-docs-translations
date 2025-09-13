@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-01 02:27-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"patternsurlprocessors/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../patterns/urlprocessors.rst:2
 msgid "Using URL Processors"
-msgstr ""
+msgstr "Utilisation des processeurs d'URL"
 
 #: ../../patterns/urlprocessors.rst:6
 msgid ""
@@ -29,6 +32,12 @@ msgid ""
 "bunch of URLs that have the language code in it but you don't want to "
 "have to handle it in every single function yourself."
 msgstr ""
+"Flask 0.7 a introduit le concept de processeurs d'URL. L'idée étant que vous "
+"pouvez avoir un grand nombre de ressources ayant une partie de l'URL commune "
+"et que vous ne souhaitez pas forcément la fournir à chaque fois. Par "
+"exemple, vous pouvez avoir un grand nombre d'URLs dans lesquelles le code de "
+"la langue à utiliser est fourni et vous ne souhaitez pas avoir à le gérer "
+"dans chaque fonction."
 
 #: ../../patterns/urlprocessors.rst:12
 msgid ""
