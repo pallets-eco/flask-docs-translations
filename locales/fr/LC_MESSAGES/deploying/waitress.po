@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-09-14 13:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "deployingwaitress/fr/>\n"
@@ -30,7 +30,7 @@ msgstr "`Waitress`_ est un serveur WSGI en pur Python."
 
 #: ../../project/docs/deploying/waitress.rst:6 e49aa95b72a64deea887e8f07f2108df
 msgid "It is easy to configure."
-msgstr ""
+msgstr "Il est simple à configurer."
 
 #: ../../project/docs/deploying/waitress.rst:7 81fe9eebe66b4430b84793be77364c5e
 msgid "It supports Windows directly."
