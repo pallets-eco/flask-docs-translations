@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-01 02:27-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"patternswtforms/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../patterns/wtforms.rst:2
 msgid "Form Validation with WTForms"
-msgstr ""
+msgstr "Validation des formulaires avec WTForms"
 
 #: ../../patterns/wtforms.rst:4
 msgid ""
@@ -29,6 +32,11 @@ msgid ""
 "`WTForms`_ which we will handle here.  If you find yourself in the "
 "situation of having many forms, you might want to give it a try."
 msgstr ""
+"Lorsque vous devez travailler avec des données de formulaire transmises par "
+"un navigateur, le code peut rapidement devenir difficile à lire. Il existe "
+"des bibliothèques tierces spécialisées pour faciliter leur gestion. L'une "
+"d'entre elles s'appelle `WTForms`_ et nous allons l'utiliser ici. Si vous "
+"avec beaucoup de formulaires, vous pourriez souhaiter l'essayer."
 
 #: ../../patterns/wtforms.rst:10
 msgid ""
