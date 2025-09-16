@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-09-17 16:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "patternsjquery/fr/>\n"
@@ -26,7 +26,7 @@ msgstr "AJAX avec JQuery"
 
 #: ../../project/docs/patterns/jquery.rst:6 75a1da8781204c64bb01585e5c290397
 msgid "Obsolete, see :doc:`/patterns/javascript` instead."
-msgstr ""
+msgstr "Obsolète, voir plutôt  :doc:`/patterns/javascript`."
 
 #~ msgid ""
 #~ "`jQuery`_ is a small JavaScript library"
