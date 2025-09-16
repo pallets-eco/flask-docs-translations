@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-09-17 16:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "contributing/fr/>\n"
@@ -25,8 +25,9 @@ msgid "How to contribute to Flask"
 msgstr "Comment contribuer à Flask"
 
 #: ../../project/CONTRIBUTING.rst:4 1af1c616faa548ceaf1cd9808c1e9447
+#, fuzzy
 msgid "Thank you for considering contributing to Flask!"
-msgstr ""
+msgstr "Merci de vouloir contribuer à Flask !"
 
 #: ../../project/CONTRIBUTING.rst:8 1186a1fd10d642d89e492d0cfebffcb6
 msgid "Support questions"
