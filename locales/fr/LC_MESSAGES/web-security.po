@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-14 13:02+0000\n"
+"PO-Revision-Date: 2025-09-17 16:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "web-security/fr/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../project/docs/web-security.rst:2 055ed17b7a344a6984cdb05677e97c8d
 msgid "Security Considerations"
-msgstr ""
+msgstr "Réflexions sur la sécurité"
 
 #: ../../project/docs/web-security.rst:4 f8d8b40f1b934814bf86d6c1ff4f4e18
 msgid ""
