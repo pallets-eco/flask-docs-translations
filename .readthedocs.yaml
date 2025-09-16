@@ -14,5 +14,6 @@ python:
     - method: pip
       path: project
 sphinx:
+  configuration: project/docs/conf.py
   builder: dirhtml
   fail_on_warning: false
