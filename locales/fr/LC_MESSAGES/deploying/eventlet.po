@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-09-25 06:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "deployingeventlet/fr/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/eventlet.rst:2 67efcbb0eb064867a709d5abb5c13a2a
 msgid "eventlet"
-msgstr ""
+msgstr "eventlet"
 
 #: ../../project/docs/deploying/eventlet.rst:4 658c04618eea4e0b99d47f10142a3890
 msgid ""
