@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-14 13:02+0000\n"
+"PO-Revision-Date: 2025-09-25 06:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "patternsfileuploads/fr/>\n"
@@ -31,6 +31,9 @@ msgid ""
 "Ah yes, the good old problem of file uploads.  The basic idea of file "
 "uploads is actually quite simple.  It basically works like this:"
 msgstr ""
+"Ah oui, le bon vieux problème du téléversement de fichiers. L'idée de base "
+"du téléversement de fichier est plutôt simple en vérité. Ça fonctionne ainsi "
+":"
 
 #: ../../project/docs/patterns/fileuploads.rst:7
 #: 4463c2784888429ab84c1d2cbf3068f3
