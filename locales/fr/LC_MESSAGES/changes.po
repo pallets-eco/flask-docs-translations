@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-09-25 06:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/changes/fr/>"
 "\n"
@@ -26,7 +26,7 @@ msgstr "Changements"
 
 #: ../../project/CHANGES.rst:2 9d08fe7d70ce4f8ba8c7bdec202ac16f
 msgid "Version 3.1.0"
-msgstr ""
+msgstr "Version 3.1.0"
 
 #: ../../project/CHANGES.rst:4 69aa06e9859144d984e24e75967ccf35
 msgid "Released 2024-11-13"
