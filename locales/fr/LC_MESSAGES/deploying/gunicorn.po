@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:03+0000\n"
+"PO-Revision-Date: 2025-09-25 06:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "deployinggunicorn/fr/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/gunicorn.rst:2 f91403a8d1304d1ebb3c738f5fe29e38
 msgid "Gunicorn"
-msgstr ""
+msgstr "Gunicorn"
 
 #: ../../project/docs/deploying/gunicorn.rst:4 ec0194ff703c4daaa2d4ac6652951968
 msgid ""
