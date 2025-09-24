@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-09-25 06:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "deployingnginx/fr/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/nginx.rst:2 c47160e4440b4ed3bb9f2c952dec5c16
 msgid "nginx"
-msgstr ""
+msgstr "nginx"
 
 #: ../../project/docs/deploying/nginx.rst:4 b0dc224951b84e76a09a15f070e1c8b5
 msgid ""
