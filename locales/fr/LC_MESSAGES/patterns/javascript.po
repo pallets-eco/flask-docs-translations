@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-09-25 06:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "patternsjavascript/fr/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: ../../project/docs/patterns/javascript.rst:2
 #: 6858f3d5a6ca44f1ade19d07479f5bda
 msgid "JavaScript, ``fetch``, and JSON"
-msgstr ""
+msgstr "JavaScript, ``fetch``, et JSON"
 
 #: ../../project/docs/patterns/javascript.rst:4
 #: b6a78f01e7c0424591726119876901f9
