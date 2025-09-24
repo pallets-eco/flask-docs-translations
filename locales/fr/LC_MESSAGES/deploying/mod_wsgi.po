@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-15 16:01+0000\n"
+"PO-Revision-Date: 2025-09-25 06:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "deployingmod_wsgi/fr/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/mod_wsgi.rst:2 cc528bcd6d1b41c9ba22ffd29f578635
 msgid "mod_wsgi"
-msgstr ""
+msgstr "mod_wsgi"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:4 8ef54472be9a4e9bb5db0768aaedda88
 msgid ""
