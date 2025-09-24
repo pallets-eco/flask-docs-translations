@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-01 02:27-0500\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-09-25 06:02+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "patternssubclassing/fr/>\n"
@@ -26,7 +26,7 @@ msgstr "Utiliser une sous-classe de Flask"
 
 #: ../../patterns/subclassing.rst:4
 msgid "The :class:`~flask.Flask` class is designed for subclassing."
-msgstr ""
+msgstr "La classe :class:`~flask.Flask`est prévue pour être sous-classée."
 
 #: ../../patterns/subclassing.rst:6
 msgid ""
