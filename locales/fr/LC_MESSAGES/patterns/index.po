@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-01 02:27-0500\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
+"PO-Revision-Date: 2025-10-29 09:44+0000\n"
 "Last-Translator: Mindiell <weblate@mytipy.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "patternsindex/fr/>\n"
@@ -17,11 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../patterns/index.rst:2
-#, fuzzy
 msgid "Patterns for Flask"
 msgstr "Les motifs dans Flask"
 
