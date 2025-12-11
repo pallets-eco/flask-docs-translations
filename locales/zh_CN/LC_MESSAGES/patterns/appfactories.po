@@ -3,24 +3,27 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh_CN <withlihui@gmail.com>\n"
+"PO-Revision-Date: 2025-12-11 06:05+0000\n"
+"Last-Translator: ChenMoFeiJin <1424865872@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/flask/patternsappfactories/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.15-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/patterns/appfactories.rst:2
 #: b292c6e5555a4f4cb14aa42e265b3836
 msgid "Application Factories"
-msgstr ""
+msgstr "应用工厂"
 
 #: ../../project/docs/patterns/appfactories.rst:4
 #: 95870a25bc90438c93f19e344226761a
@@ -32,6 +35,10 @@ msgid ""
 "this object into a function, you can then create multiple instances of "
 "this app later."
 msgstr ""
+"如果你已经在应用中使用了包和蓝图（:doc:`/blueprints`），那么还有一些很不错的"
+"方法可以进一步改进使用体验。一个常见的模式是在蓝图被导入时创建应用对象。但如"
+"果你将该对象的创建过程移动到一个函数中，那么稍后你就可以创建该应用的多个实例"
+"。"
 
 #: ../../project/docs/patterns/appfactories.rst:10
 #: 075776ffdb364c5cbd1962c1b1db6bb1
@@ -207,4 +214,3 @@ msgstr ""
 #~ "``'dev'`` as the argument. See "
 #~ ":doc:`/cli` for more detail."
 #~ msgstr ""
-
