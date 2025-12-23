@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2024-12-09 14:00+0000\n"
+"PO-Revision-Date: 2025-12-24 13:00+0000\n"
 "Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/flask/changes/es/"
-">\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/flask/changes/"
+"es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/changes.rst:2 6c654bc202cc487ba62c2cb0ffa3b2e5
@@ -30,7 +30,7 @@ msgstr "Versión 3.1.0"
 
 #: ../../project/CHANGES.rst:4 69aa06e9859144d984e24e75967ccf35
 msgid "Released 2024-11-13"
-msgstr "Publicado el 13-11-2024"
+msgstr "Lanzado el 13-11-2024"
 
 #: ../../project/CHANGES.rst:6 348b349e18c14d1d9df992d45c50753e
 msgid "Drop support for Python 3.8. :pr:`5623`"
@@ -81,8 +81,8 @@ msgid ""
 "Add support for the ``Partitioned`` cookie attribute (CHIPS), with the "
 "``SESSION_COOKIE_PARTITIONED`` config. :issue:`5472`"
 msgstr ""
-"Añadir soporte para el atributo ``Partitioned`` cookie (CHIPS), con la "
-"configuración ``SESSION_COOKIE_PARTITIONED``. :issue:`5472`?"
+"Añadir compatibilidad con el atributo de cookie «Partitioned» (CHIPS), con "
+"la configuración «SESSION_COOKIE_PARTITIONED». :issue:`5472`"
 
 #: ../../project/CHANGES.rst:20 39a370bdc5ed412a8b23a2b9b2c76bfa
 msgid ""
@@ -128,9 +128,8 @@ msgid "Version 3.0.3"
 msgstr "Versión 3.0.3"
 
 #: ../../project/CHANGES.rst:36 acc07933c53d41bb9343410d5b8fc4b4
-#, fuzzy
 msgid "Released 2024-04-07"
-msgstr "Lanzamiento 2020-04-03"
+msgstr "Lanzado el 07-04-2024"
 
 #: ../../project/CHANGES.rst:38 46cb80bf905c4116986f714ed0b682b8
 msgid ""
@@ -138,52 +137,58 @@ msgid ""
 "access it at import time so the developer has time to change the default."
 " :issue:`5448`"
 msgstr ""
+"Es posible que el valor predeterminado «hashlib.sha1» no esté disponible en "
+"las compilaciones FIPS. No acceda a él en el momento de la importación para "
+"que el desarrollador tenga tiempo de cambiar el valor predeterminado. "
+":issue:`5448`"
 
 #: ../../project/CHANGES.rst:41 8f8ac1b45cb44d8a820466b3e1b225f4
 msgid ""
 "Don't initialize the ``cli`` attribute in the sansio scaffold, but rather"
 " in the ``Flask`` concrete class. :pr:`5270`"
 msgstr ""
+"No inicialices el atributo «cli» en el scaffold sansio, sino en la clase "
+"concreta «Flask». :pr:`5270`"
 
 #: ../../project/CHANGES.rst:46 e5c788844db84e0f911b54977c2fa17f
-#, fuzzy
 msgid "Version 3.0.2"
-msgstr "Versión 2.0.2"
+msgstr "Versión 3.0.2"
 
 #: ../../project/CHANGES.rst:48 a83de2cddbb34f56ae6f1e5a4ef0aae0
-#, fuzzy
 msgid "Released 2024-02-03"
-msgstr "Lanzamiento 2020-02-10"
+msgstr "Lanzado el 03-02-2024"
 
 #: ../../project/CHANGES.rst:50 1f6ece646eb3477c8640725f1e97ec33
 msgid "Correct type for ``jinja_loader`` property. :issue:`5388`"
-msgstr ""
+msgstr "Tipo correcto para la propiedad «jinja_loader». :issue:`5388`"
 
 #: ../../project/CHANGES.rst:51 bd725dece31049baa7aa51ebda93ea14
 msgid ""
 "Fix error with ``--extra-files`` and ``--exclude-patterns`` CLI options. "
 ":issue:`5391`"
 msgstr ""
+"Corregir error con las opciones CLI «--extra-files» y «--exclude-patterns». "
+":issue:`5391`"
 
 #: ../../project/CHANGES.rst:56 53ba04cc88bb4bc8a9f383da4da9222f
-#, fuzzy
 msgid "Version 3.0.1"
-msgstr "Versión 2.0.1"
+msgstr "Versión 3.0.1"
 
 #: ../../project/CHANGES.rst:58 0354487cb66e46b1be21e1a3ba69db1b
-#, fuzzy
 msgid "Released 2024-01-18"
-msgstr "Publicado el 2022-02-14"
+msgstr "Lanzado el 18-01-2024"
 
 #: ../../project/CHANGES.rst:60 34590af619554210861bf7ea57acfdb6
 msgid "Correct type for ``path`` argument to ``send_file``. :issue:`5336`"
-msgstr ""
+msgstr "Tipo correcto para el argumento «path» de «send_file». :issue:`5336`"
 
 #: ../../project/CHANGES.rst:61 69b7ea3c5f624519b601af8678f42576
 msgid ""
 "Fix a typo in an error message for the ``flask run --key`` option. "
 ":pr:`5344`"
 msgstr ""
+"Corregir un error tipográfico en un mensaje de error para la opción «flask "
+"run --key». :pr:`5344`"
 
 #: ../../project/CHANGES.rst:62 f682b8008f2a4c0fb8317eb51a54eec6
 msgid ""
@@ -191,83 +196,89 @@ msgid ""
 "``object_hook``. This allows other JSON providers that don't implement "
 "that. :issue:`5381`"
 msgstr ""
+"Los datos de sesión no se etiquetan sin depender del «json.loads» «"
+"object_hook» integrado. Esto permite que otros proveedores JSON que no lo "
+"implementan. :issue:`5381`"
 
 #: ../../project/CHANGES.rst:65 e30e01518d6241b3b97ddc3e1d3cdaf5
 msgid "Address more type findings when using mypy strict mode. :pr:`5383`"
 msgstr ""
+"Abordar más hallazgos de tipos al utilizar el modo estricto de mypy. "
+":pr:`5383`"
 
 #: ../../project/CHANGES.rst:69 61ed1e2426a84a19826c2fddc583a485
-#, fuzzy
 msgid "Version 3.0.0"
-msgstr "Versión 2.0.0"
+msgstr "Versión 3.0.0"
 
 #: ../../project/CHANGES.rst:71 9549cdc9992841e083146645a91a36a7
-#, fuzzy
 msgid "Released 2023-09-30"
-msgstr "Publicado el 2021-05-21"
+msgstr "Lanzado el 21-05-2021"
 
 #: ../../project/CHANGES.rst:73 b8d46ee81c1a4a1a80df0f8d5032f888
-#, fuzzy
 msgid "Remove previously deprecated code. :pr:`5223`"
-msgstr "Elimina el código previamente obsoleto. :pr:`4337`"
+msgstr "Eliminar código obsoleto. :pr:`5223`"
 
 #: ../../project/CHANGES.rst:74 8f1520a488ff42d488d5e10a95c42989
 msgid ""
 "Deprecate the ``__version__`` attribute. Use feature detection, or "
 "``importlib.metadata.version(\"flask\")``, instead. :issue:`5230`"
 msgstr ""
+"Descontinuar el atributo «__version__». Utilizar la detección de "
+"características o «importlib.metadata.version(«flask»)» en su lugar. "
+":issue:`5230`"
 
 #: ../../project/CHANGES.rst:76 b236d7eafada4164bc747525a78bdbce
 msgid ""
 "Restructure the code such that the Flask (app) and Blueprint classes have"
 " Sans-IO bases. :pr:`5127`"
 msgstr ""
+"Reestructurar el código de modo que las clases Flask (app) y Blueprint "
+"tengan bases Sans-IO. :pr:`5127`"
 
 #: ../../project/CHANGES.rst:78 01dafe29218b4597b3cb92d54a7fc473
 msgid "Allow self as an argument to url_for. :pr:`5264`"
-msgstr ""
+msgstr "Permite utilizar «self» como argumento para url_for. :pr:`5264`"
 
 #: ../../project/CHANGES.rst:79 ef0546531e52436ab8674fe0ea2ed982
 msgid "Require Werkzeug >= 3.0.0."
-msgstr ""
+msgstr "Requiere Werkzeug >= 3.0.0."
 
 #: ../../project/CHANGES.rst:83 0fa6d5aa7ede4777b1a3e7f72d6ad65a
-#, fuzzy
 msgid "Version 2.3.3"
-msgstr "Versión 2.1.2"
+msgstr "Versión 2.3.3"
 
 #: ../../project/CHANGES.rst:85 92af0c995e7343d7a18008ae182e9607
-#, fuzzy
 msgid "Released 2023-08-21"
-msgstr "Publicado el 2021-05-21"
+msgstr "Lanzado el 21-08-2023"
 
 #: ../../project/CHANGES.rst:87 3755f1bf15324e8ba807cc399eaf32fd
 msgid "Python 3.12 compatibility."
-msgstr ""
+msgstr "Compatibilidad con Python 3.12."
 
 #: ../../project/CHANGES.rst:88 9deedf4b51874f279f0b261dd4b56d81
 msgid "Require Werkzeug >= 2.3.7."
-msgstr ""
+msgstr "Requiere herramienta >= 2.3.7."
 
 #: ../../project/CHANGES.rst:89 87da7e88b62c49a9b7d8bf86e7c3eb44
 msgid "Use ``flit_core`` instead of ``setuptools`` as build backend."
 msgstr ""
+"Utiliza «flit_core» en lugar de «setuptools» como backend de compilación."
 
 #: ../../project/CHANGES.rst:90 ff68fbcb380f48e1bcdff5bef76dca66
 msgid ""
 "Refactor how an app's root and instance paths are determined. "
 ":issue:`5160`"
 msgstr ""
+"Refactorizar cómo se determinan las rutas raíz y de instancia de una "
+"aplicación. :issue:`5160`"
 
 #: ../../project/CHANGES.rst:94 6034229b415f46e2bbfdb7019e95664f
-#, fuzzy
 msgid "Version 2.3.2"
-msgstr "Versión 2.1.2"
+msgstr "Versión 2.3.2"
 
 #: ../../project/CHANGES.rst:96 9f1db289dd744252b1d49b2c8e4fc493
-#, fuzzy
 msgid "Released 2023-05-01"
-msgstr "Publicado el 2021-05-21"
+msgstr "Lanzado el 01-05-2023"
 
 #: ../../project/CHANGES.rst:98 ../../project/CHANGES.rst:170
 #: 2b579d22676844dd900725d697e3a6c2 689db365f4fb4ef2ace058e3115c05a8
@@ -275,51 +286,48 @@ msgid ""
 "Set ``Vary: Cookie`` header when the session is accessed, modified, or "
 "refreshed."
 msgstr ""
+"Establecer el encabezado «Vary: Cookie» cuando se acceda, modifique o "
+"actualice la sesión."
 
 #: ../../project/CHANGES.rst:99 e956ac8188a34b04ab317adc4fadcb53
 msgid "Update Werkzeug requirement to >=2.3.3 to apply recent bug fixes."
 msgstr ""
+"Actualiza los requisitos de Werkzeug a >=2.3.3 para aplicar las correcciones "
+"de errores recientes."
 
 #: ../../project/CHANGES.rst:103 d138ee0c7d7346ad8b95dc3b1b65bd9d
-#, fuzzy
 msgid "Version 2.3.1"
-msgstr "Versión 2.1.1"
+msgstr "Versión 2.3.1"
 
 #: ../../project/CHANGES.rst:105 ../../project/CHANGES.rst:113
 #: ../../project/CHANGES.rst:176 08ac8745153a49dc95f9d388e8e31e5d
 #: 862e47e11648463c9d162ec25c9883ac 99bd41e60f9e43a99206e2ac4006c2d6
-#, fuzzy
 msgid "Released 2023-04-25"
-msgstr "Lanzamiento 2022-04-28"
+msgstr "Lanzado el 25-04-2023"
 
 #: ../../project/CHANGES.rst:107 fff3f9c03c0d4e9d8796b6369589db57
 msgid "Restore deprecated ``from flask import Markup``. :issue:`5084`"
-msgstr ""
+msgstr "Restaurar «from flask import Markup», ahora en desuso. :issue:`5084`"
 
 #: ../../project/CHANGES.rst:111 63899672917b4f66a30195805bfb5b1b
-#, fuzzy
 msgid "Version 2.3.0"
-msgstr "Versión 2.2.0"
+msgstr "Versión 2.3.0"
 
 #: ../../project/CHANGES.rst:115 249c3cf299d54e8c8e667a43f0abc381
-#, fuzzy
 msgid "Drop support for Python 3.7. :pr:`5072`"
-msgstr "Deja de ser compatible con Python 3.6. :pr:`4335`"
+msgstr "Se deja de ofrecer soporte para Python 3.7. :pr:`5072`"
 
 #: ../../project/CHANGES.rst:116 6d9ac89970094396a646e7ed8e920101
-#, fuzzy
 msgid ""
 "Update minimum requirements to the latest versions: Werkzeug>=2.3.0, "
 "Jinja2>3.1.2, itsdangerous>=2.1.2, click>=8.1.3."
 msgstr ""
-"Aumenta las versiones mínimas de las dependencias a las últimas versiones"
-" estables: Werkzeug >= 0.14, Jinja >= 2.10, itsdangerous >= 0.24, Click "
-">= 5.1. :issue:`2586`"
+"Actualiza los requisitos mínimos a las últimas versiones: Werkzeug>=2.3.0, "
+"Jinja2>3.1.2, itsdangerous>=2.1.2, click>=8.1.3."
 
 #: ../../project/CHANGES.rst:118 87e6d13eec334b78a729b5cde14b43af
-#, fuzzy
 msgid "Remove previously deprecated code. :pr:`4995`"
-msgstr "Elimina el código previamente obsoleto. :pr:`4337`"
+msgstr "Eliminar código obsoleto. :pr:`4995`"
 
 #: ../../project/CHANGES.rst:120 b6f5542e30db4100b8c77b2423554776
 msgid ""
@@ -327,12 +335,17 @@ msgid ""
 " ``_request_ctx_stack`` objects are removed. ``top`` still exists to give"
 " extensions more time to update, but it will be removed."
 msgstr ""
+"Se han eliminado los métodos «push» y «pop» de los objetos obsoletos "
+"«_app_ctx_stack» y «_request_ctx_stack». «top» sigue existiendo para dar más "
+"tiempo a las extensiones para actualizarse, pero se eliminará."
 
 #: ../../project/CHANGES.rst:123 0f743fc2a9ca4c61b4a44cec17e6705b
 msgid ""
 "The ``FLASK_ENV`` environment variable, ``ENV`` config key, and "
 "``app.env`` property are removed."
 msgstr ""
+"Se eliminan la variable de entorno ``FLASK_ENV``, la clave de configuración "
+"``ENV`` y la propiedad ``app.env``."
 
 #: ../../project/CHANGES.rst:125 9887bd61fec74ab6bb79ebc1769a4f48
 msgid ""
@@ -340,21 +353,25 @@ msgid ""
 "``use_x_sendfile``, ``propagate_exceptions``, and "
 "``templates_auto_reload`` properties on ``app`` are removed."
 msgstr ""
+"Se eliminan las propiedades «session_cookie_name», «send_file_max_age_default"
+"», «use_x_sendfile», «propagate_exceptions» y «templates_auto_reload» de «app"
+"»."
 
 #: ../../project/CHANGES.rst:128 34542957767540f0a76ab9047acb0367
 msgid ""
 "The ``JSON_AS_ASCII``, ``JSON_SORT_KEYS``, ``JSONIFY_MIMETYPE``, and "
 "``JSONIFY_PRETTYPRINT_REGULAR`` config keys are removed."
 msgstr ""
+"Se han eliminado las claves de configuración «JSON_AS_ASCII», «JSON_SORT_KEYS"
+"», «JSONIFY_MIMETYPE» y «JSONIFY_PRETTYPRINT_REGULAR»."
 
 #: ../../project/CHANGES.rst:130 e306b6c1e0c642f18550d78403c63407
-#, fuzzy
 msgid ""
 "The ``app.before_first_request`` and ``bp.before_app_first_request`` "
 "decorators are removed."
 msgstr ""
-"Corrige la anotación de tipo para los decoradores ``before_request`` y "
-"``before_app_request``. :issue:`4104`"
+"Se eliminan los decoradores «app.before_first_request» y «"
+"bp.before_app_first_request»."
 
 #: ../../project/CHANGES.rst:132 9e0a43e0bab14ab891b5cebdd00b9ff6
 msgid ""
@@ -362,33 +379,41 @@ msgid ""
 "and the corresponding ``json.JSONEncoder`` and ``JSONDecoder`` classes, "
 "are removed."
 msgstr ""
+"Se eliminan los atributos «json_encoder» y «json_decoder» de la aplicación y "
+"el blueprint, así como las clases correspondientes «json.JSONEncoder» y «"
+"JSONDecoder»."
 
 #: ../../project/CHANGES.rst:134 2517766a84964da4b7a02c34eda098d7
 msgid "The ``json.htmlsafe_dumps`` and ``htmlsafe_dump`` functions are removed."
-msgstr ""
+msgstr "Se han eliminado las funciones «json.htmlsafe_dumps» y «htmlsafe_dump»."
 
 #: ../../project/CHANGES.rst:135 97a6483c97334b85ad5faca7c4b125d6
 msgid ""
 "Calling setup methods on blueprints after registration is an error "
 "instead of a warning. :pr:`4997`"
 msgstr ""
+"Llamar a métodos de configuración en blueprints después del registro es un "
+"error en lugar de una advertencia. :pr:`4997`"
 
 #: ../../project/CHANGES.rst:138 a137a691a9064e0e9b751c036628e3ad
 msgid ""
 "Importing ``escape`` and ``Markup`` from ``flask`` is deprecated. Import "
 "them directly from ``markupsafe`` instead. :pr:`4996`"
 msgstr ""
+"La importación de ``escape`` y ``Markup`` desde ``flask`` está obsoleta. "
+"Importa directamente desde ``markupsafe`` en su lugar. :pr:`4996`"
 
 #: ../../project/CHANGES.rst:140 6fd22488aa514aaa88b7d729d58a3c22
-#, fuzzy
 msgid "The ``app.got_first_request`` property is deprecated. :pr:`4997`"
-msgstr "La propiedad :attr:`Request.json` ya no está obsoleta. :issue:`1421`"
+msgstr "La propiedad ``app.got_first_request`` está obsoleta. :pr:`4997`"
 
 #: ../../project/CHANGES.rst:141 e4b6bf978a944f7487561715602197c3
 msgid ""
 "The ``locked_cached_property`` decorator is deprecated. Use a lock inside"
 " the decorated function if locking is needed. :issue:`4993`"
 msgstr ""
+"El decorador ``locked_cached_property`` está obsoleto. Utiliza un bloqueo "
+"dentro de la función decorada si es necesario bloquear. :issue:`4993`"
 
 #: ../../project/CHANGES.rst:143 b434822429844fa5857ab9fde546094e
 msgid ""
@@ -396,10 +421,12 @@ msgid ""
 "dependency. The ``signals_available`` attribute is deprecated. "
 ":issue:`5056`"
 msgstr ""
+"Las señales siempre están disponibles. ``blinker>=1.6.2`` es una dependencia "
+"necesaria. El atributo``signals_available`` está obsoleto. :issue:`5056`"
 
 #: ../../project/CHANGES.rst:145 95fb45f2c60c4d1480aa97e7b429a58d
 msgid "Signals support ``async`` subscriber functions. :pr:`5049`"
-msgstr ""
+msgstr "Las señales admiten funciones suscriptoras ``async``. :pr:`5049`"
 
 #: ../../project/CHANGES.rst:146 6c6bf12c70214b708e645115204c015d
 msgid ""
@@ -471,46 +498,40 @@ msgid "Update for compatibility with Werkzeug 2.3."
 msgstr ""
 
 #: ../../project/CHANGES.rst:182 21b6007962fb42b6808d347823b48ee7
-#, fuzzy
 msgid "Version 2.2.3"
-msgstr "Versión 2.2.0"
+msgstr "Versión 2.2.3"
 
 #: ../../project/CHANGES.rst:184 7af4b558c11b4ee98d938b9efbbab8fc
-#, fuzzy
 msgid "Released 2023-02-15"
-msgstr "Publicado el 2022-02-14"
+msgstr "Lanzado el 15-02-2023"
 
 #: ../../project/CHANGES.rst:186 ccbd741fc1824910941e6d769ccd4871
 msgid ""
 "Autoescape is enabled by default for ``.svg`` template files. "
 ":issue:`4831`"
 msgstr ""
+"Autoescape está habilitado de forma predeterminada para los archivos de "
+"plantilla ``.svg``. :issue:`4831`"
 
 #: ../../project/CHANGES.rst:187 a83c176eaeb94ecdb034a867b8ec09dd
-#, fuzzy
 msgid ""
 "Fix the type of ``template_folder`` to accept ``pathlib.Path``. "
 ":issue:`4892`"
 msgstr ""
-"Corrige el tipo de ``static_folder`` para aceptar ``pathlib.Path``. "
-":issue:`4150`"
+"Corregir el tipo de ``template_folder`` para que acepte ``pathlib.Path``. "
+":issue:`4892`"
 
 #: ../../project/CHANGES.rst:188 205695e5dcea421aaf1d135e711761d4
-#, fuzzy
 msgid "Add ``--debug`` option to the ``flask run`` command. :issue:`4777`"
-msgstr ""
-"Las opciones ``--cert`` y ``--key`` en ``flask run`` pueden darse en "
-"cualquier orden. :issue:`4459`"
+msgstr "Añadir la opción ``--debug`` al comando ``flask run``. :issue:`4777`"
 
 #: ../../project/CHANGES.rst:192 fed51d5c154f47fcab8a5c5a30bca83c
-#, fuzzy
 msgid "Version 2.2.2"
-msgstr "Versión 2.2.0"
+msgstr "Versión 2.2.2"
 
 #: ../../project/CHANGES.rst:194 b694fe49ba584b23ad1528c346217848
-#, fuzzy
 msgid "Released 2022-08-08"
-msgstr "Lanzamiento 2022-04-28"
+msgstr "Lanzado el 08-08-2022"
 
 #: ../../project/CHANGES.rst:196 038f7f6d979e4f96a222ec75925849a6
 msgid ""
@@ -518,42 +539,45 @@ msgid ""
 "the new faster router, header parsing, and the development server. "
 ":pr:`4754`"
 msgstr ""
+"Actualizar la dependencia de Werkzeug a >= 2.2.2. Esto incluye correcciones "
+"relacionadas con el nuevo enrutador más rápido, el análisis de encabezados y "
+"el servidor de desarrollo. :pr:`4754`"
 
 #: ../../project/CHANGES.rst:199 3a72867231cf426d8a442e2cea742394
 msgid ""
 "Fix the default value for ``app.env`` to be ``\"production\"``. This "
 "attribute remains deprecated. :issue:`4740`"
 msgstr ""
+"Establecer el valor predeterminado de ``app.env`` en ``\"production\"``. "
+"Este atributo sigue estando obsoleto. :issue:`4740`"
 
 #: ../../project/CHANGES.rst:204 18f343e6a840463e9c3f4ad3bb6fad40
-#, fuzzy
 msgid "Version 2.2.1"
-msgstr "Versión 2.2.0"
+msgstr "Versión 2.2.1"
 
 #: ../../project/CHANGES.rst:206 8f5043da0c724670baf19f3ee90330aa
-#, fuzzy
 msgid "Released 2022-08-03"
-msgstr "Lanzamiento 2020-04-03"
+msgstr "Lanzado el 03-08-2022"
 
 #: ../../project/CHANGES.rst:208 b0da6bbb16fd46c5b9c2f712edf7c4a2
 msgid ""
 "Setting or accessing ``json_encoder`` or ``json_decoder`` raises a "
 "deprecation warning. :issue:`4732`"
 msgstr ""
+"Al configurar o acceder a ``json_encoder`` o ``json_decoder`` se muestra una "
+"advertencia de obsolescencia. :issue:`4732`"
 
 #: ../../project/CHANGES.rst:213 50ad09545a5b49758a7df6f671e50275
 msgid "Version 2.2.0"
 msgstr "Versión 2.2.0"
 
 #: ../../project/CHANGES.rst:215 b84d25e3210a4adf937c7901b09e5152
-#, fuzzy
 msgid "Released 2022-08-01"
-msgstr "Publicado el 2022-02-14"
+msgstr "Lanzado el 01-08-2022"
 
 #: ../../project/CHANGES.rst:217 90c864f230814e7d8f746ff9cec73e92
-#, fuzzy
 msgid "Remove previously deprecated code. :pr:`4667`"
-msgstr "Elimina el código previamente obsoleto. :pr:`4337`"
+msgstr "Eliminar código obsoleto. :pr:`4667`"
 
 #: ../../project/CHANGES.rst:219 c8678570bc3b4b23bc1801c65398c403
 msgid ""
@@ -575,9 +599,8 @@ msgstr ""
 "``AppContext.g``."
 
 #: ../../project/CHANGES.rst:227 1dbc384f6aa44ad0ad9fe22c3cd3730e
-#, fuzzy
 msgid "Update Werkzeug dependency to >= 2.2."
-msgstr "Actualizar la dependencia de Click a >= 8.0. :pr:`4008`"
+msgstr "Actualizar la dependencia de Werkzeug a >= 2.2."
 
 #: ../../project/CHANGES.rst:228 47af96e5e3524f848583e53ba1217c50
 msgid ""
@@ -607,6 +630,10 @@ msgid ""
 "Debug mode should be controlled directly using the ``--debug`` option or "
 "``app.run(debug=True)``. :issue:`4714`"
 msgstr ""
+"La variable de entorno ``FLASK_ENV`` y el atributo ``app.env`` están "
+"obsoletos, eliminando la distinción entre el modo de desarrollo y el modo de "
+"depuración. El modo de depuración debe controlarse directamente usando la "
+"opción ``--debug`` o ``app.run(debug=True)``. :issue:`4714`"
 
 #: ../../project/CHANGES.rst:241 3d6b6f62ac2340f49a451af01311d89c
 msgid ""
@@ -616,6 +643,11 @@ msgid ""
 "``templates_auto_reload``. Use the relevant config keys instead. "
 ":issue:`4716`"
 msgstr ""
+"Algunos atributos que actuaban como proxy de claves de configuración en "
+"``app`` están obsoletos: ``session_cookie_name``, "
+"``send_file_max_age_default``, ``use_x_sendfile``, ``propagate_exceptions`` "
+"y ``templates_auto_reload``. En su lugar, utiliza las claves de "
+"configuración correspondientes. :issue:`4716`"
 
 #: ../../project/CHANGES.rst:246 6b5e272cdc6b4a8389f14e909f90d3fb
 msgid ""
@@ -650,6 +682,10 @@ msgid ""
 "``app.json.response``, other functions in ``flask.json`` will call "
 "corresponding functions in ``app.json``. :pr:`4692`"
 msgstr ""
+"``flask.json`` es una instancia de ``JSONProvider``. Se puede establecer un "
+"proveedor diferente para usar otra librería JSON. ``flask.jsonify`` llamará "
+"a ``app.json.response``; las demás funciones en ``flask.json`` llamarán a "
+"las funciones correspondientes en ``app.json``. :pr:`4692`"
 
 #: ../../project/CHANGES.rst:260 068061b9567a470d8ca1cf259846d2ca
 msgid ""
@@ -657,6 +693,10 @@ msgid ""
 "provider. ``JSON_AS_ASCII``, ``JSON_SORT_KEYS``, ``JSONIFY_MIMETYPE``, "
 "and ``JSONIFY_PRETTYPRINT_REGULAR`` are deprecated. :pr:`4692`"
 msgstr ""
+"La configuración de JSON se ha trasladado a atributos del proveedor "
+"predeterminado ``app.json``. ``JSON_AS_ASCII``, ``JSON_SORT_KEYS``, "
+"``JSONIFY_MIMETYPE`` y ``JSONIFY_PRETTYPRINT_REGULAR`` están obsoletos. "
+":pr:`4692`"
 
 #: ../../project/CHANGES.rst:264 10ec34d76e784e23b1db3232685855e9
 msgid ""
@@ -665,12 +705,19 @@ msgid ""
 "``JSONDecoder`` classes, are deprecated. JSON behavior can now be "
 "overridden using the ``app.json`` provider interface. :pr:`4692`"
 msgstr ""
+"Establecer clases personalizadas ``json_encoder`` y ``json_decoder`` en la "
+"aplicación o en un blueprint, así como las clases correspondientes "
+"``json.JSONEncoder`` y ``JSONDecoder``, está obsoleto. El comportamiento de "
+"JSON ahora puede sobrescribirse usando la interfaz del proveedor "
+"``app.json``. :pr:`4692`"
 
 #: ../../project/CHANGES.rst:268 c41d0c929e4e4ffea00a90e040143709
 msgid ""
 "``json.htmlsafe_dumps`` and ``json.htmlsafe_dump`` are deprecated, the "
 "function is built-in to Jinja now. :pr:`4692`"
 msgstr ""
+"``json.htmlsafe_dumps`` y ``json.htmlsafe_dump`` están obsoletos; la función "
+"ahora está integrada en Jinja. :pr:`4692`"
 
 #: ../../project/CHANGES.rst:270 477d445f83224b2db4723b451a6c6fa7
 msgid ""
@@ -720,14 +767,12 @@ msgstr ""
 " en una CLI personalizada. :issue:`3263`"
 
 #: ../../project/CHANGES.rst:283 b7cc4a2ea61d49a3b772faa88690d262
-#, fuzzy
 msgid ""
 "Add ``--app`` and ``--debug`` options to the ``flask`` CLI, instead of "
 "requiring that they are set through environment variables. :issue:`2836`"
 msgstr ""
-"Añadir las opciones ``--app``, ``--env`` y ``--debug`` a la CLI de "
-"``flask``, en lugar de requerir que se establezcan a través de variables "
-"de entorno. :issue:`2836`"
+"Se añaden las opciones ``--app`` y ``--debug`` al CLI de ``flask``, en lugar "
+"de requerir que se establezcan mediante variables de entorno. :issue:`2836`"
 
 #: ../../project/CHANGES.rst:286 b95f4bc21bf44e0b97e3986dba48946e
 msgid ""
@@ -823,6 +868,8 @@ msgid ""
 "When type checking, allow ``TypedDict`` to be returned from view "
 "functions. :pr:`4695`"
 msgstr ""
+"Al realizar comprobaciones de tipos, se permite que las funciones de vista "
+"devuelvan ``TypedDict``. :pr:`4695`"
 
 #: ../../project/CHANGES.rst:315 e740656e376f4bcbaafe7b17c515536a
 msgid ""
@@ -832,15 +879,20 @@ msgid ""
 "but continues serving. Remove the internal ``DispatchingApp`` middleware "
 "used by the previous implementation. :issue:`4715`"
 msgstr ""
+"Se eliminan las opciones ``--eager-loading/--lazy-loading`` del comando "
+"``flask run``. La aplicación siempre se carga de forma eager la primera vez "
+"y luego de forma lazy en el reloader. El reloader siempre imprime los "
+"errores de inmediato pero continúa sirviendo. Se elimina el middleware "
+"interno ``DispatchingApp`` usado por la implementación anterior. "
+":issue:`4715`"
 
 #: ../../project/CHANGES.rst:324 8e97b4f3b2384812bff7c5d1d13fed1a
 msgid "Version 2.1.3"
 msgstr "Versión 2.1.3"
 
 #: ../../project/CHANGES.rst:326 aff912ed18aa48f0b55b8d23235e2949
-#, fuzzy
 msgid "Released 2022-07-13"
-msgstr "Publicado el 2022-02-14"
+msgstr "Lanzado el 13-07-2022"
 
 #: ../../project/CHANGES.rst:328 9a446cc2b6624a66b9a09897f8a8e63e
 msgid ""
@@ -857,13 +909,12 @@ msgstr ""
 ":issue:`4600`"
 
 #: ../../project/CHANGES.rst:331 e2443e31bdcd417e9c4a3e1625e48d8a
-#, fuzzy
 msgid ""
 "``instance_path`` for namespace packages uses the path closest to the "
 "imported submodule. :issue:`4610`"
 msgstr ""
-"``instance_path`` para los paquetes del espacio de nombres utiliza la "
-"ruta más cercana al submódulo importado. :issue:`4600`"
+"``instance_path`` para paquetes de espacio de nombres utiliza la ruta más "
+"cercana al submódulo importado. :issue:`4610`"
 
 #: ../../project/CHANGES.rst:333 c8af38722ded43d8bc3c1bda6e671911
 #, fuzzy
@@ -1373,7 +1424,7 @@ msgstr "Versión 2.0.0"
 
 #: ../../project/CHANGES.rst:505 94b120a6858f4585983031accc9bc699
 msgid "Released 2021-05-11"
-msgstr "Released 2021-05-11"
+msgstr "Lanzado el 11-05-2021"
 
 #: ../../project/CHANGES.rst:507 e7dd6ed808c349a599c64910b69f0343
 msgid "Drop support for Python 2 and 3.5."
@@ -3881,13 +3932,13 @@ msgstr ""
 "importar el código de la vista antes de tiempo."
 
 #: ../../project/CHANGES.rst:1320 913f14e430f44c878c48be9fa911d950
-#, fuzzy
 msgid ""
 "Added the ability to register callbacks that are only triggered once at "
 "the beginning of the first request with ``Flask.before_first_request``."
 msgstr ""
-"Se ha añadido la posibilidad de registrar callbacks que sólo se activan "
-"una vez al principio de la primera petición. (``before_first_request``)"
+"Se ha añadido la posibilidad de registrar devoluciones de llamada que solo "
+"se activan una vez al comienzo de la primera solicitud con «"
+"Flask.before_first_request»."
 
 #: ../../project/CHANGES.rst:1323 5d27e47a8c554e93bfb8dbff7a04d186
 msgid ""
@@ -4143,9 +4194,8 @@ msgstr ""
 "excepción."
 
 #: ../../project/CHANGES.rst:1412 18e877a1a3cc45bc92c49fd3252cdd26
-#, fuzzy
 msgid "Implemented ``has_request_context``."
-msgstr "Implementado :func:`flask.has_request_context`"
+msgstr "Se ha implementado «has_request_context»."
 
 #: ../../project/CHANGES.rst:1413 e33e40132e6d4a2da80370e54311fb9f
 #, fuzzy
@@ -4159,9 +4209,8 @@ msgstr ""
 "funcionalidad."
 
 #: ../../project/CHANGES.rst:1416 2d657721fc2a478191476145754eb119
-#, fuzzy
 msgid "Added ``safe_join``."
-msgstr "Añadido :func:`flask.safe_join`"
+msgstr "Se ha añadido ``safe_join``."
 
 #: ../../project/CHANGES.rst:1417 6438d49e80c54f1180ddff69a15eb0c3
 msgid ""
@@ -4534,14 +4583,14 @@ msgid "Released 2010-05-28"
 msgstr "Lanzamiento 2010-05-28"
 
 #: ../../project/CHANGES.rst:1547 2d06b12136284dc09654e7db4974869a
-#, fuzzy
 msgid "Fixed a error reporting bug with ``Config.from_envvar``."
-msgstr "Corregido un error de información con :meth:`flask.Config.from_envvar`"
+msgstr ""
+"Se ha corregido un error de notificación de errores con "
+"``Config.from_envvar``."
 
 #: ../../project/CHANGES.rst:1548 2b8ff20886194679b143960db5918961
-#, fuzzy
 msgid "Removed some unused code."
-msgstr "Se ha eliminado parte del código no utilizado de flask"
+msgstr "Se ha eliminado parte del código que no se utilizaba."
 
 #: ../../project/CHANGES.rst:1549 f4cc3184fd8c44ab9fb64327e1d13fdb
 msgid ""
@@ -4642,9 +4691,8 @@ msgid "Added external URL support."
 msgstr "Añadido soporte de URLs externas."
 
 #: ../../project/CHANGES.rst:1584 72596fcda2d04e548ed13d67a9403996
-#, fuzzy
 msgid "Added support for ``send_file``."
-msgstr "Añadido soporte para :func:`~flask.send_file`"
+msgstr "Se ha añadido compatibilidad con «send_file»."
 
 #: ../../project/CHANGES.rst:1585 8fbc2f328cc543e08c8cfe75d13539fb
 msgid ""
