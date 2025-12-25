@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-24 13:00+0000\n"
+"PO-Revision-Date: 2025-12-26 04:00+0000\n"
 "Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/flask/changes/"
 "es/>\n"
@@ -433,28 +433,38 @@ msgid ""
 "Remove uses of locks that could cause requests to block each other very "
 "briefly. :issue:`4993`"
 msgstr ""
+"Se eliminan usos de bloqueos que podían provocar que las solicitudes se "
+"bloquearan entre sí durante breves instantes. :issue:`4993`"
 
 #: ../../project/CHANGES.rst:148 b5a03b1a532a4425a187eb23ac8de319
 msgid ""
 "Use modern packaging metadata with ``pyproject.toml`` instead of "
 "``setup.cfg``. :pr:`4947`"
 msgstr ""
+"Se utilizan metadatos de empaquetado modernos con ``pyproject.toml`` en "
+"lugar de ``setup.cfg``. :pr:`4947`"
 
 #: ../../project/CHANGES.rst:150 7cb2017969aa4714aa706b3a53df45bd
 msgid "Ensure subdomains are applied with nested blueprints. :issue:`4834`"
 msgstr ""
+"Se garantiza que los subdominios se apliquen correctamente con blueprints "
+"anidados. :issue:`4834`"
 
 #: ../../project/CHANGES.rst:151 8cca6d6bfcb2456f9ef2aa1e3638548b
 msgid ""
 "``config.from_file`` can use ``text=False`` to indicate that the parser "
 "wants a binary file instead. :issue:`4989`"
 msgstr ""
+"``config.from_file`` puede usar ``text=False`` para indicar que el "
+"analizador espera un archivo binario en su lugar. :issue:`4989`"
 
 #: ../../project/CHANGES.rst:153 679b4a3802154dc8ac584858af75528c
 msgid ""
 "If a blueprint is created with an empty name it raises a ``ValueError``. "
 ":issue:`5010`"
 msgstr ""
+"Si un blueprint se crea con un nombre vacío, se lanza un ``ValueError``. "
+":issue:`5010`"
 
 #: ../../project/CHANGES.rst:155 9e0c8d3bdb0b44b1869c434ff541a215
 msgid ""
@@ -463,39 +473,43 @@ msgid ""
 "exact match rather than a subdomain match. Warnings about ``localhost`` "
 "and IP addresses are also removed. :issue:`5051`"
 msgstr ""
+"``SESSION_COOKIE_DOMAIN`` no recurre a ``SERVER_NAME``. El valor "
+"predeterminado es no establecer el dominio, lo que los navegadores modernos "
+"interpretan como una coincidencia exacta en lugar de una coincidencia de "
+"subdominio. También se eliminan las advertencias sobre ``localhost`` y "
+"direcciones IP. :issue:`5051`"
 
 #: ../../project/CHANGES.rst:159 3b10bb87e8c1402eacd17ebf2ddf1472
 msgid ""
 "The ``routes`` command shows each rule's ``subdomain`` or ``host`` when "
 "domain matching is in use. :issue:`5004`"
 msgstr ""
+"El comando ``routes`` muestra el ``subdomain`` o ``host`` de cada regla "
+"cuando se utiliza la coincidencia por dominio. :issue:`5004`"
 
 #: ../../project/CHANGES.rst:161 2e7dc1a20d294f8a85b87f87caab2d3a
 msgid "Use postponed evaluation of annotations. :pr:`5071`"
-msgstr ""
+msgstr "Se utiliza la evaluación diferida de las anotaciones. :pr:`5071`"
 
 #: ../../project/CHANGES.rst:165 2599b25ec6804c3280e95f1eb5812c05
-#, fuzzy
 msgid "Version 2.2.5"
-msgstr "Versión 2.2.0"
+msgstr "Versión 2.2.5"
 
 #: ../../project/CHANGES.rst:167 f590a2757c494f25bce4926e29cde572
-#, fuzzy
 msgid "Released 2023-05-02"
-msgstr "Publicado el 2021-05-21"
+msgstr "Lanzado el 02-05-2023"
 
 #: ../../project/CHANGES.rst:169 fe620d0a99724508816641399fedb515
 msgid "Update for compatibility with Werkzeug 2.3.3."
-msgstr ""
+msgstr "Actualización para compatibilidad con Werkzeug 2.3.3."
 
 #: ../../project/CHANGES.rst:174 3545d78cf208478e9f49d1b083cd895b
-#, fuzzy
 msgid "Version 2.2.4"
-msgstr "Versión 2.2.0"
+msgstr "Versión 2.2.4"
 
 #: ../../project/CHANGES.rst:178 91b79d724abd444da77ef1dc05db913e
 msgid "Update for compatibility with Werkzeug 2.3."
-msgstr ""
+msgstr "Actualización para compatibilidad con Werkzeug 2.3."
 
 #: ../../project/CHANGES.rst:182 21b6007962fb42b6808d347823b48ee7
 msgid "Version 2.2.3"
@@ -917,14 +931,13 @@ msgstr ""
 "cercana al submódulo importado. :issue:`4610`"
 
 #: ../../project/CHANGES.rst:333 c8af38722ded43d8bc3c1bda6e671911
-#, fuzzy
 msgid ""
 "Clearer error message when ``render_template`` and "
 "``render_template_string`` are used outside an application context. "
 ":pr:`4693`"
 msgstr ""
-"Mensaje de error más claro cuando se utiliza ``after_this_request`` fuera"
-" de un contexto de solicitud. :issue:`4333`"
+"Mensaje de error más claro cuando se usan ``render_template`` y "
+"``render_template_string`` fuera del contexto de una aplicación. :pr:`4693`"
 
 #: ../../project/CHANGES.rst:339 001109b0e1ee40408d37413b0ef1b416
 msgid "Version 2.1.2"
@@ -1072,13 +1085,12 @@ msgid "``copy_current_request_context`` can decorate async functions. :pr:`4303`
 msgstr "``copy_current_request_context`` puede decorar funciones async. :pr:`4303`"
 
 #: ../../project/CHANGES.rst:393 43f1b0463e4f48a0b1c44e061df71288
-#, fuzzy
 msgid ""
 "The CLI uses ``importlib.metadata`` instead of ``pkg_resources`` to load "
 "command entry points. :issue:`4419`"
 msgstr ""
-"La CLI utiliza ``importlib.metadata`` en lugar de ``setuptools`` para "
-"cargar puntos de entrada de comandos. :issue:`4419`"
+"El CLI utiliza ``importlib.metadata`` en lugar de ``pkg_resources`` para "
+"cargar los puntos de entrada de los comandos. :issue:`4419`"
 
 #: ../../project/CHANGES.rst:395 ae8760cfcca846a3960fec14aae77363
 msgid ""
@@ -1478,24 +1490,23 @@ msgstr ""
 " al buscar comandos. :issue:`2741`"
 
 #: ../../project/CHANGES.rst:522 298039fb5dc34dc1bd6cf32b51d6a734
-#, fuzzy
 msgid ""
 "Add ``SessionInterface.get_cookie_name`` to allow setting the session "
 "cookie name dynamically. :pr:`3369`"
 msgstr ""
-"Añadir :meth:`sessions.SessionInterface.get_cookie_name` para permitir "
-"establecer el nombre de la cookie de sesión de forma dinámica. :pr:`3369`"
+"Se añade ``SessionInterface.get_cookie_name`` para permitir establecer "
+"dinámicamente el nombre de la cookie de sesión. :pr:`3369`"
 
 #: ../../project/CHANGES.rst:524 43ed78fb3ede48c9a8d2e0f2468823b1
-#, fuzzy
 msgid ""
 "Add ``Config.from_file`` to load config using arbitrary file loaders, "
 "such as ``toml.load`` or ``json.load``. ``Config.from_json`` is "
 "deprecated in favor of this. :pr:`3398`"
 msgstr ""
-"Añade :meth:`Config.from_file` para cargar la configuración utilizando "
-"cargadores de archivos arbitrarios, como ``toml.load`` o ``json.load``. "
-":meth:`Config.from_json` está obsoleto en favor de esto. :pr:`3398`"
+"Se añade ``Config.from_file`` para cargar la configuración usando cargadores "
+"de archivos arbitrarios, como ``toml.load`` o ``json.load``. "
+"``Config.from_json`` queda obsoleto en favor de esta nueva función. "
+":pr:`3398`"
 
 #: ../../project/CHANGES.rst:527 c8fa8c5f257f4c7094827b521bb5683c
 msgid ""
@@ -1508,15 +1519,14 @@ msgstr ""
 " salga con el rastreo inmediatamente. :issue:`3431`"
 
 #: ../../project/CHANGES.rst:530 cffb4717e9ae42dc9da01b2ecd70f9d3
-#, fuzzy
 msgid ""
 "``send_file`` raises a ``ValueError`` when passed an ``io`` object in "
 "text mode. Previously, it would respond with 200 OK and an empty file. "
 ":issue:`3358`"
 msgstr ""
-":func:`send_file` genera un :exc:`ValueError` cuando se le pasa un objeto"
-" :mod:`io` en modo texto. Anteriormente, respondía con 200 OK y un "
-"archivo vacío. :issue:`3358`"
+"``send_file`` genera un ``ValueError`` cuando se le pasa un objeto ``io`` en "
+"modo texto. Anteriormente, respondía con 200 OK y un archivo vacío. "
+":issue:`3358`"
 
 #: ../../project/CHANGES.rst:533 6b1581678ed948f4b71e0320e49a62a1
 msgid ""
@@ -1811,16 +1821,14 @@ msgstr ""
 "errores sea más consistente. :pr:`3266`"
 
 #: ../../project/CHANGES.rst:643 38ecdc334dfb430bbb12e032dd16604f
-#, fuzzy
 msgid ""
 "``Flask.finalize_request`` is called for all unhandled exceptions even if"
 " there is no ``500`` error handler."
 msgstr ""
-":meth:`Flask.finalize_request` es llamado para todas las excepciones no "
-"manejadas incluso si no hay un manejador de errores ``500``."
+"``Flask.finalize_request`` se llama para todas las excepciones no "
+"controladas, incluso si no existe un manejador de errores ``500``."
 
 #: ../../project/CHANGES.rst:646 59e0237ff33f46ea98d7c490ac3b40d5
-#, fuzzy
 msgid ""
 "``Flask.logger`` takes the same name as ``Flask.name`` (the value passed "
 "as ``Flask(import_name)``. This reverts 1.0's behavior of always logging "
@@ -1828,23 +1836,21 @@ msgid ""
 "process. A warning will be shown if old configuration is detected that "
 "needs to be moved. :issue:`2866`"
 msgstr ""
-":attr:`Flask.logger` toma el mismo nombre que :attr:`Flask.name` (el "
-"valor pasado como ``Flask(import_name)``. Esto revierte el comportamiento"
-" de la versión 1.0 de registrar siempre en ``\"flask.app\"``, con el fin "
-"de soportar múltiples aplicaciones en el mismo proceso. Se mostrará una "
-"advertencia si se detecta una configuración antigua que debe ser movida. "
-":issue:`2866`"
+"``Flask.logger`` toma el mismo nombre que ``Flask.name`` (el valor pasado "
+"como ``Flask(import_name)``). Esto revierte el comportamiento de la versión "
+"1.0 de siempre registrar en ``\"flask.app\"``, para permitir soportar "
+"múltiples aplicaciones en el mismo proceso. Se mostrará una advertencia si "
+"se detecta una configuración antigua que necesita ser movida. :issue:`2866`"
 
 #: ../../project/CHANGES.rst:651 5e96201a827a48fdb32689b66413ca13
-#, fuzzy
 msgid ""
 "``RequestContext.copy`` includes the current session object in the "
 "request context copy. This prevents ``session`` pointing to an out-of-"
 "date object. :issue:`2935`"
 msgstr ""
-":meth:`flask.RequestContext.copy` incluye el objeto de sesión actual en "
-"la copia del contexto de petición. Esto evita que ``sesión`` apunte a un "
-"objeto obsoleto. :issue:`2935`"
+"``RequestContext.copy`` incluye el objeto de sesión actual en la copia del "
+"contexto de la solicitud. Esto evita que ``session`` apunte a un objeto "
+"desactualizado. :issue:`2935`"
 
 #: ../../project/CHANGES.rst:654 4f136aefd0f24b1194f31295cc2635dd
 msgid ""
@@ -1857,49 +1863,42 @@ msgstr ""
 " HTTP 500 como anteriormente. :pr:`2994`"
 
 #: ../../project/CHANGES.rst:657 ae6c22b3910547849a9b057973c9e6e4
-#, fuzzy
 msgid ""
 "``send_file`` supports ``PathLike`` objects as described in :pep:`519`, "
 "to support ``pathlib`` in Python 3. :pr:`3059`"
 msgstr ""
-":func:`send_file` soporta objetos :class:`~os.PathLike` como se describe "
-"en PEP 0519, para soportar :mod:`pathlib` en Python 3. :pr:`3059`"
+"``send_file`` admite objetos ``PathLike`` como se describe en :pep:`519`, "
+"para soportar ``pathlib`` en Python 3. :pr:`3059`"
 
 #: ../../project/CHANGES.rst:659 de25702218a743bc90fb1e95236aab9e
-#, fuzzy
 msgid "``send_file`` supports ``BytesIO`` partial content. :issue:`2957`"
-msgstr ""
-":func:`send_file` soporta :class:`~io.BytesIO` contenido parcial. "
-":issue:`2957`"
+msgstr "``send_file`` admite contenido parcial de ``BytesIO``. :issue:`2957`"
 
 #: ../../project/CHANGES.rst:661 ce1bee7508aa45f4bbc100a44dceb8e5
-#, fuzzy
 msgid ""
 "``open_resource`` accepts the \"rt\" file mode. This still does the same "
 "thing as \"r\". :issue:`3163`"
 msgstr ""
-":func:`open_resource` acepta el modo de archivo \"rt\". Esto sigue "
-"haciendo lo mismo que \"r\". :issue:`3163`"
+"``open_resource`` acepta el modo de archivo \"rt\". Esto sigue funcionando "
+"igual que \"r\". :issue:`3163`"
 
 #: ../../project/CHANGES.rst:663 b2654d8a6f4e4592a15e95894b651552
-#, fuzzy
 msgid ""
 "The ``MethodView.methods`` attribute set in a base class is used by "
 "subclasses. :issue:`3138`"
 msgstr ""
-"El atributo :attr:`MethodView.methods` establecido en una clase base es "
-"utilizado por las subclases. :issue:`3138`"
+"El conjunto de atributos ``MethodView.methods`` definido en una clase base "
+"es utilizado por las subclases. :issue:`3138`"
 
 #: ../../project/CHANGES.rst:665 9c4b3e750b004c8dbd63e01855b21ebd
-#, fuzzy
 msgid ""
 "``Flask.jinja_options`` is a ``dict`` instead of an ``ImmutableDict`` to "
 "allow easier configuration. Changes must still be made before creating "
 "the environment. :pr:`3190`"
 msgstr ""
-":attr:`Flask.jinja_options` es un ``dict`` en lugar de un "
-"``ImmutableDict`` para permitir una configuración más fácil. Los cambios "
-"deben realizarse antes de crear el entorno. :pr:`3190`"
+"``Flask.jinja_options`` es un ``dict`` en lugar de un ``ImmutableDict`` para "
+"permitir una configuración más sencilla. Los cambios aún deben realizarse "
+"antes de crear el entorno. :pr:`3190`"
 
 #: ../../project/CHANGES.rst:668 39d46813754e4361bb09bc3a06de1c68
 msgid ""
@@ -1937,15 +1936,13 @@ msgstr ""
 "``static_url_path`` vacía. :pr:`3124`"
 
 #: ../../project/CHANGES.rst:679 607d1741740e4ea7a7f2b10a74ce2083
-#, fuzzy
 msgid "``jsonify`` supports ``dataclass`` objects. :pr:`3195`"
-msgstr ":meth:`jsonify` soporta objetos :class:`dataclasses.dataclass`. :pr:`3195`"
+msgstr "``jsonify`` admite objetos ``dataclass``. :pr:`3195`"
 
 #: ../../project/CHANGES.rst:680 34d5434bce7f4188b1cc8ac38d86c381
-#, fuzzy
 msgid "Allow customizing the ``Flask.url_map_class`` used for routing. :pr:`3069`"
 msgstr ""
-"Permite personalizar el :attr:`Flask.url_map_class` utilizado para el "
+"Se permite personalizar la ``Flask.url_map_class`` utilizada para el "
 "enrutamiento. :pr:`3069`"
 
 #: ../../project/CHANGES.rst:682 822d93788ab843f5aaec9fac3a5827c5
