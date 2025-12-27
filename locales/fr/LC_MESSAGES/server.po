@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
-"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"PO-Revision-Date: 2025-12-28 17:01+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/server/fr/>"
 "\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/server.rst:4 f05ac35ac0ac407d8f6beed1e933bd8d
@@ -124,15 +124,15 @@ msgstr ""
 
 #: ../../project/docs/server.rst:57 a763a1219b4743288bccad60ea394e11
 msgid "``netstat`` (Linux)"
-msgstr ""
+msgstr "``netstat`` (Linux)"
 
 #: ../../project/docs/server.rst:64 681fbe7ec4ce47b1bfa90295c6ac502b
 msgid "``lsof`` (macOS / Linux)"
-msgstr ""
+msgstr "``lsof`` (macOS / Linux)"
 
 #: ../../project/docs/server.rst:71 bf493d7fbd774bc5b0bef0cebf9225aa
 msgid "``netstat`` (Windows)"
-msgstr ""
+msgstr "``netstat`` (Windows)"
 
 #: ../../project/docs/server.rst:78 938669ff0a844074a85f3efdb8ab8fba
 msgid ""
