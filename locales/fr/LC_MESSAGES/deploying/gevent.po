@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-25 06:02+0000\n"
-"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"PO-Revision-Date: 2025-12-28 17:01+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "deployinggevent/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/deploying/gevent.rst:2 3f3c9adb92e849a497d2f4779a6f9a20
@@ -57,7 +57,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/gevent.rst:25 285a1d676b5347268c17d4a20a4a63a4
 msgid "Installing"
-msgstr ""
+msgstr "Installation"
 
 #: ../../project/docs/deploying/gevent.rst:27 9066dbf798984e28bf193c4aff2f8526
 msgid ""
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../project/docs/deploying/gevent.rst:43 f16a7b3c6010462993f48b8ee9ed89f2
 msgid "Running"
-msgstr ""
+msgstr "Execution"
 
 #: ../../project/docs/deploying/gevent.rst:45 3e94b84ed4514967abf8aa400f252d3b
 msgid ""
