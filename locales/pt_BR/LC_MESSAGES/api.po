@@ -8,24 +8,29 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-12-28 17:00+0000\n"
+"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"flask/api/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: ../../project/docs/api.rst:2
 #: 84591d17c43147579d5eb589f573be7b
 msgid "API"
-msgstr ""
+msgstr "API"
 
 #: ../../project/docs/api.rst:6
 #: 012de3a87b8242bfb8c79703927d41b5
 msgid "This part of the documentation covers all the interfaces of Flask. For parts where Flask depends on external libraries, we document the most important right here and provide links to the canonical documentation."
 msgstr ""
+"Esta parte da documentação abrange todas as interfaces do Flask. Quanto às "
+"partes em que o Flask depende de bibliotecas externas, documentamos aqui as "
+"mais importantes e fornecemos links para suas documentações oficiais."
 
 #: ../../project/docs/api.rst:12
 #: 40a4a4243efc4f9696be423286c7c86d
@@ -5981,7 +5986,7 @@ msgstr ""
 #: ../../project/docs/api.rst:334
 #: 5e417e0d6d654e4b9fc032ef2cf385a1
 msgid "Signals"
-msgstr ""
+msgstr "Sinais"
 
 #: ../../project/docs/api.rst:336
 #: afe0199c4f3743279dfedead1fb9b9ea
@@ -6437,7 +6442,7 @@ msgstr ""
 #: ../../project/docs/api.rst:693
 #: a4d65cddfa9646cf9c7f536f4fa40870
 msgid "Command Line Interface"
-msgstr ""
+msgstr "Interface de Linha de Comando"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/cli.py:docstring of flask.cli.FlaskGroup:1
 #: 04322693e3d0456eaaef010984054827
