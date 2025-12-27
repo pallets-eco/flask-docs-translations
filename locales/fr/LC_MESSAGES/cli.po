@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-13 12:02+0000\n"
-"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"PO-Revision-Date: 2025-12-28 17:01+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/cli/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/cli.rst:4 d7c5656610504bd397a73b4cb1231778
@@ -441,7 +441,7 @@ msgstr ""
 
 #: ../../project/docs/cli.rst:445 af7c4278519d4fdbb1c94a365723804e
 msgid "Plugins"
-msgstr ""
+msgstr "Extensions"
 
 #: ../../project/docs/cli.rst:447 27eeb44f486a48d8b17f93f7718f2c7d
 msgid ""
