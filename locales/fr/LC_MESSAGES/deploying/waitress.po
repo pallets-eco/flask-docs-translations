@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-25 06:02+0000\n"
-"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"PO-Revision-Date: 2025-12-28 17:01+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "deployingwaitress/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/deploying/waitress.rst:2 e1465630b06e4a4b839c9c8a34df02cb
@@ -65,7 +65,7 @@ msgstr ""
 #: ../../project/docs/deploying/waitress.rst:22
 #: dd80cc059f46417280d0b9fe1bb2db5b
 msgid "Installing"
-msgstr ""
+msgstr "Installation"
 
 #: ../../project/docs/deploying/waitress.rst:24
 #: 3a769c6da38649eb834071f6310162ef
@@ -75,7 +75,7 @@ msgstr ""
 #: ../../project/docs/deploying/waitress.rst:37
 #: 4c2b8bb9fd23420c8eac099fbe8318c3
 msgid "Running"
-msgstr ""
+msgstr "Execution"
 
 #: ../../project/docs/deploying/waitress.rst:39
 #: 6ca7f9fa5e804f80b9f8920921f7f68a
