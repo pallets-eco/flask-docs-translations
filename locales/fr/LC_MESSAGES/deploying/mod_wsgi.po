@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-25 06:02+0000\n"
-"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"PO-Revision-Date: 2025-12-28 17:00+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "deployingmod_wsgi/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:2 cc528bcd6d1b41c9ba22ffd29f578635
@@ -61,7 +61,7 @@ msgstr ""
 #: ../../project/docs/deploying/mod_wsgi.rst:24
 #: 5e5ec2311cb34746bd6353539a3cdd1b
 msgid "Installing"
-msgstr ""
+msgstr "Installation"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:26
 #: 9b19440d7251413e9d6102df71eba2c1
@@ -79,7 +79,7 @@ msgstr ""
 #: ../../project/docs/deploying/mod_wsgi.rst:43
 #: 7538d89d2bdc42a8b7a342f58e1bda0b
 msgid "Running"
-msgstr ""
+msgstr "Execution"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:45
 #: d2483f40c226449b99e15cf54edd095b
