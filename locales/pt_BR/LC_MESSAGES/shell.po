@@ -8,19 +8,21 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-12-28 17:00+0000\n"
+"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"flask/shell/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: ../../project/docs/shell.rst:2
 #: 8913da8dd04d4372a938e37a9b631237
 msgid "Working with the Shell"
-msgstr ""
+msgstr "Trabalhando com o Shell"
 
 #: ../../project/docs/shell.rst:6
 #: af9de4505ffe47a7b84c21e58f875550
@@ -45,7 +47,7 @@ msgstr ""
 #: ../../project/docs/shell.rst:27
 #: f6abe9b3332b4d859f7e68a1a72fd4b4
 msgid "Command Line Interface"
-msgstr ""
+msgstr "Interface de Linha de Comando"
 
 #: ../../project/docs/shell.rst:29
 #: 9c339da0df374802a535a08e34a29375
