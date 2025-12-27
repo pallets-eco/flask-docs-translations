@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-25 06:02+0000\n"
-"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"PO-Revision-Date: 2025-12-28 17:00+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "deployingeventlet/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/deploying/eventlet.rst:2 67efcbb0eb064867a709d5abb5c13a2a
@@ -60,7 +60,7 @@ msgstr ""
 #: ../../project/docs/deploying/eventlet.rst:25
 #: f47d6b1b86954fd7936767ea572c6430
 msgid "Installing"
-msgstr ""
+msgstr "Installation"
 
 #: ../../project/docs/deploying/eventlet.rst:27
 #: fff0a7ef04504451838e722b72162b56
@@ -78,7 +78,7 @@ msgstr ""
 #: ../../project/docs/deploying/eventlet.rst:44
 #: bda6199f6b1d4cf6a9ddb9952e2b5ecb
 msgid "Running"
-msgstr ""
+msgstr "Execution"
 
 #: ../../project/docs/deploying/eventlet.rst:46
 #: 026e7eb7583a40bbb675f6ae5a320852
