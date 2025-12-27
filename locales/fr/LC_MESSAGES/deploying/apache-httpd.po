@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-25 06:02+0000\n"
-"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"PO-Revision-Date: 2025-12-28 17:00+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "deployingapache-httpd/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/deploying/apache-httpd.rst:2
@@ -88,7 +88,7 @@ msgstr ""
 #: ../../project/docs/deploying/apache-httpd.rst:42
 #: 70edbd66795d4ef68936c445f1114ca8
 msgid "Configuration"
-msgstr ""
+msgstr "Configuration"
 
 #: ../../project/docs/deploying/apache-httpd.rst:44
 #: edaff7b255ee4c5d852a1af2e35b8150
