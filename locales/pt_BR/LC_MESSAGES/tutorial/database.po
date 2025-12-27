@@ -8,19 +8,21 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-12-28 17:00+0000\n"
+"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"flask/tutorialdatabase/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: ../../project/docs/tutorial/database.rst:4
 #: c6ca508666cc429499841107fc118d14
 msgid "Define and Access the Database"
-msgstr ""
+msgstr "Definindo e Acessando o Banco de Dados"
 
 #: ../../project/docs/tutorial/database.rst:6
 #: 9f0673d8a9af4afe9cb0d859e4c15176
