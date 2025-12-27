@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-09-17 16:02+0000\n"
-"Last-Translator: Mindiell <weblate@mytipy.net>\n"
+"PO-Revision-Date: 2025-12-28 17:00+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/flask/"
 "contributing/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/CONTRIBUTING.rst:2 76aeaf570dd3498aa69a07074a7c93e6
@@ -194,11 +194,11 @@ msgstr ""
 
 #: ../../project/CONTRIBUTING.rst:112 3513dbf3f45b470b9a5626a7cb3a03dd
 msgid "Linux/macOS"
-msgstr ""
+msgstr "Linux/macOS"
 
 #: ../../project/CONTRIBUTING.rst:119 0898f918c8804504a64efa5232630ed7
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../project/CONTRIBUTING.rst:126 3267dc96c2c84fb5bccb81c9fb422e22
 msgid "Install the development dependencies, then install Flask in editable mode."
