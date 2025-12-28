@@ -8,24 +8,30 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-12-28 17:01+0000\n"
+"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"flask/appcontext/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: ../../project/docs/appcontext.rst:4
 #: 85faa7e40162460980c7f5328214cc30
 msgid "The Application Context"
-msgstr ""
+msgstr "O Contexto de Aplicação"
 
 #: ../../project/docs/appcontext.rst:6
 #: 88482f8f56dd4923855e01c53e5aa074
 msgid "The application context keeps track of the application-level data during a request, CLI command, or other activity. Rather than passing the application around to each function, the :data:`current_app` and :data:`g` proxies are accessed instead."
 msgstr ""
+"O contexto de aplicação rastreia os dados no nível da aplicação durante uma "
+"requisição, um comando de linha de comando, ou outra atividade. Em vez de "
+"passar a aplicação para cada função, os proxies :data:`current_app` e "
+":data:`g` são acessados."
 
 #: ../../project/docs/appcontext.rst:11
 #: 6c916b94619d45d3afa8d1d17da0e40a
