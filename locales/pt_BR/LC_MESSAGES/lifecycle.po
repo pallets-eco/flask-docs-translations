@@ -8,19 +8,21 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-12-28 17:01+0000\n"
+"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"flask/lifecycle/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: ../../project/docs/lifecycle.rst:2
 #: 4b2fc6acca574677a03994df2cc8ea03
 msgid "Application Structure and Lifecycle"
-msgstr ""
+msgstr "Estrutura e Ciclo de Vida da Aplicação"
 
 #: ../../project/docs/lifecycle.rst:4
 #: 740fbabddf314e6d95469ace7f0b3a36
