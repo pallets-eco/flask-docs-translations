@@ -8,19 +8,21 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-12-28 17:00+0000\n"
+"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"flask/reqcontext/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: ../../project/docs/reqcontext.rst:4
 #: 7bb331ea57304d9c94a4e558bfe1a5e4
 msgid "The Request Context"
-msgstr ""
+msgstr "O Contexto de Requisição"
 
 #: ../../project/docs/reqcontext.rst:6
 #: 4ad95d91a9134131b7d2ea0c4c85acad
@@ -180,7 +182,7 @@ msgstr ""
 #: ../../project/docs/reqcontext.rst:205
 #: 50ae5e2310e5407fb97234a6a4dc64ff
 msgid "Signals"
-msgstr ""
+msgstr "Sinais"
 
 #: ../../project/docs/reqcontext.rst:207
 #: 4ad6aa183291481f8a865922eeaaba9f
