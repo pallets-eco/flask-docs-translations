@@ -8,24 +8,26 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-12-28 17:01+0000\n"
+"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"flask/deployingwaitress/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: ../../project/docs/deploying/waitress.rst:2
 #: e1465630b06e4a4b839c9c8a34df02cb
 msgid "Waitress"
-msgstr ""
+msgstr "Waitress"
 
 #: ../../project/docs/deploying/waitress.rst:4
 #: 6f632ba71137418a90e76f4e2b61d0dc
 msgid "`Waitress`_ is a pure Python WSGI server."
-msgstr ""
+msgstr "`Waitress`_ é um servidor WSGI escrito em Python puro."
 
 #: ../../project/docs/deploying/waitress.rst:6
 #: e49aa95b72a64deea887e8f07f2108df
