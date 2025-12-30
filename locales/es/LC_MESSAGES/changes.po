@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-26 04:00+0000\n"
+"PO-Revision-Date: 2025-12-30 14:00+0000\n"
 "Last-Translator: Pedro Torcatt <pedrotorcattsoto@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/flask/changes/"
 "es/>\n"
@@ -1954,15 +1954,14 @@ msgstr ""
 "indica al sistema operativo que elija un puerto disponible. :issue:`2926`"
 
 #: ../../project/CHANGES.rst:684 3da5b3ab664542d58241567d3fe2a2f2
-#, fuzzy
 msgid ""
 "The return value from ``cli.load_dotenv`` is more consistent with the "
 "documentation. It will return ``False`` if python-dotenv is not "
 "installed, or if the given path isn't a file. :issue:`2937`"
 msgstr ""
-"El valor de retorno de :meth:`cli.load_dotenv` es más consistente con la "
-"documentación. Devolverá ``False`` si python-dotenv no está instalado, o "
-"si la ruta dada no es un archivo. :issue:`2937`"
+"El valor de retorno de ``cli.load_dotenv`` es más coherente con la "
+"documentación. Devolverá ``False`` si python-dotenv no está instalado o si "
+"la ruta proporcionada no es un archivo. :issue:`2937`"
 
 #: ../../project/CHANGES.rst:687 3f0ccfbe5c9b4edba16623fbe3163679
 msgid ""
@@ -2079,11 +2078,10 @@ msgstr ""
 ":issue:`3074`"
 
 #: ../../project/CHANGES.rst:725 21db52ae2513460eacd9b1df8c812a41
-#, fuzzy
 msgid "Fixes for :pep:`451` import loaders and pytest 5.x. :issue:`3275`"
 msgstr ""
-"Correcciones para los cargadores de importación PEP451 y pytest 5.x. "
-":issue:`3275`"
+"Correcciones para los cargadores de importación según :pep:`451` y para "
+"pytest 5.x. :issue:`3275`"
 
 #: ../../project/CHANGES.rst:726 f9c501270ca64ca0ba3441f7cbd13a3b
 msgid "Show message about dotenv on stderr instead of stdout. :issue:`3285`"
@@ -2098,16 +2096,14 @@ msgid "Released 2019-05-17"
 msgstr "Lanzamiento 2019-05-17"
 
 #: ../../project/CHANGES.rst:734 c3f265ccf76e4cfe8ff122ded3eb3c9c
-#, fuzzy
 msgid ""
 "``send_file`` encodes filenames as ASCII instead of Latin-1 (ISO-8859-1)."
 " This fixes compatibility with Gunicorn, which is stricter about header "
 "encodings than :pep:`3333`. :issue:`2766`"
 msgstr ""
-":func:`send_file` codifica los nombres de archivo como ASCII en lugar de "
-"Latin-1 (ISO-8859-1). Esto corrige la compatibilidad con Gunicorn, que es"
-" más estricto con las codificaciones de cabecera que el PEP 3333. "
-":issue:`2766`"
+"``send_file`` codifica los nombres de archivo como ASCII en lugar de Latin-1 "
+"(ISO-8859-1). Esto corrige la compatibilidad con Gunicorn, que es más "
+"estricto con las codificaciones de encabezados que :pep:`3333`. :issue:`2766`"
 
 #: ../../project/CHANGES.rst:737 19ba198a56984fa2bd30cb89628d4463
 msgid ""
@@ -2127,13 +2123,12 @@ msgstr ""
 " la versión de Python. :pr:`2825`"
 
 #: ../../project/CHANGES.rst:742 93bb573052b24d14a685c9a974d86481
-#, fuzzy
 msgid ""
 "``send_file`` handles an ``attachment_filename`` that is a native Python "
 "2 string (bytes) with UTF-8 coded bytes. :issue:`2933`"
 msgstr ""
-":func:`send_file` maneja un ``attachment_filename`` que es una cadena "
-"nativa de Python 2 (bytes) con bytes codificados en UTF-8. :issue:`2933`"
+"``send_file`` maneja un ``attachment_filename`` que es una cadena nativa de "
+"Python 2 (bytes) con bytes codificados en UTF-8. :issue:`2933`"
 
 #: ../../project/CHANGES.rst:744 2709b6e1c42d4aaa82996d17f4e39d24
 msgid ""
@@ -2257,76 +2252,67 @@ msgstr ""
 ">= 5.1. :issue:`2586`"
 
 #: ../../project/CHANGES.rst:791 41ba2b44016c43d288f5b471ece6b3b0
-#, fuzzy
 msgid ""
 "Skip ``app.run`` when a Flask application is run from the command line. "
 "This avoids some behavior that was confusing to debug."
 msgstr ""
-"Omite :meth:`app.run <Flask.run>` cuando se ejecuta una aplicación Flask "
-"desde la línea de comandos. Esto evita algunos comportamientos que eran "
-"confusos de depurar."
+"Se omite ``app.run`` cuando una aplicación Flask se ejecuta desde la línea "
+"de comandos. Esto evita algunos comportamientos que resultaban confusos de "
+"depurar."
 
 #: ../../project/CHANGES.rst:793 5819e5d7b6b949ed857db9b2856f45dd
-#, fuzzy
 msgid ""
 "Change the default for ``JSONIFY_PRETTYPRINT_REGULAR`` to ``False``. "
 "``~json.jsonify`` returns a compact format by default, and an indented "
 "format in debug mode. :pr:`2193`"
 msgstr ""
-"Cambia el valor por defecto de :data:`JSONIFY_PRETTYPRINT_REGULAR` a "
-"``False``. :func:`~json.jsonify` devuelve un formato compacto por "
-"defecto, y un formato indentado en modo depuración. :pr:`2193`"
+"Se cambia el valor predeterminado de ``JSONIFY_PRETTYPRINT_REGULAR`` a "
+"``False``. ``~json.jsonify`` devuelve un formato compacto por defecto y un "
+"formato con sangría en modo de depuración. :pr:`2193`"
 
 #: ../../project/CHANGES.rst:796 c628b9829dd940d7bfa3d655964f7f2a
-#, fuzzy
 msgid ""
 "``Flask.__init__`` accepts the ``host_matching`` argument and sets it on "
 "``Flask.url_map``. :issue:`1559`"
 msgstr ""
-":meth:`Flask.__init__ <Flask>` acepta el argumento ``host_matching`` y lo"
-" establece en :attr:`~Flask.url_map`. :issue:`1559`"
+"``Flask.__init__`` acepta el argumento ``host_matching`` y lo establece en "
+"``Flask.url_map``. :issue:`1559`"
 
 #: ../../project/CHANGES.rst:798 9c38ef3d5d8941a78671f47d6a8090d3
-#, fuzzy
 msgid ""
 "``Flask.__init__`` accepts the ``static_host`` argument and passes it as "
 "the ``host`` argument when defining the static route. :issue:`1559`"
 msgstr ""
-":meth:`Flask.__init__ <Flask>` acepta el argumento ``static_host`` y lo "
-"pasa como argumento ``host`` al definir la ruta estática. :issue:`1559`"
+"``Flask.__init__`` acepta el argumento ``static_host`` y lo pasa como "
+"argumento ``host`` al definir la ruta estática. :issue:`1559`"
 
 #: ../../project/CHANGES.rst:801 9ea72718224246f0bdaf20c433495f95
-#, fuzzy
 msgid "``send_file`` supports Unicode in ``attachment_filename``. :pr:`2223`"
-msgstr ":func:`send_file` soporta Unicode en ``attachment_filename``. :pr:`2223`"
+msgstr "``send_file`` admite Unicode en ``attachment_filename``. :pr:`2223`"
 
 #: ../../project/CHANGES.rst:803 93506d5bd6a44b4bac1378aa3a6146c7
-#, fuzzy
 msgid ""
 "Pass ``_scheme`` argument from ``url_for`` to "
 "``Flask.handle_url_build_error``. :pr:`2017`"
 msgstr ""
-"Pasa el argumento ``scheme`` de :func:`url_for` a "
-":meth:`~Flask.handle_url_build_error`. :pr:`2017`"
+"Se pasa el argumento ``_scheme`` de ``url_for`` a "
+"``Flask.handle_url_build_error``. :pr:`2017`"
 
 #: ../../project/CHANGES.rst:805 a6ff709e76364c088989c1541e66bab3
-#, fuzzy
 msgid ""
 "``Flask.add_url_rule`` accepts the ``provide_automatic_options`` argument"
 " to disable adding the ``OPTIONS`` method. :pr:`1489`"
 msgstr ""
-":meth:`~Flask.add_url_rule` acepta el argumento "
-"``provide_automatic_options`` para desactivar la adición del método "
-"``OPTIONS``. :pr:`1489`"
+"``Flask.add_url_rule`` acepta el argumento ``provide_automatic_options`` "
+"para desactivar la adición del método ``OPTIONS``. :pr:`1489`"
 
 #: ../../project/CHANGES.rst:807 63d777b855f44e76894ccb540082e4f8
-#, fuzzy
 msgid ""
 "``MethodView`` subclasses inherit method handlers from base classes. "
 ":pr:`1936`"
 msgstr ""
-":class:`~views.MethodView` las subclases heredan los manejadores de "
-"métodos de las clases base. :pr:`1936`"
+"Las subclases de ``MethodView`` heredan los manejadores de métodos de las "
+"clases base. :pr:`1936`"
 
 #: ../../project/CHANGES.rst:809 ff51ad2baafc471e9df454a61dc51ae1
 msgid ""
@@ -2337,26 +2323,24 @@ msgstr ""
 "manejados por los manejadores de errores de la aplicación. :pr:`2254`"
 
 #: ../../project/CHANGES.rst:811 b1412bc76bfd43d6a73912862f9a5023
-#, fuzzy
 msgid ""
 "Blueprints gained ``Blueprint.json_encoder`` and "
 "``Blueprint.json_decoder`` attributes to override the app's encoder and "
 "decoder. :pr:`1898`"
 msgstr ""
-"Los blueprints han adquirido los atributos "
-":attr:`~Blueprint.json_encoder` y :attr:`~Blueprint.json_decoder` para "
-"anular el codificador y decodificador de la aplicación. :pr:`1898`"
+"Los blueprints ahora tienen los atributos ``Blueprint.json_encoder`` y "
+"``Blueprint.json_decoder`` para sobrescribir el codificador y decodificador "
+"de la aplicación. :pr:`1898`"
 
 #: ../../project/CHANGES.rst:814 1b71ae6e179c4d009a655f296b9ffb00
-#, fuzzy
 msgid ""
 "``Flask.make_response`` raises ``TypeError`` instead of ``ValueError`` "
 "for bad response types. The error messages have been improved to describe"
 " why the type is invalid. :pr:`2256`"
 msgstr ""
-":meth:`Flask.make_response` lanza ``TypeError`` en lugar de "
-"``ValueError`` para tipos de respuesta incorrectos. Se han mejorado los "
-"mensajes de error para describir por qué el tipo no es válido. :pr:`2256`"
+"``Flask.make_response`` genera ``TypeError`` en lugar de ``ValueError`` para "
+"tipos de respuesta incorrectos. Los mensajes de error se han mejorado para "
+"describir por qué el tipo no es válido. :pr:`2256`"
 
 #: ../../project/CHANGES.rst:817 0b3a15c249774c94b0e14809d79c7fb4
 msgid ""
@@ -2399,17 +2383,16 @@ msgstr ""
 " ``create_app`` o ``make_app`` de ``FLASK_APP``. :pr:`2297`"
 
 #: ../../project/CHANGES.rst:827 d7425fad2784428a931fa50604ab378f
-#, fuzzy
 msgid ""
 "Factory functions are not required to take a ``script_info`` parameter to"
 " work with the ``flask`` command. If they take a single parameter or a "
 "parameter named ``script_info``, the ``ScriptInfo`` object will be "
 "passed. :pr:`2319`"
 msgstr ""
-"Las funciones de fábrica no necesitan tomar un parámetro ``script_info`` "
-"para trabajar con el comando ``flask``. Si toman un solo parámetro o un "
-"parámetro llamado ``script_info``, se pasará el objeto "
-":class:`~cli.ScriptInfo``. :pr:`2319`"
+"Las funciones fábrica no están obligadas a recibir un parámetro "
+"``script_info`` para funcionar con el comando ``flask``. Si reciben un solo "
+"parámetro o un parámetro llamado ``script_info``, se pasará el objeto "
+"``ScriptInfo``. :pr:`2319`"
 
 #: ../../project/CHANGES.rst:831 8c93f6e94c2f4c44816cd588060e3d16
 msgid ""
@@ -2430,15 +2413,12 @@ msgstr ""
 ":pr:`2414`"
 
 #: ../../project/CHANGES.rst:837 d6edbafc630140a8af94628896d1dae6
-#, fuzzy
 msgid ""
 "The ``View`` class attribute ``View.provide_automatic_options`` is set in"
 " ``View.as_view``, to be detected by ``Flask.add_url_rule``. :pr:`2316`"
 msgstr ""
-"El atributo de clase :class:`~views.View` "
-":attr:`~views.View.provide_automatic_options` se establece en "
-":meth:`~views.View.as_view`, para ser detectado por "
-":meth:`~Flask.add_url_rule`. :pr:`2316`"
+"El atributo de clase ``View.provide_automatic_options`` se establece en "
+"``View.as_view``, para ser detectado por ``Flask.add_url_rule``. :pr:`2316`"
 
 #: ../../project/CHANGES.rst:840 249d57524d534c93be959e72a169f246
 msgid ""
@@ -2458,56 +2438,49 @@ msgstr ""
 " la sesión durante la solicitud (y no se borra). :pr:`2288`"
 
 #: ../../project/CHANGES.rst:845 3dfec8893826416992ad6b9078f2e1b7
-#, fuzzy
 msgid ""
 "``Flask.test_request_context`` accepts ``subdomain`` and ``url_scheme`` "
 "arguments for use when building the base URL. :pr:`1621`"
 msgstr ""
-":meth:`~Flask.test_request_context` acepta los argumentos ``subdomain`` y"
-" ``url_scheme`` para utilizarlos al construir la URL base. :pr:`1621`"
+"``Flask.test_request_context`` acepta los argumentos ``subdomain`` y "
+"``url_scheme`` para usarlos al construir la URL base. :pr:`1621`"
 
 #: ../../project/CHANGES.rst:848 39383ba71a0243578990c6a2a4aad3e6
-#, fuzzy
 msgid ""
 "Set ``APPLICATION_ROOT`` to ``'/'`` by default. This was already the "
 "implicit default when it was set to ``None``."
 msgstr ""
-"Establece :data:`APPLICATION_ROOT` como ``'/'`` por defecto. Esto ya era "
-"el valor implícito por defecto cuando se estableció en ``None``."
+"Se establece ``APPLICATION_ROOT`` en ``'/'`` por defecto. Esto ya era el "
+"valor predeterminado implícito cuando se configuraba como ``None``."
 
 #: ../../project/CHANGES.rst:850 de0c3f93439b453a949c3938dd71019b
-#, fuzzy
 msgid ""
 "``TRAP_BAD_REQUEST_ERRORS`` is enabled by default in debug mode. "
 "``BadRequestKeyError`` has a message with the bad key in debug mode "
 "instead of the generic bad request message. :pr:`2348`"
 msgstr ""
-":data:`TRAP_BAD_REQUEST_ERRORS` está activado por defecto en el modo de "
-"depuración. ``BadRequestKeyError`` tiene un mensaje con la clave errónea "
-"en modo de depuración en lugar del mensaje genérico de solicitud errónea."
-" :pr:`2348`"
+"``TRAP_BAD_REQUEST_ERRORS`` está habilitado por defecto en modo de "
+"depuración. ``BadRequestKeyError`` muestra un mensaje con la clave "
+"incorrecta en modo de depuración en lugar del mensaje genérico de solicitud "
+"incorrecta. :pr:`2348`"
 
 #: ../../project/CHANGES.rst:853 3ca9d8e2b1984e4ab37882f909090297
-#, fuzzy
 msgid ""
 "Allow registering new tags with ``TaggedJSONSerializer`` to support "
 "storing other types in the session cookie. :pr:`2352`"
 msgstr ""
-"Permitir el registro de nuevas etiquetas con "
-":class:`~json.tag.TaggedJSONSerializer` para soportar el almacenamiento "
-"de otros tipos en la cookie de sesión. :pr:`2352`"
+"Se permite registrar nuevas etiquetas con ``TaggedJSONSerializer`` para "
+"admitir el almacenamiento de otros tipos en la cookie de sesión. :pr:`2352`"
 
 #: ../../project/CHANGES.rst:855 057cfc7e7e58487b923e3fd50317abdf
-#, fuzzy
 msgid ""
 "Only open the session if the request has not been pushed onto the context"
 " stack yet. This allows ``stream_with_context`` generators to access the "
 "same session that the containing view uses. :pr:`2354`"
 msgstr ""
-"Sólo abre la sesión si la solicitud no ha sido empujada a la pila de "
-"contexto todavía. Esto permite a los generadores de "
-":func:`~stream_with_context` acceder a la misma sesión que utiliza la "
-"vista contenedora. :pr:`2354`"
+"Solo se abre la sesión si la solicitud aún no se ha añadido a la pila de "
+"contexto. Esto permite que los generadores de ``stream_with_context`` "
+"accedan a la misma sesión que utiliza la vista contenedora. :pr:`2354`"
 
 #: ../../project/CHANGES.rst:858 a32fe5f1634549c58f27d43b022799d3
 msgid ""
@@ -2520,17 +2493,16 @@ msgstr ""
 "establecerá el tipo de contenido apropiado. :pr:`2358`"
 
 #: ../../project/CHANGES.rst:861 c7eb415ad3854276a56fe03e9a341286
-#, fuzzy
 msgid ""
 "Extract JSON handling to a mixin applied to both the ``Request`` and "
 "``Response`` classes. This adds the ``Response.is_json`` and "
 "``Response.get_json`` methods to the response to make testing JSON "
 "response much easier. :pr:`2358`"
 msgstr ""
-"Extrae el manejo de JSON a un mixin aplicado a las clases "
-":class:`Request` y :class:`Response`. Esto añade los métodos "
-":meth:`~Response.is_json` y :meth:`~Response.get_json` a la respuesta "
-"para facilitar las pruebas de la respuesta JSON. :pr:`2358`"
+"Se extrae el manejo de JSON a un mixin aplicado tanto a las clases "
+"``Request`` como ``Response``. Esto añade los métodos ``Response.is_json`` y "
+"``Response.get_json`` a la respuesta, facilitando mucho las pruebas de "
+"respuestas JSON. :pr:`2358`"
 
 #: ../../project/CHANGES.rst:865 59f89b5662c342458331accd9feb272f
 msgid ""
@@ -2550,13 +2522,12 @@ msgstr ""
 "UTC. :pr:`2374`"
 
 #: ../../project/CHANGES.rst:870 2af761111533458c86b921499088b1c7
-#, fuzzy
 msgid ""
 "Template auto reloading will honor debug mode even if ``Flask.jinja_env``"
 " was already accessed. :pr:`2373`"
 msgstr ""
-"La recarga automática de plantillas respetará el modo de depuración "
-"incluso si ya se ha accedido a :attr:`~Flask.jinja_env`. :pr:`2373`"
+"La recarga automática de plantillas respetará el modo de depuración incluso "
+"si ``Flask.jinja_env`` ya había sido accedido. :pr:`2373`"
 
 #: ../../project/CHANGES.rst:872 ce1f6eefe7dd4e42a612f612c5b2f873
 msgid "The following old deprecated code was removed. :issue:`2385`"
@@ -2573,79 +2544,67 @@ msgstr ""
 "flask.ext.sqlalchemy`` se convierte en ``import flask_sqlalchemy``."
 
 #: ../../project/CHANGES.rst:878 ca1df45239154979baf85c8fc18febca
-#, fuzzy
 msgid ""
 "``Flask.init_jinja_globals`` - extend ``Flask.create_jinja_environment`` "
 "instead."
 msgstr ""
-"``Flask.init_jinja_globals`` - extiende de "
-":meth:`Flask.create_jinja_environment` en su lugar."
+"``Flask.init_jinja_globals``: utiliza ``Flask.create_jinja_environment`` "
+"para extenderlo en su lugar."
 
 #: ../../project/CHANGES.rst:880 5e399cc476514097a6b328123fdbb1eb
-#, fuzzy
 msgid ""
 "``Flask.error_handlers`` - tracked by ``Flask.error_handler_spec``, use "
 "``Flask.errorhandler`` to register handlers."
 msgstr ""
-"``Flask.error_handlers`` - rastreado por "
-":attr:`Flask.error_handler_spec`, usa :meth:`Flask.errorhandler` para "
-"registrar manejadores."
+"``Flask.error_handlers``: se rastrea mediante ``Flask.error_handler_spec``; "
+"utiliza ``Flask.errorhandler`` para registrar manejadores."
 
 #: ../../project/CHANGES.rst:883 594c5144ac554868948ed62fb2aca72c
-#, fuzzy
 msgid ""
 "``Flask.request_globals_class`` - use ``Flask.app_ctx_globals_class`` "
 "instead."
 msgstr ""
-"``Flask.request_globals_class`` - utiliza "
-":attr:`Flask.app_ctx_globals_class` en su lugar."
+"``Flask.request_globals_class``: utiliza ``Flask.app_ctx_globals_class`` en "
+"su lugar."
 
 #: ../../project/CHANGES.rst:885 2608b37f5f2f4517a47708a73c6b1f2b
-#, fuzzy
 msgid "``Flask.static_path`` - use ``Flask.static_url_path`` instead."
-msgstr "``Flask.static_path`` - utiliza :attr:`Flask.static_url_path` en su lugar."
+msgstr "``Flask.static_path``: utiliza ``Flask.static_url_path`` en su lugar."
 
 #: ../../project/CHANGES.rst:886 54501df7648e478583ed21648a9c61ee
-#, fuzzy
 msgid "``Request.module`` - use ``Request.blueprint`` instead."
-msgstr "``Request.module`` - utiliza :attr:`Request.blueprint` en su lugar."
+msgstr "``Request.module``: utiliza ``Request.blueprint`` en su lugar."
 
 #: ../../project/CHANGES.rst:888 97eb297639024ba9b4bac8a99adb9615
-#, fuzzy
 msgid "The ``Request.json`` property is no longer deprecated. :issue:`1421`"
-msgstr "La propiedad :attr:`Request.json` ya no está obsoleta. :issue:`1421`"
+msgstr "La propiedad ``Request.json`` ya no está obsoleta. :issue:`1421`"
 
 #: ../../project/CHANGES.rst:889 0781ebf63a9d4a4393693356958878f6
-#, fuzzy
 msgid ""
 "Support passing a ``EnvironBuilder`` or ``dict`` to ``test_client.open``."
 " :pr:`2412`"
 msgstr ""
-"Soporta pasar un :class:`~werkzeug.test.EnvironBuilder` o ``dict`` a "
-":meth:`test_client.open <werkzeug.test.Client.open>`. :pr:`2412`"
+"Se admite pasar un ``EnvironBuilder`` o un ``dict`` a ``test_client.open``. "
+":pr:`2412`"
 
 #: ../../project/CHANGES.rst:891 ffc01bbcd07c4a4e9d46df5cbaa3e6a8
-#, fuzzy
 msgid ""
 "The ``flask`` command and ``Flask.run`` will load environment variables "
 "from ``.env`` and ``.flaskenv`` files if python-dotenv is installed. "
 ":pr:`2416`"
 msgstr ""
-"El comando ``flask`` y :meth:`Flask.run` cargarán las variables de "
-"entorno de los archivos ``.env`` y ``.flaskenv`` si python-dotenv está "
-"instalado. :pr:`2416`"
+"El comando ``flask`` y ``Flask.run`` cargarán variables de entorno desde los "
+"archivos ``.env`` y ``.flaskenv`` si python-dotenv está instalado. :pr:`2416`"
 
 #: ../../project/CHANGES.rst:894 03452f839a0a4eae8f70d58b9e41482d
-#, fuzzy
 msgid ""
 "When passing a full URL to the test client, the scheme in the URL is used"
 " instead of ``PREFERRED_URL_SCHEME``. :pr:`2430`"
 msgstr ""
-"Cuando se pasa una URL completa al cliente de prueba, se utiliza el "
-"esquema de la URL en lugar de :data:`PREFERRED_URL_SCHEME`. :pr:`2430`"
+"Al pasar una URL completa al cliente de pruebas, se utiliza el esquema de la "
+"URL en lugar de ``PREFERRED_URL_SCHEME``. :pr:`2430`"
 
 #: ../../project/CHANGES.rst:896 c5bb55883988447b930e0072b0ac7c6b
-#, fuzzy
 msgid ""
 "``Flask.logger`` has been simplified. ``LOGGER_NAME`` and "
 "``LOGGER_HANDLER_POLICY`` config was removed. The logger is always named "
@@ -2654,13 +2613,12 @@ msgid ""
 "depending on ``Flask.debug``. No handlers are removed, and a handler is "
 "only added if no handlers are already configured. :pr:`2436`"
 msgstr ""
-":attr:`Flask.logger` se ha simplificado. Se ha eliminado la configuración"
-" de ``LOGGER_NAME`` y ``LOGGER_HANDLER_POLICY``. El registrador se llama "
-"siempre ``flask.app``. El nivel sólo se establece en el primer acceso, no"
-" comprueba :attr:`Flask.debug` cada vez. Sólo se utiliza un formato, no "
-"diferentes dependiendo de :attr:`Flask.debug`. No se eliminan "
-"manejadores, y sólo se añade un manejador si no hay ninguno configurado. "
-":pr:`2436`"
+"``Flask.logger`` ha sido simplificado. Se eliminaron las configuraciones "
+"``LOGGER_NAME`` y ``LOGGER_HANDLER_POLICY``. El logger siempre se llama "
+"``flask.app``. El nivel solo se establece en el primer acceso; no se "
+"verifica ``Flask.debug`` cada vez. Solo se utiliza un formato, no diferentes "
+"según ``Flask.debug``. No se eliminan manejadores y se añade un manejador "
+"únicamente si no hay manejadores ya configurados. :pr:`2436`"
 
 #: ../../project/CHANGES.rst:903 03c835db691d4d3cbb952aa29b2a8526
 msgid "Blueprint view function names may not contain dots. :pr:`2450`"
@@ -2681,13 +2639,12 @@ msgid "The development server uses threads by default. :pr:`2529`"
 msgstr "El servidor de desarrollo utiliza hilos por defecto. :pr:`2529`"
 
 #: ../../project/CHANGES.rst:907 845e734d76f54d4daf06db38eff38748
-#, fuzzy
 msgid ""
 "Loading config files with ``silent=True`` will ignore ``ENOTDIR`` errors."
 " :pr:`2581`"
 msgstr ""
-"La carga de archivos de configuración con ``silent=True`` ignorará los "
-"errores :data:`~errno.ENOTDIR`. :pr:`2581`"
+"Cargar archivos de configuración con ``silent=True`` ignorará los errores "
+"``ENOTDIR``. :pr:`2581`"
 
 #: ../../project/CHANGES.rst:909 eb77351f1f624f55b63f173f4eae6957
 msgid ""
@@ -2698,35 +2655,30 @@ msgstr ""
 " servidor de desarrollo sobre HTTPS. :pr:`2606`"
 
 #: ../../project/CHANGES.rst:911 6f31c6dc56b64b009f34659821aa1bdb
-#, fuzzy
 msgid ""
 "Added ``SESSION_COOKIE_SAMESITE`` to control the ``SameSite`` attribute "
 "on the session cookie. :pr:`2607`"
 msgstr ""
-"Añadido :data:`SESSION_COOKIE_SAMESITE` para controlar el atributo "
-"``SameSite`` en la cookie de sesión. :pr:`2607`"
+"Se añade ``SESSION_COOKIE_SAMESITE`` para controlar el atributo ``SameSite`` "
+"de la cookie de sesión. :pr:`2607`"
 
 #: ../../project/CHANGES.rst:913 53cba27109dd4362ac7d019f2a0bac99
-#, fuzzy
 msgid ""
 "Added ``Flask.test_cli_runner`` to create a Click runner that can invoke "
 "Flask CLI commands for testing. :pr:`2636`"
 msgstr ""
-"Añadido :meth:`~flask.Flask.test_cli_runner` para crear un Click runner "
-"que pueda invocar los comandos de la CLI de Flask para las pruebas. "
-":pr:`2636`"
+"Se añade ``Flask.test_cli_runner`` para crear un runner de Click que pueda "
+"invocar comandos del CLI de Flask para pruebas. :pr:`2636`"
 
 #: ../../project/CHANGES.rst:915 0bee6d1fa7dc48f6b81293cb9a0869be
-#, fuzzy
 msgid ""
 "Subdomain matching is disabled by default and setting ``SERVER_NAME`` "
 "does not implicitly enable it. It can be enabled by passing "
 "``subdomain_matching=True`` to the ``Flask`` constructor. :pr:`2635`"
 msgstr ""
-"La coincidencia de subdominios está deshabilitada por defecto y "
-"establecer :data:`SERVER_NAME` no la habilita implícitamente. Puede "
-"activarse pasando ``subdomain_matching=True`` al constructor de "
-"``Flask``. :pr:`2635`"
+"La coincidencia de subdominios está deshabilitada por defecto y establecer "
+"``SERVER_NAME`` no la habilita implícitamente. Puede activarse pasando "
+"``subdomain_matching=True`` al constructor de ``Flask``. :pr:`2635`"
 
 #: ../../project/CHANGES.rst:919 f4eec858198f4c81aaafb2ebfe88fb24
 msgid ""
@@ -2737,35 +2689,32 @@ msgstr ""
 "registra en la aplicación. :pr:`2629`"
 
 #: ../../project/CHANGES.rst:921 2e8a0dc75661491099a037adf76a5377
-#, fuzzy
 msgid ""
 "``Request.get_json`` doesn't cache the result if parsing fails when "
 "``silent`` is true. :issue:`2651`"
 msgstr ""
-":meth:`Request.get_json` no almacena en caché el resultado si el análisis"
-" sintáctico falla cuando ``silent`` es verdadero. :issue:`2651`"
+"``Request.get_json`` no almacena en caché el resultado si el análisis falla "
+"cuando ``silent`` es verdadero. :issue:`2651`"
 
 #: ../../project/CHANGES.rst:923 1af22c54950f4f0581f9e9dc3433ecb5
-#, fuzzy
 msgid ""
 "``Request.get_json`` no longer accepts arbitrary encodings. Incoming JSON"
 " should be encoded using UTF-8 per :rfc:`8259`, but Flask will autodetect"
 " UTF-8, -16, or -32. :pr:`2691`"
 msgstr ""
-":func:`Request.get_json` ya no acepta codificaciones arbitrarias. El JSON"
-" entrante debe codificarse utilizando UTF-8 según :rfc:`8259`, pero Flask"
-" autodetectará UTF-8, -16 o -32. :pr:`2691`"
+"``Request.get_json`` ya no acepta codificaciones arbitrarias. El JSON "
+"entrante debe estar codificado en UTF-8 según :rfc:`8259`, aunque Flask "
+"detectará automáticamente UTF-8, UTF-16 o UTF-32. :pr:`2691`"
 
 #: ../../project/CHANGES.rst:926 41fb5bfd1c3e49bf9a9a34bfe4ae9ac5
-#, fuzzy
 msgid ""
 "Added ``MAX_COOKIE_SIZE`` and ``Response.max_cookie_size`` to control "
 "when Werkzeug warns about large cookies that browsers may ignore. "
 ":pr:`2693`"
 msgstr ""
-"Añadido :data:`MAX_COOKIE_SIZE` y :attr:`Response.max_cookie_size` para "
-"controlar cuándo Werkzeug avisa de las cookies grandes que los "
-"navegadores pueden ignorar. :pr:`2693`"
+"Se añadieron ``MAX_COOKIE_SIZE`` y ``Response.max_cookie_size`` para "
+"controlar cuándo Werkzeug advierte sobre cookies grandes que los navegadores "
+"podrían ignorar. :pr:`2693`"
 
 #: ../../project/CHANGES.rst:929 9196a454a6df47478085fd7d8670dd1f
 msgid ""
@@ -2811,15 +2760,14 @@ msgid "Version 0.12.3"
 msgstr "Versión 0.12.3"
 
 #: ../../project/CHANGES.rst:957 2f62bcc4c9464a4380170e85a135a182
-#, fuzzy
 msgid ""
 "``Request.get_json`` no longer accepts arbitrary encodings. Incoming JSON"
 " should be encoded using UTF-8 per :rfc:`8259`, but Flask will autodetect"
 " UTF-8, -16, or -32. :issue:`2692`"
 msgstr ""
-":func:`Request.get_json` ya no acepta codificaciones arbitrarias. El JSON"
-" entrante debe codificarse con UTF-8 según :rfc:`8259`, pero Flask "
-"detectará automáticamente UTF-8, -16 o -32. :issue:`2692`"
+"``Request.get_json`` ya no acepta codificaciones arbitrarias. El JSON "
+"entrante debe estar codificado en UTF-8 según :rfc:`8259`, aunque Flask "
+"detectará automáticamente UTF-8, UTF-16 o UTF-32. :issue:`2692`"
 
 #: ../../project/CHANGES.rst:960 160a44f96bd84f19b2d3afd64822ecf4
 msgid ""
@@ -2988,28 +2936,24 @@ msgid "Released 2016-05-29, codename Absinthe"
 msgstr "Lanzamiento 2016-05-29, codename Absinthe"
 
 #: ../../project/CHANGES.rst:1027 b439fbbf564c4d0c8952b2b343ad02fc
-#, fuzzy
 msgid ""
 "Added support to serializing top-level arrays to ``jsonify``. This "
 "introduces a security risk in ancient browsers."
 msgstr ""
-"Se ha añadido soporte para serializar arrays de nivel superior a "
-":func:`flask.jsonify`. Esto introduce un riesgo de seguridad en los "
-"navegadores antiguos."
+"Se añadió soporte para serializar arreglos de nivel superior en ``jsonify``. "
+"Esto introduce un riesgo de seguridad en navegadores antiguos."
 
 #: ../../project/CHANGES.rst:1029 29844fb9ca644e0a9ea51f179b8c060c
 msgid "Added before_render_template signal."
 msgstr "Añadida la señal before_render_template."
 
 #: ../../project/CHANGES.rst:1030 379a68f0059549f58e6cf6e4013ad396
-#, fuzzy
 msgid ""
 "Added ``**kwargs`` to ``Flask.test_client`` to support passing additional"
 " keyword arguments to the constructor of ``Flask.test_client_class``."
 msgstr ""
-"Se ha añadido ``**kwargs`` a :meth:`flask.Test.test_client` para soportar"
-" el paso de argumentos de palabras clave adicionales al constructor de "
-":attr:`flask.Flask.test_client_class`."
+"Se añadieron ``**kwargs`` a ``Flask.test_client`` para permitir pasar "
+"argumentos adicionales al constructor de ``Flask.test_client_class``."
 
 #: ../../project/CHANGES.rst:1033 d99c65988eab46bfb9518fbc7f5d9203
 msgid ""
@@ -3041,19 +2985,16 @@ msgstr ""
 "headers)`` desde una función de vista."
 
 #: ../../project/CHANGES.rst:1042 4a80f31170b84222a602170c9b0f3b4d
-#, fuzzy
 msgid "Added ``Config.from_json``."
-msgstr "Se ha añadido :meth:`flask.Config.from_json`."
+msgstr "Se añadió ``Config.from_json``."
 
 #: ../../project/CHANGES.rst:1043 7aa9bd97e5ea40f3b13577ba58d2d2cd
-#, fuzzy
 msgid "Added ``Flask.config_class``."
-msgstr "Se ha añadido :attr:`flask.Flask.config_class`."
+msgstr "Se añadió ``Flask.config_class``."
 
 #: ../../project/CHANGES.rst:1044 ef98216cf854488492e1889a49c615a7
-#, fuzzy
 msgid "Added ``Config.get_namespace``."
-msgstr "Se ha añadido :meth:`flask.Config.get_namespace`."
+msgstr "Se añadió ``Config.get_namespace``."
 
 #: ../../project/CHANGES.rst:1045 32a41cf7a6bd4515bcf7faf015feb159
 msgid ""
@@ -3079,17 +3020,16 @@ msgstr ""
 "paquetes de espacio de nombres de Python 3.3."
 
 #: ../../project/CHANGES.rst:1052 85c67eb42df9480da84880ee7771c83b
-#, fuzzy
 msgid ""
 "Added ``flask`` and the ``flask.cli`` module to start the local debug "
 "server through the click CLI system. This is recommended over the old "
 "``flask.run()`` method as it works faster and more reliable due to a "
 "different design and also replaces ``Flask-Script``."
 msgstr ""
-"Se ha añadido :command:`flask` y el módulo ``flask.cli`` para iniciar el "
-"servidor de depuración local a través del sistema CLI de click. Esto se "
-"recomienda sobre el antiguo método ``flask.run()`` ya que funciona más "
-"rápido y más fiable debido a un diseño diferente y también sustituye a "
+"Se añadieron ``flask`` y el módulo ``flask.cli`` para iniciar el servidor de "
+"depuración local mediante el sistema CLI de Click. Se recomienda esto en "
+"lugar del antiguo método ``flask.run()``, ya que funciona de manera más "
+"rápida y confiable gracias a un diseño diferente, y también reemplaza a "
 "``Flask-Script``."
 
 #: ../../project/CHANGES.rst:1057 d8c39ed3aed74e6b913ae8e3d7ee5896
@@ -3108,9 +3048,8 @@ msgstr ""
 "de errores personalizado si así lo desea."
 
 #: ../../project/CHANGES.rst:1063 ceb1131c4e7041ec8dec69e3fc9c325e
-#, fuzzy
 msgid "Added ``Config.from_mapping``."
-msgstr "Se ha añadido :meth:`flask.Config.from_mapping`."
+msgstr "Se añadió ``Config.from_mapping``."
 
 #: ../../project/CHANGES.rst:1064 9278d0c8069f40d9a398fcaab128d7b7
 msgid ""
@@ -3167,17 +3106,15 @@ msgstr ""
 "innecesarios incluidos por defecto después de los separadores."
 
 #: ../../project/CHANGES.rst:1079 2771a75762e94d90bb6f56046c253252
-#, fuzzy
 msgid ""
 "JSON responses are now terminated with a newline character, because it is"
 " a convention that UNIX text files end with a newline and some clients "
 "don't deal well when this newline is missing. :pr:`1262`"
 msgstr ""
-"Las respuestas JSON ahora terminan con un carácter de nueva línea, porque"
-" es una convención que los archivos de texto UNIX terminen con una nueva "
-"línea y algunos clientes no se comportan bien cuando falta esta nueva "
-"línea. Esto surgió originalmente como parte de "
-"https://github.com/postmanlabs/httpbin/issues/168. :pr:`1262`"
+"Las respuestas JSON ahora terminan con un carácter de nueva línea, ya que es "
+"una convención que los archivos de texto UNIX terminen con una nueva línea y "
+"algunos clientes no funcionan correctamente cuando falta esta nueva línea. "
+":pr:`1262`"
 
 #: ../../project/CHANGES.rst:1082 ef79b316ed2544b1bc3e6697fabf25ab
 msgid ""
@@ -3250,15 +3187,14 @@ msgid "Fixed broken ``test_appcontext_signals()`` test case."
 msgstr "Corregido el caso de prueba roto ``test_appcontext_signals()``."
 
 #: ../../project/CHANGES.rst:1101 c7e8861b241043309a19b9f0eb5d6ade
-#, fuzzy
 msgid ""
 "Raise an ``AttributeError`` in ``helpers.find_package`` with a useful "
 "message explaining why it is raised when a :pep:`302` import hook is used"
 " without an ``is_package()`` method."
 msgstr ""
-"Lanza un :exc:`AttributeError` en :func:`flask.helpers.find_package` con "
-"un mensaje útil que explica por qué se lanza cuando se utiliza un hook de"
-" importación PEP 302 sin un método ``is_package()``."
+"Se lanza un ``AttributeError`` en ``helpers.find_package`` con un mensaje "
+"útil que explica por qué se produce cuando se utiliza un hook de importación "
+":pep:`302` sin un método ``is_package()``."
 
 #: ../../project/CHANGES.rst:1104 bd2a39bb359f4bd4bd01524d2551e103
 msgid ""
@@ -3636,29 +3572,25 @@ msgid "Released 2012-07-01, codename Campari"
 msgstr "Lanzamiento 2012-07-01, codename Campari"
 
 #: ../../project/CHANGES.rst:1219 2e562ce81d0c4003b0e3e98f969925a0
-#, fuzzy
 msgid ""
 "The ``Request.on_json_loading_failed`` now returns a JSON formatted "
 "response by default."
 msgstr ""
-"La función :func:`flask.Request.on_json_loading_failed` ahora devuelve "
-"una respuesta con formato JSON por defecto."
+"``Request.on_json_loading_failed`` ahora devuelve una respuesta en formato "
+"JSON por defecto."
 
 #: ../../project/CHANGES.rst:1221 4c1d4185c53b41408067a9ba4ad153bb
-#, fuzzy
 msgid "The ``url_for`` function now can generate anchors to the generated links."
 msgstr ""
-"La función :func:`flask.url_for` ahora puede generar anclas a los enlaces"
-" generados."
+"La función ``url_for`` ahora puede generar anclas para los enlaces generados."
 
 #: ../../project/CHANGES.rst:1223 0462b0efdcd74cff989c8ee9838e69d3
-#, fuzzy
 msgid ""
 "The ``url_for`` function now can also explicitly generate URL rules "
 "specific to a given HTTP method."
 msgstr ""
-"La función :func:`flask.url_for` ahora también puede generar "
-"explícitamente reglas de URL específicas para un método HTTP determinado."
+"La función ``url_for`` ahora también puede generar explícitamente reglas de "
+"URL específicas para un método HTTP determinado."
 
 #: ../../project/CHANGES.rst:1225 53a56c41aeed46f3bab1da84122efaee
 msgid ""
@@ -3695,7 +3627,6 @@ msgstr ""
 "se puede modificar en una devolución de llamada posterior a la solicitud."
 
 #: ../../project/CHANGES.rst:1236 55e94f9479a54a66a278a241944cd729
-#, fuzzy
 msgid ""
 "The ``Flask`` class will avoid importing the provided import name if it "
 "can (the required first parameter), to benefit tools which build Flask "
@@ -3704,49 +3635,43 @@ msgid ""
 "when the import name is inside a zip archive (usually an egg) prior to "
 "Python 2.7."
 msgstr ""
-"La clase :class:`flask.Flask` evitará importar el nombre de importación "
-"proporcionado si puede (el primer parámetro requerido), para beneficiar a"
-" las herramientas que construyen instancias de Flask programáticamente. "
-"La clase Flask volverá a utilizar la importación en sistemas con ganchos "
-"de módulo personalizados, por ejemplo, Google App Engine, o cuando el "
-"nombre de importación esté dentro de un archivo zip (normalmente un .egg)"
-" anterior a Python 2.7."
+"La clase ``Flask`` evitará importar el nombre de importación proporcionado "
+"si es posible (el primer parámetro requerido), para beneficiar a las "
+"herramientas que crean instancias de Flask de manera programática. La clase "
+"Flask recurrirá a la importación en sistemas con hooks de módulo "
+"personalizados, por ejemplo, Google App Engine, o cuando el nombre de "
+"importación esté dentro de un archivo zip (generalmente un egg) antes de "
+"Python 2.7."
 
 #: ../../project/CHANGES.rst:1242 b1d90b3e030b4db781497c0ce7b42039
-#, fuzzy
 msgid ""
 "Blueprints now have a decorator to add custom template filters "
 "application wide, ``Blueprint.app_template_filter``."
 msgstr ""
-"Los Blueprints tienen ahora un decorador para añadir filtros de plantilla"
-" personalizados en toda la aplicación, "
-":meth:`flask.Blueprint.app_template_filter`."
+"Los blueprints ahora tienen un decorador para añadir filtros de plantilla "
+"personalizados a nivel de aplicación, ``Blueprint.app_template_filter``."
 
 #: ../../project/CHANGES.rst:1244 3c75647b61dd437ab03edfd122532efe
-#, fuzzy
 msgid ""
 "The Flask and Blueprint classes now have a non-decorator method for "
 "adding custom template filters application wide, "
 "``Flask.add_template_filter`` and ``Blueprint.add_app_template_filter``."
 msgstr ""
-"Las clases Flask y Blueprint tienen ahora un método no decorador para "
-"añadir filtros de plantilla personalizados en toda la aplicación, "
-":meth:`flask.Flask.add_template_filter` y "
-":meth:`flask.Blueprint.add_app_template_filter`."
+"Las clases Flask y Blueprint ahora tienen un método no decorador para añadir "
+"filtros de plantilla personalizados a nivel de aplicación: "
+"``Flask.add_template_filter`` y ``Blueprint.add_app_template_filter``."
 
 #: ../../project/CHANGES.rst:1248 07c53a3da8ea455d9bd59f7e81a6b40c
-#, fuzzy
 msgid ""
 "The ``get_flashed_messages`` function now allows rendering flashed "
 "message categories in separate blocks, through a ``category_filter`` "
 "argument."
 msgstr ""
-"La función :func:`flask.get_flashed_messages` permite ahora mostrar las "
-"categorías de mensajes flash en bloques separados, mediante un argumento "
+"La función ``get_flashed_messages`` ahora permite renderizar las categorías "
+"de mensajes \"flashed\" en bloques separados, mediante el argumento "
 "``category_filter``."
 
 #: ../../project/CHANGES.rst:1251 ab3c0a46d30e4f288f8839556fc25e97
-#, fuzzy
 msgid ""
 "The ``Flask.run`` method now accepts ``None`` for ``host`` and ``port`` "
 "arguments, using default values when ``None``. This allows for calling "
@@ -3754,12 +3679,12 @@ msgid ""
 "app.config.get('MYPORT'))``, with proper behavior whether or not a config"
 " file is provided."
 msgstr ""
-"El método :meth:`flask.Flask.run` ahora acepta ``None`` para los "
-"argumentos ``host`` y ``port``, utilizando los valores por defecto cuando"
-" ``None``. Esto permite llamar a la ejecución utilizando valores de "
-"configuración, por ejemplo ``app.run(app.config.get('MYHOST'), "
-"app.config.get('MYPORT'))``, con un comportamiento adecuado tanto si se "
-"proporciona un fichero de configuración como si no."
+"El método ``Flask.run`` ahora acepta ``None`` para los argumentos ``host`` y "
+"``port``, usando valores predeterminados cuando es ``None``. Esto permite "
+"llamar a run usando valores de configuración, por ejemplo, ``app.run"
+"(app.config.get('MYHOST'), app.config.get('MYPORT'))``, con el "
+"comportamiento adecuado tanto si se proporciona un archivo de configuración "
+"como si no."
 
 #: ../../project/CHANGES.rst:1256 9f87facdb195405f984a8121a92723c6
 msgid ""
@@ -3768,6 +3693,10 @@ msgid ""
 "single template name. On an iterable, the first template found is "
 "rendered."
 msgstr ""
+"El método ``render_template`` ahora acepta tanto un iterable de nombres de "
+"plantilla como un único nombre de plantilla. Anteriormente, solo aceptaba un "
+"único nombre. En el caso de un iterable, se renderiza la primera plantilla "
+"que se encuentre."
 
 #: ../../project/CHANGES.rst:1260 1d401c24aae24626985f1b740318ceb7
 msgid ""
@@ -3775,18 +3704,20 @@ msgid ""
 "context but only provides access to the current application. This also "
 "adds support for URL generation without an active request context."
 msgstr ""
+"Se añadió ``Flask.app_context``, que funciona de manera muy similar al "
+"contexto de solicitud pero solo proporciona acceso a la aplicación actual. "
+"Esto también añade soporte para la generación de URL sin un contexto de "
+"solicitud activo."
 
 #: ../../project/CHANGES.rst:1264 c41b5a1b43f7487d8ab0978d9961b55f
-#, fuzzy
 msgid ""
 "View functions can now return a tuple with the first instance being an "
 "instance of ``Response``. This allows for returning "
 "``jsonify(error=\"error msg\"), 400`` from a view function."
 msgstr ""
-"Las funciones de vista ahora pueden devolver una tupla con la primera "
-"instancia siendo una instancia de :class:`flask.Response`. Esto permite "
-"devolver ``jsonify(error=\"error msg\"), 400`` desde una función de "
-"vista."
+"Las funciones de vista ahora pueden devolver una tupla cuyo primer elemento "
+"sea una instancia de ``Response``. Esto permite devolver ``jsonify"
+"(error=\"error msg\"), 400`` desde una función de vista."
 
 #: ../../project/CHANGES.rst:1267 17d859cac3c14306993b8223389f848a
 msgid ""
@@ -3799,6 +3730,16 @@ msgid ""
 "through a new ``SEND_FILE_MAX_AGE_DEFAULT`` configuration variable, which"
 " is used in the default ``get_send_file_max_age`` implementation."
 msgstr ""
+"``Flask`` y ``Blueprint`` ahora proporcionan un hook "
+"``get_send_file_max_age`` para que las subclases puedan sobrescribir el "
+"comportamiento de servir archivos estáticos desde Flask al usar "
+"``Flask.send_static_file`` (utilizado por el manejador de archivos estáticos "
+"por defecto) y ``helpers.send_file``. Este hook recibe un nombre de archivo, "
+"lo que permite, por ejemplo, cambiar los controles de caché según la "
+"extensión del archivo. La edad máxima por defecto para ``send_file`` y "
+"archivos estáticos puede configurarse mediante una nueva variable de "
+"configuración ``SEND_FILE_MAX_AGE_DEFAULT``, que se utiliza en la "
+"implementación predeterminada de ``get_send_file_max_age``."
 
 #: ../../project/CHANGES.rst:1276 667590d6c694439181bf88e985cc906e
 msgid ""
@@ -3819,14 +3760,12 @@ msgstr ""
 "significado definido."
 
 #: ../../project/CHANGES.rst:1282 2b532f5219a34c92906a00e4d2202f86
-#, fuzzy
 msgid ""
 "Added ``Flask.request_globals_class`` to allow a specific class to be "
 "used on creation of the ``g`` instance of each request."
 msgstr ""
-"Se ha añadido :attr:`flask.Flask.request_globals_class` para permitir que"
-" se utilice una clase específica en la creación de la instancia "
-":data:`~flask.g` de cada solicitud."
+"Se añadió ``Flask.request_globals_class`` para permitir que se use una clase "
+"específica al crear la instancia ``g`` de cada solicitud."
 
 #: ../../project/CHANGES.rst:1284 c2b4167c0308448aa4b3a290e61ee059
 msgid ""
@@ -3837,18 +3776,16 @@ msgstr ""
 "para forzar la adición de métodos al registrarse."
 
 #: ../../project/CHANGES.rst:1286 e8bda93e3ac0474590e541eb90838b9b
-#, fuzzy
 msgid "Added ``flask.after_this_request``."
-msgstr "Añadido :func:`flask.after_this_request`."
+msgstr "Se añadió ``flask.after_this_request``."
 
 #: ../../project/CHANGES.rst:1287 ffcbd545ec564778ab2d275c53b2bce8
-#, fuzzy
 msgid ""
 "Added ``flask.stream_with_context`` and the ability to push contexts "
 "multiple times without producing unexpected behavior."
 msgstr ""
-"Se ha añadido :func:`flask.stream_with_context` y la capacidad de empujar"
-" contextos múltiples veces sin producir un comportamiento inesperado."
+"Se añadieron ``flask.stream_with_context`` y la capacidad de apilar "
+"contextos múltiples veces sin producir comportamientos inesperados."
 
 #: ../../project/CHANGES.rst:1292 849897aa076a41b7880772732cb5a5d6
 msgid "Version 0.8.1"
@@ -3968,13 +3905,12 @@ msgid "Added the ``APPLICATION_ROOT`` configuration variable."
 msgstr "Se ha añadido la variable de configuración ``APPLICATION_ROOT``."
 
 #: ../../project/CHANGES.rst:1334 b097a81c7ff14e7291ac31ee5c0a57c0
-#, fuzzy
 msgid ""
 "Implemented ``TestClient.session_transaction`` to easily modify sessions "
 "from the test environment."
 msgstr ""
-"Implementado :meth:`~flask.testing.TestClient.session_transaction` para "
-"modificar fácilmente las sesiones desde el entorno de pruebas."
+"Se implementó ``TestClient.session_transaction`` para modificar fácilmente "
+"las sesiones desde el entorno de pruebas."
 
 #: ../../project/CHANGES.rst:1336 732c3b702bd7499e83e96fbff9c075e2
 msgid ""
@@ -3988,13 +3924,12 @@ msgstr ""
 "defecto."
 
 #: ../../project/CHANGES.rst:1339 b9f2b029bea84010b47d1150eeaaa789
-#, fuzzy
 msgid ""
 "Added ``View.decorators`` to support simpler decorating of pluggable "
 "(class-based) views."
 msgstr ""
-"Añadido :attr:`flask.views.View.decorators` para soportar una decoración "
-"más sencilla de las vistas enchufables (basadas en clases)."
+"Se añadió ``View.decorators`` para soportar una decoración más sencilla de "
+"vistas enchufables (basadas en clases)."
 
 #: ../../project/CHANGES.rst:1341 c555bf8ee6fe4fc48da608224102d322
 msgid ""
@@ -4020,10 +3955,9 @@ msgstr ""
 " al método ``get`` si no se ha implementado ningún manejador."
 
 #: ../../project/CHANGES.rst:1346 7dd75b5abc8a422eb51333aa00370550
-#, fuzzy
 msgid "Implemented the virtual ``flask.ext`` package to import extensions from."
 msgstr ""
-"Implementado el paquete virtual :mod:`flask.ext` para importar "
+"Se implementó el paquete virtual ``flask.ext`` desde el cual importar "
 "extensiones."
 
 #: ../../project/CHANGES.rst:1348 14a17731d0e64354bbe113833c388efb
@@ -4087,23 +4021,21 @@ msgid "Released 2011-06-28, codename Grappa"
 msgstr "Lanzamiento 2011-06-28, codename Grappa"
 
 #: ../../project/CHANGES.rst:1380 2f8d03b4e54f4dc1bfd405b65206bfc4
-#, fuzzy
 msgid ""
 "Added ``Flask.make_default_options_response`` which can be used by "
 "subclasses to alter the default behavior for ``OPTIONS`` responses."
 msgstr ""
-"Añadido :meth:`~flask.Flask.make_default_options_response` que puede ser "
-"utilizado por subclases para alterar el comportamiento por defecto de las"
-" respuestas ``OPTIONS``."
+"Se añadió ``Flask.make_default_options_response``, que puede ser utilizado "
+"por las subclases para modificar el comportamiento predeterminado de las "
+"respuestas ``OPTIONS``."
 
 #: ../../project/CHANGES.rst:1382 2d6a5f89f3cd4a9182d046b944ed9614
-#, fuzzy
 msgid ""
 "Unbound locals now raise a proper ``RuntimeError`` instead of an "
 "``AttributeError``."
 msgstr ""
-"Los locales no vinculados ahora lanzan un :exc:`RuntimeError` apropiado "
-"en lugar de un :exc:`AttributeError`."
+"Las variables locales no enlazadas ahora generan un ``RuntimeError`` "
+"adecuado en lugar de un ``AttributeError``."
 
 #: ../../project/CHANGES.rst:1384 812aa32a7a124a719ceccf03d4675fca
 msgid ""
@@ -4111,6 +4043,10 @@ msgid ""
 "deprecated for ``send_file`` because it was unreliable. Pass filenames "
 "instead or attach your own etags and provide a proper mimetype by hand."
 msgstr ""
+"La inferencia de mimetype y el soporte de etag basados en objetos de archivo "
+"ahora están obsoletos para ``send_file`` porque no eran fiables. En su "
+"lugar, pasa nombres de archivo o adjunta tus propios etags y proporciona "
+"manualmente un mimetype adecuado."
 
 #: ../../project/CHANGES.rst:1388 efcbdee51eb54ee4820266672998c52f
 msgid ""
@@ -4195,15 +4131,13 @@ msgid "Implemented ``has_request_context``."
 msgstr "Se ha implementado «has_request_context»."
 
 #: ../../project/CHANGES.rst:1413 e33e40132e6d4a2da80370e54311fb9f
-#, fuzzy
 msgid ""
 "Deprecated ``init_jinja_globals``. Override the "
 "``Flask.create_jinja_environment`` method instead to achieve the same "
 "functionality."
 msgstr ""
-"Se ha obviado ``init_jinja_globals``. Anule el método "
-":meth:`~flask.Flask.create_jinja_environment` para conseguir la misma "
-"funcionalidad."
+"Se declara obsoleto ``init_jinja_globals``. En su lugar, sobrescribe el "
+"método ``Flask.create_jinja_environment`` para lograr la misma funcionalidad."
 
 #: ../../project/CHANGES.rst:1416 2d657721fc2a478191476145754eb119
 msgid "Added ``safe_join``."
@@ -4218,13 +4152,12 @@ msgstr ""
 "busca el parámetro charset mimetype."
 
 #: ../../project/CHANGES.rst:1419 7396b4476bfd4498b8fc8b65ddec6516
-#, fuzzy
 msgid ""
 "Don't modify the session on ``get_flashed_messages`` if there are no "
 "messages in the session."
 msgstr ""
-"No se modifica la sesión en :func:`flask.get_flashed_messages` si no hay "
-"mensajes en la sesión."
+"No se modifica la sesión en ``get_flashed_messages`` si no hay mensajes en "
+"la sesión."
 
 #: ../../project/CHANGES.rst:1421 cac4a1269d884540afec8abe2ebe0b35
 msgid "``before_request`` handlers are now able to abort requests with errors."
@@ -4336,11 +4269,9 @@ msgstr ""
 ".yml."
 
 #: ../../project/CHANGES.rst:1462 c71e1c82be344d8d85b21d4fd3db0109
-#, fuzzy
 msgid "``Flask.config`` is now available in the templates as ``config``."
 msgstr ""
-"El :attr:`~flask.Flask.config` está ahora disponible en las plantillas "
-"como ``config``."
+"``Flask.config`` ahora está disponible en las plantillas como ``config``."
 
 #: ../../project/CHANGES.rst:1463 1937ca42796745e08df9d15b9cb30239
 msgid ""
@@ -4359,45 +4290,39 @@ msgstr ""
 "el nuevo valor de configuración ``MAX_CONTENT_LENGTH``."
 
 #: ../../project/CHANGES.rst:1467 c5dcacb64bb54212995d9a102d92e9d6
-#, fuzzy
 msgid ""
 "The endpoint for the ``Module.add_url_rule`` method is now optional to be"
 " consistent with the function of the same name on the application object."
 msgstr ""
-"El punto final del método :meth:`flask.Module.add_url_rule` es ahora "
-"opcional para ser coherente con la función del mismo nombre en el objeto "
-"de aplicación."
+"El endpoint para el método ``Module.add_url_rule`` ahora es opcional, para "
+"ser coherente con la función del mismo nombre en el objeto de la aplicación."
 
 #: ../../project/CHANGES.rst:1470 68a8702a6cc14b77b2024319371b08bf
-#, fuzzy
 msgid ""
 "Added a ``make_response`` function that simplifies creating response "
 "object instances in views."
 msgstr ""
-"Añadida una función :func:`flask.make_response` que simplifica la "
-"creación de instancias de objetos de respuesta en las vistas."
+"Se añadió la función ``make_response`` que simplifica la creación de "
+"instancias de objetos de respuesta en las vistas."
 
 #: ../../project/CHANGES.rst:1472 9a05fdd973b74309b0760d6c4d413d7b
-#, fuzzy
 msgid ""
 "Added signalling support based on blinker. This feature is currently "
 "optional and supposed to be used by extensions and applications. If you "
 "want to use it, make sure to have ``blinker`` installed."
 msgstr ""
-"Añadido soporte de señalización basado en el blinker. Esta característica"
-" es actualmente opcional y se supone que debe ser utilizada por las "
-"extensiones y aplicaciones. Si quieres usarlo, asegúrate de tener "
-"`blinker`_ instalado."
+"Se añadió soporte de señales basado en blinker. Esta característica es "
+"actualmente opcional y se supone que debe ser utilizada por extensiones y "
+"aplicaciones. Si deseas usarla, asegúrate de tener ``blinker`` instalado."
 
 #: ../../project/CHANGES.rst:1475 5c521357742841fcb474e380e7e97919
-#, fuzzy
 msgid ""
 "Refactored the way URL adapters are created. This process is now fully "
 "customizable with the ``Flask.create_url_adapter`` method."
 msgstr ""
-"Refactorizada la forma en que se crean los adaptadores de URL. Este "
-"proceso es ahora totalmente personalizable con el método "
-":meth:`~flask.Flask.create_url_adapter`."
+"Se refactorizó la forma en que se crean los adaptadores de URL. Este proceso "
+"ahora es completamente personalizable mediante el método "
+"``Flask.create_url_adapter``."
 
 #: ../../project/CHANGES.rst:1477 b8abb62af9c44756bbe298404cd85fe4
 msgid ""
@@ -4478,13 +4403,12 @@ msgid "Refactored Flask internally. It now consists of more than a single file."
 msgstr "Refactorizado Flask internamente. Ahora consta de más de un archivo."
 
 #: ../../project/CHANGES.rst:1514 64f249aa7e274f2786d03025f86be610
-#, fuzzy
 msgid ""
 "``send_file`` now emits etags and has the ability to do conditional "
 "responses builtin."
 msgstr ""
-":func:`flask.send_file` ahora emite etags y tiene la capacidad de hacer "
-"respuestas condicionales incorporadas."
+"``send_file`` ahora genera etags y tiene la capacidad de realizar respuestas "
+"condicionales de manera integrada."
 
 #: ../../project/CHANGES.rst:1516 a26dd27816ca43e4b60d09da232b7009
 msgid ""
@@ -4532,13 +4456,12 @@ msgstr ""
 "aplicación desde los módulos."
 
 #: ../../project/CHANGES.rst:1531 6637ff06d0674a18bea06ba006f4cc9f
-#, fuzzy
 msgid ""
 "``Flask.after_request`` handlers are now also invoked if the request dies"
 " with an exception and an error handling page kicks in."
 msgstr ""
-":meth:`~flask.Flask.after_request` ahora también se invoca si la "
-"solicitud muere con una excepción y se inicia una página de gestión de "
+"Los manejadores ``Flask.after_request`` ahora también se invocan si la "
+"solicitud termina con una excepción y se activa una página de manejo de "
 "errores."
 
 #: ../../project/CHANGES.rst:1533 1f95eb38a2f542c9a80a473c7d897b6d
@@ -4611,16 +4534,15 @@ msgid "Added support for categories for flashed messages."
 msgstr "Añadido soporte para las categorías de los mensajes flash."
 
 #: ../../project/CHANGES.rst:1560 d410ca9d782146ebb5c95779c1c08e8b
-#, fuzzy
 msgid ""
 "The application now configures a ``logging.Handler`` and will log request"
 " handling exceptions to that logger when not in debug mode. This makes it"
 " possible to receive mails on server errors for example."
 msgstr ""
-"La aplicación ahora configura un :class:`logging.Handler` y registrará "
-"las excepciones de manejo de solicitudes en ese logger cuando no esté en "
-"modo de depuración. Esto hace posible recibir correos sobre errores del "
-"servidor, por ejemplo."
+"La aplicación ahora configura un ``logging.Handler`` y registrará las "
+"excepciones durante el manejo de solicitudes en ese logger cuando no esté en "
+"modo de depuración. Esto permite, por ejemplo, recibir correos electrónicos "
+"en caso de errores del servidor."
 
 # Add with into codeblock
 #: ../../project/CHANGES.rst:1564 65e5aeabc0174f559839cc5a135945af
@@ -4662,16 +4584,13 @@ msgid "Integrated JSON support"
 msgstr "Soporte JSON integrado"
 
 #: ../../project/CHANGES.rst:1578 e54d754dcc044bf0a78c0ffb4f2a088d
-#, fuzzy
 msgid "Added ``get_template_attribute`` helper function."
-msgstr "Añadida la función de ayuda :func:`~flask.get_template_attribute`."
+msgstr "Se añadió la función auxiliar ``get_template_attribute``."
 
 #: ../../project/CHANGES.rst:1579 1f521c40e5324f6482b3a0bba3fe3f08
-#, fuzzy
 msgid "``Flask.add_url_rule`` can now also register a view function."
 msgstr ""
-":meth:`~flask.Flask.add_url_rule` ahora también puede registrar una "
-"función de vista."
+"``Flask.add_url_rule`` ahora también puede registrar una función de vista."
 
 #: ../../project/CHANGES.rst:1580 6eea95b274d74f43b8f119dedf559cf7
 msgid "Refactored internal request dispatching."
