@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-21 03:04+0000\n"
-"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"PO-Revision-Date: 2026-01-04 05:01+0000\n"
+"Last-Translator: Alexia Frank <mcallzbl@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/server/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/server.rst:4 f05ac35ac0ac407d8f6beed1e933bd8d
@@ -40,6 +40,8 @@ msgid ""
 "intended for use only during local development. It is not designed to be "
 "particularly efficient, stable, or secure."
 msgstr ""
+"请勿在生产环境使用开发服务器。开发服务器仅适用于本地开发环境，其设计并未针对"
+"高效性、稳定性或安全性进行优化。"
 
 #: ../../project/docs/server.rst:16 1407b26eee584557b2291c6768b67228
 msgid "See :doc:`/deploying/index` for deployment options."
@@ -47,7 +49,7 @@ msgstr ""
 
 #: ../../project/docs/server.rst:19 f75ea6385ba34af8a56bda10278ed224
 msgid "Command Line"
-msgstr ""
+msgstr "命令行"
 
 #: ../../project/docs/server.rst:21 4fa1f0019113497a88162b294bddcbe8
 msgid ""
