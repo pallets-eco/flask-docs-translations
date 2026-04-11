@@ -3,24 +3,27 @@
 # This file is distributed under the same license as the Flask package.
 # FIRST AUTHOR <victor.levieux@gmail.com>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr_FR <victor.levieux@gmail.com>\n"
+"PO-Revision-Date: 2026-04-12 10:09+0000\n"
+"Last-Translator: giac41 <giacomo.caillard@gmail.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/flask/"
+"patternsappdispatch/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.17-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/patterns/appdispatch.rst:2
 #: e545eb72233b45bcad5d18ada1139bd8
 msgid "Application Dispatching"
-msgstr ""
+msgstr "Répartitions des requêtes entre applications"
 
 #: ../../project/docs/patterns/appdispatch.rst:4
 #: b0c7e3472ddb4881abbf9d596fc3c2ea
@@ -203,4 +206,3 @@ msgstr ""
 #~ " falls back to another application if"
 #~ " the creator function returns ``None``::"
 #~ msgstr ""
-
