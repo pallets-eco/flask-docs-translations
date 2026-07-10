@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-11 06:05+0000\n"
-"Last-Translator: ChenMoFeiJin <1424865872@qq.com>\n"
+"PO-Revision-Date: 2026-07-11 10:01+0000\n"
+"Last-Translator: reducedradius "
+"<137701630+flytothehighest@users.noreply.github.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/api/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 2026.7.1.dev0\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/api.rst:2 84591d17c43147579d5eb589f573be7b
@@ -283,11 +284,11 @@ msgstr ""
 #: flask.views.MethodView.dispatch_request of
 #: werkzeug.sansio.response.Response.set_etag
 msgid "Parameters"
-msgstr ""
+msgstr "参数"
 
 #: fa96b03fdf5d460e9250888721aa2629 flask.app.Flask:66 of
 msgid "the name of the application package"
-msgstr ""
+msgstr "应用包名"
 
 #: 7eca34b86c9a46b28999c88321a0451f flask.app.Flask:67 of
 msgid ""
