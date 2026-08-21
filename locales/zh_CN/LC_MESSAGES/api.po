@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2026-07-11 10:01+0000\n"
+"PO-Revision-Date: 2026-08-22 13:51+0000\n"
 "Last-Translator: reducedradius "
 "<137701630+flytothehighest@users.noreply.github.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2026.7.1.dev0\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/api.rst:2 84591d17c43147579d5eb589f573be7b
@@ -66,7 +66,7 @@ msgstr ""
 
 #: ed04515766d74e19a9c3b82e04b4a222 flask.app.Flask:19 of
 msgid "About the First Parameter"
-msgstr ""
+msgstr "关于第一参数"
 
 #: cde1c7e8a694474d9c7b591e2ba91c41 flask.app.Flask:21 of
 msgid ""
@@ -560,7 +560,7 @@ msgstr ""
 #: werkzeug.wrappers.response.Response.calculate_content_length
 #: werkzeug.wrappers.response.Response.iter_encoded
 msgid "Return type"
-msgstr ""
+msgstr "返回类型"
 
 #: 66554d3608bf427d82c2cd11d41021a9 a6bf3d3a5423436aa68fc02ec2c6a642
 #: flask.app.Flask.send_static_file:1
