@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-22 10:01+0000\n"
-"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"PO-Revision-Date: 2026-08-22 13:51+0000\n"
+"Last-Translator: reducedradius "
+"<137701630+flytothehighest@users.noreply.github.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/errorhandling/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/errorhandling.rst:2 504a96bc3d1f4d4a8db5cfdaa37a08a8
@@ -154,7 +155,7 @@ msgstr ""
 
 #: ../../project/docs/errorhandling.rst:76 0dcc5bdd1f774d17b1169cc7776a7117
 msgid "Error Handlers"
-msgstr ""
+msgstr "错误处理程序"
 
 #: ../../project/docs/errorhandling.rst:78 21089617047a4b539cbbd92c063aa6ed
 msgid ""
@@ -224,7 +225,7 @@ msgstr ""
 
 #: ../../project/docs/errorhandling.rst:140 baeb1d86e46647d3957cf276604b4ff8
 msgid "Handling"
-msgstr ""
+msgstr "处理"
 
 #: ../../project/docs/errorhandling.rst:142 66c4e43c939e4ff98c7a90745b0b7961
 msgid ""
@@ -279,7 +280,7 @@ msgstr ""
 
 #: ../../project/docs/errorhandling.rst:177 0cf0ad865b704edebb683bc408d9258c
 msgid "Generic Exception Handlers"
-msgstr ""
+msgstr "通用异常处理程序"
 
 #: ../../project/docs/errorhandling.rst:179 e797d7ae76274e39a8c76e6569e92b6d
 msgid ""
@@ -353,7 +354,7 @@ msgstr ""
 
 #: ../../project/docs/errorhandling.rst:259 014fb6ab3043452ebfd07df3ab3a31ce
 msgid "Custom Error Pages"
-msgstr ""
+msgstr "自定义错误页面"
 
 #: ../../project/docs/errorhandling.rst:261 07c38b17e6684fdfa2f90bf5792dab9e
 msgid ""
@@ -393,7 +394,7 @@ msgstr ""
 
 #: ../../project/docs/errorhandling.rst:320 fe44bf0bb9054297b80d7cd5a4563b5d
 msgid "An example template might be this:"
-msgstr ""
+msgstr "一种示例模板可能是这样："
 
 #: ../../project/docs/errorhandling.rst:334 81fe554c60134e71b3957dbdb38eede8
 msgid "Further Examples"
@@ -489,7 +490,7 @@ msgstr ""
 
 #: ../../project/docs/errorhandling.rst:520 302e8cc4ad754e1f871081e13b542c6f
 msgid "Debugging"
-msgstr ""
+msgstr "调试"
 
 #: ../../project/docs/errorhandling.rst:522 028324374ef6439db25f7ca0564032f8
 msgid ""
