@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-11 06:05+0000\n"
-"Last-Translator: ChenMoFeiJin <1424865872@qq.com>\n"
+"PO-Revision-Date: 2026-08-22 13:51+0000\n"
+"Last-Translator: reducedradius "
+"<137701630+flytothehighest@users.noreply.github.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/web-security/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/web-security.rst:2 055ed17b7a344a6984cdb05677e97c8d
@@ -43,7 +44,7 @@ msgstr ""
 
 #: ../../project/docs/web-security.rst:13 86e101210dee4fe182092c02b7063d8c
 msgid "Resource Use"
-msgstr ""
+msgstr "资源利用"
 
 #: ../../project/docs/web-security.rst:15 55f1fd539c584e9e8718dbb3e9b749ed
 msgid ""
@@ -178,7 +179,7 @@ msgstr ""
 
 #: ../../project/docs/web-security.rst:104 b04409d8d805405ba767448596a371d8
 msgid "Cross-Site Request Forgery (CSRF)"
-msgstr ""
+msgstr "跨站请求伪造（CSRF）"
 
 #: ../../project/docs/web-security.rst:106 91f4cdd427134769b99f2f4550ddc2b1
 msgid ""
@@ -232,7 +233,7 @@ msgstr ""
 
 #: ../../project/docs/web-security.rst:141 733cd3f2a7db4fa6ba367736fcfba653
 msgid "JSON Security"
-msgstr ""
+msgstr "JSON安全性"
 
 #: ../../project/docs/web-security.rst:143 3d3b128dda044e04a1e957cd8fa331b3
 msgid ""
@@ -253,7 +254,7 @@ msgstr ""
 
 #: ../../project/docs/web-security.rst:154 9a3e1833e89b46b9b48e2417ca82e346
 msgid "Security Headers"
-msgstr ""
+msgstr "安全头部"
 
 #: ../../project/docs/web-security.rst:156 e60e6e52738e421e9efca6626f77ad95
 msgid ""
@@ -281,7 +282,7 @@ msgstr ""
 
 #: ../../project/docs/web-security.rst:176 4e7bb1a057294a0685eee0ec40cbee3e
 msgid "Content Security Policy (CSP)"
-msgstr ""
+msgstr "内容安全策略（CSP）"
 
 #: ../../project/docs/web-security.rst:178 1aa3569a9ede47718d431067234b14b1
 msgid ""
