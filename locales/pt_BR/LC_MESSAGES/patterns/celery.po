@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/patternscelery/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/patterns/celery.rst:2
 #: 82d5179f86e444ee91346e650749bb65
@@ -42,7 +42,7 @@ msgstr ""
 #: ../../project/docs/patterns/celery.rst:23
 #: 601e243d65754e10bc16db418758024e
 msgid "Install"
-msgstr ""
+msgstr "Instalar"
 
 #: ../../project/docs/patterns/celery.rst:25
 #: d48d2ccff8d34b3ebd0e3760b8b27d65
@@ -107,7 +107,7 @@ msgstr ""
 #: ../../project/docs/patterns/celery.rst:140
 #: f8c048cbea794ac1955655cd05f5478c
 msgid "Defining Tasks"
-msgstr ""
+msgstr "Definindo Tarefas"
 
 #: ../../project/docs/patterns/celery.rst:142
 #: e1765672e1034979abf21824b20eb2e9
@@ -152,7 +152,7 @@ msgstr ""
 #: ../../project/docs/patterns/celery.rst:193
 #: 4a8618af22ad4a45bec7bedaba00cc85
 msgid "Getting Results"
-msgstr ""
+msgstr "Obtendo Resultados"
 
 #: ../../project/docs/patterns/celery.rst:195
 #: f722f1f29bd74766a9463ac70fe61eb6
