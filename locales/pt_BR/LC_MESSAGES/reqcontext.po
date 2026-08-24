@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/reqcontext/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/reqcontext.rst:4
 #: 7bb331ea57304d9c94a4e558bfe1a5e4
@@ -37,7 +37,7 @@ msgstr ""
 #: ../../project/docs/reqcontext.rst:17
 #: 3a6f4b0d32f14412a4284d9b56f936ab
 msgid "Purpose of the Context"
-msgstr ""
+msgstr "Propósito do Contexto"
 
 #: ../../project/docs/reqcontext.rst:19
 #: 3d2733654c764ead9ccc291d0ce3bb3b
@@ -97,7 +97,7 @@ msgstr ""
 #: ../../project/docs/reqcontext.rst:89
 #: a24f686ddb064886a458315c10f8ac33
 msgid "How the Context Works"
-msgstr ""
+msgstr "Como o Contexto Funciona"
 
 #: ../../project/docs/reqcontext.rst:91
 #: 39adf0ed8bc94379b990e5e3c0b26947
