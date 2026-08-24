@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/deployinggevent/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/deploying/gevent.rst:2
 #: 3f3c9adb92e849a497d2f4779a6f9a20
@@ -47,7 +47,7 @@ msgstr ""
 #: ../../project/docs/deploying/gevent.rst:25
 #: 285a1d676b5347268c17d4a20a4a63a4
 msgid "Installing"
-msgstr ""
+msgstr "Instalando"
 
 #: ../../project/docs/deploying/gevent.rst:27
 #: 9066dbf798984e28bf193c4aff2f8526
@@ -72,7 +72,7 @@ msgstr ""
 #: ../../project/docs/deploying/gevent.rst:48
 #: 3364ec26b3b14fe9bc929a0d4451dd9e
 msgid "``wsgi.py``"
-msgstr ""
+msgstr "``wsgi.py``"
 
 #: ../../project/docs/deploying/gevent.rst:62
 #: 03267eed1f3a450486c95728c0f9dcec
