@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/appcontext/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/appcontext.rst:4
 #: 85faa7e40162460980c7f5328214cc30
@@ -41,7 +41,7 @@ msgstr ""
 #: ../../project/docs/appcontext.rst:16
 #: cbfecd3891e24136a1bb52040e341f8f
 msgid "Purpose of the Context"
-msgstr ""
+msgstr "Propósito do Contexto"
 
 #: ../../project/docs/appcontext.rst:18
 #: 34d4dd9c3f594ce2bed28257235b9d38
@@ -101,7 +101,7 @@ msgstr ""
 #: ../../project/docs/appcontext.rst:87
 #: 029ca1799dad40a4840685ce10a78d5c
 msgid "Storing Data"
-msgstr ""
+msgstr "Armazenando Dados"
 
 #: ../../project/docs/appcontext.rst:89
 #: 59db84141d394ee68fe0e049e99eb0e8
@@ -151,7 +151,7 @@ msgstr ""
 #: ../../project/docs/appcontext.rst:141
 #: aeaf50e4bd5e4391ac3a1cb9131d9d74
 msgid "Events and Signals"
-msgstr ""
+msgstr "Eventos e Sinais"
 
 #: ../../project/docs/appcontext.rst:143
 #: a6afb2bea2904499bd301c1bfebd6686
