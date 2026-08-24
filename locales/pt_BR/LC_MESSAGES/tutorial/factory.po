@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"flask/tutorialfactory/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/tutorial/factory.rst:4
 #: fa408ba5c4504fb897e145430ac1d2a3
@@ -50,7 +52,7 @@ msgstr ""
 #: ../../project/docs/tutorial/factory.rst:35
 #: aae7b943aa2345c2896f799243a2132b
 msgid "``flaskr/__init__.py``"
-msgstr ""
+msgstr "``flaskr/__init__.py``"
 
 #: ../../project/docs/tutorial/factory.rst:71
 #: 3d5de3ae5fd746e282e3415a48c62ea0
@@ -140,4 +142,4 @@ msgstr ""
 #: ../../project/docs/tutorial/factory.rst:162
 #: 0274ace52eea42449bdd2d46f7d1f4aa
 msgid "Continue to :doc:`database`."
-msgstr ""
+msgstr "Continue para :doc:`database`."
