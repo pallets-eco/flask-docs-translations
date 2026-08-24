@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/tutorialblog/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/tutorial/blog.rst:4
 #: 790576ea81f34bc38505d3913df7c523
@@ -28,6 +28,10 @@ msgstr "Blueprint de Blog"
 #: e3a009b1afe34cbca306850010e036ad
 msgid "You'll use the same techniques you learned about when writing the authentication blueprint to write the blog blueprint. The blog should list all posts, allow logged in users to create posts, and allow the author of a post to edit or delete it."
 msgstr ""
+"Você usará as mesmas técnicas que aprendeu ao escrever o blueprint de "
+"autenticação para escrever o blueprint do blog. O blog deve listar todas as "
+"postagens, permitir que usuários logados criem postagens e permitir que o "
+"autor de uma postagem a edite ou exclua."
 
 #: ../../project/docs/tutorial/blog.rst:11
 #: e28150a9ddb445d9ab36f9feeeb58c61
@@ -37,7 +41,7 @@ msgstr ""
 #: ../../project/docs/tutorial/blog.rst:16
 #: cca15b2691b148cfabc8d79cb5a20237
 msgid "The Blueprint"
-msgstr ""
+msgstr "A Blueprint"
 
 #: ../../project/docs/tutorial/blog.rst:18
 #: 6682d0cb9e9a434ba00756923c257d94
@@ -57,7 +61,7 @@ msgstr ""
 #: 9f0e59054c9e40fe83e8006fc2b77d1a
 #: 19dd9fad19e54a37b97abd16d40170ae
 msgid "``flaskr/blog.py``"
-msgstr ""
+msgstr "``flaskr/blog.py``"
 
 #: ../../project/docs/tutorial/blog.rst:33
 #: b0375d3a800f42b6a0cea1b40a3e7249
@@ -67,7 +71,7 @@ msgstr ""
 #: ../../project/docs/tutorial/blog.rst:37
 #: 1bd76dbb94b94c97b6fe5ff9172b7231
 msgid "``flaskr/__init__.py``"
-msgstr ""
+msgstr "``flaskr/__init__.py``"
 
 #: ../../project/docs/tutorial/blog.rst:51
 #: 4a1779337b8749d6b3405c747403c02f
@@ -97,7 +101,7 @@ msgstr ""
 #: ../../project/docs/tutorial/blog.rst:89
 #: 3e426e93678140619dfd06a88d271eee
 msgid "``flaskr/templates/blog/index.html``"
-msgstr ""
+msgstr "``flaskr/templates/blog/index.html``"
 
 #: ../../project/docs/tutorial/blog.rst:121
 #: 04a816d436f64418bb9a90738f9d6616
@@ -107,7 +111,7 @@ msgstr ""
 #: ../../project/docs/tutorial/blog.rst:132
 #: a8b42d9bc5bf4274adec1252def442c1
 msgid "Create"
-msgstr ""
+msgstr "Criar"
 
 #: ../../project/docs/tutorial/blog.rst:134
 #: 74817038af7841c7a346d4e7501dfc2a
@@ -122,12 +126,12 @@ msgstr ""
 #: ../../project/docs/tutorial/blog.rst:170
 #: 41a331a141c34742af8c28d2a0d766c3
 msgid "``flaskr/templates/blog/create.html``"
-msgstr ""
+msgstr "``flaskr/templates/blog/create.html``"
 
 #: ../../project/docs/tutorial/blog.rst:191
 #: f44665c54ac947a98dbebc59b53247ee
 msgid "Update"
-msgstr ""
+msgstr "Atualizar"
 
 #: ../../project/docs/tutorial/blog.rst:193
 #: a851d5578f414ce7850b6716c837f628
@@ -157,7 +161,7 @@ msgstr ""
 #: ../../project/docs/tutorial/blog.rst:274
 #: 1eeba89042034c3e83166edd318000c2
 msgid "``flaskr/templates/blog/update.html``"
-msgstr ""
+msgstr "``flaskr/templates/blog/update.html``"
 
 #: ../../project/docs/tutorial/blog.rst:298
 #: ad1d3a25beff46569ce2b5dfb6bf6b41
@@ -187,4 +191,4 @@ msgstr ""
 #: ../../project/docs/tutorial/blog.rst:336
 #: f7ed25c09c084f8f869e34251e71670f
 msgid "Continue to :doc:`install`."
-msgstr ""
+msgstr "Continue para :doc:`install`."
