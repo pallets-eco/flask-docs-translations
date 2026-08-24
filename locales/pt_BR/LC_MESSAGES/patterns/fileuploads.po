@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/patternsfileuploads/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/patterns/fileuploads.rst:2
 #: 8af349db5e4c4e62bc462ed8554e69ca
@@ -47,7 +47,7 @@ msgstr ""
 #: ../../project/docs/patterns/fileuploads.rst:15
 #: 70d04dd388c24dbfb8061fa6a6d2ca53
 msgid "A Gentle Introduction"
-msgstr ""
+msgstr "Uma Introdução Gentil"
 
 #: ../../project/docs/patterns/fileuploads.rst:17
 #: dca32fc7c777453583fd12b96a730e60
@@ -107,7 +107,7 @@ msgstr ""
 #: ../../project/docs/patterns/fileuploads.rst:129
 #: 18d08a4e92e347df944a546e19f12216
 msgid "Improving Uploads"
-msgstr ""
+msgstr "Melhorando Uploads"
 
 #: ../../project/docs/patterns/fileuploads.rst:133
 #: 47f5caf8bd5e48eea60bbeebe500ee98
@@ -137,7 +137,7 @@ msgstr ""
 #: ../../project/docs/patterns/fileuploads.rst:162
 #: 1f1f62c3d4bc491c98276fd565d4b8c5
 msgid "Upload Progress Bars"
-msgstr ""
+msgstr "Barra de Progresso de Upload"
 
 #: ../../project/docs/patterns/fileuploads.rst:164
 #: c4b4ea7b7a264a77a7c26265af799a78
@@ -147,7 +147,7 @@ msgstr ""
 #: ../../project/docs/patterns/fileuploads.rst:171
 #: 68cc9f8311194b22b05cf077d61e6223
 msgid "An Easier Solution"
-msgstr ""
+msgstr "Uma Solução Mais Fácil"
 
 #: ../../project/docs/patterns/fileuploads.rst:173
 #: 2b644a9ac7984a61be235b26244ad39c
