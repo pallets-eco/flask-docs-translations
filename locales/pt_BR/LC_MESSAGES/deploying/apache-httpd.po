@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/deployingapache-httpd/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/deploying/apache-httpd.rst:2
 #: bcb33e7b9c6641e49ccd803ec616e8f9
@@ -37,7 +37,7 @@ msgstr ""
 #: ../../project/docs/deploying/apache-httpd.rst:20
 #: a6182bf5cbd8466ba254d54436da63f1
 msgid "Domain Name"
-msgstr ""
+msgstr "Nome de Domínio"
 
 #: ../../project/docs/deploying/apache-httpd.rst:22
 #: 4690ad6ff00a425da24235b3d0cce4fb
@@ -57,12 +57,12 @@ msgstr ""
 #: ../../project/docs/deploying/apache-httpd.rst:35
 #: 633bc2c9ef674ff98292401681971ceb
 msgid "``/etc/hosts``"
-msgstr ""
+msgstr "``/etc/hosts``"
 
 #: ../../project/docs/deploying/apache-httpd.rst:42
 #: 70edbd66795d4ef68936c445f1114ca8
 msgid "Configuration"
-msgstr ""
+msgstr "Configuração"
 
 #: ../../project/docs/deploying/apache-httpd.rst:44
 #: edaff7b255ee4c5d852a1af2e35b8150
@@ -77,7 +77,7 @@ msgstr ""
 #: ../../project/docs/deploying/apache-httpd.rst:52
 #: a1d22db5ebf645a58bd2de19e028c988
 msgid "``/etc/httpd/conf/httpd.conf``"
-msgstr ""
+msgstr "``/etc/httpd/conf/httpd.conf``"
 
 #: ../../project/docs/deploying/apache-httpd.rst:61
 #: 1d427d3860424a7097297e12d8226d44
