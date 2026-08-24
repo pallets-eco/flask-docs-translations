@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/deployingindex/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/deploying/index.rst:2
 #: ea5fb6d6d8b04a68a9be55d779e1e8e3
@@ -37,7 +37,7 @@ msgstr ""
 #: ../../project/docs/deploying/index.rst:18
 #: aeb6f6d0d9bb412d8621debaa2e9ceb0
 msgid "Self-Hosted Options"
-msgstr ""
+msgstr "Opções de Self-Hosting"
 
 #: ../../project/docs/deploying/index.rst:20
 #: 2915c90abb6f408890d907e24acd3116
@@ -62,7 +62,7 @@ msgstr ""
 #: ../../project/docs/deploying/index.rst:59
 #: 79589a888dbd4c59bbaab112bb2ccd01
 msgid "Hosting Platforms"
-msgstr ""
+msgstr "Plataformas de Hospedagem"
 
 #: ../../project/docs/deploying/index.rst:61
 #: 76bbdc02196344d1b9e73ff5274e5324
@@ -72,7 +72,7 @@ msgstr ""
 #: ../../project/docs/deploying/index.rst:68
 #: d4b21d72522c40598e14c44e32165f78
 msgid "`PythonAnywhere <https://help.pythonanywhere.com/pages/Flask/>`_"
-msgstr ""
+msgstr "`PythonAnywhere <https://help.pythonanywhere.com/pages/Flask/>`_"
 
 #: ../../project/docs/deploying/index.rst:69
 #: e49a9adc1b0244f094fdd2f2712b188e
@@ -93,6 +93,8 @@ msgstr ""
 #: 6eb24a691ce84ec6a62c04b4c9319c81
 msgid "`Microsoft Azure <https://docs.microsoft.com/en-us/azure/app-service/quickstart-python>`_"
 msgstr ""
+"`Microsoft Azure <https://docs.microsoft.com/pt-br/azure/app-service/"
+"quickstart-python>`_"
 
 #: ../../project/docs/deploying/index.rst:74
 #: e8da05baa26e4501913f340c2cce1013
