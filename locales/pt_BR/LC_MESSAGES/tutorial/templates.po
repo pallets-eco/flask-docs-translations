@@ -8,19 +8,21 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"flask/tutorialtemplates/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/tutorial/templates.rst:4
 #: fd665b174743413792ce0ac9afb3a516
 msgid "Templates"
-msgstr ""
+msgstr "Templates"
 
 #: ../../project/docs/tutorial/templates.rst:6
 #: ee7c3fdf5f1b49dd887288093c9d1c00
@@ -55,7 +57,7 @@ msgstr ""
 #: ../../project/docs/tutorial/templates.rst:46
 #: 9cdad8b2cc8942d8ba1176f6485ebff4
 msgid "``flaskr/templates/base.html``"
-msgstr ""
+msgstr "``flaskr/templates/base.html``"
 
 #: ../../project/docs/tutorial/templates.rst:74
 #: abe0301e970243afa3e40f8b8ab708eb
@@ -100,7 +102,7 @@ msgstr ""
 #: ../../project/docs/tutorial/templates.rst:105
 #: 1db078fe59ad40a6bf80a83684cccfbd
 msgid "``flaskr/templates/auth/register.html``"
-msgstr ""
+msgstr "``flaskr/templates/auth/register.html``"
 
 #: ../../project/docs/tutorial/templates.rst:124
 #: 76d39f8582194850bf713d17b2bedb37
@@ -120,7 +122,7 @@ msgstr ""
 #: ../../project/docs/tutorial/templates.rst:144
 #: 0b51ed6b9e8e4fc7ac4d9aff5a02b9cb
 msgid "Log In"
-msgstr ""
+msgstr "Log In"
 
 #: ../../project/docs/tutorial/templates.rst:146
 #: 95e7beaaf2284f2db310e0f05a3c4494
@@ -130,12 +132,12 @@ msgstr ""
 #: ../../project/docs/tutorial/templates.rst:149
 #: f35765cbfd584398be1c976e11bfa554
 msgid "``flaskr/templates/auth/login.html``"
-msgstr ""
+msgstr "``flaskr/templates/auth/login.html``"
 
 #: ../../project/docs/tutorial/templates.rst:170
 #: ff4a8e196aa74846b03e916eebac9490
 msgid "Register A User"
-msgstr ""
+msgstr "Registre um Usuário"
 
 #: ../../project/docs/tutorial/templates.rst:172
 #: 92a2f9b0b6fc4a138818da1431337ab1
