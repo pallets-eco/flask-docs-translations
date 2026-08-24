@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/web-security/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/web-security.rst:2
 #: 055ed17b7a344a6984cdb05677e97c8d
@@ -67,7 +67,7 @@ msgstr ""
 #: ../../project/docs/web-security.rst:45
 #: 0d755e4a00654600b9a6dd3c3fcc59e7
 msgid "Cross-Site Scripting (XSS)"
-msgstr ""
+msgstr "Cross-Site Scripting (XSS)"
 
 #: ../../project/docs/web-security.rst:47
 #: abfad9994e434e039e0c2c15a01ce8e5
@@ -162,7 +162,7 @@ msgstr ""
 #: ../../project/docs/web-security.rst:141
 #: 733cd3f2a7db4fa6ba367736fcfba653
 msgid "JSON Security"
-msgstr ""
+msgstr "Segurança de JSON"
 
 #: ../../project/docs/web-security.rst:143
 #: 3d3b128dda044e04a1e957cd8fa331b3
@@ -198,6 +198,8 @@ msgstr ""
 #: ca1cf7cf3a5e4a2f8b86bcfe17fd489c
 msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security"
 msgstr ""
+"https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Strict-Transport-"
+"Security"
 
 #: ../../project/docs/web-security.rst:176
 #: 4e7bb1a057294a0685eee0ec40cbee3e
@@ -212,17 +214,19 @@ msgstr ""
 #: ../../project/docs/web-security.rst:184
 #: 9b587d6356234aed9a146d1074e6ad50
 msgid "https://csp.withgoogle.com/docs/index.html"
-msgstr ""
+msgstr "https://csp.withgoogle.com/docs/index.html"
 
 #: ../../project/docs/web-security.rst:185
 #: db392d95eb7b45689460f1e9b999e82e
 msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy"
 msgstr ""
+"https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Security-"
+"Policy"
 
 #: ../../project/docs/web-security.rst:188
 #: 3d7ce79fe66343a3b93764993b32a001
 msgid "X-Content-Type-Options"
-msgstr ""
+msgstr "X-Content-Type-Options"
 
 #: ../../project/docs/web-security.rst:190
 #: d9afd238ab374b4288d04d77771f5e93
@@ -233,6 +237,8 @@ msgstr ""
 #: f8c0e3f8662c4ad0a55792cb92ce9dcc
 msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options"
 msgstr ""
+"https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/X-Content-Type-"
+"Options"
 
 #: ../../project/docs/web-security.rst:199
 #: 0b04c41bc42b4f5a9fe68eaf4565068d
@@ -248,6 +254,7 @@ msgstr ""
 #: 04d88bec585043bcaada5a4faa0b0c4e
 msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options"
 msgstr ""
+"https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/X-Frame-Options"
 
 #: ../../project/docs/web-security.rst:213
 #: 356e59c18ab34fc1a6739ebe18a198ed
@@ -292,12 +299,14 @@ msgstr ""
 #: ../../project/docs/web-security.rst:266
 #: 10038b7a36e54f66886437002e55ca63
 msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies"
-msgstr ""
+msgstr "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Cookies"
 
 #: ../../project/docs/web-security.rst:267
 #: d53b5082a713431093288300192f827d
 msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie"
 msgstr ""
+"https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Headers/Set-"
+"Cookie"
 
 #: ../../project/docs/web-security.rst:273
 #: 59f301d30cdf4be4942e2f85acebb71c
@@ -317,7 +326,7 @@ msgstr ""
 #: ../../project/docs/web-security.rst:282
 #: f82fa202879745e1a45ce6da8111f74b
 msgid "https://developer.mozilla.org/en-US/docs/Web/HTTP/Public_Key_Pinning"
-msgstr ""
+msgstr "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Public_Key_Pinning"
 
 #: ../../project/docs/web-security.rst:286
 #: 2d7b797823c64953b9156abdd323448f
