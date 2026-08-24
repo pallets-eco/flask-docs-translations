@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/patternsurlprocessors/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/patterns/urlprocessors.rst:2
 #: 85b5da2d9df34d028f38498590cd2804
@@ -42,7 +42,7 @@ msgstr ""
 #: ../../project/docs/patterns/urlprocessors.rst:19
 #: 264cd6a1ce9c4f25a6ee3fce78adb9b2
 msgid "Consider an application like this::"
-msgstr ""
+msgstr "Considere uma aplicação como esta:"
 
 #: ../../project/docs/patterns/urlprocessors.rst:35
 #: 75a507ab221a48899823cfac4ad8e7ee
