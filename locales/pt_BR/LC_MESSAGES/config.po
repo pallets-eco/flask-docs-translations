@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/config/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/config.rst:2
 #: c5d0b3d8080e43468073b788676a564f
@@ -42,7 +42,7 @@ msgstr ""
 #: ../../project/docs/config.rst:23
 #: aa663834b1a248bba3a03e27d1f2a324
 msgid "Configuration Basics"
-msgstr ""
+msgstr "Noções básicas de configuração"
 
 #: ../../project/docs/config.rst:25
 #: df96c3c2e7c94213b04a6679c3f7c8b9
@@ -92,7 +92,7 @@ msgstr ""
 #: ../../project/docs/config.rst:76
 #: 4cc8d8452eab45cd9cd302d102d36de4
 msgid "**Do not enable debug mode when deploying in production.**"
-msgstr ""
+msgstr "**Não habilite o modo de debug ao realizar o deploy em produção.**"
 
 #: ../../project/docs/config.rst:78
 #: ../../project/docs/config.rst:86
@@ -323,7 +323,7 @@ msgstr ""
 #: ../../project/docs/config.rst:295
 #: 5819cf19ba9d4f9a8f53adc0fe2617d1
 msgid "Does not affect ``SESSION_COOKIE_DOMAIN``."
-msgstr ""
+msgstr "Não afeta ``SESSION_COOKIE_DOMAIN``."
 
 #: ../../project/docs/config.rst:292
 #: e38affa2fee7440498bf7305fefd9334
@@ -428,12 +428,12 @@ msgstr ""
 #: ../../project/docs/config.rst:442
 #: 9ae95caee06641899231060e9a137842
 msgid "``ENV`` was removed."
-msgstr ""
+msgstr "``ENV`` foi removido."
 
 #: ../../project/docs/config.rst:434
 #: cd84d1c5ee6a4e238c1954a1629d6a23
 msgid "Removed ``PRESERVE_CONTEXT_ON_EXCEPTION``."
-msgstr ""
+msgstr "``PRESERVE_CONTEXT_ON_EXCEPTION`` removido."
 
 #: ../../project/docs/config.rst:422
 #: a5afd644681945fb9dd81f98ebfa1bf7
@@ -459,16 +459,18 @@ msgstr ""
 #: ca0199394b714875a28b4a7f47ca7101
 msgid "``SESSION_REFRESH_EACH_REQUEST``, ``TEMPLATES_AUTO_RELOAD``, ``LOGGER_HANDLER_POLICY``, ``EXPLAIN_TEMPLATE_LOADING``"
 msgstr ""
+"``SESSION_REFRESH_EACH_REQUEST``, ``TEMPLATES_AUTO_RELOAD``, "
+"``LOGGER_HANDLER_POLICY``, ``EXPLAIN_TEMPLATE_LOADING``"
 
 #: ../../project/docs/config.rst:415
 #: 2022a20d4ca6461da8700c73a9451796
 msgid "``JSON_AS_ASCII``, ``JSON_SORT_KEYS``, ``JSONIFY_PRETTYPRINT_REGULAR``"
-msgstr ""
+msgstr "``JSON_AS_ASCII``, ``JSON_SORT_KEYS``, ``JSONIFY_PRETTYPRINT_REGULAR``"
 
 #: ../../project/docs/config.rst:412
 #: f17fda058a714e1aa55d74ab9863084c
 msgid "``PREFERRED_URL_SCHEME``"
-msgstr ""
+msgstr "``PREFERRED_URL_SCHEME``"
 
 #: ../../project/docs/config.rst:406
 #: 8a6dc93b96304760add03159057f4b67
@@ -478,27 +480,27 @@ msgstr ""
 #: ../../project/docs/config.rst:403
 #: 05aa8466cc4148eca2bc74bbd73318ae
 msgid "``PROPAGATE_EXCEPTIONS``, ``PRESERVE_CONTEXT_ON_EXCEPTION``"
-msgstr ""
+msgstr "``PROPAGATE_EXCEPTIONS``, ``PRESERVE_CONTEXT_ON_EXCEPTION``"
 
 #: ../../project/docs/config.rst:400
 #: 18e3a6ea3f854893a1b2d23098108f56
 msgid "``MAX_CONTENT_LENGTH``"
-msgstr ""
+msgstr "``MAX_CONTENT_LENGTH``"
 
 #: ../../project/docs/config.rst:397
 #: 0dac8405e35f4294b6d8774627796dfd
 msgid "``SERVER_NAME``"
-msgstr ""
+msgstr "``SERVER_NAME``"
 
 #: ../../project/docs/config.rst:394
 #: e4f7446671b5406798995caa76e808c6
 msgid "``LOGGER_NAME``"
-msgstr ""
+msgstr "``LOGGER_NAME``"
 
 #: ../../project/docs/config.rst:451
 #: ae4608b29ceb4d00960fbdfbcccdc75e
 msgid "Configuring from Python Files"
-msgstr ""
+msgstr "Configuração a partir de Arquivos Python"
 
 #: ../../project/docs/config.rst:453
 #: 87b55e7396564b148f5573e7626e6710
@@ -520,7 +522,7 @@ msgstr ""
 #: bc8351e23b1b46f693c3a1a622239dae
 #: 5c1f951abcfc4798b526536f869a985d
 msgid "Bash"
-msgstr ""
+msgstr "Bash"
 
 #: ../../project/docs/config.rst:479
 #: ../../project/docs/config.rst:562
@@ -541,7 +543,7 @@ msgstr ""
 #: e15adb16995a45198556dab2f122bb21
 #: 0532cacca64d4aadb63988f860c0119c
 msgid "Powershell"
-msgstr ""
+msgstr "Powershell"
 
 #: ../../project/docs/config.rst:503
 #: 584bb4d691384b7dbdaf2ea624129f09
@@ -576,7 +578,7 @@ msgstr ""
 #: ../../project/docs/config.rst:540
 #: d2c9b502d0c9412f934afa14d6b6c9f0
 msgid "Configuring from Environment Variables"
-msgstr ""
+msgstr "Configuração a partir de Variáveis de mbiente"
 
 #: ../../project/docs/config.rst:542
 #: c396a16f9ad648cab6040de8fc8228a2
@@ -626,7 +628,7 @@ msgstr ""
 #: ../../project/docs/config.rst:632
 #: e9f4468ac02a444d838170eeca17d998
 msgid "Configuration Best Practices"
-msgstr ""
+msgstr "Melhores Práticas de Configuração"
 
 #: ../../project/docs/config.rst:634
 #: f785095c16f4436b8f9b57ec91de0381
@@ -651,7 +653,7 @@ msgstr ""
 #: ../../project/docs/config.rst:655
 #: 5653b87a768244fca3244ca1f07ebbe0
 msgid "Development / Production"
-msgstr ""
+msgstr "Desenvolvimento / Produção"
 
 #: ../../project/docs/config.rst:657
 #: 8c29ef3159ff458595f5fd4534f7208b
@@ -746,7 +748,7 @@ msgstr ""
 #: ../../project/docs/config.rst:792
 #: 6721af4d50284685b89f6d8472e408f6
 msgid "Uninstalled package::"
-msgstr ""
+msgstr "Pacotes desinstalados::"
 
 #: ../../project/docs/config.rst:798
 #: 3c0c0d65f8a8439e91d9fc92502f5583
