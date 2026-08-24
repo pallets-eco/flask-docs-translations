@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/errorhandling/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/errorhandling.rst:2
 #: 504a96bc3d1f4d4a8db5cfdaa37a08a8
@@ -38,6 +38,8 @@ msgstr ""
 #: c72fecf83df6413fb5b1a1cf40b15e9e
 msgid "the database server was overloaded and could not handle the query"
 msgstr ""
+"O servidor de banco de dados estava sobrecarregado e não conseguiu processar "
+"a consulta."
 
 #: ../../project/docs/errorhandling.rst:13
 #: 7f88b163766f4d89a9d5db775d809e6d
@@ -47,7 +49,7 @@ msgstr ""
 #: ../../project/docs/errorhandling.rst:14
 #: af85d30c88a04937ae88b0bcc86b2549
 msgid "a harddrive crashed"
-msgstr ""
+msgstr "Um disco rígido falhou."
 
 #: ../../project/docs/errorhandling.rst:15
 #: b0e27ae5b9f24a6e97a001f993bfd310
@@ -107,7 +109,7 @@ msgstr ""
 #: ../../project/docs/errorhandling.rst:67
 #: 9b84a8a429174abbaff014a4333a9385
 msgid "See also:"
-msgstr ""
+msgstr "Veja também:"
 
 #: ../../project/docs/errorhandling.rst:69
 #: a8b893589fff4e24964aa6a799908c5e
@@ -232,7 +234,7 @@ msgstr ""
 #: ../../project/docs/errorhandling.rst:238
 #: ce2422daad504d0c9b98d0f759f0ea90
 msgid "Unhandled Exceptions"
-msgstr ""
+msgstr "Exceções Não Tratadas"
 
 #: ../../project/docs/errorhandling.rst:240
 #: 80feee3daefb4ecbb7019b3143ee6e53
@@ -257,7 +259,7 @@ msgstr ""
 #: ../../project/docs/errorhandling.rst:259
 #: 014fb6ab3043452ebfd07df3ab3a31ce
 msgid "Custom Error Pages"
-msgstr ""
+msgstr "Páginas de Erro Personalizadas"
 
 #: ../../project/docs/errorhandling.rst:261
 #: 07c38b17e6684fdfa2f90bf5792dab9e
@@ -294,7 +296,7 @@ msgstr ""
 #: ../../project/docs/errorhandling.rst:334
 #: 81fe554c60134e71b3957dbdb38eede8
 msgid "Further Examples"
-msgstr ""
+msgstr "Mais exemplos"
 
 #: ../../project/docs/errorhandling.rst:336
 #: 8876ccf4ea5d48bea4de7523c6a0a044
@@ -309,7 +311,7 @@ msgstr ""
 #: ../../project/docs/errorhandling.rst:374
 #: 7d86c9ce55c14ea484a75c03c645a972
 msgid "When using :doc:`/blueprints`:"
-msgstr ""
+msgstr "Quando usando :doc:`/blueprints`:"
 
 #: ../../project/docs/errorhandling.rst:392
 #: bf3cf0c2373b44bc929ad6a66ada41f0
@@ -329,7 +331,7 @@ msgstr ""
 #: ../../project/docs/errorhandling.rst:435
 #: 5baee3c5e61c4b2daac689809ab7efa0
 msgid "Returning API Errors as JSON"
-msgstr ""
+msgstr "Retornando erros da API como JSON"
 
 #: ../../project/docs/errorhandling.rst:437
 #: a8531e8e1602404a907c732779dbb038
