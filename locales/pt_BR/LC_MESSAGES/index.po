@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:34-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/index/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/index.rst:4
 #: f94f2c6827a64b17828681c4fc140c6f
@@ -42,7 +42,7 @@ msgstr ""
 #: ../../project/docs/index.rst:31
 #: 1f0282600a7240b7b291e14265b4dccc
 msgid "User's Guide"
-msgstr ""
+msgstr "Guia do Usuário"
 
 #: ../../project/docs/index.rst:33
 #: c4f24f028d754d2b88ade797da1e04bd
@@ -62,4 +62,4 @@ msgstr ""
 #: ../../project/docs/index.rst:79
 #: 17afd5d710844ac59a81fce8eaba3b22
 msgid "Additional Notes"
-msgstr ""
+msgstr "Observações adicionais"
