@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/installation/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/installation.rst:2
 #: 791a32301f644c9e8942729df679662f
@@ -33,11 +33,13 @@ msgstr "Versão do Python"
 #: 9de49b1dbb0944e7ac2a371afba0ff0a
 msgid "We recommend using the latest version of Python. Flask supports Python 3.9 and newer."
 msgstr ""
+"Recomendamos usar a versão mais recente do Python. O Flask é compatível com "
+"Python 3.9 e versões mais recentes."
 
 #: ../../project/docs/installation.rst:12
 #: 4c2422928253437e9faf99ca8725119d
 msgid "Dependencies"
-msgstr ""
+msgstr "Dependências"
 
 #: ../../project/docs/installation.rst:14
 #: 52e6143bb1594b678d911b0f4925c442
@@ -137,7 +139,7 @@ msgstr ""
 #: ../../project/docs/installation.rst:85
 #: a186134a4eea46f299e0a6d0aac8dc95
 msgid "Create an environment"
-msgstr ""
+msgstr "Crie um ambiente"
 
 #: ../../project/docs/installation.rst:87
 #: 5d430b20fa8345f7b9d6754f8f235548
@@ -149,19 +151,19 @@ msgstr ""
 #: 85002bd03fce4b6e8f857899278f7db6
 #: dc46a4858ddd4f03b1be2344ed01cc81
 msgid "macOS/Linux"
-msgstr ""
+msgstr "macOS/Linux"
 
 #: ../../project/docs/installation.rst:99
 #: ../../project/docs/installation.rst:123
 #: aa68893b78a8428e89385f0c0840e489
 #: ae7e149511d045b2a0c3e77082c532b7
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../project/docs/installation.rst:111
 #: b6af5964da0d4b708f1fb7267452be8f
 msgid "Activate the environment"
-msgstr ""
+msgstr "Ative o ambiente"
 
 #: ../../project/docs/installation.rst:113
 #: 9ab98cd74edb4ee5942c0d8118aca44a
@@ -176,7 +178,7 @@ msgstr ""
 #: ../../project/docs/installation.rst:134
 #: e6e17d27ce9f426c88d96cf8a190753b
 msgid "Install Flask"
-msgstr ""
+msgstr "Instale o Flask"
 
 #: ../../project/docs/installation.rst:136
 #: dcb17e3595af45c185de6bc1c0bb2b8d
