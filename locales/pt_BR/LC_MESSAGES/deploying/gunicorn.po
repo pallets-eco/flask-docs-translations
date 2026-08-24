@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/deployinggunicorn/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/deploying/gunicorn.rst:2
 #: f91403a8d1304d1ebb3c738f5fe29e38
@@ -32,12 +32,12 @@ msgstr ""
 #: ../../project/docs/deploying/gunicorn.rst:7
 #: 99ba272c718046d5b1284c5c421ad16f
 msgid "It tends to integrate easily with hosting platforms."
-msgstr ""
+msgstr "Geralmente se integra facilmente com plataformas de hospedagem."
 
 #: ../../project/docs/deploying/gunicorn.rst:8
 #: 4760fcd10cfe4a5f83b6c10dbf30656c
 msgid "It does not support Windows (but does run on WSL)."
-msgstr ""
+msgstr "Não oferece suporte ao Windows (mas roda no WSL)."
 
 #: ../../project/docs/deploying/gunicorn.rst:9
 #: ecfa6d92bc9847f78c0308692944cda4
@@ -57,7 +57,7 @@ msgstr ""
 #: ../../project/docs/deploying/gunicorn.rst:22
 #: 0fcb800a0d634a2f89829caff15dec3a
 msgid "Installing"
-msgstr ""
+msgstr "Instalando"
 
 #: ../../project/docs/deploying/gunicorn.rst:24
 #: b7c6ff6c18a84732bba645b1c3c6446b
@@ -112,7 +112,7 @@ msgstr ""
 #: ../../project/docs/deploying/gunicorn.rst:97
 #: 30db3a9e96064b6cb36dae0b06d8fdf2
 msgid "Async with gevent or eventlet"
-msgstr ""
+msgstr "Assíncrono com gevent ou eventlet"
 
 #: ../../project/docs/deploying/gunicorn.rst:99
 #: 36cde87f56b44fc4b4f86e41741f3de5
@@ -127,9 +127,9 @@ msgstr ""
 #: ../../project/docs/deploying/gunicorn.rst:109
 #: 8d13c243471947acb8f5d7f8ea6904a8
 msgid "To use gevent:"
-msgstr ""
+msgstr "Para usar gevent:"
 
 #: ../../project/docs/deploying/gunicorn.rst:119
 #: 91db759c0ee74c129fa7dd8516cd7bd9
 msgid "To use eventlet:"
-msgstr ""
+msgstr "Para usar eventlet:"
