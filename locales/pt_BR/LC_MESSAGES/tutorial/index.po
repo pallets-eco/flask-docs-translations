@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/tutorialindex/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/tutorial/index.rst:4
 #: 
@@ -27,7 +27,7 @@ msgstr "Conteúdo:"
 #: ../../project/docs/tutorial/index.rst:2
 #: 2d99c452fba84267a84076cf7520070c
 msgid "Tutorial"
-msgstr ""
+msgstr "Tutorial"
 
 #: ../../project/docs/tutorial/index.rst:20
 #: 90be280d543445449b06d91dc322e28d
@@ -72,4 +72,4 @@ msgstr ""
 #: ../../project/docs/tutorial/index.rst:64
 #: ea2aba2c158c4e2cb975ded363600118
 msgid "Continue to :doc:`layout`."
-msgstr ""
+msgstr "Continue para :doc:`layout`."
