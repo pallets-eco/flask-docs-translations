@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/tutorialstatic/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/tutorial/static.rst:2
 #: 5c92554766354078aa18d330b3b80383
@@ -47,7 +47,7 @@ msgstr ""
 #: ../../project/docs/tutorial/static.rst:25
 #: 2255bdc65df149d58129a463c60b0730
 msgid "``flaskr/static/style.css``"
-msgstr ""
+msgstr "``flaskr/static/style.css``"
 
 #: ../../project/docs/tutorial/static.rst:55
 #: 80804c5fb5954e40b96fec11da9625de
@@ -72,4 +72,4 @@ msgstr ""
 #: ../../project/docs/tutorial/static.rst:72
 #: dd36f2be38814cc89cce3e3f0ae5cbe3
 msgid "Continue to :doc:`blog`."
-msgstr ""
+msgstr "Continue para :doc:`blog`."
