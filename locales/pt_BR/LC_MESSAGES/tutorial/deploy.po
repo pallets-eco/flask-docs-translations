@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/tutorialdeploy/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/tutorial/deploy.rst:2
 #: d632c9c13dfc4f8c8046a802d145d236
@@ -67,7 +67,7 @@ msgstr ""
 #: ../../project/docs/tutorial/deploy.rst:52
 #: d35819b97ea14785aaa2ca2e875276bb
 msgid "Configure the Secret Key"
-msgstr ""
+msgstr "Configure a Chave Secreta"
 
 #: ../../project/docs/tutorial/deploy.rst:54
 #: 715ec1dfc30c4ae29fb7df496d630e92
@@ -87,7 +87,7 @@ msgstr ""
 #: ../../project/docs/tutorial/deploy.rst:70
 #: fa3df89a52f34de9bb13442ec9aa0113
 msgid "``.venv/var/flaskr-instance/config.py``"
-msgstr ""
+msgstr "``.venv/var/flaskr-instance/config.py``"
 
 #: ../../project/docs/tutorial/deploy.rst:75
 #: 73ebeabb2c4a419895a1c498975bad63
@@ -122,4 +122,4 @@ msgstr ""
 #: ../../project/docs/tutorial/deploy.rst:111
 #: 5a8e3e1148e14b7fb0d5c4fe8aa1c9ac
 msgid "Continue to :doc:`next`."
-msgstr ""
+msgstr "Continue para :doc:`next`."
