@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/changes/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/changes.rst:2
 #: 6c654bc202cc487ba62c2cb0ffa3b2e5
@@ -27,17 +27,17 @@ msgstr "Alterações"
 #: ../../project/CHANGES.rst:2
 #: 9d08fe7d70ce4f8ba8c7bdec202ac16f
 msgid "Version 3.1.0"
-msgstr ""
+msgstr "Versão 3.1.0"
 
 #: ../../project/CHANGES.rst:4
 #: 69aa06e9859144d984e24e75967ccf35
 msgid "Released 2024-11-13"
-msgstr ""
+msgstr "Lançado em 2024-11-13"
 
 #: ../../project/CHANGES.rst:6
 #: 348b349e18c14d1d9df992d45c50753e
 msgid "Drop support for Python 3.8. :pr:`5623`"
-msgstr ""
+msgstr "Encerra o suporte ao Python 3.8. :pr:`5623`"
 
 #: ../../project/CHANGES.rst:7
 #: e420e61fceda4b4395d63b9e1e6b60a2
@@ -87,12 +87,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:34
 #: dc0139e82bbb4036a3ee281e06823288
 msgid "Version 3.0.3"
-msgstr ""
+msgstr "Versão 3.0.3"
 
 #: ../../project/CHANGES.rst:36
 #: acc07933c53d41bb9343410d5b8fc4b4
 msgid "Released 2024-04-07"
-msgstr ""
+msgstr "Lançado em 2024-04-07"
 
 #: ../../project/CHANGES.rst:38
 #: 46cb80bf905c4116986f714ed0b682b8
@@ -107,12 +107,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:46
 #: e5c788844db84e0f911b54977c2fa17f
 msgid "Version 3.0.2"
-msgstr ""
+msgstr "Versão 3.0.2"
 
 #: ../../project/CHANGES.rst:48
 #: a83de2cddbb34f56ae6f1e5a4ef0aae0
 msgid "Released 2024-02-03"
-msgstr ""
+msgstr "Lançado em 2024-02-03"
 
 #: ../../project/CHANGES.rst:50
 #: 1f6ece646eb3477c8640725f1e97ec33
@@ -127,12 +127,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:56
 #: 53ba04cc88bb4bc8a9f383da4da9222f
 msgid "Version 3.0.1"
-msgstr ""
+msgstr "Versão 3.0.1"
 
 #: ../../project/CHANGES.rst:58
 #: 0354487cb66e46b1be21e1a3ba69db1b
 msgid "Released 2024-01-18"
-msgstr ""
+msgstr "Lançado em 2024-01-18"
 
 #: ../../project/CHANGES.rst:60
 #: 34590af619554210861bf7ea57acfdb6
@@ -157,12 +157,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:69
 #: 61ed1e2426a84a19826c2fddc583a485
 msgid "Version 3.0.0"
-msgstr ""
+msgstr "Versão 3.0.0"
 
 #: ../../project/CHANGES.rst:71
 #: 9549cdc9992841e083146645a91a36a7
 msgid "Released 2023-09-30"
-msgstr ""
+msgstr "Lançado em 2023-09-30"
 
 #: ../../project/CHANGES.rst:73
 #: b8d46ee81c1a4a1a80df0f8d5032f888
@@ -192,17 +192,17 @@ msgstr ""
 #: ../../project/CHANGES.rst:83
 #: 0fa6d5aa7ede4777b1a3e7f72d6ad65a
 msgid "Version 2.3.3"
-msgstr ""
+msgstr "Versão 2.3.3"
 
 #: ../../project/CHANGES.rst:85
 #: 92af0c995e7343d7a18008ae182e9607
 msgid "Released 2023-08-21"
-msgstr ""
+msgstr "Lançado em 2023-08-21"
 
 #: ../../project/CHANGES.rst:87
 #: 3755f1bf15324e8ba807cc399eaf32fd
 msgid "Python 3.12 compatibility."
-msgstr ""
+msgstr "Compatibilidade com Python 3.12."
 
 #: ../../project/CHANGES.rst:88
 #: 9deedf4b51874f279f0b261dd4b56d81
@@ -222,12 +222,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:94
 #: 6034229b415f46e2bbfdb7019e95664f
 msgid "Version 2.3.2"
-msgstr ""
+msgstr "Versão 2.3.2"
 
 #: ../../project/CHANGES.rst:96
 #: 9f1db289dd744252b1d49b2c8e4fc493
 msgid "Released 2023-05-01"
-msgstr ""
+msgstr "Lançado em 2023-05-01"
 
 #: ../../project/CHANGES.rst:98
 #: ../../project/CHANGES.rst:170
@@ -244,7 +244,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:103
 #: d138ee0c7d7346ad8b95dc3b1b65bd9d
 msgid "Version 2.3.1"
-msgstr ""
+msgstr "Versão 2.3.1"
 
 #: ../../project/CHANGES.rst:105
 #: ../../project/CHANGES.rst:113
@@ -253,7 +253,7 @@ msgstr ""
 #: 08ac8745153a49dc95f9d388e8e31e5d
 #: 99bd41e60f9e43a99206e2ac4006c2d6
 msgid "Released 2023-04-25"
-msgstr ""
+msgstr "Lançado em 2023-04-25"
 
 #: ../../project/CHANGES.rst:107
 #: fff3f9c03c0d4e9d8796b6369589db57
@@ -263,7 +263,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:111
 #: 63899672917b4f66a30195805bfb5b1b
 msgid "Version 2.3.0"
-msgstr ""
+msgstr "Versão 2.3.0"
 
 #: ../../project/CHANGES.rst:115
 #: 249c3cf299d54e8c8e667a43f0abc381
@@ -388,12 +388,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:165
 #: 2599b25ec6804c3280e95f1eb5812c05
 msgid "Version 2.2.5"
-msgstr ""
+msgstr "Versão 2.2.5"
 
 #: ../../project/CHANGES.rst:167
 #: f590a2757c494f25bce4926e29cde572
 msgid "Released 2023-05-02"
-msgstr ""
+msgstr "Lançado em 2023-05-02"
 
 #: ../../project/CHANGES.rst:169
 #: fe620d0a99724508816641399fedb515
@@ -403,7 +403,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:174
 #: 3545d78cf208478e9f49d1b083cd895b
 msgid "Version 2.2.4"
-msgstr ""
+msgstr "Versão 2.2.4"
 
 #: ../../project/CHANGES.rst:178
 #: 91b79d724abd444da77ef1dc05db913e
@@ -413,12 +413,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:182
 #: 21b6007962fb42b6808d347823b48ee7
 msgid "Version 2.2.3"
-msgstr ""
+msgstr "Versão 2.2.3"
 
 #: ../../project/CHANGES.rst:184
 #: 7af4b558c11b4ee98d938b9efbbab8fc
 msgid "Released 2023-02-15"
-msgstr ""
+msgstr "Lançado em 2023-02-15"
 
 #: ../../project/CHANGES.rst:186
 #: ccbd741fc1824910941e6d769ccd4871
@@ -438,12 +438,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:192
 #: fed51d5c154f47fcab8a5c5a30bca83c
 msgid "Version 2.2.2"
-msgstr ""
+msgstr "Versão 2.2.2"
 
 #: ../../project/CHANGES.rst:194
 #: b694fe49ba584b23ad1528c346217848
 msgid "Released 2022-08-08"
-msgstr ""
+msgstr "Lançado em 2022-08-08"
 
 #: ../../project/CHANGES.rst:196
 #: 038f7f6d979e4f96a222ec75925849a6
@@ -458,12 +458,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:204
 #: 18f343e6a840463e9c3f4ad3bb6fad40
 msgid "Version 2.2.1"
-msgstr ""
+msgstr "Versão 2.2.1"
 
 #: ../../project/CHANGES.rst:206
 #: 8f5043da0c724670baf19f3ee90330aa
 msgid "Released 2022-08-03"
-msgstr ""
+msgstr "Lançado em 2022-08-03"
 
 #: ../../project/CHANGES.rst:208
 #: b0da6bbb16fd46c5b9c2f712edf7c4a2
@@ -473,12 +473,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:213
 #: 50ad09545a5b49758a7df6f671e50275
 msgid "Version 2.2.0"
-msgstr ""
+msgstr "Versão 2.2.0"
 
 #: ../../project/CHANGES.rst:215
 #: b84d25e3210a4adf937c7901b09e5152
 msgid "Released 2022-08-01"
-msgstr ""
+msgstr "Lançado em 2022-08-01"
 
 #: ../../project/CHANGES.rst:217
 #: 90c864f230814e7d8f746ff9cec73e92
@@ -653,12 +653,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:324
 #: 8e97b4f3b2384812bff7c5d1d13fed1a
 msgid "Version 2.1.3"
-msgstr ""
+msgstr "Versão 2.1.3"
 
 #: ../../project/CHANGES.rst:326
 #: aff912ed18aa48f0b55b8d23235e2949
 msgid "Released 2022-07-13"
-msgstr ""
+msgstr "Lançado em 2022-07-13"
 
 #: ../../project/CHANGES.rst:328
 #: 9a446cc2b6624a66b9a09897f8a8e63e
@@ -683,12 +683,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:339
 #: 001109b0e1ee40408d37413b0ef1b416
 msgid "Version 2.1.2"
-msgstr ""
+msgstr "Versão 2.1.2"
 
 #: ../../project/CHANGES.rst:341
 #: 42ddaf7a92684543988ae72eb473350b
 msgid "Released 2022-04-28"
-msgstr ""
+msgstr "Lançado em 2022-04-28"
 
 #: ../../project/CHANGES.rst:343
 #: 4e81bcefec8a40c29ab2a8c6d1bb01a9
@@ -703,12 +703,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:350
 #: d11269cf4dad465bbaa0e68725f9b3eb
 msgid "Version 2.1.1"
-msgstr ""
+msgstr "Versão 2.1.1"
 
 #: ../../project/CHANGES.rst:352
 #: ad7427c717244ea3ae0e1b4e81e1b164
 msgid "Released on 2022-03-30"
-msgstr ""
+msgstr "Lançado em 2022-03-30"
 
 #: ../../project/CHANGES.rst:354
 #: 91375adc963d475e94562ed0188e4bbe
@@ -718,12 +718,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:359
 #: ede566dff8264b3eb812d90e321732df
 msgid "Version 2.1.0"
-msgstr ""
+msgstr "Versão 2.1.0"
 
 #: ../../project/CHANGES.rst:361
 #: 6c64c8f623c34212af9ea00834f81bae
 msgid "Released 2022-03-28"
-msgstr ""
+msgstr "Lançado em 2022-03-28"
 
 #: ../../project/CHANGES.rst:363
 #: 39a41bca4d264c7781747b5d7ffd3cf2
@@ -858,12 +858,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:420
 #: ccb9015fdbfe478eb70220b4f0425259
 msgid "Version 2.0.3"
-msgstr ""
+msgstr "Versão 2.0.3"
 
 #: ../../project/CHANGES.rst:422
 #: fc59782f06cd4dcaaa72421bea289dea
 msgid "Released 2022-02-14"
-msgstr ""
+msgstr "Lançado em 2022-02-14"
 
 #: ../../project/CHANGES.rst:424
 #: aa6e267b733f46589ed9d7ddd0992da3
@@ -893,12 +893,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:439
 #: bd35d467cb0545acabe5e20f2509f89b
 msgid "Version 2.0.2"
-msgstr ""
+msgstr "Versão 2.0.2"
 
 #: ../../project/CHANGES.rst:441
 #: 0d1f6464f0e946f380f0a3d755c8e194
 msgid "Released 2021-10-04"
-msgstr ""
+msgstr "Lançado em 2021-10-04"
 
 #: ../../project/CHANGES.rst:443
 #: 1ffc673442094c02836b19505fd8675d
@@ -958,12 +958,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:465
 #: 77837f4ba3c64d43959cfccc92e24076
 msgid "Version 2.0.1"
-msgstr ""
+msgstr "Versão 2.0.1"
 
 #: ../../project/CHANGES.rst:467
 #: 9b46a6366c7f49f4b79ed25f87c8344f
 msgid "Released 2021-05-21"
-msgstr ""
+msgstr "Lançado em 2021-05-21"
 
 #: ../../project/CHANGES.rst:469
 #: f97f9101e050422eb48f2e25dad3f527
@@ -1033,12 +1033,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:503
 #: 13b502e9e0e249da878927afda7a50bf
 msgid "Version 2.0.0"
-msgstr ""
+msgstr "Versão 2.0.0"
 
 #: ../../project/CHANGES.rst:505
 #: 94b120a6858f4585983031accc9bc699
 msgid "Released 2021-05-11"
-msgstr ""
+msgstr "Lançado em 2021-05-11"
 
 #: ../../project/CHANGES.rst:507
 #: e7dd6ed808c349a599c64910b69f0343
@@ -1198,14 +1198,14 @@ msgstr ""
 #: ../../project/CHANGES.rst:588
 #: abf138ccd8d046b58e3a498ca61071dd
 msgid "Version 1.1.4"
-msgstr ""
+msgstr "Versão 1.1.4"
 
 #: ../../project/CHANGES.rst:590
 #: ../../project/CHANGES.rst:599
 #: 4a6b8499f52141f59cd195fb7e64985b
 #: 1a8cf6762b334438b2c745a327edd2bc
 msgid "Released 2021-05-13"
-msgstr ""
+msgstr "Lançado em 2021-05-13"
 
 #: ../../project/CHANGES.rst:592
 #: 312a6eb03654474bb30c67e3a7aa9f27
@@ -1215,7 +1215,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:597
 #: bea7f0d74ee34894b5578b731d1de90c
 msgid "Version 1.1.3"
-msgstr ""
+msgstr "Versão 1.1.3"
 
 #: ../../project/CHANGES.rst:601
 #: 94f2419ea2bf4b43af5ff8f0c8bb4e89
@@ -1230,12 +1230,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:608
 #: 8263c641ea60467fa47875dbca0cd34c
 msgid "Version 1.1.2"
-msgstr ""
+msgstr "Versão 1.1.2"
 
 #: ../../project/CHANGES.rst:610
 #: b58e3762d5524ebda6faf3f6c86d095d
 msgid "Released 2020-04-03"
-msgstr ""
+msgstr "Lançado em 2020-04-03"
 
 #: ../../project/CHANGES.rst:612
 #: c0c065d4a07949eaa0389ff501e7dcd6
@@ -1250,12 +1250,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:619
 #: d69c1a3debd84d09b9711efde61d8829
 msgid "Version 1.1.1"
-msgstr ""
+msgstr "Versão 1.1.1"
 
 #: ../../project/CHANGES.rst:621
 #: 2c5ad13b8bb74db3a46ceb4f51347bd1
 msgid "Released 2019-07-08"
-msgstr ""
+msgstr "Lançado em 2019-07-08"
 
 #: ../../project/CHANGES.rst:623
 #: c1f8936acdff4e7993c1535a3d4ce081
@@ -1265,14 +1265,14 @@ msgstr ""
 #: ../../project/CHANGES.rst:629
 #: 9521772259034ba6aec2e14609962341
 msgid "Version 1.1.0"
-msgstr ""
+msgstr "Versão 1.1.0"
 
 #: ../../project/CHANGES.rst:631
 #: ../../project/CHANGES.rst:718
 #: 7c262f100a534737bfe9184ff2166e4a
 #: c542983471fc4a26ac956493a7976b85
 msgid "Released 2019-07-04"
-msgstr ""
+msgstr "Lançado em 2019-07-04"
 
 #: ../../project/CHANGES.rst:633
 #: 1f3862133fc546f8bbad436ed28f4343
@@ -1422,7 +1422,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:716
 #: 3d2cc0d4cb604ec3ac35a884a17f3405
 msgid "Version 1.0.4"
-msgstr ""
+msgstr "Versão 1.0.4"
 
 #: ../../project/CHANGES.rst:720
 #: 7635dcd0577f44259c7cfac13f98f0ea
@@ -1447,12 +1447,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:730
 #: 0e3a3cfe53fd4c1eb5cfb785ea45e295
 msgid "Version 1.0.3"
-msgstr ""
+msgstr "Versão 1.0.3"
 
 #: ../../project/CHANGES.rst:732
 #: 57f4ef438ac8414a95ae00e2c65f76c3
 msgid "Released 2019-05-17"
-msgstr ""
+msgstr "Lançado em 2019-05-17"
 
 #: ../../project/CHANGES.rst:734
 #: c3f265ccf76e4cfe8ff122ded3eb3c9c
@@ -1487,12 +1487,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:753
 #: 9d2599320d4e4341831b665c3b477567
 msgid "Version 1.0.2"
-msgstr ""
+msgstr "Versão 1.0.2"
 
 #: ../../project/CHANGES.rst:755
 #: 41bc8ed29c87498393b0c31a98ba05a2
 msgid "Released 2018-05-02"
-msgstr ""
+msgstr "Lançado em 2018-05-02"
 
 #: ../../project/CHANGES.rst:757
 #: 2c1675ed4631469cace008356a199f18
@@ -1507,14 +1507,14 @@ msgstr ""
 #: ../../project/CHANGES.rst:764
 #: a231c0141de04167b3b7b1eb717bfa57
 msgid "Version 1.0.1"
-msgstr ""
+msgstr "Versão 1.0.1"
 
 #: ../../project/CHANGES.rst:766
 #: ../../project/CHANGES.rst:947
 #: 4bfdfe0f5cc2432195a7831577d880fd
 #: 8e2dd45d88d443b492c5fcb13b7520f0
 msgid "Released 2018-04-29"
-msgstr ""
+msgstr "Lançado em 2018-04-29"
 
 #: ../../project/CHANGES.rst:768
 #: 2ffd5186b019402493861f685db241e9
@@ -1544,14 +1544,14 @@ msgstr ""
 #: ../../project/CHANGES.rst:783
 #: 9cbc7dc411a44d97a9c6d24a75b04597
 msgid "Version 1.0"
-msgstr ""
+msgstr "Versão 1.0"
 
 #: ../../project/CHANGES.rst:785
 #: ../../project/CHANGES.rst:955
 #: 6a7a0f0faabd478e8e6b7d7605f84254
 #: b1a2822c4f2f436b83a196ca54cdca9d
 msgid "Released 2018-04-26"
-msgstr ""
+msgstr "Lançado em 2018-04-26"
 
 #: ../../project/CHANGES.rst:787
 #: 21ee778cefd44eed85bfefac33e72744
@@ -1856,12 +1856,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:937
 #: 50c91071c9164178b8499bb401e416cc
 msgid "Version 0.12.5"
-msgstr ""
+msgstr "Versão 0.12.5"
 
 #: ../../project/CHANGES.rst:939
 #: 944be21e76d74f80a665aed44d0d9f14
 msgid "Released 2020-02-10"
-msgstr ""
+msgstr "Lançado em 2020-02-10"
 
 #: ../../project/CHANGES.rst:941
 #: 362b56f46a4141078779df241f746f14
@@ -1871,7 +1871,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:945
 #: a742200b0463472f8b8251d564604b0d
 msgid "Version 0.12.4"
-msgstr ""
+msgstr "Versão 0.12.4"
 
 #: ../../project/CHANGES.rst:949
 #: 7a961d862eec4b29b6f25d111733519b
@@ -1881,7 +1881,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:953
 #: 747fe2a96bd346d98f14f065a9835a04
 msgid "Version 0.12.3"
-msgstr ""
+msgstr "Versão 0.12.3"
 
 #: ../../project/CHANGES.rst:957
 #: 2f62bcc4c9464a4380170e85a135a182
@@ -1901,12 +1901,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:967
 #: 127c3bac161343bcaf20916a9ce241f6
 msgid "Version 0.12.2"
-msgstr ""
+msgstr "Versão 0.12.2"
 
 #: ../../project/CHANGES.rst:969
 #: 3b41179734ad4bce9648ef0321f4caf2
 msgid "Released 2017-05-16"
-msgstr ""
+msgstr "Lançado em 2017-05-16"
 
 #: ../../project/CHANGES.rst:971
 #: 3941bffe32eb4f2f81062da56af32b80
@@ -1916,12 +1916,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:975
 #: 0a14a04e5f0548e598beabe20c93e282
 msgid "Version 0.12.1"
-msgstr ""
+msgstr "Versão 0.12.1"
 
 #: ../../project/CHANGES.rst:977
 #: 5abca40d2bdc4bea951994363fe881d1
 msgid "Released 2017-03-31"
-msgstr ""
+msgstr "Lançado em 2017-03-31"
 
 #: ../../project/CHANGES.rst:979
 #: 38424df8df5b4913945cd7c06e8a14f8
@@ -1946,7 +1946,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:991
 #: ca9d174e053a431d9687208ada66cce4
 msgid "Version 0.12"
-msgstr ""
+msgstr "Versão 0.12"
 
 #: ../../project/CHANGES.rst:993
 #: b34776af80614b8fb9b4a57c987e3767
@@ -2006,12 +2006,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:1014
 #: 67973c91034941428ba9125e7ccd4e14
 msgid "Version 0.11.1"
-msgstr ""
+msgstr "Versão 0.11.1"
 
 #: ../../project/CHANGES.rst:1016
 #: e87498b36f4a4167abcc68530598df90
 msgid "Released 2016-06-07"
-msgstr ""
+msgstr "Lançado em 2016-06-07"
 
 #: ../../project/CHANGES.rst:1018
 #: c470cc987adb488aa5938b61b60dee44
@@ -2021,7 +2021,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:1023
 #: 5e2578be077046d7ba1f8ead66d81ec7
 msgid "Version 0.11"
-msgstr ""
+msgstr "Versão 0.11"
 
 #: ../../project/CHANGES.rst:1025
 #: 6451f04b4e714353ba3c06bd91e66ac2
@@ -2246,12 +2246,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:1120
 #: c21a567c34da4ab280d059c0566e4303
 msgid "Version 0.10.1"
-msgstr ""
+msgstr "Versão 0.10.1"
 
 #: ../../project/CHANGES.rst:1122
 #: 4acc42b508f442fd914f6b38a69d689a
 msgid "Released 2013-06-14"
-msgstr ""
+msgstr "Lançado em 2013-06-14"
 
 #: ../../project/CHANGES.rst:1124
 #: 5d247dc6ff214500bc4aa7341cd54119
@@ -2271,7 +2271,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:1136
 #: 92896b6d889c47179f001367b04c68da
 msgid "Version 0.10"
-msgstr ""
+msgstr "Versão 0.10"
 
 #: ../../project/CHANGES.rst:1138
 #: 2d954cd615a54ddd9d49477031322abe
@@ -2436,7 +2436,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:1215
 #: a019ff8f100942a78965225cd448a8d8
 msgid "Version 0.9"
-msgstr ""
+msgstr "Versão 0.9"
 
 #: ../../project/CHANGES.rst:1217
 #: d27d88b69b6847eb8b3cafd3bb94e129
@@ -2551,12 +2551,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:1292
 #: 849897aa076a41b7880772732cb5a5d6
 msgid "Version 0.8.1"
-msgstr ""
+msgstr "Versão 0.8.1"
 
 #: ../../project/CHANGES.rst:1294
 #: 6145e37fbdb849fca071cd5b39cceea3
 msgid "Released 2012-07-01"
-msgstr ""
+msgstr "Lançado em 2012-07-01"
 
 #: ../../project/CHANGES.rst:1296
 #: 8f2dccab11134d7b93a355ebb65d57c9
@@ -2566,7 +2566,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:1302
 #: 008bf1e388374b70b93f896a4662df2e
 msgid "Version 0.8"
-msgstr ""
+msgstr "Versão 0.8"
 
 #: ../../project/CHANGES.rst:1304
 #: 726febe1d7e645449b9fddf4a23ad759
@@ -2671,12 +2671,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:1358
 #: aadc3200f788419cab9438023bd0925f
 msgid "Version 0.7.2"
-msgstr ""
+msgstr "Versão 0.7.2"
 
 #: ../../project/CHANGES.rst:1360
 #: 94645584223d431e922e9bbef229bbd7
 msgid "Released 2011-07-06"
-msgstr ""
+msgstr "Lançado em 2011-07-06"
 
 #: ../../project/CHANGES.rst:1362
 #: 57bcc10218ee422884e49007669035c6
@@ -2686,7 +2686,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:1367
 #: 9ebb9653c4544b219b9c693336615426
 msgid "Version 0.7.1"
-msgstr ""
+msgstr "Versão 0.7.1"
 
 #: ../../project/CHANGES.rst:1369
 #: 6ac8bd0877fc4731a8f962e327d9e8bf
@@ -2706,7 +2706,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:1376
 #: 3f8c8fb8a7574e66a78c56f247a2f852
 msgid "Version 0.7"
-msgstr ""
+msgstr "Versão 0.7"
 
 #: ../../project/CHANGES.rst:1378
 #: ad8c7a9cb2ef4f4eb7c07455f669b49e
@@ -2821,12 +2821,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:1432
 #: f4257793d25e4d6390c0da31d5508d65
 msgid "Version 0.6.1"
-msgstr ""
+msgstr "Versão 0.6.1"
 
 #: ../../project/CHANGES.rst:1434
 #: be56557b88a04ef1b0dfc1d16b807278
 msgid "Released 2010-12-31"
-msgstr ""
+msgstr "Lançado em 2010-12-31"
 
 #: ../../project/CHANGES.rst:1436
 #: 2ddd2120908b404d9e7c39193e729114
@@ -2851,7 +2851,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:1450
 #: 02d73b19435141ebaf21aa4bab2eeecb
 msgid "Version 0.6"
-msgstr ""
+msgstr "Versão 0.6"
 
 #: ../../project/CHANGES.rst:1452
 #: 3b3296db58e543e2814139c8d359f728
@@ -2916,12 +2916,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:1483
 #: 48f54d233ee24c9f9babb8043b6d5a68
 msgid "Version 0.5.2"
-msgstr ""
+msgstr "Versão 0.5.2"
 
 #: ../../project/CHANGES.rst:1485
 #: f69fae02890a4b10afdd542a4ef66c39
 msgid "Released 2010-07-15"
-msgstr ""
+msgstr "Lançado em 2010-07-15"
 
 #: ../../project/CHANGES.rst:1487
 #: 7d53e5670b6e43f09063375df336f468
@@ -2931,12 +2931,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:1492
 #: bf56500c8f24441ea23e3ae8df385d83
 msgid "Version 0.5.1"
-msgstr ""
+msgstr "Versão 0.5.1"
 
 #: ../../project/CHANGES.rst:1494
 #: 34c9daa9a6674b88b3de86fbf0fdd5d2
 msgid "Released 2010-07-06"
-msgstr ""
+msgstr "Lançado em 2010-07-06"
 
 #: ../../project/CHANGES.rst:1496
 #: a6587de40ae247a39fed216f024dac40
@@ -2946,7 +2946,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:1501
 #: 03ef8b0c5a964f6eb662b5a8b4adfa4f
 msgid "Version 0.5"
-msgstr ""
+msgstr "Versão 0.5"
 
 #: ../../project/CHANGES.rst:1503
 #: dbb16bc575fe4ea2a6d91fc3bd369853
@@ -2996,7 +2996,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:1525
 #: 099c48db1ae14c15b4a9d2690dd4eb0f
 msgid "Version 0.4"
-msgstr ""
+msgstr "Versão 0.4"
 
 #: ../../project/CHANGES.rst:1527
 #: b7ae082be7c44c068167235f684b6239
@@ -3036,12 +3036,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:1543
 #: e1aeaf28cdbb47d2ad2fc7518c4d25df
 msgid "Version 0.3.1"
-msgstr ""
+msgstr "Versão 0.3.1"
 
 #: ../../project/CHANGES.rst:1545
 #: 01e5c0f22d2c49e6990b275660108d51
 msgid "Released 2010-05-28"
-msgstr ""
+msgstr "Lançado em 2010-05-28"
 
 #: ../../project/CHANGES.rst:1547
 #: 2d06b12136284dc09654e7db4974869a
@@ -3061,7 +3061,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:1555
 #: 9d8b83d5657047eabfbf86cf9899bbab
 msgid "Version 0.3"
-msgstr ""
+msgstr "Versão 0.3"
 
 #: ../../project/CHANGES.rst:1557
 #: 0c9f9c4ba95744b0b3b0f9cf9ee51519
@@ -3096,7 +3096,7 @@ msgstr ""
 #: ../../project/CHANGES.rst:1572
 #: 59e56f23168048ae85cabe25848d7aae
 msgid "Version 0.2"
-msgstr ""
+msgstr "Versão 0.2"
 
 #: ../../project/CHANGES.rst:1574
 #: af6dd67eb7b04d469edfc7ef4ab5cf09
@@ -3106,12 +3106,12 @@ msgstr ""
 #: ../../project/CHANGES.rst:1576
 #: 40817f56865d43cc98c592a9b0215735
 msgid "Various bugfixes"
-msgstr ""
+msgstr "Várias correções de bugs"
 
 #: ../../project/CHANGES.rst:1577
 #: 329bfaeacb89474f9b6b2abca9fdbf04
 msgid "Integrated JSON support"
-msgstr ""
+msgstr "Suporte JSON integrado"
 
 #: ../../project/CHANGES.rst:1578
 #: e54d754dcc044bf0a78c0ffb4f2a088d
@@ -3161,17 +3161,17 @@ msgstr ""
 #: ../../project/CHANGES.rst:1589
 #: 90b7fa4ad5014df19708a7f8db717f2f
 msgid "Added support for Google Appengine."
-msgstr ""
+msgstr "Adicionado suporte para o Google App Engine."
 
 #: ../../project/CHANGES.rst:1593
 #: b0300b7920ef436ea9b7958c679a9b57
 msgid "Version 0.1"
-msgstr ""
+msgstr "Versão 0.1"
 
 #: ../../project/CHANGES.rst:1595
 #: d923aa6319db4bf0b675cd876cb6c2ca
 msgid "Released 2010-04-16"
-msgstr ""
+msgstr "Lançado em 2010-04-16"
 
 #: ../../project/CHANGES.rst:1597
 #: ed4639760ca9418a8734db17a8f964ba
