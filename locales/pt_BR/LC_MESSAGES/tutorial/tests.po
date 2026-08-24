@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/tutorialtests/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/tutorial/tests.rst:4
 #: 54277fd02f0d4c8aa1404bb91c053472
@@ -67,7 +67,7 @@ msgstr ""
 #: ../../project/docs/tutorial/tests.rst:51
 #: 1273f8ade2584293adba2134a4c1ec42
 msgid "``tests/data.sql``"
-msgstr ""
+msgstr "``tests/data.sql``"
 
 #: ../../project/docs/tutorial/tests.rst:63
 #: bc0fdf169b164c799fcfb65a856f18fa
@@ -79,7 +79,7 @@ msgstr ""
 #: 04da6d9057b640b49e3593538c095381
 #: d0934bef849b489fa7978b95b52c5297
 msgid "``tests/conftest.py``"
-msgstr ""
+msgstr "``tests/conftest.py``"
 
 #: ../../project/docs/tutorial/tests.rst:109
 #: 895fc21f37a14ae6adcffc2c7ab9804c
@@ -124,7 +124,7 @@ msgstr ""
 #: ../../project/docs/tutorial/tests.rst:147
 #: 1d98dff020da44a3887efab03dc2188f
 msgid "``tests/test_factory.py``"
-msgstr ""
+msgstr "``tests/test_factory.py``"
 
 #: ../../project/docs/tutorial/tests.rst:162
 #: 3357eeebfcd847579be73505b0598a46
@@ -134,7 +134,7 @@ msgstr ""
 #: ../../project/docs/tutorial/tests.rst:168
 #: 25b462afb17a454a87042a2718d28ab7
 msgid "Database"
-msgstr ""
+msgstr "Banco de dados"
 
 #: ../../project/docs/tutorial/tests.rst:170
 #: c32e875bb6414a84b72f88b67c1310c7
@@ -146,7 +146,7 @@ msgstr ""
 #: 983a8657574145ac9e7f5d50c501a86d
 #: 2c0d8401051f4b32b4bcd8bbb03b0041
 msgid "``tests/test_db.py``"
-msgstr ""
+msgstr "``tests/test_db.py``"
 
 #: ../../project/docs/tutorial/tests.rst:193
 #: 64a19c8d42e9422f821c0d141e683e70
@@ -161,7 +161,7 @@ msgstr ""
 #: ../../project/docs/tutorial/tests.rst:218
 #: 1f8769991229496bb1a1adfeb3372167
 msgid "Authentication"
-msgstr ""
+msgstr "Autenticação"
 
 #: ../../project/docs/tutorial/tests.rst:220
 #: bfc88436340947f1a4f94520a018b810
@@ -185,7 +185,7 @@ msgstr ""
 #: 0942ca34cf2f4a7bb906149042b7fdde
 #: 4600e1a043ac47eb82321a6e2aa120b1
 msgid "``tests/test_auth.py``"
-msgstr ""
+msgstr "``tests/test_auth.py``"
 
 #: ../../project/docs/tutorial/tests.rst:289
 #: 989c1d38a1fc403d939561223d2d83a4
@@ -230,7 +230,7 @@ msgstr ""
 #: ../../project/docs/tutorial/tests.rst:357
 #: 9ccd877fd24343cc92904229e5ecb5aa
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: ../../project/docs/tutorial/tests.rst:359
 #: 20ba76707c724d38a7edd35d54d520e6
@@ -256,7 +256,7 @@ msgstr ""
 #: 117064b84c694cd6b7f698b528e47444
 #: fe923c661d97421e93489a83f7922215
 msgid "``tests/test_blog.py``"
-msgstr ""
+msgstr "``tests/test_blog.py``"
 
 #: ../../project/docs/tutorial/tests.rst:391
 #: 19925ce5f75d4e64821b0352f3d8c048
@@ -276,7 +276,7 @@ msgstr ""
 #: ../../project/docs/tutorial/tests.rst:491
 #: c294550e069e49ac935ca40335caa160
 msgid "Running the Tests"
-msgstr ""
+msgstr "Rodando os Testes"
 
 #: ../../project/docs/tutorial/tests.rst:493
 #: 48ae2ba8ddae4d3d8be19b8b3be1473d
@@ -286,7 +286,7 @@ msgstr ""
 #: ../../project/docs/tutorial/tests.rst:496
 #: 6efb2c7275bb44f58f92476af53b2dd2
 msgid "``pyproject.toml``"
-msgstr ""
+msgstr "``pyproject.toml``"
 
 #: ../../project/docs/tutorial/tests.rst:506
 #: ee540533f19a4f149615f467a39617f8
@@ -321,4 +321,4 @@ msgstr ""
 #: ../../project/docs/tutorial/tests.rst:559
 #: 14525ff13cfa4db98ed8d61727c73451
 msgid "Continue to :doc:`deploy`."
-msgstr ""
+msgstr "Continue para :doc:`deploy`."
