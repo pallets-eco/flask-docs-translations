@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/quickstart/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/quickstart.rst:2
 #: 072c4cb240e240ee88d518604b3c098d
@@ -32,12 +32,12 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:9
 #: e87344e0245f461d9266268c6887cae5
 msgid "A Minimal Application"
-msgstr ""
+msgstr "Uma Aplicação Mínima"
 
 #: ../../project/docs/quickstart.rst:11
 #: 396e00a2c7d94351b2fa9d5b0a4c6c02
 msgid "A minimal Flask application looks something like this:"
-msgstr ""
+msgstr "Uma aplicação Flask mínima se parece com isto:"
 
 #: ../../project/docs/quickstart.rst:23
 #: f0b94c74deca4fb8995c25cb20c840f4
@@ -102,7 +102,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:71
 #: 6881455685bf4518843a3a764c368068
 msgid "Externally Visible Server"
-msgstr ""
+msgstr "Servidor Visível Externamente"
 
 #: ../../project/docs/quickstart.rst:73
 #: 8182b82dc38e49958d2dccac4afad929
@@ -147,7 +147,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:119
 #: 89b2013e81964b9ca87a46948493ff55
 msgid "See also:"
-msgstr ""
+msgstr "Veja também:"
 
 #: ../../project/docs/quickstart.rst:121
 #: 4ab0d5e448e24eb28393a3a2d65e37a7
@@ -242,12 +242,12 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:205
 #: 0dcc8042218b40e1a838225b493416b4
 msgid "accepts positive integers"
-msgstr ""
+msgstr "aceita números inteiros positivos"
 
 #: ../../project/docs/quickstart.rst:206
 #: cd10e5dd4e644fbc9759e6b0000fa398
 msgid "``float``"
-msgstr ""
+msgstr "``float``"
 
 #: ../../project/docs/quickstart.rst:206
 #: 115a2c7b2e384ae0adbd4a70c0fb94e9
@@ -267,12 +267,12 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:208
 #: ca8584245682488cbbbe56766f06a7e0
 msgid "``uuid``"
-msgstr ""
+msgstr "``uuid``"
 
 #: ../../project/docs/quickstart.rst:208
 #: 00321a5d7dff4ce0aab1cf4e2b60e66d
 msgid "accepts UUID strings"
-msgstr ""
+msgstr "aceita strings UUID"
 
 #: ../../project/docs/quickstart.rst:213
 #: c14cc837143a41ffa3ff3b4954b90ec3
@@ -342,7 +342,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:296
 #: 2bf0e7c3cca5413487009a1aa2bbeff4
 msgid "HTTP Methods"
-msgstr ""
+msgstr "Métodos HTTP"
 
 #: ../../project/docs/quickstart.rst:298
 #: c95a61d9ef7049728417940101edae2c
@@ -467,7 +467,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:452
 #: c9fb081781fe490a83dcaf8be7557d4d
 msgid "Accessing Request Data"
-msgstr ""
+msgstr "Acessando Dado da Requisição"
 
 #: ../../project/docs/quickstart.rst:454
 #: 358feb5793c748c590de43585b9d04a0
@@ -572,7 +572,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:601
 #: 4203df7cc3a641a88ceea94ef83c677a
 msgid "Cookies"
-msgstr ""
+msgstr "Cookies"
 
 #: ../../project/docs/quickstart.rst:603
 #: 561f9fc236e54c9c8068cca7fd34e847
@@ -587,7 +587,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:621
 #: 13c85b76ae694187b27205eee86f6005
 msgid "Storing cookies::"
-msgstr ""
+msgstr "Armazenando cookies::"
 
 #: ../../project/docs/quickstart.rst:631
 #: c68c134f44f7428fa7d22b8d3f2daaa1
@@ -607,7 +607,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:643
 #: 900239962731409da689cac7fefd85a6
 msgid "Redirects and Errors"
-msgstr ""
+msgstr "Redirecionamentos e Erros"
 
 #: ../../project/docs/quickstart.rst:645
 #: 14070bd0c596437fad855009c5e77eb1
@@ -637,7 +637,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:683
 #: 1882d493586849f59523eeb1adee2185
 msgid "About Responses"
-msgstr ""
+msgstr "Sobre Respostas"
 
 #: ../../project/docs/quickstart.rst:685
 #: 596ba648a9a64dd4b0a3668159010650
@@ -692,7 +692,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:735
 #: c4149ece0c044e609f2b778cfbae5a51
 msgid "APIs with JSON"
-msgstr ""
+msgstr "APIs com JSON"
 
 #: ../../project/docs/quickstart.rst:737
 #: 7e9e80dac42e44b9ad391153956ce08f
@@ -712,7 +712,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:771
 #: 4f50a2e48371416c89703f4178280bfb
 msgid "Sessions"
-msgstr ""
+msgstr "Sessões"
 
 #: ../../project/docs/quickstart.rst:773
 #: 9d545cb4c35d4d459ffbab9839b2b375
