@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/extensiondev/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/extensiondev.rst:2
 #: a9221fea1069457780e84d2dde7ae958
@@ -67,12 +67,12 @@ msgstr ""
 #: ../../project/docs/extensiondev.rst:42
 #: 103599ac166040d2bbf1133fd33a91d2
 msgid "``Flask-Name`` imported as ``flask_name``"
-msgstr ""
+msgstr "``Flask-Name`` imported as ``flask_name``"
 
 #: ../../project/docs/extensiondev.rst:43
 #: 6562125180704b369470a0a271807776
 msgid "``flask-name-lower`` imported as ``flask_name_lower``"
-msgstr ""
+msgstr "``flask-name-lower`` imported as ``flask_name_lower``"
 
 #: ../../project/docs/extensiondev.rst:44
 #: e5cba2392b214431b38a61cb7ce277d0
@@ -242,7 +242,7 @@ msgstr ""
 #: ../../project/docs/extensiondev.rst:254
 #: 18665eb6bbc44a9eaca40fdfa646ae47
 msgid "Recommended Extension Guidelines"
-msgstr ""
+msgstr "Diretrizes Recomendadas para Extensões"
 
 #: ../../project/docs/extensiondev.rst:256
 #: b3b3eea9fe9348a0b5651702c9d65113
