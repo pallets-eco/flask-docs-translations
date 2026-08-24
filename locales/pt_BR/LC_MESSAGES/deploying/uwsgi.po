@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/deployinguwsgi/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/deploying/uwsgi.rst:2
 #: ac82ae0714db464196467f689a67cafc
@@ -42,7 +42,7 @@ msgstr ""
 #: ../../project/docs/deploying/uwsgi.rst:10
 #: 917177b9e00c423ba5732c30e7b0edae
 msgid "It does not support Windows (but does run on WSL)."
-msgstr ""
+msgstr "Não oferece suporte ao Windows (mas roda no WSL)."
 
 #: ../../project/docs/deploying/uwsgi.rst:11
 #: 5411b51b655c42028769ce050b8ebb41
@@ -57,7 +57,7 @@ msgstr ""
 #: ../../project/docs/deploying/uwsgi.rst:20
 #: b60be3222d1e426ea4383dbc0ae16f55
 msgid "Installing"
-msgstr ""
+msgstr "Instalando"
 
 #: ../../project/docs/deploying/uwsgi.rst:22
 #: 2c32f029db0c4e71a4677bc618a744cc
@@ -92,7 +92,7 @@ msgstr ""
 #: ../../project/docs/deploying/uwsgi.rst:72
 #: c3857654edca48069299f320d2e109a6
 msgid "``wsgi.py``"
-msgstr ""
+msgstr "``wsgi.py``"
 
 #: ../../project/docs/deploying/uwsgi.rst:83
 #: d67b8b0fa6e3484997fc12a9ef322c35
@@ -127,7 +127,7 @@ msgstr ""
 #: ../../project/docs/deploying/uwsgi.rst:120
 #: 39c99af62da04e23b6f89576469c2243
 msgid "Async with gevent"
-msgstr ""
+msgstr "Assíncrono com gevent"
 
 #: ../../project/docs/deploying/uwsgi.rst:122
 #: b064765883e74203a778d531d21145f7
