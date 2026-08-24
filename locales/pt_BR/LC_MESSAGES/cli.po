@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/cli/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/cli.rst:4
 #: d7c5656610504bd397a73b4cb1231778
@@ -57,7 +57,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:29
 #: 13a02a61a89144cf93dff471c1d29d63
 msgid "``--app hello``"
-msgstr ""
+msgstr "``--app hello``"
 
 #: ../../project/docs/cli.rst:30
 #: 4d13d14d8c4f4e278107ad3488559196
@@ -72,7 +72,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:41
 #: b580dba2b2094823b98788470312a07b
 msgid "``--app src/hello``"
-msgstr ""
+msgstr "``--app src/hello``"
 
 #: ../../project/docs/cli.rst:42
 #: 0122a66601504108a621e039af63c9ee
@@ -82,7 +82,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:44
 #: 340d759df707487c8b66959ac0d9a08a
 msgid "``--app hello.web``"
-msgstr ""
+msgstr "``--app hello.web``"
 
 #: ../../project/docs/cli.rst:45
 #: af565b9049da4fa2af4cd8215338ef93
@@ -92,7 +92,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:47
 #: 51a7876f46ce4791bdfb33ad253b5f83
 msgid "``--app hello:app2``"
-msgstr ""
+msgstr "``--app hello:app2``"
 
 #: ../../project/docs/cli.rst:48
 #: b1b57b5ca5c04dde85b0c3054336dea7
@@ -102,7 +102,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:50
 #: 3f39c01d769c4425a94211d553c63137
 msgid "``--app 'hello:create_app(\"dev\")'``"
-msgstr ""
+msgstr "``--app 'hello:create_app(\"dev\")'``"
 
 #: ../../project/docs/cli.rst:51
 #: c0777418714d49d483007ec5bccd0cfc
@@ -127,7 +127,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:69
 #: 5ada2048831b42b7aa6ef82b2b1a693e
 msgid "Run the Development Server"
-msgstr ""
+msgstr "Execute o Servidor de Desenvolvimento"
 
 #: ../../project/docs/cli.rst:71
 #: 2aeffda14377498686089903e8a9ed06
@@ -192,7 +192,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:152
 #: 897c0732634546baa4cb73e9008964f1
 msgid "Environment Variables From dotenv"
-msgstr ""
+msgstr "Variáveis de Ambiente do dotenv"
 
 #: ../../project/docs/cli.rst:154
 #: 45b36c1f47c04716b8e019563c511b40
@@ -241,7 +241,7 @@ msgstr ""
 #: 443db526ba9e488598a5c9175325783a
 #: 37099144786441f3a089ee55bed0303e
 msgid "Bash"
-msgstr ""
+msgstr "Bash"
 
 #: ../../project/docs/cli.rst:203
 #: ../../project/docs/cli.rst:258
@@ -268,7 +268,7 @@ msgstr ""
 #: d1a01398aced4420a0133fc0bab20329
 #: 79bc5fa145ed40ef94ffe530e266867e
 msgid "Powershell"
-msgstr ""
+msgstr "Powershell"
 
 #: ../../project/docs/cli.rst:227
 #: 507b5c4ed13f48f98942ecf4555fdcdc
@@ -278,7 +278,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:232
 #: 2b716316f5b24bf2b82333f76ebaf6d4
 msgid "Disable dotenv"
-msgstr ""
+msgstr "Desabilitar dotenv"
 
 #: ../../project/docs/cli.rst:234
 #: 35b8fcfcfddf40d5b90e3ea3a504c729
@@ -293,7 +293,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:281
 #: 090f79c245704d55ba2b85646b96fbe1
 msgid "Environment Variables From virtualenv"
-msgstr ""
+msgstr "Variáveis de Ambiente do virtualenv"
 
 #: ../../project/docs/cli.rst:283
 #: e35a552c82774daea9fa3e98474b32bb
@@ -353,7 +353,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:367
 #: 43a1a516658947af989ba1b9b3f882ff
 msgid "Registering Commands with Blueprints"
-msgstr ""
+msgstr "Registrando Comandos com Blueprints"
 
 #: ../../project/docs/cli.rst:369
 #: 257cb7a372234118bf630e4f9a30bf81
@@ -428,7 +428,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:509
 #: 918bb02898354892a1cfa810e6c085f3
 msgid "Errors in Custom Scripts"
-msgstr ""
+msgstr "Erros em Scripts Personalizados"
 
 #: ../../project/docs/cli.rst:511
 #: 272a24e9bf81433fac4770bd9a78bad8
@@ -443,7 +443,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:522
 #: d1ad0882b19a49e18d8ea1e0a0cc5ccc
 msgid "PyCharm Integration"
-msgstr ""
+msgstr "Integração com PyCharm"
 
 #: ../../project/docs/cli.rst:524
 #: dca8d74646894f1294911e038c4ee7fe
