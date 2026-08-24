@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/logging/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/logging.rst:2
 #: d7b36a0d5f104bfeab7d15d7bce38b01
@@ -37,7 +37,7 @@ msgstr ""
 #: ../../project/docs/logging.rst:28
 #: ea350757541749d9ae5e02189d17d15b
 msgid "Basic Configuration"
-msgstr ""
+msgstr "Configuração Básica"
 
 #: ../../project/docs/logging.rst:30
 #: 05733081b8c6417392986627bcca306b
@@ -102,7 +102,7 @@ msgstr ""
 #: ../../project/docs/logging.rst:146
 #: eff1ddf852004a359b9b52c53e7a64f7
 msgid "Other Libraries"
-msgstr ""
+msgstr "Outras Bibliotecas"
 
 #: ../../project/docs/logging.rst:148
 #: db7351af808e4a49bc41c66ccc231c52
