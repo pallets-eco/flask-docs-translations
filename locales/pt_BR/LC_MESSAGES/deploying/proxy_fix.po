@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/deployingproxy_fix/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/deploying/proxy_fix.rst:2
 #: db65e33d048044fd91926a1b6ab8eee8
@@ -28,6 +28,9 @@ msgstr "Configurando o Flask Para Funcionar Atrás De Um Proxy"
 #: 9f185dc3288a4a4ca62d1494aa45615d
 msgid "When using a reverse proxy, or many Python hosting platforms, the proxy will intercept and forward all external requests to the local WSGI server."
 msgstr ""
+"Ao utilizar um proxy reverso ou muitas plataformas de hospedagem Python, o "
+"proxy interceptará e encaminhará todas as requisições externas para o "
+"servidor WSGI local."
 
 #: ../../project/docs/deploying/proxy_fix.rst:8
 #: 9d98c0b27df44b8586f85e2a89527dc5
