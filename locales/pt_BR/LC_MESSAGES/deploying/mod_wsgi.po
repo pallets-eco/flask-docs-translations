@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/deployingmod_wsgi/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:2
 #: cc528bcd6d1b41c9ba22ffd29f578635
@@ -32,7 +32,7 @@ msgstr ""
 #: ../../project/docs/deploying/mod_wsgi.rst:8
 #: cffd51f2ce1f4a9296f04188e2b11182
 msgid "Tightly integrated with Apache httpd."
-msgstr ""
+msgstr "Fortemente integrado ao Apache httpd."
 
 #: ../../project/docs/deploying/mod_wsgi.rst:9
 #: b9145535e6684647862eef24f5bc00e4
@@ -57,7 +57,7 @@ msgstr ""
 #: ../../project/docs/deploying/mod_wsgi.rst:24
 #: 5e5ec2311cb34746bd6353539a3cdd1b
 msgid "Installing"
-msgstr ""
+msgstr "Instalando"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:26
 #: 9b19440d7251413e9d6102df71eba2c1
@@ -84,7 +84,7 @@ msgstr ""
 #: c6171dae97314600b3574b6a76997a53
 #: 6c636c0cb2cf494d8a9ab71fd108f53e
 msgid "``wsgi.py``"
-msgstr ""
+msgstr "``wsgi.py``"
 
 #: ../../project/docs/deploying/mod_wsgi.rst:64
 #: dd8ae4d020b445e7b6363705ca835018
