@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/tutorialviews/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/tutorial/views.rst:4
 #: 531740e3aafd41cf99450ca5b62d590c
@@ -32,7 +32,7 @@ msgstr ""
 #: ../../project/docs/tutorial/views.rst:14
 #: 2e143637c9574c9bb56393185354aa21
 msgid "Create a Blueprint"
-msgstr ""
+msgstr "Criar uma Blueprint"
 
 #: ../../project/docs/tutorial/views.rst:16
 #: a701964d413b49a38441f6877aa0a846
@@ -72,7 +72,7 @@ msgstr ""
 #: ../../project/docs/tutorial/views.rst:50
 #: 423dbf33626641108b130cf931919c82
 msgid "``flaskr/__init__.py``"
-msgstr ""
+msgstr "``flaskr/__init__.py``"
 
 #: ../../project/docs/tutorial/views.rst:62
 #: d028c7e6fbe9473ab42edb95c580318d
@@ -227,7 +227,7 @@ msgstr ""
 #: ../../project/docs/tutorial/views.rst:287
 #: 1ab8454097ae4508b0d20404314eecc5
 msgid "Endpoints and URLs"
-msgstr ""
+msgstr "Endpoints e URLs"
 
 #: ../../project/docs/tutorial/views.rst:289
 #: 9721e96547024d09961f9950d87f0f65
@@ -247,4 +247,4 @@ msgstr ""
 #: ../../project/docs/tutorial/views.rst:305
 #: ee26c9f2e425415abd9d54e8fcb330c2
 msgid "Continue to :doc:`templates`."
-msgstr ""
+msgstr "Continue para :doc:`templates`."
