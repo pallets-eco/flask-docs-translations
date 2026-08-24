@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/deployingwaitress/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/deploying/waitress.rst:2
 #: e1465630b06e4a4b839c9c8a34df02cb
@@ -32,7 +32,7 @@ msgstr "`Waitress`_ é um servidor WSGI escrito em Python puro."
 #: ../../project/docs/deploying/waitress.rst:6
 #: e49aa95b72a64deea887e8f07f2108df
 msgid "It is easy to configure."
-msgstr ""
+msgstr "É fácil de configurar."
 
 #: ../../project/docs/deploying/waitress.rst:7
 #: 81fe9eebe66b4430b84793be77364c5e
@@ -62,7 +62,7 @@ msgstr ""
 #: ../../project/docs/deploying/waitress.rst:22
 #: dd80cc059f46417280d0b9fe1bb2db5b
 msgid "Installing"
-msgstr ""
+msgstr "Instalando"
 
 #: ../../project/docs/deploying/waitress.rst:24
 #: 3a769c6da38649eb834071f6310162ef
