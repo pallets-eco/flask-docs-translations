@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/testing/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/testing.rst:2
 #: 86b5754bc9f94d18889791001c256f90
@@ -28,6 +28,8 @@ msgstr "Testando Aplicações Flask"
 #: d16cf6038e184a5facf0b86b391f2791
 msgid "Flask provides utilities for testing an application. This documentation goes over techniques for working with different parts of the application in tests."
 msgstr ""
+"Flask fornece utilitários para testar uma aplicação. Esta documentação "
+"aborda técnicas para trabalhar com diferentes partes da aplicação em testes."
 
 #: ../../project/docs/testing.rst:8
 #: d68f12b54aec4a0db5fdc19caea45876
