@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/tutorialdatabase/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/tutorial/database.rst:4
 #: c6ca508666cc429499841107fc118d14
@@ -28,6 +28,9 @@ msgstr "Definindo e Acessando o Banco de Dados"
 #: 9f0673d8a9af4afe9cb0d859e4c15176
 msgid "The application will use a `SQLite`_ database to store users and posts. Python comes with built-in support for SQLite in the :mod:`sqlite3` module."
 msgstr ""
+"A aplicação utilizará um banco de dados_`SQLite` para armazenar usuários e "
+"postagens. Python já inclui suporte nativo ao SQLite por meio do módulo "
+":mod:`sqlite3`."
 
 #: ../../project/docs/tutorial/database.rst:10
 #: 1b7c47ae830140d4aea6a4484551dcdd
@@ -38,11 +41,13 @@ msgstr ""
 #: 4e9f4e696f0f48d698dca0b71a7a5328
 msgid "The tutorial doesn't go into detail about SQL. If you are not familiar with it, the SQLite docs describe the `language`_."
 msgstr ""
+"O tutorial não entra em detalhes sobre SQL. Se você não estiver "
+"familiarizado, a documentação do SQLite descreve a `linguagem`_."
 
 #: ../../project/docs/tutorial/database.rst:25
 #: 140133c44429469183825c05fb6313a3
 msgid "Connect to the Database"
-msgstr ""
+msgstr "Conectar ao banco de dados"
 
 #: ../../project/docs/tutorial/database.rst:27
 #: 324f192d9eb947f2afe1fa71b4168868
@@ -61,7 +66,7 @@ msgstr ""
 #: 443bbf5dc3244d419a025c7cfb0d2367
 #: 2e0a076f261e4a5998d97bcee39db3a2
 msgid "``flaskr/db.py``"
-msgstr ""
+msgstr "``flaskr/db.py``"
 
 #: ../../project/docs/tutorial/database.rst:63
 #: ceee35fd31dc4e4a8efb19f9712ba683
@@ -91,7 +96,7 @@ msgstr ""
 #: ../../project/docs/tutorial/database.rst:89
 #: 96e57b6a81c64d92a7a6c5c3206871f7
 msgid "Create the Tables"
-msgstr ""
+msgstr "Crie as Tabelas"
 
 #: ../../project/docs/tutorial/database.rst:91
 #: 7bbc95d5d8c34b029fcbd7dc60f1dddb
@@ -101,7 +106,7 @@ msgstr ""
 #: ../../project/docs/tutorial/database.rst:96
 #: c96601a88e5041fb90b2329fbffbb493
 msgid "``flaskr/schema.sql``"
-msgstr ""
+msgstr "``flaskr/schema.sql``"
 
 #: ../../project/docs/tutorial/database.rst:117
 #: e16fd8f8f05944c48937537b985a9d73
@@ -151,7 +156,7 @@ msgstr ""
 #: ../../project/docs/tutorial/database.rst:182
 #: e763c27a7c7b4e36af176a8575845a25
 msgid "``flaskr/__init__.py``"
-msgstr ""
+msgstr "``flaskr/__init__.py``"
 
 #: ../../project/docs/tutorial/database.rst:196
 #: 656158d1eebf4da19d8dcf0f80e9e05d
