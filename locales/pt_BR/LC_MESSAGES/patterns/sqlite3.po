@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/patternssqlite3/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/patterns/sqlite3.rst:2
 #: a74bb7c9574548c3a992b3e1deac9a77
@@ -28,11 +28,15 @@ msgstr "Usando SQLite 3 com Flask"
 #: 2fc662d56cf1462580ba635e287a9cbe
 msgid "In Flask you can easily implement the opening of database connections on demand and closing them when the context dies (usually at the end of the request)."
 msgstr ""
+"No Flask, você pode implementar facilmente a abertura de conexões com o "
+"banco de dados sob demanda e o fechamento delas quando o contexto é "
+"encerrado (geralmente ao final da requisição)."
 
 #: ../../project/docs/patterns/sqlite3.rst:8
 #: 0862bfa5aa1142368b1b728597a63d76
 msgid "Here is a simple example of how you can use SQLite 3 with Flask::"
 msgstr ""
+"Aqui está um exemplo simples de como você pode usar o SQLite 3 com Flask::"
 
 #: ../../project/docs/patterns/sqlite3.rst:27
 #: 5007304044c849e3a422374d6a324f26
@@ -42,7 +46,7 @@ msgstr ""
 #: ../../project/docs/patterns/sqlite3.rst:33
 #: b9e0884978674ee2a8cd61decce618d3
 msgid "Example::"
-msgstr ""
+msgstr "Exemplo::"
 
 #: ../../project/docs/patterns/sqlite3.rst:43
 #: 91a6649b073c4585807850a79e0ea863
@@ -52,7 +56,7 @@ msgstr ""
 #: ../../project/docs/patterns/sqlite3.rst:49
 #: b61b596fec1f42dfa1a1be97ed71a274
 msgid "Connect on Demand"
-msgstr ""
+msgstr "Conectar sob Demanda"
 
 #: ../../project/docs/patterns/sqlite3.rst:51
 #: 710fb66341ec4f15959288fe5dc54ed7
@@ -107,7 +111,7 @@ msgstr ""
 #: ../../project/docs/patterns/sqlite3.rst:130
 #: d24bf13018b546ddac32d2730d25c742
 msgid "Initial Schemas"
-msgstr ""
+msgstr "Esquemas Iniciais"
 
 #: ../../project/docs/patterns/sqlite3.rst:132
 #: 2b5e90053cb54a4fafb647c74615110b
