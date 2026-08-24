@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/patternsappfactories/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/patterns/appfactories.rst:2
 #: b292c6e5555a4f4cb14aa42e265b3836
@@ -32,7 +32,7 @@ msgstr ""
 #: ../../project/docs/patterns/appfactories.rst:10
 #: 075776ffdb364c5cbd1962c1b1db6bb1
 msgid "So why would you want to do this?"
-msgstr ""
+msgstr "Então, por que você iria querer fazer isso?"
 
 #: ../../project/docs/patterns/appfactories.rst:12
 #: 658a7ebe1ac346de8cb1cb1f497cd713
