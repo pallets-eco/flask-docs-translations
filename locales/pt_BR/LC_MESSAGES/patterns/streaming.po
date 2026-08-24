@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/patternsstreaming/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/patterns/streaming.rst:2
 #: 7139e6f60f6a4f85a5a53bf34e77c867
@@ -32,12 +32,12 @@ msgstr ""
 #: ../../project/docs/patterns/streaming.rst:9
 #: 55730560ec2c4efa9773f1cc04905c08
 msgid "The answer is by using generators and direct responses."
-msgstr ""
+msgstr "A resposta é utilizar geradores e respostas diretas."
 
 #: ../../project/docs/patterns/streaming.rst:12
 #: b518f1e5940b4d78ab36390348fc75c1
 msgid "Basic Usage"
-msgstr ""
+msgstr "Uso Básico"
 
 #: ../../project/docs/patterns/streaming.rst:14
 #: 1140570a9ac94e62beaafb83daf06017
