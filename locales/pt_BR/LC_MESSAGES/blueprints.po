@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/blueprints/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/blueprints.rst:2
 #: 7249f5d18f46429d8391ce8921fa56b4
@@ -32,7 +32,7 @@ msgstr ""
 #: ../../project/docs/blueprints.rst:17
 #: f389969a40ea4f27826edbd11e9b8d46
 msgid "Why Blueprints?"
-msgstr ""
+msgstr "Por que Blueprints?"
 
 #: ../../project/docs/blueprints.rst:19
 #: 4ab4f0a5662245da8caf5a9b97d4555a
@@ -77,7 +77,7 @@ msgstr ""
 #: ../../project/docs/blueprints.rst:49
 #: ffffa16adda04239abe03c367c432573
 msgid "The Concept of Blueprints"
-msgstr ""
+msgstr "O Conceito de Blueprints"
 
 #: ../../project/docs/blueprints.rst:51
 #: 436e7d374a36475aa5bffe1f7b765dd2
@@ -87,7 +87,7 @@ msgstr ""
 #: ../../project/docs/blueprints.rst:57
 #: d41508018b5249c3acb08e2cb727dafc
 msgid "My First Blueprint"
-msgstr ""
+msgstr "Minha Primeira Blueprint"
 
 #: ../../project/docs/blueprints.rst:59
 #: d63217b112e84f43906eded7450f740b
@@ -217,7 +217,7 @@ msgstr ""
 #: ../../project/docs/blueprints.rst:220
 #: 944b342c0a06493aa1b0df7c34f395fc
 msgid "Templates"
-msgstr ""
+msgstr "Templates"
 
 #: ../../project/docs/blueprints.rst:222
 #: f7b3d55e496a4798ade2a22f8ab0dc98
