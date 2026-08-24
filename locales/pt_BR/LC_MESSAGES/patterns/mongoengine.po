@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/patternsmongoengine/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/patterns/mongoengine.rst:2
 #: e4ed4b6d95a8461bae6b360dc93ff296
@@ -28,16 +28,21 @@ msgstr "MongoDB com MongoEngine"
 #: 45c727471e9747e699aade66ebe43826
 msgid "Using a document database like MongoDB is a common alternative to relational SQL databases. This pattern shows how to use `MongoEngine`_, a document mapper library, to integrate with MongoDB."
 msgstr ""
+"O uso de um banco de dados de documentos, como o MongoDB, é uma alternativa "
+"comum aos bancos de dados relacionais SQL. Este padrão demonstra como "
+"utilizar o `MongoEngine`_ — uma biblioteca de mapeamento de documentos, para "
+"integrar com o MongoDB."
 
 #: ../../project/docs/patterns/mongoengine.rst:8
 #: 12647e3c4fe94f55be3bb6f7c6012872
 msgid "A running MongoDB server and `Flask-MongoEngine`_ are required. ::"
 msgstr ""
+"É necessário um servidor MongoDB em execução e o `Flask-MongoEngine`_. ::"
 
 #: ../../project/docs/patterns/mongoengine.rst:17
 #: 60f076914d6c4ea288d3a9440f7ce4e1
 msgid "Configuration"
-msgstr ""
+msgstr "Configuração"
 
 #: ../../project/docs/patterns/mongoengine.rst:19
 #: fe07624c05c74d1788dfd74030efd68c
@@ -47,7 +52,7 @@ msgstr ""
 #: ../../project/docs/patterns/mongoengine.rst:33
 #: c236d916f512450fb6ccb39eb56417ae
 msgid "Mapping Documents"
-msgstr ""
+msgstr "Mapeando Documentos"
 
 #: ../../project/docs/patterns/mongoengine.rst:35
 #: 2c74321963f64c3b8675a537ae7c966e
@@ -62,7 +67,7 @@ msgstr ""
 #: ../../project/docs/patterns/mongoengine.rst:62
 #: 04d1db7326d74734a602f073e819e9cd
 msgid "Creating Data"
-msgstr ""
+msgstr "Criando Dados"
 
 #: ../../project/docs/patterns/mongoengine.rst:64
 #: 7e8a5e442acf4752a1d7ba3d07d10fb5
@@ -87,7 +92,7 @@ msgstr ""
 #: ../../project/docs/patterns/mongoengine.rst:96
 #: 07695565afe34a4ab6041a0ef3b5b028
 msgid "Documentation"
-msgstr ""
+msgstr "Documentação"
 
 #: ../../project/docs/patterns/mongoengine.rst:98
 #: 4313dbeefd0447f1bdcc2fc01e99ebf1
