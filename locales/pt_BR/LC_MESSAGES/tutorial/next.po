@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/tutorialnext/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/tutorial/next.rst:2
 #: 71afbff4154c47c7acda803cf81673b1
@@ -38,6 +38,8 @@ msgstr ""
 #: 7b88756ca5484b1d9bd20bd53bd98f49
 msgid "If you want to keep developing your Flaskr project, here are some ideas for what to try next:"
 msgstr ""
+"Se você quiser continuar desenvolvendo seu projeto Flaskr, aqui estão "
+"algumas ideias do que tentar a seguir:"
 
 #: ../../project/docs/tutorial/next.rst:22
 #: 1aae77954e0a4d9c8be9cb415c173524
@@ -52,7 +54,7 @@ msgstr ""
 #: ../../project/docs/tutorial/next.rst:25
 #: 259d3abf6a7f416a88575d668e90d2fc
 msgid "Comments."
-msgstr ""
+msgstr "Comentários"
 
 #: ../../project/docs/tutorial/next.rst:26
 #: f671db2718f3460fad3028fd0a261079
