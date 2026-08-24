@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/patternsjavascript/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/patterns/javascript.rst:2
 #: 6858f3d5a6ca44f1ade19d07479f5bda
@@ -57,7 +57,7 @@ msgstr ""
 #: ../../project/docs/patterns/javascript.rst:63
 #: b5573424b7ab4e02ac2395af533d96ae
 msgid "Generating URLs"
-msgstr ""
+msgstr "Gerando URLs"
 
 #: ../../project/docs/patterns/javascript.rst:65
 #: 72864ce40ed1493fa6467f652e8851e8
@@ -87,7 +87,7 @@ msgstr ""
 #: ../../project/docs/patterns/javascript.rst:98
 #: fa4d62c7b2c043c29eb00239e6273300
 msgid "Making a Request with ``fetch``"
-msgstr ""
+msgstr "Fazendo uma requisição com ``fetch``"
 
 #: ../../project/docs/patterns/javascript.rst:100
 #: 74a107d9ffc44290aca77b92a8707ac8
@@ -127,7 +127,7 @@ msgstr ""
 #: ../../project/docs/patterns/javascript.rst:182
 #: c4178c29e878428f9eb25e3d9b6d5474
 msgid "Replacing Content"
-msgstr ""
+msgstr "Substituindo Conteúdo"
 
 #: ../../project/docs/patterns/javascript.rst:184
 #: 9421b0e1febc485684128863f37edf4e
