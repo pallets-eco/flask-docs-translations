@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:00+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/deployingeventlet/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/deploying/eventlet.rst:2
 #: 67efcbb0eb064867a709d5abb5c13a2a
@@ -47,7 +47,7 @@ msgstr ""
 #: ../../project/docs/deploying/eventlet.rst:25
 #: f47d6b1b86954fd7936767ea572c6430
 msgid "Installing"
-msgstr ""
+msgstr "Instalando"
 
 #: ../../project/docs/deploying/eventlet.rst:27
 #: fff0a7ef04504451838e722b72162b56
@@ -72,7 +72,7 @@ msgstr ""
 #: ../../project/docs/deploying/eventlet.rst:49
 #: 3ba3383ad9834a498e315a5c6319b4bb
 msgid "``wsgi.py``"
-msgstr ""
+msgstr "``wsgi.py``"
 
 #: ../../project/docs/deploying/eventlet.rst:66
 #: 181924244c3a49348e4dce9570c96b4b
