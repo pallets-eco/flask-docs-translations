@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/patternsappdispatch/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/docs/patterns/appdispatch.rst:2
 #: e545eb72233b45bcad5d18ada1139bd8
@@ -37,7 +37,7 @@ msgstr ""
 #: ../../project/docs/patterns/appdispatch.rst:18
 #: 6579d4c353fe4e199154b07953010599
 msgid "Working with this Document"
-msgstr ""
+msgstr "Trabalhando com este documento"
 
 #: ../../project/docs/patterns/appdispatch.rst:20
 #: 3371acd72cdd48e6a73e392c52d997e2
