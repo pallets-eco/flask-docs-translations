@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-12-28 17:01+0000\n"
-"Last-Translator: Felipe Cury <weblate@flpcury.com>\n"
+"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/contributing/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../project/CONTRIBUTING.rst:2
 #: 76aeaf570dd3498aa69a07074a7c93e6
@@ -27,7 +27,7 @@ msgstr "Como contribuir com Flask"
 #: ../../project/CONTRIBUTING.rst:4
 #: 1af1c616faa548ceaf1cd9808c1e9447
 msgid "Thank you for considering contributing to Flask!"
-msgstr ""
+msgstr "Obrigado por considerar contribuir com o Flask!"
 
 #: ../../project/CONTRIBUTING.rst:8
 #: 1186a1fd10d642d89e492d0cfebffcb6
@@ -57,7 +57,7 @@ msgstr ""
 #: ../../project/CONTRIBUTING.rst:27
 #: f8dcace4ad744b3cbfb994e663aef061
 msgid "Reporting issues"
-msgstr ""
+msgstr "Relatar problemas"
 
 #: ../../project/CONTRIBUTING.rst:29
 #: d15ae1e69d9b43a2a9e69413206ad1d3
@@ -184,12 +184,12 @@ msgstr ""
 #: ../../project/CONTRIBUTING.rst:112
 #: 3513dbf3f45b470b9a5626a7cb3a03dd
 msgid "Linux/macOS"
-msgstr ""
+msgstr "Linux/macOS"
 
 #: ../../project/CONTRIBUTING.rst:119
 #: 0898f918c8804504a64efa5232630ed7
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../project/CONTRIBUTING.rst:126
 #: 3267dc96c2c84fb5bccb81c9fb422e22
@@ -204,7 +204,7 @@ msgstr ""
 #: ../../project/CONTRIBUTING.rst:149
 #: 978d602ca73e4da7996dfeec9500f396
 msgid "Start coding"
-msgstr ""
+msgstr "Comece a programar"
 
 #: ../../project/CONTRIBUTING.rst:151
 #: a7c896dde51846d286fed179af22247b
@@ -239,7 +239,7 @@ msgstr ""
 #: ../../project/CONTRIBUTING.rst:187
 #: b79ea617394d4afe9d2a5ad0acab8851
 msgid "Running the tests"
-msgstr ""
+msgstr "Rodando os testes"
 
 #: ../../project/CONTRIBUTING.rst:189
 #: 8bacca98f596408bb1c704c7a4902134
@@ -254,7 +254,7 @@ msgstr ""
 #: ../../project/CONTRIBUTING.rst:206
 #: bf71e7438ed64597b7b45a8501e2cb2d
 msgid "Running test coverage"
-msgstr ""
+msgstr "Rodando cobertura de testes"
 
 #: ../../project/CONTRIBUTING.rst:208
 #: 0d83e2306bc140729195bb0fdd2f65b8
