@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"PO-Revision-Date: 2026-08-27 21:51+0000\n"
 "Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/errorhandling/pt_BR/>\n"
@@ -149,7 +149,7 @@ msgstr ""
 #: ../../project/docs/errorhandling.rst:98
 #: fa1b627bb4fa4d3b87d03e513ef68ab4
 msgid "Registering"
-msgstr ""
+msgstr "Registrando"
 
 #: ../../project/docs/errorhandling.rst:100
 #: 216aef92fc124db4bb6a9e9b7cf1d02e
@@ -371,7 +371,7 @@ msgstr ""
 #: ../../project/docs/errorhandling.rst:520
 #: 302e8cc4ad754e1f871081e13b542c6f
 msgid "Debugging"
-msgstr ""
+msgstr "Debugando"
 
 #: ../../project/docs/errorhandling.rst:522
 #: 028324374ef6439db25f7ca0564032f8
