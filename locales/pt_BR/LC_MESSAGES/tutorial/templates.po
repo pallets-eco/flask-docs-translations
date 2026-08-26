@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"PO-Revision-Date: 2026-08-27 21:51+0000\n"
 "Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/tutorialtemplates/pt_BR/>\n"
@@ -97,7 +97,7 @@ msgstr ""
 #: ../../project/docs/tutorial/templates.rst:103
 #: 446ddd74b63b4191ab9d68a16f799f04
 msgid "Register"
-msgstr ""
+msgstr "Registrar"
 
 #: ../../project/docs/tutorial/templates.rst:105
 #: 1db078fe59ad40a6bf80a83684cccfbd
