@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"PO-Revision-Date: 2026-08-27 21:51+0000\n"
 "Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/tutorialviews/pt_BR/>\n"
@@ -57,7 +57,7 @@ msgstr ""
 #: 3cd93a0595294852b1508694e74ad23d
 #: 48715463bd2840528a4d4dcc7a93f2c7
 msgid "``flaskr/auth.py``"
-msgstr ""
+msgstr "``flaskr/auth.py``"
 
 #: ../../project/docs/tutorial/views.rst:41
 #: e3a82a7500764751a88a5b95a613f845
