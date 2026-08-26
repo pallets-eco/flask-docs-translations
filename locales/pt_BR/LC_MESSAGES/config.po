@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"PO-Revision-Date: 2026-08-27 21:51+0000\n"
 "Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/config/pt_BR/>\n"
@@ -536,7 +536,7 @@ msgstr ""
 #: a7f2d015b5944917ad58df4fddee382a
 #: ecf2afe4dad4477889bb860f2c10c62e
 msgid "CMD"
-msgstr ""
+msgstr "CMD"
 
 #: ../../project/docs/config.rst:495
 #: ../../project/docs/config.rst:580
