@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"PO-Revision-Date: 2026-08-26 20:51+0000\n"
 "Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/api/pt_BR/>\n"
@@ -50,6 +50,10 @@ msgstr ""
 #: 12d83766a0a3478f8e1d4ff8256584a2
 msgid "The name of the package is used to resolve resources from inside the package or the folder the module is contained in depending on if the package parameter resolves to an actual python package (a folder with an :file:`__init__.py` file inside) or a standard module (just a ``.py`` file)."
 msgstr ""
+"O nome do pacote é usado para localizar recursos dentro do pacote ou da "
+"pasta que contém o módulo, dependendo de o parâmetro do pacote corresponder "
+"a um pacote Python real (uma pasta com um arquivo :file:`__init__.py` em seu "
+"interior) ou a um módulo padrão (apenas um arquivo ``.py``)."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask:11
 #: b9f7ce5d3ac249d88e4497b62b85f80c
@@ -62,6 +66,8 @@ msgstr ""
 #: 936f015c8b7d4e2a870ce58b218924c6
 msgid "Usually you create a :class:`Flask` instance in your main module or in the :file:`__init__.py` file of your package like this::"
 msgstr ""
+"Normalmente, você cria uma instância de :class:`Flask` no seu módulo "
+"principal ou no arquivo :file:`__init__.py` do seu pacote, assim::"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask:19
 #: ed04515766d74e19a9c3b82e04b4a222
@@ -494,6 +500,9 @@ msgstr ""
 #: 8e5a1c7915e14ae8ba2483e58d677c8f
 msgid "The Click command group for registering CLI commands for this object. The commands are available from the ``flask`` command once the application has been discovered and blueprints have been registered."
 msgstr ""
+"O grupo de comandos Click para registrar comandos da CLI para este objeto. "
+"Os comandos ficam disponíveis a partir do comando ``flask`` assim que a "
+"aplicação é detectada e os blueprints são registrados."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.get_send_file_max_age:1
 #: ../../.venv/lib/python3.13/site-packages/flask/blueprints.py:docstring of flask.blueprints.Blueprint.get_send_file_max_age:1
@@ -1152,6 +1161,10 @@ msgstr ""
 #: 1559c41c1aea4c68a7f2dd8748a71ac9
 msgid "This method is called whenever an exception occurs that should be handled. A special case is :class:`~werkzeug .exceptions.HTTPException` which is forwarded to the :meth:`handle_http_exception` method. This function will either return a response value or reraise the exception with the same traceback."
 msgstr ""
+"Este método é chamado sempre que ocorre uma exceção que deve ser tratada. Um "
+"caso especial é a :class:`~werkzeug.exceptions.HTTPException`, que é "
+"encaminhada para o método :meth:`handle_http_exception`. Esta função "
+"retornará um valor de resposta ou relançará a exceção com o mesmo traceback."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.handle_user_exception:8
 #: 97e9168ae800407d805ca42283014b7a
@@ -1258,6 +1271,9 @@ msgstr ""
 #: 4a73b003997a47beb96a57b675e64d35
 msgid "Ensure that the function is synchronous for WSGI workers. Plain ``def`` functions are returned as-is. ``async def`` functions are wrapped to run and wait for the response."
 msgstr ""
+"Certifica que a função seja síncrona para workers WSGI. As funções ``def`` "
+"simples são retornadas tal como estão. Funções ``async def`` são "
+"encapsuladas para serem executadas e aguardarem a resposta."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.ensure_sync:5
 #: b040a17ca08a43f9a7616ffff7c32740
@@ -1297,6 +1313,13 @@ msgstr ""
 #: cd22e98840cc43c5b7e65a370b72b861
 msgid "In some cases, such as email messages, you want URLs to include the scheme and domain, like ``https://example.com/hello``. When not in an active request, URLs will be external by default, but this requires setting :data:`SERVER_NAME` so Flask knows what domain to use. :data:`APPLICATION_ROOT` and :data:`PREFERRED_URL_SCHEME` should also be configured as needed. This config is only used when not in an active request."
 msgstr ""
+"Em alguns casos, como em mensagens de e-mail, você deseja que as URLs "
+"incluam o esquema e o domínio, como ``https://example.com/hello``. Quando "
+"não houver uma requisição ativa, as URLs serão externas por padrão; no "
+"entanto, isso exige definir :data:`SERVER_NAME` para que o Flask saiba qual "
+"domínio utilizar. :data:`APPLICATION_ROOT` e :data:`PREFERRED_URL_SCHEME` "
+"também devem ser configurados conforme necessário. Essa configuração é usada "
+"apenas quando não há uma requisição ativa."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.url_for:20
 #: 579799d0a2614c0fa452fb20e20a5c79
@@ -1346,6 +1369,9 @@ msgstr "Se fornecida, a URL terá este esquema caso seja externa."
 #: a0c8f5a91c9b475b961c172b2e18ffd0
 msgid "If given, prefer the URL to be internal (False) or require it to be external (True). External URLs include the scheme and domain. When not in an active request, URLs are external by default."
 msgstr ""
+"Se fornecido, prefira que o URL seja interno (Falso) ou exija que seja "
+"externo (Verdadeiro). URLs externas incluem o esquema e o domínio. Quando "
+"não estão em uma requisição ativa, as URLs são externas por padrão."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.url_for:40
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.url_for:19
@@ -1498,6 +1524,10 @@ msgstr ""
 #: d973fee46d544bc3b88ec83416617577
 msgid "Called before the request is dispatched. Calls :attr:`url_value_preprocessors` registered with the app and the current blueprint (if any). Then calls :attr:`before_request_funcs` registered with the app and the blueprint."
 msgstr ""
+"Chamado antes de a requisição ser despachada. Invoca os "
+":attr:`url_value_preprocessors` registrados na aplicação e no blueprint "
+"atual (se houver). Em seguida, invoca as :attr:`before_request_funcs` "
+"registradas na aplicação e no blueprint."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.preprocess_request:6
 #: 356b1c8ceb6e4563bc55acba5a406675
@@ -1572,6 +1602,9 @@ msgstr ""
 #: 79c617ba47f040579476f6736016b353
 msgid "An unhandled exception raised while dispatching the request. Detected from the current exception information if not passed. Passed to each teardown function."
 msgstr ""
+"Uma exceção não tratada ocorreu durante o despacho da solicitação. Detectada "
+"a partir das informações da exceção atual, caso não tenha sido fornecida. "
+"Passada para cada função de teardown."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.do_teardown_request:18
 #: fbcbdfe4c4364f5783ef9edd0aed4c23
@@ -1614,6 +1647,10 @@ msgstr ""
 #: e75bb6421daf4135aa468734fd374af2
 msgid "An application context is automatically pushed by :meth:`RequestContext.push() <flask.ctx.RequestContext.push>` when handling a request, and when running a CLI command. Use this to manually create a context outside of these situations."
 msgstr ""
+"Um contexto de aplicação é automaticamente empilhado por "
+":meth:`RequestContext.push() <flask.ctx.RequestContext.push>` ao processar "
+"uma requisição e ao executar um comando da CLI. Use isso para criar "
+"manualmente um contexto fora dessas situações."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.app_context:15
 #: 463011caea3245eaa4b0fac88840c65a
@@ -1639,6 +1676,10 @@ msgstr "Veja:doc:`/reqcontext`."
 #: 21e6d13c9db9437cb9236270989a0640
 msgid "Typically you should not call this from your own code. A request context is automatically pushed by the :meth:`wsgi_app` when handling a request. Use :meth:`test_request_context` to create an environment and context instead of this method."
 msgstr ""
+"Normalmente, você não deve chamar isso a partir do seu próprio código. O "
+"contexto da requisição é automaticamente inserido pelo método `wsgi_app` ao "
+"processar uma requisição. Use o método `test_request_context` para criar um "
+"ambiente e um contexto em vez deste método."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.request_context:12
 #: d2e7ce77d0e247a9b040292c49845c0e
@@ -1649,16 +1690,24 @@ msgstr "um ambiente WSGI"
 #: 862d69955f25460483c82e0e95f386cb
 msgid "Create a :class:`~flask.ctx.RequestContext` for a WSGI environment created from the given values. This is mostly useful during testing, where you may want to run a function that uses request data without dispatching a full request."
 msgstr ""
+"Cria um :class:`~flask.ctx.RequestContext` para um ambiente WSGI criado a "
+"partir dos valores fornecidos. Isso é especialmente útil durante testes, "
+"quando você deseja executar uma função que utiliza dados da requisição sem "
+"disparar uma requisição completa."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.test_request_context:8
 #: 767aece3fa074a95aca7e4f45da4a7c0
 msgid "Use a ``with`` block to push the context, which will make :data:`request` point at the request for the created environment. ::"
 msgstr ""
+"Use um bloco ``with`` para empilhar o contexto, o que fará com que "
+":data:`request` aponte para a requisição do ambiente criado. ::"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.test_request_context:15
 #: 5df5da55cd8e4b4d91849e83906b1ca6
 msgid "When using the shell, it may be easier to push and pop the context manually to avoid indentation. ::"
 msgstr ""
+"Ao usar o shell, pode ser mais fácil empilhar e desempilhar o contexto "
+"manualmente para evitar a indentação. ::"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.test_request_context:23
 #: 0e2149a442eb4ee18f67ecfe046b545f
@@ -1674,6 +1723,10 @@ msgstr "Caminho da URL sendo solicitado."
 #: c914a00b667a44f8b27ecccee1a5ea0e
 msgid "Base URL where the app is being served, which ``path`` is relative to. If not given, built from :data:`PREFERRED_URL_SCHEME`, ``subdomain``, :data:`SERVER_NAME`, and :data:`APPLICATION_ROOT`."
 msgstr ""
+"URL base onde o aplicativo está sendo servido, em relação à qual o ``path`` "
+"é definido. Se não for fornecida, é construída a partir de "
+":data:`PREFERRED_URL_SCHEME`, ``subdomain``, :data:`SERVER_NAME` e "
+":data:`APPLICATION_ROOT`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.test_request_context:33
 #: 763e14b0aa814e468b71b38686dfd78b
@@ -1689,36 +1742,49 @@ msgstr "Esquema a ser utilizado em vez de :data:`PREFERRED_URL_SCHEME`."
 #: 0bed630b54a04f9982499d23f0e12f4e
 msgid "The request body, either as a string or a dict of form keys and values."
 msgstr ""
+"O corpo da requisição, seja como uma string ou um dicionário de chaves e "
+"valores de formulário."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.test_request_context:39
 #: 7f962f388acc4cea86e242f026193a6d
 msgid "If given, this is serialized as JSON and passed as ``data``. Also defaults ``content_type`` to ``application/json``."
 msgstr ""
+"Se fornecido, isso é serializado como JSON e passado como ``data``. Além "
+"disso, define o ``content_type`` padrão como ``application/json``."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.test_request_context:42
 #: 961501d3e597400abe925572c50af5b5
 msgid "other positional arguments passed to :class:`~werkzeug.test.EnvironBuilder`."
 msgstr ""
+"outros argumentos posicionais passados para "
+":class:`~werkzeug.test.EnvironBuilder`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.test_request_context:44
 #: 2e179df740b545eb8d6a6b002c9d91ce
 msgid "other keyword arguments passed to :class:`~werkzeug.test.EnvironBuilder`."
 msgstr ""
+"outros argumentos de palavra-chave passados para "
+":class:`~werkzeug.test.EnvironBuilder`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.wsgi_app:1
 #: 0c2d9d25be5c46ffa19a71dbafa57fdf
 msgid "The actual WSGI application. This is not implemented in :meth:`__call__` so that middlewares can be applied without losing a reference to the app object. Instead of doing this::"
 msgstr ""
+"A aplicação WSGI propriamente dita. Isso não é implementado em "
+":meth:`__call__` para que middlewares possam ser aplicados sem perder a "
+"referência ao objeto da aplicação. Em vez de fazer isto::"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.wsgi_app:7
 #: 641ac0e3665145af94889822b546f46f
 msgid "It's a better idea to do this instead::"
-msgstr ""
+msgstr "É melhor fazer isto em vez disso:"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.wsgi_app:11
 #: 4ec1b5f9157e42c192a236ec4e1ea46e
 msgid "Then you still have the original application object around and can continue to call methods on it."
 msgstr ""
+"Dessa forma, você ainda mantém o objeto de aplicação original e pode "
+"continuar chamando métodos nele."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.wsgi_app:14
 #: ab02c71ee9b042f28aedeae9f360147d
@@ -1763,6 +1829,8 @@ msgstr ""
 #: 91defd85388c41aeae20038e1e92832c
 msgid "the optional name of the global function, otherwise the function name will be used."
 msgstr ""
+"o nome opcional da função global; caso contrário, o nome da função será "
+"utilizado."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.add_template_test:1
 #: e26dcbebd46841c5b22f9389b887bb5f
@@ -1785,6 +1853,9 @@ msgstr ""
 #: aeb2fa2e4410437d940148f460e12381
 msgid "Register a rule for routing incoming requests and building URLs. The :meth:`route` decorator is a shortcut to call this with the ``view_func`` argument. These are equivalent:"
 msgstr ""
+"Registra uma regra para rotear requisições de entrada e construir URLs. O "
+"decorador :meth:`route` é um atalho para chamar isso com o argumento "
+"``view_func``. Estes são equivalentes:"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.add_url_rule:18
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.scaffold.Scaffold.route:11
@@ -1799,6 +1870,9 @@ msgstr "Veja:ref:`url-route-registrations`."
 #: 607590ce09634c239de3a2ed1ab683ac
 msgid "The endpoint name for the route defaults to the name of the view function if the ``endpoint`` parameter isn't passed. An error will be raised if a function has already been registered for the endpoint."
 msgstr ""
+"O nome do endpoint para a rota assume como padrão o nome da função de "
+"visualização, caso o parâmetro ``endpoint`` não seja fornecido. Um erro será "
+"gerado se uma função já tiver sido registrada para esse endpoint."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.add_url_rule:25
 #: 2f3e7d1791964415898593323fdbfa24
@@ -1812,11 +1886,18 @@ msgstr ""
 #: 5a0b446150d34bcfb682294f95908a15
 msgid "``view_func`` does not necessarily need to be passed, but if the rule should participate in routing an endpoint name must be associated with a view function at some point with the :meth:`endpoint` decorator."
 msgstr ""
+"Não é estritamente necessário passar ``view_func``, mas, se a regra for "
+"participar do roteamento, um nome de endpoint deve ser associado a uma "
+"função de view em algum momento usando o decorador :meth:`endpoint`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.add_url_rule:42
 #: 7100d28b83f7407896d0c13682de6b96
 msgid "If ``view_func`` has a ``required_methods`` attribute, those methods are added to the passed and automatic methods. If it has a ``provide_automatic_methods`` attribute, it is used as the default if the parameter is not passed."
 msgstr ""
+"Se ``view_func`` possuir um atributo ``required_methods``, esses métodos são "
+"adicionados aos métodos fornecidos e aos automáticos. Se possuir o atributo "
+"``provide_automatic_methods``, ele será usado como padrão caso o parâmetro "
+"não seja fornecido."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.add_url_rule:47
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.scaffold.Scaffold.route:19
@@ -1825,7 +1906,7 @@ msgstr ""
 #: 59d0d552b4a1416db539e53dd2c7d810
 #: d96a40ea413743209a765992cab9b6a2
 msgid "The URL rule string."
-msgstr ""
+msgstr "A string de regra de URL."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.add_url_rule:48
 #: da781779e1674958b763c86297f1aa85
@@ -1867,6 +1948,9 @@ msgstr ""
 #: 15e6e088ae404beba1f955c4f2906652
 msgid "The function is called with the response object, and must return a response object. This allows the functions to modify or replace the response before it is sent."
 msgstr ""
+"A função é chamada com o objeto de resposta e deve retornar um objeto de "
+"resposta. Isso permite que as funções modifiquem ou substituam a resposta "
+"antes que ela seja enviada."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.scaffold.Scaffold.after_request:7
 #: ../../.venv/lib/python3.13/site-packages/flask/blueprints.py:docstring of flask.sansio.scaffold.Scaffold.after_request:7
@@ -2051,7 +2135,7 @@ msgstr "O ``BuildError`` ativo que está sendo tratado."
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.handle_url_build_error:12
 #: f52eb2cb80f0433ca823e89a03695127
 msgid "The endpoint being built."
-msgstr ""
+msgstr "O endpoint que está sendo construído."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.handle_url_build_error:13
 #: 2ff4542033ce4c7995a48465652b674f
@@ -2073,7 +2157,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.iter_blueprints:1
 #: dce875e01a6c470db6f4de5d8d4e5051
 msgid "Iterates over all blueprints by the order they were registered."
-msgstr ""
+msgstr "Itera sobre todos os blueprints na ordem em que foram registrados."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.Flask.jinja_env:1
 #: f4346bac4214445d8c6ae564a502b5a0
@@ -2084,6 +2168,8 @@ msgstr "O ambiente Jinja usado para carregar templates."
 #: c8c0494e47974f948cfc672629e669ed
 msgid "The environment is created the first time this property is accessed. Changing :attr:`jinja_options` after that will have no effect."
 msgstr ""
+"O ambiente é criado na primeira vez que essa propriedade é acessada. Alterar "
+":attr:`jinja_options` posteriormente não terá efeito."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.Flask.jinja_loader:1
 #: ../../.venv/lib/python3.13/site-packages/flask/blueprints.py:docstring of flask.Blueprint.jinja_loader:1
@@ -2091,11 +2177,17 @@ msgstr ""
 #: 87a532e7d0b24cffb5bf94e6447efbe1
 msgid "The Jinja loader for this object's templates. By default this is a class :class:`jinja2.loaders.FileSystemLoader` to :attr:`template_folder` if it is set."
 msgstr ""
+"O carregador Jinja para os templates deste objeto. Por padrão, esta é uma "
+"instância de :class:`jinja2.loaders.FileSystemLoader` apontando para "
+":attr:`template_folder`, caso esta esteja definida."
 
 #: ../../docstring of flask.Flask.jinja_options:1
 #: b2cb358853db407fbac4402df4a9d5bf
 msgid "Options that are passed to the Jinja environment in :meth:`create_jinja_environment`. Changing these options after the environment is created (accessing :attr:`jinja_env`) will have no effect."
 msgstr ""
+"Opções passadas para o ambiente Jinja em :meth:`create_jinja_environment`. "
+"Alterar essas opções depois que o ambiente for criado (acessando "
+":attr:`jinja_env`) não terá efeito."
 
 #: ../../docstring of flask.Flask.jinja_options:6
 #: a29f95a723754004a44b35138513718b
@@ -2108,21 +2200,29 @@ msgstr ""
 #: ea14afaba8b54f04b6bce377f6172785
 msgid "A standard Python :class:`~logging.Logger` for the app, with the same name as :attr:`name`."
 msgstr ""
+"Um :class:`~logging.Logger` padrão do Python para a aplicação, com o mesmo "
+"nome de :attr:`name`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.Flask.logger:4
 #: a37957367b564e82be66369c90157fb2
 msgid "In debug mode, the logger's :attr:`~logging.Logger.level` will be set to :data:`~logging.DEBUG`."
 msgstr ""
+"No modo de debug, o :attr:`~logging.Logger.level` do logger será definido "
+"como :data:`~logging.DEBUG`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.Flask.logger:7
 #: 173ccec52f91446dafa126820de0032a
 msgid "If there are no handlers configured, a default handler will be added. See :doc:`/logging` for more information."
 msgstr ""
+"Caso não haja nenhum manipulador configurado, um manipulador padrão será "
+"adicionado. Consulte :doc:`/logging` para mais informações."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.Flask.logger:10
 #: 596bebb7f46041c5b6e0e6d691750d31
 msgid "The logger takes the same name as :attr:`name` rather than hard-coding ``\"flask.app\"``."
 msgstr ""
+"O logger assume o mesmo nome de :attr:`name` em vez de ter ``\"flask.app\"`` "
+"definido de forma fixa no código."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.Flask.logger:14
 #: 14f67ab85e5b470bbdfb8dd609b17119
@@ -2185,7 +2285,7 @@ msgstr "Atalho para:meth:`route` com``methods=[\"PUT\"]``."
 #: da9c1efe6cf344859b0740e18589c0a1
 #: 47e2e5cc3fdb44798008a598113a3862
 msgid "Create a redirect response object."
-msgstr ""
+msgstr "Crie um objeto de resposta de redirecionamento."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.redirect:3
 #: b09b6915ab1b408f9365f0d9cea0add9
@@ -2197,19 +2297,19 @@ msgstr ""
 #: 85c63d6eb7d24297bee00aa2e6c420fd
 #: b0c9fe960ef44e3280382b83455c7019
 msgid "The URL to redirect to."
-msgstr ""
+msgstr "A URL para a qual redirecionar."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.redirect:7
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.redirect:8
 #: 2c79f55ed6ad45da8ea87769914800c7
 #: eb37f67c2ca3490bb88608dd26a9b852
 msgid "The status code for the redirect."
-msgstr ""
+msgstr "O código de status para o redirecionamento."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.redirect:9
 #: 54faaa4cfe5046528449967321939875
 msgid "Moved from ``flask.redirect``, which calls this method."
-msgstr ""
+msgstr "Movido de ``flask.redirect``, que chama este método."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.register_blueprint:1
 #: 0dfe76b38b534ddeab50fb1775e67c7e
@@ -2224,17 +2324,17 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.register_blueprint:8
 #: 5910adf4a46e4f9686a640b12ddd4705
 msgid "The blueprint to register."
-msgstr ""
+msgstr "O blueprint para se registrar."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.register_blueprint:9
 #: 24e010f4f0f14ce882c1f6cc521c09e9
 msgid "Blueprint routes will be prefixed with this."
-msgstr ""
+msgstr "As rotas de Blueprint terão este prefixo."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.register_blueprint:10
 #: d60b7fab35d440d38937f91a82449785
 msgid "Blueprint routes will match on this subdomain."
-msgstr ""
+msgstr "As rotas do Blueprint corresponderão a este subdomínio."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.register_blueprint:11
 #: 4d0c6a7c757a4ed8943559ccdc869c04
@@ -2302,6 +2402,7 @@ msgstr ""
 #: 371f03cf9385473593b536550e52ae94
 msgid "Autoescaping is now enabled by default for ``.svg`` files."
 msgstr ""
+"O escape automático agora está habilitado por padrão para arquivos ``.svg``."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.sansio.app.App.shell_context_processor:1
 #: def54aff6a4b4e479c6221ccd202e238
@@ -2493,7 +2594,7 @@ msgstr ""
 #: ../../docstring of flask.Flask.instance_path:1
 #: a3c47663db8f4f7a8f6b5c334e6e8e23
 msgid "Holds the path to the instance folder."
-msgstr ""
+msgstr "Armazena o caminho para a pasta da instância."
 
 #: ../../docstring of flask.Flask.config:1
 #: c8e218ef1c654fa2a9c2b916c4a38796
@@ -2643,6 +2744,7 @@ msgstr ""
 #: 32ad85a2661448a9a40a8d4fff42b2a1
 msgid "To register an error handler, use the :meth:`errorhandler` decorator."
 msgstr ""
+"Para registrar um manipulador de erros, use o decorador :meth:`errorhandler`."
 
 #: ../../docstring of flask.Blueprint.before_request_funcs:1
 #: ../../docstring of flask.Flask.before_request_funcs:1
@@ -2656,7 +2758,7 @@ msgstr ""
 #: b63a4612e0e74e4187f1072fe89018f2
 #: d2401ba9cf49447dae5c2fbac7ed46fb
 msgid "To register a function, use the :meth:`before_request` decorator."
-msgstr ""
+msgstr "Para registrar uma função, use o decorador :meth:`before_request`."
 
 #: ../../docstring of flask.Blueprint.after_request_funcs:1
 #: ../../docstring of flask.Flask.after_request_funcs:1
@@ -2670,7 +2772,7 @@ msgstr ""
 #: b215a59a15ca47e69ef3cb12cf1bea2d
 #: 9234f072b9df47eba1b0437782d75cca
 msgid "To register a function, use the :meth:`after_request` decorator."
-msgstr ""
+msgstr "Para registrar uma função, use o decorador :meth:`after_request`."
 
 #: ../../docstring of flask.Blueprint.teardown_request_funcs:1
 #: ../../docstring of flask.Flask.teardown_request_funcs:1
@@ -2684,7 +2786,7 @@ msgstr ""
 #: 3821054cfd8b4603b10dea89fece278b
 #: 79f8ebbf787247b4880eda70fa3b2a78
 msgid "To register a function, use the :meth:`teardown_request` decorator."
-msgstr ""
+msgstr "Para registrar uma função, use o decorador :meth:`teardown_request`."
 
 #: ../../docstring of flask.Blueprint.template_context_processors:1
 #: ../../docstring of flask.Flask.template_context_processors:1
@@ -2699,6 +2801,7 @@ msgstr ""
 #: b14dd80c08774fda86a02770cafb4239
 msgid "To register a function, use the :meth:`context_processor` decorator."
 msgstr ""
+"Para registrar uma função, utilize o decorador :meth:`context_processor`."
 
 #: ../../docstring of flask.Blueprint.url_value_preprocessors:1
 #: ../../docstring of flask.Flask.url_value_preprocessors:1
@@ -2713,6 +2816,7 @@ msgstr ""
 #: f69d6ad9e9b54525aadc12c059459d19
 msgid "To register a function, use the :meth:`url_value_preprocessor` decorator."
 msgstr ""
+"Para registrar uma função, use o decorador :meth:`url_value_preprocessor`."
 
 #: ../../docstring of flask.Blueprint.url_default_functions:1
 #: ../../docstring of flask.Flask.url_default_functions:1
@@ -2726,7 +2830,7 @@ msgstr ""
 #: ba80591fcbcf424d9783995fe80dd9e4
 #: b8fc956f5f2a4c98bfb0ef50f679a319
 msgid "To register a function, use the :meth:`url_defaults` decorator."
-msgstr ""
+msgstr "Para registrar uma função, use o decorador :meth:`url_defaults`."
 
 #: ../../project/docs/api.rst:20
 #: 7b7f52cffaa849e48e2bacae08c49775
@@ -2838,7 +2942,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/blueprints.py:docstring of flask.sansio.blueprints.Blueprint.register:6
 #: 744d023c1f7c4ef28d98e0e0e8f6e243
 msgid "The application this blueprint is being registered with."
-msgstr ""
+msgstr "O aplicativo no qual este blueprint está sendo registrado."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/blueprints.py:docstring of flask.sansio.blueprints.Blueprint.register:8
 #: 7a05e7af0cb449e7ad0b1c2b2d6d2892
@@ -2848,7 +2952,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/blueprints.py:docstring of flask.sansio.blueprints.Blueprint.register:11
 #: d3c9f02c859f46948ee08399230e97f2
 msgid "Nested blueprints now correctly apply subdomains."
-msgstr ""
+msgstr "Blueprints aninhados agora aplicam subdomínios corretamente."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/blueprints.py:docstring of flask.sansio.blueprints.Blueprint.register:14
 #: 0ae4b9b72cd54d3493525a8aa59e544f
@@ -2873,7 +2977,7 @@ msgstr ""
 #: ../../project/docs/api.rst:27
 #: 8ed90ffcd24844db8014b79c41b7d89e
 msgid "Incoming Request Data"
-msgstr ""
+msgstr "Dados da Requisição Recebida"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.wrappers.Request:1
 #: 8363d886a7314fe8853300a8343d6c00
@@ -2918,7 +3022,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.max_content_length:14
 #: 2745c5e5909a4cbb8f2cc55a58520d9a
 msgid "This can be set per-request."
-msgstr ""
+msgstr "Isso pode ser definido por requisição."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.max_content_length:17
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.max_form_memory_size:11
@@ -2927,7 +3031,7 @@ msgstr ""
 #: 5ec0642f33c14fca92153821c1ea6f0e
 #: c9fc9d3a07314a839e2cb1ad2303e5fa
 msgid "This is configurable through Flask config."
-msgstr ""
+msgstr "Isso é configurável através da configuração do Flask."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.max_form_memory_size:1
 #: b3fa98607c364bbe8a5f64f82c853ec6
@@ -2952,7 +3056,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.endpoint:1
 #: 01ae4fad9f784324a933e046c25161e4
 msgid "The endpoint that matched the request URL."
-msgstr ""
+msgstr "O endpoint que correspondeu à URL da requisição."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.endpoint:3
 #: 7dd100f0c61a43b3acee241facac0e12
@@ -2967,7 +3071,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.blueprint:1
 #: 758f985907514352a7ce46d29fd4ae6e
 msgid "The registered name of the current blueprint."
-msgstr ""
+msgstr "O nome registrado do blueprint atual."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.blueprint:3
 #: f66500134fdb407eaa9cf9b51d32523d
@@ -2992,7 +3096,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.wrappers.Request.on_json_loading_failed:1
 #: c1c17cbda5f4477a8a155c572ca14652
 msgid "Called if :meth:`get_json` fails and isn't silenced."
-msgstr ""
+msgstr "Chamado se :meth:`get_json` falhar e não estiver silenciado."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.wrappers.Request.on_json_loading_failed:3
 #: 1a4a01e09d44468a8ea4856a826dfe64
@@ -3011,12 +3115,14 @@ msgstr ""
 #: adc8ea20766b4644a497384298f0f88b
 #: 1adc4b1ea8854a52b1947df38cd2b9ac
 msgid "Raise a 415 error instead of 400."
-msgstr ""
+msgstr "Gere um erro 415 em vez de um 400."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.accept_charsets:1
 #: 71dfee3566a34dd083e72326cb41f0eb
 msgid "List of charsets this client supports as :class:`~werkzeug.datastructures.CharsetAccept` object."
 msgstr ""
+"Lista de conjuntos de caracteres que este cliente suporta como um objeto "
+":class:`~werkzeug.datastructures.CharsetAccept`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.accept_encodings:1
 #: b016f8ab0c9e4cd5b229065a75d1fbbf
@@ -3027,11 +3133,15 @@ msgstr ""
 #: b2e7f1ad27fa4203a3a081b9a0afa86f
 msgid "List of languages this client accepts as :class:`~werkzeug.datastructures.LanguageAccept` object."
 msgstr ""
+"Lista de idiomas que este cliente aceita, como objeto "
+":class:`~werkzeug.datastructures.LanguageAccept`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.accept_mimetypes:1
 #: 1064f6f316d64a66805a8add967ca3d8
 msgid "List of mimetypes this client supports as :class:`~werkzeug.datastructures.MIMEAccept` object."
 msgstr ""
+"Lista de tipos MIME que este cliente suporta como objeto "
+":class:`~werkzeug.datastructures.MIMEAccept`."
 
 #: ../../docstring of flask.Request.access_control_request_headers:1
 #: 710a8eaf175a4497a4f0848f70762679
@@ -3081,7 +3191,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.args:10
 #: 1927bf93e71a4ddaa415414d889f8b43
 msgid "Invalid bytes remain percent encoded."
-msgstr ""
+msgstr "Bytes inválidos permanecem codificados por porcentagem."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.authorization:1
 #: 4ec4fd24c3604e3687e5e528320d7fa7
@@ -3096,12 +3206,14 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.base_url:1
 #: 143a8edffe914859b5b98e639e22101b
 msgid "Like :attr:`url` but without the query string."
-msgstr ""
+msgstr "Como :attr:`url`, mas sem a query string."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.cache_control:1
 #: 1ddca3a319564ee7ba155b63e3ee32dd
 msgid "A :class:`~werkzeug.datastructures.RequestCacheControl` object for the incoming cache control headers."
 msgstr ""
+"Um objeto :class:`~werkzeug.datastructures.RequestCacheControl` para os "
+"cabeçalhos de controle de cache recebidos."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.request.Request.close:1
 #: f22e14a5a814480a8154a5ef54aaaf0f
@@ -3171,7 +3283,7 @@ msgstr ""
 #: 8aabe0acbe8f4659bcbd268a6f67f764
 #: 18dc3c5442674cc287acfe32d694c13f
 msgid "The datetime object is timezone-aware."
-msgstr ""
+msgstr "O objeto datetime é sensível ao fuso horário."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.files:1
 #: b143a809c0764aa495525a4b26362a64
@@ -3217,6 +3329,7 @@ msgstr ""
 #: 1670f76ab4af463484ac51799366e43e
 msgid "This accepts the same options as the :class:`~werkzeug.test.EnvironBuilder`."
 msgstr ""
+"Isso aceita as mesmas opções que o :class:`~werkzeug.test.EnvironBuilder`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.request.Request.from_values:11
 #: b6160241db704cad99d77b6e15d9be17
@@ -3226,7 +3339,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.request.Request.from_values:16
 #: 3694e48660ac47ca92da201b603dda37
 msgid "request object"
-msgstr ""
+msgstr "objeto de requisição"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.full_path:1
 #: 6be2b8a2048b4c5da926f0d6ad9b50aa
@@ -3287,7 +3400,7 @@ msgstr ""
 #: 306e521c2e6e48da942177179b7c25e2
 #: 2e1ead94163e4d3e946c7d2dba2f3b83
 msgid "Raise a 400 error if the content type is incorrect."
-msgstr ""
+msgstr "Gere um erro 400 se o tipo de conteúdo estiver incorreto."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.host:1
 #: cdbb62bde30d4dbcaf7f4ca73f770a9e
@@ -3320,7 +3433,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.if_none_match:1
 #: 8f87388cfff546829dada2c34d2b86ff
 msgid "An object containing all the etags in the `If-None-Match` header."
-msgstr ""
+msgstr "Um objeto contendo todas as etags do cabeçalho `If-None-Match`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.if_range:1
 #: 62978ae0e1b14807906b35ff996b2111
@@ -3447,8 +3560,9 @@ msgstr "O cabeçalho `Range` analisado."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Request.range:5
 #: 4bd0b436eb1844a7bc1a44f5e5c3fc71
+#, fuzzy
 msgid ":class:`~werkzeug.datastructures.Range`"
-msgstr ""
+msgstr ":class:`~werkzeug.datastructures.Range`"
 
 #: ../../docstring of flask.Request.referrer:1
 #: b9ff53af4790414fbd2d2fa759279354
@@ -3610,7 +3724,7 @@ msgstr ""
 #: ../../docstring of flask.Request.headers:1
 #: 5267cbf6dc7f4682a67b2699b252b4ce
 msgid "The headers received with the request."
-msgstr ""
+msgstr "Os cabeçalhos recebidos com a solicitação."
 
 #: ../../docstring of flask.Request.remote_addr:1
 #: 3e021002efda44e89e6fa9316446b90b
@@ -3642,7 +3756,7 @@ msgstr "O objeto de requisição é uma instância de :class:`~flask.Request`."
 #: ../../project/docs/api.rst:48
 #: a98e1bb5af08423697e04fabd65e4e54
 msgid "Response Objects"
-msgstr ""
+msgstr "Objetos de resposta"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.wrappers.Response:1
 #: f50e0869c69744c1a32e0551e886db84
@@ -3774,7 +3888,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.close:4
 #: 9a16e8cee7384a018d59c0bb421b2f06
 msgid "Can now be used in a with statement."
-msgstr ""
+msgstr "Agora pode ser usado em uma instrução `with`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Response.content_language:1
 #: 9b0bd828431e4ac1a9bd24effbb1335a
@@ -3829,22 +3943,22 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Response.data:1
 #: 559466d162304637ad3cf3d8a0668d50
 msgid "A descriptor that calls :meth:`get_data` and :meth:`set_data`."
-msgstr ""
+msgstr "Um descritor que chama :meth:`get_data` e :meth:`set_data`."
 
 #: ../../docstring of flask.Response.default_status:1
 #: fa39b2b5b6514d30a8471c203d4509f2
 msgid "the default status if none is provided."
-msgstr ""
+msgstr "O status padrão caso nenhum seja fornecido."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.sansio.response.Response.delete_cookie:1
 #: c4db40cfbcd5430ab25bd8119206fa87
 msgid "Delete a cookie.  Fails silently if key doesn't exist."
-msgstr ""
+msgstr "Exclui um cookie. Falha silenciosamente se a chave não existir."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.sansio.response.Response.delete_cookie:3
 #: 5d18724d97d8402d9314e25d1605ba45
 msgid "the key (name) of the cookie to be deleted."
-msgstr ""
+msgstr "a chave (nome) do cookie a ser excluído."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.sansio.response.Response.delete_cookie:4
 #: f4ea1246b9b34e1381cb178857f2b8b0
@@ -3912,19 +4026,19 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.force_type:24
 #: 07179590fcf7406e97c42caff128b1ea
 msgid "a response object or wsgi application."
-msgstr ""
+msgstr "um objeto de resposta ou uma aplicação wsgi."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.force_type:25
 #: efb5a76ac6bb4aff860f2b88d6a31336
 msgid "a WSGI environment object."
-msgstr ""
+msgstr "um objeto de ambiente WSGI."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.force_type:26
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.from_app:11
 #: 51f0bb8b4f334b86858b68b17832e031
 #: dae37515df4e4e3e86c266e5fed59deb
 msgid "a response object."
-msgstr ""
+msgstr "um objeto de resposta."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.freeze:1
 #: 2242dfd07c7e4cf8bb03311749ddff15
@@ -3939,7 +4053,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.freeze:7
 #: a7db9e5563f548ada4c4bea260e5bf7d
 msgid "Set the ``Content-Length`` header."
-msgstr ""
+msgstr "Defina o cabeçalho ``Content-Length``."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.freeze:8
 #: 5c573638c6214845b7303a4bf303d2f6
@@ -3949,17 +4063,17 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.freeze:10
 #: 4334fd4057c6455295e4f93ac078fe16
 msgid "Removed the ``no_etag`` parameter."
-msgstr ""
+msgstr "O parâmetro ``no_etag`` foi removido."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.freeze:13
 #: 7fa190fae3b149369fe443da67200509
 msgid "An ``ETag`` header is always added."
-msgstr ""
+msgstr "Um cabeçalho ``ETag`` é sempre adicionado."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.freeze:16
 #: 3caaa775d4d74580a8012aa2542872fe
 msgid "The ``Content-Length`` header is set."
-msgstr ""
+msgstr "O cabeçalho ``Content-Length`` está definido."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.from_app:1
 #: 22b28a0b05c74d49b65c27cad3e58840
@@ -3969,7 +4083,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.from_app:8
 #: 8f96b3ae2cca4d54af46f966e765e368
 msgid "the WSGI application to execute."
-msgstr ""
+msgstr "a aplicação WSGI a ser executada."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.from_app:9
 #: 672880b12a9547f09965bc6a5aabbbc1
@@ -3979,7 +4093,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.from_app:10
 #: 698f07991fda4b699e233362d0e749e0
 msgid "set to `True` to enforce buffering."
-msgstr ""
+msgstr "defina como `True` para forçar o buffering."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.get_app_iter:1
 #: e895f385636d413084c1ddd8cb1281b0
@@ -3998,7 +4112,7 @@ msgstr ""
 #: 3ea300831761478c9fa4e1464add646a
 #: 1be03d9f997c440089d6c6e5a745535c
 msgid "the WSGI environment of the request."
-msgstr ""
+msgstr "o ambiente WSGI da requisição."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.get_app_iter:12
 #: 653c4e09d26a4b4fb0830f8be27e1f1f
@@ -4034,6 +4148,8 @@ msgstr ""
 #: 5f0ee705d27540139dc25c3c02f6fcab
 msgid "Unlike :meth:`Request.get_json`, the result is not cached."
 msgstr ""
+"Ao contrário de :meth:`Request.get_json`, o resultado não é armazenado em "
+"cache."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.get_json:10
 #: bddaf6832b9d4d65aea15ce130da36a5
@@ -4063,7 +4179,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.get_wsgi_headers:21
 #: e19a0d3cd3ce498daeedf41f9cea9758
 msgid "returns a new :class:`~werkzeug.datastructures.Headers` object."
-msgstr ""
+msgstr "retorna um novo objeto :class:`~werkzeug.datastructures.Headers`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.get_wsgi_response:1
 #: 82e97fb1a60e4ec98c7683a50998920f
@@ -4073,7 +4189,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.get_wsgi_response:11
 #: b7962bac5a8d4cf6b634164be5b364dc
 msgid "an ``(app_iter, status, headers)`` tuple."
-msgstr ""
+msgstr "uma tupla ``(app_iter, status, headers)``."
 
 #: ../../docstring of flask.Response.implicit_sequence_conversion:1
 #: a59488fe2ac7498cb5b8e883bc9243de
@@ -4158,7 +4274,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.make_conditional:0
 #: 5e1f53a3c21b4d5c85ea3ca8e6564b20
 msgid "raises"
-msgstr ""
+msgstr "gera"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.make_conditional:33
 #: ef54245b20a74375887fc090ff77d40f
@@ -4178,7 +4294,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Response.mimetype:1
 #: 01e4b94087044b178d394801ade71369
 msgid "The mimetype (content type without charset etc.)"
-msgstr ""
+msgstr "O mimetype (tipo de conteúdo sem charset, etc.)"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Response.mimetype_params:1
 #: b3f5ad5cc41341248e0a26aff9851ed7
@@ -4193,12 +4309,12 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Response.retry_after:5
 #: d92ab8cc90ab412b83d9a389c0b5a9bb
 msgid "Time in seconds until expiration or date."
-msgstr ""
+msgstr "Tempo em segundos até a expiração ou data."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.sansio.response.Response.set_cookie:1
 #: b680f6b01f8c4571ae79f51fe3e6fec3
 msgid "Sets a cookie."
-msgstr ""
+msgstr "Define um cookie."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.sansio.response.Response.set_cookie:3
 #: 6e813a3ce17b474e9f0e28644fd75184
@@ -4208,12 +4324,12 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.sansio.response.Response.set_cookie:6
 #: 15621804d5a2406d8e25014a52c96466
 msgid "the key (name) of the cookie to be set."
-msgstr ""
+msgstr "a chave (nome) do cookie a ser definido."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.sansio.response.Response.set_cookie:7
 #: 02d71277e18145a4936f293091768184
 msgid "the value of the cookie."
-msgstr ""
+msgstr "o valor do cookie."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.sansio.response.Response.set_cookie:8
 #: 3d19ccfa2c6f4a6d8b67dbffbf051f2b
@@ -4223,7 +4339,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.sansio.response.Response.set_cookie:11
 #: 46edaf2d5ac1426cb7602332ffef6190
 msgid "should be a `datetime` object or UNIX timestamp."
-msgstr ""
+msgstr "deve ser um objeto `datetime` ou um timestamp UNIX."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.sansio.response.Response.set_cookie:12
 #: 755ed72b1d8e4ec4b0136602dafbc250
@@ -4238,7 +4354,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.sansio.response.Response.set_cookie:26
 #: efdb4524cc914900898721614881a33c
 msgid "The ``partitioned`` parameter was added."
-msgstr ""
+msgstr "O parâmetro `partitioned` foi adicionado."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of werkzeug.wrappers.response.Response.set_data:1
 #: 9eee0ee891a04924b33e58e36acff569
@@ -4253,12 +4369,12 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Response.status:1
 #: e8a96a5268df4c2fba41bc159b1cb7ba
 msgid "The HTTP status code as a string."
-msgstr ""
+msgstr "O código de status HTTP como uma string."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Response.status_code:1
 #: 0dde1d5edeb4487986ca4b2967f5aca7
 msgid "The HTTP status code as a number."
-msgstr ""
+msgstr "O código de status HTTP como um número."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Response.stream:1
 #: 96de805c38b44f3daa7ba49e0ab7833f
@@ -4288,7 +4404,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Response.www_authenticate:18
 #: b66c21ac96d7476aab65319e0f27caf0
 msgid "To unset this header, assign ``None`` or use ``del``."
-msgstr ""
+msgstr "Para remover este cabeçalho, atribua ``None`` ou use ``del``."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Response.www_authenticate:20
 #: 58e76a093b4f4484b81a589a1290b1eb
@@ -4329,11 +4445,15 @@ msgstr ""
 #: acb476c07607483e9a647dbbc59a73c9
 msgid "Read-only view of the :data:`MAX_COOKIE_SIZE` config key."
 msgstr ""
+"Visualização somente leitura da chave de configuração "
+":data:`MAX_COOKIE_SIZE`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/wrappers.py:docstring of flask.Response.max_cookie_size:3
 #: af52fc5799f648a984621c2c82349251
 msgid "See :attr:`~werkzeug.wrappers.Response.max_cookie_size` in Werkzeug's docs."
 msgstr ""
+"Veja :attr:`~werkzeug.wrappers.Response.max_cookie_size` nos documentos de "
+"Werkzeug."
 
 #: ../../project/docs/api.rst:56
 #: 3b699307e3eb4e6dbe9346954e743fe6
@@ -4358,12 +4478,12 @@ msgstr ""
 #: ../../project/docs/api.rst:74
 #: 6bc3064cb69d45c8a49de03edac0b110
 msgid "The following attributes are interesting:"
-msgstr ""
+msgstr "Os seguintes atributos são interessantes:"
 
 #: ../../project/docs/api.rst:78
 #: 05fc47cd2e6d4c4eab57a84905ed27cb
 msgid "``True`` if the session is new, ``False`` otherwise."
-msgstr ""
+msgstr "``True`` se a sessão for nova, ``False`` caso contrário."
 
 #: ../../project/docs/api.rst:82
 #: ad4474aa7e6f478e86a2df09a4a16d2b
@@ -4428,7 +4548,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/sessions.py:docstring of flask.sessions.SessionInterface.make_null_session:8
 #: 3475fcf92b6f4749b4521a6cd96c0853
 msgid "This creates an instance of :attr:`null_session_class` by default."
-msgstr ""
+msgstr "Isso cria uma instância de :attr:`null_session_class` por padrão."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/sessions.py:docstring of flask.sessions.SessionInterface.is_null_session:1
 #: 4f406eed786b46fc87b8fa5d8ebc998d
@@ -4444,6 +4564,7 @@ msgstr ""
 #: 4097ced2beec4f7a8c82927b39baa2f5
 msgid "The name of the session cookie. Uses``app.config[\"SESSION_COOKIE_NAME\"]``."
 msgstr ""
+"O nome do cookie de sessão. Utiliza ``app.config[\"SESSION_COOKIE_NAME\"]``."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/sessions.py:docstring of flask.sessions.SessionInterface.get_cookie_domain:1
 #: d0571c9aa8ad455d9c7381d06dc3a065
@@ -4453,7 +4574,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/sessions.py:docstring of flask.sessions.SessionInterface.get_cookie_domain:5
 #: eee4570f414b4668957884582a4ac9a1
 msgid "Uses the :data:`SESSION_COOKIE_DOMAIN` config."
-msgstr ""
+msgstr "Usa a configuração :data:`SESSION_COOKIE_DOMAIN`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/sessions.py:docstring of flask.sessions.SessionInterface.get_cookie_domain:7
 #: ff107e29398344c49195b0ab396db401
@@ -4597,7 +4718,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/sessions.py:docstring of flask.sessions.NullSession._fail:1
 #: 3fa837008cbd48a8a2e98c1a432a4b78
 msgid "Remove all items from the dict."
-msgstr ""
+msgstr "Remova todos os itens do dicionário."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/sessions.py:docstring of flask.sessions.NullSession._fail:1
 #: 13f7099e2b024d37813e338249bcedd6
@@ -4622,12 +4743,12 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/sessions.py:docstring of flask.sessions.SessionMixin:1
 #: 9a13efba35d44c6e9c3dc3ccf5a2e412
 msgid "Expands a basic dictionary with session attributes."
-msgstr ""
+msgstr "Expande um dicionário básico com atributos da sessão."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/sessions.py:docstring of flask.sessions.SessionMixin.permanent:1
 #: 359b2b2344cc4a74aef7251e8e36f9bc
 msgid "This reflects the ``'_permanent'`` key in the dict."
-msgstr ""
+msgstr "Isso reflete a chave ``'_permanent'`` no dicionário."
 
 #: ../../docstring of flask.sessions.SessionMixin.modified:1
 #: 82b6a87d9fe7428493f722ee8a588407
@@ -4667,7 +4788,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/testing.py:docstring of flask.testing.FlaskClient:11
 #: f806c59b97b9466db08ebd59bc68105c
 msgid "Basic usage is outlined in the :doc:`/testing` chapter."
-msgstr ""
+msgstr "O uso básico é descrito no capítulo :doc:`/testing`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/testing.py:docstring of flask.testing.FlaskClient.session_transaction:1
 #: 4f12fa3d42fb4c1ca1b1dd31164dc02f
@@ -4702,7 +4823,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/testing.py:docstring of flask.testing.FlaskClient.open:15
 #: 5e728d75b1a74481afb6cdfd6af675f5
 msgid "Removed the ``as_tuple`` parameter."
-msgstr ""
+msgstr "O parâmetro ``as_tuple`` foi removido."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/testing.py:docstring of flask.testing.FlaskClient.open:18
 #: eb518cfd90554d13915d2a7f541de2de
@@ -4717,7 +4838,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/testing.py:docstring of flask.testing.FlaskClient.open:29
 #: 0f8c557beca0499599d4cee04ea9f928
 msgid "Added the ``follow_redirects`` parameter."
-msgstr ""
+msgstr "Adicionado o parâmetro ``follow_redirects``."
 
 #: ../../project/docs/api.rst:143
 #: f5f6829bb102473ba4ada9ce90724e58
@@ -4747,7 +4868,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/testing.py:docstring of flask.testing.FlaskCliRunner.invoke:11
 #: 88ab1a60f64b42c59c10bde7449112a9
 msgid "List of strings to invoke the command with."
-msgstr ""
+msgstr "Lista de strings com as quais invocar o comando."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/testing.py:docstring of flask.testing.FlaskCliRunner.invoke:13
 #: 5a5f8e904f9f4d3c9f57d9ed26237045
@@ -4757,7 +4878,7 @@ msgstr "Um objeto :class:`~click.testing.Result`."
 #: ../../project/docs/api.rst:152
 #: 63f70ef00a874fd1a24badf0b69764c7
 msgid "Application Globals"
-msgstr ""
+msgstr "Variáveis Globais da Aplicação"
 
 #: ../../project/docs/api.rst:156
 #: 2344cfab5f6a481c9f5ea3f4e6d735c5
@@ -4792,12 +4913,12 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/ctx.py:docstring of flask.ctx._AppCtxGlobals:9
 #: eedcbed3e9bb4888b12e1adf18bc91c0
 msgid "Check whether an attribute is present."
-msgstr ""
+msgstr "Verifique se um atributo está presente."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/ctx.py:docstring of flask.ctx._AppCtxGlobals:15
 #: caf35e8127c548868417d7f94871e429
 msgid "Return an iterator over the attribute names."
-msgstr ""
+msgstr "Retorna um iterador sobre os nomes dos atributos."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/ctx.py:docstring of flask.ctx._AppCtxGlobals.get:1
 #: 0b847abcc3d441e599b2ce849faa51b1
@@ -4809,12 +4930,12 @@ msgstr ""
 #: 8cb3295ec1854f3bbbf0c5a73b998297
 #: c421cb4f6ae04eb09d850cd7ab12d3ac
 msgid "Name of attribute to get."
-msgstr ""
+msgstr "Nome do atributo a ser obtido."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/ctx.py:docstring of flask.ctx._AppCtxGlobals.get:5
 #: 0fac985c6d844592bd49c68867a8cd1f
 msgid "Value to return if the attribute is not present."
-msgstr ""
+msgstr "Valor a ser retornado caso o atributo não esteja presente."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/ctx.py:docstring of flask.ctx._AppCtxGlobals.pop:1
 #: aa231c56fe06475fb611ae79b2e37a4d
@@ -4892,16 +5013,18 @@ msgstr ""
 #: dfbbb90bb6e74b01b45f5da9ed30c928
 msgid "Calls ``current_app.url_for``, allowing an app to override the behavior."
 msgstr ""
+"Chama ``current_app.url_for``, permitindo que uma aplicação sobrescreva o "
+"comportamento."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.url_for:27
 #: 576a69d540fa4f7e8cd0a9840288dc2b
 msgid "The ``_scheme`` parameter was added."
-msgstr ""
+msgstr "O parâmetro ``_scheme`` foi adicionado."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.url_for:30
 #: 2769e29728c24aadbcfa1697fe9ba9cb
 msgid "The ``_anchor`` and ``_method`` parameters were added."
-msgstr ""
+msgstr "Os parâmetros ``_anchor`` e ``_method`` foram adicionados."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.url_for:33
 #: a8c10434c447433cb8e7a0321e05941b
@@ -4963,7 +5086,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.make_response:12
 #: 01c313075008492292831170665ddd34
 msgid "You can now do something like this::"
-msgstr ""
+msgstr "Agora você pode fazer algo assim::"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.make_response:19
 #: d28d985bce634463b91fce7885cd3d93
@@ -5008,7 +5131,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.send_file:1
 #: b831266af5b04c0c83fd378464f756b3
 msgid "Send the contents of a file to the client."
-msgstr ""
+msgstr "Envie o conteúdo de um arquivo para o cliente."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.send_file:3
 #: 638de934194f4908abbd46a37e41bc65
@@ -5095,7 +5218,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.send_file:64
 #: 20e46d8631c8482a8557333f1837bb76
 msgid "``filename`` may be a :class:`~os.PathLike` object."
-msgstr ""
+msgstr "``filename`` pode ser um objeto :class:`~os.PathLike`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.send_file:67
 #: 51e355a4abf6408f84d9bea10fa07233
@@ -5111,6 +5234,8 @@ msgstr ""
 #: a7c2262a1c4b469c89b12b653c66735a
 msgid "UTF-8 filenames as specified in :rfc:`2231` are supported."
 msgstr ""
+"Há suporte para nomes de arquivo em UTF-8, conforme especificado na "
+":rfc:`2231`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.send_file:77
 #: f0a576ed094f4727a54e6177f7ce8d57
@@ -5120,12 +5245,13 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.send_file:83
 #: 7facf4f4fc2f4651b7370eb6553a4c0f
 msgid "``attachment_filename`` is preferred over ``filename`` for MIME detection."
-msgstr ""
+msgstr "``attachment_filename`` é preferível a ``filename`` para detecção MIME."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.send_file:87
 #: d15c214b83c14bc7823a2cdc7a1298f0
 msgid "``cache_timeout`` defaults to :meth:`Flask.get_send_file_max_age`."
 msgstr ""
+"O valor padrão de ``cache_timeout`` é :meth:`Flask.get_send_file_max_age`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.send_file:91
 #: 98f53c74c5524075b369b3fac1003a01
@@ -5140,7 +5266,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.send_from_directory:1
 #: e532ce9d7820470984e662fcb107dbd2
 msgid "Send a file from within a directory using :func:`send_file`."
-msgstr ""
+msgstr "Envie um arquivo de dentro de um diretório usando :func:`send_file`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.send_from_directory:11
 #: aae64020fedd45148a084d7210ddfb84
@@ -5165,17 +5291,17 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.send_from_directory:24
 #: 72ef977b4d0b4ff4a2c25726eeb188f3
 msgid "Arguments to pass to :func:`send_file`."
-msgstr ""
+msgstr "Argumentos a serem passados para :func:`send_file`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.send_from_directory:26
 #: b3ad474b547a4c7dbf61c9c5282d14f9
 msgid "``path`` replaces the ``filename`` parameter."
-msgstr ""
+msgstr "``path`` substitui o parâmetro ``filename``."
 
 #: ../../project/docs/api.rst:222
 #: 0667dd31c6334947b210c808686f6ec1
 msgid "Message Flashing"
-msgstr ""
+msgstr "Mensagem Flash"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.flash:1
 #: b69c87780d8e4c58a0975b531333f68c
@@ -5220,12 +5346,12 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.get_flashed_messages:17
 #: 87251b0e30e64c72ac2edb846694a3c2
 msgid "See :doc:`/patterns/flashing` for examples."
-msgstr ""
+msgstr "Veja :doc:`/patterns/flashing` para exemplos."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.get_flashed_messages:22
 #: 6b9c289481ae44fbba406208d36afdca
 msgid "`category_filter` parameter added."
-msgstr ""
+msgstr "Parâmetro `category_filter` adicionado."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.get_flashed_messages:19
 #: 604e5226f26246ac9d82a1c394cd184c
@@ -5235,7 +5361,7 @@ msgstr "Parâmetro `with_categories` adicionado."
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.get_flashed_messages:25
 #: 79a996b5b6f64c0e9a830da30c96519e
 msgid "set to ``True`` to also receive categories."
-msgstr ""
+msgstr "defina como ``True`` para também receber categorias."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.get_flashed_messages:26
 #: 046056dec00d4810b26d66645e25090c
@@ -5297,12 +5423,14 @@ msgstr ""
 #: c6bb49e114bb487fbd08f611f61395e3
 #: 85e040d8e53b4e87b687ab2555fdd81a
 msgid "Treat as a dict to serialize."
-msgstr ""
+msgstr "Trate como um dicionário para serializar."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.jsonify:19
 #: d4e739112c0b4b40a553c972db74af17
 msgid "Calls ``current_app.json.response``, allowing an app to override the behavior."
 msgstr ""
+"Chama ``current_app.json.response``, permitindo que um aplicativo "
+"sobrescreva o comportamento."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.dumps:17
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.jsonify:23
@@ -5310,6 +5438,7 @@ msgstr ""
 #: bca036b26fca4189bdf476bff735554f
 msgid ":class:`decimal.Decimal` is supported by converting to a string."
 msgstr ""
+":class:`decimal.Decimal` é suportado mediante conversão para uma string."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.jsonify:26
 #: 984dec312f4c431a9ecf843f7d5c7302
@@ -5344,7 +5473,7 @@ msgstr "Os dados a serem serializados."
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.dumps:8
 #: bd1d18a6a892473aa9f55dec1398bd46
 msgid "Arguments passed to the ``dumps`` implementation."
-msgstr ""
+msgstr "Argumentos passados para a implementação de ``dumps``."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.dump:12
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.dumps:10
@@ -5355,17 +5484,19 @@ msgstr ""
 #: 496675886b2d4d26bfdff11c56f6b6d7
 #: f31bbd06348a456db813346b3b11da19
 msgid "The ``app`` parameter was removed."
-msgstr ""
+msgstr "O parâmetro ``app`` foi removido."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.dumps:13
 #: 28ae6e0e64d3419293031465a32af828
 msgid "Calls ``current_app.json.dumps``, allowing an app to override the behavior."
 msgstr ""
+"Chama ``current_app.json.dumps``, permitindo que uma aplicação sobrescreva o "
+"comportamento."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.dumps:20
 #: c1f7de455a4b4428885e4b8f437677fb
 msgid "``encoding`` will be removed in Flask 2.1."
-msgstr ""
+msgstr "``encoding`` será removido no Flask 2.1."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.dumps:23
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.loads:21
@@ -5379,7 +5510,7 @@ msgstr ""
 #: f9708be22a3045d9bbe913846174f156
 #: 41883735b87a4516ad587d1a3e4c7367
 msgid "Serialize data as JSON and write to a file."
-msgstr ""
+msgstr "Serialize dados como JSON e grave-os em um arquivo."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.dump:3
 #: 0a209e255c1b461bae2c2dafdf9c0597
@@ -5396,12 +5527,14 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.dump:10
 #: 0b164c51e33844beb6b24bca18f4f231
 msgid "Arguments passed to the ``dump`` implementation."
-msgstr ""
+msgstr "Argumentos passados para a implementação de ``dump``."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.dump:15
 #: 820722d99a5444a1baa3ddbbccb74e37
 msgid "Calls ``current_app.json.dump``, allowing an app to override the behavior."
 msgstr ""
+"Chama ``current_app.json.dump``, permitindo que uma aplicação sobrescreva o "
+"comportamento."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.dump:19
 #: 7427b2223b044bb3bf337db92f61a015
@@ -5432,12 +5565,14 @@ msgstr "Texto ou bytes UTF-8 ."
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.loads:8
 #: cecd2b2006c44e08a28e5df2b30a323d
 msgid "Arguments passed to the ``loads`` implementation."
-msgstr ""
+msgstr "Argumentos passados para a implementação de ``loads``."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.loads:13
 #: 28e21bff771745a4a083cc596777df04
 msgid "Calls ``current_app.json.loads``, allowing an app to override the behavior."
 msgstr ""
+"Chama ``current_app.json.loads``, permitindo que uma aplicação sobrescreva o "
+"comportamento."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.loads:17
 #: b4e7a8065af846a797dde20c34572161
@@ -5449,7 +5584,7 @@ msgstr ""
 #: d85a297b0eb846b1b96410436a01e505
 #: 5461d6372de04bb798443f8135e9d5ea
 msgid "Deserialize data as JSON read from a file."
-msgstr ""
+msgstr "Desserializar dados lidos de um arquivo em formato JSON."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.load:3
 #: 8e3bcf45f2364ba68714a4dc87f87cb4
@@ -5461,22 +5596,24 @@ msgstr ""
 #: ec2a2e50d5844432a5c0c86857301e3a
 #: 5cf85698a05a4eef80d327cb4cd2bb54
 msgid "A file opened for reading text or UTF-8 bytes."
-msgstr ""
+msgstr "Um arquivo aberto para leitura de texto ou bytes UTF-8."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.load:8
 #: 36569f9afe7a413eab223d13c4368bb3
 msgid "Arguments passed to the ``load`` implementation."
-msgstr ""
+msgstr "Argumentos passados para a implementação de ``load``."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.load:13
 #: eeb78b60b9a7497fa270dc70b725a623
 msgid "Calls ``current_app.json.load``, allowing an app to override the behavior."
 msgstr ""
+"Chama ``current_app.json.load``, permitindo que uma aplicação sobrescreva o "
+"comportamento."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.load:17
 #: 33e95ad8d7e0469f8611b81808278026
 msgid "The ``app`` parameter will be removed in Flask 2.3."
-msgstr ""
+msgstr "O parâmetro ``app`` será removido no Flask 2.3."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/__init__.py:docstring of flask.json.load:20
 #: c4d9c61ae3764244bcd897156f5146dd
@@ -5512,7 +5649,7 @@ msgstr ""
 #: 36454d2882bc4284ad899a5ba67cacf6
 #: e2df23e3ee7c4078ae8337c2a9f43a20
 msgid "May be passed to the underlying JSON library."
-msgstr ""
+msgstr "Pode ser passado para a biblioteca JSON subjacente."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/provider.py:docstring of flask.json.provider.JSONProvider.response:1
 #: a1aa25b71fd8414dadd8bfca6fbcb9d9
@@ -5537,12 +5674,13 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/json/provider.py:docstring of flask.json.provider.DefaultJSONProvider:7
 #: 3f65826f43ee48bca251a1187d43630b
 msgid ":class:`uuid.UUID` is serialized to a string."
-msgstr ""
+msgstr ":class:`uuid.UUID` é serializado para uma string."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/provider.py:docstring of flask.json.provider.DefaultJSONProvider:8
 #: aa8b0a9e699544ab9c63bac381487dd6
 msgid ":class:`dataclasses.dataclass` is passed to :func:`dataclasses.asdict`."
 msgstr ""
+":class:`dataclasses.dataclass` é passado para :func:`dataclasses.asdict`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/provider.py:docstring of flask.json.provider.DefaultJSONProvider:10
 #: b1e4ceddf1204383911224f9e1590368
@@ -5572,12 +5710,12 @@ msgstr ""
 #: ../../docstring of flask.json.provider.DefaultJSONProvider.mimetype:1
 #: 5086b7644ccc44d5866444ff4b35f2e1
 msgid "The mimetype set in :meth:`response`."
-msgstr ""
+msgstr "O mimetype definido em :meth:`response`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/provider.py:docstring of flask.json.provider.DefaultJSONProvider.dumps:1
 #: ee903d955786450b8befca32f67d1fc9
 msgid "Serialize data as JSON to a string."
-msgstr ""
+msgstr "Serializar dados como uma string JSON."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/provider.py:docstring of flask.json.provider.DefaultJSONProvider.dumps:3
 #: 7eddbf21ea5a41a6acd9bd6906fa9b7c
@@ -5587,17 +5725,17 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/json/provider.py:docstring of flask.json.provider.DefaultJSONProvider.dumps:8
 #: 0f30d615a2b74abd9be1ffd70c13421b
 msgid "Passed to :func:`json.dumps`."
-msgstr ""
+msgstr "Passado para :func:`json.dumps`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/provider.py:docstring of flask.json.provider.DefaultJSONProvider.loads:1
 #: 8120b4b62c344ee18449914dc3563bae
 msgid "Deserialize data as JSON from a string or bytes."
-msgstr ""
+msgstr "Desserializar dados como JSON a partir de uma string ou de bytes."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/provider.py:docstring of flask.json.provider.DefaultJSONProvider.loads:4
 #: f353081583ef4265853534796a8e4558
 msgid "Passed to :func:`json.loads`."
-msgstr ""
+msgstr "Passado para :func:`json.loads`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/provider.py:docstring of flask.json.provider.DefaultJSONProvider.response:1
 #: cab7d13a6ab54bdb9dc1ca4e2967f9b5
@@ -5612,7 +5750,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/json/tag.py:docstring of flask.json.tag:2
 #: c6a679b34a5d4a5085e8d99de7ceca28
 msgid "Tagged JSON"
-msgstr ""
+msgstr "JSON com tags"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/tag.py:docstring of flask.json.tag:4
 #: 60ada0ad378345648692ae09d349bf7a
@@ -5627,7 +5765,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/json/tag.py:docstring of flask.json.tag.TaggedJSONSerializer:5
 #: 0c542cd5de5f4c77b806bfbef842f61a
 msgid "The following extra types are supported:"
-msgstr ""
+msgstr "Os seguintes tipos adicionais são suportados:"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/tag.py:docstring of flask.json.tag.TaggedJSONSerializer:7
 #: 25448bf84daf464da37d40580148498a
@@ -5641,8 +5779,9 @@ msgstr ":class:`tuple`"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/tag.py:docstring of flask.json.tag.TaggedJSONSerializer:9
 #: 0022e27b741a45afb55fdb182cd1a6cd
+#, fuzzy
 msgid ":class:`bytes`"
-msgstr ""
+msgstr ":class:`bytes`"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/tag.py:docstring of flask.json.tag.TaggedJSONSerializer:10
 #: 3575471d9ab94731929eb29e9795edeb
@@ -5651,8 +5790,9 @@ msgstr ":class:`~markupsafe.Markup`"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/tag.py:docstring of flask.json.tag.TaggedJSONSerializer:11
 #: 962133a6c74d48709c8582da031e91d5
+#, fuzzy
 msgid ":class:`~uuid.UUID`"
-msgstr ""
+msgstr ":class:`~uuid.UUID`"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/tag.py:docstring of flask.json.tag.TaggedJSONSerializer:12
 #: e3c1eedb565a446e81bedd6d43a957c4
@@ -5667,7 +5807,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/json/tag.py:docstring of flask.json.tag.TaggedJSONSerializer.register:1
 #: 1128035e6ce74ea2b48c0e7d89b5147b
 msgid "Register a new tag with this serializer."
-msgstr ""
+msgstr "Registre uma nova tag com este serializador."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/tag.py:docstring of flask.json.tag.TaggedJSONSerializer.register:3
 #: efc900933fdd4539af85dce4f17eb579
@@ -5687,7 +5827,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/json/tag.py:docstring of flask.json.tag:0
 #: f34396cb7c634dc984c391ae29e7c9a4
 msgid "Raises"
-msgstr ""
+msgstr "Gera"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/json/tag.py:docstring of flask.json.tag.TaggedJSONSerializer.register:11
 #: 8f51a2fa1f3a41f8b59f9538ad0f425f
@@ -5718,6 +5858,7 @@ msgstr ""
 #: a5a6185c0fe54ca9a1aa9fabc2071c21
 msgid "Base class for defining type tags for :class:`TaggedJSONSerializer`."
 msgstr ""
+"Classe base para definir tags de tipo para :class:`TaggedJSONSerializer`."
 
 #: ../../docstring of flask.json.tag.JSONTag.key:1
 #: 3161d20813a74a47b54745554fdc3db7
@@ -5752,12 +5893,12 @@ msgstr ""
 #: ../../project/docs/api.rst:273
 #: a0d04dc071f34ea8aea3b4773cb5120d
 msgid "Template Rendering"
-msgstr ""
+msgstr "Renderização de Templates"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/templating.py:docstring of flask.templating.render_template:1
 #: dee2af6143cf47bcab587fa31f9139ed
 msgid "Render a template by name with the given context."
-msgstr ""
+msgstr "Renderiza um template pelo nome com o contexto fornecido."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/templating.py:docstring of flask.templating.render_template:3
 #: ../../.venv/lib/python3.13/site-packages/flask/templating.py:docstring of flask.templating.stream_template:5
@@ -5775,7 +5916,7 @@ msgstr ""
 #: 09272467dd424b63849068c30c12eafe
 #: df3a85be5cc744bbb1537afac0146b24
 msgid "The variables to make available in the template."
-msgstr ""
+msgstr "As variáveis a serem disponibilizadas no template."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/templating.py:docstring of flask.templating.render_template_string:1
 #: c1f02d7a6d044327bdf41ab14ad19b78
@@ -5787,7 +5928,7 @@ msgstr ""
 #: 415d8af3aad240eebbb55c80fc2247f5
 #: e103db627b8a4acd963d7ad6723c0a2e
 msgid "The source code of the template to render."
-msgstr ""
+msgstr "O código-fonte do template a ser renderizado."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/templating.py:docstring of flask.templating.stream_template:1
 #: 67bc384e86584bae838739738e2de3da
@@ -5807,12 +5948,12 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.get_template_attribute:9
 #: a9260913365f4788b398bfa4169981e4
 msgid "You can access this from Python code like this::"
-msgstr ""
+msgstr "Você pode acessar isso a partir do código Python da seguinte forma::"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.get_template_attribute:16
 #: aca39148cb754691a7b846807aea92ba
 msgid "the name of the template"
-msgstr ""
+msgstr "o nome do template"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/helpers.py:docstring of flask.helpers.get_template_attribute:17
 #: c9d515e51eeb4574a5d06b2b2715b134
@@ -5857,7 +5998,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config:36
 #: 6133ceb72ed24cbbaeda5fb032e8848f
 msgid "On windows use `set` instead."
-msgstr ""
+msgstr "No Windows, use `set` em vez disso."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config:38
 #: 0e2ad62c76614487bf7d942988c89a0e
@@ -5867,7 +6008,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config:41
 #: ccd3f71ef89349bf97c011e93dd0201a
 msgid "an optional dictionary of default values"
-msgstr ""
+msgstr "um dicionário opcional de valores padrão"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_envvar:1
 #: b5186e932e01401384b5c2b27c2e13ca
@@ -5877,7 +6018,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_envvar:7
 #: 9c0e85e3c29c479790dbb02e44aae051
 msgid "name of the environment variable"
-msgstr ""
+msgstr "nome da variável de ambiente"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_envvar:8
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_pyfile:8
@@ -5893,7 +6034,7 @@ msgstr ""
 #: a8aceb2c64a84c768a1ebdbacbf342b8
 #: eb5de5b70bb44a0ea6b0559f09138c93
 msgid "``True`` if the file was loaded successfully."
-msgstr ""
+msgstr "``True`` se o arquivo foi carregado com sucesso."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_prefixed_env:1
 #: 3a15eef12daa46409507179dad34312e
@@ -5938,7 +6079,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_pyfile:12
 #: c89a7a92ab68436d995abc9c94c917bb
 msgid "`silent` parameter."
-msgstr ""
+msgstr "parâmetro `silent`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_object:1
 #: e7d863559743413db947a0434b7dfa4a
@@ -5953,7 +6094,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_object:5
 #: 50997fa75a2f495abaf86e886576f223
 msgid "an actual object reference: that object is used directly"
-msgstr ""
+msgstr "uma referência de objeto real: esse objeto é usado diretamente"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_object:7
 #: 8e05c9b6da1541979ed37b97e7cbe6c0
@@ -5963,7 +6104,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_object:12
 #: 8b1a84a2b0df422faf7414142a6337c0
 msgid "Example of module-based configuration::"
-msgstr ""
+msgstr "Exemplo de configuração baseada em módulos::"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_object:18
 #: a24c28f0696f42d79a197fca40ef9753
@@ -6003,17 +6144,17 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_file:19
 #: 9df62bf690fa420eb4112161378a0dbc
 msgid "Ignore the file if it doesn't exist."
-msgstr ""
+msgstr "Ignora o arquivo se ele não existir."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_file:20
 #: 29540b817bf24679b83469b4c1e50ce2
 msgid "Open the file in text or binary mode."
-msgstr ""
+msgstr "Abra o arquivo no modo texto ou binário."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_file:23
 #: 0763ed24676849558519bb7b1f1add6e
 msgid "The ``text`` parameter was added."
-msgstr ""
+msgstr "O parâmetro ``text`` foi adicionado."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.from_mapping:1
 #: 3794fdc8f729473e9cf3c06a1604c1d2
@@ -6043,7 +6184,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.get_namespace:20
 #: 512aa319b3e247b4ab11d416ed85a695
 msgid "a configuration namespace"
-msgstr ""
+msgstr "um namespace de configuração"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/config.py:docstring of flask.config.Config.get_namespace:21
 #: 2bd5a742c2f24de08c50392fe756fda9
@@ -6078,7 +6219,7 @@ msgstr ""
 #: ../../project/docs/api.rst:300
 #: 1e7089acdb5845f5ab078932ff0a90f9
 msgid "Useful Internals"
-msgstr ""
+msgstr "Componentes Internos Úteis"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/ctx.py:docstring of flask.ctx.RequestContext:1
 #: e5a9471fd9754248a39c6d6bc52cb4e2
@@ -6123,7 +6264,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/ctx.py:docstring of flask.ctx.RequestContext.pop:5
 #: adcb880a6f6b48debeef7177f1707cb0
 msgid "Added the `exc` argument."
-msgstr ""
+msgstr "Adicionado o argumento `exc`."
 
 #: ../../project/docs/api.rst:307
 #: 344bb5c281f3464e82a1b79b4703c572
@@ -6143,7 +6284,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/ctx.py:docstring of flask.ctx.AppContext.push:1
 #: 2bee20c85bf640c6a0438d0e42691736
 msgid "Binds the app context to the current context."
-msgstr ""
+msgstr "Vincula o contexto do aplicativo ao contexto atual."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/ctx.py:docstring of flask.ctx.AppContext.pop:1
 #: 3003f4d7f4af4d7eb902281975318ae0
@@ -6327,7 +6468,7 @@ msgstr ""
 #: 3a3579f50d3e4a60a91b5f6d3dd2c108
 #: ee69cf9d89774c75ae1c146ab77a9a02
 msgid "See :doc:`views` for a detailed guide."
-msgstr ""
+msgstr "Consulte :doc:`views` para obter um guia detalhado."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/views.py:docstring of flask.views.View:21
 #: 426ea44e16ff4c599f57cd4cb7649069
@@ -6394,7 +6535,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/views.py:docstring of flask.views.View.as_view:13
 #: 3446d1c2a82145d9ae836b9c9f70ada5
 msgid "Added the ``init_every_request`` class attribute."
-msgstr ""
+msgstr "Adicionado o atributo de classe ``init_every_request``."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/views.py:docstring of flask.views.MethodView:1
 #: f9f31e9df3a64c859362c22959eedd3a
@@ -6404,7 +6545,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/views.py:docstring of flask.views.MethodView:5
 #: 2d47e67cb15f47d9a033f64c40865059
 msgid "This can be useful for defining a REST API."
-msgstr ""
+msgstr "Isso pode ser útil para definir uma API REST."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/views.py:docstring of flask.views.MethodView:7
 #: 7f4684a0de1a4e18acdf8e8b1df046e9
@@ -6414,7 +6555,7 @@ msgstr ""
 #: ../../project/docs/api.rst:539
 #: c5d4587e69984df09d49c720d2eeb7c1
 msgid "URL Route Registrations"
-msgstr ""
+msgstr "Registros de Rotas de URL"
 
 #: ../../project/docs/api.rst:541
 #: 14ce1cb527e24e9194090c987024be48
@@ -6424,12 +6565,12 @@ msgstr ""
 #: ../../project/docs/api.rst:543
 #: 2f2c99862e634268ac7f1903d0982488
 msgid "You can use the :meth:`flask.Flask.route` decorator."
-msgstr ""
+msgstr "Você pode usar o decorador :meth:`flask.Flask.route`."
 
 #: ../../project/docs/api.rst:544
 #: 930dbd0b6209445ab95d62d3902c5919
 msgid "You can use the :meth:`flask.Flask.add_url_rule` function."
-msgstr ""
+msgstr "Você pode usar a função :meth:`flask.Flask.add_url_rule`."
 
 #: ../../project/docs/api.rst:545
 #: 9564cef8b72a423bb58d92060faf2c0a
@@ -6449,12 +6590,12 @@ msgstr ""
 #: ../../project/docs/api.rst:555
 #: 3e97cd3432694bd0b5c2d2799850eb73
 msgid "The following converters are available:"
-msgstr ""
+msgstr "Os seguintes conversores estão disponíveis:"
 
 #: ../../project/docs/api.rst:558
 #: e3cdc4e7296641b39bcd2faa9716569f
 msgid "`string`"
-msgstr ""
+msgstr "`string`"
 
 #: ../../project/docs/api.rst:558
 #: cc51f2229a09458abc7dbc83f2bae5d7
@@ -6469,7 +6610,7 @@ msgstr "`int`"
 #: ../../project/docs/api.rst:559
 #: 5578c2d2c03e4c4cbf6e94e580fc8f8d
 msgid "accepts integers"
-msgstr ""
+msgstr "aceita números inteiros"
 
 #: ../../project/docs/api.rst:560
 #: 1acacaf7eea345d7a173e516955bfbae
@@ -6483,8 +6624,9 @@ msgstr ""
 
 #: ../../project/docs/api.rst:561
 #: 6aac9504008d4f08a131c40db665eddd
+#, fuzzy
 msgid "`path`"
-msgstr ""
+msgstr "`path`"
 
 #: ../../project/docs/api.rst:561
 #: 4e10611255a14ac6be68bab673a8742f
@@ -6499,7 +6641,7 @@ msgstr "`any`"
 #: ../../project/docs/api.rst:562
 #: d360c3bf2e334896afad719347f5f8d9
 msgid "matches one of the items provided"
-msgstr ""
+msgstr "corresponde a um dos itens fornecidos"
 
 #: ../../project/docs/api.rst:563
 #: a08d03a74a9641d7b5cd21813cb8e758
@@ -6515,6 +6657,8 @@ msgstr "aceita strings UUID"
 #: 43d8454f773e4026a1fd24ae714363e7
 msgid "Custom converters can be defined using :attr:`flask.Flask.url_map`."
 msgstr ""
+"Conversores personalizados podem ser definidos usando "
+":attr:`flask.Flask.url_map`."
 
 #: ../../project/docs/api.rst:568
 #: 9dd08fc6637d4ea49adaeedf067cb66f
@@ -6563,13 +6707,14 @@ msgstr ""
 
 #: ../../project/docs/api.rst:624
 #: bffe074045654a15a69948e0e3cfc8fb
+#, fuzzy
 msgid "`rule`"
-msgstr ""
+msgstr "`rule`"
 
 #: ../../project/docs/api.rst:624
 #: ef26603760a24acd93b439a4139ce426
 msgid "the URL rule as string"
-msgstr ""
+msgstr "a regra de URL como string"
 
 #: ../../project/docs/api.rst:625
 #: e6985dd5c7eb40549a48261a4977060e
@@ -6583,8 +6728,9 @@ msgstr ""
 
 #: ../../project/docs/api.rst:628
 #: f911b617d86c4759b65d12e48b563479
+#, fuzzy
 msgid "`view_func`"
-msgstr ""
+msgstr "`view_func`"
 
 #: ../../project/docs/api.rst:628
 #: 75e0aa3515984dc9b94919af58eb7be1
@@ -6593,8 +6739,9 @@ msgstr ""
 
 #: ../../project/docs/api.rst:633
 #: dc03da0ceb604f44854e51a5a680d7e6
+#, fuzzy
 msgid "`defaults`"
-msgstr ""
+msgstr "`defaults`"
 
 #: ../../project/docs/api.rst:633
 #: 4f49b74780914836b23bd5239f980127
@@ -6603,8 +6750,9 @@ msgstr ""
 
 #: ../../project/docs/api.rst:635
 #: 8dc38dc6ecae45c8b2a3ade50e5cf892
+#, fuzzy
 msgid "`subdomain`"
-msgstr ""
+msgstr "`subdomain`"
 
 #: ../../project/docs/api.rst:635
 #: 0165a1bd8f7d464795498cc0c9513e9a
@@ -6613,8 +6761,9 @@ msgstr ""
 
 #: ../../project/docs/api.rst:638
 #: a8e28ceb96f8464c9e347e7f213caac7
+#, fuzzy
 msgid "`**options`"
-msgstr ""
+msgstr "`**options`"
 
 #: ../../project/docs/api.rst:638
 #: 6f803058a8f443d7a9221a5cb68c5eae
@@ -6659,7 +6808,7 @@ msgstr "Exemplo completo::"
 #: ../../project/docs/api.rst:689
 #: b15893c025c5472586e309e408b8b25d
 msgid "The `provide_automatic_options` functionality was added."
-msgstr ""
+msgstr "A funcionalidade `provide_automatic_options` foi adicionada."
 
 #: ../../project/docs/api.rst:693
 #: a4d65cddfa9646cf9c7f536f4fa40870
@@ -6679,7 +6828,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/cli.py:docstring of flask.cli.FlaskGroup:9
 #: f91d5c304f1e4811821b3c4c95ab718c
 msgid "adds the ``--version`` option."
-msgstr ""
+msgstr "adiciona a opção ``--version``."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/cli.py:docstring of flask.cli.FlaskGroup:10
 #: 6e00b302d4a84d3d92be80e4c048c306
@@ -6700,6 +6849,8 @@ msgstr ""
 #: bf39d89b43864217ad1fd41dea0ea55b
 msgid "Added the ``-A/--app``, ``--debug/--no-debug``, ``-e/--env-file`` options."
 msgstr ""
+"Adicionadas as opções ``-A/--app``, ``--debug/--no-debug`` e ``-e/--env-"
+"file``."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/cli.py:docstring of flask.cli.FlaskGroup:23
 #: e9b4f88e6af848ee8ebbeccd94b49a9d
@@ -6745,11 +6896,13 @@ msgstr ""
 #: 0eaa664a38ec4a1094d3a11543f5a6ab
 msgid "extra keyword arguments forwarded to the context constructor."
 msgstr ""
+"argumentos de palavra-chave adicionais encaminhados ao construtor do "
+"contexto."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/cli.py:docstring of flask.cli.FlaskGroup.make_context:18
 #: e5ab34bc32ff41aebb16b147ce63a809
 msgid "Added the :attr:`context_class` attribute."
-msgstr ""
+msgstr "Adicionado o atributo :attr:`context_class`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/cli.py:docstring of flask.cli.FlaskGroup.parse_args:1
 #: 2af3a8b7b68f4f64a3679382fe81dafb
@@ -6764,7 +6917,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/cli.py:docstring of flask.cli.AppGroup:5
 #: f8e25931660c421ba6291183c3eeb84a
 msgid "Not to be confused with :class:`FlaskGroup`."
-msgstr ""
+msgstr "Não confundir com :class:`FlaskGroup`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/cli.py:docstring of flask.cli.AppGroup.command:1
 #: 51db5b54c41646bb85bbdb232bd67ae6
@@ -6784,12 +6937,12 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/cli.py:docstring of flask.cli.ScriptInfo:8
 #: 1f2352c068fc4f0499e76dd5237ae461
 msgid "Added the ``load_dotenv_defaults`` parameter and attribute."
-msgstr ""
+msgstr "Adicionado o parâmetro e atributo ``load_dotenv_defaults``."
 
 #: ../../docstring of flask.cli.ScriptInfo.app_import_path:1
 #: c2e5c796295349dd9b61813019cff783
 msgid "Optionally the import path for the Flask application."
-msgstr ""
+msgstr "Opcionalmente, o caminho de importação para a aplicação Flask."
 
 #: ../../docstring of flask.cli.ScriptInfo.create_app:1
 #: ea0da6b91fe6463598b78bb97dee71e5
@@ -6804,7 +6957,7 @@ msgstr ""
 #: ../../docstring of flask.cli.ScriptInfo.load_dotenv_defaults:1
 #: a5b319b25e2f4fbab9500bd20bb2313b
 msgid "Whether default ``.flaskenv`` and ``.env`` files should be loaded."
-msgstr ""
+msgstr "Se os arquivos padrão ``.flaskenv`` e ``.env`` devem ser carregados."
 
 #: ../../docstring of flask.cli.ScriptInfo.load_dotenv_defaults:3
 #: d866fa94be9c414fb88dd29f2cda8f32
@@ -6825,11 +6978,13 @@ msgstr ""
 #: 84e3c9407f14473fb9110a4b502f55c7
 msgid "This is a no-op if `python-dotenv`_ is not installed."
 msgstr ""
+"Isso não realiza nenhuma operação se o `python-dotenv`_ não estiver "
+"instalado."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/cli.py:docstring of flask.cli.load_dotenv:10
 #: 23a626fa43d04ec0b3bf660f4625e45d
 msgid "Load the file at this location."
-msgstr ""
+msgstr "Carregue o arquivo neste local."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/cli.py:docstring of flask.cli.load_dotenv:11
 #: 8a420b591fde402ca2155695840b2a3b
@@ -6839,7 +6994,7 @@ msgstr ""
 #: ../../.venv/lib/python3.13/site-packages/flask/cli.py:docstring of flask.cli.load_dotenv:13
 #: 083a4f043abb404f90e0db1ee99cfbc2
 msgid "``True`` if at least one env var was loaded."
-msgstr ""
+msgstr "``True`` se pelo menos uma variável de ambiente foi carregada."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/cli.py:docstring of flask.cli.load_dotenv:15
 #: 8db08d7b845945eaad34985f1b92e37b
