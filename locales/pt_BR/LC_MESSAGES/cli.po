@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"PO-Revision-Date: 2026-08-27 21:51+0000\n"
 "Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/cli/pt_BR/>\n"
@@ -47,7 +47,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:24
 #: 1d34c7613e4a456281f9c29dcb28133a
 msgid "(nothing)"
-msgstr ""
+msgstr "(nada)"
 
 #: ../../project/docs/cli.rst:25
 #: 78226d8d0284494d944c95b5e43cce9c
@@ -259,7 +259,7 @@ msgstr ""
 #: f36f31b7f90c49d5bd1c50b363ed2ebf
 #: 9c44e4fca98a456d879b055ecc92c6cc
 msgid "CMD"
-msgstr ""
+msgstr "CMD"
 
 #: ../../project/docs/cli.rst:219
 #: ../../project/docs/cli.rst:272
@@ -383,7 +383,7 @@ msgstr ""
 #: ../../project/docs/cli.rst:445
 #: af7c4278519d4fdbb1c94a365723804e
 msgid "Plugins"
-msgstr ""
+msgstr "Plugins"
 
 #: ../../project/docs/cli.rst:447
 #: 27eeb44f486a48d8b17f93f7718f2c7d
