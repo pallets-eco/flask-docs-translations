@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2026-08-26 20:51+0000\n"
+"PO-Revision-Date: 2026-08-27 21:51+0000\n"
 "Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/api/pt_BR/>\n"
@@ -87,6 +87,10 @@ msgstr ""
 #: b21a95539ae54abb844747ddc3529aaf
 msgid "So it's important what you provide there.  If you are using a single module, `__name__` is always the correct value.  If you however are using a package, it's usually recommended to hardcode the name of your package there."
 msgstr ""
+"Portanto, é importante o que você forneça. Se estiver usando um único "
+"módulo, `__name__` é sempre o valor correto. No entanto, se estiver usando "
+"um pacote, geralmente é recomendável inserir o nome do pacote diretamente no "
+"código."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask:31
 #: ce720efee6894fbf9fbe1dc74036c1fb
@@ -852,6 +856,10 @@ msgstr "Tipo de retorno"
 #: a6bf3d3a5423436aa68fc02ec2c6a642
 msgid "The view function used to serve files from :attr:`static_folder`. A route is automatically registered for this view at :attr:`static_url_path` if :attr:`static_folder` is set."
 msgstr ""
+"A função de visualização usada para servir arquivos de "
+":attr:`static_folder`. Uma rota é registrada automaticamente para esta "
+"visualização em :attr:`static_url_path` se :attr:`static_folder` estiver "
+"definido."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.open_resource:1
 #: 553d187f8ef444b69b1a11ec1a453838
@@ -923,6 +931,10 @@ msgstr "Abra o arquivo neste modo."
 #: de1ae59b8bee407fb1a117862cb539fb
 msgid "Create the Jinja environment based on :attr:`jinja_options` and the various Jinja-related methods of the app. Changing :attr:`jinja_options` after this will have no effect. Also adds Flask-related globals and filters to the environment."
 msgstr ""
+"Cria o ambiente Jinja com base em `:attr:`jinja_options` e nos vários "
+"métodos relacionados ao Jinja do aplicativo. Alterar `:attr:`jinja_options` "
+"depois disso não terá efeito. Também adiciona variáveis globais e filtros "
+"relacionados ao Flask no ambiente."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.create_jinja_environment:6
 #: f6c4988b23ee455eaadb54b042ae5c12
@@ -970,11 +982,15 @@ msgstr ""
 #: 083591645e6242c7be728604e231d974
 msgid "the context as a dictionary that is updated in place to add extra variables."
 msgstr ""
+"O contexto é um dicionário que é atualizado in place para adicionar "
+"variáveis extras."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.make_shell_context:1
 #: d4d711bda427450ab7979a7c5a98bf5c
 msgid "Returns the shell context for an interactive shell for this application.  This runs all the registered shell context processors."
 msgstr ""
+"Retorna o contexto do shell para um shell interativo desta aplicação. Isso "
+"executa todos os processadores de contexto de shell registrados."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.run:1
 #: d88bfa50562441629704bdcd277b5546
@@ -1007,6 +1023,9 @@ msgstr ""
 #: b1a5d1388f5b4dd2a97fb4ac7fb10032
 msgid "It is not recommended to use this function for development with automatic reloading as this is badly supported.  Instead you should be using the :command:`flask` command line script's ``run`` support."
 msgstr ""
+"Não é recomendável usar essa função para desenvolvimento com recarregamento "
+"automático, pois o suporte para isso é precário. Em vez disso, você deve "
+"usar o recurso ``run`` do script de linha de comando do :command:`flask`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.run:19
 #: 481578f939254bd8a1bc19d2c582097f
@@ -1084,6 +1103,8 @@ msgstr ""
 #: 183494bbbde04cb4aad3e48d35854e0d
 msgid "Creates a test client for this application.  For information about unit testing head over to :doc:`/testing`."
 msgstr ""
+"Cria um cliente de teste para esta aplicação. Para obter informações sobre "
+"testes unitários, consulte :doc:`/testing`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.test_client:4
 #: 98bd7f765aa64e89b97e7303718ae220
@@ -1094,6 +1115,9 @@ msgstr ""
 #: 364261fcfef74217a622ba0951d2f752
 msgid "The test client can be used in a ``with`` block to defer the closing down of the context until the end of the ``with`` block.  This is useful if you want to access the context locals for testing::"
 msgstr ""
+"O cliente de teste pode ser usado em um bloco ``with`` para adiar o "
+"fechamento do contexto até o final do bloco ``with``. Isso é útil se você "
+"quiser acessar as variáveis locais do contexto para testes::"
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.test_client:23
 #: 61f1bc1361b84e66b8fe0387d09e6f7e
@@ -1151,6 +1175,8 @@ msgstr ""
 #: bc3e9c634b3f4c7c90796280894a9062
 msgid "``RoutingException``, used internally for actions such as  slash redirects during routing, is not passed to error  handlers."
 msgstr ""
+"``RoutingException``, usada internamente para ações como redirecionamentos "
+"de barra durante o roteamento, não é passada para os manipuladores de erros."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.handle_http_exception:10
 #: 7384cb4d6a4b43fbb2a75475d6060cd1
@@ -1224,6 +1250,10 @@ msgstr ""
 #: 0b56d96e19904e959ea810a55e74ba33
 msgid "Logs an exception.  This is called by :meth:`handle_exception` if debugging is disabled and right before the handler is called. The default implementation logs the exception as error on the :attr:`logger`."
 msgstr ""
+"Registra uma exceção. Este método é chamado por :meth:`handle_exception` se "
+"a depuração estiver desativada e imediatamente antes da chamada do "
+"manipulador. A implementação padrão registra a exceção como um erro no "
+"atributo `logger`."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.dispatch_request:1
 #: 077bb3a8f57a45eb91695c5be353fcd8
@@ -1248,6 +1278,10 @@ msgstr ""
 #: 3a817dcaa3a64002bf80f1ae4bc37d46
 msgid "Given the return value from a view function this finalizes the request by converting it into a response and invoking the postprocessing functions.  This is invoked for both normal request dispatching as well as error handlers."
 msgstr ""
+"Com base no valor retornado por uma função de visualização, esta função "
+"finaliza a requisição, convertendo-a em uma resposta e invocando as funções "
+"de pós-processamento. Isso ocorre tanto para o despacho normal de "
+"requisições quanto para o tratamento de erros."
 
 #: ../../.venv/lib/python3.13/site-packages/flask/app.py:docstring of flask.app.Flask.finalize_request:6
 #: e327a91dc7b14f56a62eba7fb72d829c
