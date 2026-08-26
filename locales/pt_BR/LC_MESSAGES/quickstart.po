@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2026-08-26 20:51+0000\n"
+"PO-Revision-Date: 2026-08-27 21:51+0000\n"
 "Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/quickstart/pt_BR/>\n"
@@ -192,7 +192,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:157
 #: b1e18677e1f944c1adfe059c9fb5e3ef
 msgid "Routing"
-msgstr ""
+msgstr "Roteamento"
 
 #: ../../project/docs/quickstart.rst:159
 #: 1bc848c730424794bff4c31a70f806a5
@@ -227,7 +227,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:204
 #: abdfc2de097b4bb49338652271c1d52e
 msgid "``string``"
-msgstr ""
+msgstr "``string``"
 
 #: ../../project/docs/quickstart.rst:204
 #: 42a40812e2404ae2aa21cd2eefe6f2de
@@ -237,7 +237,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:205
 #: 812f474f73c447869e63be912ea61492
 msgid "``int``"
-msgstr ""
+msgstr "``int``"
 
 #: ../../project/docs/quickstart.rst:205
 #: 0dcc8042218b40e1a838225b493416b4
@@ -257,7 +257,7 @@ msgstr ""
 #: ../../project/docs/quickstart.rst:207
 #: 8d00c0ee5d5949649dbb552a9c7b7a55
 msgid "``path``"
-msgstr ""
+msgstr "``path``"
 
 #: ../../project/docs/quickstart.rst:207
 #: c16b271f6640414893a3fa5acf32330b
