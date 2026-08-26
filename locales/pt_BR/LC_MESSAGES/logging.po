@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2026-08-25 11:51+0000\n"
+"PO-Revision-Date: 2026-08-27 21:51+0000\n"
 "Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/logging/pt_BR/>\n"
@@ -117,7 +117,7 @@ msgstr ""
 #: ../../project/docs/logging.rst:171
 #: 4bc05b4f595a44899698b223a03fe389
 msgid "Werkzeug"
-msgstr ""
+msgstr "Werkzeug"
 
 #: ../../project/docs/logging.rst:173
 #: 9f8abdd3e07e474492bbcbf8956b1c4a
