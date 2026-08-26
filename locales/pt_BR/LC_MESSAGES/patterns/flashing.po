@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2026-08-25 11:52+0000\n"
+"PO-Revision-Date: 2026-08-26 20:51+0000\n"
 "Last-Translator: Luan Silva <luanfstack@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "flask/patternsflashing/pt_BR/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: ../../project/docs/patterns/flashing.rst:2
 #: 52101af811804f8f8d14012239bc2996
 msgid "Message Flashing"
-msgstr ""
+msgstr "Mensagem Flash"
 
 #: ../../project/docs/patterns/flashing.rst:4
 #: 2c2aee5124874620ac7b4b2c62df15b5
