@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2026-08-22 13:51+0000\n"
+"PO-Revision-Date: 2026-09-01 11:51+0000\n"
 "Last-Translator: reducedradius "
 "<137701630+flytothehighest@users.noreply.github.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -693,7 +693,7 @@ msgstr ""
 
 #: d88bfa50562441629704bdcd277b5546 flask.app.Flask.run:1 of
 msgid "Runs the application on a local development server."
-msgstr ""
+msgstr "在本地开发版本服务器运行应用程序。"
 
 #: 013440040a7f48039f6e0671e2434a40 flask.app.Flask.run:3 of
 msgid ""
@@ -725,7 +725,7 @@ msgstr ""
 
 #: 481578f939254bd8a1bc19d2c582097f flask.app.Flask.run:19 of
 msgid "Keep in Mind"
-msgstr ""
+msgstr "牢记于心"
 
 #: 8ab0317665ce49ed89f08fc3226c06c3 flask.app.Flask.run:21 of
 msgid ""
