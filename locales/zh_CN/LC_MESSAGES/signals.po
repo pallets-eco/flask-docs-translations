@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2025-06-21 03:04+0000\n"
-"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"PO-Revision-Date: 2026-09-10 00:23+0000\n"
+"Last-Translator: reducedradius "
+"<137701630+flytothehighest@users.noreply.github.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/signals/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 2026.9.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/signals.rst:2 7f88cc697eb14b1194760a50f3720563
@@ -38,6 +39,8 @@ msgid ""
 "for detailed information. Flask provides some built-in signals. "
 "Extensions may provide their own."
 msgstr ""
+"信号由“Blinker”库实现。详情见其文档。Flask 提供了一些内置的信号，扩展可能会提"
+"供自身带有的信号。"
 
 #: ../../project/docs/signals.rst:11 9e6dbd0a0d924a31a5bdfde7c2b2aabd
 msgid ""
@@ -125,7 +128,7 @@ msgstr ""
 
 #: ../../project/docs/signals.rst:98 13cd2d22bcf5415f8d1d59d26a0e3449
 msgid "Creating Signals"
-msgstr ""
+msgstr "创建信号"
 
 #: ../../project/docs/signals.rst:100 57e09402cd5b4d72a9f7988811a2a89d
 msgid ""
