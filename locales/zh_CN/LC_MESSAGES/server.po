@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: Flask 2.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-20 19:31-0800\n"
-"PO-Revision-Date: 2026-01-04 05:01+0000\n"
-"Last-Translator: Alexia Frank <mcallzbl@gmail.com>\n"
+"PO-Revision-Date: 2026-09-10 00:23+0000\n"
+"Last-Translator: reducedradius "
+"<137701630+flytothehighest@users.noreply.github.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/flask/server/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../project/docs/server.rst:4 f05ac35ac0ac407d8f6beed1e933bd8d
@@ -68,7 +69,7 @@ msgstr ""
 
 #: ../../project/docs/server.rst:38 8c74ded26de7426b99d37490812b1c44
 msgid "Address already in use"
-msgstr ""
+msgstr "地址已被占用"
 
 #: ../../project/docs/server.rst:40 4b4f524dd89945e6968b99eb0ee07ccd
 msgid ""
